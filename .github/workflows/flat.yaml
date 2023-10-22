@@ -21,6 +21,6 @@ jobs:
       - name: Fetch sentries 
         uses: githubocto/flat@v3
         with:
-          http_url: https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=SPY&outputsize=compact&datatype=json&apikey=SY5XUICYO3N1X8NI 
+          http_url: https://api-mainnet.magiceden.dev/v2/collections/sentries/listings 
           downloaded_filename: sentries.json 
-          postprocess: postprocessspy.js
+          postprocess: postprocesssentries.js
