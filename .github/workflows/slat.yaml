@@ -1,0 +1,38 @@
+name: Slat
+
+on:
+  push:
+    paths:
+      - .github/workflows/slat.yml
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */4 * * *' # Run every 4 hours
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v2
+      - name: Setup deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - name: Fetch sol 
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://api.coingecko.com/api/v3/coins/solana/ohlc?vs_currency=usd&days=30 # 4-hr OHLC and Volume for the past 30 days
+          downloaded_filename: sol-hist.json 
+          postprocess: postprocesssol.js
+      - name: Fetch btc 
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://api.coingecko.com/api/v3/coins/bitcoin/ohlc?vs_currency=usd&days=30 
+          downloaded_filename: btc-hist.json 
+          postprocess: postprocessbtc.js
+      - name: Fetch eth 
+        uses: githubocto/flat@v3
+        with:
+          http_url: https://api.coingecko.com/api/v3/coins/ethereum/ohlc?vs_currency=usd&days=30
+          downloaded_filename: eth-hist.json 
+          postprocess: postprocesseth.js
