@@ -18,27 +18,9 @@ jobs:
         uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
-      - name: Fetch spy 
+      - name: Fetch sentries 
         uses: githubocto/flat@v3
         with:
           http_url: https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=SPY&outputsize=compact&datatype=json&apikey=SY5XUICYO3N1X8NI 
-          downloaded_filename: spy-hist.json 
+          downloaded_filename: sentries.json 
           postprocess: postprocessspy.js
-      - name: Fetch qqq 
-        uses: githubocto/flat@v3
-        with:
-          http_url: https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=QQQ&outputsize=compact&datatype=json&apikey=SY5XUICYO3N1X8NI 
-          downloaded_filename: qqq-hist.json 
-          postprocess: postprocessqqq.js
-      - name: Fetch tsla 
-        uses: githubocto/flat@v3
-        with:
-          http_url: https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=TSLA&outputsize=compact&datatype=json&apikey=SY5XUICYO3N1X8NI 
-          downloaded_filename: tsla-hist.json 
-          postprocess: postprocesstsla.js
-      - name: Fetch nvda 
-        uses: githubocto/flat@v3
-        with:
-          http_url: https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=NVDA&outputsize=compact&datatype=json&apikey=SY5XUICYO3N1X8NI 
-          downloaded_filename: nvda-hist.json 
-          postprocess: postprocessnvda.js
