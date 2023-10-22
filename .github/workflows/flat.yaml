@@ -22,5 +22,5 @@ jobs:
         uses: githubocto/flat@v3
         with:
           http_url: https://api-mainnet.magiceden.dev/v2/collections/sentries/listings 
-          downloaded_filename: sentries.json 
-          postprocess: postprocesssentries.js
+          downloaded_filename: sentries/sentries.json 
+          postprocess: sentries/postprocesssentries.js
