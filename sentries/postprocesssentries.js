@@ -14,6 +14,6 @@ const data = Object.entries(timeSeries).map(([date, entry]) => ({
 
 data.sort((a, b) => new Date(a.time) - new Date(b.time));
 
-const newFile = 'sentries-postprocessed.json';
+const newFile = 'sentries/sentries-postprocessed.json';
 await writeJSON(newFile, data);
 console.log('Wrote post-processed file: ' + newFile);
