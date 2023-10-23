@@ -6,7 +6,7 @@ on:
       - .github/workflows/flat.yml
   workflow_dispatch:
   schedule:
-    - cron: '0 0 31 2 *' # This time will never occcur, temp disabling the job until we find another api source.
+    - cron: '0 0 31 2 *' # This time will never occcur.
 
 jobs:
   scheduled:
