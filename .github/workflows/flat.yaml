@@ -8,7 +8,7 @@ on:
   schedule:
     - cron: '0 0 31 2 *' # This time will never occcur.
 
-# jobs:
+jobs:
   scheduled:
     runs-on: ubuntu-latest
     steps:
