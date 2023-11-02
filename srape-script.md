@@ -47,7 +47,7 @@ def main():
     if html:
         parsed_data = parse_html(html)
         if parsed_data:
-            save_data(parsed_data, "/content/drive/MyDrive/AF/arcticfrenz.json")
+            save_data(parsed_data, "arcticfrenz.json")
         else:
             logging.error(f"Failed to parse HTML from {url}")
     else:
