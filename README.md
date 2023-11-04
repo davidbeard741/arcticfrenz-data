@@ -73,7 +73,7 @@ Choose one of the following environments for your Python development needs:
 
 ### **Step 4:** Make a Python List
 
-Open your development environment and create a create a code cell and a variable named `nft_addresses` for a Python list. Paste your hash list from [Step 2](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#step-2-acquire-the-collections-hash-list) into the Python list.
+Open your development environment and create a variable named `nft_addresses` for a Python list. Paste your hash list from [Step 2](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#step-2-acquire-the-collections-hash-list) into the Python list.
 
 ```PYTHON
 nft_addresses = [
@@ -108,13 +108,13 @@ nft_addresses = [
 
 ### **Step 6:** Make a Batched API Request 
 
-Open your development environment, create a code cell and create a create a variable named `apikey`. Paste your API Key from [Step 5]() into the variable 
+Open your development environment, create a variable named `apikey`. Paste your API Key from [Step 5]() into the variable 
 
 ```PYTHON
 apikey = "INSERT YOUR API KEY BETWEEN THESE QUOTATION MARKS"
 ```
 
-Create a third code cell. Paste the code below into the cell. 
+Copy and paste the code below into your development environement. 
 
 ```PYTHON
 import requests
@@ -152,3 +152,49 @@ def get_metadata(nft_addresses):
 get_metadata(nft_addresses)
 ```
 
+### **Step 7:** Run the Code
+
+The complete code is below:
+
+```PYTHON
+import requests
+import json
+
+
+nft_addresses = [
+         # PASTE HASH LIST HERE  
+]
+
+apikey = "INSERT YOUR API KEY BETWEEN THESE QUOTATION MARKS"
+
+url = f"https://api.helius.xyz/v0/token-metadata?api-key={key}"
+
+def get_metadata(nft_addresses):
+    batch_size = 80
+    all_data = []
+
+    for i in range(0, len(nft_addresses), batch_size):
+        batch_addresses = nft_addresses[i:i + batch_size]
+        payload = {
+            "mintAccounts": batch_addresses,
+            "includeOffChain": True,
+            "disableCache": False
+        }
+        headers = {
+            'Content-Type': 'application/json',
+        }
+        response = requests.post(url, headers=headers, json=payload)
+        if response.status_code == 200:
+            batch_data = response.json()
+            all_data.extend(batch_data)
+            print(f"Batch {i // batch_size + 1} successfully retrieved.")
+        else:
+            print(f"Failed to retrieve metadata for batch {i // batch_size + 1}: {response.status_code}")
+            print("Error message:", response.text)
+
+    with open('/content/drive/MyDrive/AF/nft_metadata.json', 'w') as file:
+        json.dump(all_data, file, indent=4)
+        print("All metadata written to /content/drive/MyDrive/AF/nft_metadata.json")
+
+get_metadata(nft_addresses)
+```
