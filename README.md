@@ -8,4 +8,4 @@ The Arctic Frenz Data Repository offers a comprehensive collection of NFT analyt
 
 ### Step 1
 
-(Here you would continue with the steps in your guide.)
+(TODO: continue with the steps.)
