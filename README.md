@@ -2,10 +2,13 @@
 
 Welcome to the Arctic Frenz Data Repository - a specialized resource designed to enhance the Arctic Frenz Bot with extensive NFT analytics. Our repository features in-depth data on aspects like asset ownership duration, listing status, quantity, and rarity of NFTs. It is engineered to offer seamless integration with Discord, allowing community members to conduct ranking checks and access metadata with ease. Additionally, this repository empowers collections to leverage these insights to encourage and strengthen community engagement on Discord platforms.
 
+<p align="center">
 ![Logo](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/IMG_3153.gif)
+</p>
 
+<p align="center">
 ![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2Farcticfrenz&logo=x&label=%40ArcticFrenz&link=https%3A%2F%2Ftwitter.com%2Farcticfrenz)
-
+</p>
 
 ## How to Retrieve NFT Metadata for an Entire Collection
 
@@ -15,16 +18,10 @@ Below is a structured guide to assist you in fetching metadata for any NFT colle
 
 1. Visit [Magic Eden](https://magiceden.io) and select an NFT from the collection you are interested in.
 2. Navigate to the NFT's detail page and locate its Mint Address, then proceed to [Solscan](https://solscan.io).
-
-<p align="center" padding-left="10" padding-top="0" padding-right="10" padding-bottom="5">
-    <img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg"
-        max-height="150" width="auto">
-</p>
-
+    ![Find Creator Address](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg)
 4. In Solscan, click on the "Creators" tab.
 5. Look for the first listed address that shows a 0% share and is marked with a blue tick.   
    ![Find Creator Address](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/0D636107-2D85-4DBD-849D-E19A2B647338.jpeg)
-
 6. Copy this Creator Address.
    ![Copy Creator Address](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/CC753005-3372-463E-97A9-D8E0710BC5A3.jpeg)
 
