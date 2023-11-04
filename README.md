@@ -12,7 +12,7 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 </a>
 
 <a href="https://twitter.com/arcticfrenz">
-<img src="https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2Farcticfrenz&logo=x&label=%40ArcticFrenz&link=https%3A%2F%2Ftwitter.com%2Farcticfrenz">
+<img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">
 </a>
 </p>
 
