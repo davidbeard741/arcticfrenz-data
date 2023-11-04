@@ -26,7 +26,7 @@ Below is a structured guide to assist you in fetching metadata for any NFT colle
 
 ### Step 1: Identify the Creator Address
 
-<table>
+<table align="center">
   <tr>
     <td>
       1. Visit [Magic Eden](https://magiceden.io) and select an NFT from the collection you are interested in.
@@ -54,11 +54,33 @@ Below is a structured guide to assist you in fetching metadata for any NFT colle
 
 ### Step 2: Acquire the Collection's Hash List
 
-1. Go to the [Smithii](https://tools.smithii.io/hashlist/solana) Hash List NFT Solana tool.
-2. Paste the Creator Address obtained from Step 1 into the provided field.
-3. Click 'Get hash list' to generate the list.
-4. Please be patient, as generating the hash list may take a few minutes.
-5. Once the list is available, copy or save the list for Step 3.
+<table align="center">
+  <tr>
+    <td>
+	    1. Go to the [Smithii](https://tools.smithii.io/hashlist/solana) Hash List NFT Solana tool.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      2. Paste the Creator Address obtained from Step 1 into the provided field.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      3. Click 'Get hash list' to generate the list.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      4. Please be patient, as generating the hash list may take a few minutes.
+    </td>
+  </tr> 
+  <tr>
+    <td>
+      5. Once the list is available, copy or save the list for Step 4.
+    </td>
+  </tr> 
+</table>
 
 ### Step 3: Set Up Your Python Development Environment
 
