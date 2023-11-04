@@ -13,3 +13,7 @@ The Arctic Frenz Data Repository offers a comprehensive collection of NFT analyt
 - Click on 'Get Hashlist'
 - Wait. The hashlist process will take a couple of minutes.
 - Copy hash list
+
+### Step 2: Create a Notebook
+
+- [Google Colab](www.) - a notebooks are Jupyter notebooks that run in the cloud and are highly integrated with Google Drive
