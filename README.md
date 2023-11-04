@@ -10,11 +10,11 @@ The Arctic Frenz Data Repository offers a comprehensive collection of NFT analyt
 
 - Find an NFT that is part of the collection on [Magic Eden](https://magiceden.io).
 
-- Copy the NFT's address and paste into [Solscan](https://solscan.io).
+- Open the NFT's Mint Address in [Solscan](https://solscan.io).
+![Magic Eden](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg)
 
 - Click on the "Creators" tab and select the first address that appears, with a 0% and a blue tick. 
 ![Find Creator Address](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/0D636107-2D85-4DBD-849D-E19A2B647338.jpeg)
-
 
 ### Step 2: Get Collection's Hash List
 
