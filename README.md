@@ -73,6 +73,10 @@ Choose one of the following environments for your Python development needs:
 
 ### **Step 4:** Get Metadata for each NFT in the Collection
 
-```
-# Code
+Open your development environment and create a create a variable named `nft_addresses` for a Python list. Paste your hash list from [Step 3]() into the Python list.
+
+```PYTHON
+nft_addresses = [
+         # PASTE HASH LIST HERE  
+]
 ```
