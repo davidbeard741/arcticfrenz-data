@@ -6,6 +6,10 @@ The Arctic Frenz Data Repository offers a comprehensive collection of NFT analyt
 
 ## Data Collection: A Step-by-Step Guide
 
-### Step 1
+### Step 1: Get Collection's Hash List
 
-(TODO: continue with the steps.)
+- Go to [Smithii | Hash List NFT Solana](https://tools.smithii.io/hashlist/solana)
+- Enter the Creator Address
+- Click on 'Get Hashlist'
+- Wait. The hashlist process will take a couple of minutes.
+- Copy hash list
