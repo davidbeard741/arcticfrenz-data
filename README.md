@@ -38,24 +38,27 @@ Below is a structured guide to assist you in fetching metadata for any NFT colle
       <img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg">
     </td>
   </tr>
+  <tr>
+    <td>
+      3. In Solscan, click on the "Creators" tab. Look for the first listed address that shows a 0% share and is marked with a blue tick. 
+      <img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/0D636107-2D85-4DBD-849D-E19A2B647338.jpeg">
+    </td>
+  </tr>
+  <tr>
+    <td>
+      4. Copy this Creator Address.
+      <img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/CC753005-3372-463E-97A9-D8E0710BC5A3.jpeg">
+    </td>
+  </tr> 
 </table>
-
-
-3. In Solscan, click on the "Creators" tab.
-
-4. Look for the first listed address that shows a 0% share and is marked with a blue tick. 
-   ![Find Creator Address](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/0D636107-2D85-4DBD-849D-E19A2B647338.jpeg)
-
-5. Copy this Creator Address.
-   ![Copy Creator Address](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/CC753005-3372-463E-97A9-D8E0710BC5A3.jpeg)
 
 ### Step 2: Acquire the Collection's Hash List
 
-1. Go to the [Smithii | Hash List NFT Solana](https://tools.smithii.io/hashlist/solana) tool.
+1. Go to the [Smithii](https://tools.smithii.io/hashlist/solana) Hash List NFT Solana tool.
 2. Paste the Creator Address obtained from Step 1 into the provided field.
 3. Click 'Get hash list' to generate the list.
 4. Please be patient, as generating the hash list may take a few minutes.
-5. Once the list is available, copy it for your use.
+5. Once the list is available, copy or save the list for Step 3.
 
 ### Step 3: Set Up Your Python Development Environment
 
@@ -69,3 +72,7 @@ Choose one of the following environments for your Python development needs:
   - [Linux/Unix Setup Guide](https://itsfoss.com/python-setup-linux/)
 
 ### Step 4: Get Metadata for each NFT in the Collection
+
+```
+# Code
+```
