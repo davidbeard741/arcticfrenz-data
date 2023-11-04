@@ -8,8 +8,13 @@ The Arctic Frenz Data Repository offers a comprehensive collection of NFT analyt
 
 ### Step 1: Get Creator Address of the Collection 
 
-- Find an NFT that is part of the collection on <a href="https://solscan.io" target="_blank">Solscan</a>
+- Find an NFT that is part of the collection on [Magic Eden](https://magiceden.io).
+
+- Copy the NFT's address and paste into [Solscan](https://solscan.io).
+
 - Click on the "Creators" tab and select the first address that appears, with a 0% and a blue tick. 
+
+
 
 ### Step 2: Get Collection's Hash List
 
