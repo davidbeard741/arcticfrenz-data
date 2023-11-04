@@ -4,14 +4,14 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/IMG_3153.gif"
-        max-height="150" width="auto">
+        max-height="50" width="auto">
 </p>
 <p align="center">
     <a href="https://discord.gg/arcticfrenz">
         <img src="https://img.shields.io/discord/308323056592486420?logo=discord"
             alt="Discord"></a>
     <a href="https://twitter.com/arcticfrenz">
-        <img src="https://img.shields.io/twitter/follow/shields_io?style=social&logo=X"
+        <img src="[https://img.shields.io/twitter/follow/shields_io?style=social&logo=X](https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2Farcticfrenz&logo=x&label=%40ArcticFrenz&link=https%3A%2F%2Ftwitter.com%2Farcticfrenz)"
             alt="Twitter"></a>
 </p>
 
