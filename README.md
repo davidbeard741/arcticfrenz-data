@@ -8,12 +8,8 @@ The Arctic Frenz Data Repository offers a comprehensive collection of NFT analyt
 
 ### Step 1: Get Creator Address of the Collection 
 
-- Find an NFT that is part of the collection
-- Copy the token address of the NFT 
-- Paste token address into a [Solscan](https://solscan.io)
+- Find an NFT that is part of the collection on [Solscan](https://solscan.io)
 - Click on the "Creators" tab and select the first address that appears, with a 0% and a blue tick. 
-
-
 
 ### Step 2: Get Collection's Hash List
 
@@ -23,6 +19,8 @@ The Arctic Frenz Data Repository offers a comprehensive collection of NFT analyt
 - Wait. The hashlist process will take a couple of minutes.
 - Copy hash list
 
-### Step 3: Create a Notebook
+### Step 3: Create a Python Development Environment
 
-- [Google Colab](www.) Colab notebooks are Jupyter notebooks that run in the cloud.
+- [Google Colab](https://colab.research.google.com) notebooks are Jupyter notebooks that run in the cloud.
+- [JupyterLab](https://jupyter.org/) is the latest web-based interactive development environment for notebooks, code, and data.
+- Local Environment on [Windows](https://realpython.com/python-coding-setup-windows/], on [macOS](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-macos), or on [Linux/Unix Systems](https://itsfoss.com/python-setup-linux/)
