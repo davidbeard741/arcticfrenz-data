@@ -1,34 +1,46 @@
 # Arctic Frenz Discord Bot Data Repository
 
-The Arctic Frenz Data Repository offers a comprehensive collection of NFT analytics tailored for the Arctic Frenz Bot. This includes detailed information on asset ownership duration, listing status, quantity, and rarity. The repository provides streamlined access to ranking checks and metadata, enriching the community experience. Furthermore, collections can harness this data to incentivize and bolster community interaction within Discord.
+Welcome to the Arctic Frenz Data Repository - a specialized resource designed to enhance the Arctic Frenz Bot with extensive NFT analytics. Our repository features in-depth data on aspects like asset ownership duration, listing status, quantity, and rarity of NFTs. It is engineered to offer seamless integration with Discord, allowing community members to conduct ranking checks and access metadata with ease. Additionally, this repository empowers collections to leverage these insights to encourage and strengthen community engagement on Discord platforms.
 
 ![Arctic Frenz Visualization](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/IMG_3153.gif)
 
-## Get NFT Metadata for the entire  Collection: A Step-by-Step Guide
+## How to Retrieve NFT Metadata for an Entire Collection
 
-### Step 1: Get Creator Address of the Collection 
+Below is a structured guide to assist you in fetching metadata for any NFT collection.
 
-- Find an NFT that is part of the collection on [Magic Eden](https://magiceden.io).
+### Step 1: Identify the Creator Address
 
-- Open the NFT's Mint Address in [Solscan](https://solscan.io).
-![Magic Eden](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg)
+1. Visit [Magic Eden](https://magiceden.io) and select an NFT from the collection you are interested in.
+2. Navigate to the NFT's detail page and locate its Mint Address, then proceed to [Solscan](https://solscan.io).
+   
+   ![Magic Eden Example](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg)
 
-- Click on the "Creators" tab and select the first address that appears, with a 0% and a blue tick. 
-![Find Creator Address](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/0D636107-2D85-4DBD-849D-E19A2B647338.jpeg)
+3. In Solscan, click on the "Creators" tab.
+4. Look for the first listed address that shows a 0% share and is marked with a blue tick. 
+   
+   ![Find Creator Address](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/0D636107-2D85-4DBD-849D-E19A2B647338.jpeg)
 
-- Copy the account's address
-![Find Creator Address](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/CC753005-3372-463E-97A9-D8E0710BC5A3.jpeg)
+5. Copy this Creator Address.
+   
+   ![Copy Creator Address](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/CC753005-3372-463E-97A9-D8E0710BC5A3.jpeg)
 
-### Step 2: Get Collection's Hash List
+### Step 2: Acquire the Collection's Hash List
 
-- Go to [Smithii | Hash List NFT Solana](https://tools.smithii.io/hashlist/solana)
-- Enter the Creator Address from Step 1
-- Click on 'Get hash list'
-- Wait! The hash list process will take a couple of minutes.
-- Copy the hash list
+1. Go to the [Smithii | Hash List NFT Solana](https://tools.smithii.io/hashlist/solana) tool.
+2. Paste the Creator Address obtained from Step 1 into the provided field.
+3. Click 'Get hash list' to generate the list.
+4. Please be patient, as generating the hash list may take a few minutes.
+5. Once the list is available, copy it for your use.
 
-### Step 3: Create a Python Development Environment using:
+### Step 3: Set Up Your Python Development Environment
 
-- [Google Colab](https://colab.research.google.com) notebooks are Jupyter notebooks that run in the cloud. The example below will use Google Colab.
-- [JupyterLab](https://jupyter.org/) is the latest web-based interactive development environment for notebooks, code, and data.
-- Local Environment on [Windows](https://realpython.com/python-coding-setup-windows/), on [macOS](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-macos), or on [Linux/Unix](https://itsfoss.com/python-setup-linux/) Systems.
+Choose one of the following environments for your Python development needs:
+
+- **Google Colab**: Utilize [Google Colab](https://colab.research.google.com) for a cloud-based Jupyter notebook experience that does not require any local setup.
+- **JupyterLab**: For a more advanced setup, [JupyterLab](https://jupyter.org/) provides a comprehensive development environment to work with notebooks, code, and data.
+- **Local Environment**: Set up your development environment locally on various operating systems:
+  - [Windows Setup Guide](https://realpython.com/python-coding-setup-windows/)
+  - [macOS Setup Guide](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-macos)
+  - [Linux/Unix Setup Guide](https://itsfoss.com/python-setup-linux/)
+
+### Step 4: Get Metadata for each NFT in the Collection
