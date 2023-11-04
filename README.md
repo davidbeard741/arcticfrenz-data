@@ -5,7 +5,7 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 <table align="center">
   <tr>
     <td>
-      <img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/IMG_3153.gif" width="500">
+      <img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/IMG_3153.gif">
     </td>
   </tr>
   <tr>
@@ -26,12 +26,15 @@ Below is a structured guide to assist you in fetching metadata for any NFT colle
 
 ### Step 1: Identify the Creator Address
 
-1. Visit [Magic Eden](https://magiceden.io) and select an NFT from the collection you are interested in.
-
-2. Navigate to the NFT's detail page and locate its Mint Address, then proceed to [Solscan](https://solscan.io).
 <table>
   <tr>
     <td>
+      1. Visit [Magic Eden](https://magiceden.io) and select an NFT from the collection you are interested in.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      2. Navigate to the NFT's detail page and locate its Mint Address, then proceed to [Solscan](https://solscan.io).
       <img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg">
     </td>
   </tr>
