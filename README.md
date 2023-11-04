@@ -27,7 +27,7 @@ Below is a structured guide to assist you in fetching metadata for any NFT colle
 2. Navigate to the NFT's detail page and locate its Mint Address, then proceed to [Solscan](https://solscan.io).
 <table>
   <tr>
-    <td style="padding-left: 30px;">
+    <td style="padding-left: 40px;">
       <img height="300" src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg" align="left">
     </td>
   </tr>
