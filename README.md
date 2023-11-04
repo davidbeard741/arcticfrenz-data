@@ -86,7 +86,7 @@ nft_addresses = [
 <table align="center">
 	<tr>
 		<td>
-			1. Visit <a href="https://dev.helius.xyz/dashboard/app">Helius</a>: "*Solana's most loved RPC Nodes, APIs, Webhooks, and High-performance Infrastructure.*"
+			1. Visit <a href="https://dev.helius.xyz/dashboard/app">Helius</a>, a platform for Solana RPC nodes, APIs, webhooks, and infrastructure.
 		</td>
 	</tr>
 	<tr>
