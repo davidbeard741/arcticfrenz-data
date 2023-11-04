@@ -23,13 +23,17 @@ Below is a structured guide to assist you in fetching metadata for any NFT colle
 ### Step 1: Identify the Creator Address
 
 1. Visit [Magic Eden](https://magiceden.io) and select an NFT from the collection you are interested in.
+
 2. Navigate to the NFT's detail page and locate its Mint Address, then proceed to [Solscan](https://solscan.io).
 <p align="center">
-<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg">
+<img height="300" src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg">
 </p>
+
 3. In Solscan, click on the "Creators" tab.
-4. Look for the first listed address that shows a 0% share and is marked with a blue tick.   
+
+4. Look for the first listed address that shows a 0% share and is marked with a blue tick. 
    ![Find Creator Address](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/0D636107-2D85-4DBD-849D-E19A2B647338.jpeg)
+
 5. Copy this Creator Address.
    ![Copy Creator Address](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/CC753005-3372-463E-97A9-D8E0710BC5A3.jpeg)
 
