@@ -120,7 +120,7 @@ Copy and paste the code below into your development environement.
 import requests
 import json
 
-url = f"https://api.helius.xyz/v0/token-metadata?api-key={key}"
+url = f"https://api.helius.xyz/v0/token-metadata?api-key={apikey}"
 
 def get_metadata(nft_addresses):
     batch_size = 80
@@ -154,7 +154,7 @@ get_metadata(nft_addresses)
 
 ### **Step 7:** Run the Code
 
-The complete code is below:
+Below is the complete code. Execute it to generate a file named 'nft_metadata.json' that will include the metadata for an entire NFT collection
 
 ```PYTHON
 import requests
@@ -167,7 +167,7 @@ nft_addresses = [
 
 apikey = "INSERT YOUR API KEY BETWEEN THESE QUOTATION MARKS"
 
-url = f"https://api.helius.xyz/v0/token-metadata?api-key={key}"
+url = f"https://api.helius.xyz/v0/token-metadata?api-key={apikey}"
 
 def get_metadata(nft_addresses):
     batch_size = 80
@@ -192,9 +192,9 @@ def get_metadata(nft_addresses):
             print(f"Failed to retrieve metadata for batch {i // batch_size + 1}: {response.status_code}")
             print("Error message:", response.text)
 
-    with open('/content/drive/MyDrive/AF/nft_metadata.json', 'w') as file:
+    with open('nft_metadata.json', 'w') as file:
         json.dump(all_data, file, indent=4)
-        print("All metadata written to /content/drive/MyDrive/AF/nft_metadata.json")
+        print("All metadata written to nft_metadata.json")
 
 get_metadata(nft_addresses)
 ```
