@@ -15,7 +15,7 @@ The Arctic Frenz Data Repository offers a comprehensive collection of NFT analyt
 
 
 
-### Step 1: Get Collection's Hash List
+### Step 2: Get Collection's Hash List
 
 - Go to [Smithii | Hash List NFT Solana](https://tools.smithii.io/hashlist/solana)
 - Enter the Creator Address
@@ -23,6 +23,6 @@ The Arctic Frenz Data Repository offers a comprehensive collection of NFT analyt
 - Wait. The hashlist process will take a couple of minutes.
 - Copy hash list
 
-### Step 2: Create a Notebook
+### Step 3: Create a Notebook
 
 - [Google Colab](www.) Colab notebooks are Jupyter notebooks that run in the cloud.
