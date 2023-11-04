@@ -6,7 +6,15 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 <img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/IMG_3153.gif" width="500">
 </p>
 
-![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2Farcticfrenz&logo=x&label=%40ArcticFrenz&link=https%3A%2F%2Ftwitter.com%2Farcticfrenz)
+<p align="center">
+<a href="https://discord.gg/arcticfrenz">
+<img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
+</a>
+
+<a href="https://twitter.com/arcticfrenz">
+<img src="https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2Farcticfrenz&logo=x&label=%40ArcticFrenz&link=https%3A%2F%2Ftwitter.com%2Farcticfrenz">
+</a>
+</p>
 
 ## How to Retrieve NFT Metadata for an Entire Collection
 
