@@ -24,7 +24,7 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 
 Below is a structured guide to assist you in fetching metadata for any NFT collection.
 
-### Step 1: Identify the Creator Address
+### **Step 1:** Identify the Creator Address
 
 <table align="center">
 	<tr>
@@ -52,7 +52,7 @@ Below is a structured guide to assist you in fetching metadata for any NFT colle
 	</tr> 
 </table>
 
-### Step 2: Acquire the Collection's Hash List
+### **Step 2:** Acquire the Collection's Hash List
 
 1. Visit <a href="https://tools.smithii.io/hashlist/solana">Smithii</a>, a tool for Hash List NFTs on the Solana blockchain.
 2. Paste the Creator Address obtained from [Step 1](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#step-1-identify-the-creator-address) into the provided field.
@@ -60,7 +60,7 @@ Below is a structured guide to assist you in fetching metadata for any NFT colle
 4. Please be patient, as generating the hash list may take a few minutes.
 5. Once the list is available, copy or save the list for Step 4.
 
-### Step 3: Set Up Your Python Development Environment
+### **Step 3:** Set Up Your Python Development Environment
 
 Choose one of the following environments for your Python development needs:
 
@@ -71,7 +71,7 @@ Choose one of the following environments for your Python development needs:
   - [macOS Setup Guide](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-macos)
   - [Linux/Unix Setup Guide](https://itsfoss.com/python-setup-linux/)
 
-### Step 4: Get Metadata for each NFT in the Collection
+### **Step 4:** Get Metadata for each NFT in the Collection
 
 ```
 # Code
