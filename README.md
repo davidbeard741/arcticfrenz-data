@@ -9,7 +9,7 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
     </td>
   </tr>
   <tr>
-    <td>
+    <td align="center">
       <a href="https://discord.gg/arcticfrenz">
         <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
       </a>
