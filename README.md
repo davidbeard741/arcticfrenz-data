@@ -25,9 +25,9 @@ Below is a structured guide to assist you in fetching metadata for any NFT colle
 1. Visit [Magic Eden](https://magiceden.io) and select an NFT from the collection you are interested in.
 
 2. Navigate to the NFT's detail page and locate its Mint Address, then proceed to [Solscan](https://solscan.io).
-<p margin-left="30">
+<div margin-left="30">
 <img height="300" src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg">
-</p>
+</div>
 
 3. In Solscan, click on the "Creators" tab.
 
