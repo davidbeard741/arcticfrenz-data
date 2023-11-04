@@ -96,14 +96,10 @@ nft_addresses = [
 	</tr>
 	<tr>
 		<td>
-			3. Get your free API Key.
+			3. Get your free API key for Step 6.
+			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/1C21909B-7CF4-41A9-B6A7-8655DF609006.jpeg">
 		</td>
 	</tr>
-	<tr>
-		<td>
-			4. Copy the API Key for Step 6.
-		</td>
-	</tr> 
 </table>
 
 ### **Step 6:** Make a Batched API Request 
