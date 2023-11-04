@@ -145,9 +145,9 @@ def get_metadata(nft_addresses):
             print(f"Failed to retrieve metadata for batch {i // batch_size + 1}: {response.status_code}")
             print("Error message:", response.text)
 
-    with open('/content/drive/MyDrive/nft_metadata.json', 'w') as file:
+    with open('nft_metadata.json', 'w') as file:
         json.dump(all_data, file, indent=4)
-        print("All metadata written to /content/drive/MyDrive/AF/nft_metadata.json")
+        print("All metadata written to nft_metadata.json")
 
 get_metadata(nft_addresses)
 ```
