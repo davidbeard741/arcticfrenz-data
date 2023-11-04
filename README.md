@@ -96,7 +96,7 @@ nft_addresses = [
 	</tr>
 	<tr>
 		<td>
-			3. Get your free API key for Step 6.
+			3. Copy your free API key for Step 6.
 			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/1C21909B-7CF4-41A9-B6A7-8655DF609006.jpeg">
 		</td>
 	</tr>
