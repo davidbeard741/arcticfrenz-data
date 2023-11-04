@@ -2,13 +2,9 @@
 
 Welcome to the Arctic Frenz Data Repository - a specialized resource designed to enhance the Arctic Frenz Bot with extensive NFT analytics. Our repository features in-depth data on aspects like asset ownership duration, listing status, quantity, and rarity of NFTs. It is engineered to offer seamless integration with Discord, allowing community members to conduct ranking checks and access metadata with ease. Additionally, this repository empowers collections to leverage these insights to encourage and strengthen community engagement on Discord platforms.
 
-<p align="center">
 ![Logo](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/IMG_3153.gif)
-</p>
 
-<p align="center">
 ![X (formerly Twitter) URL](https://img.shields.io/twitter/url?url=https%3A%2F%2Ftwitter.com%2Farcticfrenz&logo=x&label=%40ArcticFrenz&link=https%3A%2F%2Ftwitter.com%2Farcticfrenz)
-</p>
 
 ## How to Retrieve NFT Metadata for an Entire Collection
 
