@@ -4,7 +4,7 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 
 <p align="center">
     <img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/IMG_3153.gif"
-        height="auto" width="100%">
+        max-height="150" width="auto">
 </p>
 <p align="center">
     <a href="https://discord.gg/arcticfrenz">
@@ -23,16 +23,17 @@ Below is a structured guide to assist you in fetching metadata for any NFT colle
 
 1. Visit [Magic Eden](https://magiceden.io) and select an NFT from the collection you are interested in.
 2. Navigate to the NFT's detail page and locate its Mint Address, then proceed to [Solscan](https://solscan.io).
-   
-   ![Magic Eden Example](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg)
 
-3. In Solscan, click on the "Creators" tab.
-4. Look for the first listed address that shows a 0% share and is marked with a blue tick. 
-   
+<p align="center" padding-left="10" padding-top="0" padding-right="10" padding-bottom="5">
+    <img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg"
+        max-height="150" width="auto">
+</p>
+
+4. In Solscan, click on the "Creators" tab.
+5. Look for the first listed address that shows a 0% share and is marked with a blue tick.   
    ![Find Creator Address](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/0D636107-2D85-4DBD-849D-E19A2B647338.jpeg)
 
-5. Copy this Creator Address.
-   
+6. Copy this Creator Address.
    ![Copy Creator Address](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/CC753005-3372-463E-97A9-D8E0710BC5A3.jpeg)
 
 ### Step 2: Acquire the Collection's Hash List
