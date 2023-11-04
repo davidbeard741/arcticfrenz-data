@@ -16,4 +16,4 @@ The Arctic Frenz Data Repository offers a comprehensive collection of NFT analyt
 
 ### Step 2: Create a Notebook
 
-- [Google Colab](www.) - a notebooks are Jupyter notebooks that run in the cloud and are highly integrated with Google Drive
+- [Google Colab](www.) Colab notebooks are Jupyter notebooks that run in the cloud.
