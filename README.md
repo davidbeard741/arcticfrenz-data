@@ -91,7 +91,7 @@ nft_addresses = [
 	</tr>
 	<tr>
 		<td>
-			2. signin to Helius 
+			2. Sign-in to Helius 
 		</td>
 	</tr>
 	<tr>
