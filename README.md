@@ -73,7 +73,7 @@ Choose one of the following environments for your Python development needs:
 
 ### **Step 4:** Get Metadata for each NFT in the Collection
 
-Open your development environment and create a create a variable named `nft_addresses` for a Python list. Paste your hash list from [Step 3]() into the Python list.
+Open your development environment and create a create a variable named `nft_addresses` for a Python list. Paste your hash list from [Step 2](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#step-2-acquire-the-collections-hash-list) into the Python list.
 
 ```PYTHON
 nft_addresses = [
