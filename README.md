@@ -54,7 +54,7 @@ Below is a structured guide to assist you in fetching metadata for any NFT colle
 
 ### Step 2: Acquire the Collection's Hash List
 
-<table align="center">
+<table align="center" width="100%">
 	<tr>
 		<td>
 			1. Visit <a href="https://tools.smithii.io/hashlist/solana">Smithii</a>, a tool for Hash List NFTs on the Solana blockchain.
