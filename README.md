@@ -28,7 +28,7 @@ Below is a structured guide to assist you in fetching metadata for any NFT colle
 <table>
   <tr>
     <td>
-      <img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg" align="left">
+      <img width="100%" src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg" align="left">
     </td>
   </tr>
 </table>
