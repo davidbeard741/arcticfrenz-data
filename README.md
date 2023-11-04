@@ -4,7 +4,16 @@ The Arctic Frenz Data Repository offers a comprehensive collection of NFT analyt
 
 ![Arctic Frenz Visualization](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/IMG_3153.gif)
 
-## Data Collection: A Step-by-Step Guide
+## Get NFT Metadata for the entire  Collection: A Step-by-Step Guide
+
+### Step 1: Get Creator Address of the Collection 
+
+- Find an NFT that is part of the collection
+- Copy the token address of the NFT 
+- Paste token address into a [Solscan](https://solscan.io)
+- Click on the "Creators" tab and select the first address that appears, with a 0% and a blue tick. 
+
+
 
 ### Step 1: Get Collection's Hash List
 
