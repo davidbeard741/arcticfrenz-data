@@ -23,4 +23,4 @@ The Arctic Frenz Data Repository offers a comprehensive collection of NFT analyt
 
 - [Google Colab](https://colab.research.google.com) notebooks are Jupyter notebooks that run in the cloud.
 - [JupyterLab](https://jupyter.org/) is the latest web-based interactive development environment for notebooks, code, and data.
-- Local Environment on [Windows](https://realpython.com/python-coding-setup-windows/], on [macOS](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-macos), or on [Linux/Unix Systems](https://itsfoss.com/python-setup-linux/)
+- Local Environment on [Windows](https://realpython.com/python-coding-setup-windows/), on [macOS](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-macos), or on [Linux/Unix Systems](https://itsfoss.com/python-setup-linux/)
