@@ -29,12 +29,12 @@ Below is a structured guide to assist you in fetching metadata for any NFT colle
 <table align="center">
 	<tr>
 		<td>
-			1. Visit [Magic Eden](https://magiceden.io) and select an NFT from the collection you are interested in.
+			1. Visit <a href="https://magiceden.io">Magic Eden</a> and select an NFT from the collection you are interested in.
 		</td>
 	</tr>
 	<tr>
 		<td>
-			2. Navigate to the NFT's detail page and locate its Mint Address, then proceed to [Solscan](https://solscan.io).
+			2. Navigate to the NFT's detail page and locate its Mint Address, then proceed to <a href="https://solscan.io">Solscan</a>
 			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg">
 		</td>
 	</tr>
@@ -108,7 +108,7 @@ nft_addresses = [
 
 ### **Step 6:** Make a Batched API Request 
 
-Open your development environment, create a variable named `apikey`. Paste your API Key from [Step 5]() into the variable 
+Open your development environment, create a variable named `apikey`. Paste your API Key from [Step 5](https://github.com/davidbeard741/arcticfrenz-data#step-5-helius) into the variable 
 
 ```PYTHON
 apikey = "INSERT YOUR API KEY BETWEEN THESE QUOTATION MARKS"
