@@ -342,7 +342,7 @@ The JSON is truncated for illustrative purposes; the 'nft_metadata' output file 
 
 ### Step 1: Setting Up Your Python Development Environment
 
-Refer to Part 1, Step 3 for the setup instructions.
+Refer to [Part 1, Step 3](www) for the setup instructions.
 
 ### Step 2: Beautiful Soup
 
