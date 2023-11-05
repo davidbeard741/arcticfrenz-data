@@ -24,7 +24,7 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 
 A structured guide designed to help you retrieve the metadata for each NFT in a collection.
 
-### **Step 1:** Identify the Creator Address
+### Step 1: Identify the Creator Address
 
 <table align="center">
 	<tr>
@@ -52,15 +52,15 @@ A structured guide designed to help you retrieve the metadata for each NFT in a 
 	</tr> 
 </table>
 
-### **Step 2:** Acquire the Collection's Hash List
+### Step 2: Acquire the Collection's Hash List
 
 1. Visit <a href="https://tools.smithii.io/hashlist/solana">Smithii</a>, a tool for Hash List NFTs on the Solana blockchain.
 2. Paste the Creator Address obtained from [Step 1](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#step-1-identify-the-creator-address) into the provided field.
 3. Click 'Get hash list' to generate the list.
 4. Please be patient, as generating the hash list may take a few minutes.
-5. Once the list is available, copy or save the list for Step 4.
+5. Once the list is available, copy or save the list for Part 1, Step 4.
 
-### **Step 3:** Set Up Your Python Development Environment
+### Step 3: Set Up Your Python Development Environment
 
 Choose one of the following environments for your Python development needs:
 
@@ -71,9 +71,9 @@ Choose one of the following environments for your Python development needs:
   - [macOS Setup Guide](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-macos)
   - [Linux/Unix Setup Guide](https://itsfoss.com/python-setup-linux/)
 
-### **Step 4:** Make a Python List
+### Step 4: Make a Python List
 
-Open your development environment and create a variable named `nft_addresses` for a Python list. Paste your hash list from [Step 2](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#step-2-acquire-the-collections-hash-list) into the Python list.
+Open your development environment and create a variable named `nft_addresses` for a Python list. Paste your hash list from [Part 1, Step 2](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#step-2-acquire-the-collections-hash-list) into the Python list.
 
 ```PYTHON
 nft_addresses = [
@@ -81,7 +81,7 @@ nft_addresses = [
 ]
 ```
 
-### **Step 5:** Helius
+### Step 5: Helius
 
 <table align="center">
 	<tr>
@@ -102,9 +102,9 @@ nft_addresses = [
 	</tr>
 </table>
 
-### **Step 6:** Make a Batched API Request 
+### Step 6: Make a Batched API Request 
 
-Open your development environment, create a variable named `apikey`. Paste your API Key from [Step 5](https://github.com/davidbeard741/arcticfrenz-data#step-5-helius) into the variable 
+Open your development environment, create a variable named `apikey`. Paste your API Key from [Part 1, Step 5](https://github.com/davidbeard741/arcticfrenz-data#step-5-helius) into the variable 
 
 ```PYTHON
 apikey = "INSERT YOUR API KEY BETWEEN THESE QUOTATION MARKS"
@@ -148,7 +148,7 @@ def get_metadata(nft_addresses):
 get_metadata(nft_addresses)
 ```
 
-### **Step 7:** Run the Code
+### Step 7: Run the Code
 
 Below is the complete code. Execute it to generate a file named 'nft_metadata.json' that will include the metadata each NFT in the collection.
 
@@ -334,4 +334,10 @@ The JSON is truncated for illustrative purposes; the 'nft_metadata' output file 
 ]
 ```
 
-## Part 2: Enriching the NFT Metadata with additional data for an Entire Collection
+## Part 2: Enhancing the Metadata of the Entire NFT Collection with Additional Data
+
+### Step 1: Setting Up Your Python Development Environment
+
+Refer to Part 1, Step 3 for the setup instructions.
+
+### Step 2: 🕸️🔎
