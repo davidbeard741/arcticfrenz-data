@@ -326,9 +326,9 @@ get_metadata(nft_addresses)
         },
         "legacyMetadata": null
     },
-		{
-			"_comment": "The file has been truncated for this example; the output JSON file nft_metadata will contain all NFTs in the collection",
-		}
-	]
+    {
+      "_comment": "The file has been truncated for this example; the output JSON file nft_metadata will contain all NFTs in the collection",
+    }
+]
 ```
 
