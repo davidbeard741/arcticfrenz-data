@@ -340,4 +340,10 @@ The JSON is truncated for illustrative purposes; the 'nft_metadata' output file 
 
 Refer to Part 1, Step 3 for the setup instructions.
 
-### Step 2: 🕸️🔎
+### Step 2: Beautiful Soup
+
+Install [Beautiful Soup](www), a Python library for parsing structured data
+
+```
+!pip install beautifulsoup4
+```
