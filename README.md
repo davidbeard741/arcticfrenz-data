@@ -195,7 +195,7 @@ def get_metadata(nft_addresses):
 get_metadata(nft_addresses)
 ```
 
-### Output File
+### The Output JSON File
 
 ```JSON
 [
