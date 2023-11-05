@@ -338,16 +338,33 @@ The JSON is truncated for illustrative purposes; the 'nft_metadata' output file 
 
 ---
 
-## Part 2: Enhancing the Metadata of the Entire NFT Collection with Additional Data
+## Part 2: Enhancing the Metadata of an Entire NFT Collection with Additional Data
 
 ### Step 1: Setting Up Your Python Development Environment
 
 Refer to [Part 1, Step 3](www) for the setup instructions.
 
-### Step 2: Beautiful Soup
+### Step 2: Fetching the Web Page
 
-Install [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/), a Python library for parsing structured data.
+Start by briefly examining the structure of the HTML, which will enable effective navigation through the parse tree in subsequent steps.
 
+```python
+import requests
+
+# The URL of the page you want to parse
+URL = "https://realpython.github.io/fake-jobs/"
+
+page = requests.get(URL)
+
+print(page.text)
 ```
-!pip install beautifulsoup4
+
+### Step 3: Parsing HTML with Beautiful Soup
+
+To work with the data from the fetched HTML page, we'll use [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/), a Python library that simplifies web scraping by converting HTML and XML documents into a parse tree. This tree is easy to navigate, which is helpful for data extraction and manipulation.
+
+If you haven't installed Beautiful Soup yet, open your terminal and run the following command:
+
+```shell
+pip install beautifulsoup4
 ```
