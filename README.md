@@ -20,6 +20,8 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 	</tr>
 </table>
 
+---
+
 ## Part 1: How to Retrieve NFT Metadata for an Entire Collection
 
 A structured guide designed to help you retrieve the metadata for each NFT in a collection.
@@ -333,6 +335,8 @@ The JSON is truncated for illustrative purposes; the 'nft_metadata' output file 
     }
 ]
 ```
+
+---
 
 ## Part 2: Enhancing the Metadata of the Entire NFT Collection with Additional Data
 
