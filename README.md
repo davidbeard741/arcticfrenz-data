@@ -322,7 +322,7 @@ Start by briefly examining the structure of the HTML, which will enable effectiv
 import requests
 
 # The URL of the page you want to parse
-URL = "[https://realpython.github.io/fake-jobs/](https://solana.fm/address/DYTo4wYJDA2tRkD3kMzthDY3rrnyWMgSFrBc3TtiSjQq?mode=lite&cluster=mainnet-solanafmbeta)"
+URL = "https://realpython.github.io/fake-jobs/"
 
 page = requests.get(URL)
 
