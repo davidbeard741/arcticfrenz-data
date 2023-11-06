@@ -165,7 +165,7 @@ get_metadata(nft_addresses)
 
 ### The Output JSON File
 
-The JSON is truncated for illustrative purposes; the 'nft_metadata' output file will encompass all NFTs in the collection.
+The example JSON below is truncated for illustrative purposes; the 'nft_metadata' output file will encompass all NFTs in the collection.
 
 <details>
   <summary>CLICK TO EXPAND</summary>
