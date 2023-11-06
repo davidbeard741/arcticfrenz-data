@@ -342,7 +342,7 @@ The JSON is truncated for illustrative purposes; the 'nft_metadata' output file 
 
 ### Step 1: Setting Up Your Python Development Environment
 
-Refer to [Part 1, Step 3](www) for the setup instructions.
+Refer to [Part 1, Step 3](https://github.com/davidbeard741/arcticfrenz-data#step-3-set-up-your-python-development-environment) for the setup instructions.
 
 ### Step 2: Fetching the Web Page
 
