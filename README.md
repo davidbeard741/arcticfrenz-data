@@ -112,44 +112,6 @@ Open your development environment, create a variable named `apikey`. Paste your 
 apikey = "INSERT YOUR API KEY BETWEEN THESE QUOTATION MARKS"
 ```
 
-Copy and paste the code below into your development environement. 
-
-```PYTHON
-import requests
-import json
-
-url = f"https://api.helius.xyz/v0/token-metadata?api-key={apikey}"
-
-def get_metadata(nft_addresses):
-    batch_size = 80
-    all_data = []
-
-    for i in range(0, len(nft_addresses), batch_size):
-        batch_addresses = nft_addresses[i:i + batch_size]
-        payload = {
-            "mintAccounts": batch_addresses,
-            "includeOffChain": True,
-            "disableCache": False
-        }
-        headers = {
-            'Content-Type': 'application/json',
-        }
-        response = requests.post(url, headers=headers, json=payload)
-        if response.status_code == 200:
-            batch_data = response.json()
-            all_data.extend(batch_data)
-            print(f"Batch {i // batch_size + 1} successfully retrieved.")
-        else:
-            print(f"Failed to retrieve metadata for batch {i // batch_size + 1}: {response.status_code}")
-            print("Error message:", response.text)
-
-    with open('nft_metadata.json', 'w') as file:
-        json.dump(all_data, file, indent=4)
-        print("All metadata written to nft_metadata.json")
-
-get_metadata(nft_addresses)
-```
-
 ### Step 7: Run the Code
 
 Below is the complete code. Execute it to generate a file named 'nft_metadata.json' that will include the metadata each NFT in the collection.
