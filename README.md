@@ -333,37 +333,8 @@ print(page.text)
 
 To work with the data from the fetched HTML page, we'll use [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/), a Python library that simplifies web scraping by converting HTML and XML documents into a parse tree. This tree is easy to navigate, which is helpful for data extraction and manipulation.
 
-If you haven't installed Beautiful Soup yet, open your terminal and run the following command:
+Install Beautiful Soup, open your terminal and run the following command:
 
 ```shell
 pip install beautifulsoup4
-```
-
-Save the body of the HTML to a file
-
-```html
-import requests
-from bs4 import BeautifulSoup
-
-# set the URL to parse
-URL = "https"
-
-page = requests.get(URL)
-
-soup = BeautifulSoup(page.content, 'html.parser')
-
-body = soup.find('body')
-
-if body:
-    with open("htmlbody.html", "w", encoding='utf-8') as f:
-        f.write(str(body))
-else:
-    print("No body tag found in the HTML.")
-```
-
-Output saved as 'htmlbody.html': 
-
-```html
-<body>
-</body>
 ```
