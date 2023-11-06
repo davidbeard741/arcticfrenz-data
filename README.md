@@ -201,7 +201,10 @@ get_metadata(nft_addresses)
 
 The JSON is truncated for illustrative purposes; the 'nft_metadata' output file will encompass all NFTs in the collection.
 
-```JSON
+<details>
+  <summary>Click to expand!</summary>
+
+```JSON 
 [
     {
         "account": "DYTo4wYJDA2tRkD3kMzthDY3rrnyWMgSFrBc3TtiSjQq",
@@ -335,6 +338,7 @@ The JSON is truncated for illustrative purposes; the 'nft_metadata' output file 
     }
 ]
 ```
+</details>
 
 ---
 
