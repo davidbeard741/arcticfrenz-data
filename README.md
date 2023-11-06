@@ -308,13 +308,231 @@ The example JSON below is truncated for illustrative purposes; the 'nft_metadata
 
 ---
 
-## Part 2: Enhancing the Metadata of an Entire NFT Collection with Additional Data
+## Part 2: Calculating Rarity Scores for NFTs Based on Off-Chain Metadata
+
+The concept of rarity in the context of NFTs pertains to the uniqueness and scarcity of certain traits within a collection. Rarity scores can significantly impact the perceived value and desirability of individual NFTs. This section outlines the process for calculating rarity scores using the off-chain metadata associated with each NFT.
+
+### Steps to Calculate Rarity Scores
+
+1. **List Traits**: Enumerate all distinct traits and their possible values from the `offChainMetadata` within the NFT dataset.
+   
+2. **Count Traits**: Tally the frequency of each trait value across the collection to determine how common or rare each trait is.
+
+3. **Calculate Rarity Scores**: Assign a rarity score to each NFT by summing the inverse frequencies of its trait values. This score quantifies the rarity, with higher scores indicating rarer traits.
+
+### Implementation
+
+The following Python script performs the above steps. It processes the off-chain metadata to compute a rarity score for each NFT, then appends this score to the original dataset, and finally outputs the enriched dataset as a JSON file.
+
+<details>
+  <summary>CLICK TO EXPAND Python Code</summary>
+	
+```python
+import json
+import pandas as pd
+
+# Define a function to compute the rarity score based on trait counts
+def calculate_rarity_score(attributes, trait_counts_df):
+    # The rarity score is the sum of inverses of trait counts
+    score = sum(1 / trait_counts_df[(trait_counts_df['traitType'] == attr['traitType']) & 
+                                    (trait_counts_df['value'] == attr['value'])]['count'].values[0]
+                for attr in attributes if len(trait_counts_df[(trait_counts_df['traitType'] == attr['traitType']) & 
+                                                              (trait_counts_df['value'] == attr['value'])]) > 0)
+    return score
+
+# Load the JSON data
+file_path = 'nft_metadata.json'
+with open(file_path, 'r') as file:
+    nft_metadata = json.load(file)
+
+# Normalize the data into a flat table
+nft_df = pd.json_normalize(nft_metadata)
+
+# Prepare the trait values and counts
+attributes_list = nft_df.dropna(subset=['offChainMetadata.metadata.attributes'])['offChainMetadata.metadata.attributes'].tolist()
+attributes_flat_list = [attr for sublist in attributes_list for attr in sublist]
+attributes_df = pd.DataFrame(attributes_flat_list)
+trait_counts = attributes_df.groupby(['traitType', 'value']).size().reset_index(name='count')
+
+# Compute rarity scores for each NFT
+nft_df['rarity_score'] = nft_df['offChainMetadata.metadata.attributes'].apply(
+    lambda attrs: calculate_rarity_score(attrs, trait_counts) if isinstance(attrs, list) else None
+)
+
+# Append the rarity scores to the original data
+for i, record in enumerate(nft_metadata):
+    rarity_score = nft_df.loc[i, 'rarity_score']
+    record['rarity_score'] = rarity_score if pd.notnull(rarity_score) else 0
+
+# Save the enriched data to a new JSON file
+updated_file_path = 'nft_metadata_with_rarity.json'
+with open(updated_file_path, 'w') as file:
+    json.dump(nft_metadata, file, indent=4)
+
+print(f"Updated JSON file saved to {updated_file_path}")
+```
+</details>
+
+### Rarity Score Implications
+A lower frequency of a trait value indicates rarity, and hence, it contributes more significantly to the rarity score. The scoring system is designed such that the sum of the inverses of the trait frequencies for an NFT's traits yields its total rarity score. The end result is a comprehensive dataset where each NFT entry is supplemented with a rarity_score field, reflecting its uniqueness within the collection.
+
+### Note on Rarity Score Calculation
+
+In the rarity score calculation, it is possible for an NFT to have missing or undefined attributes. When such cases arise, the script is designed to handle these gracefully by assigning a default rarity score of 0. This ensures that every NFT has a defined rarity score when saved to the JSON file. By doing so, the dataset maintains consistency and allows for a meaningful comparison between NFTs, even if some have incomplete metadata. This approach also prevents potential errors during data processing and analysis that could occur due to undefined or missing values.
+
+### Example Output
+The output is an updated JSON file, nft_metadata_with_rarity.json, where each NFT entry now includes a rarity_score. Below is a truncated example of what an NFT entry might look like with an appended rarity score:
+
+<details>
+  <summary>CLICK TO EXPAND JSON Example</summary>
+
+```JSON
+[
+    {
+        "account": "DYTo4wYJDA2tRkD3kMzthDY3rrnyWMgSFrBc3TtiSjQq",
+        "onChainAccountInfo": {
+            "accountInfo": {
+                "key": "DYTo4wYJDA2tRkD3kMzthDY3rrnyWMgSFrBc3TtiSjQq",
+                "isSigner": false,
+                "isWritable": false,
+                "lamports": 1461600,
+                "data": {
+                    "parsed": {
+                        "info": {
+                            "decimals": 0,
+                            "freezeAuthority": "62q7i8DMds7SAPSjnShQKHjacZd29421XH4qnNad5xGK",
+                            "isInitialized": true,
+                            "mintAuthority": "62q7i8DMds7SAPSjnShQKHjacZd29421XH4qnNad5xGK",
+                            "supply": "1"
+                        },
+                        "type": "mint"
+                    },
+                    "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                    "space": 82
+                },
+                "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+                "executable": false,
+                "rentEpoch": 361
+            },
+            "error": ""
+        },
+        "onChainMetadata": {
+            "metadata": {
+                "tokenStandard": "NonFungible",
+                "key": "MetadataV1",
+                "updateAuthority": "6DMG9hv3eR8BXKH79sXGyQtfRSxXfNrkHEdc6nCsEjVK",
+                "mint": "DYTo4wYJDA2tRkD3kMzthDY3rrnyWMgSFrBc3TtiSjQq",
+                "data": {
+                    "name": "Arctic Fox #41",
+                    "symbol": "AFAF",
+                    "uri": "https://m5brw73kei7uoysb7gxdomaxbdqobnz27j65nrq7ohbpgrktfjmq.arweave.net/Z0Mbf2oiP0diQfmuNzAXCODgtzr6fdbGH3HC80VTKlk",
+                    "sellerFeeBasisPoints": 1500,
+                    "creators": [
+                        {
+                            "address": "79iAsPyGDhQ7Sw5HcSkhYX9b3tzXp4phxjfPdo9xkmx1",
+                            "verified": true,
+                            "share": 0
+                        },
+                        {
+                            "address": "2wBMxuAYKiVjQFGB48bhHPexNRyeHcDN1aaYT4WYv5r5",
+                            "verified": true,
+                            "share": 54
+                        },
+                        {
+                            "address": "8XzUgMAhFZWERytRDNVBdL95LL5Ftox72EiSNzTu63QS",
+                            "verified": true,
+                            "share": 46
+                        }
+                    ]
+                },
+                "primarySaleHappened": true,
+                "isMutable": true,
+                "editionNonce": 255,
+                "uses": {
+                    "useMethod": "",
+                    "remaining": 0,
+                    "total": 0
+                },
+                "collection": {
+                    "key": "EFjksSb2b897hvxuHXrnVoE2y66iufiJxtDSgFJZYQna",
+                    "verified": true
+                },
+                "collectionDetails": null
+            },
+            "error": ""
+        },
+        "offChainMetadata": {
+            "metadata": {
+                "attributes": [
+                    {
+                        "traitType": "Arctic Animal",
+                        "value": "Fox"
+                    },
+                    {
+                        "traitType": "Endangered",
+                        "value": "No"
+                    },
+                    {
+                        "traitType": "Paw",
+                        "value": "Left-Up"
+                    },
+                    {
+                        "traitType": "Eyes",
+                        "value": "Heterochromia"
+                    },
+                    {
+                        "traitType": "Mouth",
+                        "value": "Blep"
+                    }
+                ],
+                "description": "An exclusive family, 69 #SolanaNFTs per collection. Liquidity adding for rewarding #ArcticFrenz.",
+                "image": "https://arweave.net/p5C032iu3UQ4Lpr5cTNlcW8bVDrcVd872QChc3z8J-4?ext=png",
+                "name": "Arctic Fox #41",
+                "properties": {
+                    "category": null,
+                    "creators": [
+                        {
+                            "address": "2wBMxuAYKiVjQFGB48bhHPexNRyeHcDN1aaYT4WYv5r5",
+                            "share": 54
+                        },
+                        {
+                            "address": "8XzUgMAhFZWERytRDNVBdL95LL5Ftox72EiSNzTu63QS",
+                            "share": 46
+                        }
+                    ],
+                    "files": [
+                        {
+                            "type": "image/png",
+                            "uri": "40.png"
+                        }
+                    ]
+                },
+                "sellerFeeBasisPoints": 1500,
+                "symbol": "AFAF"
+            },
+            "uri": "https://m5brw73kei7uoysb7gxdomaxbdqobnz27j65nrq7ohbpgrktfjmq.arweave.net/Z0Mbf2oiP0diQfmuNzAXCODgtzr6fdbGH3HC80VTKlk",
+            "error": ""
+        },
+        "legacyMetadata": null,
+        "rarity_score": 0.1473389390210555
+    },
+    {
+      "_comment": "The file has been truncated for this example; the output JSON file nft_metadata_with_rarity will contain all NFTs in the collection with their rarity_score",
+    }
+]
+
+```
+</details>
+
+---
+
+## Part 3: Enhancing the Metadata of an Entire NFT Collection with Additional Data (WORKING IN PROGRESS)
 
 ### Step 1: Setting Up Your Python Development Environment
 
 Refer to [Part 1, Step 3](https://github.com/davidbeard741/arcticfrenz-data#step-3-set-up-your-python-development-environment) for the setup instructions.
 
-### Step 2: Fetching the Web Page
+### Step 2: Fetching the Web Page 
 
 Start by briefly examining the structure of the HTML, which will enable effective navigation through the parse tree in subsequent steps.
 
