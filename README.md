@@ -154,6 +154,9 @@ get_metadata(nft_addresses)
 
 Below is the complete code. Execute it to generate a file named 'nft_metadata.json' that will include the metadata each NFT in the collection.
 
+<details>
+  <summary>CLICK TO EXPAND</summary>
+
 ```PYTHON
 import requests
 import json
@@ -196,13 +199,14 @@ def get_metadata(nft_addresses):
 
 get_metadata(nft_addresses)
 ```
+</details>
 
 ### The Output JSON File
 
 The JSON is truncated for illustrative purposes; the 'nft_metadata' output file will encompass all NFTs in the collection.
 
 <details>
-  <summary>Click to expand!</summary>
+  <summary>CLICK TO EXPAND</summary>
 
 ```JSON 
 [
