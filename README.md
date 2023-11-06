@@ -104,7 +104,7 @@ nft_addresses = [
 	</tr>
 </table>
 
-### Step 6: Make a Batched API Request 
+### Step 6: API Key 
 
 Open your development environment, create a variable named `apikey`. Paste your API Key from [Part 1, Step 5](https://github.com/davidbeard741/arcticfrenz-data#step-5-helius) into the variable 
 
@@ -112,7 +112,7 @@ Open your development environment, create a variable named `apikey`. Paste your 
 apikey = "INSERT YOUR API KEY BETWEEN THESE QUOTATION MARKS"
 ```
 
-### Step 7: Run the Code
+### Step 7: Make a Batched API Request
 
 Below is the complete code. Execute it to generate a file named 'nft_metadata.json' that will include the metadata each NFT in the collection.
 
