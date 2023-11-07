@@ -1,10 +1,8 @@
 # Webpage Screenshot with Python and Selenium
 
-This repository provides a script for capturing screenshots of webpages automatically using Python and [Selenium](https://pythonbasics.org/selenium-screenshot/) WebDriver. The script supports capturing both visible viewport and full page screenshots.
+A script for capturing screenshots of webpages automatically using Python and [Selenium](https://pythonbasics.org/selenium-screenshot/) WebDriver. The script supports capturing both visible viewport and full page screenshots.
 
-Ensure that you have the Selenium WebDriver compatible with your browser version and that the `selenium` module is installed in your Python environment. 
-
-Install the required Python modules (if not already installed):
+Install the required Python modules:
 
 ```shell
 pip install selenium
