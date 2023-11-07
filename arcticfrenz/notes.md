@@ -1,77 +1,71 @@
-Take Webpage Screenshot with Python Selenium
-Screenshots of webpages can be taken automatically with Python Selenium Web Driver. First load the selenium module and time module. You need the time module to wait for page loading to complete.
+# Webpage Screenshot with Python and Selenium
 
-Then once the page is loaded, take the screenshot. This can be a png file or another image format. Then close the web browser, otherwise it will stay open indefinetly.
+This repository provides a script for capturing screenshots of webpages automatically using Python and [Selenium](https://pythonbasics.org/selenium-screenshot/) WebDriver. The script supports capturing both visible viewport and full page screenshots.
 
-source:
+Ensure that you have the Selenium WebDriver compatible with your browser version and that the `selenium` module is installed in your Python environment. 
+
+Install the required Python modules (if not already installed):
+
+```shell
+pip install selenium
 ```
-https://pythonbasics.org/selenium-screenshot/
-```
 
-Example
+## Taking a Screenshot
 
-Before you start, make sure that you have the Selenium Web Driver installed (unique for your Web Browser) and that you have the selenium module installed.
+To capture a screenshot, invoke the `get_screenshot_as_file()` method with the desired filename as the parameter. Below is an example that uses Firefox to load a webpage and take a screenshot. However, you can adapt the code to use any other web browser of your choice.
 
-You can take a screenshot of a webpage with the method get_screenshot_as_file() with as parameter the filename.
-The program below uses firefox to load a webpage and take a screenshot, but any web browser will do.
-
-```
+```python
 from selenium import webdriver
 from time import sleep
 
+# Initialize WebDriver
 driver = webdriver.Firefox()
 driver.get('https://www.python.org')
+
+# Wait for the desired page to load
 sleep(1)
 
+# Capture and save the screenshot
 driver.get_screenshot_as_file("screenshot.png")
+
+# Close the browser
 driver.quit()
-print("end...")
+
+print("Screenshot captured successfully!")
 ```
 
-The screenshot image will be stored in the same directory as your Python script. Unless you explicitly define the path where the screenshot has to be stored.
+The screenshot will be saved in the same directory as the script, unless an alternative path is specified in the filename.
 
-selenium screenshot
+## Capturing Full Page Screenshot
 
-The first step is to import the required modules,
+To take a screenshot of the entire webpage (including off-screen parts), you may need to set the browser in headless mode and adjust the window size to the web page dimensions. The following code demonstrates how to do this with Chrome in headless mode:
 
-```
-from selenium import webdriver
-from time import sleep
-Then fire up the browser and load a webpage.
-
-driver = webdriver.Firefox()
-driver.get('https://www.python.org')
-sleep(1)
-```
-
-When the page has loaded, you can take a screenshot using the method `.get_screenshot_as_file(filename)`.
-
-```
-driver.get_screenshot_as_file("screenshot.png")
-```
-
-Take screenshot of full page with Python Selenium
-
-The above code only takes a screenshot of the visible browser window. There are several ways to take a full page screenshot, which includes the web page from top to bottom.
-You can do it this way, note that it’s mandatory to set the browser to headless for this to work:
-
-```
+```python
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-
-options = webdriver.ChromeOptions()
+# Set Chrome options for headless mode
+options = Options()
 options.headless = True
 driver = webdriver.Chrome(options=options)
 
+# Target webpage URL
 URL = 'https://pythonbasics.org'
 
 driver.get(URL)
 
+# Define a lambda to calculate the dimensions
 S = lambda X: driver.execute_script('return document.body.parentNode.scroll'+X)
-driver.set_window_size(S('Width'),S('Height')) # May need manual adjustment                                                                                                                
-driver.find_element_by_tag_name('body').screenshot('web_screenshot.png')
 
+# Set window size based on page dimensions (may require manual adjustment)
+driver.set_window_size(S('Width'), S('Height'))
+
+# Take full page screenshot and save
+driver.find_element_by_tag_name('body').screenshot('full_web_screenshot.png')
+
+# Close the browser
 driver.quit()
+
+print("Full page screenshot captured successfully!")
 ```
