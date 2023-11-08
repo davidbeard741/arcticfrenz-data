@@ -532,27 +532,30 @@ The output is an updated JSON file, nft_metadata_with_rarity.json, where each NF
 
 Refer to [Part 1, Step 3](https://github.com/davidbeard741/arcticfrenz-data#step-3-set-up-your-python-development-environment) for the setup instructions.
 
-### Step 2: Fetching the Web Page 
+### Step 2: Web Page Screenshot Capture with Selenium and Text Extraction via Optical Character Recognition (OCR) 
 
-Start by briefly examining the structure of the HTML, which will enable effective navigation through the parse tree in subsequent steps.
-
-```python
-import requests
-
-# The URL of the page you want to parse
-URL = "https://realpython.github.io/fake-jobs/"
-
-page = requests.get(URL)
-
-print(page.text)
-```
-
-### Step 3: Parsing HTML with Beautiful Soup
-
-To work with the data from the fetched HTML page, we'll use [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/), a Python library that simplifies web scraping by converting HTML and XML documents into a parse tree. This tree is easy to navigate, which is helpful for data extraction and manipulation.
-
-Install Beautiful Soup, open your terminal and run the following command:
+Install 
 
 ```shell
-pip install beautifulsoup4
+apt update
+apt install chromium-chromedriver
+pip install selenium
+pip install pytesseract
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install ./google-chrome-stable_current_amd64.deb
 ```
+
+Start by briefly examining the text extracted from an entire webpage. 
+
+```python
+import os
+import pytesseract
+from selenium import webdriver
+from bs4 import BeautifulSoup
+from PIL import Image
+
+# WIP 
+```
+
+### Step 3: Automated Monitoring of NFT Holders within a Collection on a Recurring Schedule
+
+WIP: Github Actions, Worker, pipeline, etc 
