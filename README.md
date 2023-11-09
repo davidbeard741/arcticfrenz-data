@@ -547,4 +547,5 @@ https://solscan.io/token/E2n65ZPrE6zKZzKVK41DrgUgZEEq56TcPMpn1ifL6Us4#holders
 https://solscan.io/token/{account}#holders
 ```
 
+
 ### Step 3: Automated Monitoring of NFT Holders within a Collection on a Recurring Schedule
