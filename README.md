@@ -536,7 +536,7 @@ Refer to [Part 1, Step 3](https://github.com/davidbeard741/arcticfrenz-data#step
 
 WIP Notes:
 
-`````
+```
 Arctic Walrus #02 (AFAW)
 
 Token Address: 
@@ -546,6 +546,5 @@ https://solscan.io/token/E2n65ZPrE6zKZzKVK41DrgUgZEEq56TcPMpn1ifL6Us4#holders
 
 https://solscan.io/token/{account}#holders
 ```
-
 
 ### Step 3: Automated Monitoring of NFT Holders within a Collection on a Recurring Schedule
