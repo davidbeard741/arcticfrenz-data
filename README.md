@@ -534,28 +534,17 @@ Refer to [Part 1, Step 3](https://github.com/davidbeard741/arcticfrenz-data#step
 
 ### Step 2: Web Page Screenshot Capture with Selenium and Text Extraction via Optical Character Recognition (OCR) 
 
-Install 
+WIP Notes:
 
-```shell
-apt update
-apt install chromium-chromedriver
-pip install selenium
-pip install pytesseract
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install ./google-chrome-stable_current_amd64.deb
-```
+`````
+Arctic Walrus #02 (AFAW)
 
-Start by briefly examining the text extracted from an entire webpage. 
+Token Address: 
+E2n65ZPrE6zKZzKVK41DrgUgZEEq56TcPMpn1ifL6Us4
 
-```python
-import os
-import pytesseract
-from selenium import webdriver
-from bs4 import BeautifulSoup
-from PIL import Image
+https://solscan.io/token/E2n65ZPrE6zKZzKVK41DrgUgZEEq56TcPMpn1ifL6Us4#holders
 
-# WIP 
+https://solscan.io/token/{account}#holders
 ```
 
 ### Step 3: Automated Monitoring of NFT Holders within a Collection on a Recurring Schedule
-
-WIP: Github Actions, Worker, pipeline, etc 
