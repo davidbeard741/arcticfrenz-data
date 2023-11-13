@@ -657,16 +657,22 @@ def extract_solana_address_combined(text):
     if "Magic Eden V2 Authority" in text:
         return "Magic Eden V2 Authority"
     
-    solana_address_regex = r'[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{32,44}'
+    # More forgiving regex: Allows for spaces and characters, but expects a certain length
+    solana_address_regex = r'([123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz\s]{30,60})'
 
     addresses = re.findall(solana_address_regex, text)
 
+    # Cleaning and checking each found address
     for addr in addresses:
-        if 32 <= len(addr) <= 44: 
-            address = addr
+        # Remove spaces and potential misread characters
+        cleaned_addr = ''.join(filter(str.isalnum, addr))
+        if 32 <= len(cleaned_addr) <= 44:
+            address = cleaned_addr
             break
 
     return address
+
+
 
 def screenshot(url, driver):
 
@@ -735,7 +741,6 @@ if __name__ == '__main__':
 
     with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity_and_holders.json', 'w') as file:
         json.dump(nft_metadata, file)
-
 ```
 
 Example Output:
