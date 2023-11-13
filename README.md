@@ -540,17 +540,20 @@ Refer to [Part 1, Step 3](https://github.com/davidbeard741/arcticfrenz-data#step
 
 ```shell
 !apt update
-!pip install selenium pytesseract
 
 !apt install chromium-chromedriver
-!apt install tesseract-ocr
+
+!pip install selenium pytesseract 
+
+!apt-get install tesseract-ocr
+!apt-get install tesseract-ocr-eng
+
 !apt install libtesseract-dev
 
 !wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install ./google-chrome-stable_current_amd64.deb
 ```
 
 ```shell
-import pytesseract
 pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 ```
 
@@ -601,9 +604,7 @@ def driversetup():
     options.add_argument("--remote-debugging-port=9222")
     options.add_argument("lang=en-US")
     options.add_argument("location=US")
-    width = random.randint(1600, 1920)
-    height = random.randint(900, 1080)
-    options.add_argument(f"--window-size={1600},{900}")
+    options.add_argument(f"--window-size={2560},{1440}")
     options.add_argument("disable-infobars")
     options.add_argument("--disable-extensions")
     options.add_argument("--incognito")
@@ -625,9 +626,9 @@ def driversetup():
     caps['goog:loggingPrefs'] = {'browser': 'ALL'}
     service = Service('/usr/bin/chromedriver')
     driver = webdriver.Chrome(options=options)
-    driver.execute_cdp_cmd("Network.clearBrowserCache", {})
     driver.execute_cdp_cmd("Network.clearBrowserCookies", {})
     driver.execute_cdp_cmd("Network.setExtraHTTPHeaders", {"headers": {"Referer": "https://www.google.com/"}})
+    driver.execute_script("document.body.style.zoom='100%'")
     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
 
     return driver
@@ -650,16 +651,34 @@ def simulate_human_interaction(driver):
 def random_sleep(min_seconds, max_seconds):
     time.sleep(random.uniform(min_seconds, max_seconds))
 
-def extract_solana_address(text):
-  regex = r'\b[A-Za-z0-9]{32,44}\s[1-9][0-9]{0,2}\b'
+def extract_solana_address_combined(text):
+    # Initialize the address variable
+    address = None
 
-  match = re.search(regex, text)
+    # Special case for "Magic Eden V2 Authority"
+    if "Magic Eden V2 Authority" in text:
+        address = "Magic Eden V2 Authority"
+    else:
+        potential_addresses = []
 
-  if match:
-    address = match.group().split()[0]
+        # Keywords that might precede the correct address
+        keywords = ["Token Address", "Mint Authority", "Update Authority", "Freeze Authority"]
+        for keyword in keywords:
+            pattern = rf"{keyword}\s*([A-Za-z0-9]{{32,44}})"
+            matches = re.findall(pattern, text)
+            potential_addresses.extend(matches)
+
+        # General pattern matching for potential addresses
+        general_pattern = r'\b[A-Za-z0-9]{32,44}\b'
+        general_matches = re.findall(general_pattern, text)
+        potential_addresses.extend(general_matches)
+
+        # Heuristic selection from potential addresses
+        if potential_addresses:
+            # Simple heuristic: select the most frequent address (or the first in case of a tie)
+            address = max(set(potential_addresses), key=potential_addresses.count)
+
     return address
-  else:
-    return None
 
 def screenshot(url, driver):
 
@@ -683,11 +702,11 @@ def screenshot(url, driver):
   image = Image.open(io.BytesIO(image))
   display(image)
 
-  text = pytesseract.image_to_string(image, lang='eng')
-  print(f"All Text: {text }")
+  text = pytesseract.image_to_string(image, lang='eng', config='--oem 1 --psm 1')
+  print(text)
 
   solana_address = extract_solana_address(text)
-  print(f"solana address: {solana_address}" )
+  print(f"Solana Address: {solana_address}" )
 
   driver.close()
 
@@ -711,12 +730,14 @@ if __name__ == '__main__':
         account = item.get('account')
         if account:
             url = f"https://solscan.io/token/{account}#holders"
+            time.sleep(1)
             solana_address = screenshot(url, driver)
             update_json_data(nft_metadata, account, solana_address)
         driver.quit()
 
     with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity_and_holders.json', 'w') as file:
         json.dump(nft_metadata, file)
+
 ```
 
 Example Output:
