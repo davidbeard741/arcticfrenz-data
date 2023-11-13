@@ -534,17 +534,191 @@ Refer to [Part 1, Step 3](https://github.com/davidbeard741/arcticfrenz-data#step
 
 ### Step 2: Web Page Screenshot Capture with Selenium and Text Extraction via Optical Character Recognition (OCR) 
 
-WIP Notes:
+<details>
+  <summary>CLICK TO EXPAND WIP Notes</summary>
 
+
+```shell
+!apt update
+!pip install selenium pytesseract
+
+!apt install chromium-chromedriver
+!apt install tesseract-ocr
+!apt install libtesseract-dev
+
+!wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install ./google-chrome-stable_current_amd64.deb
 ```
-Arctic Walrus #02 (AFAW)
 
-Token Address: 
-E2n65ZPrE6zKZzKVK41DrgUgZEEq56TcPMpn1ifL6Us4
-
-https://solscan.io/token/E2n65ZPrE6zKZzKVK41DrgUgZEEq56TcPMpn1ifL6Us4#holders
-
-https://solscan.io/token/{account}#holders
+```shell
+import pytesseract
+pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 ```
+
+```shell
+!Service('/usr/bin/chromedriver')
+```
+
+
+```python
+import psutil
+import os
+import io
+import pytesseract
+import random
+import time
+import re
+import json
+
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException
+from selenium.webdriver.common.action_chains import ActionChains
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+
+from PIL import Image
+from IPython.display import display
+
+
+def kill_chrome_and_chromedriver():
+    for proc in psutil.process_iter():
+        if 'chrome' in proc.name().lower() or 'chromedriver' in proc.name().lower():
+            try:
+                proc.kill()
+            except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+                pass
+
+def driversetup():
+    options = webdriver.ChromeOptions()
+    options.add_argument("user-data-dir=selenium")
+    options.add_argument('--headless')
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument("--disable-gpu")
+    options.add_argument("--remote-debugging-port=9222")
+    options.add_argument("lang=en-US")
+    options.add_argument("location=US")
+    width = random.randint(1600, 1920)
+    height = random.randint(900, 1080)
+    options.add_argument(f"--window-size={1600},{900}")
+    options.add_argument("disable-infobars")
+    options.add_argument("--disable-extensions")
+    options.add_argument("--incognito")
+    options.add_argument("--disable-blink-features=AutomationControlled")
+
+    user_agents = [
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36", # Google Chrome on Windows 10
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36", # Google Chrome on Linux
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0", # Mozilla Firefox on Windows 10
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Safari/605.1.15",  # Safari on macOS
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Safari/605.1.15",  # Microsoft Edge on Windows 10
+        "Mozilla/5.0 (Linux; Android 11; Pixel 4 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.58 Mobile Safari/537.36",  # Google Chrome on Android
+        "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1" # Safari on iPhone (iOS)
+    ]
+
+    selected_user_agent = random.choice(user_agents)
+    options.add_argument(f"user-agent={selected_user_agent}")
+    caps = DesiredCapabilities.CHROME
+    caps['goog:loggingPrefs'] = {'browser': 'ALL'}
+    service = Service('/usr/bin/chromedriver')
+    driver = webdriver.Chrome(options=options)
+    driver.execute_cdp_cmd("Network.clearBrowserCache", {})
+    driver.execute_cdp_cmd("Network.clearBrowserCookies", {})
+    driver.execute_cdp_cmd("Network.setExtraHTTPHeaders", {"headers": {"Referer": "https://www.google.com/"}})
+    driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
+
+    return driver
+
+def simulate_human_interaction(driver):
+    action = ActionChains(driver)
+    body_element = driver.find_element(By.TAG_NAME, 'body')
+
+    for _ in range(random.randint(2, 5)):
+        action.send_keys_to_element(body_element, Keys.PAGE_DOWN).perform()
+        random_sleep(0.5, 1.5)
+        action.send_keys_to_element(body_element, Keys.PAGE_UP).perform()
+        random_sleep(0.5, 1.5)
+
+    action.move_to_element(body_element).perform()
+    random_sleep(0.5, 1.5)
+    action.move_by_offset(random.randint(0, 100), random.randint(0, 100)).perform()
+    random_sleep(0.5, 1.5)
+
+def random_sleep(min_seconds, max_seconds):
+    time.sleep(random.uniform(min_seconds, max_seconds))
+
+def extract_solana_address(text):
+  regex = r'\b[A-Za-z0-9]{32,44}\s[1-9][0-9]{0,2}\b'
+
+  match = re.search(regex, text)
+
+  if match:
+    address = match.group().split()[0]
+    return address
+  else:
+    return None
+
+def screenshot(url, driver):
+
+  driver.get(url)
+
+  wait = WebDriverWait(driver, 20)
+
+  try:
+    wait.until(EC.element_to_be_clickable((By.TAG_NAME, 'a')))
+  except TimeoutException:
+    print("No clickable <a> element found within the given time frame.")
+
+  for entry in driver.get_log("browser"):
+      print(entry)
+
+  simulate_human_interaction(driver)
+
+  random_sleep(2, 5)
+
+  image = driver.get_screenshot_as_png()
+  image = Image.open(io.BytesIO(image))
+  display(image)
+
+  text = pytesseract.image_to_string(image, lang='eng')
+  print(f"All Text: {text }")
+
+  solana_address = extract_solana_address(text)
+  print(f"solana address: {solana_address}" )
+
+  driver.close()
+
+  return solana_address
+
+
+def update_json_data(json_data, account, solana_address):
+    for item in json_data:
+        if item.get('account') == account:
+            item['holders'] = [{"holder": solana_address}]
+            break
+
+if __name__ == '__main__':
+    kill_chrome_and_chromedriver()
+    
+    with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity.json', 'r') as file:
+        nft_metadata = json.load(file)
+
+    for item in nft_metadata:
+        driver = driversetup()
+        account = item.get('account')
+        if account:
+            url = f"https://solscan.io/token/{account}#holders"
+            solana_address = screenshot(url, driver)
+            update_json_data(nft_metadata, account, solana_address)
+        driver.quit()
+
+    with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity_and_holders.json', 'w') as file:
+        json.dump(nft_metadata, file)
+```
+
+</details>
 
 ### Step 3: Automated Monitoring of NFT Holders within a Collection on a Recurring Schedule
