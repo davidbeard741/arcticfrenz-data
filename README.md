@@ -719,6 +719,149 @@ if __name__ == '__main__':
         json.dump(nft_metadata, file)
 ```
 
+Example Output:
+
+```json
+[
+  {
+    "account": "DYTo4wYJDA2tRkD3kMzthDY3rrnyWMgSFrBc3TtiSjQq",
+    "onChainAccountInfo": {
+      "accountInfo": {
+        "key": "DYTo4wYJDA2tRkD3kMzthDY3rrnyWMgSFrBc3TtiSjQq",
+        "isSigner": false,
+        "isWritable": false,
+        "lamports": 1461600,
+        "data": {
+          "parsed": {
+            "info": {
+              "decimals": 0,
+              "freezeAuthority": "62q7i8DMds7SAPSjnShQKHjacZd29421XH4qnNad5xGK",
+              "isInitialized": true,
+              "mintAuthority": "62q7i8DMds7SAPSjnShQKHjacZd29421XH4qnNad5xGK",
+              "supply": "1"
+            },
+            "type": "mint"
+          },
+          "program": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+          "space": 82
+        },
+        "owner": "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA",
+        "executable": false,
+        "rentEpoch": 361
+      },
+      "error": ""
+    },
+    "onChainMetadata": {
+      "metadata": {
+        "tokenStandard": "NonFungible",
+        "key": "MetadataV1",
+        "updateAuthority": "6DMG9hv3eR8BXKH79sXGyQtfRSxXfNrkHEdc6nCsEjVK",
+        "mint": "DYTo4wYJDA2tRkD3kMzthDY3rrnyWMgSFrBc3TtiSjQq",
+        "data": {
+          "name": "Arctic Fox #41",
+          "symbol": "AFAF",
+          "uri": "https://m5brw73kei7uoysb7gxdomaxbdqobnz27j65nrq7ohbpgrktfjmq.arweave.net/Z0Mbf2oiP0diQfmuNzAXCODgtzr6fdbGH3HC80VTKlk",
+          "sellerFeeBasisPoints": 1500,
+          "creators": [
+            {
+              "address": "79iAsPyGDhQ7Sw5HcSkhYX9b3tzXp4phxjfPdo9xkmx1",
+              "verified": true,
+              "share": 0
+            },
+            {
+              "address": "2wBMxuAYKiVjQFGB48bhHPexNRyeHcDN1aaYT4WYv5r5",
+              "verified": true,
+              "share": 54
+            },
+            {
+              "address": "8XzUgMAhFZWERytRDNVBdL95LL5Ftox72EiSNzTu63QS",
+              "verified": true,
+              "share": 46
+            }
+          ]
+        },
+        "primarySaleHappened": true,
+        "isMutable": true,
+        "editionNonce": 255,
+        "uses": {
+          "useMethod": "",
+          "remaining": 0,
+          "total": 0
+        },
+        "collection": {
+          "key": "EFjksSb2b897hvxuHXrnVoE2y66iufiJxtDSgFJZYQna",
+          "verified": true
+        },
+        "collectionDetails": null
+      },
+      "error": ""
+    },
+    "offChainMetadata": {
+      "metadata": {
+        "attributes": [
+          {
+            "traitType": "Arctic Animal",
+            "value": "Fox"
+          },
+          {
+            "traitType": "Endangered",
+            "value": "No"
+          },
+          {
+            "traitType": "Paw",
+            "value": "Left-Up"
+          },
+          {
+            "traitType": "Eyes",
+            "value": "Heterochromia"
+          },
+          {
+            "traitType": "Mouth",
+            "value": "Blep"
+          }
+        ],
+        "description": "An exclusive family, 69 #SolanaNFTs per collection. Liquidity adding for rewarding #ArcticFrenz.",
+        "image": "https://arweave.net/p5C032iu3UQ4Lpr5cTNlcW8bVDrcVd872QChc3z8J-4?ext=png",
+        "name": "Arctic Fox #41",
+        "properties": {
+          "category": null,
+          "creators": [
+            {
+              "address": "2wBMxuAYKiVjQFGB48bhHPexNRyeHcDN1aaYT4WYv5r5",
+              "share": 54
+            },
+            {
+              "address": "8XzUgMAhFZWERytRDNVBdL95LL5Ftox72EiSNzTu63QS",
+              "share": 46
+            }
+          ],
+          "files": [
+            {
+              "type": "image/png",
+              "uri": "40.png"
+            }
+          ]
+        },
+        "sellerFeeBasisPoints": 1500,
+        "symbol": "AFAF"
+      },
+      "uri": "https://m5brw73kei7uoysb7gxdomaxbdqobnz27j65nrq7ohbpgrktfjmq.arweave.net/Z0Mbf2oiP0diQfmuNzAXCODgtzr6fdbGH3HC80VTKlk",
+      "error": ""
+    },
+    "legacyMetadata": null,
+    "rarity_score": 0.1473389390210555,
+    "holders": [
+      {
+        "holder": "Ar3Tqj2DVr2WoLmKmGSaFo17Quh33zKWeCMUibKzrgk3"
+      }
+    ]
+  },
+  {
+    "_comment": "The file has been truncated for this example; the output JSON file nft_metadata_with_rarity_and_holders will contain all NFTs in the collection with their the holder's public key.",
+  }
+]
+```
+
 </details>
 
 ### Step 3: Automated Monitoring of NFT Holders within a Collection on a Recurring Schedule
