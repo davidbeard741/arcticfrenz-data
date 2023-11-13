@@ -628,7 +628,7 @@ def driversetup():
     driver = webdriver.Chrome(options=options)
     driver.execute_cdp_cmd("Network.clearBrowserCookies", {})
     driver.execute_cdp_cmd("Network.setExtraHTTPHeaders", {"headers": {"Referer": "https://www.google.com/"}})
-    driver.execute_script("document.body.style.zoom='100%'")
+    
     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
 
     return driver
@@ -652,31 +652,19 @@ def random_sleep(min_seconds, max_seconds):
     time.sleep(random.uniform(min_seconds, max_seconds))
 
 def extract_solana_address_combined(text):
-    # Initialize the address variable
     address = None
 
-    # Special case for "Magic Eden V2 Authority"
     if "Magic Eden V2 Authority" in text:
-        address = "Magic Eden V2 Authority"
-    else:
-        potential_addresses = []
+        return "Magic Eden V2 Authority"
+    
+    solana_address_regex = r'[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{32,44}'
 
-        # Keywords that might precede the correct address
-        keywords = ["Token Address", "Mint Authority", "Update Authority", "Freeze Authority"]
-        for keyword in keywords:
-            pattern = rf"{keyword}\s*([A-Za-z0-9]{{32,44}})"
-            matches = re.findall(pattern, text)
-            potential_addresses.extend(matches)
+    addresses = re.findall(solana_address_regex, text)
 
-        # General pattern matching for potential addresses
-        general_pattern = r'\b[A-Za-z0-9]{32,44}\b'
-        general_matches = re.findall(general_pattern, text)
-        potential_addresses.extend(general_matches)
-
-        # Heuristic selection from potential addresses
-        if potential_addresses:
-            # Simple heuristic: select the most frequent address (or the first in case of a tie)
-            address = max(set(potential_addresses), key=potential_addresses.count)
+    for addr in addresses:
+        if 32 <= len(addr) <= 44: 
+            address = addr
+            break
 
     return address
 
@@ -700,13 +688,23 @@ def screenshot(url, driver):
 
   image = driver.get_screenshot_as_png()
   image = Image.open(io.BytesIO(image))
-  display(image)
 
-  text = pytesseract.image_to_string(image, lang='eng', config='--oem 1 --psm 1')
+  zoom_factor = 6.4
+  zoomed_image = image.resize((int(image.width * zoom_factor), int(image.height * zoom_factor)))
+
+  center_x, center_y = zoomed_image.width / 2, zoomed_image.height / 2
+  left = center_x - 1280
+  top = center_y - 720
+  right = center_x + 1280
+  bottom = center_y + 720
+  cropped_image = zoomed_image.crop((left, top, right, bottom))
+
+  display(cropped_image)
+  text = pytesseract.image_to_string(cropped_image, lang='eng', config='--oem 1 --psm 1')
   print(text)
 
-  solana_address = extract_solana_address(text)
-  print(f"Solana Address: {solana_address}" )
+  solana_address = extract_solana_address_combined(text)
+  print(f"Solana Address: {solana_address}")
 
   driver.close()
 
