@@ -657,18 +657,11 @@ def extract_solana_address_combined(text):
     if "Magic Eden V2 Authority" in text:
         return "Magic Eden V2 Authority"
     
-    # More forgiving regex: Allows for spaces and characters, but expects a certain length
-    solana_address_regex = r'([123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz\s]{30,60})'
+    solana_address_regex = r'([123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz\s]+)'
 
     addresses = re.findall(solana_address_regex, text)
 
-    # Cleaning and checking each found address
-    for addr in addresses:
-        # Remove spaces and potential misread characters
-        cleaned_addr = ''.join(filter(str.isalnum, addr))
-        if 32 <= len(cleaned_addr) <= 44:
-            address = cleaned_addr
-            break
+    combined_address = ''.join(filter(str.isalnum, ''.join(addresses)))
 
     return address
 
