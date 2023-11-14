@@ -571,7 +571,12 @@ import random
 import time
 import re
 import json
+import cv2
+import numpy as np
+import base64
+import matplotlib.pyplot as plt
 
+from cv2 import dnn_superres
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -581,8 +586,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-
-from PIL import Image
+from PIL import Image, ImageEnhance
 from IPython.display import display
 
 
@@ -604,20 +608,17 @@ def driversetup():
     options.add_argument("--remote-debugging-port=9222")
     options.add_argument("lang=en-US")
     options.add_argument("location=US")
-    options.add_argument(f"--window-size={2560},{1440}")
+    options.add_argument(f"--window-size={1920},{1080}")
     options.add_argument("disable-infobars")
     options.add_argument("--disable-extensions")
     options.add_argument("--incognito")
     options.add_argument("--disable-blink-features=AutomationControlled")
 
     user_agents = [
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36", # Google Chrome on Windows 10
-        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36", # Google Chrome on Linux
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:99.0) Gecko/20100101 Firefox/99.0", # Mozilla Firefox on Windows 10
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Safari/605.1.15",  # Safari on macOS
-        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Safari/605.1.15",  # Microsoft Edge on Windows 10
-        "Mozilla/5.0 (Linux; Android 11; Pixel 4 XL) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.58 Mobile Safari/537.36",  # Google Chrome on Android
-        "Mozilla/5.0 (iPhone; CPU iPhone OS 15_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.4 Mobile/15E148 Safari/604.1" # Safari on iPhone (iOS)
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36", # Google Chrome v100 on Windows 10
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36", # Google Chrome v74 on Windows 10
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36", # Google Chrome v100 on Linux
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36", # Google Chrome v74 on Linux
     ]
 
     selected_user_agent = random.choice(user_agents)
@@ -628,7 +629,7 @@ def driversetup():
     driver = webdriver.Chrome(options=options)
     driver.execute_cdp_cmd("Network.clearBrowserCookies", {})
     driver.execute_cdp_cmd("Network.setExtraHTTPHeaders", {"headers": {"Referer": "https://www.google.com/"}})
-    
+
     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
 
     return driver
@@ -652,20 +653,22 @@ def random_sleep(min_seconds, max_seconds):
     time.sleep(random.uniform(min_seconds, max_seconds))
 
 def extract_solana_address_combined(text):
-    address = None
 
-    if "Magic Eden V2 Authority" in text:
-        return "Magic Eden V2 Authority"
-    
-    solana_address_regex = r'([123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz\s]+)'
+  # Handle the special case of "Magic Eden V2 Authority".
+  if "Magic Eden V2 Authority" in text:
+    return "Magic Eden V2 Authority"
 
-    addresses = re.findall(solana_address_regex, text)
+  # Clean and filter the text, removing spaces and non-ASCII characters.
+  cleaner = re.sub(r"\s+", "", text)
+  cleanest = re.sub(r"[^\x00-\x7F]", "", cleaner)
 
-    combined_address = ''.join(filter(str.isalnum, ''.join(addresses)))
-
-    return address
-
-
+  # Check if the cleaned text (potential address) has a valid length for a Solana address.
+  if len(cleanest) >= 32 and len(cleanest) <= 44:
+      # If the length is valid, return the cleaned Solana address.
+      return cleanest
+  else:
+      # If the length is invalid, return "Error" to indicate an invalid Solana address.
+      return f"Error: {cleanest}"
 
 def screenshot(url, driver):
 
@@ -688,27 +691,25 @@ def screenshot(url, driver):
   image = driver.get_screenshot_as_png()
   image = Image.open(io.BytesIO(image))
 
-  zoom_factor = 6.4
-  zoomed_image = image.resize((int(image.width * zoom_factor), int(image.height * zoom_factor)))
+  # width: 1920
+  # height: 1080
+  left = 760
+  top = 725
+  right = 1150
+  bottom = 775
+  cropped_image = image.crop((left, top, right, bottom))
 
-  center_x, center_y = zoomed_image.width / 2, zoomed_image.height / 2
-  left = center_x - 1280
-  top = center_y - 720
-  right = center_x + 1280
-  bottom = center_y + 720
-  cropped_image = zoomed_image.crop((left, top, right, bottom))
+  # display(cropped_image)
 
-  display(cropped_image)
   text = pytesseract.image_to_string(cropped_image, lang='eng', config='--oem 1 --psm 1')
-  print(text)
+  # print(text)
 
   solana_address = extract_solana_address_combined(text)
-  print(f"Solana Address: {solana_address}")
+  print(f"Address: {solana_address}")
 
   driver.close()
 
   return solana_address
-
 
 def update_json_data(json_data, account, solana_address):
     for item in json_data:
@@ -718,7 +719,7 @@ def update_json_data(json_data, account, solana_address):
 
 if __name__ == '__main__':
     kill_chrome_and_chromedriver()
-    
+
     with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity.json', 'r') as file:
         nft_metadata = json.load(file)
 
@@ -733,7 +734,7 @@ if __name__ == '__main__':
         driver.quit()
 
     with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity_and_holders.json', 'w') as file:
-        json.dump(nft_metadata, file)
+        json.dump(nft_metadata, file, indent=4)
 ```
 
 Example Output:
