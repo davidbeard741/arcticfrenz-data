@@ -737,6 +737,29 @@ if __name__ == '__main__':
         json.dump(nft_metadata, file, indent=4)
 ```
 
+```python 
+import cv2
+import numpy as np
+
+def adjust_brightness_contrast(image, alpha=1.0, beta=0):
+    adjusted_image = cv2.convertScaleAbs(image, alpha=alpha, beta=beta)
+    return adjusted_image
+
+image = cv2.imread('path_to_your_image.png')
+
+# alpha values between 1.5 and 2.5 are commonly effective
+alpha = 2.0  # Contrast control (1.0-3.0)
+
+# beta values between 20 and 70 are often useful
+beta = 50    # Brightness control (0-100)
+
+adjusted_image = adjust_brightness_contrast(image, alpha, beta)
+
+_, buffer = cv2.imencode('.png', adjusted_image)
+
+improved_image = np.frombuffer(buffer, dtype=np.uint8)
+```
+
 Example Output:
 
 ```json
