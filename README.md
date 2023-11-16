@@ -589,7 +589,6 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from PIL import Image, ImageEnhance
 from IPython.display import display
 
-
 def kill_chrome_and_chromedriver():
     for proc in psutil.process_iter():
         if 'chrome' in proc.name().lower() or 'chromedriver' in proc.name().lower():
@@ -613,14 +612,12 @@ def driversetup():
     options.add_argument("--disable-extensions")
     options.add_argument("--incognito")
     options.add_argument("--disable-blink-features=AutomationControlled")
-
     user_agents = [
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36", # Google Chrome v100 on Windows 10
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36", # Google Chrome v74 on Windows 10
         "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36", # Google Chrome v100 on Linux
         "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36", # Google Chrome v74 on Linux
     ]
-
     selected_user_agent = random.choice(user_agents)
     options.add_argument(f"user-agent={selected_user_agent}")
     caps = DesiredCapabilities.CHROME
@@ -629,9 +626,7 @@ def driversetup():
     driver = webdriver.Chrome(options=options)
     driver.execute_cdp_cmd("Network.clearBrowserCookies", {})
     driver.execute_cdp_cmd("Network.setExtraHTTPHeaders", {"headers": {"Referer": "https://www.google.com/"}})
-
     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
-
     return driver
 
 def simulate_human_interaction(driver):
@@ -653,62 +648,49 @@ def random_sleep(min_seconds, max_seconds):
     time.sleep(random.uniform(min_seconds, max_seconds))
 
 def extract_solana_address_combined(text):
-
-  # Handle the special case of "Magic Eden V2 Authority".
   if "Magic Eden V2 Authority" in text:
     return "Magic Eden V2 Authority"
-
-  # Clean and filter the text, removing spaces and non-ASCII characters.
   cleaner = re.sub(r"\s+", "", text)
   cleanest = re.sub(r"[^\x00-\x7F]", "", cleaner)
-
-  # Check if the cleaned text (potential address) has a valid length for a Solana address.
   if len(cleanest) >= 32 and len(cleanest) <= 44:
-      # If the length is valid, return the cleaned Solana address.
       return cleanest
   else:
-      # If the length is invalid, return "Error" to indicate an invalid Solana address.
       return f"Error: {cleanest}"
 
+def adjust_image(cropped_image):
+  kernel = np.array([[0, -1, 0],
+                   [-1, 5,-1],
+                   [0, -1, 0]])
+  result = cv2.filter2D(cropped_image, -1, kernel)
+  return result
+
 def screenshot(url, driver):
-
+  driver.set_window_rect(x=0, y=0, width=1920, height=1080)
   driver.get(url)
-
-  wait = WebDriverWait(driver, 20)
-
+  wait = WebDriverWait(driver, 10)
   try:
     wait.until(EC.element_to_be_clickable((By.TAG_NAME, 'a')))
   except TimeoutException:
     print("No clickable <a> element found within the given time frame.")
-
   for entry in driver.get_log("browser"):
       print(entry)
-
   simulate_human_interaction(driver)
-
   random_sleep(2, 5)
-
   image = driver.get_screenshot_as_png()
   image = Image.open(io.BytesIO(image))
-
-  # width: 1920
-  # height: 1080
   left = 760
   top = 725
   right = 1150
   bottom = 775
   cropped_image = image.crop((left, top, right, bottom))
-
-  # display(cropped_image)
-
-  text = pytesseract.image_to_string(cropped_image, lang='eng', config='--oem 1 --psm 1')
-  # print(text)
-
+  cropped_image = np.array(cropped_image)
+  improved_image = adjust_image(cropped_image)
+  display_image = Image.fromarray(improved_image)
+  # display(display_image)
+  text = pytesseract.image_to_string(display_image, lang='eng', config='--oem 1 --psm 1')
   solana_address = extract_solana_address_combined(text)
   print(f"Address: {solana_address}")
-
   driver.close()
-
   return solana_address
 
 def update_json_data(json_data, account, solana_address):
@@ -718,46 +700,20 @@ def update_json_data(json_data, account, solana_address):
             break
 
 if __name__ == '__main__':
-    kill_chrome_and_chromedriver()
-
-    with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity.json', 'r') as file:
-        nft_metadata = json.load(file)
-
-    for item in nft_metadata:
-        driver = driversetup()
-        account = item.get('account')
-        if account:
-            url = f"https://solscan.io/token/{account}#holders"
-            time.sleep(1)
-            solana_address = screenshot(url, driver)
-            update_json_data(nft_metadata, account, solana_address)
-        driver.quit()
-
-    with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity_and_holders.json', 'w') as file:
-        json.dump(nft_metadata, file, indent=4)
-```
-
-```python 
-import cv2
-import numpy as np
-
-def adjust_brightness_contrast(image, alpha=1.0, beta=0):
-    adjusted_image = cv2.convertScaleAbs(image, alpha=alpha, beta=beta)
-    return adjusted_image
-
-image = cv2.imread('path_to_your_image.png')
-
-# alpha values between 1.5 and 2.5 are commonly effective
-alpha = 2.0  # Contrast control (1.0-3.0)
-
-# beta values between 20 and 70 are often useful
-beta = 50    # Brightness control (0-100)
-
-adjusted_image = adjust_brightness_contrast(image, alpha, beta)
-
-_, buffer = cv2.imencode('.png', adjusted_image)
-
-improved_image = np.frombuffer(buffer, dtype=np.uint8)
+  kill_chrome_and_chromedriver()
+  with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity.json', 'r') as file:
+    nft_metadata = json.load(file)
+  for item in nft_metadata:
+      driver = driversetup()
+      account = item.get('account')
+      if account:
+        url = f"https://solscan.io/token/{account}#holders"
+        time.sleep(1)
+        solana_address = screenshot(url, driver)
+        update_json_data(nft_metadata, account, solana_address)
+      driver.quit()
+  with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity_and_holders.json', 'w') as file:
+    json.dump(nft_metadata, file, indent=4)
 ```
 
 Example Output:
