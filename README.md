@@ -717,17 +717,27 @@ if __name__ == '__main__':
 ```
 
 ```python
-import cv2
-import numpy as np
-from PIL import Image
-import pytesseract
-
 def adjust_image(cropped_image):
-    # Convert to grayscale for better OCR accuracy
-    gray_image = cv2.cvtColor(cropped_image, cv2.COLOR_BGR2GRAY)
+    # Convert to HSV for color filtering
+    hsv_image = cv2.cvtColor(cropped_image, cv2.COLOR_BGR2HSV)
 
-    # Apply thresholding to make text more distinct
-    _, thresh_image = cv2.threshold(gray_image, 150, 255, cv2.THRESH_BINARY)
+    # Define range for light-blue color and create a mask
+    lower_blue = np.array([110,50,50])
+    upper_blue = np.array([130,255,255])
+    mask = cv2.inRange(hsv_image, lower_blue, upper_blue)
+
+    # Bitwise-AND mask and original image
+    color_filtered = cv2.bitwise_and(cropped_image, cropped_image, mask=mask)
+
+    # Convert to grayscale
+    gray_image = cv2.cvtColor(color_filtered, cv2.COLOR_BGR2GRAY)
+
+    # Increase contrast
+    contrasted = cv2.convertScaleAbs(gray_image, alpha=1.5, beta=0)
+
+    # Apply GaussianBlur and threshold
+    blurred = cv2.GaussianBlur(contrasted, (5, 5), 0)
+    _, thresh_image = cv2.threshold(blurred, 180, 255, cv2.THRESH_BINARY)
 
     # Sharpen the image
     kernel = np.array([[0, -1, 0],
@@ -735,15 +745,6 @@ def adjust_image(cropped_image):
                        [0, -1, 0]])
     result = cv2.filter2D(thresh_image, -1, kernel)
     return result
-
-def screenshot(url, driver):
-    # Assuming 'cropped_image' is obtained from the screenshot
-    improved_image = adjust_image(cropped_image)
-    display_image = Image.fromarray(improved_image)
-
-    # Adjust pytesseract parameters for better accuracy
-    text = pytesseract.image_to_string(display_image, lang='eng', config='--oem 1 --psm 3')
-    return text
 ```
 
 ```python
