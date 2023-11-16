@@ -716,6 +716,36 @@ if __name__ == '__main__':
     json.dump(nft_metadata, file, indent=4)
 ```
 
+```python
+import cv2
+import numpy as np
+from PIL import Image
+import pytesseract
+
+def adjust_image(cropped_image):
+    # Convert to grayscale for better OCR accuracy
+    gray_image = cv2.cvtColor(cropped_image, cv2.COLOR_BGR2GRAY)
+
+    # Apply thresholding to make text more distinct
+    _, thresh_image = cv2.threshold(gray_image, 150, 255, cv2.THRESH_BINARY)
+
+    # Sharpen the image
+    kernel = np.array([[0, -1, 0],
+                       [-1, 5, -1],
+                       [0, -1, 0]])
+    result = cv2.filter2D(thresh_image, -1, kernel)
+    return result
+
+def screenshot(url, driver):
+    # Assuming 'cropped_image' is obtained from the screenshot
+    improved_image = adjust_image(cropped_image)
+    display_image = Image.fromarray(improved_image)
+
+    # Adjust pytesseract parameters for better accuracy
+    text = pytesseract.image_to_string(display_image, lang='eng', config='--oem 1 --psm 3')
+    return text
+```
+
 Example Output:
 
 ```json
