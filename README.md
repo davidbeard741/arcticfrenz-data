@@ -746,6 +746,20 @@ def screenshot(url, driver):
     return text
 ```
 
+```python
+def screenshot(url, driver):
+    # Assuming 'cropped_image' is obtained from the screenshot
+    improved_image = adjust_image(cropped_image)
+    display_image = Image.fromarray(improved_image)
+
+    # Specify the whitelist of characters (0-9, a-z, A-Z)
+    config = '--oem 1 --psm 7 -c tessedit_char_whitelist=0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+    # Use pytesseract with the specified whitelist
+    text = pytesseract.image_to_string(display_image, lang='eng', config=config)
+    return text
+```
+
 Example Output:
 
 ```json
