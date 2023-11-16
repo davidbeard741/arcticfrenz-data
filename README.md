@@ -687,7 +687,7 @@ def screenshot(url, driver):
   improved_image = adjust_image(cropped_image)
   display_image = Image.fromarray(improved_image)
   # display(display_image)
-  text = pytesseract.image_to_string(display_image, lang='eng', config='--oem 1 --psm 1')
+  text = pytesseract.image_to_string(display_image, lang='eng', config='--oem 1 --psm 7')
   solana_address = extract_solana_address_combined(text)
   print(f"Address: {solana_address}")
   driver.close()
