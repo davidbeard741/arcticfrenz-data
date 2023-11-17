@@ -548,22 +548,12 @@ Parsing Note: In the table, the initial row is a hidden 'measurement' row, ident
 
 !pip install selenium pytesseract 
 
-!apt-get install tesseract-ocr
-!apt-get install tesseract-ocr-eng
-
-!apt install libtesseract-dev
-
 !wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install ./google-chrome-stable_current_amd64.deb
-```
-
-```shell
-pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 ```
 
 ```shell
 !Service('/usr/bin/chromedriver')
 ```
-
 
 ```python
 import psutil
@@ -578,7 +568,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
-from PIL import Image
 
 def kill_chrome_and_chromedriver():
     for proc in psutil.process_iter():
@@ -663,7 +652,7 @@ def extract_owner_address_from_file(file_path):
     return "Owner column not found in any table"
 
 def getaddress(url, driver):
-    file_path = '/content/drive/MyDrive/AF/.html'
+    file_path = 'webpage.html'
 
     driver.set_window_rect(x=0, y=0, width=1920, height=1080)
     driver.get(url)
@@ -708,7 +697,7 @@ def update_json_data(json_data, account, solana_address):
 if __name__ == '__main__':
     kill_chrome_and_chromedriver()
     
-    with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity.json', 'r') as file:
+    with open('nft_metadata_with_rarity.json', 'r') as file:
         nft_metadata = json.load(file)
     
     for item in nft_metadata:
@@ -721,7 +710,7 @@ if __name__ == '__main__':
             update_json_data(nft_metadata, account, solana_address)
         driver.quit()
     
-    with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity_and_holders.json', 'w') as file:
+    with open('nft_metadata_with_rarity_and_holders.json', 'w') as file:
         json.dump(nft_metadata, file, indent=4)
 ```
 
