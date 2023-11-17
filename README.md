@@ -526,17 +526,20 @@ The output is an updated JSON file, nft_metadata_with_rarity.json, where each NF
 
 ---
 
-## Part 3: Enhancing the Metadata of an Entire NFT Collection with Additional Data (WORKING IN PROGRESS)
+## Part 3: Enhancing the Metadata of an Entire NFT Collection with Additional Data
 
 ### Step 1: Setting Up Your Python Development Environment
 
 Refer to [Part 1, Step 3](https://github.com/davidbeard741/arcticfrenz-data#step-3-set-up-your-python-development-environment) for the setup instructions.
 
-### Step 2: Web Page Screenshot Capture with Selenium and Text Extraction via Optical Character Recognition (OCR) 
+### Step 2: Web Scraping and Selenium WebDriver
+
+This Python script utilizes web scraping techniques along with Selenium WebDriver for browser automation. The function `extract_owner_address_from_file` is designed to parse the saved HTML content to extract the address of the NFT owner. For this purpose, it employs BeautifulSoup, a popular parsing library, and targets specific table elements within the HTML that contain the required owner information.
+
+Parsing Note: In the table, the initial row is a hidden 'measurement' row, identified by the class 'ant-table-measure-row'. This row is followed by the second row, which is the first one visible to users and contains the relevant data. The function systematically scans all tables within the given HTML content to locate one with a header titled 'Owner'. Once the appropriate table is identified, it skips any measurement rows and focuses on the first visible row. The function then retrieves the text within the 'a' tag in the second 'td' element of this row, which corresponds to the 'Owner' column.
 
 <details>
   <summary>CLICK TO EXPAND WIP Notes</summary>
-
 
 ```shell
 !apt update
@@ -564,19 +567,10 @@ pytesseract.pytesseract.tesseract_cmd = r'/usr/bin/tesseract'
 
 ```python
 import psutil
-import os
-import io
-import pytesseract
 import random
 import time
-import re
 import json
-import cv2
-import numpy as np
-import base64
-import matplotlib.pyplot as plt
-
-from cv2 import dnn_superres
+from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -584,10 +578,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from PIL import Image, ImageEnhance, ImageFilter
-from IPython.display import display
+from PIL import Image
 
 def kill_chrome_and_chromedriver():
     for proc in psutil.process_iter():
@@ -614,17 +605,19 @@ def driversetup():
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument("--high-dpi-support=1")
     options.add_argument("--force-device-scale-factor=2")
+    
     user_agents = [
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36", # Google Chrome v100 on Windows 10
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36", # Google Chrome v74 on Windows 10
-        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36", # Google Chrome v100 on Linux
-        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36", # Google Chrome v74 on Linux
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
+        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
     ]
+    
     selected_user_agent = random.choice(user_agents)
     options.add_argument(f"user-agent={selected_user_agent}")
-    caps = DesiredCapabilities.CHROME
+    caps = webdriver.DesiredCapabilities.CHROME
     caps['goog:loggingPrefs'] = {'browser': 'ALL'}
-    service = Service('/usr/bin/chromedriver')
+    service = webdriver.chrome.service.Service('/usr/bin/chromedriver')
     driver = webdriver.Chrome(options=options)
     driver.execute_cdp_cmd("Network.clearBrowserCookies", {})
     driver.execute_cdp_cmd("Network.setExtraHTTPHeaders", {"headers": {"Referer": "https://www.google.com/"}})
@@ -635,7 +628,7 @@ def simulate_human_interaction(driver):
     action = ActionChains(driver)
     body_element = driver.find_element(By.TAG_NAME, 'body')
 
-    for _ in range(random.randint(2, 5)):
+    for _ in range(random.randint(1, 3)):
         action.send_keys_to_element(body_element, Keys.PAGE_DOWN).perform()
         random_sleep(0.5, 1.0)
         action.send_keys_to_element(body_element, Keys.PAGE_UP).perform()
@@ -649,79 +642,62 @@ def simulate_human_interaction(driver):
 def random_sleep(min_seconds, max_seconds):
     time.sleep(random.uniform(min_seconds, max_seconds))
 
-def cropping_image(image):
-  # 3840px x 2160px
-  left = 1517
-  top = 1454
-  right = 2313
-  bottom = 1540
-  image_cropped = image.crop((left, top, right, bottom))
-  return image_cropped
+def extract_owner_address_from_file(file_path):
+    with open(file_path, 'r') as file:
+        html_content = file.read()
 
-def enhance_image(cropped_image):
-    img = np.array(cropped_image)
-    img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+    soup = BeautifulSoup(html_content, 'html.parser')
+    tables = soup.find_all("table")
+    
+    for table in tables:
+        if table.find("th", {"title": "Owner"}):
+            try:
+                visible_rows = table.select("tbody tr:not(.ant-table-measure-row)")
+                if visible_rows:
+                    owner_address_element = visible_rows[0].select_one("td:nth-of-type(2) a")
+                    return owner_address_element.text.strip() if owner_address_element else "Owner address not found"
+                else:
+                    return "No visible rows found in the owner table"
+            except Exception as e:
+                return f"Error: {e}"
+    return "Owner column not found in any table"
 
-    # Resizing the image for better OCR readability
-    scale_percent = 200  # percentage of original size
-    width = int(img.shape[1] * scale_percent / 100)
-    height = int(img.shape[0] * scale_percent / 100)
-    dim = (width, height)
-    img = cv2.resize(img, dim, interpolation=cv2.INTER_LINEAR)
+def getaddress(url, driver):
+    file_path = '/content/drive/MyDrive/AF/.html'
 
-    # Applying bilateral filter for noise reduction while keeping edges sharp
-    img = cv2.bilateralFilter(img, 9, 75, 75)
+    driver.set_window_rect(x=0, y=0, width=1920, height=1080)
+    driver.get(url)
+    wait = WebDriverWait(driver, 5)
+    
+    try:
+        wait.until(EC.element_to_be_clickable((By.TAG_NAME, 'a')))
+    except TimeoutException:
+        print("No clickable <a> element found within the given time frame.")
+    
+    for entry in driver.get_log("browser"):
+        print(entry)
 
-    # Enhancing contrast using CLAHE
-    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
-    img = clahe.apply(img)
+    simulate_human_interaction(driver)
+    random_sleep(1, 3)
 
-    # Adaptive thresholding
-    img = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
+    try:
+        wait.until(EC.presence_of_element_located((By.ID, 'root')))
+        root_html = driver.find_element(By.ID, 'root').get_attribute('outerHTML')
 
-    # Applying morphological operations
-    kernel = np.ones((1, 1), np.uint8)
-    img = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
-    img = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
+        with open(file_path, 'w') as file:
+            file.write(root_html)
+      
+        solana_address = extract_owner_address_from_file(file_path)
+    except TimeoutException:
+        print("Timed out waiting for page to load")
+        solana_address = "Error: Page did not load properly"
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        solana_address = "Error: Unexpected issue occurred"
 
-    return img
-
-def extract_solana_address_combined(text):
-  if "Magic Eden V2 Authority" in text:
-    return "Magic Eden V2 Authority"
-  cleaner = re.sub(r"\s+", "", text)
-  cleanest = re.sub(r"[^\x00-\x7F]", "", cleaner)
-  if len(cleanest) >= 32 and len(cleanest) <= 44:
-      return cleanest
-  else:
-      return f"Error: {cleanest}"
-
-def screenshot(url, driver):
-  driver.set_window_rect(x=0, y=0, width=1920, height=1080)
-  driver.get(url)
-  wait = WebDriverWait(driver, 5)
-  try:
-    wait.until(EC.element_to_be_clickable((By.TAG_NAME, 'a')))
-  except TimeoutException:
-    print("No clickable <a> element found within the given time frame.")
-  for entry in driver.get_log("browser"):
-      print(entry)
-  simulate_human_interaction(driver)
-  random_sleep(2, 5)
-  image = driver.get_screenshot_as_png()
-  image = Image.open(io.BytesIO(image))
-  # display(image)
-  cropped_image = cropping_image(image)
-  # display(cropped_image)
-  enhanced_image = enhance_image(cropped_image)
-  display_image = Image.fromarray(enhanced_image) 
-  # display(display_image)
-  config = '--oem 1 --psm 7 -c tessedit_char_whitelist=0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-  text = pytesseract.image_to_string(enhanced_image, lang='eng', config=config)
-  solana_address = extract_solana_address_combined(text)
-  print(f"Address: {solana_address}")
-  driver.close()
-  return solana_address
+    print(f"Address: {solana_address}")
+    driver.close()
+    return solana_address
 
 def update_json_data(json_data, account, solana_address):
     for item in json_data:
@@ -730,20 +706,23 @@ def update_json_data(json_data, account, solana_address):
             break
 
 if __name__ == '__main__':
-  kill_chrome_and_chromedriver()
-  with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity.json', 'r') as file:
-    nft_metadata = json.load(file)
-  for item in nft_metadata:
-      driver = driversetup()
-      account = item.get('account')
-      if account:
-        url = f"https://solscan.io/token/{account}#holders"
-        time.sleep(1)
-        solana_address = screenshot(url, driver)
-        update_json_data(nft_metadata, account, solana_address)
-      driver.quit()
-  with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity_and_holders.json', 'w') as file:
-    json.dump(nft_metadata, file, indent=4)
+    kill_chrome_and_chromedriver()
+    
+    with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity.json', 'r') as file:
+        nft_metadata = json.load(file)
+    
+    for item in nft_metadata:
+        driver = driversetup()
+        account = item.get('account')
+        if account:
+            url = f"https://solscan.io/token/{account}#holders"
+            time.sleep(1)
+            solana_address = getaddress(url, driver)
+            update_json_data(nft_metadata, account, solana_address)
+        driver.quit()
+    
+    with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity_and_holders.json', 'w') as file:
+        json.dump(nft_metadata, file, indent=4)
 ```
 
 Example Output:
