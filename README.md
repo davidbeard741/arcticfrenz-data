@@ -586,7 +586,7 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
-from PIL import Image, ImageEnhance
+from PIL import Image, ImageEnhance, ImageFilter
 from IPython.display import display
 
 def kill_chrome_and_chromedriver():
@@ -612,6 +612,8 @@ def driversetup():
     options.add_argument("--disable-extensions")
     options.add_argument("--incognito")
     options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--high-dpi-support=1")
+    options.add_argument("--force-device-scale-factor=2")
     user_agents = [
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36", # Google Chrome v100 on Windows 10
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36", # Google Chrome v74 on Windows 10
@@ -635,17 +637,54 @@ def simulate_human_interaction(driver):
 
     for _ in range(random.randint(2, 5)):
         action.send_keys_to_element(body_element, Keys.PAGE_DOWN).perform()
-        random_sleep(0.5, 1.5)
+        random_sleep(0.5, 1.0)
         action.send_keys_to_element(body_element, Keys.PAGE_UP).perform()
-        random_sleep(0.5, 1.5)
+        random_sleep(0.5, 1.0)
 
     action.move_to_element(body_element).perform()
-    random_sleep(0.5, 1.5)
+    random_sleep(0.5, 1.0)
     action.move_by_offset(random.randint(0, 100), random.randint(0, 100)).perform()
-    random_sleep(0.5, 1.5)
+    random_sleep(0.5, 1.0)
 
 def random_sleep(min_seconds, max_seconds):
     time.sleep(random.uniform(min_seconds, max_seconds))
+
+def cropping_image(image):
+  # 3840px x 2160px
+  left = 1517
+  top = 1454
+  right = 2313
+  bottom = 1540
+  image_cropped = image.crop((left, top, right, bottom))
+  return image_cropped
+
+def enhance_image(cropped_image):
+    img = np.array(cropped_image)
+    img = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
+
+    # Resizing the image for better OCR readability
+    scale_percent = 200  # percentage of original size
+    width = int(img.shape[1] * scale_percent / 100)
+    height = int(img.shape[0] * scale_percent / 100)
+    dim = (width, height)
+    img = cv2.resize(img, dim, interpolation=cv2.INTER_LINEAR)
+
+    # Applying bilateral filter for noise reduction while keeping edges sharp
+    img = cv2.bilateralFilter(img, 9, 75, 75)
+
+    # Enhancing contrast using CLAHE
+    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+    img = clahe.apply(img)
+
+    # Adaptive thresholding
+    img = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 2)
+
+    # Applying morphological operations
+    kernel = np.ones((1, 1), np.uint8)
+    img = cv2.morphologyEx(img, cv2.MORPH_OPEN, kernel)
+    img = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
+
+    return img
 
 def extract_solana_address_combined(text):
   if "Magic Eden V2 Authority" in text:
@@ -657,17 +696,10 @@ def extract_solana_address_combined(text):
   else:
       return f"Error: {cleanest}"
 
-def adjust_image(cropped_image):
-  kernel = np.array([[0, -1, 0],
-                   [-1, 5,-1],
-                   [0, -1, 0]])
-  result = cv2.filter2D(cropped_image, -1, kernel)
-  return result
-
 def screenshot(url, driver):
   driver.set_window_rect(x=0, y=0, width=1920, height=1080)
   driver.get(url)
-  wait = WebDriverWait(driver, 10)
+  wait = WebDriverWait(driver, 5)
   try:
     wait.until(EC.element_to_be_clickable((By.TAG_NAME, 'a')))
   except TimeoutException:
@@ -678,16 +710,14 @@ def screenshot(url, driver):
   random_sleep(2, 5)
   image = driver.get_screenshot_as_png()
   image = Image.open(io.BytesIO(image))
-  left = 760
-  top = 725
-  right = 1150
-  bottom = 775
-  cropped_image = image.crop((left, top, right, bottom))
-  cropped_image = np.array(cropped_image)
-  improved_image = adjust_image(cropped_image)
-  display_image = Image.fromarray(improved_image)
+  # display(image)
+  cropped_image = cropping_image(image)
+  # display(cropped_image)
+  enhanced_image = enhance_image(cropped_image)
+  display_image = Image.fromarray(enhanced_image) 
   # display(display_image)
-  text = pytesseract.image_to_string(display_image, lang='eng', config='--oem 1 --psm 7')
+  config = '--oem 1 --psm 7 -c tessedit_char_whitelist=0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  text = pytesseract.image_to_string(enhanced_image, lang='eng', config=config)
   solana_address = extract_solana_address_combined(text)
   print(f"Address: {solana_address}")
   driver.close()
@@ -714,51 +744,6 @@ if __name__ == '__main__':
       driver.quit()
   with open('/content/drive/MyDrive/AF/nft_metadata_with_rarity_and_holders.json', 'w') as file:
     json.dump(nft_metadata, file, indent=4)
-```
-
-```python
-def adjust_image(cropped_image):
-    # Convert to HSV for color filtering
-    hsv_image = cv2.cvtColor(cropped_image, cv2.COLOR_BGR2HSV)
-
-    # Define range for light-blue color and create a mask
-    lower_blue = np.array([110,50,50])
-    upper_blue = np.array([130,255,255])
-    mask = cv2.inRange(hsv_image, lower_blue, upper_blue)
-
-    # Bitwise-AND mask and original image
-    color_filtered = cv2.bitwise_and(cropped_image, cropped_image, mask=mask)
-
-    # Convert to grayscale
-    gray_image = cv2.cvtColor(color_filtered, cv2.COLOR_BGR2GRAY)
-
-    # Increase contrast
-    contrasted = cv2.convertScaleAbs(gray_image, alpha=1.5, beta=0)
-
-    # Apply GaussianBlur and threshold
-    blurred = cv2.GaussianBlur(contrasted, (5, 5), 0)
-    _, thresh_image = cv2.threshold(blurred, 180, 255, cv2.THRESH_BINARY)
-
-    # Sharpen the image
-    kernel = np.array([[0, -1, 0],
-                       [-1, 5, -1],
-                       [0, -1, 0]])
-    result = cv2.filter2D(thresh_image, -1, kernel)
-    return result
-```
-
-```python
-def screenshot(url, driver):
-    # Assuming 'cropped_image' is obtained from the screenshot
-    improved_image = adjust_image(cropped_image)
-    display_image = Image.fromarray(improved_image)
-
-    # Specify the whitelist of characters (0-9, a-z, A-Z)
-    config = '--oem 1 --psm 7 -c tessedit_char_whitelist=0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-
-    # Use pytesseract with the specified whitelist
-    text = pytesseract.image_to_string(display_image, lang='eng', config=config)
-    return text
 ```
 
 Example Output:
