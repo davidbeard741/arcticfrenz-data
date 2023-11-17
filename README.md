@@ -539,7 +539,7 @@ This Python script utilizes web scraping techniques along with Selenium WebDrive
 Parsing Note: In the table, the initial row is a hidden 'measurement' row, identified by the class 'ant-table-measure-row'. This row is followed by the second row, which is the first one visible to users and contains the relevant data. The function systematically scans all tables within the given HTML content to locate one with a header titled 'Owner'. Once the appropriate table is identified, it skips any measurement rows and focuses on the first visible row. The function then retrieves the text within the 'a' tag in the second 'td' element of this row, which corresponds to the 'Owner' column.
 
 <details>
-  <summary>CLICK TO EXPAND WIP Notes</summary>
+  <summary>CLICK TO EXPAND</summary>
 
 ```shell
 !apt update
