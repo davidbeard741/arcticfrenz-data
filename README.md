@@ -325,7 +325,7 @@ The concept of rarity in the context of NFTs pertains to the uniqueness and scar
 The following Python script performs the above steps. It processes the off-chain metadata to compute a rarity score for each NFT, then appends this score to the original dataset, and finally outputs the enriched dataset as a JSON file.
 
 <details>
-  <summary>CLICK TO EXPAND Python Code</summary>
+  <summary>CLICK TO EXPAND Python Script</summary>
 	
 ```python
 import json
@@ -550,7 +550,7 @@ This script employs Selenium WebDriver to automate web browser interactions for 
 - It extracts the timestamp data from the first visible row, ensuring that it skips any non-relevant rows such as measurement rows.
 
 <details>
-  <summary>CLICK TO EXPAND</summary>
+  <summary>CLICK TO EXPAND Python Script</summary>
 
 ```shell
 !apt update
