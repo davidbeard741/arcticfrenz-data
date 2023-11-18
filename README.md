@@ -726,8 +726,9 @@ def extract_time_from_file(file_time):
 
 
 def getholderaddress(url_holder, driver):
-    wait = WebDriverWait(driver, 10)
+    wait = WebDriverWait(driver, timeout=10)
     driver.get(url_holder)
+    driver.implicitly_wait(5)
 
     try:
         wait.until(EC.element_to_be_clickable((By.TAG_NAME, 'a')))
@@ -735,7 +736,6 @@ def getholderaddress(url_holder, driver):
     except TimeoutException:
         logging.error("No clickable <a> element found within the given time frame on url_holder.")
     
-    random_sleep(1, 3)
     simulate_human_interaction(driver)
 
     try:
@@ -756,22 +756,23 @@ def getholderaddress(url_holder, driver):
 
 
 def getholdertime(url_time, driver):
-    wait = WebDriverWait(driver, 10)
+    wait = WebDriverWait(driver, timeout=10)
     driver.get(url_time)
-    
+    driver.implicitly_wait(5)
+
     try:
         wait.until(EC.element_to_be_clickable((By.TAG_NAME, 'a')))
         logging.info("Clickable <a> element found on url_time.")
     except TimeoutException:
         logging.error("No clickable <a> element found within the given time frame on url_time.")
+    
 
     simulate_human_interaction(driver)
-    random_sleep(1, 3)
 
     try:
         time_column = wait.until(EC.element_to_be_clickable((By.XPATH, '//span[@class="sc-kDvujY dxDyul" and text()="Time"]')))
         time_column.click()
-        random_sleep(3, 5)
+        driver.implicitly_wait(1)
         simulate_human_interaction(driver)
         root_html = driver.find_element(By.TAG_NAME, 'body').get_attribute('outerHTML')
         with open(FILE_TIME, 'w') as file:
