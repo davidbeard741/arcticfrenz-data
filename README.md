@@ -117,7 +117,7 @@ apikey = "INSERT YOUR API KEY BETWEEN THESE QUOTATION MARKS"
 Below is the complete code. Execute it to generate a file named 'nft_metadata.json' that will include the metadata each NFT in the collection.
 
 <details>
-  <summary>CLICK TO EXPAND Python Code</summary>
+  <summary>CLICK TO EXPAND Python Script</summary>
 
 ```PYTHON
 import requests
