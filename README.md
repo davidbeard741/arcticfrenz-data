@@ -534,9 +534,11 @@ Refer to [Part 1, Step 3](https://github.com/davidbeard741/arcticfrenz-data#step
 
 ### Step 2: Web Scraping and Selenium WebDriver
 
-This Python script utilizes web scraping techniques along with Selenium WebDriver for browser automation. The function `extract_owner_address_from_file` is designed to parse the saved HTML content to extract the address of the NFT owner. For this purpose, it employs BeautifulSoup, a popular parsing library, and targets specific table elements within the HTML that contain the required owner information.
+This script is designed to gather additional metadata related to NFTs using Selenium, a tool for automating web browsers. The script performs a series of operations to collect data about NFT holders and related timestamps from a website, then updates a JSON file with this information. Here's a breakdown of its key functionalities:
 
-Parsing Note: In the table, the initial row is a hidden 'measurement' row, identified by the class 'ant-table-measure-row'. This row is followed by the second row, which is the first one visible to users and contains the relevant data. The function systematically scans all tables within the given HTML content to locate one with a header titled 'Owner'. Once the appropriate table is identified, it skips any measurement rows and focuses on the first visible row. The function then retrieves the text within the 'a' tag in the second 'td' element of this row, which corresponds to the 'Owner' column.
+Parsing Note 1: In the table, the initial row is a hidden 'measurement' row, identified by the class 'ant-table-measure-row'. This row is followed by the second row, which is the first one visible to users and contains the relevant data. The function systematically scans all tables within the given HTML content to locate one with a header titled 'Owner'. Once the appropriate table is identified, it skips any measurement rows and focuses on the first visible row. The function then retrieves the text within the 'a' tag in the second 'td' element of this row, which corresponds to the 'Owner' column.
+
+Parsing Note 2: 
 
 <details>
   <summary>CLICK TO EXPAND</summary>
@@ -546,7 +548,7 @@ Parsing Note: In the table, the initial row is a hidden 'measurement' row, ident
 
 !apt install chromium-chromedriver
 
-!pip install selenium pytesseract 
+!pip install selenium
 
 !wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install ./google-chrome-stable_current_amd64.deb
 ```
@@ -556,18 +558,20 @@ Parsing Note: In the table, the initial row is a hidden 'measurement' row, ident
 ```
 
 ```python
-import psutil
+import json
 import random
 import time
-import json
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
+import psutil
+
 
 def kill_chrome_and_chromedriver():
     for proc in psutil.process_iter():
@@ -576,6 +580,7 @@ def kill_chrome_and_chromedriver():
                 proc.kill()
             except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
                 pass
+
 
 def driversetup():
     options = webdriver.ChromeOptions()
@@ -594,16 +599,16 @@ def driversetup():
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.add_argument("--high-dpi-support=1")
     options.add_argument("--force-device-scale-factor=2")
-    
+
     user_agents = [
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
         "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
         "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
     ]
-    
     selected_user_agent = random.choice(user_agents)
     options.add_argument(f"user-agent={selected_user_agent}")
+
     caps = webdriver.DesiredCapabilities.CHROME
     caps['goog:loggingPrefs'] = {'browser': 'ALL'}
     service = webdriver.chrome.service.Service('/usr/bin/chromedriver')
@@ -616,28 +621,27 @@ def driversetup():
 def simulate_human_interaction(driver):
     action = ActionChains(driver)
     body_element = driver.find_element(By.TAG_NAME, 'body')
-
     for _ in range(random.randint(1, 3)):
         action.send_keys_to_element(body_element, Keys.PAGE_DOWN).perform()
         random_sleep(0.5, 1.0)
         action.send_keys_to_element(body_element, Keys.PAGE_UP).perform()
         random_sleep(0.5, 1.0)
-
     action.move_to_element(body_element).perform()
     random_sleep(0.5, 1.0)
     action.move_by_offset(random.randint(0, 100), random.randint(0, 100)).perform()
     random_sleep(0.5, 1.0)
 
+
 def random_sleep(min_seconds, max_seconds):
     time.sleep(random.uniform(min_seconds, max_seconds))
 
-def extract_owner_address_from_file(file_path):
-    with open(file_path, 'r') as file:
-        html_content = file.read()
 
+def extract_owner_address_from_file(file_address):
+    with open(file_address, 'r') as file:
+        html_content = file.read()
     soup = BeautifulSoup(html_content, 'html.parser')
     tables = soup.find_all("table")
-    
+
     for table in tables:
         if table.find("th", {"title": "Owner"}):
             try:
@@ -649,22 +653,38 @@ def extract_owner_address_from_file(file_path):
                     return "No visible rows found in the owner table"
             except Exception as e:
                 return f"Error: {e}"
-    return "Owner column not found in any table"
+    return
 
-def getaddress(url, driver):
-    file_path = 'webpage.html'
 
-    driver.set_window_rect(x=0, y=0, width=1920, height=1080)
-    driver.get(url)
+def extract_time_from_file(file_time):
+    try:
+        with open(file_time, 'r') as file:
+            html_content = file.read()
+
+        soup = BeautifulSoup(html_content, 'html.parser')
+        
+        time_column_index = 3
+
+        for table in soup.find_all("table"):
+            visible_rows = table.select("tbody tr:not(.ant-table-measure-row)")
+            if visible_rows:
+                time_cell = visible_rows[0].select_one(f"td:nth-of-type({time_column_index})")
+                return time_cell.text.strip() if time_cell else "Time not found"
+            else:
+                return "No visible rows found in the time table"
+        return
+    except Exception as e:
+        return f"Error: {e}"
+
+def getholderaddress(url_holder, driver):
+    file_address = 'address.html'
+    driver.get(url_holder)
     wait = WebDriverWait(driver, 5)
-    
+
     try:
         wait.until(EC.element_to_be_clickable((By.TAG_NAME, 'a')))
     except TimeoutException:
         print("No clickable <a> element found within the given time frame.")
-    
-    for entry in driver.get_log("browser"):
-        print(entry)
 
     simulate_human_interaction(driver)
     random_sleep(1, 3)
@@ -672,11 +692,9 @@ def getaddress(url, driver):
     try:
         wait.until(EC.presence_of_element_located((By.ID, 'root')))
         root_html = driver.find_element(By.ID, 'root').get_attribute('outerHTML')
-
-        with open(file_path, 'w') as file:
+        with open(file_address, 'w') as file:
             file.write(root_html)
-      
-        solana_address = extract_owner_address_from_file(file_path)
+        solana_address = extract_owner_address_from_file(file_address)
     except TimeoutException:
         print("Timed out waiting for page to load")
         solana_address = "Error: Page did not load properly"
@@ -684,33 +702,62 @@ def getaddress(url, driver):
         print(f"An error occurred: {e}")
         solana_address = "Error: Unexpected issue occurred"
 
-    print(f"Address: {solana_address}")
-    driver.close()
+    print(f"Holder Address: {solana_address}")
     return solana_address
 
-def update_json_data(json_data, account, solana_address):
+
+def getholdertime(url_time, driver):
+    file_time = 'time.html'
+    driver.get(url_time)
+    wait = WebDriverWait(driver, 5)
+    simulate_human_interaction(driver)
+    random_sleep(1, 3)
+
+    try:
+        time_column = wait.until(EC.element_to_be_clickable((By.XPATH, '//span[@class="sc-kDvujY dxDyul" and text()="Time"]')))
+        time_column.click() 
+        simulate_human_interaction(driver)
+        random_sleep(1, 3)
+        root_html = driver.find_element(By.TAG_NAME, 'body').get_attribute('outerHTML')
+        with open(file_time, 'w') as file:
+            file.write(root_html)
+        hold_time = extract_time_from_file(file_time)
+    except TimeoutException:
+        print("Timed out waiting for page to load or element to be clickable")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        driver.close()
+
+    print(f"Hold Time: {hold_time}")
+    return hold_time
+
+
+def update_json_data(json_data, account, solana_address, hold_time):
     for item in json_data:
         if item.get('account') == account:
-            item['holders'] = [{"holder": solana_address}]
+            item['holder data'] = [{"holder": solana_address}, {"time": hold_time}]
             break
+
 
 if __name__ == '__main__':
     kill_chrome_and_chromedriver()
-    
     with open('nft_metadata_with_rarity.json', 'r') as file:
         nft_metadata = json.load(file)
-    
+
     for item in nft_metadata:
         driver = driversetup()
         account = item.get('account')
         if account:
-            url = f"https://solscan.io/token/{account}#holders"
+            url_holder = f"https://solscan.io/token/{account}#holders"
+            url_time = f"https://solscan.io/token/{account}"
             time.sleep(1)
-            solana_address = getaddress(url, driver)
-            update_json_data(nft_metadata, account, solana_address)
+            solana_address = getholderaddress(url_holder, driver)
+            hold_time = getholdertime(url_time, driver)
+            update_json_data(nft_metadata, account, solana_address, hold_time)
         driver.quit()
-    
-    with open('nft_metadata_with_rarity_and_holders.json', 'w') as file:
+
+    with open('nft_metadata_with_rarity_and_holder_data.json', 'w') as file:
         json.dump(nft_metadata, file, indent=4)
 ```
 
