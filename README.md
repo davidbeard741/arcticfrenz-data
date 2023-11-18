@@ -534,11 +534,20 @@ Refer to [Part 1, Step 3](https://github.com/davidbeard741/arcticfrenz-data#step
 
 ### Step 2: Web Scraping and Selenium WebDriver
 
-This script is designed to gather additional metadata related to NFTs using Selenium, a tool for automating web browsers. The script performs a series of operations to collect data about NFT holders and related timestamps from a website, then updates a JSON file with this information. Here's a breakdown of its key functionalities:
+This script employs Selenium WebDriver to automate web browser interactions for the purpose of collecting additional metadata about NFTs. It scrapes data from a specific website, focusing on extracting information about NFT holders and relevant timestamps. Subsequently, this data is used to update a JSON file. The following sections detail the key functionalities of the script:
 
-Parsing Note 1: In the table, the initial row is a hidden 'measurement' row, identified by the class 'ant-table-measure-row'. This row is followed by the second row, which is the first one visible to users and contains the relevant data. The function systematically scans all tables within the given HTML content to locate one with a header titled 'Owner'. Once the appropriate table is identified, it skips any measurement rows and focuses on the first visible row. The function then retrieves the text within the 'a' tag in the second 'td' element of this row, which corresponds to the 'Owner' column.
+#### Parsing Approach
 
-Parsing Note 2: 
+**Owner Address Extraction:**
+- The script scans the HTML content of a webpage to locate a specific table with a header titled 'Owner'. This identification is crucial as the table contains the NFT owner's address.
+- Within this table, the script bypasses any 'measurement' rows (marked by the class 'ant-table-measure-row'). These rows are not visible to users and do not contain relevant data.
+- The primary focus is on the first visible row following any measurement rows. This row holds the necessary information.
+- The script then extracts the text within the 'a' tag found in the second 'td' (table data) element of this row. This text is the actual owner's address associated with the NFT.
+
+**Timestamp Extraction:**
+- Similar to the owner address extraction, the script identifies and parses a specific table on the webpage to extract timestamp data related to the NFT.
+- The script navigates to the appropriate column (identified in the script) that contains timestamp information.
+- It extracts the timestamp data from the first visible row, ensuring that it skips any non-relevant rows such as measurement rows.
 
 <details>
   <summary>CLICK TO EXPAND</summary>
@@ -561,9 +570,10 @@ Parsing Note 2:
 import json
 import random
 import time
+import logging
+import sys
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -571,6 +581,29 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
 import psutil
+
+
+for handler in logging.root.handlers[:]:
+    logging.root.removeHandler(handler)
+
+logging.basicConfig(level=logging.INFO,
+                    format='%(asctime)s - %(levelname)s - %(message)s')
+
+file_handler = logging.FileHandler('logfile.log')
+file_handler.setLevel(logging.INFO)
+file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+
+stream_handler = logging.StreamHandler(sys.stdout)
+stream_handler.setLevel(logging.INFO)
+stream_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
+
+logger = logging.getLogger()
+logger.addHandler(file_handler)
+logger.addHandler(stream_handler)
+
+
+FILE_ADDRESS = 'address.html'
+FILE_TIME = 'time.html'
 
 
 def kill_chrome_and_chromedriver():
@@ -618,6 +651,7 @@ def driversetup():
     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
     return driver
 
+
 def simulate_human_interaction(driver):
     action = ActionChains(driver)
     body_element = driver.find_element(By.TAG_NAME, 'body')
@@ -637,23 +671,30 @@ def random_sleep(min_seconds, max_seconds):
 
 
 def extract_owner_address_from_file(file_address):
-    with open(file_address, 'r') as file:
-        html_content = file.read()
-    soup = BeautifulSoup(html_content, 'html.parser')
-    tables = soup.find_all("table")
+    try:
+        with open(file_address, 'r') as file:
+            html_content = file.read()
+        soup = BeautifulSoup(html_content, 'html.parser')
+        tables = soup.find_all("table")
 
-    for table in tables:
-        if table.find("th", {"title": "Owner"}):
-            try:
+        for table in tables:
+            if table.find("th", {"title": "Owner"}):
                 visible_rows = table.select("tbody tr:not(.ant-table-measure-row)")
                 if visible_rows:
                     owner_address_element = visible_rows[0].select_one("td:nth-of-type(2) a")
-                    return owner_address_element.text.strip() if owner_address_element else "Owner address not found"
+                    if owner_address_element:
+                        address = owner_address_element.text.strip()
+                        logging.info(f"Owner address found: {address}")
+                        return address
+                    else:
+                        logging.error("Owner address not found in the table.")
+                        return "Owner address not found"
                 else:
+                    logging.error("No visible rows found in the owner table.")
                     return "No visible rows found in the owner table"
-            except Exception as e:
-                return f"Error: {e}"
-    return
+    except Exception as e:
+        logging.error(f"Error while extracting owner address: {e}")
+        return f"Error: {e}"
 
 
 def extract_time_from_file(file_time):
@@ -662,29 +703,37 @@ def extract_time_from_file(file_time):
             html_content = file.read()
 
         soup = BeautifulSoup(html_content, 'html.parser')
-        
         time_column_index = 3
 
         for table in soup.find_all("table"):
             visible_rows = table.select("tbody tr:not(.ant-table-measure-row)")
             if visible_rows:
                 time_cell = visible_rows[0].select_one(f"td:nth-of-type({time_column_index})")
-                return time_cell.text.strip() if time_cell else "Time not found"
+                if time_cell:
+                    hold_time = time_cell.text.strip()
+                    logging.info(f"Hold Time found: {hold_time}")
+                    return hold_time
+                else:
+                    logging.error("Time not found in the table.")
+                    return "n/a"
             else:
+                logging.error("No visible rows found in the time table.")
                 return "No visible rows found in the time table"
-        return
+
     except Exception as e:
+        logging.error(f"Error while extracting hold time: {e}")
         return f"Error: {e}"
 
+
 def getholderaddress(url_holder, driver):
-    file_address = 'address.html'
     driver.get(url_holder)
     wait = WebDriverWait(driver, 5)
 
     try:
         wait.until(EC.element_to_be_clickable((By.TAG_NAME, 'a')))
+        logging.info("Clickable <a> element found.")
     except TimeoutException:
-        print("No clickable <a> element found within the given time frame.")
+        logging.error("No clickable <a> element found within the given time frame.")
 
     simulate_human_interaction(driver)
     random_sleep(1, 3)
@@ -692,22 +741,21 @@ def getholderaddress(url_holder, driver):
     try:
         wait.until(EC.presence_of_element_located((By.ID, 'root')))
         root_html = driver.find_element(By.ID, 'root').get_attribute('outerHTML')
-        with open(file_address, 'w') as file:
+        with open(FILE_ADDRESS, 'w') as file:
             file.write(root_html)
-        solana_address = extract_owner_address_from_file(file_address)
+        solana_address = extract_owner_address_from_file(FILE_ADDRESS)
+        logging.info(f"Holder Address: {solana_address}")
     except TimeoutException:
-        print("Timed out waiting for page to load")
+        logging.error("Timed out waiting for page to load")
         solana_address = "Error: Page did not load properly"
     except Exception as e:
-        print(f"An error occurred: {e}")
+        logging.error(f"An error occurred: {e}")
         solana_address = "Error: Unexpected issue occurred"
 
-    print(f"Holder Address: {solana_address}")
     return solana_address
 
 
 def getholdertime(url_time, driver):
-    file_time = 'time.html'
     driver.get(url_time)
     wait = WebDriverWait(driver, 5)
     simulate_human_interaction(driver)
@@ -715,50 +763,68 @@ def getholdertime(url_time, driver):
 
     try:
         time_column = wait.until(EC.element_to_be_clickable((By.XPATH, '//span[@class="sc-kDvujY dxDyul" and text()="Time"]')))
-        time_column.click() 
+        time_column.click()
         simulate_human_interaction(driver)
         random_sleep(1, 3)
         root_html = driver.find_element(By.TAG_NAME, 'body').get_attribute('outerHTML')
-        with open(file_time, 'w') as file:
+        with open(FILE_TIME, 'w') as file:
             file.write(root_html)
-        hold_time = extract_time_from_file(file_time)
+        hold_time = extract_time_from_file(FILE_TIME)
+        logging.info(f"Hold Time: {hold_time}")
     except TimeoutException:
-        print("Timed out waiting for page to load or element to be clickable")
+        logging.error("Timed out waiting for page to load or element to be clickable")
+        hold_time = "Error: Timed out"
     except Exception as e:
-        print(f"An error occurred: {e}")
+        logging.error(f"An error occurred: {e}")
+        hold_time = "Error: Unexpected issue occurred"
     finally:
         driver.close()
 
-    print(f"Hold Time: {hold_time}")
     return hold_time
 
 
-def update_json_data(json_data, account, solana_address, hold_time):
-    for item in json_data:
-        if item.get('account') == account:
-            item['holder data'] = [{"holder": solana_address}, {"time": hold_time}]
-            break
+def process_item(item, driver):
+    account = item.get('account')
+    if not account:
+        logging.info("Account information not found in the item.")
+        return
+
+    url_holder = f"https://solscan.io/token/{account}#holders"
+    url_time = f"https://solscan.io/token/{account}"
+
+    try:
+        solana_address = getholderaddress(url_holder, driver)
+        hold_time = getholdertime(url_time, driver)
+        update_json_data(item, solana_address, hold_time)
+        logging.info(f"Successfully processed account {account}.")
+    except Exception as e:
+        logging.error(f"Error processing {account}: {e}")
 
 
-if __name__ == '__main__':
+def update_json_data(item, solana_address, hold_time):
+    item['holder data'] = [{"holder": solana_address}, {"time": hold_time}]
+
+
+def main():
     kill_chrome_and_chromedriver()
     with open('nft_metadata_with_rarity.json', 'r') as file:
         nft_metadata = json.load(file)
 
     for item in nft_metadata:
         driver = driversetup()
-        account = item.get('account')
-        if account:
-            url_holder = f"https://solscan.io/token/{account}#holders"
-            url_time = f"https://solscan.io/token/{account}"
-            time.sleep(1)
-            solana_address = getholderaddress(url_holder, driver)
-            hold_time = getholdertime(url_time, driver)
-            update_json_data(nft_metadata, account, solana_address, hold_time)
-        driver.quit()
+        try:
+            process_item(item, driver)
+        except Exception as e:
+            logging.error(f"Error processing item with account {item.get('account', 'Unknown')}: {e}")
+        finally:
+            driver.quit()
 
     with open('nft_metadata_with_rarity_and_holder_data.json', 'w') as file:
         json.dump(nft_metadata, file, indent=4)
+
+
+if __name__ == '__main__':
+    main()
 ```
 
 Example Output:
