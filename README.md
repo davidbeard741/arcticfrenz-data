@@ -562,9 +562,11 @@ This script employs Selenium WebDriver to automate web browser interactions for 
 !wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && apt install ./google-chrome-stable_current_amd64.deb
 ```
 
+
 ```shell
 !Service('/usr/bin/chromedriver')
 ```
+
 
 ```python
 import json
@@ -630,8 +632,6 @@ def driversetup():
     options.add_argument("--disable-extensions")
     options.add_argument("--incognito")
     options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_argument("--high-dpi-support=1")
-    options.add_argument("--force-device-scale-factor=2")
 
     user_agents = [
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
@@ -726,17 +726,17 @@ def extract_time_from_file(file_time):
 
 
 def getholderaddress(url_holder, driver):
+    wait = WebDriverWait(driver, 10)
     driver.get(url_holder)
-    wait = WebDriverWait(driver, 5)
 
     try:
         wait.until(EC.element_to_be_clickable((By.TAG_NAME, 'a')))
-        logging.info("Clickable <a> element found.")
+        logging.info("Clickable <a> element found on url_holder.")
     except TimeoutException:
-        logging.error("No clickable <a> element found within the given time frame.")
-
-    simulate_human_interaction(driver)
+        logging.error("No clickable <a> element found within the given time frame on url_holder.")
+    
     random_sleep(1, 3)
+    simulate_human_interaction(driver)
 
     try:
         wait.until(EC.presence_of_element_located((By.ID, 'root')))
@@ -756,16 +756,23 @@ def getholderaddress(url_holder, driver):
 
 
 def getholdertime(url_time, driver):
+    wait = WebDriverWait(driver, 10)
     driver.get(url_time)
-    wait = WebDriverWait(driver, 5)
+    
+    try:
+        wait.until(EC.element_to_be_clickable((By.TAG_NAME, 'a')))
+        logging.info("Clickable <a> element found on url_time.")
+    except TimeoutException:
+        logging.error("No clickable <a> element found within the given time frame on url_time.")
+
     simulate_human_interaction(driver)
     random_sleep(1, 3)
 
     try:
         time_column = wait.until(EC.element_to_be_clickable((By.XPATH, '//span[@class="sc-kDvujY dxDyul" and text()="Time"]')))
         time_column.click()
+        random_sleep(3, 5)
         simulate_human_interaction(driver)
-        random_sleep(1, 3)
         root_html = driver.find_element(By.TAG_NAME, 'body').get_attribute('outerHTML')
         with open(FILE_TIME, 'w') as file:
             file.write(root_html)
