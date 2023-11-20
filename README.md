@@ -574,41 +574,45 @@ import random
 import time
 import logging
 import sys
+import os
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, ElementClickInterceptedException
 from selenium.webdriver.common.action_chains import ActionChains
 import psutil
 
 
-for handler in logging.root.handlers[:]:
-    logging.root.removeHandler(handler)
-
-logging.basicConfig(level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
-
-file_handler = logging.FileHandler('logfile.log')
-file_handler.setLevel(logging.INFO)
-file_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
-
-stream_handler = logging.StreamHandler(sys.stdout)
-stream_handler.setLevel(logging.INFO)
-stream_handler.setFormatter(logging.Formatter('%(asctime)s - %(levelname)s - %(message)s'))
-
-logger = logging.getLogger()
-logger.addHandler(file_handler)
-logger.addHandler(stream_handler)
-
-
+LOG_FILE = 'logfile.log'
 FILE_ADDRESS = 'address.html'
 FILE_TIME = 'time.html'
 
 
-def kill_chrome_and_chromedriver():
+def setup_logger(log_file_path, logger_name='MyAppLogger'):
+    logger = logging.getLogger(logger_name)
+    logger.handlers = []
+    logger.setLevel(logging.INFO)
+
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+
+    file_handler = logging.FileHandler(log_file_path)
+    file_handler.setLevel(logging.INFO)
+    file_handler.setFormatter(formatter)
+
+    stream_handler = logging.StreamHandler(sys.stdout)
+    stream_handler.setLevel(logging.INFO)
+    stream_handler.setFormatter(formatter)
+
+    logger.addHandler(file_handler)
+    logger.addHandler(stream_handler)
+
+    return logger
+
+
+def kill_chrome_and_chromedriver(logger):
     for proc in psutil.process_iter():
         if 'chrome' in proc.name().lower() or 'chromedriver' in proc.name().lower():
             try:
@@ -617,7 +621,7 @@ def kill_chrome_and_chromedriver():
                 pass
 
 
-def driversetup():
+def driversetup(logger):
     options = webdriver.ChromeOptions()
     options.add_argument("user-data-dir=selenium")
     options.add_argument('--headless')
@@ -651,8 +655,10 @@ def driversetup():
     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
     return driver
 
+def random_sleep(min_seconds, max_seconds):
+    time.sleep(random.uniform(min_seconds, max_seconds))
 
-def simulate_human_interaction(driver):
+def simulate_human_interaction(driver, logger):
     action = ActionChains(driver)
     body_element = driver.find_element(By.TAG_NAME, 'body')
     for _ in range(random.randint(1, 3)):
@@ -666,13 +672,9 @@ def simulate_human_interaction(driver):
     random_sleep(0.5, 1.0)
 
 
-def random_sleep(min_seconds, max_seconds):
-    time.sleep(random.uniform(min_seconds, max_seconds))
-
-
-def extract_owner_address_from_file(file_address):
+def extract_owner_address_from_file(file_path, logger):
     try:
-        with open(file_address, 'r') as file:
+        with open(FILE_ADDRESS, 'r') as file:
             html_content = file.read()
         soup = BeautifulSoup(html_content, 'html.parser')
         tables = soup.find_all("table")
@@ -684,152 +686,185 @@ def extract_owner_address_from_file(file_address):
                     owner_address_element = visible_rows[0].select_one("td:nth-of-type(2) a")
                     if owner_address_element:
                         address = owner_address_element.text.strip()
-                        logging.info(f"Owner address found: {address}")
+                        logger.info(f"Owner address found: {address}")
                         return address
                     else:
-                        logging.error("Owner address not found in the table.")
+                        logger.error("Owner address not found in the table.")
                         return "Owner address not found"
                 else:
-                    logging.error("No visible rows found in the owner table.")
+                    logger.error("No visible rows found in the owner table.")
                     return "No visible rows found in the owner table"
     except Exception as e:
-        logging.error(f"Error while extracting owner address: {e}")
+        logger.error(f"Error while extracting owner address: {e}")
         return f"Error: {e}"
 
 
-def extract_time_from_file(file_time):
+def extract_time_from_file(file_path, logger):
     try:
-        with open(file_time, 'r') as file:
+        with open(FILE_TIME, 'r') as file:
             html_content = file.read()
+        logger.info(f"Successfully read HTML content from '{FILE_TIME}'.")
 
         soup = BeautifulSoup(html_content, 'html.parser')
         time_column_index = 3
+        logger.info("Parsing HTML to locate the time table.")
 
         for table in soup.find_all("table"):
+            logger.info("Checking table for visible rows.")
             visible_rows = table.select("tbody tr:not(.ant-table-measure-row)")
-            if visible_rows:
-                time_cell = visible_rows[0].select_one(f"td:nth-of-type({time_column_index})")
-                if time_cell:
-                    hold_time = time_cell.text.strip()
-                    logging.info(f"Hold Time found: {hold_time}")
-                    return hold_time
-                else:
-                    logging.error("Time not found in the table.")
-                    return "n/a"
-            else:
-                logging.error("No visible rows found in the time table.")
-                return "No visible rows found in the time table"
+            if not visible_rows:
+                logger.warning("No visible rows found in the current table. Checking next table if available...")
+                continue
+
+            logger.info("Visible rows found. Extracting time from the first row.")
+            time_cell = visible_rows[0].select_one(f"td:nth-of-type({time_column_index})")
+            if not time_cell:
+                logger.error("Time cell not found in the table. The table structure might have changed or the specific time data is missing.")
+                return "No time found"
+
+            hold_time = time_cell.text.strip()
+            logger.info(f"Hold Time successfully extracted: {hold_time}")
+            return hold_time
+
+        logger.error("Failed to find a table with visible rows containing time data. The page structure might have changed.")
+        return "No visible rows found in any time table"
 
     except Exception as e:
-        logging.error(f"Error while extracting hold time: {e}")
+        logger.error(f"An unexpected error occurred while extracting hold time from '{file_path}': {e}")
         return f"Error: {e}"
 
 
-def getholderaddress(url_holder, driver):
-    wait = WebDriverWait(driver, timeout=10)
+def getholderaddress(url_holder, driver, logger):
+    wait = WebDriverWait(driver, timeout=20)
     driver.get(url_holder)
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(10)
 
     try:
         wait.until(EC.element_to_be_clickable((By.TAG_NAME, 'a')))
-        logging.info("Clickable <a> element found on url_holder.")
+        logger.info("Clickable <a> element found on url_holder.")
     except TimeoutException:
-        logging.error("No clickable <a> element found within the given time frame on url_holder.")
-    
-    simulate_human_interaction(driver)
+        logger.error("No clickable <a> element found within the given time frame on url_holder.")
+
+    simulate_human_interaction(driver, logger)
 
     try:
         wait.until(EC.presence_of_element_located((By.ID, 'root')))
         root_html = driver.find_element(By.ID, 'root').get_attribute('outerHTML')
         with open(FILE_ADDRESS, 'w') as file:
             file.write(root_html)
-        solana_address = extract_owner_address_from_file(FILE_ADDRESS)
-        logging.info(f"Holder Address: {solana_address}")
+        solana_address = extract_owner_address_from_file(FILE_ADDRESS, logger)
+        logger.info(f"Holder Address: {solana_address}")
     except TimeoutException:
-        logging.error("Timed out waiting for page to load")
+        logger.error("Timed out waiting for page to load")
         solana_address = "Error: Page did not load properly"
     except Exception as e:
-        logging.error(f"An error occurred: {e}")
+        logger.error(f"An error occurred: {e}")
         solana_address = "Error: Unexpected issue occurred"
 
     return solana_address
 
 
-def getholdertime(url_time, driver):
-    wait = WebDriverWait(driver, timeout=10)
-    driver.get(url_time)
-    driver.implicitly_wait(5)
+def get_hold_time(url_time, driver, logger):
+    wait = WebDriverWait(driver, timeout=60)
 
     try:
-        wait.until(EC.element_to_be_clickable((By.TAG_NAME, 'a')))
-        logging.info("Clickable <a> element found on url_time.")
-    except TimeoutException:
-        logging.error("No clickable <a> element found within the given time frame on url_time.")
-    
+        driver.get(url_time)
 
-    simulate_human_interaction(driver)
+        logger.info(f"URL '{url_time}' loaded successfully. Beginning extraction process.")
 
-    try:
-        time_column = wait.until(EC.element_to_be_clickable((By.XPATH, '//span[@class="sc-kDvujY dxDyul" and text()="Time"]')))
-        time_column.click()
-        driver.implicitly_wait(1)
-        simulate_human_interaction(driver)
-        root_html = driver.find_element(By.TAG_NAME, 'body').get_attribute('outerHTML')
+        wait.until(lambda d: d.execute_script('return document.readyState') == 'complete')
+
+        simulate_human_interaction(driver, logger)
+        logger.info("Simulated human interactions on the page.")
+
+        element_xpath = "(//span[@class='sc-kDvujY dxDyul'])[2]"
+        element = wait.until(EC.element_to_be_clickable((By.XPATH, element_xpath)))
+        element.click()
+        driver.implicitly_wait(5)
+
+        simulate_human_interaction(driver, logger)
+
+        body_html = driver.find_element(By.TAG_NAME, 'body').get_attribute('outerHTML')
         with open(FILE_TIME, 'w') as file:
-            file.write(root_html)
-        hold_time = extract_time_from_file(FILE_TIME)
-        logging.info(f"Hold Time: {hold_time}")
-    except TimeoutException:
-        logging.error("Timed out waiting for page to load or element to be clickable")
+            file.write(body_html)
+        logger.info(f"body HTML of page successfully saved to '{FILE_TIME}'. Proceeding to extract hold time.")
+
+        hold_time = extract_time_from_file(FILE_TIME, logger)
+        logger.info(f"Hold Time successfully extracted: {hold_time}")
+    except TimeoutException as e:
+        logger.error(f"TimeoutException: {e}. Check the website's responsiveness and the locator methods.")
         hold_time = "Error: Timed out"
     except Exception as e:
-        logging.error(f"An error occurred: {e}")
+        logger.error(f"Unexpected Error: {e}. Check the stack trace for details and review the website's structure and responsiveness.")
         hold_time = "Error: Unexpected issue occurred"
     finally:
+        logger.info("Closing the web driver and returning the extracted hold time.")
         driver.close()
 
     return hold_time
 
 
-def process_item(item, driver):
+def process_item(item, driver, logger):
     account = item.get('account')
     if not account:
-        logging.info("Account information not found in the item.")
+        logger.info("Account information not found in the item.")
         return
 
     url_holder = f"https://solscan.io/token/{account}#holders"
-    url_time = f"https://solscan.io/token/{account}"
+    url_time = f"https://solscan.io/token/{account}#txs"
 
     try:
-        solana_address = getholderaddress(url_holder, driver)
-        hold_time = getholdertime(url_time, driver)
-        update_json_data(item, solana_address, hold_time)
-        logging.info(f"Successfully processed account {account}.")
+        solana_address = getholderaddress(url_holder, driver, logger)
+        hold_time = get_hold_time(url_time, driver, logger)
+        update_json_data(item, solana_address, hold_time, logger)
+        logger.info(f"Successfully processed account {account}.")
     except Exception as e:
-        logging.error(f"Error processing {account}: {e}")
+        logger.error(f"Error processing {account}: {e}")
 
 
-def update_json_data(item, solana_address, hold_time):
+def update_json_data(item, solana_address, hold_time, logger):
     item['holder data'] = [{"holder": solana_address}, {"time": hold_time}]
 
 
 def main():
-    kill_chrome_and_chromedriver()
-    with open('nft_metadata_with_rarity.json', 'r') as file:
-        nft_metadata = json.load(file)
+    logger = setup_logger(LOG_FILE)
 
-    for item in nft_metadata:
-        driver = driversetup()
+    logger.info("Starting new run. Appending to the existing logfile.")
+
+    kill_chrome_and_chromedriver(logger)
+
+    try:
+        with open('nft_metadata_with_rarity.json', 'r') as file:
+            nft_metadata = json.load(file)
+            logger.info("NFT metadata successfully loaded.")
+    except FileNotFoundError:
+        logger.error("NFT metadata file not found.")
+        return
+    except json.JSONDecodeError as e:
+        logger.error(f"Error decoding JSON from the file: {e}")
+        return
+    except Exception as e:
+        logger.error(f"An unexpected error occurred while loading NFT metadata: {e}")
+        return
+
+    for index, item in enumerate(nft_metadata):
+        logger.info(f"Processing item {index + 1}/{len(nft_metadata)} with account: {item.get('account', 'Unknown')}")
+        driver = driversetup(logger)
+
         try:
-            process_item(item, driver)
+            process_item(item, driver, logger)
         except Exception as e:
-            logging.error(f"Error processing item with account {item.get('account', 'Unknown')}: {e}")
+            logger.error(f"Error processing item with account {item.get('account', 'Unknown')}: {e}")
         finally:
             driver.quit()
+            logger.info(f"WebDriver closed for item {index + 1}")
 
-    with open('nft_metadata_with_rarity_and_holder_data.json', 'w') as file:
-        json.dump(nft_metadata, file, indent=4)
-
+    try:
+        with open('nft_metadata_with_rarity_and_holder_data.json', 'w') as file:
+            json.dump(nft_metadata, file, indent=4)
+            logger.info("NFT metadata with holder data successfully saved.")
+    except Exception as e:
+        logger.error(f"An error occurred while saving the updated NFT metadata: {e}")
 
 if __name__ == '__main__':
     main()
