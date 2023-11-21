@@ -595,6 +595,7 @@ def setup_logger(log_file_path, logger_name='MyAppLogger'):
     logger = logging.getLogger(logger_name)
     logger.handlers = []
     logger.setLevel(logging.INFO)
+    logger.setLevel(logging.DEBUG)
 
     formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 
@@ -713,38 +714,33 @@ def extract_time_from_file(file_path, logger):
             logger.info("Checking table for visible rows.")
             visible_rows = table.select("tbody tr:not(.ant-table-measure-row)")
             if not visible_rows:
-                logger.warning("No visible rows found in the current table. Checking next table if available...")
+                logger.info("No visible rows found in the current table. Checking next table if available...")
                 continue
 
             logger.info("Visible rows found. Extracting time from the first row.")
             time_cell = visible_rows[0].select_one(f"td:nth-of-type({time_column_index})")
             if not time_cell:
-                logger.error("Time cell not found in the table. The table structure might have changed or the specific time data is missing.")
+                logger.info("Time cell not found in the table. The table structure might have changed or the specific time data is missing.")
                 return "No time found"
 
             hold_time = time_cell.text.strip()
             logger.info(f"Hold Time successfully extracted: {hold_time}")
             return hold_time
 
-        logger.error("Failed to find a table with visible rows containing time data. The page structure might have changed.")
+        logger.info("Failed to find a table with visible rows containing time data. The page structure might have changed.")
         return "No visible rows found in any time table"
 
     except Exception as e:
-        logger.error(f"An unexpected error occurred while extracting hold time from '{file_path}': {e}")
+        logger.info(f"An unexpected error occurred while extracting hold time from '{file_path}': {e}")
         return f"Error: {e}"
 
 
 def getholderaddress(url_holder, driver, logger):
     wait = WebDriverWait(driver, timeout=20)
     driver.get(url_holder)
+    WebDriverWait(driver, 10).until(lambda d: d.execute_script('return document.readyState') == 'complete')
+    random_sleep(1, 3)
     driver.implicitly_wait(10)
-
-    try:
-        wait.until(EC.element_to_be_clickable((By.TAG_NAME, 'a')))
-        logger.info("Clickable <a> element found on url_holder.")
-    except TimeoutException:
-        logger.error("No clickable <a> element found within the given time frame on url_holder.")
-
     simulate_human_interaction(driver, logger)
 
     try:
@@ -765,41 +761,61 @@ def getholderaddress(url_holder, driver, logger):
 
 
 def get_hold_time(url_time, driver, logger):
-    wait = WebDriverWait(driver, timeout=60)
+    wait = WebDriverWait(driver, timeout=20)
+    driver.get(url_time)
+    WebDriverWait(driver, 10).until(lambda d: d.execute_script('return document.readyState') == 'complete')
+    random_sleep(1, 3)
+    driver.implicitly_wait(10)
+
+    javascript = """
+    var elements = document.querySelectorAll('span.sc-kDvujY.dxDyul');
+    var targetElement = null;
+
+    for (var i = 0; i < elements.length; i++) {
+        if (elements[i].textContent.includes('Time')) {
+            targetElement = elements[i];
+            break;
+        }
+    }
+
+    if (targetElement) {
+        targetElement.click();
+    } else {
+        console.log('Element not found');
+    }
+    """
 
     try:
-        driver.get(url_time)
+        driver.execute_script(javascript)
+        random_sleep(1, 3)
+    except Exception as e:
+        logger.error(f"An error occurred: {e}")
 
-        logger.info(f"URL '{url_time}' loaded successfully. Beginning extraction process.")
+    simulate_human_interaction(driver, logger)
 
-        wait.until(lambda d: d.execute_script('return document.readyState') == 'complete')
-
-        simulate_human_interaction(driver, logger)
-        logger.info("Simulated human interactions on the page.")
-
-        element_xpath = "(//span[@class='sc-kDvujY dxDyul'])[2]"
-        element = wait.until(EC.element_to_be_clickable((By.XPATH, element_xpath)))
-        element.click()
-        driver.implicitly_wait(5)
-
-        simulate_human_interaction(driver, logger)
-
+    try:
+        logger.info("Extracting the page's HTML...")
         body_html = driver.find_element(By.TAG_NAME, 'body').get_attribute('outerHTML')
+        logger.info("Saving the extracted HTML to a file...")
+
         with open(FILE_TIME, 'w') as file:
             file.write(body_html)
-        logger.info(f"body HTML of page successfully saved to '{FILE_TIME}'. Proceeding to extract hold time.")
+        logger.info(f"Page HTML saved to '{FILE_TIME}'.")
 
+        logger.info("Extracting hold time from the saved HTML...")
         hold_time = extract_time_from_file(FILE_TIME, logger)
-        logger.info(f"Hold Time successfully extracted: {hold_time}")
+        logger.info(f"Hold time extracted: {hold_time}")
+
     except TimeoutException as e:
-        logger.error(f"TimeoutException: {e}. Check the website's responsiveness and the locator methods.")
+        logger.info(f"TimeoutException encountered: {e}. The website might be unresponsive or the element locators might be incorrect.")
         hold_time = "Error: Timed out"
     except Exception as e:
-        logger.error(f"Unexpected Error: {e}. Check the stack trace for details and review the website's structure and responsiveness.")
+        logger.info(f"Unexpected error encountered: {e}. Review the stack trace for details and check the website's structure.")
         hold_time = "Error: Unexpected issue occurred"
     finally:
-        logger.info("Closing the web driver and returning the extracted hold time.")
+        logger.info("Closing the web driver...")
         driver.close()
+        logger.info("Web driver closed and function execution completed.")
 
     return hold_time
 
