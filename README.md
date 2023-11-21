@@ -736,20 +736,25 @@ def extract_time_from_file(file_path, logger):
 
 
 def getholderaddress(url_holder, driver, logger):
-    wait = WebDriverWait(driver, timeout=20)
-    driver.get(url_holder)
-    WebDriverWait(driver, 10).until(lambda d: d.execute_script('return document.readyState') == 'complete')
-    random_sleep(1, 3)
-    driver.implicitly_wait(10)
-    simulate_human_interaction(driver, logger)
 
     try:
-        wait.until(EC.presence_of_element_located((By.ID, 'root')))
+        wait = WebDriverWait(driver, timeout=20)
+        driver.get(url_holder)
+        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, 'root')))
+        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+        WebDriverWait(driver, 30).until(lambda d: d.execute_script('return document.readyState') == 'complete')
+
+        simulate_human_interaction(driver, logger)
+
         root_html = driver.find_element(By.ID, 'root').get_attribute('outerHTML')
         with open(FILE_ADDRESS, 'w') as file:
             file.write(root_html)
+        
+        random_sleep(1, 3)
+
         solana_address = extract_owner_address_from_file(FILE_ADDRESS, logger)
         logger.info(f"Holder Address: {solana_address}")
+
     except TimeoutException:
         logger.error("Timed out waiting for page to load")
         solana_address = "Error: Page did not load properly"
@@ -760,49 +765,49 @@ def getholderaddress(url_holder, driver, logger):
     return solana_address
 
 
+
 def get_hold_time(url_time, driver, logger):
-    wait = WebDriverWait(driver, timeout=20)
-    driver.get(url_time)
-    WebDriverWait(driver, 10).until(lambda d: d.execute_script('return document.readyState') == 'complete')
-    random_sleep(1, 3)
-    driver.implicitly_wait(10)
+    try:
+        driver.get(url_time)
 
-    javascript = """
-    var elements = document.querySelectorAll('span.sc-kDvujY.dxDyul');
-    var targetElement = null;
+        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, 'root')))
+        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+        WebDriverWait(driver, 30).until(lambda d: d.execute_script('return document.readyState') == 'complete')
 
-    for (var i = 0; i < elements.length; i++) {
-        if (elements[i].textContent.includes('Time')) {
-            targetElement = elements[i];
-            break;
+        simulate_human_interaction(driver, logger)
+
+        javascript = """
+        var elements = document.querySelectorAll('span.sc-kDvujY.dxDyul');
+        var targetElement = null;
+
+        for (var i = 0; i < elements.length; i++) {
+            if (elements[i].textContent.includes('Time')) {
+                targetElement = elements[i];
+                break;
+            }
         }
-    }
 
-    if (targetElement) {
-        targetElement.click();
-    } else {
-        console.log('Element not found');
-    }
-    """
+        if (targetElement) {
+            targetElement.click();
+        } else {
+            console.log('Element not found');
+        }
+        """
 
-    try:
-        driver.execute_script(javascript)
-        random_sleep(1, 3)
-    except Exception as e:
-        logger.error(f"An error occurred: {e}")
+        try:
+            driver.execute_script(javascript)
+        except Exception as e:
+            logger.error(f"An error occurred: {e}")
 
-    simulate_human_interaction(driver, logger)
+        WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
 
-    try:
-        logger.info("Extracting the page's HTML...")
         body_html = driver.find_element(By.TAG_NAME, 'body').get_attribute('outerHTML')
-        logger.info("Saving the extracted HTML to a file...")
 
         with open(FILE_TIME, 'w') as file:
             file.write(body_html)
-        logger.info(f"Page HTML saved to '{FILE_TIME}'.")
 
-        logger.info("Extracting hold time from the saved HTML...")
+        random_sleep(1, 3)
+
         hold_time = extract_time_from_file(FILE_TIME, logger)
         logger.info(f"Hold time extracted: {hold_time}")
 
@@ -815,7 +820,7 @@ def get_hold_time(url_time, driver, logger):
     finally:
         logger.info("Closing the web driver...")
         driver.close()
-        logger.info("Web driver closed and function execution completed.")
+        logger.info("Web driver closed for holder address and time.")
 
     return hold_time
 
@@ -883,10 +888,12 @@ def main():
         logger.error(f"An error occurred while saving the updated NFT metadata: {e}")
 
 if __name__ == '__main__':
-    main()
+    main()   
 ```
+</details>
 
-Example Output:
+<details>
+  <summary>CLICK TO EXPAND JSON Output</summary>
 
 ```json
 [
@@ -1026,9 +1033,9 @@ Example Output:
             }
         ]
     },
-		  {
-		    "_comment": "The file has been truncated for this example; the output JSON file nft_metadata_with_rarity_and_holders will contain all NFTs in the collection with their the holder's public key.",
-		  }
+    {
+        "_comment": "The file has been truncated for this example; the output JSON file will contain all NFTs in the collection with the holder's public keys and with the time they began to hold the NFT."
+    }
 ]
 ```
 
