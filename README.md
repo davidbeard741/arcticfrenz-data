@@ -1034,7 +1034,7 @@ if __name__ == '__main__':
         ]
     },
     {
-        "_comment": "The file has been truncated for this example; the output JSON file will contain all NFTs in the collection with the holder's public keys and with the time they began to hold the NFT."
+        "_comment": "The file has been truncated for this example. The output JSON file will include all NFTs in the collection along with the respective holder's public keys and the timestamp indicating when they acquired the NFT."
     }
 ]
 ```
