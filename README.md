@@ -575,6 +575,7 @@ import time
 import logging
 import sys
 import os
+from datetime import datetime
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -637,6 +638,7 @@ def driversetup(logger):
     options.add_argument("--disable-extensions")
     options.add_argument("--incognito")
     options.add_argument("--disable-blink-features=AutomationControlled")
+    options.page_load_strategy = 'normal'
 
     user_agents = [
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
@@ -691,10 +693,10 @@ def extract_owner_address_from_file(file_path, logger):
                         return address
                     else:
                         logger.error("Owner address not found in the table.")
-                        return "Owner address not found"
+                        return "Address not found"
                 else:
                     logger.error("No visible rows found in the owner table.")
-                    return "No visible rows found in the owner table"
+                    return "No rows in table"
     except Exception as e:
         logger.error(f"Error while extracting owner address: {e}")
         return f"Error: {e}"
@@ -720,14 +722,14 @@ def extract_time_from_file(file_path, logger):
             logger.info("Visible rows found. Extracting time from the first row.")
             time_cell = visible_rows[0].select_one(f"td:nth-of-type({time_column_index})")
             if not time_cell:
-                logger.info("Time cell not found in the table. The table structure might have changed or the specific time data is missing.")
+                logger.info("Time cell not found in the table.")
                 return "No time found"
 
             hold_time = time_cell.text.strip()
             logger.info(f"Hold Time successfully extracted: {hold_time}")
             return hold_time
 
-        logger.info("Failed to find a table with visible rows containing time data. The page structure might have changed.")
+        logger.info("Failed to find a table with visible rows containing time data.")
         return "No visible rows found in any time table"
 
     except Exception as e:
@@ -738,19 +740,23 @@ def extract_time_from_file(file_path, logger):
 def getholderaddress(url_holder, driver, logger):
 
     try:
-        wait = WebDriverWait(driver, timeout=20)
-        driver.get(url_holder)
-        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, 'root')))
-        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
-        WebDriverWait(driver, 30).until(lambda d: d.execute_script('return document.readyState') == 'complete')
 
+        driver.get(url_holder)
+
+        wait = WebDriverWait(driver, timeout=30)
+        root = driver.find_element(By.ID, 'root')
+        body = driver.find_element(By.TAG_NAME, 'body')
+
+        wait.until(lambda d: driver.execute_script('return document.readyState') == 'complete')
+        wait.until(lambda d: root.is_displayed())
+        wait.until(lambda d: body.is_displayed())
         simulate_human_interaction(driver, logger)
+
+        driver.implicitly_wait(3)
 
         root_html = driver.find_element(By.ID, 'root').get_attribute('outerHTML')
         with open(FILE_ADDRESS, 'w') as file:
             file.write(root_html)
-        
-        random_sleep(1, 3)
 
         solana_address = extract_owner_address_from_file(FILE_ADDRESS, logger)
         logger.info(f"Holder Address: {solana_address}")
@@ -765,16 +771,21 @@ def getholderaddress(url_holder, driver, logger):
     return solana_address
 
 
-
 def get_hold_time(url_time, driver, logger):
     try:
+
         driver.get(url_time)
 
-        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, 'root')))
-        WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
-        WebDriverWait(driver, 30).until(lambda d: d.execute_script('return document.readyState') == 'complete')
+        wait = WebDriverWait(driver, timeout=30)
+        root = driver.find_element(By.ID, 'root')
+        body = driver.find_element(By.TAG_NAME, 'body')
 
+        wait.until(lambda d: driver.execute_script('return document.readyState') == 'complete')
+        wait.until(lambda d: root.is_displayed())
+        wait.until(lambda d: body.is_displayed())
         simulate_human_interaction(driver, logger)
+
+        driver.implicitly_wait(4)
 
         javascript = """
         var elements = document.querySelectorAll('span.sc-kDvujY.dxDyul');
@@ -799,14 +810,12 @@ def get_hold_time(url_time, driver, logger):
         except Exception as e:
             logger.error(f"An error occurred: {e}")
 
-        WebDriverWait(driver, 5).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
+        driver.implicitly_wait(1)
 
         body_html = driver.find_element(By.TAG_NAME, 'body').get_attribute('outerHTML')
 
         with open(FILE_TIME, 'w') as file:
             file.write(body_html)
-
-        random_sleep(1, 3)
 
         hold_time = extract_time_from_file(FILE_TIME, logger)
         logger.info(f"Hold time extracted: {hold_time}")
@@ -843,8 +852,22 @@ def process_item(item, driver, logger):
         logger.error(f"Error processing {account}: {e}")
 
 
-def update_json_data(item, solana_address, hold_time, logger):
-    item['holder data'] = [{"holder": solana_address}, {"time": hold_time}]
+from datetime import datetime
+
+def update_json_data(item, solana_address, hold_time_str, logger):
+
+    hold_time_format = "%d-%m-%Y %H:%M:%S"
+    hold_time = datetime.strptime(hold_time_str, hold_time_format)
+
+    current_time = datetime.now()
+    hold_time_unix = int(hold_time.timestamp())
+    current_time_unix = int(current_time.timestamp())
+
+    item['holder data'] = [
+        {"holder": solana_address}, 
+        {"when acquired": hold_time_unix},  
+        {"time checked": current_time_unix}
+    ]
 
 
 def main():
@@ -888,7 +911,7 @@ def main():
         logger.error(f"An error occurred while saving the updated NFT metadata: {e}")
 
 if __name__ == '__main__':
-    main()   
+    main()
 ```
 </details>
 
