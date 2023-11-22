@@ -751,7 +751,7 @@ def getholderaddress(url_holder, driver, logger):
         wait.until(lambda d: root.is_displayed())
         wait.until(lambda d: body.is_displayed())
 
-	time.sleep(10)
+	random_sleep(7, 9)
 
         simulate_human_interaction(driver, logger)
 
@@ -785,7 +785,7 @@ def get_hold_time(url_time, driver, logger):
         wait.until(lambda d: root.is_displayed())
         wait.until(lambda d: body.is_displayed())
 
-	time.sleep(10)
+	random_sleep(8, 10)
 
         simulate_human_interaction(driver, logger)
 
@@ -812,7 +812,7 @@ def get_hold_time(url_time, driver, logger):
         except Exception as e:
             logger.error(f"An error occurred: {e}")
 
-        driver.implicitly_wait(1)
+	time.sleep(1)
 
         body_html = driver.find_element(By.TAG_NAME, 'body').get_attribute('outerHTML')
 
