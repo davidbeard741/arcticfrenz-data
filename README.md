@@ -750,9 +750,10 @@ def getholderaddress(url_holder, driver, logger):
         wait.until(lambda d: driver.execute_script('return document.readyState') == 'complete')
         wait.until(lambda d: root.is_displayed())
         wait.until(lambda d: body.is_displayed())
-        simulate_human_interaction(driver, logger)
 
-        driver.implicitly_wait(3)
+	time.sleep(10)
+
+        simulate_human_interaction(driver, logger)
 
         root_html = driver.find_element(By.ID, 'root').get_attribute('outerHTML')
         with open(FILE_ADDRESS, 'w') as file:
@@ -783,9 +784,10 @@ def get_hold_time(url_time, driver, logger):
         wait.until(lambda d: driver.execute_script('return document.readyState') == 'complete')
         wait.until(lambda d: root.is_displayed())
         wait.until(lambda d: body.is_displayed())
-        simulate_human_interaction(driver, logger)
 
-        driver.implicitly_wait(4)
+	time.sleep(10)
+
+        simulate_human_interaction(driver, logger)
 
         javascript = """
         var elements = document.querySelectorAll('span.sc-kDvujY.dxDyul');
