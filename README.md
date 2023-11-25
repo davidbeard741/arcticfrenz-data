@@ -582,21 +582,23 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, ElementClickInterceptedException
+from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.common.action_chains import ActionChains
 import psutil
 
-LOG_FILE = 'logfile.log'
-FILE_ADDRESS = 'address.html'
-FILE_TIME = 'time.html'
 
-def setup_logger(log_file_path, logger_name='MyAppLogger'):
+LOG_FILE = "logfile.log"
+FILE_ADDRESS = "address.html"
+FILE_TIME = "time.html"
+
+
+def setup_logger(log_file_path, logger_name="MyAppLogger"):
     logger = logging.getLogger(logger_name)
     logger.handlers = []
     logger.setLevel(logging.INFO)
     logger.setLevel(logging.DEBUG)
 
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
 
     file_handler = logging.FileHandler(log_file_path)
     file_handler.setLevel(logging.INFO)
@@ -614,7 +616,7 @@ def setup_logger(log_file_path, logger_name='MyAppLogger'):
 
 def kill_chrome_and_chromedriver(logger):
     for proc in psutil.process_iter():
-        if 'chrome' in proc.name().lower() or 'chromedriver' in proc.name().lower():
+        if "chrome" in proc.name().lower() or "chromedriver" in proc.name().lower():
             try:
                 proc.kill()
             except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
@@ -624,9 +626,9 @@ def kill_chrome_and_chromedriver(logger):
 def driversetup(logger):
     options = webdriver.ChromeOptions()
     options.add_argument("user-data-dir=selenium")
-    options.add_argument('--headless')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument("--headless")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
     options.add_argument("--remote-debugging-port=9222")
     options.add_argument("lang=en-US")
@@ -636,32 +638,39 @@ def driversetup(logger):
     options.add_argument("--disable-extensions")
     options.add_argument("--incognito")
     options.add_argument("--disable-blink-features=AutomationControlled")
-    options.page_load_strategy = 'normal'
+    options.page_load_strategy = "normal"
 
     user_agents = [
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
         "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
-        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36"
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36",
     ]
     selected_user_agent = random.choice(user_agents)
     options.add_argument(f"user-agent={selected_user_agent}")
 
     caps = webdriver.DesiredCapabilities.CHROME
-    caps['goog:loggingPrefs'] = {'browser': 'ALL'}
-    service = webdriver.chrome.service.Service('/usr/bin/chromedriver')
+    caps["goog:loggingPrefs"] = {"browser": "ALL"}
+    service = webdriver.chrome.service.Service("/usr/bin/chromedriver")
     driver = webdriver.Chrome(options=options)
     driver.execute_cdp_cmd("Network.clearBrowserCookies", {})
-    driver.execute_cdp_cmd("Network.setExtraHTTPHeaders", {"headers": {"Referer": "https://www.google.com/"}})
-    driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
+    driver.execute_cdp_cmd(
+        "Network.setExtraHTTPHeaders",
+        {"headers": {"Referer": "https://www.google.com/"}},
+    )
+    driver.execute_script(
+        "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
+    )
     return driver
+
 
 def random_sleep(min_seconds, max_seconds):
     time.sleep(random.uniform(min_seconds, max_seconds))
 
+
 def simulate_human_interaction(driver, logger):
     action = ActionChains(driver)
-    body_element = driver.find_element(By.TAG_NAME, 'body')
+    body_element = driver.find_element(By.TAG_NAME, "body")
     for _ in range(random.randint(1, 3)):
         action.send_keys_to_element(body_element, Keys.PAGE_DOWN).perform()
         random_sleep(0.5, 1.0)
@@ -675,16 +684,18 @@ def simulate_human_interaction(driver, logger):
 
 def extract_owner_address_from_file(file_path, logger):
     try:
-        with open(FILE_ADDRESS, 'r') as file:
+        with open(FILE_ADDRESS, "r") as file:
             html_content = file.read()
-        soup = BeautifulSoup(html_content, 'html.parser')
+        soup = BeautifulSoup(html_content, "html.parser")
         tables = soup.find_all("table")
 
         for table in tables:
             if table.find("th", {"title": "Owner"}):
                 visible_rows = table.select("tbody tr:not(.ant-table-measure-row)")
                 if visible_rows:
-                    owner_address_element = visible_rows[0].select_one("td:nth-of-type(2) a")
+                    owner_address_element = visible_rows[0].select_one(
+                        "td:nth-of-type(2) a"
+                    )
                     if owner_address_element:
                         address = owner_address_element.text.strip()
                         logger.info(f"Owner address found: {address}")
@@ -702,11 +713,11 @@ def extract_owner_address_from_file(file_path, logger):
 
 def extract_time_from_file(file_path, logger):
     try:
-        with open(file_path, 'r') as file:
+        with open(file_path, "r") as file:
             html_content = file.read()
         logger.info(f"Successfully read HTML content from '{file_path}'.")
 
-        soup = BeautifulSoup(html_content, 'html.parser')
+        soup = BeautifulSoup(html_content, "html.parser")
         time_column_index = 4
         logger.info("Parsing HTML to locate the time table.")
 
@@ -716,38 +727,48 @@ def extract_time_from_file(file_path, logger):
             logger.info(f"Checking table {table_count} for visible rows.")
             visible_rows = table.select("tbody tr:not(.ant-table-measure-row)")
             if not visible_rows:
-                logger.info(f"No visible rows found in table {table_count}. Checking next table if available...")
+                logger.info(
+                    f"No visible rows found in table {table_count}. Checking next table if available..."
+                )
                 continue
 
-            logger.info(f"Table {table_count}: Visible rows found. Extracting time from the first row.")
-            time_cell = visible_rows[0].select_one(f"td:nth-of-type({time_column_index})")
+            logger.info(
+                f"Table {table_count}: Visible rows found. Extracting time from the first row."
+            )
+            time_cell = visible_rows[0].select_one(
+                f"td:nth-of-type({time_column_index})"
+            )
             if not time_cell:
                 logger.info(f"Table {table_count}: Time cell not found in the table.")
                 continue
 
             hold_time = time_cell.text.strip()
-            logger.info(f"Table {table_count}: Hold Time successfully extracted: {hold_time}")
+            logger.info(
+                f"Table {table_count}: Hold Time successfully extracted: {hold_time}"
+            )
             return hold_time
 
         logger.info("Failed to find a table with visible rows containing time data.")
         return "No visible rows found in any time table"
 
     except Exception as e:
-        logger.info(f"An unexpected error occurred while extracting hold time from '{file_path}': {e}")
+        logger.info(
+            f"An unexpected error occurred while extracting hold time from '{file_path}': {e}"
+        )
         return f"Error: {e}"
 
 
 def getholderaddress(url_holder, driver, logger):
-
     try:
-
         driver.get(url_holder)
 
         wait = WebDriverWait(driver, timeout=30)
-        root = driver.find_element(By.ID, 'root')
-        body = driver.find_element(By.TAG_NAME, 'body')
+        root = driver.find_element(By.ID, "root")
+        body = driver.find_element(By.TAG_NAME, "body")
 
-        wait.until(lambda d: driver.execute_script('return document.readyState') == 'complete')
+        wait.until(
+            lambda d: driver.execute_script("return document.readyState") == "complete"
+        )
         wait.until(lambda d: root.is_displayed())
         wait.until(lambda d: body.is_displayed())
 
@@ -755,8 +776,8 @@ def getholderaddress(url_holder, driver, logger):
 
         simulate_human_interaction(driver, logger)
 
-        root_html = driver.find_element(By.ID, 'root').get_attribute('outerHTML')
-        with open(FILE_ADDRESS, 'w') as file:
+        root_html = driver.find_element(By.ID, "root").get_attribute("outerHTML")
+        with open(FILE_ADDRESS, "w") as file:
             file.write(root_html)
 
         solana_address = extract_owner_address_from_file(FILE_ADDRESS, logger)
@@ -774,14 +795,15 @@ def getholderaddress(url_holder, driver, logger):
 
 def get_hold_time(url_time, driver, logger):
     try:
-
         driver.get(url_time)
 
         wait = WebDriverWait(driver, timeout=30)
-        root = driver.find_element(By.ID, 'root')
-        body = driver.find_element(By.TAG_NAME, 'body')
+        root = driver.find_element(By.ID, "root")
+        body = driver.find_element(By.TAG_NAME, "body")
 
-        wait.until(lambda d: driver.execute_script('return document.readyState') == 'complete')
+        wait.until(
+            lambda d: driver.execute_script("return document.readyState") == "complete"
+        )
         wait.until(lambda d: root.is_displayed())
         wait.until(lambda d: body.is_displayed())
 
@@ -818,19 +840,23 @@ def get_hold_time(url_time, driver, logger):
 
         time.sleep(1)
 
-        body_html = driver.find_element(By.TAG_NAME, 'body').get_attribute('outerHTML')
+        body_html = driver.find_element(By.TAG_NAME, "body").get_attribute("outerHTML")
 
-        with open(FILE_TIME, 'w') as file:
+        with open(FILE_TIME, "w") as file:
             file.write(body_html)
 
         hold_time = extract_time_from_file(FILE_TIME, logger)
         logger.info(f"Hold time extracted: {hold_time}")
 
     except TimeoutException as e:
-        logger.info(f"TimeoutException encountered: {e}. The website might be unresponsive or the element locators might be incorrect.")
+        logger.info(
+            f"TimeoutException encountered: {e}. The website might be unresponsive or the element locators might be incorrect."
+        )
         hold_time = "Error: Timed out"
     except Exception as e:
-        logger.info(f"Unexpected error encountered: {e}. Review the stack trace for details and check the website's structure.")
+        logger.info(
+            f"Unexpected error encountered: {e}. Review the stack trace for details and check the website's structure."
+        )
         hold_time = "Error: Unexpected issue occurred"
     finally:
         logger.info("Closing the web driver...")
@@ -841,7 +867,7 @@ def get_hold_time(url_time, driver, logger):
 
 
 def process_item(item, driver, logger):
-    account = item.get('account')
+    account = item.get("account")
     if not account:
         logger.info("Account information not found in the item.")
         return
@@ -860,46 +886,44 @@ def process_item(item, driver, logger):
 
 from datetime import datetime
 
-def update_json_data(item, solana_address, hold_time_str, logger):
 
-    hold_time_format = "%d-%m-%Y %H:%M:%S"
+def update_json_data(item, solana_address, hold_time_str, logger):
+    hold_time_format = "%m-%d-%Y %H:%M:%S"
     hold_time = datetime.strptime(hold_time_str, hold_time_format)
 
     current_time = datetime.now()
     hold_time_unix = int(hold_time.timestamp())
     current_time_unix = int(current_time.timestamp())
 
-    item['holder data'] = [
+    item["holder data"] = [
         {"holder": solana_address},
         {"when acquired": hold_time_unix},
-        {"time checked": current_time_unix}
+        {"time checked": current_time_unix},
     ]
 
 
 def find_start_index(nft_metadata):
-    # Step 1: Prioritize items without 'holder data'
     for index, item in enumerate(nft_metadata):
-        if 'holder data' not in item:
+        if "holder data" not in item:
             return index
 
-    # Step 2: Prioritize items with invalid 'holder' length
     for index, item in enumerate(nft_metadata):
-        if 'holder data' in item and len(item['holder data'][0]['holder']) not in range(32, 45):
+        if "holder data" in item and len(item["holder data"][0]["holder"]) not in range(
+            32, 45
+        ):
             return index
 
-    # New Step 3: Prioritize if 'when acquired' is not a Unix epoch timestamp
     for index, item in enumerate(nft_metadata):
-        if 'holder data' in item:
-            when_acquired = item['holder data'][1]['when acquired']
+        if "holder data" in item:
+            when_acquired = item["holder data"][1]["when acquired"]
             if not isinstance(when_acquired, int):
                 return index
 
-    # Step 4: Prioritize by oldest 'time checked'
     oldest_index = None
-    oldest_time = float('inf')
+    oldest_time = float("inf")
     for index, item in enumerate(nft_metadata):
-        if 'holder data' in item:
-            time_checked = item['holder data'][2]['time checked']
+        if "holder data" in item:
+            time_checked = item["holder data"][2]["time checked"]
             if time_checked < oldest_time:
                 oldest_time = time_checked
                 oldest_index = index
@@ -914,11 +938,10 @@ def main():
 
     kill_chrome_and_chromedriver(logger)
 
-    # Load existing data if available
-    processed_data_file = 'nft_metadata_with_rarity_and_holder_data.json'
+    processed_data_file = "nft_metadata_with_rarity_and_holder_data.json"
     if os.path.exists(processed_data_file):
         try:
-            with open(processed_data_file, 'r') as file:
+            with open(processed_data_file, "r") as file:
                 nft_metadata = json.load(file)
             logger.info("Continuing from previously saved progress.")
         except Exception as e:
@@ -926,38 +949,42 @@ def main():
             return
     else:
         try:
-            with open('nft_metadata_with_rarity.json', 'r') as file:
+            with open("nft_metadata_with_rarity.json", "r") as file:
                 nft_metadata = json.load(file)
                 logger.info("Starting from the beginning as no progress file found.")
         except Exception as e:
             logger.error(f"Error loading initial data: {e}")
             return
 
-    # Determine where to start processing
     start_index = find_start_index(nft_metadata)
     end_index = min(start_index + 100, len(nft_metadata))
 
     for index in range(start_index, end_index):
         item = nft_metadata[index]
-        logger.info(f"Processing item {index + 1}/{len(nft_metadata)} with account: {item.get('account', 'Unknown')}")
+        logger.info(
+            f"Processing item {index + 1}/{len(nft_metadata)} with account: {item.get('account', 'Unknown')}"
+        )
         driver = driversetup(logger)
 
         try:
             process_item(item, driver, logger)
         except Exception as e:
-            logger.error(f"Error processing item with account {item.get('account', 'Unknown')}: {e}")
+            logger.error(
+                f"Error processing item with account {item.get('account', 'Unknown')}: {e}"
+            )
         finally:
             driver.quit()
             logger.info(f"WebDriver closed for item {index + 1}")
 
     try:
-        with open(processed_data_file, 'w') as file:
+        with open(processed_data_file, "w") as file:
             json.dump(nft_metadata, file, indent=4)
             logger.info("Progress saved.")
     except Exception as e:
         logger.error(f"An error occurred while saving the progress: {e}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
 
 ```
