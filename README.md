@@ -704,29 +704,31 @@ def extract_owner_address_from_file(file_path, logger):
 
 def extract_time_from_file(file_path, logger):
     try:
-        with open(FILE_TIME, 'r') as file:
+        with open(file_path, 'r') as file:
             html_content = file.read()
-        logger.info(f"Successfully read HTML content from '{FILE_TIME}'.")
+        logger.info(f"Successfully read HTML content from '{file_path}'.")
 
         soup = BeautifulSoup(html_content, 'html.parser')
-        time_column_index = 3
+        time_column_index = 4
         logger.info("Parsing HTML to locate the time table.")
 
+        table_count = 0
         for table in soup.find_all("table"):
-            logger.info("Checking table for visible rows.")
+            table_count += 1
+            logger.info(f"Checking table {table_count} for visible rows.")
             visible_rows = table.select("tbody tr:not(.ant-table-measure-row)")
             if not visible_rows:
-                logger.info("No visible rows found in the current table. Checking next table if available...")
+                logger.info(f"No visible rows found in table {table_count}. Checking next table if available...")
                 continue
 
-            logger.info("Visible rows found. Extracting time from the first row.")
+            logger.info(f"Table {table_count}: Visible rows found. Extracting time from the first row.")
             time_cell = visible_rows[0].select_one(f"td:nth-of-type({time_column_index})")
             if not time_cell:
-                logger.info("Time cell not found in the table.")
-                return "No time found"
+                logger.info(f"Table {table_count}: Time cell not found in the table.")
+                continue
 
             hold_time = time_cell.text.strip()
-            logger.info(f"Hold Time successfully extracted: {hold_time}")
+            logger.info(f"Table {table_count}: Hold Time successfully extracted: {hold_time}")
             return hold_time
 
         logger.info("Failed to find a table with visible rows containing time data.")
@@ -751,7 +753,7 @@ def getholderaddress(url_holder, driver, logger):
         wait.until(lambda d: root.is_displayed())
         wait.until(lambda d: body.is_displayed())
 
-	random_sleep(7, 9)
+        random_sleep(6, 7)
 
         simulate_human_interaction(driver, logger)
 
@@ -785,25 +787,29 @@ def get_hold_time(url_time, driver, logger):
         wait.until(lambda d: root.is_displayed())
         wait.until(lambda d: body.is_displayed())
 
-	random_sleep(8, 10)
+        random_sleep(8, 9)
 
         simulate_human_interaction(driver, logger)
 
         javascript = """
         var elements = document.querySelectorAll('span.sc-kDvujY.dxDyul');
         var targetElement = null;
+        var count = 0;
 
         for (var i = 0; i < elements.length; i++) {
             if (elements[i].textContent.includes('Time')) {
-                targetElement = elements[i];
-                break;
+                count++;
+                if (count === 2) {
+                    targetElement = elements[i];
+                    break;
+                }
             }
         }
 
         if (targetElement) {
             targetElement.click();
         } else {
-            console.log('Element not found');
+            console.log('Second element not found');
         }
         """
 
@@ -812,7 +818,7 @@ def get_hold_time(url_time, driver, logger):
         except Exception as e:
             logger.error(f"An error occurred: {e}")
 
-	time.sleep(1)
+        time.sleep(1)
 
         body_html = driver.find_element(By.TAG_NAME, 'body').get_attribute('outerHTML')
 
@@ -866,10 +872,41 @@ def update_json_data(item, solana_address, hold_time_str, logger):
     current_time_unix = int(current_time.timestamp())
 
     item['holder data'] = [
-        {"holder": solana_address}, 
-        {"when acquired": hold_time_unix},  
+        {"holder": solana_address},
+        {"when acquired": hold_time_unix},
         {"time checked": current_time_unix}
     ]
+
+
+def find_start_index(nft_metadata):
+    # Step 1: Prioritize items without 'holder data'
+    for index, item in enumerate(nft_metadata):
+        if 'holder data' not in item:
+            return index
+
+    # Step 2: Prioritize items with invalid 'holder' length
+    for index, item in enumerate(nft_metadata):
+        if 'holder data' in item and len(item['holder data'][0]['holder']) not in range(32, 45):
+            return index
+
+    # New Step 3: Prioritize if 'when acquired' is not a Unix epoch timestamp
+    for index, item in enumerate(nft_metadata):
+        if 'holder data' in item:
+            when_acquired = item['holder data'][1]['when acquired']
+            if not isinstance(when_acquired, int):
+                return index
+
+    # Step 4: Prioritize by oldest 'time checked'
+    oldest_index = None
+    oldest_time = float('inf')
+    for index, item in enumerate(nft_metadata):
+        if 'holder data' in item:
+            time_checked = item['holder data'][2]['time checked']
+            if time_checked < oldest_time:
+                oldest_time = time_checked
+                oldest_index = index
+
+    return oldest_index if oldest_index is not None else len(nft_metadata)
 
 
 def main():
@@ -879,21 +916,31 @@ def main():
 
     kill_chrome_and_chromedriver(logger)
 
-    try:
-        with open('nft_metadata_with_rarity.json', 'r') as file:
-            nft_metadata = json.load(file)
-            logger.info("NFT metadata successfully loaded.")
-    except FileNotFoundError:
-        logger.error("NFT metadata file not found.")
-        return
-    except json.JSONDecodeError as e:
-        logger.error(f"Error decoding JSON from the file: {e}")
-        return
-    except Exception as e:
-        logger.error(f"An unexpected error occurred while loading NFT metadata: {e}")
-        return
+    # Load existing data if available
+    processed_data_file = 'nft_metadata_with_rarity_and_holder_data.json'
+    if os.path.exists(processed_data_file):
+        try:
+            with open(processed_data_file, 'r') as file:
+                nft_metadata = json.load(file)
+            logger.info("Continuing from previously saved progress.")
+        except Exception as e:
+            logger.error(f"Error loading processed data: {e}")
+            return
+    else:
+        try:
+            with open('nft_metadata_with_rarity.json', 'r') as file:
+                nft_metadata = json.load(file)
+                logger.info("Starting from the beginning as no progress file found.")
+        except Exception as e:
+            logger.error(f"Error loading initial data: {e}")
+            return
 
-    for index, item in enumerate(nft_metadata):
+    # Determine where to start processing
+    start_index = find_start_index(nft_metadata)
+    end_index = min(start_index + 100, len(nft_metadata))
+
+    for index in range(start_index, end_index):
+        item = nft_metadata[index]
         logger.info(f"Processing item {index + 1}/{len(nft_metadata)} with account: {item.get('account', 'Unknown')}")
         driver = driversetup(logger)
 
@@ -906,14 +953,15 @@ def main():
             logger.info(f"WebDriver closed for item {index + 1}")
 
     try:
-        with open('nft_metadata_with_rarity_and_holder_data.json', 'w') as file:
+        with open(processed_data_file, 'w') as file:
             json.dump(nft_metadata, file, indent=4)
-            logger.info("NFT metadata with holder data successfully saved.")
+            logger.info("Progress saved.")
     except Exception as e:
-        logger.error(f"An error occurred while saving the updated NFT metadata: {e}")
+        logger.error(f"An error occurred while saving the progress: {e}")
 
 if __name__ == '__main__':
     main()
+
 ```
 </details>
 
