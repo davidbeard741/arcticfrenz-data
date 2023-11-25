@@ -586,11 +586,9 @@ from selenium.common.exceptions import TimeoutException, ElementClickIntercepted
 from selenium.webdriver.common.action_chains import ActionChains
 import psutil
 
-
 LOG_FILE = 'logfile.log'
 FILE_ADDRESS = 'address.html'
 FILE_TIME = 'time.html'
-
 
 def setup_logger(log_file_path, logger_name='MyAppLogger'):
     logger = logging.getLogger(logger_name)
