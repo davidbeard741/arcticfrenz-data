@@ -1144,16 +1144,25 @@ if __name__ == "__main__":
 
 ### Step 3: Automated Monitoring of NFT Holders within a Collection on a Recurring Schedule
 
-1. **Create a YAML File**: Create a `/workflows` directory in your repository and add a YAML file for your action, e.g., `main.yml`.
+1. **Create a YAML File**: Create a YAML file for the script, e.g., `main.yml`.
 
 2. **Define the Workflow**:
-   - **Trigger**: Use the `schedule` event to run your action at specific times.
+   - **Trigger**: Use the `schedule` event to run at specific times.
    - **Jobs and Steps**: Define a job that runs the script. Include steps for setting up Python, installing dependencies, and executing the script.
 
 3. **Handling Dependencies**:
    - **Chromedriver and Google Chrome**: The script uses Selenium with Chrome, Chrome and Chromedriver need to be set up in the environment.
 
 4. **Handle Data and Logs**: Handle data storage and logging within the environment - adjust file paths. 
+
+This YAML:
+- Runs the workflow every 4 hours.
+- Sets up the latest Ubuntu environment.
+- Checks out the script.
+- Sets up Python.
+- Installs Chrome and Chromedriver.
+- Installs the required Python packages.
+- Runs Python script.
 
 <details>
   <summary>CLICK TO EXPAND YAML File</summary>
@@ -1200,14 +1209,7 @@ jobs:
 
 </details>
 
-This configuration:
-- Runs the workflow every 4 hours.
-- Sets up the latest Ubuntu environment.
-- Checks out the script.
-- Sets up Python.
-- Installs Chrome and Chromedriver.
-- Installs the required Python packages.
-- Runs Python script.
+Ensure that the output file from **Part 3, Step 2** or from **Part 2** is in the directory. 
 
 <details>
   <summary>CLICK TO EXPAND Python Script</summary>
