@@ -1143,3 +1143,79 @@ if __name__ == "__main__":
 </details>
 
 ### Step 3: Automated Monitoring of NFT Holders within a Collection on a Recurring Schedule
+
+1. **Create a YAML File**: Create a `/workflows` directory in your repository and add a YAML file for your action, e.g., `main.yml`.
+
+2. **Define the Workflow**:
+   - **Trigger**: Use the `schedule` event to run your action at specific times.
+   - **Jobs and Steps**: Define a job that runs the script. Include steps for setting up Python, installing dependencies, and executing the script.
+
+3. **Handling Dependencies**:
+   - **Chromedriver and Google Chrome**: The script uses Selenium with Chrome, Chrome and Chromedriver need to be set up in the environment.
+
+4. **Handle Data and Logs**: Handle data storage and logging within the environment - adjust file paths. 
+
+<details>
+  <summary>CLICK TO EXPAND YAML File</summary>
+
+```yaml
+name: NAME Runner
+
+on:
+  schedule:
+    - cron: '0 */4 * * *'  # Runs every 4 hours
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8' 
+
+    - name: Install Chrome and Chromedriver
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+        CHROME_VERSION=$(google-chrome --version | grep -oE "[0-9]+\.[0-9]+\.[0-9]+")
+        CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION")
+        wget -N "http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip" -P ~/
+        unzip ~/chromedriver_linux64.zip -d ~/
+        sudo mv -f ~/chromedriver /usr/local/share/
+        sudo chmod +x /usr/local/share/chromedriver
+        sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+
+    - name: Install Python dependencies
+      run: pip install selenium bs4 psutil
+
+    - name: Run script
+      run: python enhance_NAME_metadata.py
+
+```
+
+</details>
+
+This configuration:
+- Runs the workflow every 4 hours.
+- Sets up the latest Ubuntu environment.
+- Checks out the script.
+- Sets up Python.
+- Installs Chrome and Chromedriver.
+- Installs the required Python packages.
+- Runs Python script.
+
+<details>
+  <summary>CLICK TO EXPAND Python Script</summary>
+
+```python
+
+ # WIP
+
+``` 
+
+</details>
