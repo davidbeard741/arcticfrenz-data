@@ -692,13 +692,13 @@ def extract_owner_address_from_file(file_path, logger):
                         logger.info(f"Owner address found: {address}")
                         return address
                     else:
-                        logger.error("Owner address not found in the table.")
+                        logger.info("Owner address not found in the table.")
                         return "Address not found"
                 else:
-                    logger.error("No visible rows found in the owner table.")
+                    logger.info("No visible rows found in the owner table.")
                     return "No rows in table"
     except Exception as e:
-        logger.error(f"Error while extracting owner address: {e}")
+        logger.info(f"Error while extracting owner address: {e}")
         return f"Error: {e}"
 
 
@@ -709,33 +709,26 @@ def extract_time_from_file(file_path, logger):
         logger.info(f"Successfully read HTML content from '{file_path}'.")
 
         soup = BeautifulSoup(html_content, 'html.parser')
-        time_column_index = 4
-        logger.info("Parsing HTML to locate the time table.")
+        time_column_index = 4  # Assuming the time is in the 4th column
 
-        table_count = 0
-        for table in soup.find_all("table"):
-            table_count += 1
-            logger.info(f"Checking table {table_count} for visible rows.")
-            visible_rows = table.select("tbody tr:not(.ant-table-measure-row)")
-            if not visible_rows:
-                logger.info(f"No visible rows found in table {table_count}. Checking next table if available...")
-                continue
+        # Directly navigate to the specific table using its unique ID
+        table = soup.select_one("#rc-tabs-0-panel-txs table")
+        if not table:
+            logger.info("The specific table with ID 'rc-tabs-0-panel-txs' was not found.")
+            return "Table not found"
 
-            logger.info(f"Table {table_count}: Visible rows found. Extracting time from the first row.")
-            time_cell = visible_rows[0].select_one(f"td:nth-of-type({time_column_index})")
-            if not time_cell:
-                logger.info(f"Table {table_count}: Time cell not found in the table.")
-                continue
+        # Selecting the second row and the fourth column
+        time_cell = table.select_one("tbody tr:nth-of-type(2) td:nth-of-type(4)")
+        if not time_cell:
+            logger.info("Time cell not found in the specified row and column.")
+            return "Time cell not found"
 
-            hold_time = time_cell.text.strip()
-            logger.info(f"Table {table_count}: Hold Time successfully extracted: {hold_time}")
-            return hold_time
-
-        logger.info("Failed to find a table with visible rows containing time data.")
-        return "No visible rows found in any time table"
+        hold_time = time_cell.text.strip()
+        logger.info(f"Time successfully extracted: {hold_time}")
+        return hold_time
 
     except Exception as e:
-        logger.info(f"An unexpected error occurred while extracting hold time from '{file_path}': {e}")
+        logger.info(f"An unexpected error occurred while extracting time from '{file_path}': {e}")
         return f"Error: {e}"
 
 
@@ -753,7 +746,7 @@ def getholderaddress(url_holder, driver, logger):
         wait.until(lambda d: root.is_displayed())
         wait.until(lambda d: body.is_displayed())
 
-        random_sleep(6, 7)
+        random_sleep(5, 6)
 
         simulate_human_interaction(driver, logger)
 
@@ -770,7 +763,6 @@ def getholderaddress(url_holder, driver, logger):
     except Exception as e:
         logger.error(f"An error occurred: {e}")
         solana_address = "Error: Unexpected issue occurred"
-
     return solana_address
 
 
@@ -787,7 +779,7 @@ def get_hold_time(url_time, driver, logger):
         wait.until(lambda d: root.is_displayed())
         wait.until(lambda d: body.is_displayed())
 
-        random_sleep(8, 9)
+        random_sleep(7, 8)
 
         simulate_human_interaction(driver, logger)
 
@@ -837,7 +829,7 @@ def get_hold_time(url_time, driver, logger):
     finally:
         logger.info("Closing the web driver...")
         driver.close()
-        logger.info("Web driver closed for holder address and time.")
+        logger.info("Web driver closed for time.")
 
     return hold_time
 
@@ -848,8 +840,13 @@ def process_item(item, driver, logger):
         logger.info("Account information not found in the item.")
         return
 
+    time.sleep(1)
     url_holder = f"https://solscan.io/token/{account}#holders"
+    logger.info(f"https://solscan.io/token/{account}#holders")
+    time.sleep(1)
     url_time = f"https://solscan.io/token/{account}#txs"
+    logger.info(f"https://solscan.io/token/{account}#txs")
+    time.sleep(1)
 
     try:
         solana_address = getholderaddress(url_holder, driver, logger)
@@ -859,8 +856,6 @@ def process_item(item, driver, logger):
     except Exception as e:
         logger.error(f"Error processing {account}: {e}")
 
-
-from datetime import datetime
 
 def update_json_data(item, solana_address, hold_time_str, logger):
 
@@ -878,38 +873,63 @@ def update_json_data(item, solana_address, hold_time_str, logger):
     ]
 
 
-def find_start_index(nft_metadata):
+def find_start_index(nft_metadata, processed_indices, logger):
     # Step 1: Prioritize items without 'holder data'
     for index, item in enumerate(nft_metadata):
+        if index in processed_indices:
+            continue
         if 'holder data' not in item:
+            logger.info(f"Starting from index {index}: No 'holder data' field found.")
             return index
 
-    # Step 2: Prioritize items with invalid 'holder' length
+    logger.info("All items have 'holder data'. Moving to the next priority.")
+
+    # Step 2: Prioritize items with invalid 'holder'
     for index, item in enumerate(nft_metadata):
+        if index in processed_indices:
+            continue
         if 'holder data' in item:
             holder = item['holder data'][0]['holder']
             if len(holder) not in range(32, 45) and holder != "Magic Eden V2 Authority":
+                logger.info(f"Starting from index {index}: Found invalid 'holder' value.")
                 return index
+
+    logger.info("All items have valid 'holder' values. Moving to the next priority.")
 
     # New Step 3: Prioritize if 'when acquired' is not a Unix epoch timestamp
     for index, item in enumerate(nft_metadata):
+        if index in processed_indices:
+            continue
         if 'holder data' in item:
             when_acquired = item['holder data'][1]['when acquired']
             if not isinstance(when_acquired, int):
+                logger.info(f"Starting from index {index}: 'when acquired' is not a Unix epoch timestamp.")
                 return index
+
+    logger.info("All items have valid 'when acquired' timestamps. Moving to the next priority.")
 
     # Step 4: Prioritize by oldest 'time checked'
     oldest_index = None
     oldest_time = float('inf')
     for index, item in enumerate(nft_metadata):
+        if index in processed_indices:
+            continue
         if 'holder data' in item:
             time_checked = item['holder data'][2]['time checked']
             if time_checked < oldest_time:
                 oldest_time = time_checked
                 oldest_index = index
 
-    return oldest_index if oldest_index is not None else len(nft_metadata)
+    if oldest_index is not None:
+        logger.info(f"Starting from index {oldest_index}: It has the oldest 'time checked'.")
+        return oldest_index
+    else:
+        logger.info("No items to prioritize based on 'time checked'.")
+        return len(nft_metadata)
 
+
+def get_next_item_index(nft_metadata, logger):
+    return find_start_index(nft_metadata, logger)
 
 def main():
     logger = setup_logger(LOG_FILE)
@@ -918,7 +938,6 @@ def main():
 
     kill_chrome_and_chromedriver(logger)
 
-    # Load existing data if available
     processed_data_file = 'nft_metadata_with_rarity_and_holder_data.json'
     if os.path.exists(processed_data_file):
         try:
@@ -937,27 +956,32 @@ def main():
             logger.error(f"Error loading initial data: {e}")
             return
 
-    # Determine where to start processing
-    start_index = find_start_index(nft_metadata)
-    end_index = min(start_index + 100, len(nft_metadata))
+    processed_count = 0
+    processed_indices = set()
+    while processed_count < 100:
+        next_index = find_start_index(nft_metadata, processed_indices, logger)
+        if next_index >= len(nft_metadata):
+            logger.info("All items have been processed or no more items to prioritize.")
+            break
 
-    for index in range(start_index, end_index):
-        item = nft_metadata[index]
-        logger.info(f"Processing item {index + 1}/{len(nft_metadata)} with account: {item.get('account', 'Unknown')}")
+        item = nft_metadata[next_index]
+        logger.info(f"Processing item {processed_count + 1}/100 with account: {item.get('account', 'Unknown')} (Global index: {next_index + 1}/{len(nft_metadata)})")
         driver = driversetup(logger)
 
         try:
             process_item(item, driver, logger)
+            processed_count += 1
+            processed_indices.add(next_index)
         except Exception as e:
             logger.error(f"Error processing item with account {item.get('account', 'Unknown')}: {e}")
         finally:
             driver.quit()
-            logger.info(f"WebDriver closed for item {index + 1}")
+            logger.info(f"WebDriver closed for item {next_index + 1}")
 
     try:
         with open(processed_data_file, 'w') as file:
             json.dump(nft_metadata, file, indent=4)
-            logger.info("Progress saved.")
+            logger.info("Progress saved after processing 100 items.")
     except Exception as e:
         logger.error(f"An error occurred while saving the progress: {e}")
 
