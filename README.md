@@ -312,6 +312,8 @@ The example JSON below is truncated for illustrative purposes; the 'nft_metadata
 ```
 </details>
 
+<br>
+
 ---
 
 ## Part 2: Calculating Rarity Scores for NFTs Based on Off-Chain Metadata
@@ -380,6 +382,8 @@ with open(updated_file_path, 'w') as file:
 print(f"Updated JSON file saved to {updated_file_path}")
 ```
 </details>
+
+<br>
 
 ### Rarity Score Implications
 
@@ -535,6 +539,8 @@ The output is an updated JSON file, nft_metadata_with_rarity.json, where each NF
 
 ```
 </details>
+
+<br>
 
 ---
 
@@ -1246,3 +1252,5 @@ jobs:
 ```
 
 </details>
+
+<br>
