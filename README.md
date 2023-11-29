@@ -1146,6 +1146,7 @@ if __name__ == '__main__':
 - **Python Package Installation:** Installs the required Python packages for the script's dependencies.
 - **Script Execution:** Launches the Python script to perform the NFT holder monitoring task.
 
+
 <details>
   <summary>CLICK TO EXPAND YAML File</summary>
 
@@ -1185,7 +1186,7 @@ jobs:
       run: pip install selenium bs4 psutil
 
     - name: Run script
-      run: python enhance_NAME_metadata.py
+      run: python script.py
 
 ```
 
@@ -1202,14 +1203,24 @@ jobs:
 - **Logging:** Implement a logging mechanism to track the script's execution and any potential errors.
 
 
-
 <details>
-  <summary>CLICK TO EXPAND Repo's Directory</summary>
+  <summary>CLICK TO EXPAND Overview of the Repository's Structure</summary>
 
-```python
-
- # WIP
-
-``` 
+```
+├── .github
+│   └── workflows
+│       ├── ci.yaml -> Github Action configuration
+│       └── requirements.txt      -> Dependencies needed for the Python environment
+├── collection/
+│   ├── script.py             -> The Python script
+│   ├── time.html             -> file to parse
+│   ├── holder.html           -> file to parse
+│   ├── requirements.txt      -> Dependencies needed for the Python script
+│   ├── abc.json              -> Output from Part-2
+│   └── abc.json              -> Output from Part-3 Step-2 and from Python script
+├── package.json
+├── README.md
+└── .gitignore
+```
 
 </details>
