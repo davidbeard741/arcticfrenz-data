@@ -536,6 +536,8 @@ Refer to [Part 1, Step 3](https://github.com/davidbeard741/arcticfrenz-data#step
 
 This script utilizes Selenium WebDriver to automate web browser interactions and gather additional metadata about NFTs. It targets a website to extract data about NFT holders and associated timestamps. This information is then incorporated into a JSON file.
 
+<br>
+
 <details>
   <summary>CLICK TO EXPAND Python Script</summary>
 
@@ -979,6 +981,8 @@ if __name__ == '__main__':
 
 </details>
 
+<br>
+
 <details>
   <summary>CLICK TO EXPAND JSON Output</summary>
 
@@ -1131,11 +1135,13 @@ if __name__ == '__main__':
 
 </details>
 
+<br>
+
 ### Step 3: Automated Monitoring of NFT Holders on a Recurring Schedule
 
 **Prerequisite:** 
-- Ensure that the output file from Part 3, Step 2 or from Part 2 is located in the appropriate directory.
-- Ensure repository settings
+- Ensure that the output JSON file from [Part 3, Step 2](https://github.com) and/or the output JSON file from [Part 2](https://github.com) is uploaded to the appropriate directory.
+- Ensure repository settings for Actions 
 
 **1. YAML Configuration:** Create a YAML file for the script, such as "main.yml," to define the workflow and its execution parameters.
 - **Scheduled Execution:** Triggers the workflow at specified times based on the schedule event.
@@ -1146,6 +1152,7 @@ if __name__ == '__main__':
 - **Python Package Installation:** Installs the required Python packages for the script's dependencies.
 - **Script Execution:** Launches the Python script to perform the NFT holder monitoring task.
 
+<br>
 
 <details>
   <summary>CLICK TO EXPAND YAML File</summary>
@@ -1192,6 +1199,8 @@ jobs:
 
 </details>
 
+<br>
+
 **2. Define the Workflow:**
 - **Trigger:** Utilize the schedule event to trigger the script's execution at specified intervals.
 - **Jobs and Steps:** Define a job that executes the script. Include steps for setting up Python, installing dependencies, and running the script.
@@ -1202,22 +1211,23 @@ jobs:
 - **Data Storage:** Establish a data storage mechanism to store the collected NFT holder information.
 - **Logging:** Implement a logging mechanism to track the script's execution and any potential errors.
 
+<br>
 
 <details>
   <summary>CLICK TO EXPAND Overview of the Repository's Structure</summary>
 
 ```
 ├── .github
-│   └── workflows
-│       ├── ci.yaml -> Github Action configuration
-│       └── requirements.txt      -> Dependencies needed for the Python environment
+│     └── workflows
+│           ├── ci.yaml           -> Github Action configuration
+│           └── requirements.txt  -> Dependencies needed for the Python environment
 ├── collection/
-│   ├── script.py             -> The Python script
-│   ├── time.html             -> file to parse
-│   ├── holder.html           -> file to parse
-│   ├── requirements.txt      -> Dependencies needed for the Python script
-│   ├── abc.json              -> Output from Part-2
-│   └── abc.json              -> Output from Part-3 Step-2 and from Python script
+│     ├── script.py               -> The Python script
+│     ├── time.html               -> file to parse
+│     ├── holder.html             -> file to parse
+│     ├── requirements.txt        -> Dependencies needed for the Python script
+│     ├── abc.json                -> Output from Part-2
+│     └── abc.json                -> Output from Part-3 Step-2 and from Python script
 ├── package.json
 ├── README.md
 └── .gitignore
