@@ -1157,11 +1157,36 @@ if __name__ == '__main__':
 
 ### Step 3: Automated Monitoring of NFT Holders on a Recurring Schedule
 
-**Prerequisite:** 
+**Prerequisites:** 
 - Ensure that the output JSON file from [Part 3, Step 2](https://github.com) and/or the output JSON file from [Part 2](https://github.com) is uploaded to the appropriate directory.
 - Ensure repository settings for Actions 
 
-**1. YAML Configuration:** Create a YAML file for the script, such as "main.yml," to define the workflow and its execution parameters.
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Overview of the Repository's Structure</summary>
+
+```
+├── .github
+│     └── workflows
+│           └── ci.yaml  -> Github Action configuration
+├── collection
+│     ├── script.py      -> The Python script
+│     ├── time.html      -> File to parse
+│     ├── holder.html    -> File to parse
+│     ├── log.txt        -> Log file
+│     ├── abc.json       -> Output from Part-2
+│     └── abc.json       -> Output from Part-3 Step-2 and from Python script
+├── package.json
+├── README.md
+└── .gitignore
+```
+
+</details>
+
+<br>
+
+**YAML Configuration:** Create a YAML file for the script, such as "main.yml," to define the workflow and its execution parameters.
 - **Scheduled Execution:** Triggers the workflow at specified times based on the schedule event.
 - **Ubuntu Environment Setup:** Installs the latest Ubuntu environment to ensure compatibility.
 - **Script Acquisition:** Checks out the script from its repository to access the latest version.
@@ -1213,42 +1238,6 @@ jobs:
     - name: Run script
       run: python script.py
 
-```
-
-</details>
-
-<br>
-
-**2. Define the Workflow:**
-- **Trigger:** Utilize the schedule event to trigger the script's execution at specified intervals.
-- **Jobs and Steps:** Define a job that executes the script. Include steps for setting up Python, installing dependencies, and running the script.
-
-**3. Managing Dependencies:** The script utilizes Selenium with Chrome. Both Chrome and Chromedriver need to be configured within the environment.
-
-**4. Data and Log Management:**
-- **Data Storage:** Establish a data storage mechanism to store the collected NFT holder information.
-- **Logging:** Implement a logging mechanism to track the script's execution and any potential errors.
-
-<br>
-
-<details>
-  <summary>CLICK TO EXPAND Overview of the Repository's Structure</summary>
-
-```
-├── .github
-│     └── workflows
-│           ├── ci.yaml           -> Github Action configuration
-│           └── requirements.txt  -> Dependencies needed for the Python environment
-├── collection
-│     ├── script.py               -> The Python script
-│     ├── time.html               -> file to parse
-│     ├── holder.html             -> file to parse
-│     ├── requirements.txt        -> Dependencies needed for the Python script
-│     ├── abc.json                -> Output from Part-2
-│     └── abc.json                -> Output from Part-3 Step-2 and from Python script
-├── package.json
-├── README.md
-└── .gitignore
 ```
 
 </details>
