@@ -1172,11 +1172,11 @@ if __name__ == '__main__':
 │           └── ci.yaml  -> Github Action configuration
 ├── collection
 │     ├── script.py      -> The Python script
-│     ├── time.html      -> File to parse
-│     ├── holder.html    -> File to parse
-│     ├── log.txt        -> Log file
-│     ├── abc.json       -> Output from Part-2
-│     └── abc.json       -> Output from Part-3 Step-2 and from Python script
+│     ├── time.html      -> Store webpage content for parsing and extracting
+│     ├── address.html   -> Store webpage content for parsing and extracting 
+│     ├── logfile.log    -> Store log messages
+│     ├── part2.json     -> Output from Part-2
+│     └── output.json    -> Output from Part-3 Step-2 and from the Python script
 ├── package.json
 ├── README.md
 └── .gitignore
