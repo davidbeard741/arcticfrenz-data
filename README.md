@@ -116,6 +116,8 @@ apikey = "INSERT YOUR API KEY BETWEEN THESE QUOTATION MARKS"
 
 Below is the complete code. Execute it to generate a file named 'nft_metadata.json' that will include the metadata each NFT in the collection.
 
+<br>
+
 <details>
   <summary>CLICK TO EXPAND Python Script</summary>
 
@@ -163,9 +165,13 @@ get_metadata(nft_addresses)
 ```
 </details>
 
+<br>
+
 ### The Output JSON File
 
 The example JSON below is truncated for illustrative purposes; the 'nft_metadata' output file will encompass all NFTs in the collection.
+
+<br>
 
 <details>
   <summary>CLICK TO EXPAND JSON Example</summary>
@@ -324,6 +330,8 @@ The concept of rarity in the context of NFTs pertains to the uniqueness and scar
 
 The following Python script performs the above steps. It processes the off-chain metadata to compute a rarity score for each NFT, then appends this score to the original dataset, and finally outputs the enriched dataset as a JSON file.
 
+<br>
+
 <details>
   <summary>CLICK TO EXPAND Python Script</summary>
 	
@@ -374,6 +382,7 @@ print(f"Updated JSON file saved to {updated_file_path}")
 </details>
 
 ### Rarity Score Implications
+
 A lower frequency of a trait value indicates rarity, and hence, it contributes more significantly to the rarity score. The scoring system is designed such that the sum of the inverses of the trait frequencies for an NFT's traits yields its total rarity score. The end result is a comprehensive dataset where each NFT entry is supplemented with a rarity_score field, reflecting its uniqueness within the collection.
 
 ### Note on Rarity Score Calculation
@@ -381,7 +390,10 @@ A lower frequency of a trait value indicates rarity, and hence, it contributes m
 In the rarity score calculation, it is possible for an NFT to have missing or undefined attributes. When such cases arise, the script is designed to handle these gracefully by assigning a default rarity score of 0. This ensures that every NFT has a defined rarity score when saved to the JSON file. By doing so, the dataset maintains consistency and allows for a meaningful comparison between NFTs, even if some have incomplete metadata. This approach also prevents potential errors during data processing and analysis that could occur due to undefined or missing values.
 
 ### Example Output
+
 The output is an updated JSON file, nft_metadata_with_rarity.json, where each NFT entry now includes a rarity_score. Below is a truncated example of what an NFT entry might look like with an appended rarity score:
+
+<br>
 
 <details>
   <summary>CLICK TO EXPAND JSON Example</summary>
@@ -1221,7 +1233,7 @@ jobs:
 │     └── workflows
 │           ├── ci.yaml           -> Github Action configuration
 │           └── requirements.txt  -> Dependencies needed for the Python environment
-├── collection/
+├── collection
 │     ├── script.py               -> The Python script
 │     ├── time.html               -> file to parse
 │     ├── holder.html             -> file to parse
