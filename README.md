@@ -1144,27 +1144,18 @@ if __name__ == '__main__':
 
 </details>
 
-### Step 3: Automated Monitoring of NFT Holders within a Collection on a Recurring Schedule
+### Step 3: Automated Monitoring of NFT Holders on a Recurring Schedule
 
-1. **Create a YAML File**: Create a YAML file for the script, e.g., `main.yml`.
+**Prerequisite:** Ensure that the output file from Part 3, Step 2 or from Part 2 is located in the appropriate directory.
 
-2. **Define the Workflow**:
-   - **Trigger**: Use the `schedule` event to run at specific times.
-   - **Jobs and Steps**: Define a job that runs the script. Include steps for setting up Python, installing dependencies, and executing the script.
-
-3. **Handling Dependencies**:
-   - **Chromedriver and Google Chrome**: The script uses Selenium with Chrome, Chrome and Chromedriver need to be set up in the environment.
-
-4. **Handle Data and Logs**: Handle data storage and logging within the environment - adjust file paths. 
-
-This YAML:
-- Runs the workflow every 4 hours.
-- Sets up the latest Ubuntu environment.
-- Checks out the script.
-- Sets up Python.
-- Installs Chrome and Chromedriver.
-- Installs the required Python packages.
-- Runs Python script.
+**1. YAML Configuration:** Create a YAML file for the script, such as "main.yml," to define the workflow and its execution parameters.
+- **Scheduled Execution:** Triggers the workflow at specified times based on the schedule event.
+- **Ubuntu Environment Setup:** Installs the latest Ubuntu environment to ensure compatibility.
+- **Script Acquisition:** Checks out the script from its repository to access the latest version.
+- **Python Setup:** Configures the Python environment for the script's execution.
+- **Chrome and Chromedriver Installation:** Installs Chrome and Chromedriver to enable Selenium's web automation capabilities.
+- **Python Package Installation:** Installs the required Python packages for the script's dependencies.
+- **Script Execution:** Launches the Python script to perform the NFT holder monitoring task.
 
 <details>
   <summary>CLICK TO EXPAND YAML File</summary>
@@ -1211,10 +1202,20 @@ jobs:
 
 </details>
 
-Ensure that the output file from **Part 3, Step 2** or from **Part 2** is in the directory. 
+**2. Define the Workflow:**
+- **Trigger:** Utilize the schedule event to trigger the script's execution at specified intervals.
+- **Jobs and Steps:** Define a job that executes the script. Include steps for setting up Python, installing dependencies, and running the script.
+
+**3. Managing Dependencies:** The script utilizes Selenium with Chrome. Both Chrome and Chromedriver need to be configured within the environment.
+
+**4. Data and Log Management:**
+- **Data Storage:** Establish a data storage mechanism to store the collected NFT holder information.
+- **Logging:** Implement a logging mechanism to track the script's execution and any potential errors.
+
+
 
 <details>
-  <summary>CLICK TO EXPAND Python Script</summary>
+  <summary>CLICK TO EXPAND Repo's Directory</summary>
 
 ```python
 
