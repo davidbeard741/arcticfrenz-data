@@ -532,22 +532,9 @@ The output is an updated JSON file, nft_metadata_with_rarity.json, where each NF
 
 Refer to [Part 1, Step 3](https://github.com/davidbeard741/arcticfrenz-data#step-3-set-up-your-python-development-environment) for the setup instructions.
 
-### Step 2: Web Scraping and Selenium WebDriver
+### Step 2: Automated Data Extraction with Selenium WebDriver
 
-This script employs Selenium WebDriver to automate web browser interactions for the purpose of collecting additional metadata about NFTs. It scrapes data from a specific website, focusing on extracting information about NFT holders and relevant timestamps. Subsequently, this data is used to update a JSON file. The following sections detail the key functionalities of the script:
-
-#### Parsing Approach
-
-**Owner Address Extraction:**
-- The script scans the HTML content of a webpage to locate a specific table with a header titled 'Owner'. This identification is crucial as the table contains the NFT owner's address.
-- Within this table, the script bypasses any 'measurement' rows (marked by the class 'ant-table-measure-row'). These rows are not visible to users and do not contain relevant data.
-- The primary focus is on the first visible row following any measurement rows. This row holds the necessary information.
-- The script then extracts the text within the 'a' tag found in the second 'td' (table data) element of this row. This text is the actual owner's address associated with the NFT.
-
-**Timestamp Extraction:**
-- Similar to the owner address extraction, the script identifies and parses a specific table on the webpage to extract timestamp data related to the NFT.
-- The script navigates to the appropriate column (identified in the script) that contains timestamp information.
-- It extracts the timestamp data from the first visible row, ensuring that it skips any non-relevant rows such as measurement rows.
+This script utilizes Selenium WebDriver to automate web browser interactions and gather additional metadata about NFTs. It targets a website to extract data about NFT holders and associated timestamps. This information is then incorporated into a JSON file.
 
 <details>
   <summary>CLICK TO EXPAND Python Script</summary>
@@ -1146,7 +1133,9 @@ if __name__ == '__main__':
 
 ### Step 3: Automated Monitoring of NFT Holders on a Recurring Schedule
 
-**Prerequisite:** Ensure that the output file from Part 3, Step 2 or from Part 2 is located in the appropriate directory.
+**Prerequisite:** 
+- Ensure that the output file from Part 3, Step 2 or from Part 2 is located in the appropriate directory.
+- Ensure repository settings
 
 **1. YAML Configuration:** Create a YAML file for the script, such as "main.yml," to define the workflow and its execution parameters.
 - **Scheduled Execution:** Triggers the workflow at specified times based on the schedule event.
