@@ -1158,9 +1158,9 @@ if __name__ == '__main__':
 ### Step 3: Automated Monitoring of NFT Holders on a Recurring Schedule
 
 **Prerequisites:**
-- *Uploading JSON Files: Make sure to upload the output JSON file from [Part 3, Step 2](https) and/or the output JSON file from [Part 2](http) to the specified directory.*
-- *Action Permissions Settings: Verify the action permissions within your GitHub repository. Navigate to “Settings” and then select “Actions” in the sidebar. Choose to either allow all actions or restrict to local actions only.*
-- *Branch Protection Rules: Review and set up the branch protection rules in the repository settings to ensure code integrity.*
+- **Uploading JSON Files:** Make sure to upload the output JSON file from [Part 3, Step 2](https) and/or the output JSON file from [Part 2](http) to the specified directory.
+- **Action Permissions Settings:** Verify the action permissions within your GitHub repository. Navigate to “Settings” and then select “Actions” in the sidebar. Choose to either allow all actions or restrict to local actions only.
+- **Branch Protection Rules:** Review and set up the branch protection rules in the repository settings to ensure code integrity.
 
 <br>
 
