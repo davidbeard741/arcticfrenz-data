@@ -336,50 +336,43 @@ The following Python script performs the above steps. It processes the off-chain
 
 <details>
   <summary>CLICK TO EXPAND Python Script</summary>
-	
+
 ```python
 import json
 import pandas as pd
 
-# Define a function to compute the rarity score based on trait counts
 def calculate_rarity_score(attributes, trait_counts_df):
-    # The rarity score is the sum of inverses of trait counts
-    score = sum(1 / trait_counts_df[(trait_counts_df['traitType'] == attr['traitType']) & 
+    score = sum(1 / trait_counts_df[(trait_counts_df['trait_type'] == attr['trait_type']) &
                                     (trait_counts_df['value'] == attr['value'])]['count'].values[0]
-                for attr in attributes if len(trait_counts_df[(trait_counts_df['traitType'] == attr['traitType']) & 
+                for attr in attributes if len(trait_counts_df[(trait_counts_df['trait_type'] == attr['trait_type']) &
                                                               (trait_counts_df['value'] == attr['value'])]) > 0)
     return score
 
-# Load the JSON data
 file_path = 'nft_metadata.json'
 with open(file_path, 'r') as file:
     nft_metadata = json.load(file)
 
-# Normalize the data into a flat table
 nft_df = pd.json_normalize(nft_metadata)
 
-# Prepare the trait values and counts
 attributes_list = nft_df.dropna(subset=['offChainMetadata.metadata.attributes'])['offChainMetadata.metadata.attributes'].tolist()
 attributes_flat_list = [attr for sublist in attributes_list for attr in sublist]
 attributes_df = pd.DataFrame(attributes_flat_list)
-trait_counts = attributes_df.groupby(['traitType', 'value']).size().reset_index(name='count')
 
-# Compute rarity scores for each NFT
+trait_counts = attributes_df.groupby(['trait_type', 'value']).size().reset_index(name='count')
+
 nft_df['rarity_score'] = nft_df['offChainMetadata.metadata.attributes'].apply(
     lambda attrs: calculate_rarity_score(attrs, trait_counts) if isinstance(attrs, list) else None
 )
 
-# Append the rarity scores to the original data
 for i, record in enumerate(nft_metadata):
     rarity_score = nft_df.loc[i, 'rarity_score']
     record['rarity_score'] = rarity_score if pd.notnull(rarity_score) else 0
 
-# Save the enriched data to a new JSON file
 updated_file_path = 'nft_metadata_with_rarity.json'
 with open(updated_file_path, 'w') as file:
     json.dump(nft_metadata, file, indent=4)
 
-print(f"Updated JSON file saved to {updated_file_path}")
+print(f"Awesome! The updated JSON file with rarity scores is saved to {updated_file_path}.")
 ```
 </details>
 
@@ -389,7 +382,31 @@ print(f"Updated JSON file saved to {updated_file_path}")
 
 A lower frequency of a trait value indicates rarity, and hence, it contributes more significantly to the rarity score. The scoring system is designed such that the sum of the inverses of the trait frequencies for an NFT's traits yields its total rarity score. The end result is a comprehensive dataset where each NFT entry is supplemented with a rarity_score field, reflecting its uniqueness within the collection.
 
-### Note on Rarity Score Calculation
+### Mathematical Formulation
+
+The rarity score for an NFT can be mathematically expressed as:
+
+$$
+rarity_score = \sum_{i=1}^N \frac{1}{f_i}
+$$
+
+where:
+
+* `rarity_score` is the rarity score of the NFT
+* `N` is the total number of traits for the NFT
+* `f_i` is the frequency of the `i`th trait value for the NFT
+
+In other words, the rarity score is calculated by summing the inverse frequencies of all the trait values for the NFT. This means that rarer traits will contribute more significantly to the rarity score than more common traits.
+
+For example, consider an NFT with two traits: "fur color" and "eye color". The frequency of "red fur" is 10%, while the frequency of "blue fur" is 2%. The frequency of "blue eyes" is 50%, while the frequency of "green eyes" is 30%. The rarity score for this NFT would be calculated as follows:
+
+$$
+rarity_score = \frac{1}{0.10} + \frac{1}{0.02} + \frac{1}{0.50} + \frac{1}{0.30} = 12.20
+$$
+
+As you can see, the rarity score is higher for NFTs with rarer traits. This information can be used to assess the relative rarity of different NFTs within a collection.
+
+### Handling Missing or Undefined Attributes
 
 In the rarity score calculation, it is possible for an NFT to have missing or undefined attributes. When such cases arise, the script is designed to handle these gracefully by assigning a default rarity score of 0. This ensures that every NFT has a defined rarity score when saved to the JSON file. By doing so, the dataset maintains consistency and allows for a meaningful comparison between NFTs, even if some have incomplete metadata. This approach also prevents potential errors during data processing and analysis that could occur due to undefined or missing values.
 
@@ -1158,9 +1175,9 @@ if __name__ == '__main__':
 ### Step 3: Automated Monitoring of NFT Holders on a Recurring Schedule
 
 **Prerequisites:**
-- **Uploading JSON Files:** Make sure to upload the output JSON file from [Part 3, Step 2](https) and/or the output JSON file from [Part 2](http) to the specified directory.
-- **Action Permissions Settings:** Verify the action permissions within your GitHub repository. Navigate to “Settings” and then select “Actions” in the sidebar. Choose to either allow all actions or restrict to local actions only.
-- **Branch Protection Rules:** Review and set up the branch protection rules in the repository settings to ensure code integrity.
+- To ensure successful processing, please upload the output JSON file from [Part 3, Step 2](https://github.com/davidbeard741/arcticfrenz-data#step-2-automated-data-extraction-with-selenium-webdriver) and/or the output JSON file from [Part 2](https://github.com/davidbeard741/arcticfrenz-data#part-2-calculating-rarity-scores-for-nfts-based-on-off-chain-metadata) to the designated directory.
+- To manage action permissions, navigate to the “Settings” tab within your GitHub repository and select “Actions” from the sidebar menu. Decide whether to allow all actions or restrict them to local actions only.
+- To uphold code integrity, thoroughly review and establish branch protection rules within the repository settings.
 
 <br>
 
