@@ -340,7 +340,7 @@ A lower frequency of a trait value indicates rarity, and hence, it contributes m
 
 The rarity score for an NFT can be mathematically expressed as:
 
-$$rarity_score = \sum_{i=1}^N \frac{1}{f_i}$$
+![Alt text](URL_of_the_uploaded_image)
 
 where:
 
@@ -352,7 +352,7 @@ In other words, the rarity score is calculated by summing the inverse frequencie
 
 For example, consider an NFT with two traits: "fur color" and "eye color". The frequency of "red fur" is 10%, while the frequency of "blue fur" is 2%. The frequency of "blue eyes" is 50%, while the frequency of "green eyes" is 30%. The rarity score for this NFT would be calculated as follows:
 
-$$rarity_score = \frac{1}{0.10} + \frac{1}{0.02} + \frac{1}{0.50} + \frac{1}{0.30} = 12.20$$
+![Alt text](URL_of_the_uploaded_image)
 
 As you can see, the rarity score is higher for NFTs with rarer traits. This information can be used to assess the relative rarity of different NFTs within a collection.
 
