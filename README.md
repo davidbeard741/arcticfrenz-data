@@ -332,6 +332,34 @@ The concept of rarity in the context of NFTs pertains to the uniqueness and scar
 
 The following Python script performs the above steps. It processes the off-chain metadata to compute a rarity score for each NFT, then appends this score to the original dataset, and finally outputs the enriched dataset as a JSON file.
 
+### Rarity Score Implications
+
+A lower frequency of a trait value indicates rarity, and hence, it contributes more significantly to the rarity score. The scoring system is designed such that the sum of the inverses of the trait frequencies for an NFT's traits yields its total rarity score. The end result is a comprehensive dataset where each NFT entry is supplemented with a rarity_score field, reflecting its uniqueness within the collection.
+
+### Mathematical Formulation
+
+The rarity score for an NFT can be mathematically expressed as:
+
+$$rarity_score = \sum_{i=1}^N \frac{1}{f_i}$$
+
+where:
+
+* `rarity_score` is the rarity score of the NFT
+* `N` is the total number of traits for the NFT
+* `f_i` is the frequency of the `i`th trait value for the NFT
+
+In other words, the rarity score is calculated by summing the inverse frequencies of all the trait values for the NFT. This means that rarer traits will contribute more significantly to the rarity score than more common traits.
+
+For example, consider an NFT with two traits: "fur color" and "eye color". The frequency of "red fur" is 10%, while the frequency of "blue fur" is 2%. The frequency of "blue eyes" is 50%, while the frequency of "green eyes" is 30%. The rarity score for this NFT would be calculated as follows:
+
+$$rarity_score = \frac{1}{0.10} + \frac{1}{0.02} + \frac{1}{0.50} + \frac{1}{0.30} = 12.20$$
+
+As you can see, the rarity score is higher for NFTs with rarer traits. This information can be used to assess the relative rarity of different NFTs within a collection.
+
+### Handling Missing or Undefined Attributes
+
+In the rarity score calculation, it is possible for an NFT to have missing or undefined attributes. When such cases arise, the script is designed to handle these gracefully by assigning a default rarity score of 0. This ensures that every NFT has a defined rarity score when saved to the JSON file. By doing so, the dataset maintains consistency and allows for a meaningful comparison between NFTs, even if some have incomplete metadata. This approach also prevents potential errors during data processing and analysis that could occur due to undefined or missing values.
+
 <br>
 
 <details>
@@ -377,38 +405,6 @@ print(f"Awesome! The updated JSON file with rarity scores is saved to {updated_f
 </details>
 
 <br>
-
-### Rarity Score Implications
-
-A lower frequency of a trait value indicates rarity, and hence, it contributes more significantly to the rarity score. The scoring system is designed such that the sum of the inverses of the trait frequencies for an NFT's traits yields its total rarity score. The end result is a comprehensive dataset where each NFT entry is supplemented with a rarity_score field, reflecting its uniqueness within the collection.
-
-### Mathematical Formulation
-
-The rarity score for an NFT can be mathematically expressed as:
-
-$$
-rarity_score = \sum_{i=1}^N \frac{1}{f_i}
-$$
-
-where:
-
-* `rarity_score` is the rarity score of the NFT
-* `N` is the total number of traits for the NFT
-* `f_i` is the frequency of the `i`th trait value for the NFT
-
-In other words, the rarity score is calculated by summing the inverse frequencies of all the trait values for the NFT. This means that rarer traits will contribute more significantly to the rarity score than more common traits.
-
-For example, consider an NFT with two traits: "fur color" and "eye color". The frequency of "red fur" is 10%, while the frequency of "blue fur" is 2%. The frequency of "blue eyes" is 50%, while the frequency of "green eyes" is 30%. The rarity score for this NFT would be calculated as follows:
-
-$$
-rarity_score = \frac{1}{0.10} + \frac{1}{0.02} + \frac{1}{0.50} + \frac{1}{0.30} = 12.20
-$$
-
-As you can see, the rarity score is higher for NFTs with rarer traits. This information can be used to assess the relative rarity of different NFTs within a collection.
-
-### Handling Missing or Undefined Attributes
-
-In the rarity score calculation, it is possible for an NFT to have missing or undefined attributes. When such cases arise, the script is designed to handle these gracefully by assigning a default rarity score of 0. This ensures that every NFT has a defined rarity score when saved to the JSON file. By doing so, the dataset maintains consistency and allows for a meaningful comparison between NFTs, even if some have incomplete metadata. This approach also prevents potential errors during data processing and analysis that could occur due to undefined or missing values.
 
 ### Example Output
 
