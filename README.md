@@ -346,15 +346,9 @@ where:
 
 * `rarity_score` is the rarity score of the NFT
 * `N` is the total number of traits for the NFT
-* `f_i` is the frequency of the `i`th trait value for the NFT
+* `fᵢ` is the frequency of the `i`th trait value for the NFT
 
 In other words, the rarity score is calculated by summing the inverse frequencies of all the trait values for the NFT. This means that rarer traits will contribute more significantly to the rarity score than more common traits.
-
-For example, consider an NFT with the traits, fur color and eye color. The frequency of "red fur" is 10%, while the frequency of "blue fur" is 2%. The rarity score for this NFT would be calculated as follows:
-
-![Alt text](https://github.com/davidbeard741/arcticfrenz-data/blob/59ca8e560db209817e72ddae65294092560add68/images/6B1CE1DC-0657-44B9-8F0E-1D8E5BFB105F.jpeg)
-
-As you can see, the rarity score is higher for NFTs with rarer traits. This information can be used to assess the relative rarity of different NFTs within a collection.
 
 ### Handling Missing or Undefined Attributes
 
