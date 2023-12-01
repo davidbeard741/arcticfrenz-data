@@ -3,7 +3,7 @@ name: chickentribe
 on:
   push:
     paths:
-      - .github/workflows/checkentribe.yml
+      - .github/workflows/chickentribe.yml
   workflow_dispatch:
   schedule:
     - cron: '0 */4 * * *' # Run every 4 hours
