@@ -1,46 +1,35 @@
 name: chickentribe
 
 on:
-  # Trigger the workflow on push events that target the .github/workflows/chickentribe.yml file
   push:
     paths:
       - .github/workflows/chickentribe.yml
-  # Allow manual triggering of the workflow
   workflow_dispatch:
-  # Schedule the workflow to run every 4 hours
   schedule:
     - cron: "0 */4 * * *"
 
 jobs:
-  # Define a job named "scheduled"
   scheduled:
-    # Set the runner environment to ubuntu-latest
     runs-on: ubuntu-latest
 
-    # Define a matrix strategy with one dimension: node-version
     strategy:
       matrix:
         node-version: [16.x]
 
-    # Define a series of steps to be executed for the job
     steps:
-      # Use the specified Node.js version
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
 
-      # Checkout the repository code
       - name: Check out repo
         uses: actions/checkout@v2
 
-      # Set up deno
       - name: Setup deno
         uses: denoland/setup-deno@v1
         with:
           deno-version: v1.x
 
-      # Set up Python
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
@@ -53,39 +42,25 @@ jobs:
           # Update the package list
           sudo apt-get update
       
-          # Install Google Chrome
           sudo apt-get install -y google-chrome-stable
       
-          # Get the Chrome version
-          CHROME_VERSION=$(google-chrome --version | grep -oE "[0-9]+\.[0-9]+\.[0.9]+")
-      
-          # Specify the correct ChromeDriver version that matches your Chrome version
-          # Use the same version as your installed Google Chrome
-          CHROMEDRIVER_VERSION="94.0.4606.61"
+          - name: Get Chrome version
+            id: chrome_version
+            run: echo "CHROME_VERSION=$(google-chrome --version | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')" >> $GITHUB_ENV
+    
+          - name: Setup Chromedriver
+            run: |
+              CHROMEDRIVER_VERSION=$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE_${{ env.CHROME_VERSION }})
+              CHROMEDRIVER_URL="https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
+              wget -N "$CHROMEDRIVER_URL" -P ~/
+              unzip ~/chromedriver_linux64.zip -d ~/
+              sudo mv -f ~/chromedriver /usr/local/share/
+              sudo chmod +x /usr/local/share/chromedriver
+              sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+              ls -l /usr/local/share/
 
-          # Download ChromeDriver
-          CHROMEDRIVER_URL="https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
-          wget -N "$CHROMEDRIVER_URL" -P ~/
-      
-          # Extract ChromeDriver
-          unzip ~/chromedriver_linux64.zip -d ~/
-      
-          # Move ChromeDriver to the appropriate location
-          sudo mv -f ~/chromedriver /usr/local/share/
-      
-          # Make ChromeDriver executable
-          sudo chmod +x /usr/local/share/chromedriver
-      
-          # Create a symlink to ChromeDriver in /usr/local/bin
-          sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
-      
-          # Display the contents of the directory where chromedriver is located
-          ls -l /usr/local/share/
-      
-      # Install Python dependencies
       - name: Install Python dependencies
         run: pip install selenium bs4 psutil
 
-      # Run the script
       - name: Run script
         run: python chickentribe.py
