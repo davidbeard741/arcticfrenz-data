@@ -1,36 +1,42 @@
-name: Chicken Tribe Runner
+name: chickentribe
 
 on:
+  push:
+    paths:
+      - .github/workflows/checkentribe.yml
+  workflow_dispatch:
   schedule:
-    - cron: '0 */1 * * *'  # Runs every 4 hours
+    - cron: '0 */4 * * *' # Run every 4 hours
 
 jobs:
-  run-script:
+  scheduled:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.8' 
-
-    - name: Install Chrome and Chromedriver
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y google-chrome-stable
-        CHROME_VERSION=$(google-chrome --version | grep -oE "[0-9]+\.[0-9]+\.[0-9]+")
-        CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION")
-        wget -N "http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip" -P ~/
-        unzip ~/chromedriver_linux64.zip -d ~/
-        sudo mv -f ~/chromedriver /usr/local/share/
-        sudo chmod +x /usr/local/share/chromedriver
-        sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
-
-    - name: Install Python dependencies
-      run: pip install selenium bs4 psutil
-
-    - name: Run script
-      run: python /chickentribe/chickentribe.py
+      - name: Check out repo
+        uses: actions/checkout@v2
+      - name: Setup deno
+        uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8' 
+  
+      - name: Install Chrome and Chromedriver
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+          CHROME_VERSION=$(google-chrome --version | grep -oE "[0-9]+\.[0-9]+\.[0-9]+")
+          CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION")
+          wget -N "http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip" -P ~/
+          unzip ~/chromedriver_linux64.zip -d ~/
+          sudo mv -f ~/chromedriver /usr/local/share/
+          sudo chmod +x /usr/local/share/chromedriver
+          sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+  
+      - name: Install Python dependencies
+        run: pip install selenium bs4 psutil
+  
+      - name: Run script
+        run: python /chickentribe/chickentribe.py
