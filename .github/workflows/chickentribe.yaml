@@ -46,7 +46,6 @@ jobs:
         with:
           python-version: '3.8'
 
-      # Install Chrome and Chromedriver
       - name: Install Chrome and Chromedriver
         env:
           DEBIAN_FRONTEND: noninteractive
@@ -79,7 +78,7 @@ jobs:
       
           # Create a symlink to ChromeDriver in /usr/local/bin
           sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
-
+      
           # Display the contents of the directory where chromedriver is located
           ls -l /usr/local/share/
       
