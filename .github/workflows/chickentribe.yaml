@@ -53,29 +53,30 @@ jobs:
         run: |
           # Update the package list
           sudo apt-get update
-
+      
           # Install Google Chrome
           sudo apt-get install -y google-chrome-stable
-
+      
           # Get the Chrome version
           CHROME_VERSION=$(google-chrome --version | grep -oE "[0-9]+\.[0-9]+\.[0-9]+")
-
-          # Determine the desired ChromeDriver version (e.g., 119.0.6045.105)
-          CHROMEDRIVER_VERSION="94.0.4606.61"
-
+      
+          # Specify the correct ChromeDriver version that matches your Chrome version
+          # In this case, use 119.0.6045.105
+          CHROMEDRIVER_VERSION="119.0.6045.105"
+      
           # Download ChromeDriver
           CHROMEDRIVER_URL="https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
           wget -N "$CHROMEDRIVER_URL" -P ~/
-
+      
           # Extract ChromeDriver
           unzip ~/chromedriver_linux64.zip -d ~/
-
+      
           # Move ChromeDriver to the appropriate location
           sudo mv -f ~/chromedriver /usr/local/share/
-
+      
           # Make ChromeDriver executable
           sudo chmod +x /usr/local/share/chromedriver
-
+      
           # Create a symlink to ChromeDriver in /usr/local/bin
           sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 
