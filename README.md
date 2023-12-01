@@ -723,15 +723,13 @@ def extract_time_from_file(file_path, logger):
         logger.info(f"Successfully read HTML content from '{file_path}'.")
 
         soup = BeautifulSoup(html_content, 'html.parser')
-        time_column_index = 4  # Assuming the time is in the 4th column
+        time_column_index = 4
 
-        # Directly navigate to the specific table using its unique ID
         table = soup.select_one("#rc-tabs-0-panel-txs table")
         if not table:
             logger.info("The specific table with ID 'rc-tabs-0-panel-txs' was not found.")
             return "Table not found"
 
-        # Selecting the second row and the fourth column
         time_cell = table.select_one("tbody tr:nth-of-type(2) td:nth-of-type(4)")
         if not time_cell:
             logger.info("Time cell not found in the specified row and column.")
@@ -760,7 +758,7 @@ def getholderaddress(url_holder, driver, logger):
         wait.until(lambda d: root.is_displayed())
         wait.until(lambda d: body.is_displayed())
 
-        random_sleep(5, 6)
+        random_sleep(7, 8)
 
         simulate_human_interaction(driver, logger)
 
@@ -793,7 +791,7 @@ def get_hold_time(url_time, driver, logger):
         wait.until(lambda d: root.is_displayed())
         wait.until(lambda d: body.is_displayed())
 
-        random_sleep(7, 8)
+        random_sleep(8, 9)
 
         simulate_human_interaction(driver, logger)
 
@@ -812,10 +810,20 @@ def get_hold_time(url_time, driver, logger):
             }
         }
 
+        if (!targetElement) {
+            // Second element not found, so select the first
+            for (var i = 0; i < elements.length; i++) {
+                if (elements[i].textContent.includes('Time')) {
+                    targetElement = elements[i];
+                    break;
+                }
+            }
+        }
+
         if (targetElement) {
             targetElement.click();
         } else {
-            console.log('Second element not found');
+            console.log('Element with "Time" not found');
         }
         """
 
@@ -824,7 +832,7 @@ def get_hold_time(url_time, driver, logger):
         except Exception as e:
             logger.error(f"An error occurred: {e}")
 
-        time.sleep(1)
+        time.sleep(2)
 
         body_html = driver.find_element(By.TAG_NAME, 'body').get_attribute('outerHTML')
 
@@ -888,7 +896,6 @@ def update_json_data(item, solana_address, hold_time_str, logger):
 
 
 def find_start_index(nft_metadata, processed_indices, logger):
-    # Step 1: Prioritize items without 'holder data'
     for index, item in enumerate(nft_metadata):
         if index in processed_indices:
             continue
@@ -898,7 +905,6 @@ def find_start_index(nft_metadata, processed_indices, logger):
 
     logger.info("All items have 'holder data'. Moving to the next priority.")
 
-    # Step 2: Prioritize items with invalid 'holder'
     for index, item in enumerate(nft_metadata):
         if index in processed_indices:
             continue
@@ -910,7 +916,6 @@ def find_start_index(nft_metadata, processed_indices, logger):
 
     logger.info("All items have valid 'holder' values. Moving to the next priority.")
 
-    # New Step 3: Prioritize if 'when acquired' is not a Unix epoch timestamp
     for index, item in enumerate(nft_metadata):
         if index in processed_indices:
             continue
@@ -922,7 +927,6 @@ def find_start_index(nft_metadata, processed_indices, logger):
 
     logger.info("All items have valid 'when acquired' timestamps. Moving to the next priority.")
 
-    # Step 4: Prioritize by oldest 'time checked'
     oldest_index = None
     oldest_time = float('inf')
     for index, item in enumerate(nft_metadata):
@@ -1001,7 +1005,6 @@ def main():
 
 if __name__ == '__main__':
     main()
-
 ```
 
 </details>
