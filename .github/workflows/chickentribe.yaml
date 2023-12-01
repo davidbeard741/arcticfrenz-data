@@ -61,7 +61,7 @@ jobs:
       
           # Specify the correct ChromeDriver version that matches your Chrome version
           # Use the same version as your installed Google Chrome
-          CHROMEDRIVER_VERSION="119.0.6045.159-1"
+          CHROMEDRIVER_VERSION="94.0.4606.61"
 
           # Download ChromeDriver
           CHROMEDRIVER_URL="https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
