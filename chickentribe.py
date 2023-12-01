@@ -16,9 +16,9 @@ from selenium.webdriver.common.action_chains import ActionChains
 import psutil
 
 
-LOG_FILE = '/chickentribe/logfile.log'
-FILE_ADDRESS = '/chickentribe/address.html'
-FILE_TIME = '/chickentribe/time.html'
+LOG_FILE = 'chickentribe/logfile.log'
+FILE_ADDRESS = 'chickentribe/address.html'
+FILE_TIME = 'chickentribe/time.html'
 
 
 def setup_logger(log_file_path, logger_name='MyAppLogger'):
@@ -371,7 +371,7 @@ def main():
 
     kill_chrome_and_chromedriver(logger)
 
-    processed_data_file = '/chickentribe/nft_metadata_with_rarity_and_holder_data.json'
+    processed_data_file = 'chickentribe/nft_metadata_with_rarity_and_holder_data.json'
     if os.path.exists(processed_data_file):
         try:
             with open(processed_data_file, 'r') as file:
@@ -382,7 +382,7 @@ def main():
             return
     else:
         try:
-            with open('/chickentribe/nft_metadata_with_rarity.json', 'r') as file:
+            with open('chickentribe/nft_metadata_with_rarity.json', 'r') as file:
                 nft_metadata = json.load(file)
                 logger.info("Starting from the beginning as no progress file found.")
         except Exception as e:
