@@ -40,10 +40,6 @@ jobs:
           DEBIAN_FRONTEND: noninteractive
         run: |
         
-          # Remove the installation of Google Chrome as it's already installed
-          - name: Install Google Chrome
-            run: sudo apt-get install -y google-chrome-stable
-    
           # Get the Chrome version
           - name: Get Chrome version
             id: chrome_version
