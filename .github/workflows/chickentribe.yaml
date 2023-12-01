@@ -41,12 +41,7 @@ jobs:
 
       - name: Setup Chromedriver
         run: |
-          CHROMEDRIVER_VERSION=$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE_${{ env.CHROME_VERSION }})
-          if [ -z "$CHROMEDRIVER_VERSION" ]; then
-            echo "Failed to find Chromedriver version for Chrome ${{ env.CHROME_VERSION }}"
-            exit 1
-          fi
-          CHROMEDRIVER_URL="https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
+          CHROMEDRIVER_URL="https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip"
           wget -N "$CHROMEDRIVER_URL" -P ~/
           unzip ~/chromedriver_linux64.zip -d ~/
           sudo mv -f ~/chromedriver /usr/local/share/
