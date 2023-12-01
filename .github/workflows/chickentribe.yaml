@@ -49,5 +49,8 @@ jobs:
         run: pip install selenium bs4 psutil
   
       - name: Run script
-        run: python arcticfrenz-data/chickentribe/chickentribe.py
+        run: |
+          cd arcticfrenz-data/chickentribe
+          python chickentribe.py
+
 
