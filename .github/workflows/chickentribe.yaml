@@ -58,7 +58,7 @@ jobs:
           sudo apt-get install -y google-chrome-stable
       
           # Get the Chrome version
-          CHROME_VERSION=$(google-chrome --version | grep -oE "[0-9]+\.[0-9]+\.[0-9]+")
+          CHROME_VERSION=$(google-chrome --version | grep -oE "[0-9]+\.[0-9]+\.[0.9]+")
       
           # Specify the correct ChromeDriver version that matches your Chrome version
           # In this case, use 119.0.6045.105
@@ -80,6 +80,9 @@ jobs:
           # Create a symlink to ChromeDriver in /usr/local/bin
           sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 
+          # Display the contents of the directory where chromedriver is located
+          ls -l /usr/local/share/
+      
       # Install Python dependencies
       - name: Install Python dependencies
         run: pip install selenium bs4 psutil
