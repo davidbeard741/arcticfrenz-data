@@ -39,15 +39,17 @@ jobs:
         env:
           DEBIAN_FRONTEND: noninteractive
         run: |
-          # Update the package list
-          sudo apt-get update
-      
-          sudo apt-get install -y google-chrome-stable
-      
+        
+          # Remove the installation of Google Chrome as it's already installed
+          - name: Install Google Chrome
+            run: sudo apt-get install -y google-chrome-stable
+    
+          # Get the Chrome version
           - name: Get Chrome version
             id: chrome_version
             run: echo "CHROME_VERSION=$(google-chrome --version | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')" >> $GITHUB_ENV
     
+          # Setup Chromedriver
           - name: Setup Chromedriver
             run: |
               CHROMEDRIVER_VERSION=$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE_${{ env.CHROME_VERSION }})
