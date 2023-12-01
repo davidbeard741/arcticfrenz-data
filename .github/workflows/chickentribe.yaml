@@ -49,10 +49,7 @@ jobs:
         run: pip install selenium bs4 psutil
   
       - name: Run script
-        run: |
-          ls  # List contents of the current directory (to verify your location)
-          cd arcticfrenz-data/chickentribe
-          python chickentribe.py
+        run: python chickentribe.py
 
 
 
