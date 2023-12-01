@@ -50,7 +50,9 @@ jobs:
   
       - name: Run script
         run: |
+          ls  # List contents of the current directory (to verify your location)
           cd arcticfrenz-data/chickentribe
           python chickentribe.py
+
 
 
