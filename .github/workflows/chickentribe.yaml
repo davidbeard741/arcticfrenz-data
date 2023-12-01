@@ -54,4 +54,4 @@ jobs:
         run: pip install selenium bs4 psutil
 
       - name: Run script
-        run: python chickentribe.py
+        run: python chickentribe.py 
