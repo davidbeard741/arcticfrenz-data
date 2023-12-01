@@ -46,42 +46,28 @@ jobs:
         with:
           python-version: '3.8'
 
-      # Install Chrome and Chromedriver
-      - name: Install Chrome and Chromedriver
-        env:
-          DEBIAN_FRONTEND: noninteractive
-        run: |
-          # Update the package list
-          sudo apt-get update
-
-          # Install Google Chrome
-          sudo apt-get install -y google-chrome-stable
-
-          # Get the Chrome version
-          CHROME_VERSION=$(google-chrome --version | grep -oE "[0-9]+\.[0-9]+\.[0-9]+")
-
-          # Specify a fixed ChromeDriver version that is known to work with the Chrome version
-          CHROMEDRIVER_VERSION="94.0.4606.61"
-
-          # Download ChromeDriver
-          CHROMEDRIVER_URL="https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
-          wget -N "$CHROMEDRIVER_URL" -P ~/
-
-          # Extract ChromeDriver
-          unzip ~/chromedriver_linux64.zip -d ~/
-
-          # Move ChromeDriver to the appropriate location
-          sudo mv -f ~/chromedriver /usr/local/share/
-
-          # Make ChromeDriver executable
-          sudo chmod +x /usr/local/share/chromedriver
-
-          # Create a symlink to ChromeDriver in /usr/local/bin
-          sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
-
       # Install Python dependencies
       - name: Install Python dependencies
         run: pip install selenium bs4 psutil
+
+      # Update ChromeDriver to the desired version
+      - name: Update ChromeDriver
+        run: |
+          # Determine the desired ChromeDriver version (e.g., 119.0.6045.105)
+          CHROMEDRIVER_VERSION="94.0.4606.61"
+
+          # Download the desired ChromeDriver version
+          CHROMEDRIVER_URL="https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
+          wget -N "$CHROMEDRIVER_URL" -P ~/
+
+          # Remove the old ChromeDriver
+          sudo rm /usr/local/bin/chromedriver
+
+          # Extract and move the new ChromeDriver
+          unzip ~/chromedriver_linux64.zip -d ~/
+          sudo mv -f ~/chromedriver /usr/local/share/
+          sudo chmod +x /usr/local/share/chromedriver
+          sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
 
       # Run the script
       - name: Run script
