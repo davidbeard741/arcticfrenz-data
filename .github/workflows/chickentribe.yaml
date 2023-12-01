@@ -50,19 +50,20 @@ jobs:
       - name: Install Python dependencies
         run: pip install selenium bs4 psutil
 
-      # Update ChromeDriver to the desired version
+      # Update ChromeDriver to the desired version (94.0.4606.61)
       - name: Update ChromeDriver
         run: |
-          # Determine the desired ChromeDriver version (e.g., 119.0.6045.105)
           CHROMEDRIVER_VERSION="94.0.4606.61"
-
+      
           # Download the desired ChromeDriver version
           CHROMEDRIVER_URL="https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
           wget -N "$CHROMEDRIVER_URL" -P ~/
-
-          # Remove the old ChromeDriver
-          sudo rm /usr/local/bin/chromedriver
-
+      
+          # Remove the old ChromeDriver if it exists
+          if [ -f /usr/local/bin/chromedriver ]; then
+            sudo rm /usr/local/bin/chromedriver
+          fi
+      
           # Extract and move the new ChromeDriver
           unzip ~/chromedriver_linux64.zip -d ~/
           sudo mv -f ~/chromedriver /usr/local/share/
