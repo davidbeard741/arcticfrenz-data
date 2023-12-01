@@ -41,7 +41,8 @@ jobs:
 
       - name: Setup Chromedriver
         run: |
-          CHROMEDRIVER_URL="https://chromedriver.storage.googleapis.com/2.41/chromedriver_linux64.zip"
+          CHROMEDRIVER_VERSION="119.0.6045.105"
+          CHROMEDRIVER_URL="https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
           wget -N "$CHROMEDRIVER_URL" -P ~/
           unzip ~/chromedriver_linux64.zip -d ~/
           sudo mv -f ~/chromedriver /usr/local/share/
