@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
   # Schedule the workflow to run every 4 hours
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: "0 */4 * * *"
 
 jobs:
   # Define a job named "scheduled"
