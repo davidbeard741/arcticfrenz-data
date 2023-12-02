@@ -32,12 +32,17 @@ jobs:
   
       - name: Get Chrome version
         id: chrome-version
-        run: echo "CHROME_VERSION=$(google-chrome --version | sed 's/Google Chrome //')" >> $GITHUB_ENV
+        run: |
+          CHROME_VERSION=$(google-chrome --version | sed 's/Google Chrome //' | sed 's/ //g')
+          echo "Extracted Chrome version: $CHROME_VERSION"
+          echo "CHROME_VERSION=$CHROME_VERSION" >> $GITHUB_ENV
   
       - name: Install Chromedriver
         run: |
           CHROME_VERSION=${{ env.CHROME_VERSION }}
+          echo "Using Chrome version: $CHROME_VERSION for Chromedriver"
           CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION")
+          echo "Chromedriver version to download: $CHROMEDRIVER_VERSION"
           curl -L -O "https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
           unzip chromedriver_linux64.zip
           sudo mv chromedriver /usr/local/bin/
