@@ -1184,14 +1184,14 @@ if __name__ == '__main__':
 ```
 ├── .github
 │     └── workflows
-│           └── run.yaml  -> Github Action configuration
+│           └── run.yaml -> Github Action configuration
 ├── collection
 │     ├── script.py      -> The Python script
 │     ├── time.html      -> Store webpage content for parsing and extracting
 │     ├── address.html   -> Store webpage content for parsing and extracting 
 │     ├── logfile.log    -> Store log messages
 │     ├── part2.json     -> Output from Part-2
-│     └── output.json    -> Output from Part-3 Step-2 and from the Python script
+│     └── output.json    -> Output from Part-3 Step-2 and from 'script.py'
 ├── environment.yml
 ├── README.md
 └── .gitignore
@@ -1735,7 +1735,9 @@ if __name__ == '__main__':
 Thanks frenz, Please let us know what you think. 
 
 <table align="center">
+	<tr></tr>
 	<tr>
+		<td align="center"></td>
 		<td align="center">
 			<a href="https://discord.gg/arcticfrenz">
 				<img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
@@ -1744,5 +1746,7 @@ Thanks frenz, Please let us know what you think.
 				<img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">
 			</a> 
 		</td>
+		<td align="center"></td>
 	</tr>
+	<tr></tr>
 </table>
