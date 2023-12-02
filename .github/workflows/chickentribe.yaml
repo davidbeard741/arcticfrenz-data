@@ -49,7 +49,7 @@ jobs:
           sudo mv -f ~/chromedriver /usr/local/share/
           sudo chmod +x /usr/local/share/chromedriver
           sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
-          ls -l /usr/local/share/
+          ls -l /usr/local/share/ 
 
       - name: Install Python dependencies
         run: pip install selenium bs4 psutil
