@@ -1186,13 +1186,13 @@ if __name__ == '__main__':
 │     └── workflows
 │           └── run.yaml -> Github Action configuration
 ├── collection
-│     ├── script.py      -> The Python script
 │     ├── time.html      -> Store webpage content for parsing and extracting
 │     ├── address.html   -> Store webpage content for parsing and extracting 
 │     ├── logfile.log    -> Store log messages
 │     ├── part2.json     -> Output from Part-2
 │     └── output.json    -> Output from Part-3 Step-2 and from 'script.py'
 ├── environment.yml
+├── script.py            -> The Python script
 ├── README.md
 └── .gitignore
 ```
