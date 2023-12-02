@@ -41,7 +41,7 @@ jobs:
     - name: Sync with Remote
       run: |
         git fetch
-        git reset --hard origin/${{ github.ref }}
+        git reset --hard origin/main
     - name: Commit changes
       run: |
         git add chickentribe/nft_metadata_with_rarity_and_holder_data.json chickentribe/logfile.log
