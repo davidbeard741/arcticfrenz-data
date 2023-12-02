@@ -6,7 +6,7 @@ on:
       - .github/workflows/chickentribe.yml
   workflow_dispatch:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 */8 * * *'
 
 jobs:
   build-linux:
@@ -38,16 +38,16 @@ jobs:
       run: |
         git config --global user.name 'davidbeard741'
         git config --global user.email 'david.beard741@gmail.com'
-    - name: Sync with Remote
-      run: |
-        git fetch
-        git reset --hard origin/main
     - name: Commit changes
       run: |
         git add chickentribe/nft_metadata_with_rarity_and_holder_data.json chickentribe/logfile.log
         git commit -m "Update NFT metadata and log"
+    - name: Sync with Remote
+      run: |
+        git fetch
+        git merge origin/main
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+        branch: main
