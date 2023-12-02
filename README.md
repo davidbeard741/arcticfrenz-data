@@ -1233,10 +1233,10 @@ name: run
 on:
   push:
     paths:
-      - .github/workflows/run.yml
+      - .github/workflows/runner.yml
   workflow_dispatch:
   schedule:
-    - cron: '0 */4 * * *' # Every 4 hrs
+    - cron: '0 */4 * * *'
 
 jobs:
   build-linux:
@@ -1264,6 +1264,19 @@ jobs:
         sudo apt-get install -y google-chrome-stable
     - name: Run script
       run: python script.py
+    - name: Set up Git
+      run: |
+        git config --global user.name 'Your Name'
+        git config --global user.email 'your-email@example.com'
+    - name: Commit changes
+      run: |
+        git add collection/nft_metadata_with_rarity_and_holder_data.json collection/logfile.log
+        git commit -m "Update NFT metadata and log"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
 
 ```
 
