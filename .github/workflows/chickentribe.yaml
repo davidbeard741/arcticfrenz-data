@@ -30,21 +30,23 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y google-chrome-stable
   
-      - name: Get Chrome version
+            - name: Get Chrome version
         id: chrome-version
         run: |
           FULL_CHROME_VERSION=$(google-chrome --version | sed 's/Google Chrome //' | sed 's/ //g')
-          MAJOR_CHROME_VERSION=$(echo $FULL_CHROME_VERSION | cut -d'.' -f1)
           echo "Extracted full Chrome version: $FULL_CHROME_VERSION"
-          echo "Using major Chrome version: $MAJOR_CHROME_VERSION for Chromedriver"
-          echo "MAJOR_CHROME_VERSION=$MAJOR_CHROME_VERSION" >> $GITHUB_ENV
-  
+          echo "FULL_CHROME_VERSION=$FULL_CHROME_VERSION" >> $GITHUB_ENV
+
       - name: Install Chromedriver
         run: |
-          MAJOR_CHROME_VERSION=${{ env.MAJOR_CHROME_VERSION }}
-          CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$MAJOR_CHROME_VERSION")
+          FULL_CHROME_VERSION=${{ env.FULL_CHROME_VERSION }}
+          CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE")
           if [[ -z "$CHROMEDRIVER_VERSION" ]]; then
-            echo "Failed to find Chromedriver for Chrome major version: $MAJOR_CHROME_VERSION"
+            echo "Failed to find a suitable Chromedriver version. Using the latest available version."
+            CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE")
+          fi
+          if [[ -z "$CHROMEDRIVER_VERSION" ]]; then
+            echo "Failed to fetch the latest Chromedriver version."
             exit 1
           fi
           echo "Chromedriver version to download: $CHROMEDRIVER_VERSION"
