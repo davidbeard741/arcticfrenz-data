@@ -1271,6 +1271,10 @@ jobs:
       run: |
         git config --global user.name 'Your Name'
         git config --global user.email 'your-email@example.com'
+    - name: Sync with Remote
+      run: |
+        git fetch
+        git reset --hard origin/${{ github.ref }}
     - name: Commit changes
       run: |
         git add collection/nft_metadata_with_rarity_and_holder_data.json collection/logfile.log
