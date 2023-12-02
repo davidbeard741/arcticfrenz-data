@@ -7,7 +7,7 @@ dependencies:
   - pandas
   - flask
   - pytest
-  - selenium
+  - selenium>=4.0.0
   - beautifulsoup4
   - psutil
   - pip:
