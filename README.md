@@ -1740,10 +1740,6 @@ Thanks frenz, Please let us know what you think.
 			<a href="https://discord.gg/arcticfrenz">
 				<img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
 			</a>
-		</td>
-	</tr>
-		<tr>
-		<td align="center">
 			<a href="https://twitter.com/arcticfrenz">
 				<img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white">
 			</a> 
