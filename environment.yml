@@ -1,14 +1,12 @@
-name: myenv
-channels:
-  - defaults
 dependencies:
   - python=3.10
+  - pip
   - numpy
   - pandas
   - flask
   - pytest
-  - selenium>=4.0.0
   - beautifulsoup4
   - psutil
   - pip:
+    - selenium>=4.0.0
     - webdriver-manager
