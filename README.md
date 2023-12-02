@@ -20,11 +20,11 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 	</tr>
 </table>
 
+The following is a structured guide designed to help you retrieve the metadata for each NFT in a collection.
+
 ---
 
 ## Part 1: How to Retrieve NFT Metadata for an Entire Collection
-
-A structured guide designed to help you retrieve the metadata for each NFT in a collection.
 
 ### Step 1: Identify the Creator Address
 
@@ -1274,7 +1274,7 @@ jobs:
     - name: Sync with Remote
       run: |
         git fetch
-        git reset --hard origin/${{ github.ref }}
+        git reset --hard origin/main
     - name: Commit changes
       run: |
         git add collection/nft_metadata_with_rarity_and_holder_data.json collection/logfile.log
