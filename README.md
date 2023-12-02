@@ -1180,7 +1180,7 @@ if __name__ == '__main__':
 ```
 ├── .github
 │     └── workflows
-│           └── ci.yaml  -> Github Action configuration
+│           └── run.yaml  -> Github Action configuration
 ├── collection
 │     ├── script.py      -> The Python script
 │     ├── time.html      -> Store webpage content for parsing and extracting
@@ -1188,7 +1188,7 @@ if __name__ == '__main__':
 │     ├── logfile.log    -> Store log messages
 │     ├── part2.json     -> Output from Part-2
 │     └── output.json    -> Output from Part-3 Step-2 and from the Python script
-├── package.json
+├── environment.yml
 ├── README.md
 └── .gitignore
 ```
@@ -1197,58 +1197,92 @@ if __name__ == '__main__':
 
 <br>
 
-**YAML Configuration:** Create a YAML file for the script, such as "main.yml," to define the workflow and its execution parameters.
-- **Scheduled Execution:** Triggers the workflow at specified times based on the schedule event.
-- **Ubuntu Environment Setup:** Installs the latest Ubuntu environment to ensure compatibility.
-- **Script Acquisition:** Checks out the script from its repository to access the latest version.
-- **Python Setup:** Configures the Python environment for the script's execution.
-- **Chrome and Chromedriver Installation:** Installs Chrome and Chromedriver to enable Selenium's web automation capabilities.
-- **Python Package Installation:** Installs the required Python packages for the script's dependencies.
-- **Script Execution:** Launches the Python script to perform the NFT holder monitoring task.
+**YAML Configuration and Workflow:** 
+- **Workflow File**: The workflow is defined in the `run.yml` file, located under `.github/workflows`. This YAML file orchestrates the entire build and execution process for the project.
+- **Trigger Events**: The workflow is triggered on three occasions:
+  1. Every time there's a push to the `.github/workflows/run.yml` file.
+  2. Manually, through the `workflow_dispatch` event.
+  3. Automatically, on a schedule specified as `0 */4 * * *`, meaning the workflow runs every 4 hours.
+
+**Environment Setup and Execution Steps**:
+- **Ubuntu Environment**: The workflow runs on the latest Ubuntu environment (`ubuntu-latest`) to ensure compatibility and consistency.
+- **Repository Checkout**: Uses `actions/checkout@v3` to check out the repository, ensuring access to the latest version of the script and associated files.
+- **Python Environment**: Sets up Python 3.10 using `actions/setup-python@v3`, ensuring the script runs on a specific and consistent Python version.
+- **Conda Environment Path Setup**: Adds the Conda executable to the system path, facilitating further environment management.
+- **Dependency Installation**: Dependencies are managed through a Conda environment, defined in `environment.yml`. This file lists essential packages like `numpy`, `pandas`, `flask`, and testing tools like `pytest`, as well as web scraping and automation tools (`beautifulsoup4`, `selenium`).
+- **Chrome Installation**: Installs Google Chrome Stable, preparing the environment for Selenium-based web automation.
+- **Script Execution**: The primary script `script.py` is executed, leveraging the prepared Python environment and dependencies.
+
+**Key Benefits and Features**:
+- **Automated and Consistent Environment Setup**: The use of `environment.yml` for managing dependencies with Conda ensures a consistent and reproducible environment for every workflow run.
+- **Scheduled and Event-Driven Execution**: Flexibility in execution, allowing the workflow to run both on a regular schedule and in response to specific GitHub events.
+- **Portability**: The configuration facilitates easy replication of the environment across different setups, enhancing the project's portability and collaboration efficiency.
 
 <br>
 
 <details>
-  <summary>CLICK TO EXPAND YAML File</summary>
+  <summary>CLICK TO EXPAND '.github/workflows/run.yml'</summary>
 
 ```yaml
-name: NAME Runner
+name: run
 
 on:
+  push:
+    paths:
+      - .github/workflows/run.yml
+  workflow_dispatch:
   schedule:
-    - cron: '0 */4 * * *'  # Runs every 4 hours
+    - cron: '0 */4 * * *' # Every 4 hrs
 
 jobs:
-  run-script:
+  build-linux:
     runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 5
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
       with:
-        python-version: '3.8' 
-
-    - name: Install Chrome and Chromedriver
+        python-version: '3.10'
+    - name: Add conda to system path
+      run: |
+        echo $CONDA/bin >> $GITHUB_PATH
+    - name: Install dependencies
+      run: |
+        conda env update --file environment.yml --name base
+    - name: Install Chrome
+      env:
+        DEBIAN_FRONTEND: noninteractive
       run: |
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
-        CHROME_VERSION=$(google-chrome --version | grep -oE "[0-9]+\.[0-9]+\.[0-9]+")
-        CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION")
-        wget -N "http://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip" -P ~/
-        unzip ~/chromedriver_linux64.zip -d ~/
-        sudo mv -f ~/chromedriver /usr/local/share/
-        sudo chmod +x /usr/local/share/chromedriver
-        sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
-
-    - name: Install Python dependencies
-      run: pip install selenium bs4 psutil
-
     - name: Run script
       run: python script.py
 
+```
+
+</details>
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND 'environment.yml'</summary>
+
+```yaml
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - flask
+  - pytest
+  - beautifulsoup4
+  - psutil
+  - pip:
+    - selenium>=4.0.0
+    - webdriver-manager
 ```
 
 </details>
