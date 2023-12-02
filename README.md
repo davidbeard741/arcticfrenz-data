@@ -1202,9 +1202,9 @@ if __name__ == '__main__':
 <br>
 
 **YAML Configuration and Workflow:** 
-- **Workflow File**: The workflow is defined in the `run.yml` file, located under `.github/workflows`. This YAML file orchestrates the entire build and execution process for the project.
+- **Workflow File**: The workflow is defined in the `runner.yml` file, located under `.github/workflows`. This YAML file orchestrates the entire build, execution, and update process for the project.
 - **Trigger Events**: The workflow is triggered on three occasions:
-  1. Every time there's a push to the `.github/workflows/run.yml` file.
+  1. Every time there's a push to the `.github/workflows/runner.yml` file.
   2. Manually, through the `workflow_dispatch` event.
   3. Automatically, on a schedule specified as `0 */4 * * *`, meaning the workflow runs every 4 hours.
 
@@ -1215,11 +1215,14 @@ if __name__ == '__main__':
 - **Conda Environment Path Setup**: Adds the Conda executable to the system path, facilitating further environment management.
 - **Dependency Installation**: Dependencies are managed through a Conda environment, defined in `environment.yml`. This file lists essential packages like `numpy`, `pandas`, `flask`, and testing tools like `pytest`, as well as web scraping and automation tools (`beautifulsoup4`, `selenium`).
 - **Chrome Installation**: Installs Google Chrome Stable, preparing the environment for Selenium-based web automation.
-- **Script Execution**: The primary script `script.py` is executed, leveraging the prepared Python environment and dependencies.
+- **Script Execution**: Executes the primary script `script.py`, leveraging the prepared Python environment and dependencies.
+- **Git Configuration and File Commit**: Sets up Git with user credentials and commits changes made to `collection/nft_metadata_with_rarity_and_holder_data.json` and `collection/logfile.log`.
+- **Changes Pushing**: Utilizes `ad-m/github-push-action@master` to push the committed changes back to the repository, keeping the project's data files up to date.
 
 **Key Benefits and Features**:
 - **Automated and Consistent Environment Setup**: The use of `environment.yml` for managing dependencies with Conda ensures a consistent and reproducible environment for every workflow run.
-- **Scheduled and Event-Driven Execution**: Flexibility in execution, allowing the workflow to run both on a regular schedule and in response to specific GitHub events.
+- **Scheduled and Event-Driven Execution**: Offers flexibility in execution, allowing the workflow to run both on a regular schedule and in response to specific GitHub events.
+- **Continuous Integration and Deployment**: Automates the integration of changes and deployment of updated files, ensuring real-time updates to the repository.
 - **Portability**: The configuration facilitates easy replication of the environment across different setups, enhancing the project's portability and collaboration efficiency.
 
 <br>
