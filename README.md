@@ -1735,7 +1735,7 @@ if __name__ == '__main__':
 Thanks frenz, Please let us know what you think. 
 
 <table align="center">
-	<tr>
+	<tr align="center">
 		<td align="center">
 			<a href="https://discord.gg/arcticfrenz">
 				<img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
