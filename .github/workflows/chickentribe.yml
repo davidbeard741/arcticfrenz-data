@@ -38,6 +38,10 @@ jobs:
       run: |
         git config --global user.name 'davidbeard741'
         git config --global user.email 'david.beard741@gmail.com'
+    - name: Sync with Remote
+      run: |
+        git fetch
+        git reset --hard origin/${{ github.ref }}
     - name: Commit changes
       run: |
         git add chickentribe/nft_metadata_with_rarity_and_holder_data.json chickentribe/logfile.log
