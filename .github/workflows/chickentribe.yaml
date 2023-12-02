@@ -22,34 +22,26 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Check out repo
+      - name: Checkout repository
         uses: actions/checkout@v2
-
-      - name: Setup Deno
-        uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x
-
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: '3.8'
-
-      - name: Update Google Chrome
+  
+      - name: Install Chrome
         run: |
           sudo apt-get update
-          sudo apt-get --only-upgrade install google-chrome-stable
-
-      - name: Setup latest stable Chromedriver
+          sudo apt-get install -y google-chrome-stable
+  
+      - name: Get Chrome version
+        id: chrome-version
+        run: echo "CHROME_VERSION=$(google-chrome --version | sed 's/Google Chrome //')" >> $GITHUB_ENV
+  
+      - name: Install Chromedriver
         run: |
-          CHROMEDRIVER_VERSION=$(curl --silent "https://chromedriver.storage.googleapis.com/LATEST_RELEASE")
-          CHROMEDRIVER_URL="https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
-          wget -N "$CHROMEDRIVER_URL" -P ~/
-          unzip ~/chromedriver_linux64.zip -d ~/
-          sudo mv -f ~/chromedriver /usr/local/share/
-          sudo chmod +x /usr/local/share/chromedriver
-          sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
-          ls -l /usr/local/share/
+          CHROME_VERSION=${{ env.CHROME_VERSION }}
+          CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION")
+          curl -L -O "https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
+          unzip chromedriver_linux64.zip
+          sudo mv chromedriver /usr/local/bin/
+          chromedriver --version
 
       - name: Install Python dependencies
         run: pip install selenium bs4 psutil
