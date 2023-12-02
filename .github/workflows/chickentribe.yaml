@@ -35,14 +35,14 @@ jobs:
         with:
           python-version: '3.8'
 
-      - name: Get Chrome version
+      - name: Update Google Chrome
         run: |
-          echo "CHROME_VERSION=$(google-chrome --version | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')" >> $GITHUB_ENV
+          sudo apt-get update
+          sudo apt-get --only-upgrade install google-chrome-stable
 
-      - name: Setup Chromedriver
+      - name: Setup latest stable Chromedriver
         run: |
-          CHROME_VERSION=$(google-chrome --version | grep -oE '[0-9]+\.[0-9]+\.[0-9]+')
-          CHROMEDRIVER_VERSION=$(curl https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION)
+          CHROMEDRIVER_VERSION=$(curl --silent "https://chromedriver.storage.googleapis.com/LATEST_RELEASE")
           CHROMEDRIVER_URL="https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
           wget -N "$CHROMEDRIVER_URL" -P ~/
           unzip ~/chromedriver_linux64.zip -d ~/
