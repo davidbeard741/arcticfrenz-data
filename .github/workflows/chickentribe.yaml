@@ -33,15 +33,20 @@ jobs:
       - name: Get Chrome version
         id: chrome-version
         run: |
-          CHROME_VERSION=$(google-chrome --version | sed 's/Google Chrome //' | sed 's/ //g')
-          echo "Extracted Chrome version: $CHROME_VERSION"
-          echo "CHROME_VERSION=$CHROME_VERSION" >> $GITHUB_ENV
+          FULL_CHROME_VERSION=$(google-chrome --version | sed 's/Google Chrome //' | sed 's/ //g')
+          MAJOR_CHROME_VERSION=$(echo $FULL_CHROME_VERSION | cut -d'.' -f1)
+          echo "Extracted full Chrome version: $FULL_CHROME_VERSION"
+          echo "Using major Chrome version: $MAJOR_CHROME_VERSION for Chromedriver"
+          echo "MAJOR_CHROME_VERSION=$MAJOR_CHROME_VERSION" >> $GITHUB_ENV
   
       - name: Install Chromedriver
         run: |
-          CHROME_VERSION=${{ env.CHROME_VERSION }}
-          echo "Using Chrome version: $CHROME_VERSION for Chromedriver"
-          CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_VERSION")
+          MAJOR_CHROME_VERSION=${{ env.MAJOR_CHROME_VERSION }}
+          CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$MAJOR_CHROME_VERSION")
+          if [[ -z "$CHROMEDRIVER_VERSION" ]]; then
+            echo "Failed to find Chromedriver for Chrome major version: $MAJOR_CHROME_VERSION"
+            exit 1
+          fi
           echo "Chromedriver version to download: $CHROMEDRIVER_VERSION"
           curl -L -O "https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
           unzip chromedriver_linux64.zip
