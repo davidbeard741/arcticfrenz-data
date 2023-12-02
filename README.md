@@ -1269,21 +1269,21 @@ jobs:
       run: python script.py
     - name: Set up Git
       run: |
-        git config --global user.name 'Your Name'
-        git config --global user.email 'your-email@example.com'
-    - name: Sync with Remote
-      run: |
-        git fetch
-        git reset --hard origin/main
+        git config --global user.name 'USERNAME'
+        git config --global user.email 'EMAIL ADDRESS'
     - name: Commit changes
       run: |
         git add collection/nft_metadata_with_rarity_and_holder_data.json collection/logfile.log
         git commit -m "Update NFT metadata and log"
+    - name: Sync with Remote
+      run: |
+        git fetch
+        git merge origin/main
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+        branch: main
 
 ```
 
