@@ -7,6 +7,8 @@ import os
 from datetime import datetime
 from bs4 import BeautifulSoup
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
+from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
@@ -68,7 +70,7 @@ def driversetup(logger):
     options.add_argument("--incognito")
     options.add_argument("--disable-blink-features=AutomationControlled")
     options.page_load_strategy = 'normal'
-    options.binary_location = '/usr/bin/google-chrome'
+    # options.binary_location = '/usr/bin/google-chrome'
 
     user_agents = [
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36",
@@ -81,8 +83,8 @@ def driversetup(logger):
 
     caps = webdriver.DesiredCapabilities.CHROME
     caps['goog:loggingPrefs'] = {'browser': 'ALL'}
-    # service = webdriver.chrome.service.Service('/usr/bin/chromedriver')
-    driver = webdriver.Chrome(options=options)
+    service = ChromeService(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=options)
     driver.execute_cdp_cmd("Network.clearBrowserCookies", {})
     driver.execute_cdp_cmd("Network.setExtraHTTPHeaders", {"headers": {"Referer": "https://www.google.com/"}})
     driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")
