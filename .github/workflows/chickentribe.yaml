@@ -35,5 +35,13 @@ jobs:
           apt-get install -y python3 python3-pip
           pip3 install selenium bs4 psutil
 
+      - name: Install and verify ChromeDriver
+        run: |
+          if [ ! -f /usr/bin/chromedriver ]; then
+            apt-get install -yqq chromium-chromedriver
+            ln -s $(which chromedriver) /usr/bin/chromedriver
+          fi
+          chromedriver --version
+
       - name: Run script
         run: python3 chickentribe.py
