@@ -1,0 +1,79 @@
+name: Python Package using Conda
+
+on:
+  push:
+    paths:
+      - .github/workflows/chickentribe.yml
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */4 * * *'
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 5
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.10'
+    - name: Add conda to system path
+      run: |
+        # $CONDA is an environment variable pointing to the root of the miniconda directory
+        echo $CONDA/bin >> $GITHUB_PATH
+    - name: Install dependencies
+      run: |
+        conda env update --file environment.yml --name base
+    - name: Lint with flake8
+      run: |
+        conda install flake8
+        # stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Test with pytest
+      run: |
+        conda install pytest
+        pytest
+    - name: Install Chrome and Chromedriver
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        # Update the package list
+        sudo apt-get update
+
+        # Install Google Chrome
+        sudo apt-get install -y google-chrome-stable
+
+        # Get the Chrome version
+        CHROME_VERSION=$(google-chrome --version | grep -oE "[0-9]+\.[0-9]+\.[0-9]+")
+
+        # Specify a fixed ChromeDriver version that is known to work with the Chrome version
+        CHROMEDRIVER_VERSION="94.0.4606.61"
+
+        # Download ChromeDriver
+        CHROMEDRIVER_URL="https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
+        wget -N "$CHROMEDRIVER_URL" -P ~/
+
+        # Extract ChromeDriver
+        unzip ~/chromedriver_linux64.zip -d ~/
+
+        # Move ChromeDriver to the appropriate location
+        sudo mv -f ~/chromedriver /usr/local/share/
+
+        # Make ChromeDriver executable
+        sudo chmod +x /usr/local/share/chromedriver
+
+        # Create a symlink to ChromeDriver in /usr/local/bin
+        sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+
+    # Install Python dependencies
+    - name: Install Python dependencies
+      run: pip install selenium bs4 psutil
+
+    # Run the script
+    - name: Run script
+      run: python chickentribe.py
