@@ -57,7 +57,7 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
 		
     generation_time = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
     footnote_text = f"Chart generated on: {generation_time}\nThis analysis did not include NFTs listed on Magic Eden."
-    plt.text(0.05, -0.5, footnote_text, fontsize=10, color='#E0E0E0', transform=plt.gca().transAxes)
+    plt.text(0.05, -2.5, footnote_text, fontsize=10, color='#E0E0E0', transform=plt.gca().transAxes)
 
 						 
     plt.grid(axis='y', alpha=0.65, color='#E0E0E0')
