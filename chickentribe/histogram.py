@@ -40,7 +40,7 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
                 ownership_durations.append(duration)
 
     plt.style.use('dark_background')
-    plt.figure(figsize=(12, 8))
+    plt.figure(figsize=(8, 8))
     n, bins, patches_hist = plt.hist(ownership_durations, bins=bins, color='#0D47A1', edgecolor='#B3E5FC')
 
     max_bin_index = n.argmax()
@@ -54,7 +54,12 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
 
     plt.text(0.5, 0.5, 'Arctic Frenz', fontsize=70, color='gray', alpha=0.2,
              ha='center', va='center', rotation=30, transform=plt.gca().transAxes)
+		
+    generation_time = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+    footnote_text = f"Chart generated on: {generation_time}\nThis analysis did not include NFTs listed on Magic Eden."
+    plt.text(0.05, -0.1, footnote_text, fontsize=10, color='#E0E0E0', transform=plt.gca().transAxes)
 
+						 
     plt.grid(axis='y', alpha=0.65, color='#E0E0E0')
 
     plt.savefig('chickentribe/nft_ownership_histogram.png', format='png')
