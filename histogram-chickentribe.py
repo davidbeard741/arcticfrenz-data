@@ -40,29 +40,29 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
                 ownership_durations.append(duration)
 
     plt.style.use('dark_background')
-    plt.figure(figsize=(8, 8))
-    plt.subplots_adjust(bottom=0.15)  # Adjust the bottom margin to create more space
+    fig, ax = plt.subplots(figsize=(10, 8))
+    plt.subplots_adjust(bottom=0.25)
     
-    n, bins, patches_hist = plt.hist(ownership_durations, bins=bins, color='#0D47A1', edgecolor='#B3E5FC')
+    n, bins, patches_hist = ax.hist(ownership_durations, bins=bins, color='#0D47A1', edgecolor='#B3E5FC')
 
     max_bin_index = n.argmax()
     patches_hist[max_bin_index].set_facecolor('#FFC107')
 
-    plt.title('ChickenTribe\nNFT Ownership Duration Distribution', fontsize=16, color='#E0E0E0')
-    plt.xlabel('Length of Ownership (Days)', fontsize=14, color='#E0E0E0')
-    plt.ylabel('Number of NFTs', fontsize=14, color='#E0E0E0')
-    plt.xticks(fontsize=12, color='#E0E0E0')
-    plt.yticks(fontsize=12, color='#E0E0E0')
+    ax.set_title('ChickenTribe\nNFT Ownership Duration Distribution', fontsize=16, color='#E0E0E0')
+    ax.set_xlabel('Length of Ownership (Days)', fontsize=14, color='#E0E0E0')
+    ax.set_ylabel('Number of NFTs', fontsize=14, color='#E0E0E0')
+    ax.tick_params(axis='x', colors='#E0E0E0', labelsize=12)
+    ax.tick_params(axis='y', colors='#E0E0E0', labelsize=12)
 
-    plt.text(0.5, 0.5, 'Arctic Frenz', fontsize=70, color='gray', alpha=0.2,
-             ha='center', va='center', rotation=30, transform=plt.gca().transAxes)
+    ax.text(0.5, 0.5, 'Arctic Frenz', fontsize=70, color='gray', alpha=0.2,
+             ha='center', va='center', rotation=30, transform=ax.transAxes)
 		
     generation_time = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
     footnote_text = f"Chart generated on: {generation_time}\nThis analysis did not include NFTs listed on Magic Eden."
-    plt.text(0.05, 0.01, footnote_text, fontsize=10, color='#E0E0E0', transform=plt.gca().transAxes)
+    fig.text(0.05, 0.02, footnote_text, fontsize=10, color='#E0E0E0')  # Lowered text position relative to figure
 
-    plt.grid(axis='y', alpha=0.65, color='#E0E0E0')
+    ax.grid(axis='y', alpha=0.65, color='#E0E0E0')
 
-    plt.savefig('chickentribe/histogram-ownership-duration.png', format='png')
+    plt.savefig('/mnt/data/histogram-ownership-duration.png', format='png', bbox_inches='tight')  # Adjusted path for file saving
 
 plot_nft_ownership_histogram(nft_data)
