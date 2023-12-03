@@ -1,8 +1,13 @@
 import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
 from datetime import datetime
 import json
 
 file_path = 'chickentribe/nft_metadata_with_rarity_and_holder_data.json'
+
+font_path = 'font/NotoColorEmoji.ttf'
+prop = fm.FontProperties(fname=font_path)
+
 with open(file_path, 'r') as file:
     nft_data = json.load(file)
 
@@ -38,7 +43,7 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
     max_bin_index = n.argmax()
     patches_hist[max_bin_index].set_facecolor('#FFC107')
 
-    plt.title('🐔 ChickenTribe 🐔\n NFT Ownership Duration Distribution', fontsize=16, color='#E0E0E0')
+    plt.title('🐔 ChickenTribe 🐔\n NFT Ownership Duration Distribution', fontsize=16, color='#E0E0E0', fontproperties=prop)
     plt.xlabel('Length of Ownership (Days)', fontsize=14, color='#E0E0E0')
     plt.ylabel('Number of NFTs', fontsize=14, color='#E0E0E0')
     plt.xticks(fontsize=12, color='#E0E0E0')
