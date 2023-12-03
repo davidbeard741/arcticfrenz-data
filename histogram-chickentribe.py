@@ -63,6 +63,6 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
 
     ax.grid(axis='y', alpha=0.65, color='#E0E0E0')
 
-    plt.savefig('/mnt/data/histogram-ownership-duration.png', format='png', bbox_inches='tight')  # Adjusted path for file saving
+    plt.savefig('chickentribe/histogram-ownership-duration.png', format='png', bbox_inches='tight')  # Adjusted path for file saving
 
 plot_nft_ownership_histogram(nft_data)
