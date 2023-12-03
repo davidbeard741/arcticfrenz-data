@@ -15,7 +15,7 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
     
     def calculate_ownership_duration(acquired_timestamp):
         acquired_date = datetime.utcfromtimestamp(acquired_timestamp)
-        current_date = datetime.now()
+        current_date = datetime.utcnow()
         return (current_date - acquired_date).days
 
     ownership_durations = []
