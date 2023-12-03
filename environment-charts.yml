@@ -1,0 +1,8 @@
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - pip:
+    - selenium>=4.0.0
+    - webdriver-manager
