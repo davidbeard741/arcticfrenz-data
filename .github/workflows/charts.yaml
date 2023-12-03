@@ -1,12 +1,12 @@
-name: chickentribe
+name: charts
 
 on:
   push:
     paths:
-      - .github/workflows/chickentribe.yml
+      - .github/workflows/charts.yml
   workflow_dispatch:
   schedule:
-    - cron: '0 */8 * * *'
+    - cron: '0 0 * * 0' # At 00:00 every Sunday
 
 jobs:
   build-linux:
@@ -25,23 +25,17 @@ jobs:
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install dependencies
       run: |
-        conda env update --file environment.yml --name base
-    - name: Install Chrome
-      env:
-        DEBIAN_FRONTEND: noninteractive
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y google-chrome-stable
+        conda env update --file environment-charts.yml --name base
     - name: Run script
-      run: python chickentribe.py
+      run: python histogram-chickentribe.py
     - name: Set up Git
       run: |
         git config --global user.name 'davidbeard741'
         git config --global user.email 'david.beard741@gmail.com'
     - name: Commit changes
       run: |
-        git add chickentribe/nft_metadata_with_rarity_and_holder_data.json chickentribe/logfile.log
-        git commit -m "Update NFT metadata and log"
+        git add chickentribe/histogram.png
+        git commit -m "Update charts"
     - name: Sync with Remote
       run: |
         git fetch
