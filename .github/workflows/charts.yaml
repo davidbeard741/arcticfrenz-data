@@ -34,7 +34,7 @@ jobs:
         git config --global user.email 'david.beard741@gmail.com'
     - name: Commit changes
       run: |
-        git add chickentribe/histogram.png
+        git add chickentribe/histogram-ownership-duration.png
         git commit -m "Update charts"
     - name: Sync with Remote
       run: |
