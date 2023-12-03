@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 from datetime import datetime
 import json
 
-file_path = '/mnt/data/69.json'
+file_path = 'chickentribe/nft_metadata_with_rarity_and_holder_data.json'
 with open(file_path, 'r') as file:
     nft_data = json.load(file)
 
@@ -38,7 +38,7 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
     max_bin_index = n.argmax()
     patches_hist[max_bin_index].set_facecolor('#FFC107')
 
-    plt.title('NFT Ownership Duration Distribution', fontsize=16, color='#E0E0E0')
+    plt.title('🐔 ChickenTribe 🐔\n NFT Ownership Duration Distribution', fontsize=16, color='#E0E0E0')
     plt.xlabel('Length of Ownership (Days)', fontsize=14, color='#E0E0E0')
     plt.ylabel('Number of NFTs', fontsize=14, color='#E0E0E0')
     plt.xticks(fontsize=12, color='#E0E0E0')
@@ -49,6 +49,6 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
 
     plt.grid(axis='y', alpha=0.65, color='#E0E0E0')
 
-    plt.savefig('/mnt/data/adjusted_nft_ownership_histogram.png', format='png')
+    plt.savefig('chickentribe/nft_ownership_histogram.png', format='png')
 
 plot_nft_ownership_histogram(nft_data)
