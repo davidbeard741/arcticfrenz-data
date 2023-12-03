@@ -18,6 +18,13 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
         current_date = datetime.utcnow()
         return (current_date - acquired_date).days
 
+    def is_valid_unix_timestamp(timestamp):
+        try:
+            _ = datetime.utcfromtimestamp(int(timestamp))
+            return True
+        except (ValueError, OverflowError, TypeError):
+            return False
+
     ownership_durations = []
 
     for nft in nft_data:
@@ -31,7 +38,7 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
             elif 'when acquired' in item:
                 when_acquired = item['when acquired']
         
-        if holder != "Magic Eden V2 Authority" and when_acquired:
+        if holder != "Magic Eden V2 Authority" and when_acquired and is_valid_unix_timestamp(when_acquired):
             duration = calculate_ownership_duration(when_acquired)
             if duration >= 0:
                 ownership_durations.append(duration)
