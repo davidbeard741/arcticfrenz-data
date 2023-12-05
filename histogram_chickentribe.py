@@ -59,10 +59,11 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
 
     ax.grid(axis='y', alpha=0.65, color='#E0E0E0')
 
+    save_path = 'chickentribe/histogram-ownership-duration_chickentribe.png'
+
     try:
-        plt.savefig(file_path, format='png', bbox_inches='tight')
+        plt.savefig(save_path, format='png', bbox_inches='tight')
         plt.close(fig)
-        print(f"File saved successfully at {file_path}")
     except Exception as e:
         print(f"Error saving file: {e}")
 
