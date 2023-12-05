@@ -59,8 +59,10 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
 
     ax.grid(axis='y', alpha=0.65, color='#E0E0E0')
 
+    save_path = 'arcticfrenz/histogram-ownership-duration_arctic-frenz.png'
+
     try:
-        plt.savefig(file_path, format='png', bbox_inches='tight')
+        plt.savefig(save_path, format='png', bbox_inches='tight')
         plt.close(fig)
         print(f"File saved successfully at {file_path}")
     except Exception as e:
