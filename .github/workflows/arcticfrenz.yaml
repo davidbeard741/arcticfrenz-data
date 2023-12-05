@@ -6,7 +6,7 @@ on:
       - .github/workflows/arcticfrenz.yml
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 3,0' # At 00:00 every Wednesday and Sunday
+    - cron: '0 0 * * 2,6' # At 00:00 every Tuesday and Saturday
 
 jobs:
   build-linux:
