@@ -1,26 +1,53 @@
-name: Arctic Frenz
+name: arctic frenz
 
 on:
   push:
     paths:
-      - .github/workflows/flat.yml
+      - .github/workflows/arcticfrenz.yml
   workflow_dispatch:
   schedule:
-    - cron: '0 0 31 2 *' # This time will never occcur.
+    - cron: '0 0 * * 3,0' # At 00:00 every Wednesday and Sunday
 
 jobs:
-  scheduled:
+  build-linux:
     runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 5
+
     steps:
-      - name: Check out repo
-        uses: actions/checkout@v2
-      - name: Setup deno
-        uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x
-      - name: Fetch sentries 
-        uses: githubocto/flat@v3
-        with:
-          http_url: https://api-mainnet.magiceden.dev/v2/collections/sentries/listings 
-          downloaded_filename: sentries/sentries.json 
-          postprocess: sentries/postprocesssentries.js
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.10'
+    - name: Add conda to system path
+      run: |
+        echo $CONDA/bin >> $GITHUB_PATH
+    - name: Install dependencies
+      run: |
+        conda env update --file environment.yml --name base
+    - name: Install Chrome
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+    - name: Run script
+      run: python arcticfrenz.py
+    - name: Set up Git
+      run: |
+        git config --global user.name 'davidbeard741'
+        git config --global user.email 'david.beard741@gmail.com'
+    - name: Commit changes
+      run: |
+        git add arcticfrenz/nft_metadata_with_rarity_and_holder_data.json arcticfrenz/logfile.log
+        git commit -m "Update NFT metadata and log"
+    - name: Sync with Remote
+      run: |
+        git fetch
+        git merge origin/main
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
