@@ -328,6 +328,9 @@ def find_start_index(nft_metadata, processed_indices, logger):
             continue
         if 'holder data' in item:
             holder = item['holder data'][0]['holder']
+            if holder is None:
+                logger.info(f"Starting from index {index}: Found invalid 'holder' value.")
+                return index
             if len(holder) not in range(32, 45) and holder != "Magic Eden V2 Authority":
                 logger.info(f"Starting from index {index}: Found invalid 'holder' value.")
                 return index
