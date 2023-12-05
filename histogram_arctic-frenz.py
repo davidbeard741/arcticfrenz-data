@@ -64,7 +64,6 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
     try:
         plt.savefig(save_path, format='png', bbox_inches='tight')
         plt.close(fig)
-        print(f"File saved successfully at {file_path}")
     except Exception as e:
         print(f"Error saving file: {e}")
 
