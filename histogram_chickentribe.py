@@ -1,9 +1,9 @@
 import matplotlib.pyplot as plt
 from datetime import datetime
 import json
+import numpy as np
 
-file_path = 'chickentribe/nft_metadata_with_rarity_and_holder_data.json'
-
+file_path = 'chickentribe/enhanced-nft-metadata_chickentribe.json'
 with open(file_path, 'r') as file:
     nft_data = json.load(file)
 
@@ -24,15 +24,9 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
     ownership_durations = []
 
     for nft in nft_data:
-        holder_data_list = nft.get('holder data', [])
-        
-        holder = ""
-        when_acquired = None
-        for item in holder_data_list:
-            if 'holder' in item:
-                holder = item['holder']
-            elif 'when acquired' in item:
-                when_acquired = item['when acquired']
+        holder_data = nft.get('holderData', {})
+        holder = holder_data.get('holderAddress', "")
+        when_acquired = holder_data.get('whenAcquired', None)
         
         if holder != "Magic Eden V2 Authority" and when_acquired and is_valid_unix_timestamp(when_acquired):
             duration = calculate_ownership_duration(when_acquired)
@@ -45,8 +39,10 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
     
     n, bins, patches_hist = ax.hist(ownership_durations, bins=bins, color='#0D47A1', edgecolor='#B3E5FC')
 
-    max_bin_index = n.argmax()
-    patches_hist[max_bin_index].set_facecolor('#FFC107')
+    max_bin_indices = np.argsort(n)[-3:]
+    colors = ['#FFC71F', '#CC9A05', '#997304']
+    for i, index in enumerate(max_bin_indices[::-1]):
+        patches_hist[index].set_facecolor(colors[i])
 
     ax.set_title('ChickenTribe\nNFT Ownership Duration Distribution', fontsize=16, color='#E0E0E0')
     ax.set_xlabel('Length of Ownership (Days)', fontsize=14, color='#E0E0E0')
@@ -59,10 +55,8 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
 		
     generation_time = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
     footnote_text = f"Chart generated on: {generation_time}\nThis analysis did not include NFTs listed on Magic Eden."
-    fig.text(0.05, 0.02, footnote_text, fontsize=10, color='#E0E0E0')  # Lowered text position relative to figure
+    fig.text(0.05, 0.1, footnote_text, fontsize=10, color='#E0E0E0')
 
     ax.grid(axis='y', alpha=0.65, color='#E0E0E0')
 
-    plt.savefig('chickentribe/histogram-ownership-duration.png', format='png', bbox_inches='tight')  # Adjusted path for file saving
-
-plot_nft_ownership_histogram(nft_data)
+    plt.savefig('chickentribe/histogram-ownership-duration_chickentribe.png', format='png', bbox_inches='tight')
