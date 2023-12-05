@@ -1182,7 +1182,7 @@ if __name__ == '__main__':
 <br>
 
 <details>
-  <summary>CLICK TO EXPAND Overview of the Repository's Structure</summary>
+  <summary>CLICK TO EXPAND Example of Repository Structure</summary>
 
 ```
 ├── .github
@@ -1205,28 +1205,8 @@ if __name__ == '__main__':
 <br>
 
 **YAML Configuration and Workflow:** 
-- **Workflow File**: The workflow is defined in the `runner.yml` file, located under `.github/workflows`. This YAML file orchestrates the entire build, execution, and update process for the project.
-- **Trigger Events**: The workflow is triggered on three occasions:
-  1. Every time there's a push to the `.github/workflows/runner.yml` file.
-  2. Manually, through the `workflow_dispatch` event.
-  3. Automatically, on a schedule specified as `0 */4 * * *`, meaning the workflow runs every 4 hours.
-
-**Environment Setup and Execution Steps**:
-- **Ubuntu Environment**: The workflow runs on the latest Ubuntu environment (`ubuntu-latest`) to ensure compatibility and consistency.
-- **Repository Checkout**: Uses `actions/checkout@v3` to check out the repository, ensuring access to the latest version of the script and associated files.
-- **Python Environment**: Sets up Python 3.10 using `actions/setup-python@v3`, ensuring the script runs on a specific and consistent Python version.
-- **Conda Environment Path Setup**: Adds the Conda executable to the system path, facilitating further environment management.
-- **Dependency Installation**: Dependencies are managed through a Conda environment, defined in `environment.yml`. This file lists essential packages like `numpy`, `pandas`, `flask`, and testing tools like `pytest`, as well as web scraping and automation tools (`beautifulsoup4`, `selenium`).
-- **Chrome Installation**: Installs Google Chrome Stable, preparing the environment for Selenium-based web automation.
-- **Script Execution**: Executes the primary script `script.py`, leveraging the prepared Python environment and dependencies.
-- **Git Configuration and File Commit**: Sets up Git with user credentials and commits changes made to `collection/nft_metadata_with_rarity_and_holder_data.json` and `collection/logfile.log`.
-- **Changes Pushing**: Utilizes `ad-m/github-push-action@master` to push the committed changes back to the repository, keeping the project's data files up to date.
-
-**Key Benefits and Features**:
-- **Automated and Consistent Environment Setup**: The use of `environment.yml` for managing dependencies with Conda ensures a consistent and reproducible environment for every workflow run.
-- **Scheduled and Event-Driven Execution**: Offers flexibility in execution, allowing the workflow to run both on a regular schedule and in response to specific GitHub events.
-- **Continuous Integration and Deployment**: Automates the integration of changes and deployment of updated files, ensuring real-time updates to the repository.
-- **Portability**: The configuration facilitates easy replication of the environment across different setups, enhancing the project's portability and collaboration efficiency.
+- **Workflow File**: The workflow is defined in a `.yml` file, located under `.github/workflows/`. A YAML file orchestrates the entire build, execution, and update process for a project.
+- **Trigger Events**: The workflow is triggered acutomatically, on a scheduled specified in `- cron:`
 
 <br>
 
@@ -1234,6 +1214,8 @@ if __name__ == '__main__':
   <summary>CLICK TO EXPAND '.github/workflows/run.yml'</summary>
 
 ```yaml
+#.github/workflows/.yml
+
 name: run
 
 on:
@@ -1295,9 +1277,11 @@ jobs:
 <br>
 
 <details>
-  <summary>CLICK TO EXPAND 'environment.yml'</summary>
+  <summary>CLICK TO EXPAND Dependency Installation</summary>
 
 ```yaml
+# environment.yml
+
 dependencies:
   - python=3.10
   - pip
@@ -1317,9 +1301,11 @@ dependencies:
 <br>
 
 <details>
-  <summary>CLICK TO EXPAND 'script.py'</summary>
+  <summary>CLICK TO EXPAND Python Script</summary>
 
 ```Python
+# In the root of the repository
+
 import json
 import random
 import time
