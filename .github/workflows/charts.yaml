@@ -25,16 +25,16 @@ jobs:
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install dependencies
       run: |
-        conda env update --file environment-charts.yml --name base
+        conda env update --file environment_charts.yml --name base
     - name: Run script
-      run: python histogram-chickentribe.py
+      run: python histogram_chickentribe.py
     - name: Set up Git
       run: |
         git config --global user.name 'davidbeard741'
         git config --global user.email 'david.beard741@gmail.com'
     - name: Commit changes
       run: |
-        git add chickentribe/histogram-ownership-duration.png
+        git add chickentribe/histogram-ownership-duration_chickentribe.png
         git commit -m "Update charts"
     - name: Sync with Remote
       run: |
