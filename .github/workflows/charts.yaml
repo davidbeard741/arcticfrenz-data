@@ -27,7 +27,7 @@ jobs:
       run: |
         conda env update --file environment-charts.yml --name base
     - name: Run script
-      run: python histogram-chickentribe.py
+      run: python histogram_chickentribe.py
     - name: Set up Git
       run: |
         git config --global user.name 'davidbeard741'
