@@ -25,7 +25,7 @@ jobs:
         echo $CONDA/bin >> $GITHUB_PATH
     - name: Install dependencies
       run: |
-        conda env update --file environment-charts.yml --name base
+        conda env update --file environment_charts.yml --name base
     - name: Run script
       run: python histogram_chickentribe.py
     - name: Set up Git
