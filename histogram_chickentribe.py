@@ -44,7 +44,7 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
     for i, index in enumerate(max_bin_indices[::-1]):
         patches_hist[index].set_facecolor(colors[i])
 
-    ax.set_title('Arctic Frenz\nNFT Ownership Duration Distribution', fontsize=16, color='#E0E0E0')
+    ax.set_title('ChickenTribe\nNFT Ownership Duration Distribution', fontsize=16, color='#E0E0E0')
     ax.set_xlabel('Length of Ownership (Days)', fontsize=14, color='#E0E0E0')
     ax.set_ylabel('Number of NFTs', fontsize=14, color='#E0E0E0')
     ax.tick_params(axis='x', colors='#E0E0E0', labelsize=12)
