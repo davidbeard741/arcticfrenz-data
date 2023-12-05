@@ -28,14 +28,16 @@ jobs:
         conda env update --file environment-enhanced-nft-metadata.yml --name base
     - name: Run script
       run: python enhanced-nft-metadata_chickentribe.py
+    - name: Run script
+      run: python enhanced-nft-metadata_arctic-frenz.py
     - name: Set up Git
       run: |
         git config --global user.name 'davidbeard741'
         git config --global user.email 'david.beard741@gmail.com'
     - name: Commit changes
       run: |
-        git add chickentribe/enhanced-nft-metadata_chickentribe.json
-        git commit -m "Update chickentribe/enhanced-nft-metadata_chickentribe.json"
+        git add chickentribe/enhanced-nft-metadata_chickentribe.json arcticfrenz/enhanced-nft-metadata_arctic-frenz.json
+        git commit -m "Update chickentribe/enhanced-nft-metadata_chickentribe.json arcticfrenz/enhanced-nft-metadata_arctic-frenz.json"
     - name: Sync with Remote
       run: |
         git fetch
