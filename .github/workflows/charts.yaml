@@ -28,13 +28,15 @@ jobs:
         conda env update --file environment_charts.yml --name base
     - name: Run script
       run: python histogram_chickentribe.py
+    - name: Run script
+      run: python histogram_arctic-frenz.py
     - name: Set up Git
       run: |
         git config --global user.name 'davidbeard741'
         git config --global user.email 'david.beard741@gmail.com'
     - name: Commit changes
       run: |
-        git add chickentribe/histogram-ownership-duration_chickentribe.png
+        git add chickentribe/histogram-ownership-duration_chickentribe.png arcticfrenz/histogram-ownership-duration_arctic-frenz.png
         git commit -m "Update charts"
     - name: Sync with Remote
       run: |
