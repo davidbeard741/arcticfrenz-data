@@ -1742,9 +1742,19 @@ if __name__ == '__main__':
 
 ---
 
-## Arctic Frenz
+## Part 4: Pretty-Printing
 
-Thanks frenz, Please let us know what you think. 
+Pretty-printing involves rearranging fields in a JSON file to enhance its readability for humans. This process includes structuring the data by organizing fields in a logical order and improving the overall presentation of the content.
+
+### Step 1: By NFT
+
+### Step 2: By Holder
+
+---
+
+## Arctic Frenz
+ 
+Let's Talk. But You First! 
 
 <table align="center">
 	<tr align="center">
