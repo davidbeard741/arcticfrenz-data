@@ -1748,7 +1748,75 @@ Pretty-printing involves rearranging fields in a JSON file to enhance readabilit
 
 ### Step 1: By NFT
 
+WIP
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Python Script</summary>
+
+```PYTHON
+# WIP
+```
+
+</details>
+
+<br>
+
+WIP
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Enhanced JSON</summary>
+
+```JSON
+[
+	{
+			"nftName": "Name #1"
+	}
+]
+```
+
+</details>
+
+<br>
+
 ### Step 2: By Holder
+
+WIP
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Python Script</summary>
+
+```PYTHON
+# WIP
+```
+
+</details>
+
+<br>
+
+WIP
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Enhanced JSON</summary>
+
+```JSON
+[
+	{
+			"holderAdress": "base-58 character set"
+	}
+]
+```
+
+</details>
+
+<br> 
 
 ---
 
