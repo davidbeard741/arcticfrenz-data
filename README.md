@@ -1772,9 +1772,9 @@ WIP
 
 ```JSON
 [
-	{
-			"nftName": "Name #1"
-	}
+    {
+        "nftName": "Name #1"
+    }
 ]
 ```
 
@@ -1808,9 +1808,9 @@ WIP
 
 ```JSON
 [
-	{
-			"holderAdress": "base-58 character set"
-	}
+    {
+        "holderAdress": "base-58 character set"
+    }
 ]
 ```
 
