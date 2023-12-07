@@ -1748,7 +1748,26 @@ Pretty-printing involves rearranging fields in a JSON file to enhance readabilit
 
 ### Step 1: By NFT
 
-WIP
+This script reformats and enhances the data by performing the following tasks:
+
+1. Extracts NFT name.
+2. Extracts NFT address and rarity score.
+3. Extracts holder address, acquisition timestamp, and time this holder data was checked.
+4. Rewrites data into a new format.
+5. Orders NFTs alphabetically by base name and numerically by number within the name (if present).
+
+**Input:**
+
+* JSON file containing Arctic Frenz NFT metadata with the following key-value pairs:
+    * `onChainMetadata`: Dictionary containing on-chain metadata.
+        * `metadata`: Dictionary containing NFT metadata.
+            * `data`: Dictionary with various NFT details, including name.
+    * `account`: String representing the NFT address.
+    * `rarity_score`: Integer representing the NFT rarity score.
+    * `holder data`: List containing holder information if available.
+        * `holder`: String representing the holder address.
+        * `when acquired`: Unix timestamp indicating acquisition time.
+        * `time checked`: Unix timestamp indicating the last check for holder information.
 
 <br>
 
@@ -1756,14 +1775,66 @@ WIP
   <summary>CLICK TO EXPAND Python Script</summary>
 
 ```PYTHON
-# WIP
+import json
+import re
+
+def get_name(nft_name):
+    try:
+        return nft_name.rsplit(' ', 1)[0]
+    except IndexError:
+        return nft_name.split(' ', 1)[0]
+
+def get_nft_number(nft_name):
+    match = re.search(r'#(\d+)', nft_name)
+    if match:
+        return int(match.group(1))
+    return 0
+
+def rewrite_data(data):
+  rewritten_data = []
+  for item in data:
+    nft_name = item["onChainMetadata"]["metadata"]["data"]["name"]
+    nft_address = item["account"]
+    rarity_score = item["rarity_score"]
+    holder_data = {}
+    if "holder data" in item:
+        holder_data = {
+            "holderAddress": item["holder data"][0]["holder"],
+            "whenAcquired": item["holder data"][1]["when acquired"],
+            "timeChecked": item["holder data"][2]["time checked"]
+        }
+    rewritten_data.append({
+      "nftName": nft_name,
+      "nftAddress": nft_address,
+      "rarityScore": rarity_score,
+      "holderData": holder_data,
+    })
+  return rewritten_data
+
+with open("nft_metadata_with_rarity_and_holder_data.json") as f:
+  data = json.load(f)
+
+naming = set([get_name(x["onChainMetadata"]["metadata"]["data"]["name"]) for x in data])
+naming_order = sorted(list(naming))
+
+rewritten_data = rewrite_data(data)
+rewritten_data = sorted(rewritten_data, key=lambda x: (naming_order.index(get_name(x["nftName"])), get_nft_number(x["nftName"])))
+
+with open("enhanced-nft-metadata_by-NFT.json", "w") as f:
+  json.dump(rewritten_data, f, indent=4)
 ```
 
 </details>
 
 <br>
 
-WIP
+**Output:**
+
+* New JSON file containing enhanced NFT data with the following key-value pairs:
+    * `nftName`: String representing the base name of the NFT.
+    * `nftAddress`: String representing the NFT address.
+    * `rarityScore`: Integer representing the NFT rarity score.
+    * `holderData`: Dictionary containing holder information if available.
 
 <br>
 
@@ -1773,7 +1844,27 @@ WIP
 ```JSON
 [
     {
-        "nftName": "Name #1"
+        "nftName": "Arctic Fox #01",
+        "nftAddress": "3cTJaaDekCWbdRMcqLWuq4gniN5Nq3iUnC28fLoqdgci",
+        "rarityScore": 0.1764528675833024,
+        "holderData": {
+            "holderAddress": "6LgQvDQGKUSYZtUbmkFYBf7nusGPGeCEkBLkq4cXNy4C",
+            "whenAcquired": 1650854496,
+            "timeChecked": 1701719058
+        }
+    },
+    {
+        "nftName": "Arctic Fox #02",
+        "nftAddress": "3Qi7JrU7BUF7soqJDP55BXa5bYmhxP8kqMZDyjBG2MKU",
+        "rarityScore": 0.13524407637451114,
+        "holderData": {
+            "holderAddress": "GiWfd8qU2astb3UqSQeZ7KFEvTYiXjGTvxwk6zn3kzFw",
+            "whenAcquired": 1649993063,
+            "timeChecked": 1701719584
+        }
+    },
+    {
+        "_comment": "The file has been truncated for this example."
     }
 ]
 ```
@@ -1784,7 +1875,13 @@ WIP
 
 ### Step 2: By Holder
 
-WIP
+This Python script preprocesses data about the holders of a collection's NFTs, producing a JSON file suitable for further analysis. The script performs the following tasks:
+
+1. **Loads data:** Reads the input JSON file containing information about each NFT and its holder.
+2. **Identifies valid holder addresses:** Filters out entries with invalid, missing holder addresses, or addresss that are NFT marketplaces.
+3. **Aggregates information:** Groups NFTs by holder address and combines their attributes.
+4. **Calculates days held:** Computes the number of days each NFT has been held by the owner.
+5. **Sorts data:** Orders holders by the total number of NFTs they hold, descending.
 
 <br>
 
@@ -1792,14 +1889,59 @@ WIP
   <summary>CLICK TO EXPAND Python Script</summary>
 
 ```PYTHON
-# WIP
+import json
+import re
+from datetime import datetime
+
+with open('enhanced-nft-metadata_by-NFT.json') as f:
+    data = json.load(f)
+
+holders = {}
+for nft in data:
+    holder_data = nft['holderData']
+    if holder_data == "Magic Eden V2 Authority":
+      continue
+    if holder_data == "4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue": # Tensor
+      continue
+    if holder_data is None:
+      continue
+    if holder_data:
+        holder_address = holder_data['holderAddress']
+        if not re.match(r'^[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{32,44}$', holder_address):
+          continue
+        if holder_address not in holders:
+            holders[holder_address] = {
+                "holderAddress": holder_address,
+                "quantityNfts": 1,
+                "holdingNfts": [{
+                    "nftAddress": nft['nftAddress'],
+                    "rarityScore": nft['rarityScore'],
+                    "daysHeld": (datetime.utcnow() - datetime.utcfromtimestamp(holder_data['whenAcquired'])).days
+                }]
+            }
+        else:
+            holders[holder_address]['quantityNfts'] += 1
+            holders[holder_address]['holdingNfts'].append({
+                "nftAddress": nft['nftAddress'],
+                "rarityScore": nft['rarityScore'],
+                "daysHeld": (datetime.utcnow() - datetime.utcfromtimestamp(holder_data['whenAcquired'])).days
+            })
+
+result = sorted(holders.values(), key=lambda x: x["quantityNfts"], reverse=True)
+
+with open('enhanced-nft-metadata_by-holder.json', 'w') as f:
+    json.dump(result, f, indent=4)
 ```
 
 </details>
 
 <br>
 
-WIP
+**Notes:**
+
+* The script filters out holders with addresses belonging to "Magic Eden V2 Authority" and "Tensor" (platform wallets).
+* The script validates holder addresses using a regular expression to ensure they conform to the expected format.
+* The script calculates days held based on the current date and the acquisition timestamp.
 
 <br>
 
@@ -1809,14 +1951,222 @@ WIP
 ```JSON
 [
     {
-        "holderAdress": "base-58 character set"
+        "holderAddress": "69rBBg8rx4WzwBFyt18iRJZqLYzM8Q6omNXBHo7hWRL9",
+        "quantityNfts": 2,
+        "holdingNfts": [
+            {
+                "nftAddress": "DQjgTJMaW8j63F7Gu3mzTQcnf6GcGshskDkVA6224L8Y",
+                "rarityScore": 0.28691583054626535,
+                "daysHeld": 519
+            },
+            {
+                "nftAddress": "F1dYNFtNw1fTjTQV4ztrioYmpcg3JDBN1GGANxzxBHUN",
+                "rarityScore": 0.5152741805816168,
+                "daysHeld": 607
+            }
+        ]
+    },
+    {
+        "holderAddress": "6LgQvDQGKUSYZtUbmkFYBf7nusGPGeCEkBLkq4cXNy4C",
+        "quantityNfts": 1,
+        "holdingNfts": [
+            {
+                "nftAddress": "3cTJaaDekCWbdRMcqLWuq4gniN5Nq3iUnC28fLoqdgci",
+                "rarityScore": 0.1764528675833024,
+                "daysHeld": 589
+            }
+        ]
+    },
+    {
+        "_comment": "The file has been truncated for this example."
     }
 ]
 ```
 
 </details>
 
-<br> 
+<br>
+
+---
+
+## Part 5: Ranking Holders
+
+### Holder Score Calculator
+
+This Python script helps you calculate a score for each holder of a collection's NFTs, considering various factors. This score can then be used to rank holders.
+
+**Features:**
+
+* Calculates a score for each holder based on:
+    * NFT count per owner
+    * Rarity score of held NFTs
+    * Number of days NFTs have been held (with decay for very long holdings)
+* Weights each factor according to its importance
+
+
+### Analysis of Holder Score with Example Data
+
+This script calculates a score for each holder based on three factors:
+
+1. Quantity of NFTs held.
+2. Rarity score of NFTs held.
+3. Time each NFT has been held.
+
+#### Example Data
+
+| Factor | Value | Description |
+|---|---|---|
+| `nfts` | 2 | NFT count per owner |
+| `["rarityScore"]` of NFT #1 | 0.45 | Rarity Score of NFT #1 |
+| `["rarityScore"]` of NFT #2 | 0.15 | Rarity Score of NFT #2 |
+| `["daysHeld"]` of NFT #1 | 365 | Days held NFT #1 |
+| `["daysHeld"]` of NFT #2 | 150 | Days held NFT #2 |
+| `sum(["daysHeld"])` | 515 | Sum of days held NFT #1 and NFT #2 |
+| `max_nfts` | 10 | Total NFTs owned by holders |
+| `max_days_held` | 600 | Total duration that all NFTs in the collection have been held across all owners |
+| `max_rarity_score` | 1 | Combined rarity score of all owned NFTs |
+| `quantityNfts_weight` | 1 | Weight given to the number of NFTs held |
+| `rarityScore_weight` | 0.5 | Weight given to the sum of rarity scores |
+| `daysHeld_decay_factor` | 0.1 | Factor controlling the decay of score based on days held |
+
+#### Normalized Scores
+
+| Factor | Normalized Score |
+|---|---|
+| `nfts_normalized` | 0.2 |
+| `rarity_score_normalized` | 0.3 |
+| `days_held_with_decay` | 0.7877 |
+
+#### Final Score
+
+The final score (`scoreHold`) is calculated as the sum of the normalized scores for each factor: `scoreHold = nfts_normalized + rarity_score_normalized + days_held_with_decay`
+
+#### Analysis of Factor Influence
+
+**1. Quantity of NFTs:**
+
+In the example, the normalized score for the number of NFTs held (`nfts_normalized`) is 0.2. This indicates that the quantity of NFTs has a moderate influence on the final score. While owning more NFTs contributes positively, it doesn't solely determine the ranking.
+
+**2. Rarity Score:**
+
+The normalized score for the sum of rarity scores (`rarity_score_normalized`) is 0.3, indicating a stronger influence compared to the quantity of NFTs. This suggests that the rarity of held NFTs plays a key role in determining the holder score. Holders with NFTs possessing higher rarity scores or holders with multiple NFTs will gain an advantage in the ranking.
+
+**3. Holding Time:**
+
+The normalized score for the days held with decay (`days_held_with_decay`) is 0.7877, making it the most impactful factor in the final score. This impact is weighted using an exponential decay function. Longer holding times yield higher scores, but the impact gradually diminishes as holding time increases, incentivizing new ownership. The rate of this diminishing effect is determined by the decay factor.
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Python Script</summary>
+
+```Python
+import json
+from datetime import date
+import traceback
+from math import exp
+
+try:
+    with open('enhanced-nft-metadata_by-holder.json') as f:
+        data = json.load(f)
+
+    quantityNfts_weight = 1
+    rarityScore_weight = 0.5
+    daysHeld_decay_factor = 0.1
+
+    max_nfts = max([holder["quantityNfts"] for holder in data])
+    max_rarity_score = max([subnft["rarityScore"] for holder in data for subnft in holder["holdingNfts"]])
+    max_days_held = max([subnft["daysHeld"] for holder in data for subnft in holder["holdingNfts"]])
+
+    today = date.today()
+
+    def score_address(addr):
+        holder_data = [holder for holder in data if holder["holderAddress"] == addr]
+        if not holder_data:
+            return 0
+
+        holder_data = holder_data[0]
+
+        nfts = holder_data["quantityNfts"]
+        nfts_weighted = nfts * quantityNfts_weight
+        nfts_normalized = nfts_weighted / max_nfts
+
+        rarity_score = sum([subnft["rarityScore"] for subnft in holder_data["holdingNfts"]])
+        rarity_score_weighted = rarity_score * rarityScore_weight
+        rarity_score_normalized = rarity_score_weighted / max_rarity_score
+
+        days_held = sum([subnft["daysHeld"] for subnft in holder_data["holdingNfts"]])
+        days_held_normalized = days_held / max_days_held
+        decay_factor = exp(-days_held_normalized * daysHeld_decay_factor)
+        days_held_with_decay = days_held_normalized * decay_factor
+
+        scoreHold = (nfts_normalized + rarity_score_normalized + days_held_with_decay)
+        return scoreHold
+
+    scored = []
+    for holder in data:
+        score = score_address(holder["holderAddress"])
+        holder["holderScore"] = score
+        scored.append(holder)
+
+    ranked = sorted(scored, key=lambda x: x["holderScore"], reverse=True)
+
+    with open('ranked-holders.json', 'w') as f:
+      json.dump(ranked, f, indent=4)
+
+
+except Exception as e:
+    print(f"Error: {e}")
+    traceback.print_exc()
+```
+
+</details>
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Example JSON</summary>
+
+```JSON
+[
+   {
+        "holderAddress": "GhmfgNRNdGeBnG1F2zVKGaeubEyaYMKKHdtNSXxxX1y1",
+        "quantityNfts": 2,
+        "holdingNfts": [
+            {
+                "nftAddress": "5MtR9S2JvPTGRdGpr3KECj2vFpiM2bLyzRbsarSvSYbd",
+                "rarityScore": 0.28691583054626535,
+                "daysHeld": 186
+            },
+            {
+                "nftAddress": "2oKAffmpTmKCXYEtwCXYyu5Qr1YN2LBGzFhH4xNXhv4U",
+                "rarityScore": 0.423377470697102,
+                "daysHeld": 333
+            }
+        ],
+        "holderScore": 1.0315465044376115
+    },
+    {
+        "holderAddress": "8YsZFwVQ8FVBNSYpLoBuD4Vx64tVY2ymKeRn9ji4JJ14",
+        "quantityNfts": 1,
+        "holdingNfts": [
+            {
+                "nftAddress": "4DrC8teNFSmWNWgj1ZAUDu8FShRE4cfeMWbtmBsa9NdH",
+                "rarityScore": 0.18776169520791947,
+                "daysHeld": 599
+            }
+        ],
+        "holderScore": 0.939535991081045
+    },
+    {
+        "_comment": "The file has been truncated for this example."
+    }
+]
+```
+
+</details>
+
+<br>
 
 ---
 
