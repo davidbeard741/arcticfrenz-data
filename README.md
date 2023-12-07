@@ -2022,8 +2022,8 @@ This script calculates a score for each holder based on three factors:
 | `["daysHeld"]` of NFT #1 | 365 | Days held NFT #1 |
 | `["daysHeld"]` of NFT #2 | 150 | Days held NFT #2 |
 | `sum(["daysHeld"])` | 515 | Sum of days held NFT #1 and NFT #2 |
-| `max_nfts` | 10 | Total NFTs owned by holders |
-| `max_days_held` | 600 | Total duration that all NFTs in the collection have been held across all owners |
+| `max_nfts` | 10 | The total number of NFTs owned by the individual with the largest NFT collection |
+| `total_days_held` | 2500 | Total duration that all NFTs in the collection have been held across all owners |
 | `quantityNfts_weight` | 1 | Weight given to the number of NFTs held |
 | `rarityScore_weight` | 1 | Weight given to rarity scores |
 | `daysHeld_decay_factor` | 0.1 | Factor controlling the decay of score based on days held |
@@ -2074,8 +2074,7 @@ try:
     daysHeld_decay_factor = 0.1
 
     max_nfts = max([holder["quantityNfts"] for holder in data])
-    max_days_held = max([subnft["daysHeld"] for holder in data for subnft in holder["holdingNfts"]])
-
+    total_days_held = sum([subnft["daysHeld"] for holder in data for subnft in holder["holdingNfts"]]) 
     today = date.today()
 
     def score_address(addr):
@@ -2094,7 +2093,7 @@ try:
         rarity_score_normalized = rarity_score_weighted / NFTs
 
         days_held = sum([subnft["daysHeld"] for subnft in holder_data["holdingNfts"]])
-        days_held_normalized = days_held / max_days_held
+        days_held_normalized = days_held / total_days_held
         decay_factor = exp(-days_held_normalized * daysHeld_decay_factor)
         days_held_with_decay = days_held_normalized * decay_factor
 
