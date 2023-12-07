@@ -2024,7 +2024,7 @@ This script calculates a score for each holder based on three factors:
 | `sum(["daysHeld"])` | 515 | Sum of days held NFT #1 and NFT #2 |
 | `max_nfts` | 10 | Total NFTs owned by holders |
 | `max_days_held` | 600 | Total duration that all NFTs in the collection have been held across all owners |
-| `max_rarity_score` | 1 | Combined rarity score of all owned NFTs |
+| `max_rarity_score` | 6 | Combined rarity score of all owned NFTs |
 | `quantityNfts_weight` | 1 | Weight given to the number of NFTs held |
 | `rarityScore_weight` | 0.5 | Weight given to the sum of rarity scores |
 | `daysHeld_decay_factor` | 0.1 | Factor controlling the decay of score based on days held |
