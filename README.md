@@ -2070,7 +2070,7 @@ try:
         data = json.load(f)
 
     quantityNfts_weight = 1
-    rarityScore_weight = 0.5
+    rarityScore_weight = 1
     daysHeld_decay_factor = 0.1
 
     max_nfts = max([holder["quantityNfts"] for holder in data])
@@ -2090,7 +2090,8 @@ try:
         nfts_normalized = nfts_weighted / max_nfts
 
         rarity_score_sum = sum([subnft["rarityScore"] for subnft in holder_data["holdingNfts"]])
-        rarity_score_normalized = rarity_score_sum / NFTs
+        rarity_score_weighted = rarity_score_sum * rarityScore_weight
+        rarity_score_normalized = rarity_score_weighted / NFTs
 
         days_held = sum([subnft["daysHeld"] for subnft in holder_data["holdingNfts"]])
         days_held_normalized = days_held / max_days_held
