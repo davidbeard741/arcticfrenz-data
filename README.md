@@ -2033,6 +2033,16 @@ This Python script calculates a score for each NFT holder based on three key fac
 | `rarityScore_weight` | 0.1 |
 | `daysHeld_decay_factor` | 0.1 |
 
+#### Example Averages 
+
+Review each factor's average to consider adjustments to the weights assigned to the number of NFTs (`quantityNfts_weight`), rarity score (`rarityScore_weight`), and holding duration (`daysHeld_weight`). This evaluation will help in fine-tuning the scoring system for more accurate rankings.
+
+| Factor Averages | Scores |
+|---|---|
+| `average_nfts_weighted` | WIP |
+| `average_rarity_score_weighted` | WIP |
+| `average_days_held_weighted` | WIP |
+
 #### Example Factor Scores
 
 | Factor | Scores |
@@ -2124,12 +2134,6 @@ try:
         # print(f"Address: {addr}, NFTs Weighted: {nfts_weighted}, Rarity Score Weighted: {rarity_score_weighted}, Days Held Weighted: {days_held_weighted}")
         scoreHold = (nfts_weighted + rarity_score_weighted + days_held_weighted)
         return scoreHold, # nfts_weighted, rarity_score_weighted, days_held_weighted
-    """
-    Review the calculated averages to consider adjustments to the weights assigned to the number 
-    of NFTs (`quantityNfts_weight`), rarity score (`rarityScore_weight`), and holding duration 
-    (`daysHeld_weight`). This evaluation will help in fine-tuning the scoring system for more 
-    accurate assessments.
-    """
 
     """
     sum_nfts_weighted = 0
