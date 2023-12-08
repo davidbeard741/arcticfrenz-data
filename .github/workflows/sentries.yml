@@ -1,0 +1,53 @@
+name: sentries
+
+on:
+  push:
+    paths:
+      - .github/workflows/sentries.yml
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */4 * * *'
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 5
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.10'
+    - name: Add conda to system path
+      run: |
+        echo $CONDA/bin >> $GITHUB_PATH
+    - name: Install dependencies
+      run: |
+        conda env update --file environment_extraction.yml --name base
+    - name: Install Chrome
+      env:
+        DEBIAN_FRONTEND: noninteractive
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+    - name: Run script
+      run: python sentries.py
+    - name: Set up Git
+      run: |
+        git config --global user.name 'davidbeard741'
+        git config --global user.email 'david.beard741@gmail.com'
+    - name: Commit changes
+      run: |
+        git add sentries/nft_metadata_with_rarity_and_holder_data.json sentries/logfile.log
+        git commit -m "Update NFT metadata and log"
+    - name: Sync with Remote
+      run: |
+        git fetch
+        git merge origin/main
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
