@@ -2091,6 +2091,10 @@ try:
 
     max_nfts = max([holder["quantityNfts"] for holder in data])
 
+    avg_rarity_per_holder = [(holder["holderAddress"], sum(subnft["rarityScore"] for subnft in holder["holdingNfts"]) / holder["quantityNfts"]) for holder in data]
+    rarity_sniper = max(avg_rarity_per_holder, key=lambda x: x[1])
+    highest_rarity_average = rarity_sniper[1]
+
     days_held_per_holder = [(holder["holderAddress"], sum(subnft["daysHeld"] for subnft in holder["holdingNfts"])) for holder in data]
     diamond_hands = max(days_held_per_holder, key=lambda x: x[1])
     hold_door = diamond_hands[1]
@@ -2109,8 +2113,9 @@ try:
         nfts_normalized = nfts_weighted / max_nfts
 
         rarity_score_sum = sum([subnft["rarityScore"] for subnft in holder_data["holdingNfts"]])
-        rarity_score_weighted = rarity_score_sum * rarityScore_weight
-        rarity_score_normalized = rarity_score_weighted / nfts
+        rarity_score_average = rarity_score_sum / nfts
+        rarity_score_weighted = rarity_score_average * rarityScore_weight
+        rarity_score_normalized = rarity_score_weighted / highest_rarity_average
 
         days_held = sum([subnft["daysHeld"] for subnft in holder_data["holdingNfts"]])
         days_held_normalized = days_held / hold_door
