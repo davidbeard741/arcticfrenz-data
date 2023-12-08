@@ -2023,9 +2023,9 @@ This Python script calculates a score for each NFT holder based on three key fac
 | `nfts` | 2 |
 | `["rarityScore"]` of NFT #1 | 0.45 |
 | `["rarityScore"]` of NFT #2 | 0.15 |
-| `["daysHeld"]` of NFT #1 | 365 |
-| `["daysHeld"]` of NFT #2 | 150 |
-| `sum(["daysHeld"])` | 515 |
+| `["daysHeld"]` | 186 |
+| `["daysHeld"]` | 333 |
+| `sum(["daysHeld"])` | 519 |
 | `max_nfts` | 10 |
 | `highest_rarity_average` | 0.8 |
 | `hold_door` | 2500 |
