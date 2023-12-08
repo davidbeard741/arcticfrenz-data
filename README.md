@@ -2109,7 +2109,7 @@ try:
 
         rarity_score_sum = sum([subnft["rarityScore"] for subnft in holder_data["holdingNfts"]])
         rarity_score_weighted = rarity_score_sum * rarityScore_weight
-        rarity_score_normalized = rarity_score_weighted / NFTs
+        rarity_score_normalized = rarity_score_weighted / nfts
 
         days_held = sum([subnft["daysHeld"] for subnft in holder_data["holdingNfts"]])
         days_held_normalized = days_held / hold_door
