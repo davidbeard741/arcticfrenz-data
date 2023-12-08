@@ -2041,12 +2041,14 @@ This Python script calculates a score for each NFT holder based on three key fac
 | `rarity_score_weighted` | 0.375 |
 | `days_held_with_decay` | 0.2017 |
 
-#### Final Score
+#### Example Final Score
 
 The final score (`scoreHold`) is calculated as the sum of the scores for each factor: 
 ```
 scoreHold = nfts_weighted + rarity_score_weighted + days_held_with_decay
+print(f"Score for Example Holder = {scoreHold}")
 ```
+Score for Example Holder = 0.1291
 
 #### Analysis of Each Factor's Influence
 
