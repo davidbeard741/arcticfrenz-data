@@ -1993,28 +1993,17 @@ with open('enhanced-nft-metadata_by-holder.json', 'w') as f:
 
 ### Holder Score Calculator
 
-This Python script helps you calculate a score for each holder of a collection's NFTs, considering various factors. This score can then be used to rank holders.
-
-**Features:**
-
-* Calculates a score for each holder based on:
-    * NFT count per owner
-    * Rarity score of held NFTs
-    * Number of days NFTs have been held (with decay for very long holdings)
-* Weights each factor according to its importance
-
-
-### Analysis of Holder Score with Example Data
-
-This script calculates a score for each holder based on three factors:
+This Python script calculates a score for each NFT holder based on three key factors. The calculated scores are then utilized to rank the holders.
 
 1. Quantity of NFTs held.
 2. Rarity score of NFTs held.
 3. Time each NFT has been held.
 
+### Analysis of Holder Score with Example Data
+
 #### Example Data
 
-| Factor | Description |
+| Input | Description |
 |---|---|
 | `nfts` | NFT count per owner |
 | `["rarityScore"]` | Rarity Score |
@@ -2027,10 +2016,9 @@ This script calculates a score for each holder based on three factors:
 | `rarityScore_weight` | Weight given to rarity scores |
 | `daysHeld_decay_factor` | Factor controlling the decay of score based on days held |
 
-
 #### Example Data
 
-| Factor | Value |
+| Input | Value |
 |---|---|
 | `nfts` | 2 |
 | `["rarityScore"]` of NFT #1 | 0.45 |
@@ -2045,9 +2033,9 @@ This script calculates a score for each holder based on three factors:
 | `rarityScore_weight` | 1 |
 | `daysHeld_decay_factor` | 0.1 |
 
-#### Example Normalized Scores
+#### Example Factor Scores
 
-| Factor | Normalized Score |
+| Factor | Scores |
 |---|---|
 | `nfts_weighted` | 0.2 |
 | `rarity_score_weighted` | 0.375 |
@@ -2060,7 +2048,7 @@ The final score (`scoreHold`) is calculated as the sum of the scores for each fa
 scoreHold = nfts_weighted + rarity_score_weighted + days_held_with_decay
 ```
 
-#### Analysis of Factor Influence
+#### Analysis of Each Factor's Influence
 
 **1. Quantity of NFTs:**
    - The quantity of NFTs held by an individual significantly impacts their overall score. A higher count of NFTs increases the holder's influence within the collection. The normalization process ensures that this factor remains proportional across all holders.
