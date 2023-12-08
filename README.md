@@ -2014,21 +2014,36 @@ This script calculates a score for each holder based on three factors:
 
 #### Example Data
 
-| Factor | Value | Description |
-|---|---|---|
-| `nfts` | 2 | NFT count per owner |
-| `["rarityScore"]` of NFT #1 | 0.45 | Rarity Score of NFT #1 |
-| `["rarityScore"]` of NFT #2 | 0.15 | Rarity Score of NFT #2 |
-| `["daysHeld"]` of NFT #1 | 365 | Days held NFT #1 |
-| `["daysHeld"]` of NFT #2 | 150 | Days held NFT #2 |
-| `sum(["daysHeld"])` | 515 | Sum of days held NFT #1 and NFT #2 |
-| `max_nfts` | 10 | The total number of NFTs owned by the individual with the largest NFT collection |
-| `total_days_held` | 2500 | Total duration that all NFTs in the collection have been held across all owners |
-| `quantityNfts_weight` | 1 | Weight given to the number of NFTs held |
-| `rarityScore_weight` | 1 | Weight given to rarity scores |
-| `daysHeld_decay_factor` | 0.1 | Factor controlling the decay of score based on days held |
+| Factor | Description |
+|---|---|
+| `nfts` | NFT count per owner |
+| `["rarityScore"]` | Rarity Score of NFT #1 |
+| `["daysHeld"]` | Days held NFT |
+| `sum(["daysHeld"])` | Sum of days held NFT #1 and NFT #2 |
+| `max_nfts` | The total number of NFTs owned by the individual with the largest NFT collection |
+| `hold_door` | The total duration held by the owner possessing the maximum cumulative duration of all NFTs they own |
+| `quantityNfts_weight` | Weight given to the number of NFTs held |
+| `rarityScore_weight` | Weight given to rarity scores |
+| `daysHeld_decay_factor` | Factor controlling the decay of score based on days held |
 
-#### Normalized Scores
+
+#### Example Data
+
+| Factor | Value |
+|---|---|
+| `nfts` | 2 |
+| `["rarityScore"]` of NFT #1 | 0.45 |
+| `["rarityScore"]` of NFT #2 | 0.15 |
+| `["daysHeld"]` of NFT #1 | 365 |
+| `["daysHeld"]` of NFT #2 | 150 |
+| `sum(["daysHeld"])` | 515 |
+| `max_nfts` | 10 |
+| `hold_door` | 2500 |
+| `quantityNfts_weight` | 1 |
+| `rarityScore_weight` | 1 |
+| `daysHeld_decay_factor` | 0.1 |
+
+#### Example Normalized Scores
 
 | Factor | Normalized Score |
 |---|---|
