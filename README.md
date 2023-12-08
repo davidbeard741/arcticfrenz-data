@@ -2017,9 +2017,9 @@ This script calculates a score for each holder based on three factors:
 | Factor | Description |
 |---|---|
 | `nfts` | NFT count per owner |
-| `["rarityScore"]` | Rarity Score of NFT #1 |
+| `["rarityScore"]` | Rarity Score |
 | `["daysHeld"]` | Days held NFT |
-| `sum(["daysHeld"])` | Sum of days held NFT #1 and NFT #2 |
+| `sum(["daysHeld"])` | Sum of days held NFTs |
 | `max_nfts` | The total number of NFTs owned by the individual with the largest NFT collection |
 | `hold_door` | The total duration held by the owner possessing the maximum cumulative duration of all NFTs they own |
 | `quantityNfts_weight` | Weight given to the number of NFTs held |
