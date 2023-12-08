@@ -1929,7 +1929,7 @@ for nft in data:
 
 result = sorted(holders.values(), key=lambda x: x["quantityNfts"], reverse=True)
 
-with open('enhanced-nft-metadata_by-holder.json', 'w') as f:
+with open('collection/enhanced-nft-metadata_by-holder.json', 'w') as f:
     json.dump(result, f, indent=4)
 ```
 
@@ -2073,13 +2073,16 @@ import json
 from datetime import date
 import traceback
 from math import exp
+import numpy as np
 
 try:
-    with open('enhanced-nft-metadata_by-holder.json') as f:
+    with open('collection/enhanced-nft-metadata_by-holder.json') as f:
         data = json.load(f)
 
     quantityNfts_weight = 1
-    rarityScore_weight = 1
+    rarityScore_weight = 0.1
+    daysHeld_weight = 1
+
     daysHeld_decay_factor = 0.1
 
     max_nfts = max([holder["quantityNfts"] for holder in data])
@@ -2105,18 +2108,44 @@ try:
         nfts_normalized = nfts / max_nfts
         nfts_weighted = nfts_normalized * quantityNfts_weight
 
-        rarity_score_sum = sum([subnft["rarityScore"] for subnft in holder_data["holdingNfts"]])
-        rarity_score_average = rarity_score_sum / nfts
-        rarity_score_normalized = rarity_score_average / highest_rarity_average
+        rarity_scores = [subnft["rarityScore"] for subnft in holder_data["holdingNfts"]]
+        rarity_scores_log = [np.log(score + 1) for score in rarity_scores]
+        rarity_score_average = sum(rarity_scores_log) / len(rarity_scores_log)
+        rarity_score_normalized = rarity_score_average / np.log(highest_rarity_average + 1)
         rarity_score_weighted = rarity_score_normalized * rarityScore_weight
 
         days_held = sum([subnft["daysHeld"] for subnft in holder_data["holdingNfts"]])
         days_held_normalized = days_held / hold_door
         decay_factor = exp(-days_held_normalized * daysHeld_decay_factor)
         days_held_with_decay = days_held_normalized * decay_factor
+        days_held_weighted = days_held_with_decay * daysHeld_weight
+        # print(f"Address: {addr}, NFTs Weighted: {nfts_weighted}, Rarity Score Weighted: {rarity_score_weighted}, Days Held Weighted: {days_held_weighted}")
+        scoreHold = (nfts_weighted + rarity_score_weighted + days_held_weighted)
+        return scoreHold, # nfts_weighted, rarity_score_weighted, days_held_weighted
+    """
+    Review the calculated averages to consider adjustments to the weights assigned to the number 
+    of NFTs (`quantityNfts_weight`), rarity score (`rarityScore_weight`), and holding duration 
+    (`daysHeld_weight`). This evaluation will help in fine-tuning the scoring system for more 
+    accurate assessments.
+    """
 
-        scoreHold = (nfts_weighted + rarity_score_weighted + days_held_with_decay)
-        return scoreHold
+    """
+    sum_nfts_weighted = 0
+    sum_nfts_weighted = 0
+    sum_rarity_score_weighted = 0 
+    sum_days_held_weighted = 0 
+    for holder in data:
+        _, nfts_weighted, rarity_score_weighted, days_held_weighted = score_address(holder["holderAddress"])
+        sum_nfts_weighted += nfts_weighted
+        sum_rarity_score_weighted += rarity_score_weighted
+        sum_days_held_weighted += days_held_weighted
+    average_nfts_weighted = sum_nfts_weighted / len(data)
+    average_rarity_score_weighted = sum_rarity_score_weighted / len(data)
+    average_days_held_weighted = sum_days_held_weighted / len(data)
+    print(f"Average Score of Holder's NFTs Owned: {average_nfts_weighted}")
+    print(f"Average Score of Holder's Rarity: {average_rarity_score_weighted}")
+    print(f"Average Score of Holder's Days Held: {average_days_held_weighted}")
+    """
 
     scored = []
     for holder in data:
@@ -2126,9 +2155,8 @@ try:
 
     ranked = sorted(scored, key=lambda x: x["holderScore"], reverse=True)
 
-    with open('ranked-holders.json', 'w') as f:
+    with open('collection/ranked-holders.json', 'w') as f:
       json.dump(ranked, f, indent=4)
-
 
 except Exception as e:
     print(f"Error: {e}")
