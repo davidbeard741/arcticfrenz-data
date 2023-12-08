@@ -2027,8 +2027,8 @@ This Python script calculates a score for each NFT holder based on three key fac
 | `["daysHeld"]` | 333 |
 | `sum(["daysHeld"])` | 519 |
 | `max_nfts` | 50 |
-| `highest_rarity_average` | WIP |
-| `hold_door` | WIP |
+| `highest_rarity_average` | 0.5327 |
+| `hold_door` | 28296 |
 | `quantityNfts_weight` | 1 |
 | `rarityScore_weight` | 0.1 |
 | `daysHeld_decay_factor` | 0.1 |
@@ -2039,9 +2039,9 @@ Review each factor's average to consider adjustments to the weights assigned to 
 
 | Factor Averages | Scores |
 |---|---|
-| `average_nfts_weighted` | WIP |
-| `average_rarity_score_weighted` | WIP |
-| `average_days_held_weighted` | WIP |
+| `average_nfts_weighted` | 0.0861 |
+| `average_rarity_score_weighted` | 0.0640 |
+| `average_days_held_weighted` | 0.0753 |
 
 #### Example Factor Scores
 
@@ -2098,14 +2098,17 @@ try:
     daysHeld_decay_factor = 0.1
 
     max_nfts = max([holder["quantityNfts"] for holder in data])
+    # print(f"The total number of NFTs owned by the individual with the largest NFT collection: {max_nfts}")
 
     avg_rarity_per_holder = [(holder["holderAddress"], sum(subnft["rarityScore"] for subnft in holder["holdingNfts"]) / holder["quantityNfts"]) for holder in data]
     rarity_sniper = max(avg_rarity_per_holder, key=lambda x: x[1])
     highest_rarity_average = rarity_sniper[1]
+    # print(f"The average rarity score of the owner who possesses the highest average rarity score: {highest_rarity_average}")
 
     days_held_per_holder = [(holder["holderAddress"], sum(subnft["daysHeld"] for subnft in holder["holdingNfts"])) for holder in data]
     diamond_hands = max(days_held_per_holder, key=lambda x: x[1])
     hold_door = diamond_hands[1]
+    # print(f"Th total duration held by the owner possessing the maximum cumulative duration of all NFTs they own : {hold_door}")
 
     today = date.today()
 
@@ -2135,11 +2138,16 @@ try:
         scoreHold = (nfts_weighted + rarity_score_weighted + days_held_weighted)
         return scoreHold, # nfts_weighted, rarity_score_weighted, days_held_weighted
 
+    # Review the calculated averages to consider adjustments to the weights assigned to the number
+    # of NFTs (`quantityNfts_weight`), rarity score (`rarityScore_weight`), and holding duration
+    # (`daysHeld_weight`). This evaluation will help in fine-tuning the scoring system for more
+    # accurate assessments.
+
     """
     sum_nfts_weighted = 0
     sum_nfts_weighted = 0
-    sum_rarity_score_weighted = 0 
-    sum_days_held_weighted = 0 
+    sum_rarity_score_weighted = 0
+    sum_days_held_weighted = 0
     for holder in data:
         _, nfts_weighted, rarity_score_weighted, days_held_weighted = score_address(holder["holderAddress"])
         sum_nfts_weighted += nfts_weighted
