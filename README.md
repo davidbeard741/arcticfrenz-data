@@ -2037,9 +2037,9 @@ This Python script calculates a score for each NFT holder based on three key fac
 
 | Factor | Scores |
 |---|---|
-| `nfts_weighted` | 0.2 |
-| `rarity_score_weighted` | 0.375 |
-| `days_held_with_decay` | 0.2017 |
+| `nfts_weighted` | 0.04 |
+| `rarity_score_weighted` | 0.0708 |
+| `days_held_with_decay` | 0.0183 |
 
 #### Example Final Score
 
