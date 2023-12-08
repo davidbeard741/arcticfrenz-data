@@ -2223,12 +2223,15 @@ except Exception as e:
 
 ---
 
-## Arctic Frenz
-
-Let's Talk. But You First! 
+## Arctic Frenz: Let's Talk. But You First! 
 
 <table align="center">
-	<tr align="center">
+	<tr>
+		<td>
+			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/IMG_3153.gif">
+		</td>
+	</tr>
+	<tr>
 		<td align="center">
 			<a href="https://discord.gg/arcticfrenz">
 				<img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white">
