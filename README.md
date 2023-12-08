@@ -2049,13 +2049,13 @@ This script calculates a score for each holder based on three factors:
 |---|---|
 | `nfts_normalized` | 0.2 |
 | `rarity_score_normalized` | 0.3 |
-| `days_held_with_decay` | 0.7877 |
+| `days_held_with_decay` | 0.2017 |
 
 #### Final Score
 
 The final score (`scoreHold`) is calculated as the sum of the normalized scores for each factor: `scoreHold = nfts_normalized + rarity_score_normalized + days_held_with_decay`
 
-#### Analysis of Factor Influence
+#### Analysis of Factors' Influence
 
 **1. Quantity of NFTs:**
 
