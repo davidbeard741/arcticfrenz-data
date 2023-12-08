@@ -2021,6 +2021,7 @@ This script calculates a score for each holder based on three factors:
 | `["daysHeld"]` | Days held NFT |
 | `sum(["daysHeld"])` | Sum of days held NFTs |
 | `max_nfts` | The total number of NFTs owned by the individual with the largest NFT collection |
+| `highest_rarity_average` | The average rarity score of the owner who possesses the highest average rarity score |
 | `hold_door` | The total duration held by the owner possessing the maximum cumulative duration of all NFTs they own |
 | `quantityNfts_weight` | Weight given to the number of NFTs held |
 | `rarityScore_weight` | Weight given to rarity scores |
@@ -2038,6 +2039,7 @@ This script calculates a score for each holder based on three factors:
 | `["daysHeld"]` of NFT #2 | 150 |
 | `sum(["daysHeld"])` | 515 |
 | `max_nfts` | 10 |
+| `highest_rarity_average` | 0.8 |
 | `hold_door` | 2500 |
 | `quantityNfts_weight` | 1 |
 | `rarityScore_weight` | 1 |
@@ -2109,20 +2111,20 @@ try:
         holder_data = holder_data[0]
 
         nfts = holder_data["quantityNfts"]
-        nfts_weighted = nfts * quantityNfts_weight
-        nfts_normalized = nfts_weighted / max_nfts
+        nfts_normalized = nfts / max_nfts
+        nfts_weighted = nfts_normalized * quantityNfts_weight
 
         rarity_score_sum = sum([subnft["rarityScore"] for subnft in holder_data["holdingNfts"]])
         rarity_score_average = rarity_score_sum / nfts
-        rarity_score_weighted = rarity_score_average * rarityScore_weight
-        rarity_score_normalized = rarity_score_weighted / highest_rarity_average
+        rarity_score_normalized = rarity_score_average / highest_rarity_average
+        rarity_score_weighted = rarity_score_normalized * rarityScore_weight
 
         days_held = sum([subnft["daysHeld"] for subnft in holder_data["holdingNfts"]])
         days_held_normalized = days_held / hold_door
         decay_factor = exp(-days_held_normalized * daysHeld_decay_factor)
         days_held_with_decay = days_held_normalized * decay_factor
 
-        scoreHold = (nfts_normalized + rarity_score_normalized + days_held_with_decay)
+        scoreHold = (nfts_weighted + rarity_score_weighted + days_held_with_decay)
         return scoreHold
 
     scored = []
