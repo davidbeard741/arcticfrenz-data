@@ -1999,9 +1999,7 @@ This Python script calculates a score for each NFT holder based on three key fac
 2. Rarity score of NFTs held.
 3. Time each NFT has been held.
 
-### Analysis of Holder Score with Example Data
-
-#### Example Data
+### Variable Descriptions
 
 | Input | Description |
 |---|---|
@@ -2016,7 +2014,7 @@ This Python script calculates a score for each NFT holder based on three key fac
 | `rarityScore_weight` | Weight given to rarity scores |
 | `daysHeld_decay_factor` | Factor controlling the decay of score based on days held |
 
-#### Example Data
+### Analysis of Holder Score with Example Data
 
 | Input | Value |
 |---|---|
@@ -2033,7 +2031,7 @@ This Python script calculates a score for each NFT holder based on three key fac
 | `rarityScore_weight` | 0.1 |
 | `daysHeld_decay_factor` | 0.1 |
 
-#### Example Averages 
+### Example Averages 
 
 Review each factor's average to consider adjustments to the weights assigned to the number of NFTs (`quantityNfts_weight`), rarity score (`rarityScore_weight`), and holding duration (`daysHeld_weight`). This evaluation will help in fine-tuning the scoring system for more accurate rankings.
 
@@ -2043,7 +2041,7 @@ Review each factor's average to consider adjustments to the weights assigned to 
 | `average_rarity_score_weighted` | 0.0640 |
 | `average_days_held_weighted` | 0.0753 |
 
-#### Example Factor Scores
+### Example Factor Scores
 
 | Factor | Scores |
 |---|---|
@@ -2051,16 +2049,13 @@ Review each factor's average to consider adjustments to the weights assigned to 
 | `rarity_score_weighted` | 0.0708 |
 | `days_held_with_decay` | 0.0183 |
 
-#### Example Final Score
+### Example Final Score
 
-The final score (`scoreHold`) is calculated as the sum of the scores for each factor: 
-```
-scoreHold = nfts_weighted + rarity_score_weighted + days_held_with_decay
-print(f"Score for Example Holder = {scoreHold}")
-```
-**Score for Example Holder = 0.1291**
+The final score (`scoreHold`) is calculated as the sum of the scores for each factor:  
+`scoreHold = nfts_weighted + rarity_score_weighted + days_held_with_decay`  
+Score for the example's holder = 0.1291
 
-#### Analysis of Each Factor's Influence
+### Analysis of Each Factor's Influence
 
 **1. Quantity of NFTs:**
 The number of NFTs held by an individual serves as a key indicator of their engagement within the collection's community. This quantity contributes to the holder's score by reflecting the size of their NFT collection. Holding a larger number of NFTs suggests a more extensive portfolio and potentially a greater influence or presence within the NFT community. However, this factor is normalized against the maximum number of NFTs held by any single holder to ensure fairness and relativity in the scoring system. It is important to note that while quantity is a significant factor, it does not directly indicate the quality or value of the collection, which is where the other factors come into play.
