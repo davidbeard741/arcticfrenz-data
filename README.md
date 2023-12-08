@@ -2074,7 +2074,11 @@ try:
     daysHeld_decay_factor = 0.1
 
     max_nfts = max([holder["quantityNfts"] for holder in data])
-    total_days_held = sum([subnft["daysHeld"] for holder in data for subnft in holder["holdingNfts"]]) 
+
+    days_held_per_holder = [(holder["holderAddress"], sum(subnft["daysHeld"] for subnft in holder["holdingNfts"])) for holder in data]
+    diamond_hands = max(days_held_per_holder, key=lambda x: x[1])
+    hold_door = diamond_hands[1]
+
     today = date.today()
 
     def score_address(addr):
@@ -2093,7 +2097,7 @@ try:
         rarity_score_normalized = rarity_score_weighted / NFTs
 
         days_held = sum([subnft["daysHeld"] for subnft in holder_data["holdingNfts"]])
-        days_held_normalized = days_held / total_days_held
+        days_held_normalized = days_held / hold_door
         decay_factor = exp(-days_held_normalized * daysHeld_decay_factor)
         days_held_with_decay = days_held_normalized * decay_factor
 
