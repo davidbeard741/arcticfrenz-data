@@ -2055,19 +2055,20 @@ This script calculates a score for each holder based on three factors:
 
 The final score (`scoreHold`) is calculated as the sum of the normalized scores for each factor: `scoreHold = nfts_normalized + rarity_score_normalized + days_held_with_decay`
 
-#### Analysis of Factors' Influence
+#### Analysis of Factor Influence
 
 **1. Quantity of NFTs:**
-
-In the example, the normalized score for the number of NFTs held (`nfts_normalized`) is 0.2. This indicates that the quantity of NFTs has a moderate influence on the final score. While owning more NFTs contributes positively, it doesn't solely determine the ranking.
+   - The quantity of NFTs held by an individual significantly impacts their overall score. A higher count of NFTs increases the holder's influence within the collection. The normalization process ensures that this factor remains proportional across all holders.
+   - The weight (`quantityNfts_weight`) can be adjusted to emphasize or de-emphasize the importance of the quantity of NFTs owned in the overall score.
 
 **2. Rarity Score:**
-
-The normalized score for the sum of rarity scores (`rarity_score_normalized`) is 0.3, indicating a stronger influence compared to the quantity of NFTs. This suggests that the rarity of held NFTs plays a key role in determining the holder score. Holders with NFTs possessing higher rarity scores or holders with multiple NFTs will gain an advantage in the ranking.
+   - The rarity score reflects the uniqueness and potential value of each NFT. Higher rarity scores indicate more valuable or rare NFTs in the holder's collection. This factor rewards holders who possess NFTs with higher rarity.
+   - The `rarityScore_weight` parameter allows for tuning the influence of rarity scores on the overall ranking, providing flexibility in how rarity is valued compared to quantity and holding duration.
 
 **3. Holding Time:**
-
-The normalized score for the days held with decay (`days_held_with_decay`) is 0.7877, making it the most impactful factor in the final score. This impact is weighted using an exponential decay function. Longer holding times yield higher scores, but the impact gradually diminishes as holding time increases, incentivizing new ownership. The rate of this diminishing effect is determined by the decay factor.
+   - The length of time each NFT has been held by the owner is a key factor. It rewards long-term holders, reflecting their commitment and belief in the value of their NFTs. 
+   - The inclusion of a decay factor (`daysHeld_decay_factor`) moderates the influence of extremely long holding periods, preventing holders with very long holding times from disproportionately dominating the rankings. 
+   - The decay factor plays a crucial role by encouraging new ownership.
 
 <br>
 
