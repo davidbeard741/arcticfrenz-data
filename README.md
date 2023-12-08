@@ -2224,15 +2224,10 @@ except Exception as e:
 ---
 
 <div align="center">
-	Let's Talk. But You First! 
+  Let's Talk. But You First!
 </div>
 
 <table align="center">
-	<tr>
-		<td>
-			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/IMG_3153.gif">
-		</td>
-	</tr>
 	<tr>
 		<td align="center">
 			<a href="https://discord.gg/arcticfrenz">
