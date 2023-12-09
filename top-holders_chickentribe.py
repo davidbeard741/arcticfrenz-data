@@ -17,8 +17,16 @@ def custom_formatter(x, pos):
 with open('chickentribe/ranked-holders.json') as f:
     data = json.load(f)[:20]
 
-holders = [d['holderAddress'][:4] + "..." + d['holderAddress'][-4:] for d in data]
+data = [d for d in data if d is not None]
 
+holders = []
+for d in data:
+    address = d.get('holderAddress')
+    if address:
+        holders.append(address[:4] + "..." + address[-4:])
+    else:
+        holders.append("Unknown")
+        
 metrics = [
     (d['quantityNfts'],
      sum(nft['rarityScore'] for nft in d['holdingNfts']),
