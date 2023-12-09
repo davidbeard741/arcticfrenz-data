@@ -56,7 +56,7 @@ The following is a structured guide designed to help you retrieve the metadata f
 
 ### Step 2: Acquire the Collection's Hash List
 
-1. Visit <a href="https://tools.smithii.io/hashlist/solana">Smithii</a>, a tool for Hash List NFTs on the Solana blockchain.
+1. Visit <a href="https://tools.smithii.io/hashlist/solana">Smithii</a> or <a href="https://magiceden.io/mintlist-tool">Magic Eden's Hash List Finder</a>, tools for retrieving a Hash List on the Solana blockchain.
 2. Paste the Creator Address obtained from [Step 1](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#step-1-identify-the-creator-address) into the provided field.
 3. Click 'Get hash list' to generate the list.
 4. Please be patient, as generating the hash list may take a few minutes.
