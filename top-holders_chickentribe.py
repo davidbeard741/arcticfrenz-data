@@ -17,8 +17,16 @@ def custom_formatter(x, pos):
 with open('chickentribe/ranked-holders.json') as f:
     data = json.load(f)[:20]
 
-holders = [d['holderAddress'][:4] + "..." + d['holderAddress'][-4:] for d in data]
+data = [d for d in data if d is not None]
 
+holders = []
+for d in data:
+    address = d.get('holderAddress')
+    if address:
+        holders.append(address[:4] + "..." + address[-4:])
+    else:
+        holders.append("Unknown")
+        
 metrics = [
     (d['quantityNfts'],
      sum(nft['rarityScore'] for nft in d['holdingNfts']),
@@ -36,7 +44,7 @@ locator = ticker.FixedLocator(ticks)
 ax.yaxis.set_major_locator(locator)
 ax.set_yticklabels(holders, color='#ffffff', fontsize=10)
 ax.set_ylabel('Holders', color='#E0E0E0', fontsize=16, fontweight=5)
-ax.set_title('Arctic Frenz\nTop Holders', fontsize=20, fontweight=5, color='#E0E0E0')
+ax.set_title('ChickenTribe\nTop Holders', fontsize=20, fontweight=5, color='#E0E0E0')
 ax.tick_params(axis='y', color='#E0E0E0')
 ax.tick_params(axis='x', which='both', bottom=False, top=False, labelbottom=False)
 ax.invert_yaxis()
@@ -90,4 +98,3 @@ fig.text(-0.16, 1.17, footnote_text, fontsize=9, color='#E0E0E0', ha="left", va=
 
 fig.tight_layout()
 plt.savefig('chickentribe/top-holders.png', format='png', bbox_inches='tight')
-plt.show()
