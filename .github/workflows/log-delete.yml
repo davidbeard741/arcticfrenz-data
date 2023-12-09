@@ -22,7 +22,7 @@ jobs:
         git config --global user.email 'david.beard741@gmail.com'
     - name: Commit changes
       run: |
-        git rm chickentribe/logfile.log arcticfrenz/logfile.log sentries/logfile.log
+        git rm chickentribe/logfile.log arcticfrenz/logfile.log sentries/logfile.log madlads/logfile.log claynosaurz/logfile.log
         git commit -m "Remove Log Files"
     - name: Sync with Remote
       run: |
