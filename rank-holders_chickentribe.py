@@ -9,7 +9,7 @@ try:
         data = json.load(f)
 
     quantityNfts_weight = 1
-    rarityScore_weight = 0.1
+    rarityScore_weight = 0.05
     daysHeld_weight = 1
 
     daysHeld_decay_factor = 0.1
