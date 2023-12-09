@@ -1,0 +1,35 @@
+name: log-delete
+
+on:
+  push:
+    paths:
+      - .github/workflows/log-delete.yml
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * *' # 08:00 UTC daily
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 5
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Git
+      run: |
+        git config --global user.name 'davidbeard741'
+        git config --global user.email 'david.beard741@gmail.com'
+    - name: Commit changes
+      run: |
+        git rm chickentribe/logfile.log arcticfrenz/logfile.log sentries/logfile.log
+        git commit -m "Remove Log Files"
+    - name: Sync with Remote
+      run: |
+        git fetch
+        git merge origin/main
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
