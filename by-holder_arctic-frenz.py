@@ -16,8 +16,9 @@ for nft in data:
       continue
     if holder_data:
         holder_address = holder_data['holderAddress']
-        if not re.match(r'^[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{32,44}$', holder_address):
-          continue
+        if isinstance(holder_address, str):  # Ensure holder_address is a string
+            if not re.match(r'^[123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz]{32,44}$', holder_address):
+                continue
         if holder_address not in holders:
             holders[holder_address] = {
                 "holderAddress": holder_address,
