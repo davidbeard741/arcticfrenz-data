@@ -340,7 +340,17 @@ A lower frequency of a trait value indicates rarity, and hence, it contributes m
 
 The rarity score for an NFT can be mathematically expressed as:
 
-![Alt text](https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/rarity_score.jpeg)
+<div align="center">
+
+<table align="center">
+	<tr>
+		<td>
+			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/rarity_score.jpeg">
+		</td>
+	</tr>
+</table>
+
+</div>
 
 where:
 
