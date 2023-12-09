@@ -1,0 +1,49 @@
+name: by-holder
+
+on:
+  push:
+    paths:
+      - .github/workflows/charts.yml
+  workflow_dispatch:
+  schedule:
+    - cron: '0 12 * * 2,4,6' 
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+    strategy:
+      max-parallel: 5
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: '3.10'
+    - name: Add conda to system path
+      run: |
+        echo $CONDA/bin >> $GITHUB_PATH
+    - name: Install dependencies
+      run: |
+        conda env update --file environment_json.yml --name base
+    - name: Run script
+      run: python by-holder_chickentribe.py
+    - name: Run script
+      run: python by-holder_arctic-frenz.py
+    - name: Set up Git
+      run: |
+        git config --global user.name 'davidbeard741'
+        git config --global user.email 'david.beard741@gmail.com'
+    - name: Commit changes
+      run: |
+        git add chickentribe/by-holder.json arcticfrenz/by-holder.json
+        git commit -m "Pretty-Printing by NFT"
+    - name: Sync with Remote
+      run: |
+        git fetch
+        git merge origin/main
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: main
