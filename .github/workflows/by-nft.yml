@@ -3,7 +3,7 @@ name: by-nft
 on:
   push:
     paths:
-      - .github/workflows/charts.yml
+      - .github/workflows/by-nft.yml
   workflow_dispatch:
   schedule:
     - cron: '0 12 * * 1,3,5' # At 12:00 every Monday, Wednesday, and Friday
