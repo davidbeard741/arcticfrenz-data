@@ -22,8 +22,14 @@ jobs:
         git config --global user.email 'david.beard741@gmail.com'
     - name: Commit changes
       run: |
-        git rm chickentribe/logfile.log arcticfrenz/logfile.log sentries/logfile.log
-        git commit -m "Remove Log Files"
+        for file in chickentribe/logfile.log arcticfrenz/logfile.log sentries/logfile.log madlads/logfile.log claynosaurz/logfile.log; do
+          if [ -f "$file" ]; then
+            git rm "$file"
+          else
+            echo "$file does not exist, skipping."
+          fi
+        done
+        git commit -m "Remove Log Files" || echo "No changes to commit"
     - name: Sync with Remote
       run: |
         git fetch
