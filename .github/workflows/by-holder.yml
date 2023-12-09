@@ -3,7 +3,7 @@ name: by-holder
 on:
   push:
     paths:
-      - .github/workflows/charts.yml
+      - .github/workflows/by-holder.yml
   workflow_dispatch:
   schedule:
     - cron: '0 12 * * 2,4,6' 
