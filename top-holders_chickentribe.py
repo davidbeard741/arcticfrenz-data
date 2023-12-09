@@ -98,4 +98,3 @@ fig.text(-0.16, 1.17, footnote_text, fontsize=9, color='#E0E0E0', ha="left", va=
 
 fig.tight_layout()
 plt.savefig('chickentribe/top-holders.png', format='png', bbox_inches='tight')
-plt.show()
