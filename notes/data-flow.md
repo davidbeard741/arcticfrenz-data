@@ -1,16 +1,16 @@
 ```mermaid
 graph LR
-    style A fill:#f9d5e5,stroke:#b388eb,stroke-width:2px
-    style B fill:#f6cbd3,stroke:#f6cbd3,stroke-width:2px
-    style C fill:#f9d5e5,stroke:#b388eb,stroke-width:2px
-    style D fill:#f6cbd3,stroke:#f6cbd3,stroke-width:2px
-    style E fill:#f9d5e5,stroke:#b388eb,stroke-width:2px
-    style F fill:#f6cbd3,stroke:#f6cbd3,stroke-width:2px
-    style G fill:#f9d5e5,stroke:#b388eb,stroke-width:2px
-    style H fill:#f6cbd3,stroke:#f6cbd3,stroke-width:2px
-    style I fill:#d5e4f1,stroke:#89c4f4,stroke-width:2px
-    style J fill:#f6cbd3,stroke:#f6cbd3,stroke-width:2px
-    style K fill:#d5e4f1,stroke:#89c4f4,stroke-width:2px
+    style A fill:#f9d5e5,stroke:#b3c2bf,stroke-width:2px
+    style B fill:#eeac99,stroke:#b3c2bf,stroke-width:2px
+    style C fill:#f6dfeb,stroke:#b3c2bf,stroke-width:2px
+    style D fill:#d5e1df,stroke:#b3c2bf,stroke-width:2px
+    style E fill:#e3eaa7,stroke:#b3c2bf,stroke-width:2px
+    style F fill:#b5e7a0,stroke:#b3c2bf,stroke-width:2px
+    style G fill:#86af49,stroke:#b3c2bf,stroke-width:2px
+    style H fill:#405d27,stroke:#b3c2bf,stroke-width:2px
+    style I fill:#f7cac9,stroke:#b3c2bf,stroke-width:2px
+    style J fill:#92a8d1,stroke:#b3c2bf,stroke-width:2px
+    style K fill:#034f84,stroke:#b3c2bf,stroke-width:2px
 
     A[nft_metadata_with_rarity_and_holder_data.json] -->|Input| B(by-NFT.py)
     B -->|Output| C[by-NFT.json]
