@@ -21,9 +21,10 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 </table>
 
 # Table of Contents
-1. [Part 1: Retrieve NFT Metadata](#part-1-retrieve-nft-metadata)
-2. [Part 2: Calculating Rarity Scores](#part-2-calculating-rarity-scores)
-3. [Part 3: Enhancing the Metadata](#part3-enhancing-the-metadata)
+1. [Part 1: Retrieve NFT Metadata](https://github.com/davidbeard741/arcticfrenz-data#part-1-retrieve-nft-metadata)
+2. [Part 2: Calculating Rarity Scores](https://github.com/davidbeard741/arcticfrenz-data#part-2-calculating-rarity-scores)
+3. [Part 3: Enhancing the Metadata](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#part-3-enhancing-the-metadata)
+4. [Part 4: ](https://)
 
 ---
 
