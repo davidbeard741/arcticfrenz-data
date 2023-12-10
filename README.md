@@ -23,6 +23,7 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 # Table of Contents
 1. [Part 1: Retrieve NFT Metadata for an Entire Collection](#part-1-retrieve-nft-metadata-for-an-entire-collection)
 2. [Part 2: Calculating Rarity Scores](#part-2-calculating-rarity-scores)
+3. [Part 3: Enhancing the Metadata of an Entire NFT Collection with Additional Data](#part3-enhancing-the-metadata-of-an-entire-nft-collection-with-additional-data)
 
 ---
 
