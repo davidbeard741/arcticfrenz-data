@@ -6,7 +6,7 @@ on:
       - .github/workflows/mad-lads.yml
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *'
+    - cron: '45 */2 * * *' # every 2 hrs at the 45th min of the hr
 
 jobs:
   build-linux:
