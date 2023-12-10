@@ -1,3 +1,4 @@
+```mermaid
 graph LR
     style A fill:#f9d5e5,stroke:#b388eb,stroke-width:2px
     style B fill:#f6cbd3,stroke:#f6cbd3,stroke-width:2px
