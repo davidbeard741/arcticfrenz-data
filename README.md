@@ -45,7 +45,22 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 	<tr>
 		<td>
 			2. Navigate to the NFT's detail page and locate its Mint Address, then proceed to <a href="https://solscan.io">Solscan</a>
+			<details>
+  <summary>CLICK TO EXPAND Screenshot</summary>
+
+<div align="center">
+
+<table align="center">
+	<tr>
+		<td>
 			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg">
+		</td>
+	</tr>
+</table>
+
+</div>
+
+</details>
 		</td>
 	</tr>
 	<tr>
