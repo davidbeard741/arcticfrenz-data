@@ -6,7 +6,7 @@ on:
       - .github/workflows/rank-holders.yml
   workflow_dispatch:
   schedule:
-    - cron: '0 3 * * 3,5,0' # 03:00 on every Wednesday, Friday, and Sunday
+    - cron: '30 3 * * 1,3,5,7' # At 0330 on every Mon, Wed, Fri, and Sun
 
 jobs:
   build-linux:
