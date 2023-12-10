@@ -45,34 +45,34 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 	<tr>
 		<td>
 			2. Navigate to the NFT's detail page and locate its Mint Address, then proceed to <a href="https://solscan.io">Solscan</a>
+			<br>
 			<details>
-  <summary>CLICK TO EXPAND Screenshot</summary>
-
-<div align="center">
-
-<table align="center">
-	<tr>
-		<td>
-			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg">
-		</td>
-	</tr>
-</table>
-
-</div>
-
-</details>
+  				<summary>CLICK TO EXPAND Screenshot</summary>
+				<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg">
+			</details>
+			<br>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			3. In Solscan, click on the "Creators" tab. Look for the first listed address that shows a 0% share and is marked with a blue tick. 
-			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/0D636107-2D85-4DBD-849D-E19A2B647338.jpeg">
+			3. In Solscan, click on the "Creators" tab. Look for the first listed address that shows a 0% share and is marked with a blue tick.  
+   			<br>
+			<details>
+  				<summary>CLICK TO EXPAND Screenshot</summary>
+				<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/0D636107-2D85-4DBD-849D-E19A2B647338.jpeg">
+			</details>
+			<br>   
 		</td>
 	</tr>
 	<tr>
 		<td>
 			4. Copy this Creator Address.
-			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/CC753005-3372-463E-97A9-D8E0710BC5A3.jpeg">
+			<br>
+			<details>
+  				<summary>CLICK TO EXPAND Screenshot</summary>
+				<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/CC753005-3372-463E-97A9-D8E0710BC5A3.jpeg">
+			</details>
+			<br>   
 		</td>
 	</tr> 
 </table>
@@ -122,7 +122,12 @@ nft_addresses = [
 	<tr>
 		<td>
 			3. Copy your free API key for Step 6.
-			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/1C21909B-7CF4-41A9-B6A7-8655DF609006.jpeg">
+			<br>
+			<details>
+  				<summary>CLICK TO EXPAND Screenshot</summary>
+				<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/1C21909B-7CF4-41A9-B6A7-8655DF609006.jpeg">
+			</details>
+			<br>
 		</td>
 	</tr>
 </table>
