@@ -21,8 +21,8 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 </table>
 
 # Table of Contents
-1. [Part 1: How to Retrieve NFT Metadata for an Entire Collection](#part-1-retrieve-nft-metadata-for-an-entire-collection)
-2. [Other Section](#other-section)
+1. [Part 1: Retrieve NFT Metadata for an Entire Collection](#part-1-retrieve-nft-metadata-for-an-entire-collection)
+2. [Part 2: Calculating Rarity Scores](#part-2-calculating-rarity-scores)
 
 ---
 
@@ -318,7 +318,7 @@ The example JSON below is truncated for illustrative purposes; the 'nft_metadata
 
 ---
 
-## Part 2: Calculating Rarity Scores for NFTs Based on Off-Chain Metadata
+## Part 2: Calculating Rarity Scores
 
 The concept of rarity in the context of NFTs pertains to the uniqueness and scarcity of certain traits within a collection. Rarity scores can significantly impact the perceived value and desirability of individual NFTs. This section outlines the process for calculating rarity scores using the off-chain metadata associated with each NFT.
 
