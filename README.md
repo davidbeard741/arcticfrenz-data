@@ -21,13 +21,18 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 </table>
 
 # Table of Contents
-1. [Part 1: Retrieve NFT Metadata for an Entire Collection](#part-1-retrieve-nft-metadata-for-an-entire-collection)
-2. [Part 2: Calculating Rarity Scores](#part-2-calculating-rarity-scores)
-3. [Part 3: Enhancing the Metadata of an Entire NFT Collection with Additional Data](#part3-enhancing-the-metadata-of-an-entire-nft-collection-with-additional-data)
+1. [Part 1: Retrieve NFT Metadata](https://github.com/davidbeard741/arcticfrenz-data#part-1-retrieve-nft-metadata)
+2. [Part 2: Calculating Rarity Scores](https://github.com/davidbeard741/arcticfrenz-data#part-2-calculating-rarity-scores)
+3. [Part 3: Enhancing the Metadata](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#part-3-enhancing-the-metadata)
+4. [Part 4: Data Processing Pipeline](https://github.com/davidbeard741/arcticfrenz-data/tree/main#part-4-data-processing-pipeline)
+5. [Part 5: Pretty-Printing](https://github.com/davidbeard741/arcticfrenz-data/tree/main#part-5-pretty-printing)
+6. [Part 6: Ranking Holders](https://github.com/davidbeard741/arcticfrenz-data/tree/main#part-6-ranking-holders)
+7. [Part 7: Data Visualization](https://github.com/davidbeard741/arcticfrenz-data/tree/main#part-7-data-visualization)
+
 
 ---
 
-## Part 1: Retrieve NFT Metadata for an Entire Collection
+## Part 1: Retrieve NFT Metadata
 
 ### Step 1: Identify the Creator Address
 
@@ -564,7 +569,7 @@ The output is an updated JSON file, nft_metadata_with_rarity.json, where each NF
 
 ---
 
-## Part 3: Enhancing the Metadata of an Entire NFT Collection with Additional Data
+## Part 3: Enhancing the Metadata
 
 ### Step 1: Setting Up Your Python Development Environment
 
@@ -1755,7 +1760,36 @@ if __name__ == '__main__':
 
 ---
 
-## Part 4: Pretty-Printing
+## Part 4: Data Processing Pipeline
+
+Below is a flowchart outlining the primary components of the processing pipeline from [Part 5](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#part-5-pretty-printing) to [Part 7](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#part-7-data-visualization).
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Flowchart</summary>
+
+<div align="center">
+
+<table align="center">
+	<tr>
+		<td>
+			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/flow-chart.png">
+		</td>
+	</tr>
+</table>
+
+</div>
+
+
+
+</details>
+
+<br>
+
+---
+
+## Part 5: Pretty-Printing
 
 Pretty-printing involves rearranging fields in a JSON file to enhance readability. This process includes structuring the data by organizing fields in a logical order and improving the overall presentation of the content.
 
@@ -2003,7 +2037,7 @@ with open('collection/enhanced-nft-metadata_by-holder.json', 'w') as f:
 
 ---
 
-## Part 5: Ranking Holders
+## Part 6: Ranking Holders
 
 ### Holder Score Calculator
 
@@ -2013,7 +2047,10 @@ This Python script calculates a score for each NFT holder based on three key fac
 2. Rarity score of NFTs held.
 3. Time each NFT has been held.
 
-### Variable Descriptions
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Variable Descriptions</summary>
 
 | Input | Description |
 |---|---|
@@ -2028,7 +2065,12 @@ This Python script calculates a score for each NFT holder based on three key fac
 | `rarityScore_weight` | Weight given to rarity scores |
 | `daysHeld_decay_factor` | Factor controlling the decay of score based on days held |
 
-### Analysis of Holder Score with Example Data
+</details>
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Example Data</summary>
 
 | Input | Value |
 |---|---|
@@ -2045,9 +2087,18 @@ This Python script calculates a score for each NFT holder based on three key fac
 | `rarityScore_weight` | 0.1 |
 | `daysHeld_decay_factor` | 0.1 |
 
+</details>
+
+<br>
+
 ### Example Averages 
 
 Review each factor's average to consider adjustments to the weights assigned to the number of NFTs (`quantityNfts_weight`), rarity score (`rarityScore_weight`), and holding duration (`daysHeld_weight`). This evaluation will help in fine-tuning the scoring system for more accurate rankings.
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Example Averages</summary>
 
 | Factor Averages | Scores |
 |---|---|
@@ -2055,19 +2106,30 @@ Review each factor's average to consider adjustments to the weights assigned to 
 | `average_rarity_score_weighted` | 0.0640 |
 | `average_days_held_weighted` | 0.0753 |
 
-### Example Factor Scores
+</details>
+
+<br>
+
+### Example Final Score
+
+The final score (`scoreHold`) is calculated as the sum of the scores for each factor:  
+`scoreHold = nfts_weighted + rarity_score_weighted + days_held_with_decay`  
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Example Averages</summary>
 
 | Factor | Scores |
 |---|---|
 | `nfts_weighted` | 0.04 |
 | `rarity_score_weighted` | 0.0708 |
 | `days_held_with_decay` | 0.0183 |
+| `scoreHold` | 0.1291 |
 
-### Example Final Score
+</details>
 
-The final score (`scoreHold`) is calculated as the sum of the scores for each factor:  
-`scoreHold = nfts_weighted + rarity_score_weighted + days_held_with_decay`  
-Score for the example's holder = 0.1291
+<br>
 
 ### Analysis of Each Factor's Influence
 
@@ -2232,7 +2294,7 @@ except Exception as e:
 
 ---
 
-## Part 6: Data Visualization
+## Part 7: Data Visualization
 
 ### Visualizing Top Ranked Holders
 
@@ -2361,6 +2423,9 @@ plt.savefig('collection/top-holders.png', format='png', bbox_inches='tight')
 
 <br>
 
+<details>
+  <summary>CLICK TO EXPAND Bar Chart</summary>
+
 <div align="center">
 
 <table align="center">
@@ -2372,6 +2437,8 @@ plt.savefig('collection/top-holders.png', format='png', bbox_inches='tight')
 </table>
 
 </div>
+
+</details>
 
 <br>
 
