@@ -20,11 +20,13 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 	</tr>
 </table>
 
-The following is a structured guide designed to help you retrieve the metadata for each NFT in a collection.
+# Table of Contents
+1. [Part 1: How to Retrieve NFT Metadata for an Entire Collection](#part-1-retrieve-nft-metadata-for-an-entire-collection)
+2. [Other Section](#other-section)
 
 ---
 
-## Part 1: How to Retrieve NFT Metadata for an Entire Collection
+## Part 1: Retrieve NFT Metadata for an Entire Collection
 
 ### Step 1: Identify the Creator Address
 
