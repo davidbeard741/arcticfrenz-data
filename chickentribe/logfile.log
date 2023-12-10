@@ -2802,3 +2802,1405 @@
 2023-12-10 11:21:46,176 - INFO - Successfully processed account 9FxC7hP54dwaGMr9ATLjbFdXPB77bLzWYLCxuGWAeGeE.
 2023-12-10 11:21:46,181 - INFO - WebDriver closed for item 815
 2023-12-10 11:21:46,799 - INFO - Progress saved after processing 100 items.
+2023-12-10 12:25:40,408 - INFO - Starting new run. Appending to the existing logfile.
+2023-12-10 12:25:40,535 - INFO - Continuing from previously saved progress.
+2023-12-10 12:25:40,536 - INFO - Starting from index 2942: No 'holder data' field found.
+2023-12-10 12:25:40,536 - INFO - Processing item 1/100 with account: 5hgy2aG51c2nMMUifrPTuXHY4nSnFEv4s6vBAaHBJpWm (Global index: 2943/3407)
+2023-12-10 12:25:43,022 - INFO - https://solscan.io/token/5hgy2aG51c2nMMUifrPTuXHY4nSnFEv4s6vBAaHBJpWm#holders
+2023-12-10 12:25:44,023 - INFO - https://solscan.io/token/5hgy2aG51c2nMMUifrPTuXHY4nSnFEv4s6vBAaHBJpWm#txs
+2023-12-10 12:25:58,510 - INFO - Owner address found: 9xzjBXwmmY4Q6fLmBXd4BCtkwfGwPKPd6427J7HpyNYU
+2023-12-10 12:25:58,510 - INFO - Holder Address: 9xzjBXwmmY4Q6fLmBXd4BCtkwfGwPKPd6427J7HpyNYU
+2023-12-10 12:26:13,414 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:26:13,434 - INFO - Time successfully extracted: over 1 year ago
+2023-12-10 12:26:13,434 - INFO - Hold time extracted: over 1 year ago
+2023-12-10 12:26:13,434 - INFO - Closing the web driver...
+2023-12-10 12:26:13,498 - INFO - Web driver closed for time.
+2023-12-10 12:26:13,499 - ERROR - Error processing 5hgy2aG51c2nMMUifrPTuXHY4nSnFEv4s6vBAaHBJpWm: time data 'over 1 year ago' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-10 12:26:13,503 - INFO - WebDriver closed for item 2943
+2023-12-10 12:26:13,503 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:26:13,503 - INFO - Starting from index 17: Found invalid 'holder' value.
+2023-12-10 12:26:13,503 - INFO - Processing item 2/100 with account: BYXuzPV2whU3T5aqBizDCQRYwnPniX4byTvk6hELNspG (Global index: 18/3407)
+2023-12-10 12:26:15,256 - INFO - https://solscan.io/token/BYXuzPV2whU3T5aqBizDCQRYwnPniX4byTvk6hELNspG#holders
+2023-12-10 12:26:16,257 - INFO - https://solscan.io/token/BYXuzPV2whU3T5aqBizDCQRYwnPniX4byTvk6hELNspG#txs
+2023-12-10 12:26:30,336 - INFO - Owner address not found in the table.
+2023-12-10 12:26:30,336 - INFO - Holder Address: Address not found
+2023-12-10 12:26:49,020 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:26:49,035 - INFO - Time successfully extracted: 11-26-2021 04:54:45
+2023-12-10 12:26:49,035 - INFO - Hold time extracted: 11-26-2021 04:54:45
+2023-12-10 12:26:49,035 - INFO - Closing the web driver...
+2023-12-10 12:26:49,074 - INFO - Web driver closed for time.
+2023-12-10 12:26:49,074 - INFO - Successfully processed account BYXuzPV2whU3T5aqBizDCQRYwnPniX4byTvk6hELNspG.
+2023-12-10 12:26:49,079 - INFO - WebDriver closed for item 18
+2023-12-10 12:26:49,080 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:26:49,080 - INFO - Starting from index 27: Found invalid 'holder' value.
+2023-12-10 12:26:49,080 - INFO - Processing item 3/100 with account: Hi9FcDsovM5AvJKUo2RKiZhEpYPcvZGctt72wRHbKXjJ (Global index: 28/3407)
+2023-12-10 12:26:50,830 - INFO - https://solscan.io/token/Hi9FcDsovM5AvJKUo2RKiZhEpYPcvZGctt72wRHbKXjJ#holders
+2023-12-10 12:26:51,831 - INFO - https://solscan.io/token/Hi9FcDsovM5AvJKUo2RKiZhEpYPcvZGctt72wRHbKXjJ#txs
+2023-12-10 12:27:04,825 - INFO - Owner address not found in the table.
+2023-12-10 12:27:04,825 - INFO - Holder Address: Address not found
+2023-12-10 12:27:23,357 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:27:23,372 - INFO - Time successfully extracted: 11-26-2021 05:04:01
+2023-12-10 12:27:23,372 - INFO - Hold time extracted: 11-26-2021 05:04:01
+2023-12-10 12:27:23,372 - INFO - Closing the web driver...
+2023-12-10 12:27:23,410 - INFO - Web driver closed for time.
+2023-12-10 12:27:23,410 - INFO - Successfully processed account Hi9FcDsovM5AvJKUo2RKiZhEpYPcvZGctt72wRHbKXjJ.
+2023-12-10 12:27:23,413 - INFO - WebDriver closed for item 28
+2023-12-10 12:27:23,414 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:27:23,414 - INFO - Starting from index 29: Found invalid 'holder' value.
+2023-12-10 12:27:23,414 - INFO - Processing item 4/100 with account: 99jiyUXpBZdoB8PPUXFMNUFyk53XqrBsB5Uh1icZVMZN (Global index: 30/3407)
+2023-12-10 12:27:25,159 - INFO - https://solscan.io/token/99jiyUXpBZdoB8PPUXFMNUFyk53XqrBsB5Uh1icZVMZN#holders
+2023-12-10 12:27:26,160 - INFO - https://solscan.io/token/99jiyUXpBZdoB8PPUXFMNUFyk53XqrBsB5Uh1icZVMZN#txs
+2023-12-10 12:27:39,754 - INFO - Owner address not found in the table.
+2023-12-10 12:27:39,754 - INFO - Holder Address: Address not found
+2023-12-10 12:27:56,555 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:27:56,570 - INFO - Time successfully extracted: 11-26-2021 04:45:15
+2023-12-10 12:27:56,571 - INFO - Hold time extracted: 11-26-2021 04:45:15
+2023-12-10 12:27:56,571 - INFO - Closing the web driver...
+2023-12-10 12:27:56,618 - INFO - Web driver closed for time.
+2023-12-10 12:27:56,618 - INFO - Successfully processed account 99jiyUXpBZdoB8PPUXFMNUFyk53XqrBsB5Uh1icZVMZN.
+2023-12-10 12:27:56,620 - INFO - WebDriver closed for item 30
+2023-12-10 12:27:56,621 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:27:56,621 - INFO - Starting from index 30: Found invalid 'holder' value.
+2023-12-10 12:27:56,621 - INFO - Processing item 5/100 with account: 434QNkaogDgwNvHywr38GBSE2dpgdtkjeAepodycsKQP (Global index: 31/3407)
+2023-12-10 12:27:58,369 - INFO - https://solscan.io/token/434QNkaogDgwNvHywr38GBSE2dpgdtkjeAepodycsKQP#holders
+2023-12-10 12:27:59,370 - INFO - https://solscan.io/token/434QNkaogDgwNvHywr38GBSE2dpgdtkjeAepodycsKQP#txs
+2023-12-10 12:28:16,564 - INFO - Owner address not found in the table.
+2023-12-10 12:28:16,565 - INFO - Holder Address: Address not found
+2023-12-10 12:28:34,739 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:28:34,753 - INFO - Time successfully extracted: 11-26-2021 04:36:55
+2023-12-10 12:28:34,753 - INFO - Hold time extracted: 11-26-2021 04:36:55
+2023-12-10 12:28:34,754 - INFO - Closing the web driver...
+2023-12-10 12:28:34,800 - INFO - Web driver closed for time.
+2023-12-10 12:28:34,801 - INFO - Successfully processed account 434QNkaogDgwNvHywr38GBSE2dpgdtkjeAepodycsKQP.
+2023-12-10 12:28:34,803 - INFO - WebDriver closed for item 31
+2023-12-10 12:28:34,804 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:28:34,804 - INFO - Starting from index 36: Found invalid 'holder' value.
+2023-12-10 12:28:34,804 - INFO - Processing item 6/100 with account: 8Wd2xjDqigwMJxj7B1xEnTsUEBfuaVwjTopsTam3UxTq (Global index: 37/3407)
+2023-12-10 12:28:36,555 - INFO - https://solscan.io/token/8Wd2xjDqigwMJxj7B1xEnTsUEBfuaVwjTopsTam3UxTq#holders
+2023-12-10 12:28:37,556 - INFO - https://solscan.io/token/8Wd2xjDqigwMJxj7B1xEnTsUEBfuaVwjTopsTam3UxTq#txs
+2023-12-10 12:28:54,798 - INFO - Owner address not found in the table.
+2023-12-10 12:28:54,798 - INFO - Holder Address: Address not found
+2023-12-10 12:29:13,426 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:29:13,441 - INFO - Time successfully extracted: 11-26-2021 04:44:28
+2023-12-10 12:29:13,441 - INFO - Hold time extracted: 11-26-2021 04:44:28
+2023-12-10 12:29:13,441 - INFO - Closing the web driver...
+2023-12-10 12:29:13,479 - INFO - Web driver closed for time.
+2023-12-10 12:29:13,479 - INFO - Successfully processed account 8Wd2xjDqigwMJxj7B1xEnTsUEBfuaVwjTopsTam3UxTq.
+2023-12-10 12:29:13,482 - INFO - WebDriver closed for item 37
+2023-12-10 12:29:13,483 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:29:13,483 - INFO - Starting from index 44: Found invalid 'holder' value.
+2023-12-10 12:29:13,483 - INFO - Processing item 7/100 with account: GSvKQEs6kdbqRsUZLuYhQ8jT9953uShGbrscBpWQhjws (Global index: 45/3407)
+2023-12-10 12:29:15,230 - INFO - https://solscan.io/token/GSvKQEs6kdbqRsUZLuYhQ8jT9953uShGbrscBpWQhjws#holders
+2023-12-10 12:29:16,231 - INFO - https://solscan.io/token/GSvKQEs6kdbqRsUZLuYhQ8jT9953uShGbrscBpWQhjws#txs
+2023-12-10 12:29:28,817 - INFO - Owner address not found in the table.
+2023-12-10 12:29:28,817 - INFO - Holder Address: Address not found
+2023-12-10 12:29:43,426 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:29:43,441 - INFO - Time successfully extracted: 11-26-2021 05:02:11
+2023-12-10 12:29:43,441 - INFO - Hold time extracted: 11-26-2021 05:02:11
+2023-12-10 12:29:43,441 - INFO - Closing the web driver...
+2023-12-10 12:29:43,488 - INFO - Web driver closed for time.
+2023-12-10 12:29:43,488 - INFO - Successfully processed account GSvKQEs6kdbqRsUZLuYhQ8jT9953uShGbrscBpWQhjws.
+2023-12-10 12:29:43,491 - INFO - WebDriver closed for item 45
+2023-12-10 12:29:43,492 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:29:43,492 - INFO - Starting from index 54: Found invalid 'holder' value.
+2023-12-10 12:29:43,492 - INFO - Processing item 8/100 with account: B3sijcd5431cgSCLpXLz76uQuL6EtKhhWRTvmtjAXz8a (Global index: 55/3407)
+2023-12-10 12:29:45,237 - INFO - https://solscan.io/token/B3sijcd5431cgSCLpXLz76uQuL6EtKhhWRTvmtjAXz8a#holders
+2023-12-10 12:29:46,238 - INFO - https://solscan.io/token/B3sijcd5431cgSCLpXLz76uQuL6EtKhhWRTvmtjAXz8a#txs
+2023-12-10 12:30:00,102 - INFO - Owner address not found in the table.
+2023-12-10 12:30:00,102 - INFO - Holder Address: Address not found
+2023-12-10 12:30:14,842 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:30:14,859 - INFO - Time successfully extracted: 11-26-2021 04:54:09
+2023-12-10 12:30:14,859 - INFO - Hold time extracted: 11-26-2021 04:54:09
+2023-12-10 12:30:14,859 - INFO - Closing the web driver...
+2023-12-10 12:30:14,905 - INFO - Web driver closed for time.
+2023-12-10 12:30:14,905 - INFO - Successfully processed account B3sijcd5431cgSCLpXLz76uQuL6EtKhhWRTvmtjAXz8a.
+2023-12-10 12:30:14,908 - INFO - WebDriver closed for item 55
+2023-12-10 12:30:14,909 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:30:14,909 - INFO - Starting from index 65: Found invalid 'holder' value.
+2023-12-10 12:30:14,909 - INFO - Processing item 9/100 with account: ECLu1ErUAJb7oSKszzdQ2RbL1sxuq1DDwgnY3pv18t6B (Global index: 66/3407)
+2023-12-10 12:30:16,656 - INFO - https://solscan.io/token/ECLu1ErUAJb7oSKszzdQ2RbL1sxuq1DDwgnY3pv18t6B#holders
+2023-12-10 12:30:17,657 - INFO - https://solscan.io/token/ECLu1ErUAJb7oSKszzdQ2RbL1sxuq1DDwgnY3pv18t6B#txs
+2023-12-10 12:30:31,392 - INFO - Owner address not found in the table.
+2023-12-10 12:30:31,392 - INFO - Holder Address: Address not found
+2023-12-10 12:30:46,246 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:30:46,261 - INFO - Time successfully extracted: 11-26-2021 04:59:03
+2023-12-10 12:30:46,261 - INFO - Hold time extracted: 11-26-2021 04:59:03
+2023-12-10 12:30:46,261 - INFO - Closing the web driver...
+2023-12-10 12:30:46,308 - INFO - Web driver closed for time.
+2023-12-10 12:30:46,308 - INFO - Successfully processed account ECLu1ErUAJb7oSKszzdQ2RbL1sxuq1DDwgnY3pv18t6B.
+2023-12-10 12:30:46,311 - INFO - WebDriver closed for item 66
+2023-12-10 12:30:46,311 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:30:46,312 - INFO - Starting from index 69: Found invalid 'holder' value.
+2023-12-10 12:30:46,312 - INFO - Processing item 10/100 with account: 35yLwHtxLBCCay3msYzbnhrDoby6DDGYGDqqnXnKDeDp (Global index: 70/3407)
+2023-12-10 12:30:48,060 - INFO - https://solscan.io/token/35yLwHtxLBCCay3msYzbnhrDoby6DDGYGDqqnXnKDeDp#holders
+2023-12-10 12:30:49,061 - INFO - https://solscan.io/token/35yLwHtxLBCCay3msYzbnhrDoby6DDGYGDqqnXnKDeDp#txs
+2023-12-10 12:31:04,692 - INFO - Owner address not found in the table.
+2023-12-10 12:31:04,692 - INFO - Holder Address: Address not found
+2023-12-10 12:31:21,857 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:31:21,872 - INFO - Time successfully extracted: 11-26-2021 04:35:16
+2023-12-10 12:31:21,872 - INFO - Hold time extracted: 11-26-2021 04:35:16
+2023-12-10 12:31:21,872 - INFO - Closing the web driver...
+2023-12-10 12:31:21,919 - INFO - Web driver closed for time.
+2023-12-10 12:31:21,919 - INFO - Successfully processed account 35yLwHtxLBCCay3msYzbnhrDoby6DDGYGDqqnXnKDeDp.
+2023-12-10 12:31:21,922 - INFO - WebDriver closed for item 70
+2023-12-10 12:31:21,923 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:31:21,923 - INFO - Starting from index 73: Found invalid 'holder' value.
+2023-12-10 12:31:21,923 - INFO - Processing item 11/100 with account: Bkqacp1HKdEdFniDxtReg6LVHRGzRCrUxXMsqMkD7U52 (Global index: 74/3407)
+2023-12-10 12:31:23,668 - INFO - https://solscan.io/token/Bkqacp1HKdEdFniDxtReg6LVHRGzRCrUxXMsqMkD7U52#holders
+2023-12-10 12:31:24,669 - INFO - https://solscan.io/token/Bkqacp1HKdEdFniDxtReg6LVHRGzRCrUxXMsqMkD7U52#txs
+2023-12-10 12:31:42,174 - INFO - Owner address not found in the table.
+2023-12-10 12:31:42,174 - INFO - Holder Address: Address not found
+2023-12-10 12:32:01,698 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:32:01,713 - INFO - Time successfully extracted: 11-26-2021 04:55:21
+2023-12-10 12:32:01,713 - INFO - Hold time extracted: 11-26-2021 04:55:21
+2023-12-10 12:32:01,713 - INFO - Closing the web driver...
+2023-12-10 12:32:01,759 - INFO - Web driver closed for time.
+2023-12-10 12:32:01,759 - INFO - Successfully processed account Bkqacp1HKdEdFniDxtReg6LVHRGzRCrUxXMsqMkD7U52.
+2023-12-10 12:32:01,762 - INFO - WebDriver closed for item 74
+2023-12-10 12:32:01,763 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:32:01,763 - INFO - Starting from index 81: Found invalid 'holder' value.
+2023-12-10 12:32:01,763 - INFO - Processing item 12/100 with account: 2ZMXHQTtaaeM6fFYnoHUr4owMsWQPYYh5ATJUvYi3Qyr (Global index: 82/3407)
+2023-12-10 12:32:03,511 - INFO - https://solscan.io/token/2ZMXHQTtaaeM6fFYnoHUr4owMsWQPYYh5ATJUvYi3Qyr#holders
+2023-12-10 12:32:04,512 - INFO - https://solscan.io/token/2ZMXHQTtaaeM6fFYnoHUr4owMsWQPYYh5ATJUvYi3Qyr#txs
+2023-12-10 12:32:17,949 - INFO - Owner address not found in the table.
+2023-12-10 12:32:17,949 - INFO - Holder Address: Address not found
+2023-12-10 12:32:37,188 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:32:37,204 - INFO - Time successfully extracted: 11-26-2021 04:34:36
+2023-12-10 12:32:37,204 - INFO - Hold time extracted: 11-26-2021 04:34:36
+2023-12-10 12:32:37,204 - INFO - Closing the web driver...
+2023-12-10 12:32:37,250 - INFO - Web driver closed for time.
+2023-12-10 12:32:37,251 - INFO - Successfully processed account 2ZMXHQTtaaeM6fFYnoHUr4owMsWQPYYh5ATJUvYi3Qyr.
+2023-12-10 12:32:37,253 - INFO - WebDriver closed for item 82
+2023-12-10 12:32:37,254 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:32:37,254 - INFO - Starting from index 87: Found invalid 'holder' value.
+2023-12-10 12:32:37,254 - INFO - Processing item 13/100 with account: 5oMjpFT9mmXw7QHSaxYvH8kWq9YbM8mHqx59XVfvUB93 (Global index: 88/3407)
+2023-12-10 12:32:39,005 - INFO - https://solscan.io/token/5oMjpFT9mmXw7QHSaxYvH8kWq9YbM8mHqx59XVfvUB93#holders
+2023-12-10 12:32:40,006 - INFO - https://solscan.io/token/5oMjpFT9mmXw7QHSaxYvH8kWq9YbM8mHqx59XVfvUB93#txs
+2023-12-10 12:32:54,210 - INFO - Owner address not found in the table.
+2023-12-10 12:32:54,210 - INFO - Holder Address: Address not found
+2023-12-10 12:33:12,407 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:33:12,422 - INFO - Time successfully extracted: 11-26-2021 04:39:11
+2023-12-10 12:33:12,422 - INFO - Hold time extracted: 11-26-2021 04:39:11
+2023-12-10 12:33:12,422 - INFO - Closing the web driver...
+2023-12-10 12:33:12,470 - INFO - Web driver closed for time.
+2023-12-10 12:33:12,470 - INFO - Successfully processed account 5oMjpFT9mmXw7QHSaxYvH8kWq9YbM8mHqx59XVfvUB93.
+2023-12-10 12:33:12,473 - INFO - WebDriver closed for item 88
+2023-12-10 12:33:12,473 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:33:12,474 - INFO - Starting from index 124: Found invalid 'holder' value.
+2023-12-10 12:33:12,474 - INFO - Processing item 14/100 with account: 2EqH4qscScZtiA8WgrXwAXd3iZkqYzkWSQNGNh2YLbwq (Global index: 125/3407)
+2023-12-10 12:33:14,221 - INFO - https://solscan.io/token/2EqH4qscScZtiA8WgrXwAXd3iZkqYzkWSQNGNh2YLbwq#holders
+2023-12-10 12:33:15,222 - INFO - https://solscan.io/token/2EqH4qscScZtiA8WgrXwAXd3iZkqYzkWSQNGNh2YLbwq#txs
+2023-12-10 12:33:28,836 - INFO - Owner address not found in the table.
+2023-12-10 12:33:28,836 - INFO - Holder Address: Address not found
+2023-12-10 12:33:43,370 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:33:43,385 - INFO - Time successfully extracted: 11-26-2021 04:34:12
+2023-12-10 12:33:43,385 - INFO - Hold time extracted: 11-26-2021 04:34:12
+2023-12-10 12:33:43,385 - INFO - Closing the web driver...
+2023-12-10 12:33:43,424 - INFO - Web driver closed for time.
+2023-12-10 12:33:43,424 - INFO - Successfully processed account 2EqH4qscScZtiA8WgrXwAXd3iZkqYzkWSQNGNh2YLbwq.
+2023-12-10 12:33:43,427 - INFO - WebDriver closed for item 125
+2023-12-10 12:33:43,428 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:33:43,428 - INFO - Starting from index 128: Found invalid 'holder' value.
+2023-12-10 12:33:43,428 - INFO - Processing item 15/100 with account: HZedHSWZ9e7ff4ULp6nbtKwQ4r5S9jbe1Ucy7PYHaRJG (Global index: 129/3407)
+2023-12-10 12:33:45,176 - INFO - https://solscan.io/token/HZedHSWZ9e7ff4ULp6nbtKwQ4r5S9jbe1Ucy7PYHaRJG#holders
+2023-12-10 12:33:46,177 - INFO - https://solscan.io/token/HZedHSWZ9e7ff4ULp6nbtKwQ4r5S9jbe1Ucy7PYHaRJG#txs
+2023-12-10 12:34:04,049 - INFO - Owner address not found in the table.
+2023-12-10 12:34:04,049 - INFO - Holder Address: Address not found
+2023-12-10 12:34:18,101 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:34:18,149 - INFO - Time successfully extracted: 11-26-2021 05:03:39
+2023-12-10 12:34:18,149 - INFO - Hold time extracted: 11-26-2021 05:03:39
+2023-12-10 12:34:18,149 - INFO - Closing the web driver...
+2023-12-10 12:34:18,197 - INFO - Web driver closed for time.
+2023-12-10 12:34:18,197 - INFO - Successfully processed account HZedHSWZ9e7ff4ULp6nbtKwQ4r5S9jbe1Ucy7PYHaRJG.
+2023-12-10 12:34:18,200 - INFO - WebDriver closed for item 129
+2023-12-10 12:34:18,201 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:34:18,201 - INFO - Starting from index 133: Found invalid 'holder' value.
+2023-12-10 12:34:18,201 - INFO - Processing item 16/100 with account: AYgxAjgscAXtJnYJxnaX32s1NNS67S99gL4p7j3znEk4 (Global index: 134/3407)
+2023-12-10 12:34:19,954 - INFO - https://solscan.io/token/AYgxAjgscAXtJnYJxnaX32s1NNS67S99gL4p7j3znEk4#holders
+2023-12-10 12:34:20,955 - INFO - https://solscan.io/token/AYgxAjgscAXtJnYJxnaX32s1NNS67S99gL4p7j3znEk4#txs
+2023-12-10 12:34:34,740 - INFO - Owner address not found in the table.
+2023-12-10 12:34:34,741 - INFO - Holder Address: Address not found
+2023-12-10 12:34:53,822 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:34:53,838 - INFO - Time successfully extracted: 11-26-2021 04:53:43
+2023-12-10 12:34:53,838 - INFO - Hold time extracted: 11-26-2021 04:53:43
+2023-12-10 12:34:53,838 - INFO - Closing the web driver...
+2023-12-10 12:34:53,884 - INFO - Web driver closed for time.
+2023-12-10 12:34:53,884 - INFO - Successfully processed account AYgxAjgscAXtJnYJxnaX32s1NNS67S99gL4p7j3znEk4.
+2023-12-10 12:34:53,887 - INFO - WebDriver closed for item 134
+2023-12-10 12:34:53,888 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:34:53,888 - INFO - Starting from index 149: Found invalid 'holder' value.
+2023-12-10 12:34:53,888 - INFO - Processing item 17/100 with account: ExjSwXX1UkJ6QncVsnan6KCowpnRWqB5arB57pozHYUe (Global index: 150/3407)
+2023-12-10 12:34:55,636 - INFO - https://solscan.io/token/ExjSwXX1UkJ6QncVsnan6KCowpnRWqB5arB57pozHYUe#holders
+2023-12-10 12:34:56,637 - INFO - https://solscan.io/token/ExjSwXX1UkJ6QncVsnan6KCowpnRWqB5arB57pozHYUe#txs
+2023-12-10 12:35:10,733 - INFO - Owner address not found in the table.
+2023-12-10 12:35:10,733 - INFO - Holder Address: Address not found
+2023-12-10 12:35:27,347 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:35:27,362 - INFO - Time successfully extracted: 11-26-2021 05:00:10
+2023-12-10 12:35:27,362 - INFO - Hold time extracted: 11-26-2021 05:00:10
+2023-12-10 12:35:27,362 - INFO - Closing the web driver...
+2023-12-10 12:35:27,409 - INFO - Web driver closed for time.
+2023-12-10 12:35:27,409 - INFO - Successfully processed account ExjSwXX1UkJ6QncVsnan6KCowpnRWqB5arB57pozHYUe.
+2023-12-10 12:35:27,412 - INFO - WebDriver closed for item 150
+2023-12-10 12:35:27,413 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:35:27,413 - INFO - Starting from index 155: Found invalid 'holder' value.
+2023-12-10 12:35:27,413 - INFO - Processing item 18/100 with account: GK1u5D7YUvGLXFULffAvK1HjR4m7R9ujY3JhFNYne9HP (Global index: 156/3407)
+2023-12-10 12:35:29,165 - INFO - https://solscan.io/token/GK1u5D7YUvGLXFULffAvK1HjR4m7R9ujY3JhFNYne9HP#holders
+2023-12-10 12:35:30,167 - INFO - https://solscan.io/token/GK1u5D7YUvGLXFULffAvK1HjR4m7R9ujY3JhFNYne9HP#txs
+2023-12-10 12:35:47,821 - INFO - Owner address not found in the table.
+2023-12-10 12:35:47,821 - INFO - Holder Address: Address not found
+2023-12-10 12:36:06,547 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:36:06,562 - INFO - Time successfully extracted: 11-26-2021 05:02:03
+2023-12-10 12:36:06,562 - INFO - Hold time extracted: 11-26-2021 05:02:03
+2023-12-10 12:36:06,562 - INFO - Closing the web driver...
+2023-12-10 12:36:06,600 - INFO - Web driver closed for time.
+2023-12-10 12:36:06,601 - INFO - Successfully processed account GK1u5D7YUvGLXFULffAvK1HjR4m7R9ujY3JhFNYne9HP.
+2023-12-10 12:36:06,603 - INFO - WebDriver closed for item 156
+2023-12-10 12:36:06,604 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:36:06,604 - INFO - Starting from index 156: Found invalid 'holder' value.
+2023-12-10 12:36:06,604 - INFO - Processing item 19/100 with account: 8XgwBw26NCjTBcyMqG4Y6nJoSdJwRhQNsM3ryvNYXtND (Global index: 157/3407)
+2023-12-10 12:36:08,364 - INFO - https://solscan.io/token/8XgwBw26NCjTBcyMqG4Y6nJoSdJwRhQNsM3ryvNYXtND#holders
+2023-12-10 12:36:09,366 - INFO - https://solscan.io/token/8XgwBw26NCjTBcyMqG4Y6nJoSdJwRhQNsM3ryvNYXtND#txs
+2023-12-10 12:36:22,960 - INFO - Owner address not found in the table.
+2023-12-10 12:36:22,960 - INFO - Holder Address: Address not found
+2023-12-10 12:36:37,148 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:36:37,163 - INFO - Time successfully extracted: 11-26-2021 04:44:32
+2023-12-10 12:36:37,163 - INFO - Hold time extracted: 11-26-2021 04:44:32
+2023-12-10 12:36:37,163 - INFO - Closing the web driver...
+2023-12-10 12:36:37,201 - INFO - Web driver closed for time.
+2023-12-10 12:36:37,202 - INFO - Successfully processed account 8XgwBw26NCjTBcyMqG4Y6nJoSdJwRhQNsM3ryvNYXtND.
+2023-12-10 12:36:37,204 - INFO - WebDriver closed for item 157
+2023-12-10 12:36:37,205 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:36:37,205 - INFO - Starting from index 163: Found invalid 'holder' value.
+2023-12-10 12:36:37,205 - INFO - Processing item 20/100 with account: ANLdKG9h7L5sXXWJU3BGV69BSHYptTMRPHtTkrgBAznC (Global index: 164/3407)
+2023-12-10 12:36:38,955 - INFO - https://solscan.io/token/ANLdKG9h7L5sXXWJU3BGV69BSHYptTMRPHtTkrgBAznC#holders
+2023-12-10 12:36:39,956 - INFO - https://solscan.io/token/ANLdKG9h7L5sXXWJU3BGV69BSHYptTMRPHtTkrgBAznC#txs
+2023-12-10 12:36:57,803 - INFO - Owner address not found in the table.
+2023-12-10 12:36:57,803 - INFO - Holder Address: Address not found
+2023-12-10 12:37:12,286 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:37:12,302 - INFO - Time successfully extracted: 11-26-2021 04:50:12
+2023-12-10 12:37:12,302 - INFO - Hold time extracted: 11-26-2021 04:50:12
+2023-12-10 12:37:12,302 - INFO - Closing the web driver...
+2023-12-10 12:37:12,341 - INFO - Web driver closed for time.
+2023-12-10 12:37:12,341 - INFO - Successfully processed account ANLdKG9h7L5sXXWJU3BGV69BSHYptTMRPHtTkrgBAznC.
+2023-12-10 12:37:12,344 - INFO - WebDriver closed for item 164
+2023-12-10 12:37:12,345 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:37:12,345 - INFO - Starting from index 180: Found invalid 'holder' value.
+2023-12-10 12:37:12,345 - INFO - Processing item 21/100 with account: HzPJ2aZLzyYXQbQ36Y2Ut76HMUUQBRX4kxuS3LrFKaC2 (Global index: 181/3407)
+2023-12-10 12:37:14,095 - INFO - https://solscan.io/token/HzPJ2aZLzyYXQbQ36Y2Ut76HMUUQBRX4kxuS3LrFKaC2#holders
+2023-12-10 12:37:15,096 - INFO - https://solscan.io/token/HzPJ2aZLzyYXQbQ36Y2Ut76HMUUQBRX4kxuS3LrFKaC2#txs
+2023-12-10 12:37:32,845 - INFO - Owner address not found in the table.
+2023-12-10 12:37:32,845 - INFO - Holder Address: Address not found
+2023-12-10 12:37:47,610 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:37:47,625 - INFO - Time successfully extracted: 11-26-2021 05:04:37
+2023-12-10 12:37:47,625 - INFO - Hold time extracted: 11-26-2021 05:04:37
+2023-12-10 12:37:47,625 - INFO - Closing the web driver...
+2023-12-10 12:37:47,672 - INFO - Web driver closed for time.
+2023-12-10 12:37:47,673 - INFO - Successfully processed account HzPJ2aZLzyYXQbQ36Y2Ut76HMUUQBRX4kxuS3LrFKaC2.
+2023-12-10 12:37:47,675 - INFO - WebDriver closed for item 181
+2023-12-10 12:37:47,676 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:37:47,676 - INFO - Starting from index 181: Found invalid 'holder' value.
+2023-12-10 12:37:47,676 - INFO - Processing item 22/100 with account: 5tJb18kG5EDKMuVKHn7MJzq9dkSBK4zRsx3JQKNjdaoC (Global index: 182/3407)
+2023-12-10 12:37:49,427 - INFO - https://solscan.io/token/5tJb18kG5EDKMuVKHn7MJzq9dkSBK4zRsx3JQKNjdaoC#holders
+2023-12-10 12:37:50,428 - INFO - https://solscan.io/token/5tJb18kG5EDKMuVKHn7MJzq9dkSBK4zRsx3JQKNjdaoC#txs
+2023-12-10 12:38:03,744 - INFO - Owner address not found in the table.
+2023-12-10 12:38:03,744 - INFO - Holder Address: Address not found
+2023-12-10 12:38:21,910 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:38:21,925 - INFO - Time successfully extracted: 11-26-2021 04:39:19
+2023-12-10 12:38:21,925 - INFO - Hold time extracted: 11-26-2021 04:39:19
+2023-12-10 12:38:21,925 - INFO - Closing the web driver...
+2023-12-10 12:38:21,971 - INFO - Web driver closed for time.
+2023-12-10 12:38:21,971 - INFO - Successfully processed account 5tJb18kG5EDKMuVKHn7MJzq9dkSBK4zRsx3JQKNjdaoC.
+2023-12-10 12:38:21,974 - INFO - WebDriver closed for item 182
+2023-12-10 12:38:21,975 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:38:21,975 - INFO - Starting from index 183: Found invalid 'holder' value.
+2023-12-10 12:38:21,975 - INFO - Processing item 23/100 with account: BhqFqagW3rTCeTEN1wCHbAMV7eP9QF6rvfkhDikQF2mJ (Global index: 184/3407)
+2023-12-10 12:38:23,723 - INFO - https://solscan.io/token/BhqFqagW3rTCeTEN1wCHbAMV7eP9QF6rvfkhDikQF2mJ#holders
+2023-12-10 12:38:24,724 - INFO - https://solscan.io/token/BhqFqagW3rTCeTEN1wCHbAMV7eP9QF6rvfkhDikQF2mJ#txs
+2023-12-10 12:38:38,568 - INFO - Owner address not found in the table.
+2023-12-10 12:38:38,568 - INFO - Holder Address: Address not found
+2023-12-10 12:38:53,798 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:38:53,812 - INFO - Time successfully extracted: 11-26-2021 04:55:17
+2023-12-10 12:38:53,812 - INFO - Hold time extracted: 11-26-2021 04:55:17
+2023-12-10 12:38:53,812 - INFO - Closing the web driver...
+2023-12-10 12:38:53,850 - INFO - Web driver closed for time.
+2023-12-10 12:38:53,850 - INFO - Successfully processed account BhqFqagW3rTCeTEN1wCHbAMV7eP9QF6rvfkhDikQF2mJ.
+2023-12-10 12:38:53,853 - INFO - WebDriver closed for item 184
+2023-12-10 12:38:53,854 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:38:53,854 - INFO - Starting from index 184: Found invalid 'holder' value.
+2023-12-10 12:38:53,854 - INFO - Processing item 24/100 with account: 3LsQWTUVkoJy3ToAoAREFSfMwY4fmseVqSSw93iiEobc (Global index: 185/3407)
+2023-12-10 12:38:55,605 - INFO - https://solscan.io/token/3LsQWTUVkoJy3ToAoAREFSfMwY4fmseVqSSw93iiEobc#holders
+2023-12-10 12:38:56,606 - INFO - https://solscan.io/token/3LsQWTUVkoJy3ToAoAREFSfMwY4fmseVqSSw93iiEobc#txs
+2023-12-10 12:39:12,439 - INFO - Owner address not found in the table.
+2023-12-10 12:39:12,439 - INFO - Holder Address: Address not found
+2023-12-10 12:39:29,563 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:39:29,578 - INFO - Time successfully extracted: 11-26-2021 04:35:39
+2023-12-10 12:39:29,578 - INFO - Hold time extracted: 11-26-2021 04:35:39
+2023-12-10 12:39:29,578 - INFO - Closing the web driver...
+2023-12-10 12:39:29,617 - INFO - Web driver closed for time.
+2023-12-10 12:39:29,617 - INFO - Successfully processed account 3LsQWTUVkoJy3ToAoAREFSfMwY4fmseVqSSw93iiEobc.
+2023-12-10 12:39:29,620 - INFO - WebDriver closed for item 185
+2023-12-10 12:39:29,620 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:39:29,621 - INFO - Starting from index 186: Found invalid 'holder' value.
+2023-12-10 12:39:29,621 - INFO - Processing item 25/100 with account: 3y8j1vRSnbijWADEvw7wVNB58kBqDk2ukpA3QYDmwHdb (Global index: 187/3407)
+2023-12-10 12:39:31,371 - INFO - https://solscan.io/token/3y8j1vRSnbijWADEvw7wVNB58kBqDk2ukpA3QYDmwHdb#holders
+2023-12-10 12:39:32,372 - INFO - https://solscan.io/token/3y8j1vRSnbijWADEvw7wVNB58kBqDk2ukpA3QYDmwHdb#txs
+2023-12-10 12:39:47,983 - INFO - Owner address not found in the table.
+2023-12-10 12:39:47,983 - INFO - Holder Address: Address not found
+2023-12-10 12:40:04,590 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:40:04,605 - INFO - Time successfully extracted: 11-26-2021 05:43:57
+2023-12-10 12:40:04,605 - INFO - Hold time extracted: 11-26-2021 05:43:57
+2023-12-10 12:40:04,605 - INFO - Closing the web driver...
+2023-12-10 12:40:04,643 - INFO - Web driver closed for time.
+2023-12-10 12:40:04,643 - INFO - Successfully processed account 3y8j1vRSnbijWADEvw7wVNB58kBqDk2ukpA3QYDmwHdb.
+2023-12-10 12:40:04,646 - INFO - WebDriver closed for item 187
+2023-12-10 12:40:04,647 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:40:04,647 - INFO - Starting from index 199: Found invalid 'holder' value.
+2023-12-10 12:40:04,647 - INFO - Processing item 26/100 with account: 8FMuSmXNJ6LasqxmLQ5dY3MV7E5bSJDNBbt3gTy2WSEX (Global index: 200/3407)
+2023-12-10 12:40:06,399 - INFO - https://solscan.io/token/8FMuSmXNJ6LasqxmLQ5dY3MV7E5bSJDNBbt3gTy2WSEX#holders
+2023-12-10 12:40:07,400 - INFO - https://solscan.io/token/8FMuSmXNJ6LasqxmLQ5dY3MV7E5bSJDNBbt3gTy2WSEX#txs
+2023-12-10 12:40:25,474 - INFO - Owner address not found in the table.
+2023-12-10 12:40:25,474 - INFO - Holder Address: Address not found
+2023-12-10 12:40:43,521 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:40:43,536 - INFO - Time successfully extracted: 11-26-2021 04:44:12
+2023-12-10 12:40:43,536 - INFO - Hold time extracted: 11-26-2021 04:44:12
+2023-12-10 12:40:43,536 - INFO - Closing the web driver...
+2023-12-10 12:40:43,574 - INFO - Web driver closed for time.
+2023-12-10 12:40:43,574 - INFO - Successfully processed account 8FMuSmXNJ6LasqxmLQ5dY3MV7E5bSJDNBbt3gTy2WSEX.
+2023-12-10 12:40:43,577 - INFO - WebDriver closed for item 200
+2023-12-10 12:40:43,578 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:40:43,578 - INFO - Starting from index 209: Found invalid 'holder' value.
+2023-12-10 12:40:43,578 - INFO - Processing item 27/100 with account: FiiihyH3u5s4BZVz5xs8gQjwG8ov5YW5DGv8hTnbG6VD (Global index: 210/3407)
+2023-12-10 12:40:45,327 - INFO - https://solscan.io/token/FiiihyH3u5s4BZVz5xs8gQjwG8ov5YW5DGv8hTnbG6VD#holders
+2023-12-10 12:40:46,328 - INFO - https://solscan.io/token/FiiihyH3u5s4BZVz5xs8gQjwG8ov5YW5DGv8hTnbG6VD#txs
+2023-12-10 12:41:03,320 - INFO - Owner address not found in the table.
+2023-12-10 12:41:03,320 - INFO - Holder Address: Address not found
+2023-12-10 12:41:20,037 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:41:20,052 - INFO - Time successfully extracted: 11-26-2021 05:01:21
+2023-12-10 12:41:20,052 - INFO - Hold time extracted: 11-26-2021 05:01:21
+2023-12-10 12:41:20,052 - INFO - Closing the web driver...
+2023-12-10 12:41:20,090 - INFO - Web driver closed for time.
+2023-12-10 12:41:20,090 - INFO - Successfully processed account FiiihyH3u5s4BZVz5xs8gQjwG8ov5YW5DGv8hTnbG6VD.
+2023-12-10 12:41:20,093 - INFO - WebDriver closed for item 210
+2023-12-10 12:41:20,094 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:41:20,094 - INFO - Starting from index 222: Found invalid 'holder' value.
+2023-12-10 12:41:20,094 - INFO - Processing item 28/100 with account: Ck427QgTdVjP7NrqGp2Ea1ftZejUgyhS3whjkFpwiQTf (Global index: 223/3407)
+2023-12-10 12:41:21,841 - INFO - https://solscan.io/token/Ck427QgTdVjP7NrqGp2Ea1ftZejUgyhS3whjkFpwiQTf#holders
+2023-12-10 12:41:22,842 - INFO - https://solscan.io/token/Ck427QgTdVjP7NrqGp2Ea1ftZejUgyhS3whjkFpwiQTf#txs
+2023-12-10 12:41:40,706 - INFO - Owner address not found in the table.
+2023-12-10 12:41:40,706 - INFO - Holder Address: Address not found
+2023-12-10 12:41:54,736 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:41:54,752 - INFO - Time successfully extracted: 11-26-2021 04:56:30
+2023-12-10 12:41:54,752 - INFO - Hold time extracted: 11-26-2021 04:56:30
+2023-12-10 12:41:54,752 - INFO - Closing the web driver...
+2023-12-10 12:41:54,791 - INFO - Web driver closed for time.
+2023-12-10 12:41:54,791 - INFO - Successfully processed account Ck427QgTdVjP7NrqGp2Ea1ftZejUgyhS3whjkFpwiQTf.
+2023-12-10 12:41:54,794 - INFO - WebDriver closed for item 223
+2023-12-10 12:41:54,795 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:41:54,795 - INFO - Starting from index 227: Found invalid 'holder' value.
+2023-12-10 12:41:54,795 - INFO - Processing item 29/100 with account: 76NMNdBWm6As93bPV7BuE7HTwVjY8eqKAZB2dESRGpxN (Global index: 228/3407)
+2023-12-10 12:41:56,544 - INFO - https://solscan.io/token/76NMNdBWm6As93bPV7BuE7HTwVjY8eqKAZB2dESRGpxN#holders
+2023-12-10 12:41:57,545 - INFO - https://solscan.io/token/76NMNdBWm6As93bPV7BuE7HTwVjY8eqKAZB2dESRGpxN#txs
+2023-12-10 12:42:16,733 - INFO - Owner address not found in the table.
+2023-12-10 12:42:16,733 - INFO - Holder Address: Address not found
+2023-12-10 12:42:31,641 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:42:31,656 - INFO - Time successfully extracted: 11-26-2021 04:42:14
+2023-12-10 12:42:31,656 - INFO - Hold time extracted: 11-26-2021 04:42:14
+2023-12-10 12:42:31,656 - INFO - Closing the web driver...
+2023-12-10 12:42:31,694 - INFO - Web driver closed for time.
+2023-12-10 12:42:31,695 - INFO - Successfully processed account 76NMNdBWm6As93bPV7BuE7HTwVjY8eqKAZB2dESRGpxN.
+2023-12-10 12:42:31,697 - INFO - WebDriver closed for item 228
+2023-12-10 12:42:31,698 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:42:31,698 - INFO - Starting from index 242: Found invalid 'holder' value.
+2023-12-10 12:42:31,698 - INFO - Processing item 30/100 with account: 93kNvFwauXbMvSi1L6bjKBiuyQDEEAYJa3b7Ep8ouEGe (Global index: 243/3407)
+2023-12-10 12:42:33,454 - INFO - https://solscan.io/token/93kNvFwauXbMvSi1L6bjKBiuyQDEEAYJa3b7Ep8ouEGe#holders
+2023-12-10 12:42:34,456 - INFO - https://solscan.io/token/93kNvFwauXbMvSi1L6bjKBiuyQDEEAYJa3b7Ep8ouEGe#txs
+2023-12-10 12:42:48,017 - INFO - Owner address not found in the table.
+2023-12-10 12:42:48,017 - INFO - Holder Address: Address not found
+2023-12-10 12:43:05,462 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:43:05,477 - INFO - Time successfully extracted: 11-26-2021 04:45:12
+2023-12-10 12:43:05,477 - INFO - Hold time extracted: 11-26-2021 04:45:12
+2023-12-10 12:43:05,477 - INFO - Closing the web driver...
+2023-12-10 12:43:05,523 - INFO - Web driver closed for time.
+2023-12-10 12:43:05,523 - INFO - Successfully processed account 93kNvFwauXbMvSi1L6bjKBiuyQDEEAYJa3b7Ep8ouEGe.
+2023-12-10 12:43:05,526 - INFO - WebDriver closed for item 243
+2023-12-10 12:43:05,527 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:43:05,527 - INFO - Starting from index 267: Found invalid 'holder' value.
+2023-12-10 12:43:05,527 - INFO - Processing item 31/100 with account: 5jgjZaZErWntgFeXjbUYxT5ZNb4WXB27gTZ8nJuUzHR3 (Global index: 268/3407)
+2023-12-10 12:43:07,283 - INFO - https://solscan.io/token/5jgjZaZErWntgFeXjbUYxT5ZNb4WXB27gTZ8nJuUzHR3#holders
+2023-12-10 12:43:08,284 - INFO - https://solscan.io/token/5jgjZaZErWntgFeXjbUYxT5ZNb4WXB27gTZ8nJuUzHR3#txs
+2023-12-10 12:43:21,147 - INFO - Owner address not found in the table.
+2023-12-10 12:43:21,147 - INFO - Holder Address: Address not found
+2023-12-10 12:43:36,418 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:43:36,434 - INFO - Time successfully extracted: 11-26-2021 04:39:06
+2023-12-10 12:43:36,434 - INFO - Hold time extracted: 11-26-2021 04:39:06
+2023-12-10 12:43:36,434 - INFO - Closing the web driver...
+2023-12-10 12:43:36,472 - INFO - Web driver closed for time.
+2023-12-10 12:43:36,472 - INFO - Successfully processed account 5jgjZaZErWntgFeXjbUYxT5ZNb4WXB27gTZ8nJuUzHR3.
+2023-12-10 12:43:36,475 - INFO - WebDriver closed for item 268
+2023-12-10 12:43:36,476 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:43:36,476 - INFO - Starting from index 279: Found invalid 'holder' value.
+2023-12-10 12:43:36,476 - INFO - Processing item 32/100 with account: 9XV7HPraCuYsHKScWs7pmqZNQfEQJp2iSzc8VsRxbi1H (Global index: 280/3407)
+2023-12-10 12:43:38,226 - INFO - https://solscan.io/token/9XV7HPraCuYsHKScWs7pmqZNQfEQJp2iSzc8VsRxbi1H#holders
+2023-12-10 12:43:39,228 - INFO - https://solscan.io/token/9XV7HPraCuYsHKScWs7pmqZNQfEQJp2iSzc8VsRxbi1H#txs
+2023-12-10 12:43:53,446 - INFO - Owner address not found in the table.
+2023-12-10 12:43:53,446 - INFO - Holder Address: Address not found
+2023-12-10 12:44:12,799 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:44:12,814 - INFO - Time successfully extracted: 11-26-2021 04:47:49
+2023-12-10 12:44:12,814 - INFO - Hold time extracted: 11-26-2021 04:47:49
+2023-12-10 12:44:12,814 - INFO - Closing the web driver...
+2023-12-10 12:44:12,852 - INFO - Web driver closed for time.
+2023-12-10 12:44:12,852 - INFO - Successfully processed account 9XV7HPraCuYsHKScWs7pmqZNQfEQJp2iSzc8VsRxbi1H.
+2023-12-10 12:44:12,855 - INFO - WebDriver closed for item 280
+2023-12-10 12:44:12,856 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:44:12,856 - INFO - Starting from index 287: Found invalid 'holder' value.
+2023-12-10 12:44:12,856 - INFO - Processing item 33/100 with account: GfwkW5EDiYMyrPSd9pmZJhrQzrmVuWR2cnA18k2uGjEh (Global index: 288/3407)
+2023-12-10 12:44:14,607 - INFO - https://solscan.io/token/GfwkW5EDiYMyrPSd9pmZJhrQzrmVuWR2cnA18k2uGjEh#holders
+2023-12-10 12:44:15,608 - INFO - https://solscan.io/token/GfwkW5EDiYMyrPSd9pmZJhrQzrmVuWR2cnA18k2uGjEh#txs
+2023-12-10 12:44:32,423 - INFO - Owner address not found in the table.
+2023-12-10 12:44:32,423 - INFO - Holder Address: Address not found
+2023-12-10 12:44:49,331 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:44:49,345 - INFO - Time successfully extracted: 11-26-2021 05:44:58
+2023-12-10 12:44:49,345 - INFO - Hold time extracted: 11-26-2021 05:44:58
+2023-12-10 12:44:49,345 - INFO - Closing the web driver...
+2023-12-10 12:44:49,383 - INFO - Web driver closed for time.
+2023-12-10 12:44:49,384 - INFO - Successfully processed account GfwkW5EDiYMyrPSd9pmZJhrQzrmVuWR2cnA18k2uGjEh.
+2023-12-10 12:44:49,386 - INFO - WebDriver closed for item 288
+2023-12-10 12:44:49,387 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:44:49,387 - INFO - Starting from index 292: Found invalid 'holder' value.
+2023-12-10 12:44:49,387 - INFO - Processing item 34/100 with account: 7aA399aeKkw5pzR4YzyvFqeKjBNPdxB6pHBVJGdtprWc (Global index: 293/3407)
+2023-12-10 12:44:51,135 - INFO - https://solscan.io/token/7aA399aeKkw5pzR4YzyvFqeKjBNPdxB6pHBVJGdtprWc#holders
+2023-12-10 12:44:52,136 - INFO - https://solscan.io/token/7aA399aeKkw5pzR4YzyvFqeKjBNPdxB6pHBVJGdtprWc#txs
+2023-12-10 12:45:06,193 - INFO - Owner address not found in the table.
+2023-12-10 12:45:06,193 - INFO - Holder Address: Address not found
+2023-12-10 12:45:23,123 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:45:23,137 - INFO - Time successfully extracted: 11-26-2021 04:42:52
+2023-12-10 12:45:23,137 - INFO - Hold time extracted: 11-26-2021 04:42:52
+2023-12-10 12:45:23,137 - INFO - Closing the web driver...
+2023-12-10 12:45:23,184 - INFO - Web driver closed for time.
+2023-12-10 12:45:23,184 - INFO - Successfully processed account 7aA399aeKkw5pzR4YzyvFqeKjBNPdxB6pHBVJGdtprWc.
+2023-12-10 12:45:23,187 - INFO - WebDriver closed for item 293
+2023-12-10 12:45:23,188 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:45:23,188 - INFO - Starting from index 300: Found invalid 'holder' value.
+2023-12-10 12:45:23,188 - INFO - Processing item 35/100 with account: 3VjvGm9cDsKFsJWa5c55Lgbn2F7NHNiLFppkaLQpfBbZ (Global index: 301/3407)
+2023-12-10 12:45:24,935 - INFO - https://solscan.io/token/3VjvGm9cDsKFsJWa5c55Lgbn2F7NHNiLFppkaLQpfBbZ#holders
+2023-12-10 12:45:25,936 - INFO - https://solscan.io/token/3VjvGm9cDsKFsJWa5c55Lgbn2F7NHNiLFppkaLQpfBbZ#txs
+2023-12-10 12:45:44,163 - INFO - Owner address not found in the table.
+2023-12-10 12:45:44,163 - INFO - Holder Address: Address not found
+2023-12-10 12:45:58,556 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:45:58,572 - INFO - Time successfully extracted: 11-26-2021 04:36:01
+2023-12-10 12:45:58,572 - INFO - Hold time extracted: 11-26-2021 04:36:01
+2023-12-10 12:45:58,572 - INFO - Closing the web driver...
+2023-12-10 12:45:58,610 - INFO - Web driver closed for time.
+2023-12-10 12:45:58,610 - INFO - Successfully processed account 3VjvGm9cDsKFsJWa5c55Lgbn2F7NHNiLFppkaLQpfBbZ.
+2023-12-10 12:45:58,613 - INFO - WebDriver closed for item 301
+2023-12-10 12:45:58,613 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:45:58,614 - INFO - Starting from index 310: Found invalid 'holder' value.
+2023-12-10 12:45:58,614 - INFO - Processing item 36/100 with account: JCWUp26aoAqzmf8HwqXUDknXEZ1N4rpyhw9VN4LN3T93 (Global index: 311/3407)
+2023-12-10 12:46:00,360 - INFO - https://solscan.io/token/JCWUp26aoAqzmf8HwqXUDknXEZ1N4rpyhw9VN4LN3T93#holders
+2023-12-10 12:46:01,362 - INFO - https://solscan.io/token/JCWUp26aoAqzmf8HwqXUDknXEZ1N4rpyhw9VN4LN3T93#txs
+2023-12-10 12:46:18,897 - INFO - Owner address not found in the table.
+2023-12-10 12:46:18,897 - INFO - Holder Address: Address not found
+2023-12-10 12:46:37,603 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:46:37,618 - INFO - Time successfully extracted: 11-26-2021 05:05:11
+2023-12-10 12:46:37,618 - INFO - Hold time extracted: 11-26-2021 05:05:11
+2023-12-10 12:46:37,618 - INFO - Closing the web driver...
+2023-12-10 12:46:37,665 - INFO - Web driver closed for time.
+2023-12-10 12:46:37,665 - INFO - Successfully processed account JCWUp26aoAqzmf8HwqXUDknXEZ1N4rpyhw9VN4LN3T93.
+2023-12-10 12:46:37,667 - INFO - WebDriver closed for item 311
+2023-12-10 12:46:37,668 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:46:37,668 - INFO - Starting from index 320: Found invalid 'holder' value.
+2023-12-10 12:46:37,669 - INFO - Processing item 37/100 with account: AGHE443zdvQ9dL3uAwh48EuE4j2uZPr6UTVHfR37cbZR (Global index: 321/3407)
+2023-12-10 12:46:39,416 - INFO - https://solscan.io/token/AGHE443zdvQ9dL3uAwh48EuE4j2uZPr6UTVHfR37cbZR#holders
+2023-12-10 12:46:40,417 - INFO - https://solscan.io/token/AGHE443zdvQ9dL3uAwh48EuE4j2uZPr6UTVHfR37cbZR#txs
+2023-12-10 12:46:53,496 - INFO - Owner address not found in the table.
+2023-12-10 12:46:53,496 - INFO - Holder Address: Address not found
+2023-12-10 12:47:10,013 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:47:10,026 - INFO - Time successfully extracted: 11-26-2021 04:50:00
+2023-12-10 12:47:10,026 - INFO - Hold time extracted: 11-26-2021 04:50:00
+2023-12-10 12:47:10,026 - INFO - Closing the web driver...
+2023-12-10 12:47:10,065 - INFO - Web driver closed for time.
+2023-12-10 12:47:10,065 - INFO - Successfully processed account AGHE443zdvQ9dL3uAwh48EuE4j2uZPr6UTVHfR37cbZR.
+2023-12-10 12:47:10,067 - INFO - WebDriver closed for item 321
+2023-12-10 12:47:10,068 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:47:10,069 - INFO - Starting from index 337: Found invalid 'holder' value.
+2023-12-10 12:47:10,069 - INFO - Processing item 38/100 with account: ERYNEtDaunDnUSXya85ir4X2kBA7XP7NJs41jTc6N7XC (Global index: 338/3407)
+2023-12-10 12:47:11,816 - INFO - https://solscan.io/token/ERYNEtDaunDnUSXya85ir4X2kBA7XP7NJs41jTc6N7XC#holders
+2023-12-10 12:47:12,817 - INFO - https://solscan.io/token/ERYNEtDaunDnUSXya85ir4X2kBA7XP7NJs41jTc6N7XC#txs
+2023-12-10 12:47:30,547 - INFO - Owner address not found in the table.
+2023-12-10 12:47:30,547 - INFO - Holder Address: Address not found
+2023-12-10 12:47:48,855 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:47:48,869 - INFO - Time successfully extracted: 11-26-2021 04:59:27
+2023-12-10 12:47:48,869 - INFO - Hold time extracted: 11-26-2021 04:59:27
+2023-12-10 12:47:48,869 - INFO - Closing the web driver...
+2023-12-10 12:47:48,916 - INFO - Web driver closed for time.
+2023-12-10 12:47:48,916 - INFO - Successfully processed account ERYNEtDaunDnUSXya85ir4X2kBA7XP7NJs41jTc6N7XC.
+2023-12-10 12:47:48,919 - INFO - WebDriver closed for item 338
+2023-12-10 12:47:48,920 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:47:48,920 - INFO - Starting from index 345: Found invalid 'holder' value.
+2023-12-10 12:47:48,920 - INFO - Processing item 39/100 with account: CCLa3QJpNmY45R8pXpXW6d3eBEXP4p8MgpCwnLKbj926 (Global index: 346/3407)
+2023-12-10 12:47:50,668 - INFO - https://solscan.io/token/CCLa3QJpNmY45R8pXpXW6d3eBEXP4p8MgpCwnLKbj926#holders
+2023-12-10 12:47:51,669 - INFO - https://solscan.io/token/CCLa3QJpNmY45R8pXpXW6d3eBEXP4p8MgpCwnLKbj926#txs
+2023-12-10 12:48:09,380 - INFO - Owner address not found in the table.
+2023-12-10 12:48:09,380 - INFO - Holder Address: Address not found
+2023-12-10 12:48:28,090 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:48:28,106 - INFO - Time successfully extracted: 11-26-2021 04:55:53
+2023-12-10 12:48:28,106 - INFO - Hold time extracted: 11-26-2021 04:55:53
+2023-12-10 12:48:28,106 - INFO - Closing the web driver...
+2023-12-10 12:48:28,144 - INFO - Web driver closed for time.
+2023-12-10 12:48:28,144 - INFO - Successfully processed account CCLa3QJpNmY45R8pXpXW6d3eBEXP4p8MgpCwnLKbj926.
+2023-12-10 12:48:28,147 - INFO - WebDriver closed for item 346
+2023-12-10 12:48:28,148 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:48:28,148 - INFO - Starting from index 346: Found invalid 'holder' value.
+2023-12-10 12:48:28,148 - INFO - Processing item 40/100 with account: 9SWgDjpS6mmoRtxJzL9HnifwEZANQjzgCYYrqq41TLt9 (Global index: 347/3407)
+2023-12-10 12:48:29,896 - INFO - https://solscan.io/token/9SWgDjpS6mmoRtxJzL9HnifwEZANQjzgCYYrqq41TLt9#holders
+2023-12-10 12:48:30,897 - INFO - https://solscan.io/token/9SWgDjpS6mmoRtxJzL9HnifwEZANQjzgCYYrqq41TLt9#txs
+2023-12-10 12:48:47,601 - INFO - Owner address not found in the table.
+2023-12-10 12:48:47,602 - INFO - Holder Address: Address not found
+2023-12-10 12:49:05,820 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:49:05,835 - INFO - Time successfully extracted: 11-26-2021 04:46:13
+2023-12-10 12:49:05,836 - INFO - Hold time extracted: 11-26-2021 04:46:13
+2023-12-10 12:49:05,836 - INFO - Closing the web driver...
+2023-12-10 12:49:05,883 - INFO - Web driver closed for time.
+2023-12-10 12:49:05,883 - INFO - Successfully processed account 9SWgDjpS6mmoRtxJzL9HnifwEZANQjzgCYYrqq41TLt9.
+2023-12-10 12:49:05,886 - INFO - WebDriver closed for item 347
+2023-12-10 12:49:05,886 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:49:05,887 - INFO - Starting from index 360: Found invalid 'holder' value.
+2023-12-10 12:49:05,887 - INFO - Processing item 41/100 with account: 8PiA8jypUV3tYABtcuEkd9Jep5QQxwud3WebwrsytbJf (Global index: 361/3407)
+2023-12-10 12:49:07,632 - INFO - https://solscan.io/token/8PiA8jypUV3tYABtcuEkd9Jep5QQxwud3WebwrsytbJf#holders
+2023-12-10 12:49:08,633 - INFO - https://solscan.io/token/8PiA8jypUV3tYABtcuEkd9Jep5QQxwud3WebwrsytbJf#txs
+2023-12-10 12:49:21,693 - INFO - Owner address not found in the table.
+2023-12-10 12:49:21,693 - INFO - Holder Address: Address not found
+2023-12-10 12:49:35,872 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:49:35,886 - INFO - Time successfully extracted: 11-26-2021 04:44:17
+2023-12-10 12:49:35,887 - INFO - Hold time extracted: 11-26-2021 04:44:17
+2023-12-10 12:49:35,887 - INFO - Closing the web driver...
+2023-12-10 12:49:35,925 - INFO - Web driver closed for time.
+2023-12-10 12:49:35,925 - INFO - Successfully processed account 8PiA8jypUV3tYABtcuEkd9Jep5QQxwud3WebwrsytbJf.
+2023-12-10 12:49:35,930 - INFO - WebDriver closed for item 361
+2023-12-10 12:49:35,931 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:49:35,931 - INFO - Starting from index 367: Found invalid 'holder' value.
+2023-12-10 12:49:35,931 - INFO - Processing item 42/100 with account: 6EZ6CSjrH937eMk5z7hd5AJubh8UFomwGHpwk17NvCnj (Global index: 368/3407)
+2023-12-10 12:49:37,679 - INFO - https://solscan.io/token/6EZ6CSjrH937eMk5z7hd5AJubh8UFomwGHpwk17NvCnj#holders
+2023-12-10 12:49:38,680 - INFO - https://solscan.io/token/6EZ6CSjrH937eMk5z7hd5AJubh8UFomwGHpwk17NvCnj#txs
+2023-12-10 12:49:52,499 - INFO - Owner address not found in the table.
+2023-12-10 12:49:52,499 - INFO - Holder Address: Address not found
+2023-12-10 12:50:07,194 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:50:07,209 - INFO - Time successfully extracted: 11-26-2021 04:39:44
+2023-12-10 12:50:07,209 - INFO - Hold time extracted: 11-26-2021 04:39:44
+2023-12-10 12:50:07,209 - INFO - Closing the web driver...
+2023-12-10 12:50:07,256 - INFO - Web driver closed for time.
+2023-12-10 12:50:07,256 - INFO - Successfully processed account 6EZ6CSjrH937eMk5z7hd5AJubh8UFomwGHpwk17NvCnj.
+2023-12-10 12:50:07,258 - INFO - WebDriver closed for item 368
+2023-12-10 12:50:07,259 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:50:07,259 - INFO - Starting from index 376: Found invalid 'holder' value.
+2023-12-10 12:50:07,259 - INFO - Processing item 43/100 with account: Fpi59BxmGXV9nzyJ2qeo5qvXn8BUx9L4HbUVv6UbHxgK (Global index: 377/3407)
+2023-12-10 12:50:09,006 - INFO - https://solscan.io/token/Fpi59BxmGXV9nzyJ2qeo5qvXn8BUx9L4HbUVv6UbHxgK#holders
+2023-12-10 12:50:10,008 - INFO - https://solscan.io/token/Fpi59BxmGXV9nzyJ2qeo5qvXn8BUx9L4HbUVv6UbHxgK#txs
+2023-12-10 12:50:23,689 - INFO - Owner address not found in the table.
+2023-12-10 12:50:23,689 - INFO - Holder Address: Address not found
+2023-12-10 12:50:41,848 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:50:41,864 - INFO - Time successfully extracted: 11-26-2021 05:01:36
+2023-12-10 12:50:41,864 - INFO - Hold time extracted: 11-26-2021 05:01:36
+2023-12-10 12:50:41,864 - INFO - Closing the web driver...
+2023-12-10 12:50:41,902 - INFO - Web driver closed for time.
+2023-12-10 12:50:41,903 - INFO - Successfully processed account Fpi59BxmGXV9nzyJ2qeo5qvXn8BUx9L4HbUVv6UbHxgK.
+2023-12-10 12:50:41,906 - INFO - WebDriver closed for item 377
+2023-12-10 12:50:41,906 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:50:41,907 - INFO - Starting from index 380: Found invalid 'holder' value.
+2023-12-10 12:50:41,907 - INFO - Processing item 44/100 with account: 5EzPeHBMYho3HyZCUHNxRJYmZ8pyFznR6FpwyJNLScgV (Global index: 381/3407)
+2023-12-10 12:50:43,652 - INFO - https://solscan.io/token/5EzPeHBMYho3HyZCUHNxRJYmZ8pyFznR6FpwyJNLScgV#holders
+2023-12-10 12:50:44,653 - INFO - https://solscan.io/token/5EzPeHBMYho3HyZCUHNxRJYmZ8pyFznR6FpwyJNLScgV#txs
+2023-12-10 12:50:57,082 - INFO - Owner address not found in the table.
+2023-12-10 12:50:57,082 - INFO - Holder Address: Address not found
+2023-12-10 12:51:11,600 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:51:11,615 - INFO - Time successfully extracted: 11-26-2021 04:38:19
+2023-12-10 12:51:11,615 - INFO - Hold time extracted: 11-26-2021 04:38:19
+2023-12-10 12:51:11,615 - INFO - Closing the web driver...
+2023-12-10 12:51:11,654 - INFO - Web driver closed for time.
+2023-12-10 12:51:11,654 - INFO - Successfully processed account 5EzPeHBMYho3HyZCUHNxRJYmZ8pyFznR6FpwyJNLScgV.
+2023-12-10 12:51:11,657 - INFO - WebDriver closed for item 381
+2023-12-10 12:51:11,658 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:51:11,658 - INFO - Starting from index 388: Found invalid 'holder' value.
+2023-12-10 12:51:11,658 - INFO - Processing item 45/100 with account: 6VoC3ED8uttcTCVy8tcfeea8BpzAkRFe3W7sCmo4G34D (Global index: 389/3407)
+2023-12-10 12:51:13,439 - INFO - https://solscan.io/token/6VoC3ED8uttcTCVy8tcfeea8BpzAkRFe3W7sCmo4G34D#holders
+2023-12-10 12:51:14,440 - INFO - https://solscan.io/token/6VoC3ED8uttcTCVy8tcfeea8BpzAkRFe3W7sCmo4G34D#txs
+2023-12-10 12:51:32,178 - INFO - Owner address not found in the table.
+2023-12-10 12:51:32,178 - INFO - Holder Address: Address not found
+2023-12-10 12:51:47,199 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:51:47,213 - INFO - Time successfully extracted: 11-26-2021 04:40:45
+2023-12-10 12:51:47,213 - INFO - Hold time extracted: 11-26-2021 04:40:45
+2023-12-10 12:51:47,213 - INFO - Closing the web driver...
+2023-12-10 12:51:47,260 - INFO - Web driver closed for time.
+2023-12-10 12:51:47,261 - INFO - Successfully processed account 6VoC3ED8uttcTCVy8tcfeea8BpzAkRFe3W7sCmo4G34D.
+2023-12-10 12:51:47,263 - INFO - WebDriver closed for item 389
+2023-12-10 12:51:47,264 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:51:47,264 - INFO - Starting from index 393: Found invalid 'holder' value.
+2023-12-10 12:51:47,264 - INFO - Processing item 46/100 with account: 9BussFLazFXbCDgv3n6p992wC4kqq7qS3up7Ni5pCgbe (Global index: 394/3407)
+2023-12-10 12:51:49,015 - INFO - https://solscan.io/token/9BussFLazFXbCDgv3n6p992wC4kqq7qS3up7Ni5pCgbe#holders
+2023-12-10 12:51:50,016 - INFO - https://solscan.io/token/9BussFLazFXbCDgv3n6p992wC4kqq7qS3up7Ni5pCgbe#txs
+2023-12-10 12:52:07,937 - INFO - Owner address not found in the table.
+2023-12-10 12:52:07,937 - INFO - Holder Address: Address not found
+2023-12-10 12:52:26,362 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:52:26,377 - INFO - Time successfully extracted: 11-26-2021 04:45:19
+2023-12-10 12:52:26,377 - INFO - Hold time extracted: 11-26-2021 04:45:19
+2023-12-10 12:52:26,377 - INFO - Closing the web driver...
+2023-12-10 12:52:26,415 - INFO - Web driver closed for time.
+2023-12-10 12:52:26,416 - INFO - Successfully processed account 9BussFLazFXbCDgv3n6p992wC4kqq7qS3up7Ni5pCgbe.
+2023-12-10 12:52:26,418 - INFO - WebDriver closed for item 394
+2023-12-10 12:52:26,419 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:52:26,419 - INFO - Starting from index 400: Found invalid 'holder' value.
+2023-12-10 12:52:26,419 - INFO - Processing item 47/100 with account: 7sVFmRNsaneB9Jz7vCfoyg2D8BRo51Ep9xcZTyj3fXf7 (Global index: 401/3407)
+2023-12-10 12:52:28,168 - INFO - https://solscan.io/token/7sVFmRNsaneB9Jz7vCfoyg2D8BRo51Ep9xcZTyj3fXf7#holders
+2023-12-10 12:52:29,169 - INFO - https://solscan.io/token/7sVFmRNsaneB9Jz7vCfoyg2D8BRo51Ep9xcZTyj3fXf7#txs
+2023-12-10 12:52:46,903 - INFO - Owner address not found in the table.
+2023-12-10 12:52:46,903 - INFO - Holder Address: Address not found
+2023-12-10 12:53:05,205 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:53:05,221 - INFO - Time successfully extracted: 11-26-2021 04:43:20
+2023-12-10 12:53:05,221 - INFO - Hold time extracted: 11-26-2021 04:43:20
+2023-12-10 12:53:05,221 - INFO - Closing the web driver...
+2023-12-10 12:53:05,268 - INFO - Web driver closed for time.
+2023-12-10 12:53:05,268 - INFO - Successfully processed account 7sVFmRNsaneB9Jz7vCfoyg2D8BRo51Ep9xcZTyj3fXf7.
+2023-12-10 12:53:05,271 - INFO - WebDriver closed for item 401
+2023-12-10 12:53:05,271 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:53:05,272 - INFO - Starting from index 403: Found invalid 'holder' value.
+2023-12-10 12:53:05,272 - INFO - Processing item 48/100 with account: RxqCd9GUQCRmQryUxBP2ExGQWeBknAq7xDoYYL8VXci (Global index: 404/3407)
+2023-12-10 12:53:07,021 - INFO - https://solscan.io/token/RxqCd9GUQCRmQryUxBP2ExGQWeBknAq7xDoYYL8VXci#holders
+2023-12-10 12:53:08,022 - INFO - https://solscan.io/token/RxqCd9GUQCRmQryUxBP2ExGQWeBknAq7xDoYYL8VXci#txs
+2023-12-10 12:53:23,547 - INFO - Owner address not found in the table.
+2023-12-10 12:53:23,547 - INFO - Holder Address: Address not found
+2023-12-10 12:53:37,953 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:53:37,967 - INFO - Time successfully extracted: 11-26-2021 05:05:39
+2023-12-10 12:53:37,967 - INFO - Hold time extracted: 11-26-2021 05:05:39
+2023-12-10 12:53:37,967 - INFO - Closing the web driver...
+2023-12-10 12:53:38,006 - INFO - Web driver closed for time.
+2023-12-10 12:53:38,006 - INFO - Successfully processed account RxqCd9GUQCRmQryUxBP2ExGQWeBknAq7xDoYYL8VXci.
+2023-12-10 12:53:38,009 - INFO - WebDriver closed for item 404
+2023-12-10 12:53:38,009 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:53:38,010 - INFO - Starting from index 404: Found invalid 'holder' value.
+2023-12-10 12:53:38,010 - INFO - Processing item 49/100 with account: B3QKPTK8MHCSFXVVPHgNkU2cthUXtLJPwEeAUWfSE1rW (Global index: 405/3407)
+2023-12-10 12:53:39,759 - INFO - https://solscan.io/token/B3QKPTK8MHCSFXVVPHgNkU2cthUXtLJPwEeAUWfSE1rW#holders
+2023-12-10 12:53:40,760 - INFO - https://solscan.io/token/B3QKPTK8MHCSFXVVPHgNkU2cthUXtLJPwEeAUWfSE1rW#txs
+2023-12-10 12:53:54,537 - INFO - Owner address not found in the table.
+2023-12-10 12:53:54,537 - INFO - Holder Address: Address not found
+2023-12-10 12:54:10,525 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:54:10,539 - INFO - Time successfully extracted: 11-26-2021 04:54:05
+2023-12-10 12:54:10,539 - INFO - Hold time extracted: 11-26-2021 04:54:05
+2023-12-10 12:54:10,539 - INFO - Closing the web driver...
+2023-12-10 12:54:10,585 - INFO - Web driver closed for time.
+2023-12-10 12:54:10,586 - INFO - Successfully processed account B3QKPTK8MHCSFXVVPHgNkU2cthUXtLJPwEeAUWfSE1rW.
+2023-12-10 12:54:10,588 - INFO - WebDriver closed for item 405
+2023-12-10 12:54:10,589 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:54:10,589 - INFO - Starting from index 419: Found invalid 'holder' value.
+2023-12-10 12:54:10,589 - INFO - Processing item 50/100 with account: BfDQ2GCwrvYsbRQmiG6MqH7tfgmANWqyQJ5D23jDjfQ7 (Global index: 420/3407)
+2023-12-10 12:54:12,339 - INFO - https://solscan.io/token/BfDQ2GCwrvYsbRQmiG6MqH7tfgmANWqyQJ5D23jDjfQ7#holders
+2023-12-10 12:54:13,340 - INFO - https://solscan.io/token/BfDQ2GCwrvYsbRQmiG6MqH7tfgmANWqyQJ5D23jDjfQ7#txs
+2023-12-10 12:54:28,660 - INFO - Owner address not found in the table.
+2023-12-10 12:54:28,660 - INFO - Holder Address: Address not found
+2023-12-10 12:54:43,492 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:54:43,506 - INFO - Time successfully extracted: 11-26-2021 04:55:08
+2023-12-10 12:54:43,506 - INFO - Hold time extracted: 11-26-2021 04:55:08
+2023-12-10 12:54:43,506 - INFO - Closing the web driver...
+2023-12-10 12:54:43,545 - INFO - Web driver closed for time.
+2023-12-10 12:54:43,545 - INFO - Successfully processed account BfDQ2GCwrvYsbRQmiG6MqH7tfgmANWqyQJ5D23jDjfQ7.
+2023-12-10 12:54:43,548 - INFO - WebDriver closed for item 420
+2023-12-10 12:54:43,549 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:54:43,549 - INFO - Starting from index 420: Found invalid 'holder' value.
+2023-12-10 12:54:43,549 - INFO - Processing item 51/100 with account: 2DyTXydkQtnRwh7MTpsPq95mUZB55Ywhj5TX88Rv9QpK (Global index: 421/3407)
+2023-12-10 12:54:45,302 - INFO - https://solscan.io/token/2DyTXydkQtnRwh7MTpsPq95mUZB55Ywhj5TX88Rv9QpK#holders
+2023-12-10 12:54:46,303 - INFO - https://solscan.io/token/2DyTXydkQtnRwh7MTpsPq95mUZB55Ywhj5TX88Rv9QpK#txs
+2023-12-10 12:55:00,305 - INFO - Owner address not found in the table.
+2023-12-10 12:55:00,305 - INFO - Holder Address: Address not found
+2023-12-10 12:55:18,717 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:55:18,732 - INFO - Time successfully extracted: 11-26-2021 04:34:12
+2023-12-10 12:55:18,732 - INFO - Hold time extracted: 11-26-2021 04:34:12
+2023-12-10 12:55:18,732 - INFO - Closing the web driver...
+2023-12-10 12:55:18,787 - INFO - Web driver closed for time.
+2023-12-10 12:55:18,787 - INFO - Successfully processed account 2DyTXydkQtnRwh7MTpsPq95mUZB55Ywhj5TX88Rv9QpK.
+2023-12-10 12:55:18,789 - INFO - WebDriver closed for item 421
+2023-12-10 12:55:18,790 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:55:18,790 - INFO - Starting from index 425: Found invalid 'holder' value.
+2023-12-10 12:55:18,791 - INFO - Processing item 52/100 with account: JDExTVMo11MrT3XSbuNm4wsriRz3aFUdGH96iUQxu7KH (Global index: 426/3407)
+2023-12-10 12:55:20,537 - INFO - https://solscan.io/token/JDExTVMo11MrT3XSbuNm4wsriRz3aFUdGH96iUQxu7KH#holders
+2023-12-10 12:55:21,538 - INFO - https://solscan.io/token/JDExTVMo11MrT3XSbuNm4wsriRz3aFUdGH96iUQxu7KH#txs
+2023-12-10 12:55:34,330 - INFO - Owner address not found in the table.
+2023-12-10 12:55:34,330 - INFO - Holder Address: Address not found
+2023-12-10 12:55:52,798 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:55:52,811 - INFO - Time successfully extracted: 11-26-2021 05:05:16
+2023-12-10 12:55:52,812 - INFO - Hold time extracted: 11-26-2021 05:05:16
+2023-12-10 12:55:52,812 - INFO - Closing the web driver...
+2023-12-10 12:55:52,849 - INFO - Web driver closed for time.
+2023-12-10 12:55:52,850 - INFO - Successfully processed account JDExTVMo11MrT3XSbuNm4wsriRz3aFUdGH96iUQxu7KH.
+2023-12-10 12:55:52,853 - INFO - WebDriver closed for item 426
+2023-12-10 12:55:52,853 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:55:52,854 - INFO - Starting from index 427: Found invalid 'holder' value.
+2023-12-10 12:55:52,854 - INFO - Processing item 53/100 with account: ATqcoN5Be3q6swfBPdy8GtierupKJzdgUWD8GjJAW9SX (Global index: 428/3407)
+2023-12-10 12:55:54,606 - INFO - https://solscan.io/token/ATqcoN5Be3q6swfBPdy8GtierupKJzdgUWD8GjJAW9SX#holders
+2023-12-10 12:55:55,607 - INFO - https://solscan.io/token/ATqcoN5Be3q6swfBPdy8GtierupKJzdgUWD8GjJAW9SX#txs
+2023-12-10 12:56:13,368 - INFO - Owner address not found in the table.
+2023-12-10 12:56:13,368 - INFO - Holder Address: Address not found
+2023-12-10 12:56:28,494 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:56:28,508 - INFO - Time successfully extracted: 11-26-2021 04:53:35
+2023-12-10 12:56:28,508 - INFO - Hold time extracted: 11-26-2021 04:53:35
+2023-12-10 12:56:28,508 - INFO - Closing the web driver...
+2023-12-10 12:56:28,547 - INFO - Web driver closed for time.
+2023-12-10 12:56:28,547 - INFO - Successfully processed account ATqcoN5Be3q6swfBPdy8GtierupKJzdgUWD8GjJAW9SX.
+2023-12-10 12:56:28,550 - INFO - WebDriver closed for item 428
+2023-12-10 12:56:28,551 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:56:28,551 - INFO - Starting from index 429: Found invalid 'holder' value.
+2023-12-10 12:56:28,551 - INFO - Processing item 54/100 with account: AD4YGgLi1a4bUGn2JQJiMn8xHMwtAgnQX6ShA4o64qgW (Global index: 430/3407)
+2023-12-10 12:56:30,301 - INFO - https://solscan.io/token/AD4YGgLi1a4bUGn2JQJiMn8xHMwtAgnQX6ShA4o64qgW#holders
+2023-12-10 12:56:31,303 - INFO - https://solscan.io/token/AD4YGgLi1a4bUGn2JQJiMn8xHMwtAgnQX6ShA4o64qgW#txs
+2023-12-10 12:56:49,433 - INFO - Owner address not found in the table.
+2023-12-10 12:56:49,433 - INFO - Holder Address: Address not found
+2023-12-10 12:57:06,730 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:57:06,744 - INFO - Time successfully extracted: 11-26-2021 04:49:44
+2023-12-10 12:57:06,744 - INFO - Hold time extracted: 11-26-2021 04:49:44
+2023-12-10 12:57:06,744 - INFO - Closing the web driver...
+2023-12-10 12:57:06,790 - INFO - Web driver closed for time.
+2023-12-10 12:57:06,790 - INFO - Successfully processed account AD4YGgLi1a4bUGn2JQJiMn8xHMwtAgnQX6ShA4o64qgW.
+2023-12-10 12:57:06,793 - INFO - WebDriver closed for item 430
+2023-12-10 12:57:06,794 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:57:06,794 - INFO - Starting from index 435: Found invalid 'holder' value.
+2023-12-10 12:57:06,794 - INFO - Processing item 55/100 with account: 9Ut5XqNk58SZfSEizVfZTraBfoq7B5X48ZG3L3tofDrF (Global index: 436/3407)
+2023-12-10 12:57:08,541 - INFO - https://solscan.io/token/9Ut5XqNk58SZfSEizVfZTraBfoq7B5X48ZG3L3tofDrF#holders
+2023-12-10 12:57:09,543 - INFO - https://solscan.io/token/9Ut5XqNk58SZfSEizVfZTraBfoq7B5X48ZG3L3tofDrF#txs
+2023-12-10 12:57:27,115 - INFO - Owner address not found in the table.
+2023-12-10 12:57:27,116 - INFO - Holder Address: Address not found
+2023-12-10 12:57:43,088 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:57:43,104 - INFO - Time successfully extracted: 11-26-2021 05:44:29
+2023-12-10 12:57:43,104 - INFO - Hold time extracted: 11-26-2021 05:44:29
+2023-12-10 12:57:43,104 - INFO - Closing the web driver...
+2023-12-10 12:57:43,151 - INFO - Web driver closed for time.
+2023-12-10 12:57:43,151 - INFO - Successfully processed account 9Ut5XqNk58SZfSEizVfZTraBfoq7B5X48ZG3L3tofDrF.
+2023-12-10 12:57:43,154 - INFO - WebDriver closed for item 436
+2023-12-10 12:57:43,154 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:57:43,155 - INFO - Starting from index 436: Found invalid 'holder' value.
+2023-12-10 12:57:43,155 - INFO - Processing item 56/100 with account: DKftKmFsWs9FkSDkS6cELEaNseomHvdxfBnEUzjizEwG (Global index: 437/3407)
+2023-12-10 12:57:44,901 - INFO - https://solscan.io/token/DKftKmFsWs9FkSDkS6cELEaNseomHvdxfBnEUzjizEwG#holders
+2023-12-10 12:57:45,902 - INFO - https://solscan.io/token/DKftKmFsWs9FkSDkS6cELEaNseomHvdxfBnEUzjizEwG#txs
+2023-12-10 12:57:59,073 - INFO - Owner address not found in the table.
+2023-12-10 12:57:59,073 - INFO - Holder Address: Address not found
+2023-12-10 12:58:18,337 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:58:18,351 - INFO - Time successfully extracted: 11-26-2021 04:57:41
+2023-12-10 12:58:18,351 - INFO - Hold time extracted: 11-26-2021 04:57:41
+2023-12-10 12:58:18,351 - INFO - Closing the web driver...
+2023-12-10 12:58:18,389 - INFO - Web driver closed for time.
+2023-12-10 12:58:18,389 - INFO - Successfully processed account DKftKmFsWs9FkSDkS6cELEaNseomHvdxfBnEUzjizEwG.
+2023-12-10 12:58:18,394 - INFO - WebDriver closed for item 437
+2023-12-10 12:58:18,395 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:58:18,395 - INFO - Starting from index 440: Found invalid 'holder' value.
+2023-12-10 12:58:18,395 - INFO - Processing item 57/100 with account: 7V1wZsa9SqmrXBYkPPNjH7m3qw4q1Aq3fLni3ctSqPH8 (Global index: 441/3407)
+2023-12-10 12:58:20,146 - INFO - https://solscan.io/token/7V1wZsa9SqmrXBYkPPNjH7m3qw4q1Aq3fLni3ctSqPH8#holders
+2023-12-10 12:58:21,147 - INFO - https://solscan.io/token/7V1wZsa9SqmrXBYkPPNjH7m3qw4q1Aq3fLni3ctSqPH8#txs
+2023-12-10 12:58:38,980 - INFO - Owner address not found in the table.
+2023-12-10 12:58:38,980 - INFO - Holder Address: Address not found
+2023-12-10 12:58:53,835 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:58:53,849 - INFO - Time successfully extracted: 11-26-2021 04:42:47
+2023-12-10 12:58:53,849 - INFO - Hold time extracted: 11-26-2021 04:42:47
+2023-12-10 12:58:53,849 - INFO - Closing the web driver...
+2023-12-10 12:58:53,887 - INFO - Web driver closed for time.
+2023-12-10 12:58:53,888 - INFO - Successfully processed account 7V1wZsa9SqmrXBYkPPNjH7m3qw4q1Aq3fLni3ctSqPH8.
+2023-12-10 12:58:53,891 - INFO - WebDriver closed for item 441
+2023-12-10 12:58:53,891 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:58:53,892 - INFO - Starting from index 452: Found invalid 'holder' value.
+2023-12-10 12:58:53,892 - INFO - Processing item 58/100 with account: 7Qa7giYmLgD47p7FiGAmKQh3xuufFQuNoUuu494YHaef (Global index: 453/3407)
+2023-12-10 12:58:55,639 - INFO - https://solscan.io/token/7Qa7giYmLgD47p7FiGAmKQh3xuufFQuNoUuu494YHaef#holders
+2023-12-10 12:58:56,641 - INFO - https://solscan.io/token/7Qa7giYmLgD47p7FiGAmKQh3xuufFQuNoUuu494YHaef#txs
+2023-12-10 12:59:14,434 - INFO - Owner address not found in the table.
+2023-12-10 12:59:14,434 - INFO - Holder Address: Address not found
+2023-12-10 12:59:29,256 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 12:59:29,270 - INFO - Time successfully extracted: 11-26-2021 04:42:35
+2023-12-10 12:59:29,270 - INFO - Hold time extracted: 11-26-2021 04:42:35
+2023-12-10 12:59:29,270 - INFO - Closing the web driver...
+2023-12-10 12:59:29,309 - INFO - Web driver closed for time.
+2023-12-10 12:59:29,309 - INFO - Successfully processed account 7Qa7giYmLgD47p7FiGAmKQh3xuufFQuNoUuu494YHaef.
+2023-12-10 12:59:29,312 - INFO - WebDriver closed for item 453
+2023-12-10 12:59:29,313 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 12:59:29,313 - INFO - Starting from index 454: Found invalid 'holder' value.
+2023-12-10 12:59:29,313 - INFO - Processing item 59/100 with account: jDvG8hHMiiBMPFfoiBcX2xtWj62oP4uk6tMmiVXKCMF (Global index: 455/3407)
+2023-12-10 12:59:31,062 - INFO - https://solscan.io/token/jDvG8hHMiiBMPFfoiBcX2xtWj62oP4uk6tMmiVXKCMF#holders
+2023-12-10 12:59:32,064 - INFO - https://solscan.io/token/jDvG8hHMiiBMPFfoiBcX2xtWj62oP4uk6tMmiVXKCMF#txs
+2023-12-10 12:59:49,936 - INFO - Owner address not found in the table.
+2023-12-10 12:59:49,936 - INFO - Holder Address: Address not found
+2023-12-10 13:00:08,135 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:00:08,150 - INFO - Time successfully extracted: 11-26-2021 05:06:19
+2023-12-10 13:00:08,150 - INFO - Hold time extracted: 11-26-2021 05:06:19
+2023-12-10 13:00:08,150 - INFO - Closing the web driver...
+2023-12-10 13:00:08,196 - INFO - Web driver closed for time.
+2023-12-10 13:00:08,196 - INFO - Successfully processed account jDvG8hHMiiBMPFfoiBcX2xtWj62oP4uk6tMmiVXKCMF.
+2023-12-10 13:00:08,199 - INFO - WebDriver closed for item 455
+2023-12-10 13:00:08,200 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:00:08,200 - INFO - Starting from index 460: Found invalid 'holder' value.
+2023-12-10 13:00:08,200 - INFO - Processing item 60/100 with account: BQJc5ysy9LA4fAkxB3ppCXyQevKFNxWwNu22GDTcPZjC (Global index: 461/3407)
+2023-12-10 13:00:09,948 - INFO - https://solscan.io/token/BQJc5ysy9LA4fAkxB3ppCXyQevKFNxWwNu22GDTcPZjC#holders
+2023-12-10 13:00:10,950 - INFO - https://solscan.io/token/BQJc5ysy9LA4fAkxB3ppCXyQevKFNxWwNu22GDTcPZjC#txs
+2023-12-10 13:00:28,965 - INFO - Owner address not found in the table.
+2023-12-10 13:00:28,965 - INFO - Holder Address: Address not found
+2023-12-10 13:00:45,322 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:00:45,337 - INFO - Time successfully extracted: 11-26-2021 04:54:35
+2023-12-10 13:00:45,337 - INFO - Hold time extracted: 11-26-2021 04:54:35
+2023-12-10 13:00:45,337 - INFO - Closing the web driver...
+2023-12-10 13:00:45,375 - INFO - Web driver closed for time.
+2023-12-10 13:00:45,375 - INFO - Successfully processed account BQJc5ysy9LA4fAkxB3ppCXyQevKFNxWwNu22GDTcPZjC.
+2023-12-10 13:00:45,378 - INFO - WebDriver closed for item 461
+2023-12-10 13:00:45,379 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:00:45,379 - INFO - Starting from index 463: Found invalid 'holder' value.
+2023-12-10 13:00:45,379 - INFO - Processing item 61/100 with account: F3QtELq1GzKA5xxGVEkWThQzUTo791RkF873SUjY1Qhb (Global index: 464/3407)
+2023-12-10 13:00:47,138 - INFO - https://solscan.io/token/F3QtELq1GzKA5xxGVEkWThQzUTo791RkF873SUjY1Qhb#holders
+2023-12-10 13:00:48,140 - INFO - https://solscan.io/token/F3QtELq1GzKA5xxGVEkWThQzUTo791RkF873SUjY1Qhb#txs
+2023-12-10 13:01:05,885 - INFO - Owner address not found in the table.
+2023-12-10 13:01:05,885 - INFO - Holder Address: Address not found
+2023-12-10 13:01:22,399 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:01:22,414 - INFO - Time successfully extracted: 11-26-2021 05:00:28
+2023-12-10 13:01:22,414 - INFO - Hold time extracted: 11-26-2021 05:00:28
+2023-12-10 13:01:22,414 - INFO - Closing the web driver...
+2023-12-10 13:01:22,462 - INFO - Web driver closed for time.
+2023-12-10 13:01:22,462 - INFO - Successfully processed account F3QtELq1GzKA5xxGVEkWThQzUTo791RkF873SUjY1Qhb.
+2023-12-10 13:01:22,464 - INFO - WebDriver closed for item 464
+2023-12-10 13:01:22,465 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:01:22,465 - INFO - Starting from index 476: Found invalid 'holder' value.
+2023-12-10 13:01:22,465 - INFO - Processing item 62/100 with account: 9XRaaN6BoR986WE4TCa11woe2Gv8b5ipMTbdpx6KrYET (Global index: 477/3407)
+2023-12-10 13:01:24,211 - INFO - https://solscan.io/token/9XRaaN6BoR986WE4TCa11woe2Gv8b5ipMTbdpx6KrYET#holders
+2023-12-10 13:01:25,213 - INFO - https://solscan.io/token/9XRaaN6BoR986WE4TCa11woe2Gv8b5ipMTbdpx6KrYET#txs
+2023-12-10 13:01:42,564 - INFO - Owner address not found in the table.
+2023-12-10 13:01:42,564 - INFO - Holder Address: Address not found
+2023-12-10 13:01:58,899 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:01:58,914 - INFO - Time successfully extracted: 11-26-2021 04:46:21
+2023-12-10 13:01:58,914 - INFO - Hold time extracted: 11-26-2021 04:46:21
+2023-12-10 13:01:58,914 - INFO - Closing the web driver...
+2023-12-10 13:01:58,936 - INFO - Web driver closed for time.
+2023-12-10 13:01:58,936 - INFO - Successfully processed account 9XRaaN6BoR986WE4TCa11woe2Gv8b5ipMTbdpx6KrYET.
+2023-12-10 13:01:58,939 - INFO - WebDriver closed for item 477
+2023-12-10 13:01:58,940 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:01:58,940 - INFO - Starting from index 489: Found invalid 'holder' value.
+2023-12-10 13:01:58,940 - INFO - Processing item 63/100 with account: 4VhBokk7KaeMi4fmL8Lh49CynYxq7Wo2xQbu6McjTb9o (Global index: 490/3407)
+2023-12-10 13:02:00,697 - INFO - https://solscan.io/token/4VhBokk7KaeMi4fmL8Lh49CynYxq7Wo2xQbu6McjTb9o#holders
+2023-12-10 13:02:01,698 - INFO - https://solscan.io/token/4VhBokk7KaeMi4fmL8Lh49CynYxq7Wo2xQbu6McjTb9o#txs
+2023-12-10 13:02:19,404 - INFO - Owner address not found in the table.
+2023-12-10 13:02:19,404 - INFO - Holder Address: Address not found
+2023-12-10 13:02:35,898 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:02:35,914 - INFO - Time successfully extracted: 11-26-2021 04:37:23
+2023-12-10 13:02:35,914 - INFO - Hold time extracted: 11-26-2021 04:37:23
+2023-12-10 13:02:35,914 - INFO - Closing the web driver...
+2023-12-10 13:02:35,953 - INFO - Web driver closed for time.
+2023-12-10 13:02:35,954 - INFO - Successfully processed account 4VhBokk7KaeMi4fmL8Lh49CynYxq7Wo2xQbu6McjTb9o.
+2023-12-10 13:02:35,957 - INFO - WebDriver closed for item 490
+2023-12-10 13:02:35,958 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:02:35,958 - INFO - Starting from index 491: Found invalid 'holder' value.
+2023-12-10 13:02:35,958 - INFO - Processing item 64/100 with account: 9DoJ8opYeR7Gvxqt65J1ZuuadzAsXVV6zqzXZw7Ckx34 (Global index: 492/3407)
+2023-12-10 13:02:37,706 - INFO - https://solscan.io/token/9DoJ8opYeR7Gvxqt65J1ZuuadzAsXVV6zqzXZw7Ckx34#holders
+2023-12-10 13:02:38,707 - INFO - https://solscan.io/token/9DoJ8opYeR7Gvxqt65J1ZuuadzAsXVV6zqzXZw7Ckx34#txs
+2023-12-10 13:02:55,292 - INFO - Owner address not found in the table.
+2023-12-10 13:02:55,292 - INFO - Holder Address: Address not found
+2023-12-10 13:03:10,377 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:03:10,391 - INFO - Time successfully extracted: 11-26-2021 04:45:53
+2023-12-10 13:03:10,391 - INFO - Hold time extracted: 11-26-2021 04:45:53
+2023-12-10 13:03:10,391 - INFO - Closing the web driver...
+2023-12-10 13:03:10,430 - INFO - Web driver closed for time.
+2023-12-10 13:03:10,430 - INFO - Successfully processed account 9DoJ8opYeR7Gvxqt65J1ZuuadzAsXVV6zqzXZw7Ckx34.
+2023-12-10 13:03:10,432 - INFO - WebDriver closed for item 492
+2023-12-10 13:03:10,433 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:03:10,434 - INFO - Starting from index 500: Found invalid 'holder' value.
+2023-12-10 13:03:10,434 - INFO - Processing item 65/100 with account: 3nJMb5zs9v395vcXYUq6wG3Zzrp2RzvDiSUGGybmC5zb (Global index: 501/3407)
+2023-12-10 13:03:12,199 - INFO - https://solscan.io/token/3nJMb5zs9v395vcXYUq6wG3Zzrp2RzvDiSUGGybmC5zb#holders
+2023-12-10 13:03:13,200 - INFO - https://solscan.io/token/3nJMb5zs9v395vcXYUq6wG3Zzrp2RzvDiSUGGybmC5zb#txs
+2023-12-10 13:03:27,677 - INFO - Owner address not found in the table.
+2023-12-10 13:03:27,678 - INFO - Holder Address: Address not found
+2023-12-10 13:03:46,982 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:03:46,997 - INFO - Time successfully extracted: 11-26-2021 04:36:37
+2023-12-10 13:03:46,997 - INFO - Hold time extracted: 11-26-2021 04:36:37
+2023-12-10 13:03:46,997 - INFO - Closing the web driver...
+2023-12-10 13:03:47,035 - INFO - Web driver closed for time.
+2023-12-10 13:03:47,035 - INFO - Successfully processed account 3nJMb5zs9v395vcXYUq6wG3Zzrp2RzvDiSUGGybmC5zb.
+2023-12-10 13:03:47,038 - INFO - WebDriver closed for item 501
+2023-12-10 13:03:47,039 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:03:47,039 - INFO - Starting from index 520: Found invalid 'holder' value.
+2023-12-10 13:03:47,039 - INFO - Processing item 66/100 with account: 7QtrC94F4MJaDawyJjCjiTbDFxedJD9Wf8g2tyTGR6VB (Global index: 521/3407)
+2023-12-10 13:03:48,790 - INFO - https://solscan.io/token/7QtrC94F4MJaDawyJjCjiTbDFxedJD9Wf8g2tyTGR6VB#holders
+2023-12-10 13:03:49,791 - INFO - https://solscan.io/token/7QtrC94F4MJaDawyJjCjiTbDFxedJD9Wf8g2tyTGR6VB#txs
+2023-12-10 13:04:06,679 - INFO - Owner address not found in the table.
+2023-12-10 13:04:06,679 - INFO - Holder Address: Address not found
+2023-12-10 13:04:23,811 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:04:23,824 - INFO - Time successfully extracted: 11-26-2021 04:42:39
+2023-12-10 13:04:23,825 - INFO - Hold time extracted: 11-26-2021 04:42:39
+2023-12-10 13:04:23,825 - INFO - Closing the web driver...
+2023-12-10 13:04:23,864 - INFO - Web driver closed for time.
+2023-12-10 13:04:23,864 - INFO - Successfully processed account 7QtrC94F4MJaDawyJjCjiTbDFxedJD9Wf8g2tyTGR6VB.
+2023-12-10 13:04:23,867 - INFO - WebDriver closed for item 521
+2023-12-10 13:04:23,867 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:04:23,868 - INFO - Starting from index 530: Found invalid 'holder' value.
+2023-12-10 13:04:23,868 - INFO - Processing item 67/100 with account: 84LPPrTTbmcrqm6EZj2njUTN11wgfXuchPiafiu23CjH (Global index: 531/3407)
+2023-12-10 13:04:25,619 - INFO - https://solscan.io/token/84LPPrTTbmcrqm6EZj2njUTN11wgfXuchPiafiu23CjH#holders
+2023-12-10 13:04:26,620 - INFO - https://solscan.io/token/84LPPrTTbmcrqm6EZj2njUTN11wgfXuchPiafiu23CjH#txs
+2023-12-10 13:04:40,263 - INFO - Owner address not found in the table.
+2023-12-10 13:04:40,263 - INFO - Holder Address: Address not found
+2023-12-10 13:05:00,092 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:05:00,108 - INFO - Time successfully extracted: 11-26-2021 04:43:49
+2023-12-10 13:05:00,108 - INFO - Hold time extracted: 11-26-2021 04:43:49
+2023-12-10 13:05:00,108 - INFO - Closing the web driver...
+2023-12-10 13:05:00,154 - INFO - Web driver closed for time.
+2023-12-10 13:05:00,154 - INFO - Successfully processed account 84LPPrTTbmcrqm6EZj2njUTN11wgfXuchPiafiu23CjH.
+2023-12-10 13:05:00,157 - INFO - WebDriver closed for item 531
+2023-12-10 13:05:00,158 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:05:00,158 - INFO - Starting from index 534: Found invalid 'holder' value.
+2023-12-10 13:05:00,158 - INFO - Processing item 68/100 with account: AeHNQ3Kk7c293MgZz1MSGby1nAAXvbfDo4AdNwjdNUve (Global index: 535/3407)
+2023-12-10 13:05:01,913 - INFO - https://solscan.io/token/AeHNQ3Kk7c293MgZz1MSGby1nAAXvbfDo4AdNwjdNUve#holders
+2023-12-10 13:05:02,914 - INFO - https://solscan.io/token/AeHNQ3Kk7c293MgZz1MSGby1nAAXvbfDo4AdNwjdNUve#txs
+2023-12-10 13:05:21,267 - INFO - Owner address not found in the table.
+2023-12-10 13:05:21,267 - INFO - Holder Address: Address not found
+2023-12-10 13:05:35,528 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:05:35,542 - INFO - Time successfully extracted: 11-26-2021 04:53:47
+2023-12-10 13:05:35,542 - INFO - Hold time extracted: 11-26-2021 04:53:47
+2023-12-10 13:05:35,542 - INFO - Closing the web driver...
+2023-12-10 13:05:35,580 - INFO - Web driver closed for time.
+2023-12-10 13:05:35,581 - INFO - Successfully processed account AeHNQ3Kk7c293MgZz1MSGby1nAAXvbfDo4AdNwjdNUve.
+2023-12-10 13:05:35,583 - INFO - WebDriver closed for item 535
+2023-12-10 13:05:35,584 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:05:35,585 - INFO - Starting from index 544: Found invalid 'holder' value.
+2023-12-10 13:05:35,585 - INFO - Processing item 69/100 with account: C5eRZZxoAAsYTgTMtRcTeeJF5xttx6YtYwSm4LxYARsB (Global index: 545/3407)
+2023-12-10 13:05:37,341 - INFO - https://solscan.io/token/C5eRZZxoAAsYTgTMtRcTeeJF5xttx6YtYwSm4LxYARsB#holders
+2023-12-10 13:05:38,342 - INFO - https://solscan.io/token/C5eRZZxoAAsYTgTMtRcTeeJF5xttx6YtYwSm4LxYARsB#txs
+2023-12-10 13:05:55,768 - INFO - Owner address not found in the table.
+2023-12-10 13:05:55,768 - INFO - Holder Address: Address not found
+2023-12-10 13:06:09,594 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:06:09,609 - INFO - Time successfully extracted: 11-26-2021 04:55:44
+2023-12-10 13:06:09,609 - INFO - Hold time extracted: 11-26-2021 04:55:44
+2023-12-10 13:06:09,609 - INFO - Closing the web driver...
+2023-12-10 13:06:09,647 - INFO - Web driver closed for time.
+2023-12-10 13:06:09,647 - INFO - Successfully processed account C5eRZZxoAAsYTgTMtRcTeeJF5xttx6YtYwSm4LxYARsB.
+2023-12-10 13:06:09,650 - INFO - WebDriver closed for item 545
+2023-12-10 13:06:09,651 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:06:09,651 - INFO - Starting from index 576: Found invalid 'holder' value.
+2023-12-10 13:06:09,651 - INFO - Processing item 70/100 with account: F5aerAGRBnXzLi9DXsynHpwpCEMrra82ov74YEA65vjG (Global index: 577/3407)
+2023-12-10 13:06:11,399 - INFO - https://solscan.io/token/F5aerAGRBnXzLi9DXsynHpwpCEMrra82ov74YEA65vjG#holders
+2023-12-10 13:06:12,400 - INFO - https://solscan.io/token/F5aerAGRBnXzLi9DXsynHpwpCEMrra82ov74YEA65vjG#txs
+2023-12-10 13:06:26,049 - INFO - Owner address not found in the table.
+2023-12-10 13:06:26,049 - INFO - Holder Address: Address not found
+2023-12-10 13:06:43,593 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:06:43,608 - INFO - Time successfully extracted: 11-26-2021 05:00:32
+2023-12-10 13:06:43,608 - INFO - Hold time extracted: 11-26-2021 05:00:32
+2023-12-10 13:06:43,608 - INFO - Closing the web driver...
+2023-12-10 13:06:43,646 - INFO - Web driver closed for time.
+2023-12-10 13:06:43,647 - INFO - Successfully processed account F5aerAGRBnXzLi9DXsynHpwpCEMrra82ov74YEA65vjG.
+2023-12-10 13:06:43,649 - INFO - WebDriver closed for item 577
+2023-12-10 13:06:43,650 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:06:43,651 - INFO - Starting from index 580: Found invalid 'holder' value.
+2023-12-10 13:06:43,651 - INFO - Processing item 71/100 with account: DAv2nJFGk1C7w3nKxznqDNHrdreKNABxMcEV24BjrjET (Global index: 581/3407)
+2023-12-10 13:06:45,399 - INFO - https://solscan.io/token/DAv2nJFGk1C7w3nKxznqDNHrdreKNABxMcEV24BjrjET#holders
+2023-12-10 13:06:46,400 - INFO - https://solscan.io/token/DAv2nJFGk1C7w3nKxznqDNHrdreKNABxMcEV24BjrjET#txs
+2023-12-10 13:07:00,415 - INFO - Owner address not found in the table.
+2023-12-10 13:07:00,415 - INFO - Holder Address: Address not found
+2023-12-10 13:07:18,405 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:07:18,421 - INFO - Time successfully extracted: 11-26-2021 04:57:23
+2023-12-10 13:07:18,421 - INFO - Hold time extracted: 11-26-2021 04:57:23
+2023-12-10 13:07:18,421 - INFO - Closing the web driver...
+2023-12-10 13:07:18,447 - INFO - Web driver closed for time.
+2023-12-10 13:07:18,447 - INFO - Successfully processed account DAv2nJFGk1C7w3nKxznqDNHrdreKNABxMcEV24BjrjET.
+2023-12-10 13:07:18,450 - INFO - WebDriver closed for item 581
+2023-12-10 13:07:18,451 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:07:18,451 - INFO - Starting from index 583: Found invalid 'holder' value.
+2023-12-10 13:07:18,451 - INFO - Processing item 72/100 with account: HoVV3bcewDq1NLTZjd4w9V5Y6xhJjETgn347s5rDswEZ (Global index: 584/3407)
+2023-12-10 13:07:20,204 - INFO - https://solscan.io/token/HoVV3bcewDq1NLTZjd4w9V5Y6xhJjETgn347s5rDswEZ#holders
+2023-12-10 13:07:21,205 - INFO - https://solscan.io/token/HoVV3bcewDq1NLTZjd4w9V5Y6xhJjETgn347s5rDswEZ#txs
+2023-12-10 13:07:39,773 - INFO - Owner address not found in the table.
+2023-12-10 13:07:39,773 - INFO - Holder Address: Address not found
+2023-12-10 13:07:57,499 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:07:57,513 - INFO - Time successfully extracted: 11-26-2021 05:04:25
+2023-12-10 13:07:57,513 - INFO - Hold time extracted: 11-26-2021 05:04:25
+2023-12-10 13:07:57,513 - INFO - Closing the web driver...
+2023-12-10 13:07:57,560 - INFO - Web driver closed for time.
+2023-12-10 13:07:57,560 - INFO - Successfully processed account HoVV3bcewDq1NLTZjd4w9V5Y6xhJjETgn347s5rDswEZ.
+2023-12-10 13:07:57,563 - INFO - WebDriver closed for item 584
+2023-12-10 13:07:57,564 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:07:57,564 - INFO - Starting from index 584: Found invalid 'holder' value.
+2023-12-10 13:07:57,564 - INFO - Processing item 73/100 with account: 2cjNUQLKyFABhUEJiqgRPb2sLNDEY1c7As2mXbxrFhc1 (Global index: 585/3407)
+2023-12-10 13:07:59,317 - INFO - https://solscan.io/token/2cjNUQLKyFABhUEJiqgRPb2sLNDEY1c7As2mXbxrFhc1#holders
+2023-12-10 13:08:00,318 - INFO - https://solscan.io/token/2cjNUQLKyFABhUEJiqgRPb2sLNDEY1c7As2mXbxrFhc1#txs
+2023-12-10 13:08:15,398 - INFO - Owner address not found in the table.
+2023-12-10 13:08:15,398 - INFO - Holder Address: Address not found
+2023-12-10 13:08:34,220 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:08:34,235 - INFO - Time successfully extracted: 11-26-2021 04:34:41
+2023-12-10 13:08:34,235 - INFO - Hold time extracted: 11-26-2021 04:34:41
+2023-12-10 13:08:34,235 - INFO - Closing the web driver...
+2023-12-10 13:08:34,258 - INFO - Web driver closed for time.
+2023-12-10 13:08:34,259 - INFO - Successfully processed account 2cjNUQLKyFABhUEJiqgRPb2sLNDEY1c7As2mXbxrFhc1.
+2023-12-10 13:08:34,264 - INFO - WebDriver closed for item 585
+2023-12-10 13:08:34,265 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:08:34,266 - INFO - Starting from index 586: Found invalid 'holder' value.
+2023-12-10 13:08:34,266 - INFO - Processing item 74/100 with account: BGjD7YcA7msGFiJY8hrVXeAtTQivKmUU2CggYEWiJtzL (Global index: 587/3407)
+2023-12-10 13:08:36,020 - INFO - https://solscan.io/token/BGjD7YcA7msGFiJY8hrVXeAtTQivKmUU2CggYEWiJtzL#holders
+2023-12-10 13:08:37,022 - INFO - https://solscan.io/token/BGjD7YcA7msGFiJY8hrVXeAtTQivKmUU2CggYEWiJtzL#txs
+2023-12-10 13:08:54,769 - INFO - Owner address not found in the table.
+2023-12-10 13:08:54,769 - INFO - Holder Address: Address not found
+2023-12-10 13:09:13,504 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:09:13,518 - INFO - Time successfully extracted: 11-26-2021 04:54:31
+2023-12-10 13:09:13,518 - INFO - Hold time extracted: 11-26-2021 04:54:31
+2023-12-10 13:09:13,518 - INFO - Closing the web driver...
+2023-12-10 13:09:13,565 - INFO - Web driver closed for time.
+2023-12-10 13:09:13,565 - INFO - Successfully processed account BGjD7YcA7msGFiJY8hrVXeAtTQivKmUU2CggYEWiJtzL.
+2023-12-10 13:09:13,568 - INFO - WebDriver closed for item 587
+2023-12-10 13:09:13,569 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:09:13,570 - INFO - Starting from index 591: Found invalid 'holder' value.
+2023-12-10 13:09:13,570 - INFO - Processing item 75/100 with account: 3nJKZuTu8qZh5c4ds2VpHb53C8bwDr1gdAMxHDMeWFRF (Global index: 592/3407)
+2023-12-10 13:09:15,345 - INFO - https://solscan.io/token/3nJKZuTu8qZh5c4ds2VpHb53C8bwDr1gdAMxHDMeWFRF#holders
+2023-12-10 13:09:16,346 - INFO - https://solscan.io/token/3nJKZuTu8qZh5c4ds2VpHb53C8bwDr1gdAMxHDMeWFRF#txs
+2023-12-10 13:09:32,645 - INFO - Owner address not found in the table.
+2023-12-10 13:09:32,645 - INFO - Holder Address: Address not found
+2023-12-10 13:09:47,835 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:09:47,888 - INFO - Time successfully extracted: 11-26-2021 04:36:34
+2023-12-10 13:09:47,888 - INFO - Hold time extracted: 11-26-2021 04:36:34
+2023-12-10 13:09:47,888 - INFO - Closing the web driver...
+2023-12-10 13:09:47,935 - INFO - Web driver closed for time.
+2023-12-10 13:09:47,936 - INFO - Successfully processed account 3nJKZuTu8qZh5c4ds2VpHb53C8bwDr1gdAMxHDMeWFRF.
+2023-12-10 13:09:47,938 - INFO - WebDriver closed for item 592
+2023-12-10 13:09:47,939 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:09:47,939 - INFO - Starting from index 593: Found invalid 'holder' value.
+2023-12-10 13:09:47,939 - INFO - Processing item 76/100 with account: A7TzxY5CytvRTH1qc6riJNGwo52o893qduB8qne8sDCB (Global index: 594/3407)
+2023-12-10 13:09:49,701 - INFO - https://solscan.io/token/A7TzxY5CytvRTH1qc6riJNGwo52o893qduB8qne8sDCB#holders
+2023-12-10 13:09:50,703 - INFO - https://solscan.io/token/A7TzxY5CytvRTH1qc6riJNGwo52o893qduB8qne8sDCB#txs
+2023-12-10 13:10:06,861 - INFO - Owner address not found in the table.
+2023-12-10 13:10:06,861 - INFO - Holder Address: Address not found
+2023-12-10 13:10:25,205 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:10:25,221 - INFO - Time successfully extracted: 11-26-2021 05:44:38
+2023-12-10 13:10:25,221 - INFO - Hold time extracted: 11-26-2021 05:44:38
+2023-12-10 13:10:25,221 - INFO - Closing the web driver...
+2023-12-10 13:10:25,262 - INFO - Web driver closed for time.
+2023-12-10 13:10:25,262 - INFO - Successfully processed account A7TzxY5CytvRTH1qc6riJNGwo52o893qduB8qne8sDCB.
+2023-12-10 13:10:25,265 - INFO - WebDriver closed for item 594
+2023-12-10 13:10:25,266 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:10:25,266 - INFO - Starting from index 594: Found invalid 'holder' value.
+2023-12-10 13:10:25,266 - INFO - Processing item 77/100 with account: GdqYDinGfTdieeHC4iKToWdtzUvDL56Vw1CHwyrVoiBv (Global index: 595/3407)
+2023-12-10 13:10:27,024 - INFO - https://solscan.io/token/GdqYDinGfTdieeHC4iKToWdtzUvDL56Vw1CHwyrVoiBv#holders
+2023-12-10 13:10:28,026 - INFO - https://solscan.io/token/GdqYDinGfTdieeHC4iKToWdtzUvDL56Vw1CHwyrVoiBv#txs
+2023-12-10 13:10:45,979 - INFO - Owner address not found in the table.
+2023-12-10 13:10:45,979 - INFO - Holder Address: Address not found
+2023-12-10 13:11:03,934 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:11:03,948 - INFO - Time successfully extracted: 11-26-2021 05:02:32
+2023-12-10 13:11:03,948 - INFO - Hold time extracted: 11-26-2021 05:02:32
+2023-12-10 13:11:03,948 - INFO - Closing the web driver...
+2023-12-10 13:11:03,996 - INFO - Web driver closed for time.
+2023-12-10 13:11:03,996 - INFO - Successfully processed account GdqYDinGfTdieeHC4iKToWdtzUvDL56Vw1CHwyrVoiBv.
+2023-12-10 13:11:03,999 - INFO - WebDriver closed for item 595
+2023-12-10 13:11:03,999 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:11:04,000 - INFO - Starting from index 601: Found invalid 'holder' value.
+2023-12-10 13:11:04,000 - INFO - Processing item 78/100 with account: H8no47YC3dkepA2UMFGUgtyo2Ty5M1fg4H4p4aEbgpgm (Global index: 602/3407)
+2023-12-10 13:11:05,748 - INFO - https://solscan.io/token/H8no47YC3dkepA2UMFGUgtyo2Ty5M1fg4H4p4aEbgpgm#holders
+2023-12-10 13:11:06,750 - INFO - https://solscan.io/token/H8no47YC3dkepA2UMFGUgtyo2Ty5M1fg4H4p4aEbgpgm#txs
+2023-12-10 13:11:19,940 - INFO - Owner address not found in the table.
+2023-12-10 13:11:19,940 - INFO - Holder Address: Address not found
+2023-12-10 13:11:34,080 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:11:34,095 - INFO - Time successfully extracted: 11-26-2021 05:02:58
+2023-12-10 13:11:34,095 - INFO - Hold time extracted: 11-26-2021 05:02:58
+2023-12-10 13:11:34,095 - INFO - Closing the web driver...
+2023-12-10 13:11:34,143 - INFO - Web driver closed for time.
+2023-12-10 13:11:34,143 - INFO - Successfully processed account H8no47YC3dkepA2UMFGUgtyo2Ty5M1fg4H4p4aEbgpgm.
+2023-12-10 13:11:34,145 - INFO - WebDriver closed for item 602
+2023-12-10 13:11:34,146 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:11:34,147 - INFO - Starting from index 613: Found invalid 'holder' value.
+2023-12-10 13:11:34,147 - INFO - Processing item 79/100 with account: 9C4hgf4uRcuTLNnZLTfy9D1E74adEvvbFGcN7bp2kHib (Global index: 614/3407)
+2023-12-10 13:11:35,901 - INFO - https://solscan.io/token/9C4hgf4uRcuTLNnZLTfy9D1E74adEvvbFGcN7bp2kHib#holders
+2023-12-10 13:11:36,902 - INFO - https://solscan.io/token/9C4hgf4uRcuTLNnZLTfy9D1E74adEvvbFGcN7bp2kHib#txs
+2023-12-10 13:11:50,557 - INFO - Owner address not found in the table.
+2023-12-10 13:11:50,557 - INFO - Holder Address: Address not found
+2023-12-10 13:12:10,419 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:12:10,434 - INFO - Time successfully extracted: 11-26-2021 04:45:49
+2023-12-10 13:12:10,434 - INFO - Hold time extracted: 11-26-2021 04:45:49
+2023-12-10 13:12:10,434 - INFO - Closing the web driver...
+2023-12-10 13:12:10,473 - INFO - Web driver closed for time.
+2023-12-10 13:12:10,473 - INFO - Successfully processed account 9C4hgf4uRcuTLNnZLTfy9D1E74adEvvbFGcN7bp2kHib.
+2023-12-10 13:12:10,476 - INFO - WebDriver closed for item 614
+2023-12-10 13:12:10,477 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:12:10,477 - INFO - Starting from index 635: Found invalid 'holder' value.
+2023-12-10 13:12:10,477 - INFO - Processing item 80/100 with account: 6KpeFTxfvREGEBgdJkX8ogWtDq84HcYW49o1x5idtCFe (Global index: 636/3407)
+2023-12-10 13:12:12,228 - INFO - https://solscan.io/token/6KpeFTxfvREGEBgdJkX8ogWtDq84HcYW49o1x5idtCFe#holders
+2023-12-10 13:12:13,229 - INFO - https://solscan.io/token/6KpeFTxfvREGEBgdJkX8ogWtDq84HcYW49o1x5idtCFe#txs
+2023-12-10 13:12:28,926 - INFO - Owner address not found in the table.
+2023-12-10 13:12:28,926 - INFO - Holder Address: Address not found
+2023-12-10 13:12:43,448 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:12:43,462 - INFO - Time successfully extracted: 11-26-2021 04:40:20
+2023-12-10 13:12:43,462 - INFO - Hold time extracted: 11-26-2021 04:40:20
+2023-12-10 13:12:43,462 - INFO - Closing the web driver...
+2023-12-10 13:12:43,488 - INFO - Web driver closed for time.
+2023-12-10 13:12:43,488 - INFO - Successfully processed account 6KpeFTxfvREGEBgdJkX8ogWtDq84HcYW49o1x5idtCFe.
+2023-12-10 13:12:43,491 - INFO - WebDriver closed for item 636
+2023-12-10 13:12:43,492 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:12:43,492 - INFO - Starting from index 643: Found invalid 'holder' value.
+2023-12-10 13:12:43,492 - INFO - Processing item 81/100 with account: DHJ7tQwPhWtLwiLHMvMA6h96fUyovXDjeps5eo5b2DtH (Global index: 644/3407)
+2023-12-10 13:12:45,335 - INFO - https://solscan.io/token/DHJ7tQwPhWtLwiLHMvMA6h96fUyovXDjeps5eo5b2DtH#holders
+2023-12-10 13:12:46,336 - INFO - https://solscan.io/token/DHJ7tQwPhWtLwiLHMvMA6h96fUyovXDjeps5eo5b2DtH#txs
+2023-12-10 13:12:59,877 - INFO - Owner address not found in the table.
+2023-12-10 13:12:59,877 - INFO - Holder Address: Address not found
+2023-12-10 13:13:13,929 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:13:13,943 - INFO - Time successfully extracted: 11-26-2021 04:57:25
+2023-12-10 13:13:13,943 - INFO - Hold time extracted: 11-26-2021 04:57:25
+2023-12-10 13:13:13,943 - INFO - Closing the web driver...
+2023-12-10 13:13:13,990 - INFO - Web driver closed for time.
+2023-12-10 13:13:13,990 - INFO - Successfully processed account DHJ7tQwPhWtLwiLHMvMA6h96fUyovXDjeps5eo5b2DtH.
+2023-12-10 13:13:13,993 - INFO - WebDriver closed for item 644
+2023-12-10 13:13:13,994 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:13:13,995 - INFO - Starting from index 648: Found invalid 'holder' value.
+2023-12-10 13:13:13,995 - INFO - Processing item 82/100 with account: 6uoiBSAxVvfeqZ1jC85q4K3GH8pujQiTFuA7f1NLP4PE (Global index: 649/3407)
+2023-12-10 13:13:15,776 - INFO - https://solscan.io/token/6uoiBSAxVvfeqZ1jC85q4K3GH8pujQiTFuA7f1NLP4PE#holders
+2023-12-10 13:13:16,777 - INFO - https://solscan.io/token/6uoiBSAxVvfeqZ1jC85q4K3GH8pujQiTFuA7f1NLP4PE#txs
+2023-12-10 13:13:30,228 - INFO - Owner address not found in the table.
+2023-12-10 13:13:30,229 - INFO - Holder Address: Address not found
+2023-12-10 13:13:47,725 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:13:47,741 - INFO - Time successfully extracted: 11-26-2021 04:42:05
+2023-12-10 13:13:47,741 - INFO - Hold time extracted: 11-26-2021 04:42:05
+2023-12-10 13:13:47,741 - INFO - Closing the web driver...
+2023-12-10 13:13:47,788 - INFO - Web driver closed for time.
+2023-12-10 13:13:47,788 - INFO - Successfully processed account 6uoiBSAxVvfeqZ1jC85q4K3GH8pujQiTFuA7f1NLP4PE.
+2023-12-10 13:13:47,791 - INFO - WebDriver closed for item 649
+2023-12-10 13:13:47,792 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:13:47,792 - INFO - Starting from index 663: Found invalid 'holder' value.
+2023-12-10 13:13:47,792 - INFO - Processing item 83/100 with account: EnHkd4qS1PM2gQ4ubzTYSnncsfsJrowuPiJEtGwacKD4 (Global index: 664/3407)
+2023-12-10 13:13:49,545 - INFO - https://solscan.io/token/EnHkd4qS1PM2gQ4ubzTYSnncsfsJrowuPiJEtGwacKD4#holders
+2023-12-10 13:13:50,546 - INFO - https://solscan.io/token/EnHkd4qS1PM2gQ4ubzTYSnncsfsJrowuPiJEtGwacKD4#txs
+2023-12-10 13:14:08,030 - INFO - Owner address not found in the table.
+2023-12-10 13:14:08,030 - INFO - Holder Address: Address not found
+2023-12-10 13:14:25,072 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:14:25,086 - INFO - Time successfully extracted: 11-26-2021 04:59:56
+2023-12-10 13:14:25,087 - INFO - Hold time extracted: 11-26-2021 04:59:56
+2023-12-10 13:14:25,087 - INFO - Closing the web driver...
+2023-12-10 13:14:25,134 - INFO - Web driver closed for time.
+2023-12-10 13:14:25,134 - INFO - Successfully processed account EnHkd4qS1PM2gQ4ubzTYSnncsfsJrowuPiJEtGwacKD4.
+2023-12-10 13:14:25,136 - INFO - WebDriver closed for item 664
+2023-12-10 13:14:25,137 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:14:25,138 - INFO - Starting from index 672: Found invalid 'holder' value.
+2023-12-10 13:14:25,138 - INFO - Processing item 84/100 with account: 46TpWWDzEGX2QSH84WoFP1i5bTG1DKG5a19iQwFynopR (Global index: 673/3407)
+2023-12-10 13:14:26,889 - INFO - https://solscan.io/token/46TpWWDzEGX2QSH84WoFP1i5bTG1DKG5a19iQwFynopR#holders
+2023-12-10 13:14:27,890 - INFO - https://solscan.io/token/46TpWWDzEGX2QSH84WoFP1i5bTG1DKG5a19iQwFynopR#txs
+2023-12-10 13:14:45,128 - INFO - Owner address not found in the table.
+2023-12-10 13:14:45,128 - INFO - Holder Address: Address not found
+2023-12-10 13:15:04,311 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:15:04,325 - INFO - Time successfully extracted: 11-26-2021 04:37:03
+2023-12-10 13:15:04,325 - INFO - Hold time extracted: 11-26-2021 04:37:03
+2023-12-10 13:15:04,325 - INFO - Closing the web driver...
+2023-12-10 13:15:04,363 - INFO - Web driver closed for time.
+2023-12-10 13:15:04,363 - INFO - Successfully processed account 46TpWWDzEGX2QSH84WoFP1i5bTG1DKG5a19iQwFynopR.
+2023-12-10 13:15:04,366 - INFO - WebDriver closed for item 673
+2023-12-10 13:15:04,367 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:15:04,367 - INFO - Starting from index 674: Found invalid 'holder' value.
+2023-12-10 13:15:04,367 - INFO - Processing item 85/100 with account: CLhjYMp9RGT8QoKvnu2NnrYnqop2QudsXPGavC4p6KYu (Global index: 675/3407)
+2023-12-10 13:15:06,120 - INFO - https://solscan.io/token/CLhjYMp9RGT8QoKvnu2NnrYnqop2QudsXPGavC4p6KYu#holders
+2023-12-10 13:15:07,121 - INFO - https://solscan.io/token/CLhjYMp9RGT8QoKvnu2NnrYnqop2QudsXPGavC4p6KYu#txs
+2023-12-10 13:15:21,056 - INFO - Owner address not found in the table.
+2023-12-10 13:15:21,056 - INFO - Holder Address: Address not found
+2023-12-10 13:15:35,592 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:15:35,607 - INFO - Time successfully extracted: 11-26-2021 04:55:56
+2023-12-10 13:15:35,607 - INFO - Hold time extracted: 11-26-2021 04:55:56
+2023-12-10 13:15:35,607 - INFO - Closing the web driver...
+2023-12-10 13:15:35,646 - INFO - Web driver closed for time.
+2023-12-10 13:15:35,646 - INFO - Successfully processed account CLhjYMp9RGT8QoKvnu2NnrYnqop2QudsXPGavC4p6KYu.
+2023-12-10 13:15:35,649 - INFO - WebDriver closed for item 675
+2023-12-10 13:15:35,650 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:15:35,650 - INFO - Starting from index 682: Found invalid 'holder' value.
+2023-12-10 13:15:35,650 - INFO - Processing item 86/100 with account: 138K9FhPficdwjo1zhqKmmhX7UmEXZnXofmNGyq7dFEU (Global index: 683/3407)
+2023-12-10 13:15:37,402 - INFO - https://solscan.io/token/138K9FhPficdwjo1zhqKmmhX7UmEXZnXofmNGyq7dFEU#holders
+2023-12-10 13:15:38,403 - INFO - https://solscan.io/token/138K9FhPficdwjo1zhqKmmhX7UmEXZnXofmNGyq7dFEU#txs
+2023-12-10 13:15:54,321 - INFO - Owner address not found in the table.
+2023-12-10 13:15:54,321 - INFO - Holder Address: Address not found
+2023-12-10 13:16:08,994 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:16:09,010 - INFO - Time successfully extracted: 11-26-2021 04:33:36
+2023-12-10 13:16:09,010 - INFO - Hold time extracted: 11-26-2021 04:33:36
+2023-12-10 13:16:09,010 - INFO - Closing the web driver...
+2023-12-10 13:16:09,049 - INFO - Web driver closed for time.
+2023-12-10 13:16:09,049 - INFO - Successfully processed account 138K9FhPficdwjo1zhqKmmhX7UmEXZnXofmNGyq7dFEU.
+2023-12-10 13:16:09,052 - INFO - WebDriver closed for item 683
+2023-12-10 13:16:09,053 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:16:09,053 - INFO - Starting from index 694: Found invalid 'holder' value.
+2023-12-10 13:16:09,053 - INFO - Processing item 87/100 with account: 25YX95Gw2S1oX56Rfrm4eVMJAEBJiLsRNUicTAahP2MH (Global index: 695/3407)
+2023-12-10 13:16:10,807 - INFO - https://solscan.io/token/25YX95Gw2S1oX56Rfrm4eVMJAEBJiLsRNUicTAahP2MH#holders
+2023-12-10 13:16:11,808 - INFO - https://solscan.io/token/25YX95Gw2S1oX56Rfrm4eVMJAEBJiLsRNUicTAahP2MH#txs
+2023-12-10 13:16:27,557 - INFO - Owner address not found in the table.
+2023-12-10 13:16:27,557 - INFO - Holder Address: Address not found
+2023-12-10 13:16:43,833 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:16:43,847 - INFO - Time successfully extracted: 11-26-2021 04:34:03
+2023-12-10 13:16:43,848 - INFO - Hold time extracted: 11-26-2021 04:34:03
+2023-12-10 13:16:43,848 - INFO - Closing the web driver...
+2023-12-10 13:16:43,894 - INFO - Web driver closed for time.
+2023-12-10 13:16:43,894 - INFO - Successfully processed account 25YX95Gw2S1oX56Rfrm4eVMJAEBJiLsRNUicTAahP2MH.
+2023-12-10 13:16:43,897 - INFO - WebDriver closed for item 695
+2023-12-10 13:16:43,898 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:16:43,898 - INFO - Starting from index 708: Found invalid 'holder' value.
+2023-12-10 13:16:43,899 - INFO - Processing item 88/100 with account: 7ksyD9cpo5U595yBTGCGQWaaBW8XNRoJr7RhSczHey5i (Global index: 709/3407)
+2023-12-10 13:16:45,651 - INFO - https://solscan.io/token/7ksyD9cpo5U595yBTGCGQWaaBW8XNRoJr7RhSczHey5i#holders
+2023-12-10 13:16:46,653 - INFO - https://solscan.io/token/7ksyD9cpo5U595yBTGCGQWaaBW8XNRoJr7RhSczHey5i#txs
+2023-12-10 13:17:00,282 - INFO - Owner address not found in the table.
+2023-12-10 13:17:00,282 - INFO - Holder Address: Address not found
+2023-12-10 13:17:15,204 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:17:15,218 - INFO - Time successfully extracted: 11-26-2021 04:43:09
+2023-12-10 13:17:15,218 - INFO - Hold time extracted: 11-26-2021 04:43:09
+2023-12-10 13:17:15,218 - INFO - Closing the web driver...
+2023-12-10 13:17:15,265 - INFO - Web driver closed for time.
+2023-12-10 13:17:15,265 - INFO - Successfully processed account 7ksyD9cpo5U595yBTGCGQWaaBW8XNRoJr7RhSczHey5i.
+2023-12-10 13:17:15,268 - INFO - WebDriver closed for item 709
+2023-12-10 13:17:15,269 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:17:15,269 - INFO - Starting from index 721: Found invalid 'holder' value.
+2023-12-10 13:17:15,269 - INFO - Processing item 89/100 with account: Fx1m35cgX7cjm14CvjmXApXM5JwvdAcX2DqHEPNLKdF2 (Global index: 722/3407)
+2023-12-10 13:17:17,030 - INFO - https://solscan.io/token/Fx1m35cgX7cjm14CvjmXApXM5JwvdAcX2DqHEPNLKdF2#holders
+2023-12-10 13:17:18,031 - INFO - https://solscan.io/token/Fx1m35cgX7cjm14CvjmXApXM5JwvdAcX2DqHEPNLKdF2#txs
+2023-12-10 13:17:31,406 - INFO - Owner address not found in the table.
+2023-12-10 13:17:31,406 - INFO - Holder Address: Address not found
+2023-12-10 13:17:50,443 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:17:50,458 - INFO - Time successfully extracted: 11-26-2021 05:01:39
+2023-12-10 13:17:50,458 - INFO - Hold time extracted: 11-26-2021 05:01:39
+2023-12-10 13:17:50,458 - INFO - Closing the web driver...
+2023-12-10 13:17:50,497 - INFO - Web driver closed for time.
+2023-12-10 13:17:50,497 - INFO - Successfully processed account Fx1m35cgX7cjm14CvjmXApXM5JwvdAcX2DqHEPNLKdF2.
+2023-12-10 13:17:50,500 - INFO - WebDriver closed for item 722
+2023-12-10 13:17:50,500 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:17:50,501 - INFO - Starting from index 728: Found invalid 'holder' value.
+2023-12-10 13:17:50,501 - INFO - Processing item 90/100 with account: AM1SX73QLbgtVhGS2XKb7QBDqXyCqjogGRv8nB2S3c8q (Global index: 729/3407)
+2023-12-10 13:17:52,258 - INFO - https://solscan.io/token/AM1SX73QLbgtVhGS2XKb7QBDqXyCqjogGRv8nB2S3c8q#holders
+2023-12-10 13:17:53,259 - INFO - https://solscan.io/token/AM1SX73QLbgtVhGS2XKb7QBDqXyCqjogGRv8nB2S3c8q#txs
+2023-12-10 13:18:06,816 - INFO - Owner address not found in the table.
+2023-12-10 13:18:06,816 - INFO - Holder Address: Address not found
+2023-12-10 13:18:23,515 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:18:23,565 - INFO - Time successfully extracted: 11-26-2021 04:50:07
+2023-12-10 13:18:23,565 - INFO - Hold time extracted: 11-26-2021 04:50:07
+2023-12-10 13:18:23,565 - INFO - Closing the web driver...
+2023-12-10 13:18:23,604 - INFO - Web driver closed for time.
+2023-12-10 13:18:23,605 - INFO - Successfully processed account AM1SX73QLbgtVhGS2XKb7QBDqXyCqjogGRv8nB2S3c8q.
+2023-12-10 13:18:23,607 - INFO - WebDriver closed for item 729
+2023-12-10 13:18:23,608 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:18:23,609 - INFO - Starting from index 735: Found invalid 'holder' value.
+2023-12-10 13:18:23,609 - INFO - Processing item 91/100 with account: GUi5F4nQumJ8Se48FeeVdUrBHdpmgup2UFS7K9nkAj1C (Global index: 736/3407)
+2023-12-10 13:18:25,361 - INFO - https://solscan.io/token/GUi5F4nQumJ8Se48FeeVdUrBHdpmgup2UFS7K9nkAj1C#holders
+2023-12-10 13:18:26,362 - INFO - https://solscan.io/token/GUi5F4nQumJ8Se48FeeVdUrBHdpmgup2UFS7K9nkAj1C#txs
+2023-12-10 13:18:40,958 - INFO - Owner address not found in the table.
+2023-12-10 13:18:40,958 - INFO - Holder Address: Address not found
+2023-12-10 13:18:57,761 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:18:57,775 - INFO - Time successfully extracted: 11-26-2021 05:02:14
+2023-12-10 13:18:57,775 - INFO - Hold time extracted: 11-26-2021 05:02:14
+2023-12-10 13:18:57,775 - INFO - Closing the web driver...
+2023-12-10 13:18:57,814 - INFO - Web driver closed for time.
+2023-12-10 13:18:57,814 - INFO - Successfully processed account GUi5F4nQumJ8Se48FeeVdUrBHdpmgup2UFS7K9nkAj1C.
+2023-12-10 13:18:57,817 - INFO - WebDriver closed for item 736
+2023-12-10 13:18:57,818 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:18:57,818 - INFO - Starting from index 740: Found invalid 'holder' value.
+2023-12-10 13:18:57,818 - INFO - Processing item 92/100 with account: AvD9xLvU2P4yPzf2Mdy1oouoGUquTkqVs7Nqchac7Zkb (Global index: 741/3407)
+2023-12-10 13:18:59,573 - INFO - https://solscan.io/token/AvD9xLvU2P4yPzf2Mdy1oouoGUquTkqVs7Nqchac7Zkb#holders
+2023-12-10 13:19:00,574 - INFO - https://solscan.io/token/AvD9xLvU2P4yPzf2Mdy1oouoGUquTkqVs7Nqchac7Zkb#txs
+2023-12-10 13:19:18,586 - INFO - Owner address not found in the table.
+2023-12-10 13:19:18,586 - INFO - Holder Address: Address not found
+2023-12-10 13:19:37,558 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:19:37,573 - INFO - Time successfully extracted: 11-26-2021 04:54:02
+2023-12-10 13:19:37,573 - INFO - Hold time extracted: 11-26-2021 04:54:02
+2023-12-10 13:19:37,573 - INFO - Closing the web driver...
+2023-12-10 13:19:37,612 - INFO - Web driver closed for time.
+2023-12-10 13:19:37,613 - INFO - Successfully processed account AvD9xLvU2P4yPzf2Mdy1oouoGUquTkqVs7Nqchac7Zkb.
+2023-12-10 13:19:37,615 - INFO - WebDriver closed for item 741
+2023-12-10 13:19:37,616 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:19:37,617 - INFO - Starting from index 742: Found invalid 'holder' value.
+2023-12-10 13:19:37,617 - INFO - Processing item 93/100 with account: AUJgHmTkqcSaVTesWnTpK8DXMDdxoqup4jobQ6m22FBU (Global index: 743/3407)
+2023-12-10 13:19:39,368 - INFO - https://solscan.io/token/AUJgHmTkqcSaVTesWnTpK8DXMDdxoqup4jobQ6m22FBU#holders
+2023-12-10 13:19:40,369 - INFO - https://solscan.io/token/AUJgHmTkqcSaVTesWnTpK8DXMDdxoqup4jobQ6m22FBU#txs
+2023-12-10 13:19:54,105 - INFO - Owner address not found in the table.
+2023-12-10 13:19:54,105 - INFO - Holder Address: Address not found
+2023-12-10 13:20:08,833 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:20:08,847 - INFO - Time successfully extracted: 11-26-2021 04:53:40
+2023-12-10 13:20:08,848 - INFO - Hold time extracted: 11-26-2021 04:53:40
+2023-12-10 13:20:08,848 - INFO - Closing the web driver...
+2023-12-10 13:20:08,895 - INFO - Web driver closed for time.
+2023-12-10 13:20:08,895 - INFO - Successfully processed account AUJgHmTkqcSaVTesWnTpK8DXMDdxoqup4jobQ6m22FBU.
+2023-12-10 13:20:08,898 - INFO - WebDriver closed for item 743
+2023-12-10 13:20:08,899 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:20:08,899 - INFO - Starting from index 752: Found invalid 'holder' value.
+2023-12-10 13:20:08,899 - INFO - Processing item 94/100 with account: 6gz8U5sghjuJy9n7i5jPxxK5GvG4QPzjPDfzZUscxpb3 (Global index: 753/3407)
+2023-12-10 13:20:10,651 - INFO - https://solscan.io/token/6gz8U5sghjuJy9n7i5jPxxK5GvG4QPzjPDfzZUscxpb3#holders
+2023-12-10 13:20:11,652 - INFO - https://solscan.io/token/6gz8U5sghjuJy9n7i5jPxxK5GvG4QPzjPDfzZUscxpb3#txs
+2023-12-10 13:20:27,761 - INFO - Owner address not found in the table.
+2023-12-10 13:20:27,762 - INFO - Holder Address: Address not found
+2023-12-10 13:20:44,841 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:20:44,857 - INFO - Time successfully extracted: 11-26-2021 04:41:27
+2023-12-10 13:20:44,857 - INFO - Hold time extracted: 11-26-2021 04:41:27
+2023-12-10 13:20:44,857 - INFO - Closing the web driver...
+2023-12-10 13:20:44,904 - INFO - Web driver closed for time.
+2023-12-10 13:20:44,904 - INFO - Successfully processed account 6gz8U5sghjuJy9n7i5jPxxK5GvG4QPzjPDfzZUscxpb3.
+2023-12-10 13:20:44,907 - INFO - WebDriver closed for item 753
+2023-12-10 13:20:44,907 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:20:44,908 - INFO - Starting from index 756: Found invalid 'holder' value.
+2023-12-10 13:20:44,908 - INFO - Processing item 95/100 with account: 9a8X2PR89z2GXiHPMovuK84BkvSVwq96nxbBNvTEzvEy (Global index: 757/3407)
+2023-12-10 13:20:46,661 - INFO - https://solscan.io/token/9a8X2PR89z2GXiHPMovuK84BkvSVwq96nxbBNvTEzvEy#holders
+2023-12-10 13:20:47,662 - INFO - https://solscan.io/token/9a8X2PR89z2GXiHPMovuK84BkvSVwq96nxbBNvTEzvEy#txs
+2023-12-10 13:21:03,259 - INFO - Owner address not found in the table.
+2023-12-10 13:21:03,260 - INFO - Holder Address: Address not found
+2023-12-10 13:21:17,770 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:21:17,784 - INFO - Time successfully extracted: 11-26-2021 04:47:52
+2023-12-10 13:21:17,784 - INFO - Hold time extracted: 11-26-2021 04:47:52
+2023-12-10 13:21:17,784 - INFO - Closing the web driver...
+2023-12-10 13:21:17,811 - INFO - Web driver closed for time.
+2023-12-10 13:21:17,811 - INFO - Successfully processed account 9a8X2PR89z2GXiHPMovuK84BkvSVwq96nxbBNvTEzvEy.
+2023-12-10 13:21:17,814 - INFO - WebDriver closed for item 757
+2023-12-10 13:21:17,815 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:21:17,816 - INFO - Starting from index 763: Found invalid 'holder' value.
+2023-12-10 13:21:17,816 - INFO - Processing item 96/100 with account: 24jE3GdyyfGpc6wK4edRxydvr2bQGUp7vCHJkVryBASp (Global index: 764/3407)
+2023-12-10 13:21:19,573 - INFO - https://solscan.io/token/24jE3GdyyfGpc6wK4edRxydvr2bQGUp7vCHJkVryBASp#holders
+2023-12-10 13:21:20,574 - INFO - https://solscan.io/token/24jE3GdyyfGpc6wK4edRxydvr2bQGUp7vCHJkVryBASp#txs
+2023-12-10 13:21:35,800 - INFO - Owner address not found in the table.
+2023-12-10 13:21:35,800 - INFO - Holder Address: Address not found
+2023-12-10 13:21:52,723 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:21:52,737 - INFO - Time successfully extracted: 11-26-2021 04:34:00
+2023-12-10 13:21:52,737 - INFO - Hold time extracted: 11-26-2021 04:34:00
+2023-12-10 13:21:52,737 - INFO - Closing the web driver...
+2023-12-10 13:21:52,777 - INFO - Web driver closed for time.
+2023-12-10 13:21:52,777 - INFO - Successfully processed account 24jE3GdyyfGpc6wK4edRxydvr2bQGUp7vCHJkVryBASp.
+2023-12-10 13:21:52,780 - INFO - WebDriver closed for item 764
+2023-12-10 13:21:52,781 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:21:52,781 - INFO - Starting from index 789: Found invalid 'holder' value.
+2023-12-10 13:21:52,781 - INFO - Processing item 97/100 with account: D2ArsRz6o6b1UTAjLUajaaepT22DxxMQev6zoNqsZcCN (Global index: 790/3407)
+2023-12-10 13:21:54,535 - INFO - https://solscan.io/token/D2ArsRz6o6b1UTAjLUajaaepT22DxxMQev6zoNqsZcCN#holders
+2023-12-10 13:21:55,536 - INFO - https://solscan.io/token/D2ArsRz6o6b1UTAjLUajaaepT22DxxMQev6zoNqsZcCN#txs
+2023-12-10 13:22:11,313 - INFO - Owner address not found in the table.
+2023-12-10 13:22:11,313 - INFO - Holder Address: Address not found
+2023-12-10 13:22:27,455 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:22:27,469 - INFO - Time successfully extracted: 11-26-2021 04:57:02
+2023-12-10 13:22:27,469 - INFO - Hold time extracted: 11-26-2021 04:57:02
+2023-12-10 13:22:27,469 - INFO - Closing the web driver...
+2023-12-10 13:22:27,508 - INFO - Web driver closed for time.
+2023-12-10 13:22:27,508 - INFO - Successfully processed account D2ArsRz6o6b1UTAjLUajaaepT22DxxMQev6zoNqsZcCN.
+2023-12-10 13:22:27,511 - INFO - WebDriver closed for item 790
+2023-12-10 13:22:27,512 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:22:27,512 - INFO - Starting from index 798: Found invalid 'holder' value.
+2023-12-10 13:22:27,512 - INFO - Processing item 98/100 with account: CmhSL7D9Xb5ToMwi6iERkhFBdfJcDWiFP7TsbXqZYJ5E (Global index: 799/3407)
+2023-12-10 13:22:29,264 - INFO - https://solscan.io/token/CmhSL7D9Xb5ToMwi6iERkhFBdfJcDWiFP7TsbXqZYJ5E#holders
+2023-12-10 13:22:30,266 - INFO - https://solscan.io/token/CmhSL7D9Xb5ToMwi6iERkhFBdfJcDWiFP7TsbXqZYJ5E#txs
+2023-12-10 13:22:44,352 - INFO - Owner address not found in the table.
+2023-12-10 13:22:44,352 - INFO - Holder Address: Address not found
+2023-12-10 13:23:01,053 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:23:01,069 - INFO - Time successfully extracted: 11-26-2021 04:56:38
+2023-12-10 13:23:01,070 - INFO - Hold time extracted: 11-26-2021 04:56:38
+2023-12-10 13:23:01,070 - INFO - Closing the web driver...
+2023-12-10 13:23:01,110 - INFO - Web driver closed for time.
+2023-12-10 13:23:01,110 - INFO - Successfully processed account CmhSL7D9Xb5ToMwi6iERkhFBdfJcDWiFP7TsbXqZYJ5E.
+2023-12-10 13:23:01,115 - INFO - WebDriver closed for item 799
+2023-12-10 13:23:01,116 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:23:01,117 - INFO - Starting from index 808: Found invalid 'holder' value.
+2023-12-10 13:23:01,117 - INFO - Processing item 99/100 with account: nZmGdLQhMy67w1oA9G6791CVC5tYh9CD21GC7woWoUk (Global index: 809/3407)
+2023-12-10 13:23:02,875 - INFO - https://solscan.io/token/nZmGdLQhMy67w1oA9G6791CVC5tYh9CD21GC7woWoUk#holders
+2023-12-10 13:23:03,876 - INFO - https://solscan.io/token/nZmGdLQhMy67w1oA9G6791CVC5tYh9CD21GC7woWoUk#txs
+2023-12-10 13:23:22,132 - INFO - Owner address not found in the table.
+2023-12-10 13:23:22,132 - INFO - Holder Address: Address not found
+2023-12-10 13:23:39,667 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:23:39,682 - INFO - Time successfully extracted: 11-26-2021 05:06:24
+2023-12-10 13:23:39,682 - INFO - Hold time extracted: 11-26-2021 05:06:24
+2023-12-10 13:23:39,682 - INFO - Closing the web driver...
+2023-12-10 13:23:39,721 - INFO - Web driver closed for time.
+2023-12-10 13:23:39,721 - INFO - Successfully processed account nZmGdLQhMy67w1oA9G6791CVC5tYh9CD21GC7woWoUk.
+2023-12-10 13:23:39,724 - INFO - WebDriver closed for item 809
+2023-12-10 13:23:39,725 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-10 13:23:39,726 - INFO - Starting from index 814: Found invalid 'holder' value.
+2023-12-10 13:23:39,726 - INFO - Processing item 100/100 with account: 9FxC7hP54dwaGMr9ATLjbFdXPB77bLzWYLCxuGWAeGeE (Global index: 815/3407)
+2023-12-10 13:23:41,489 - INFO - https://solscan.io/token/9FxC7hP54dwaGMr9ATLjbFdXPB77bLzWYLCxuGWAeGeE#holders
+2023-12-10 13:23:42,490 - INFO - https://solscan.io/token/9FxC7hP54dwaGMr9ATLjbFdXPB77bLzWYLCxuGWAeGeE#txs
+2023-12-10 13:23:59,102 - INFO - Owner address not found in the table.
+2023-12-10 13:23:59,103 - INFO - Holder Address: Address not found
+2023-12-10 13:24:17,611 - INFO - Successfully read HTML content from 'chickentribe/time.html'.
+2023-12-10 13:24:17,625 - INFO - Time successfully extracted: 11-26-2021 04:46:00
+2023-12-10 13:24:17,625 - INFO - Hold time extracted: 11-26-2021 04:46:00
+2023-12-10 13:24:17,625 - INFO - Closing the web driver...
+2023-12-10 13:24:17,653 - INFO - Web driver closed for time.
+2023-12-10 13:24:17,653 - INFO - Successfully processed account 9FxC7hP54dwaGMr9ATLjbFdXPB77bLzWYLCxuGWAeGeE.
+2023-12-10 13:24:17,658 - INFO - WebDriver closed for item 815
+2023-12-10 13:24:18,227 - INFO - Progress saved after processing 100 items.
