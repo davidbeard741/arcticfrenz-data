@@ -1,12 +1,12 @@
-name: charts
+name: histogram
 
 on:
   push:
     paths:
-      - .github/workflows/charts.yml
+      - .github/workflows/histogram.yml
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 0' # At 00:00 every Sunday
+    - cron: '30 16 * * 0,2,4' # 16:30 on Sunday, Tuesday, and Thursday
 
 jobs:
   build-linux:
@@ -36,8 +36,8 @@ jobs:
         git config --global user.email 'david.beard741@gmail.com'
     - name: Commit changes
       run: |
-        git add chickentribe/histogram-ownership-duration_chickentribe.png arcticfrenz/histogram-ownership-duration_arctic-frenz.png
-        git commit -m "Update charts"
+        git add chickentribe/histogram.png arcticfrenz/histogram.png
+        git commit -m "Update Histogram Charts"
     - name: Sync with Remote
       run: |
         git fetch
