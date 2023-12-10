@@ -20,11 +20,13 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 	</tr>
 </table>
 
-The following is a structured guide designed to help you retrieve the metadata for each NFT in a collection.
+# Table of Contents
+1. [Part 1: Retrieve NFT Metadata for an Entire Collection](#part-1-retrieve-nft-metadata-for-an-entire-collection)
+2. [Part 2: Calculating Rarity Scores](#part-2-calculating-rarity-scores)
 
 ---
 
-## Part 1: How to Retrieve NFT Metadata for an Entire Collection
+## Part 1: Retrieve NFT Metadata for an Entire Collection
 
 ### Step 1: Identify the Creator Address
 
@@ -316,7 +318,7 @@ The example JSON below is truncated for illustrative purposes; the 'nft_metadata
 
 ---
 
-## Part 2: Calculating Rarity Scores for NFTs Based on Off-Chain Metadata
+## Part 2: Calculating Rarity Scores
 
 The concept of rarity in the context of NFTs pertains to the uniqueness and scarcity of certain traits within a collection. Rarity scores can significantly impact the perceived value and desirability of individual NFTs. This section outlines the process for calculating rarity scores using the off-chain metadata associated with each NFT.
 
@@ -1221,7 +1223,7 @@ if __name__ == '__main__':
 <br>
 
 <details>
-  <summary>CLICK TO EXPAND '.github/workflows/run.yml'</summary>
+  <summary>CLICK TO EXPAND YAML</summary>
 
 ```yaml
 # .github/workflows/.yml
@@ -1287,7 +1289,7 @@ jobs:
 <br>
 
 <details>
-  <summary>CLICK TO EXPAND Dependency Installation</summary>
+  <summary>CLICK TO EXPAND Env</summary>
 
 ```yaml
 # environment.yml
