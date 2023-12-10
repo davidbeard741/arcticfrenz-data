@@ -3,7 +3,7 @@ from datetime import datetime
 import json
 import numpy as np
 
-file_path = 'arcticfrenz/enhanced-nft-metadata_arctic-frenz.json'
+file_path = 'arcticfrenz/by-NFT.json'
 with open(file_path, 'r') as file:
     nft_data = json.load(file)
 
@@ -59,7 +59,7 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
 
     ax.grid(axis='y', alpha=0.65, color='#E0E0E0')
 
-    save_path = 'arcticfrenz/histogram-ownership-duration_arctic-frenz.png'
+    save_path = 'arcticfrenz/histogram.png'
 
     try:
         plt.savefig(save_path, format='png', bbox_inches='tight')
