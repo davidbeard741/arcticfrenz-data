@@ -2087,6 +2087,7 @@ This Python script calculates a score for each NFT holder based on three key fac
 | `hold_door` | The total duration held by the owner possessing the maximum cumulative duration of all NFTs they own |
 | `quantityNfts_weight` | Weight given to the number of NFTs held |
 | `rarityScore_weight` | Weight given to rarity scores |
+| `daysHeld_weight` | Weight given to days held scores |
 | `daysHeld_decay_factor` | Factor controlling the decay of score based on days held |
 
 </details>
@@ -2109,6 +2110,7 @@ This Python script calculates a score for each NFT holder based on three key fac
 | `hold_door` | 28296 |
 | `quantityNfts_weight` | 1 |
 | `rarityScore_weight` | 0.1 |
+| `daysHeld_weight` | 1 |
 | `daysHeld_decay_factor` | 0.1 |
 
 </details>
@@ -2137,7 +2139,10 @@ Review each factor's average to consider adjustments to the weights assigned to 
 ### Example Final Score
 
 The final score (`scoreHold`) is calculated as the sum of the scores for each factor:  
-`scoreHold = nfts_weighted + rarity_score_weighted + days_held_with_decay`  
+
+```Python
+scoreHold = nfts_weighted + rarity_score_weighted + days_held_weighted
+```  
 
 <br>
 
@@ -2148,7 +2153,7 @@ The final score (`scoreHold`) is calculated as the sum of the scores for each fa
 |---|---|
 | `nfts_weighted` | 0.04 |
 | `rarity_score_weighted` | 0.0708 |
-| `days_held_with_decay` | 0.0183 |
+| `days_held_weighted` | 0.0183 |
 | `scoreHold` | 0.1291 |
 
 </details>
@@ -2456,6 +2461,140 @@ plt.savefig('collection/top-holders.png', format='png', bbox_inches='tight')
 	<tr>
 		<td>
 			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/top-holders.png">
+		</td>
+	</tr>
+</table>
+
+</div>
+
+</details>
+
+<br>
+
+### Visualizing Distribution of NFT Ownership Durations
+
+The provided Python script is tailored to examine and depict the distribution of ownership duration. It adeptly processes a dataset, constructs a histogram, and stores the resulting image. This functionality is crucial for gaining a deeper understanding of the holding patterns.  Below is a breakdown of the script's primary features and capabilities:
+
+1. **Data Loading and Preprocessing**: 
+   - The script begins by loading NFT data from a JSON file (`collection/by-NFT.json`).
+   - It processes each NFT's data, focusing on the holder's address and the acquisition timestamp.
+
+2. **Ownership Duration Calculation**:
+   - For each NFT, the script calculates the duration of ownership in days.
+   - It converts Unix timestamps to dates and computes the difference from the current date.
+
+3. **Data Filtering**:
+   - NFTs held by specific addresses (like "Magic Eden V2 Authority" and "Tensor") are excluded from the analysis.
+   - Validity checks ensure that timestamps are correctly processed.
+
+4. **Histogram Generation**:
+   - The script uses Matplotlib to create a histogram that visualizes the distribution of ownership durations.
+   - The histogram is styled with a dark background and custom colors for better readability.
+
+5. **Highlighting Key Data**:
+   - The top three bins in the histogram are highlighted with distinct colors for emphasis.
+
+6. **Chart Customization**:
+   - Custom titles, axis labels, and tick parameters enhance the chart's readability.
+   - A watermark ("Arctic Frenz") is added for branding and authenticity.
+
+7. **Generation Metadata and Saving**:
+   - The chart includes a footnote with the generation date and time.
+   - The final histogram is saved as a PNG file (`collection/histogram.png`).
+
+The histogram serves as a visual representation, making complex data more accessible and interpretable.
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Python Script</summary>
+
+```Python
+import matplotlib.pyplot as plt
+from datetime import datetime
+import json
+import numpy as np
+
+file_path = 'collection/by-NFT.json'
+with open(file_path, 'r') as file:
+    nft_data = json.load(file)
+
+def plot_nft_ownership_histogram(nft_data, bins=30):
+
+    def calculate_ownership_duration(acquired_timestamp):
+        acquired_date = datetime.utcfromtimestamp(acquired_timestamp)
+        current_date = datetime.utcnow()
+        return (current_date - acquired_date).days
+
+    def is_valid_unix_timestamp(timestamp):
+        try:
+            _ = datetime.utcfromtimestamp(int(timestamp))
+            return True
+        except (ValueError, OverflowError, TypeError):
+            return False
+
+    ownership_durations = []
+    for nft in nft_data:
+        holder_data = nft.get('holderData', {})
+        holder = holder_data.get('holderAddress', "")
+        when_acquired = holder_data.get('whenAcquired', None)
+
+        if holder not in ["Magic Eden V2 Authority", "4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue"] and when_acquired and is_valid_unix_timestamp(when_acquired):
+            duration = calculate_ownership_duration(when_acquired)
+            if duration >= 0:
+                ownership_durations.append(duration)
+
+    plt.style.use('dark_background')
+    fig, ax = plt.subplots(figsize=(10, 8))
+    plt.subplots_adjust(bottom=0.25)
+
+    n, bins, patches_hist = ax.hist(ownership_durations, bins=bins, color='#0D47A1', edgecolor='#B3E5FC')
+
+    max_bin_indices = np.argsort(n)[-3:]
+    colors = ['#FFC71F', '#CC9A05', '#997304']
+    for i, index in enumerate(max_bin_indices[::-1]):
+        patches_hist[index].set_facecolor(colors[i])
+
+    ax.set_title('Collection Name\nDistribution of NFT Ownership Durations', fontsize=16, color='#E0E0E0')
+    ax.set_xlabel('Length of Ownership (Days)', fontsize=14, color='#E0E0E0')
+    ax.set_ylabel('Number of NFTs', fontsize=14, color='#E0E0E0')
+
+    ax.tick_params(axis='x', colors='#E0E0E0', labelsize=12)
+    ax.tick_params(axis='y', colors='#E0E0E0', labelsize=12)
+
+    ax.text(0.5, 0.5, 'Arctic Frenz', fontsize=70, color='gray', alpha=0.2,
+             ha='center', va='center', rotation=30, transform=ax.transAxes)
+
+    generation_time = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC")
+    footnote_text = f"Chart generated on: {generation_time}\nThis analysis did not include NFTs listed on Magic Eden and Tensor."
+    fig.text(0.05, 0.1, footnote_text, fontsize=10, color='#E0E0E0')
+
+    ax.grid(axis='y', alpha=0.65, color='#E0E0E0')
+
+    save_path = 'collection/histogram.png'
+
+    try:
+        plt.savefig(save_path, format='png', bbox_inches='tight')
+        plt.close(fig)
+    except Exception as e:
+        print(f"Error saving file: {e}")
+
+plot_nft_ownership_histogram(nft_data)
+```
+
+</details>
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Histogram</summary>
+
+<div align="center">
+
+<table align="center">
+	<tr>
+		<td>
+			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/histogram.png">
 		</td>
 	</tr>
 </table>
