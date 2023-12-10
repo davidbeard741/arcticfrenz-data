@@ -1223,7 +1223,7 @@ if __name__ == '__main__':
 <br>
 
 <details>
-  <summary>CLICK TO EXPAND YAML'</summary>
+  <summary>CLICK TO EXPAND YAML</summary>
 
 ```yaml
 # .github/workflows/.yml
