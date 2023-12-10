@@ -1758,37 +1758,26 @@ if __name__ == '__main__':
 
 ## Part 4: Data Processing Pipeline
 
-Below is a flowchart that outlines the primary components of from Part 5 to Part 7.
+Below is a flowchart outlining the primary components of the processing pipeline from [Part 5](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#part-5-pretty-printing) to [Part 7](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#part-7-data-visualization).
 
 <br>
 
 <details>
   <summary>CLICK TO EXPAND Flowchart</summary>
 
-``mermaid
-graph TD
-    style A fill:#004400,stroke:#b3c2bf,stroke-width:2px
-    style B fill:#000088,stroke:#b3c2bf,stroke-width:2px
-    style C fill:#004400,stroke:#b3c2bf,stroke-width:2px
-    style D fill:#000088,stroke:#b3c2bf,stroke-width:2px
-    style E fill:#004400,stroke:#b3c2bf,stroke-width:2px
-    style F fill:#000088,stroke:#b3c2bf,stroke-width:2px
-    style G fill:#004400,stroke:#b3c2bf,stroke-width:2px
-    style H fill:#000088,stroke:#b3c2bf,stroke-width:2px
-    style I fill:#880000,stroke:#b3c2bf,stroke-width:2px
-    style J fill:#000088,stroke:#b3c2bf,stroke-width:2px
-    style K fill:#880000,stroke:#b3c2bf,stroke-width:2px
+<div align="center">
 
-    A[nft_metadata_with_rarity_and_holder_data.json] -->|Input| B(by-NFT.py)
-    B -->|Output| C[by-NFT.json]
-    C -->|Input| D(by-holder.py)
-    D -->|Output| E[by-holder.json]
-    E -->|Input| F(rank-holders.py)
-    F -->|Output| G[ranked-holders.json]
-    G -->|Input| H(top-holders.py)
-    H -->|Output| I[top-holders.png]
-    C -->|Input| J(histogram.py)
-    J -->|Output| K[histogram.png]
+<table align="center">
+	<tr>
+		<td>
+			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/flow-chart.png">
+		</td>
+	</tr>
+</table>
+
+</div>
+
+
 
 </details>
 
@@ -2402,6 +2391,9 @@ plt.savefig('collection/top-holders.png', format='png', bbox_inches='tight')
 
 <br>
 
+<details>
+  <summary>CLICK TO EXPAND Bar Chart</summary>
+
 <div align="center">
 
 <table align="center">
@@ -2413,6 +2405,8 @@ plt.savefig('collection/top-holders.png', format='png', bbox_inches='tight')
 </table>
 
 </div>
+
+</details>
 
 <br>
 
