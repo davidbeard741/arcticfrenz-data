@@ -6,7 +6,7 @@ on:
       - .github/workflows/sentries.yml
   workflow_dispatch:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '30 */2 * * *' # every 2 hrs at the 30th min of the hr
 
 jobs:
   build-linux:
