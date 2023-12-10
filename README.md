@@ -21,13 +21,13 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 </table>
 
 # Table of Contents
-1. [Part 1: Retrieve NFT Metadata for an Entire Collection](#part-1-retrieve-nft-metadata-for-an-entire-collection)
+1. [Part 1: Retrieve NFT Metadata](#part-1-retrieve-nft-metadata)
 2. [Part 2: Calculating Rarity Scores](#part-2-calculating-rarity-scores)
-3. [Part 3: Enhancing the Metadata of an Entire NFT Collection with Additional Data](#part3-enhancing-the-metadata-of-an-entire-nft-collection-with-additional-data)
+3. [Part 3: Enhancing the Metadata](#part3-enhancing-the-metadata)
 
 ---
 
-## Part 1: Retrieve NFT Metadata for an Entire Collection
+## Part 1: Retrieve NFT Metadata
 
 ### Step 1: Identify the Creator Address
 
@@ -564,7 +564,7 @@ The output is an updated JSON file, nft_metadata_with_rarity.json, where each NF
 
 ---
 
-## Part 3: Enhancing the Metadata of an Entire NFT Collection with Additional Data
+## Part 3: Enhancing the Metadata
 
 ### Step 1: Setting Up Your Python Development Environment
 
