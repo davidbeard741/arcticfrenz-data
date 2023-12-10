@@ -1223,7 +1223,7 @@ if __name__ == '__main__':
 <br>
 
 <details>
-  <summary>CLICK TO EXPAND '.github/workflows/run.yml'</summary>
+  <summary>CLICK TO EXPAND YAML'</summary>
 
 ```yaml
 # .github/workflows/.yml
@@ -1289,7 +1289,7 @@ jobs:
 <br>
 
 <details>
-  <summary>CLICK TO EXPAND Dependency Installation</summary>
+  <summary>CLICK TO EXPAND Env</summary>
 
 ```yaml
 # environment.yml
