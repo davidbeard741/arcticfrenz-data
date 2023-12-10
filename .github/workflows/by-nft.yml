@@ -6,7 +6,7 @@ on:
       - .github/workflows/by-nft.yml
   workflow_dispatch:
   schedule:
-    - cron: '30 1 * * 1,3,5,7' # At 0130 on every Mon, Wed, Fri, and Sun
+    - cron: '30 1 * * 1,3,5,0' # At 0130 on every Mon, Wed, Fri, and Sun
 
 jobs:
   build-linux:
