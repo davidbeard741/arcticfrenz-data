@@ -1,16 +1,16 @@
 ```mermaid
 graph TD
-    style A fill:#004400,stroke:#b3c2bf,stroke-width:2px  // .json
-    style B fill:#000088,stroke:#b3c2bf,stroke-width:2px  // .py
-    style C fill:#004400,stroke:#b3c2bf,stroke-width:2px  // .json
-    style D fill:#000088,stroke:#b3c2bf,stroke-width:2px  // .py
-    style E fill:#004400,stroke:#b3c2bf,stroke-width:2px  // .json
-    style F fill:#000088,stroke:#b3c2bf,stroke-width:2px  // .py
-    style G fill:#004400,stroke:#b3c2bf,stroke-width:2px  // .json
-    style H fill:#000088,stroke:#b3c2bf,stroke-width:2px  // .py
-    style I fill:#880000,stroke:#b3c2bf,stroke-width:2px  // .png
-    style J fill:#000088,stroke:#b3c2bf,stroke-width:2px  // .py
-    style K fill:#880000,stroke:#b3c2bf,stroke-width:2px  // .png
+    style A fill:#004400,stroke:#b3c2bf,stroke-width:2px
+    style B fill:#000088,stroke:#b3c2bf,stroke-width:2px
+    style C fill:#004400,stroke:#b3c2bf,stroke-width:2px
+    style D fill:#000088,stroke:#b3c2bf,stroke-width:2px
+    style E fill:#004400,stroke:#b3c2bf,stroke-width:2px
+    style F fill:#000088,stroke:#b3c2bf,stroke-width:2px
+    style G fill:#004400,stroke:#b3c2bf,stroke-width:2px
+    style H fill:#000088,stroke:#b3c2bf,stroke-width:2px
+    style I fill:#880000,stroke:#b3c2bf,stroke-width:2px
+    style J fill:#000088,stroke:#b3c2bf,stroke-width:2px
+    style K fill:#880000,stroke:#b3c2bf,stroke-width:2px
 
     A[nft_metadata_with_rarity_and_holder_data.json] -->|Input| B(by-NFT.py)
     B -->|Output| C[by-NFT.json]
