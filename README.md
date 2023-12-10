@@ -1803,7 +1803,10 @@ This script reformats and enhances the data by performing the following tasks:
 4. Rewrites data into a new format.
 5. Orders NFTs alphabetically by base name and numerically by number within the name (if present).
 
-**Input:**
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Input Description</summary>
 
 * JSON file containing Arctic Frenz NFT metadata with the following key-value pairs:
     * `onChainMetadata`: Dictionary containing on-chain metadata.
@@ -1815,6 +1818,8 @@ This script reformats and enhances the data by performing the following tasks:
         * `holder`: String representing the holder address.
         * `when acquired`: Unix timestamp indicating acquisition time.
         * `time checked`: Unix timestamp indicating the last check for holder information.
+
+</details>
 
 <br>
 
@@ -1875,13 +1880,16 @@ with open("enhanced-nft-metadata_by-NFT.json", "w") as f:
 
 <br>
 
-**Output:**
+<details>
+  <summary>CLICK TO EXPAND Output Description</summary>
 
 * New JSON file containing enhanced NFT data with the following key-value pairs:
     * `nftName`: String representing the base name of the NFT.
     * `nftAddress`: String representing the NFT address.
     * `rarityScore`: Integer representing the NFT rarity score.
     * `holderData`: Dictionary containing holder information if available.
+
+</details>
 
 <br>
 
@@ -2118,7 +2126,7 @@ The final score (`scoreHold`) is calculated as the sum of the scores for each fa
 <br>
 
 <details>
-  <summary>CLICK TO EXPAND Example Averages</summary>
+  <summary>CLICK TO EXPAND Example Scores</summary>
 
 | Factor | Scores |
 |---|---|
