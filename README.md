@@ -24,7 +24,11 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 1. [Part 1: Retrieve NFT Metadata](https://github.com/davidbeard741/arcticfrenz-data#part-1-retrieve-nft-metadata)
 2. [Part 2: Calculating Rarity Scores](https://github.com/davidbeard741/arcticfrenz-data#part-2-calculating-rarity-scores)
 3. [Part 3: Enhancing the Metadata](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#part-3-enhancing-the-metadata)
-4. [Part 4: ](https://)
+4. [Part 4: Data Processing Pipeline](https://github.com/davidbeard741/arcticfrenz-data/tree/main#part-4-data-processing-pipeline)
+5. [Part 5: Pretty-Printing](https://github.com/davidbeard741/arcticfrenz-data/tree/main#part-5-pretty-printing)
+6. [Part 6: Ranking Holders](https://github.com/davidbeard741/arcticfrenz-data/tree/main#part-6-ranking-holders)
+7. [Part 7: Data Visualization](https://github.com/davidbeard741/arcticfrenz-data/tree/main#part-7-data-visualization)
+
 
 ---
 
@@ -41,19 +45,31 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 	<tr>
 		<td>
 			2. Navigate to the NFT's detail page and locate its Mint Address, then proceed to <a href="https://solscan.io">Solscan</a>
-			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg">
+			<br>
+			<details>
+  				<summary>CLICK TO EXPAND Screenshot</summary>
+				<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg">
+			</details>
 		</td>
 	</tr>
 	<tr>
 		<td>
-			3. In Solscan, click on the "Creators" tab. Look for the first listed address that shows a 0% share and is marked with a blue tick. 
-			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/0D636107-2D85-4DBD-849D-E19A2B647338.jpeg">
+			3. In Solscan, click on the "Creators" tab. Look for the first listed address that shows a 0% share and is marked with a blue tick.  
+   			<br>
+			<details>
+  				<summary>CLICK TO EXPAND Screenshot</summary>
+				<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/0D636107-2D85-4DBD-849D-E19A2B647338.jpeg">
+			</details>   
 		</td>
 	</tr>
 	<tr>
 		<td>
 			4. Copy this Creator Address.
-			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/CC753005-3372-463E-97A9-D8E0710BC5A3.jpeg">
+			<br>
+			<details>
+  				<summary>CLICK TO EXPAND Screenshot</summary>
+				<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/CC753005-3372-463E-97A9-D8E0710BC5A3.jpeg">
+			</details>   
 		</td>
 	</tr> 
 </table>
@@ -103,7 +119,11 @@ nft_addresses = [
 	<tr>
 		<td>
 			3. Copy your free API key for Step 6.
-			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/1C21909B-7CF4-41A9-B6A7-8655DF609006.jpeg">
+			<br>
+			<details>
+  				<summary>CLICK TO EXPAND Screenshot</summary>
+				<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/1C21909B-7CF4-41A9-B6A7-8655DF609006.jpeg">
+			</details>
 		</td>
 	</tr>
 </table>
@@ -1758,37 +1778,26 @@ if __name__ == '__main__':
 
 ## Part 4: Data Processing Pipeline
 
-Below is a flowchart that outlines the primary components of from Part 5 to Part 7.
+Below is a flowchart outlining the primary components of the processing pipeline from [Part 5](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#part-5-pretty-printing) to [Part 7](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#part-7-data-visualization).
 
 <br>
 
 <details>
   <summary>CLICK TO EXPAND Flowchart</summary>
 
-``mermaid
-graph TD
-    style A fill:#004400,stroke:#b3c2bf,stroke-width:2px
-    style B fill:#000088,stroke:#b3c2bf,stroke-width:2px
-    style C fill:#004400,stroke:#b3c2bf,stroke-width:2px
-    style D fill:#000088,stroke:#b3c2bf,stroke-width:2px
-    style E fill:#004400,stroke:#b3c2bf,stroke-width:2px
-    style F fill:#000088,stroke:#b3c2bf,stroke-width:2px
-    style G fill:#004400,stroke:#b3c2bf,stroke-width:2px
-    style H fill:#000088,stroke:#b3c2bf,stroke-width:2px
-    style I fill:#880000,stroke:#b3c2bf,stroke-width:2px
-    style J fill:#000088,stroke:#b3c2bf,stroke-width:2px
-    style K fill:#880000,stroke:#b3c2bf,stroke-width:2px
+<div align="center">
 
-    A[nft_metadata_with_rarity_and_holder_data.json] -->|Input| B(by-NFT.py)
-    B -->|Output| C[by-NFT.json]
-    C -->|Input| D(by-holder.py)
-    D -->|Output| E[by-holder.json]
-    E -->|Input| F(rank-holders.py)
-    F -->|Output| G[ranked-holders.json]
-    G -->|Input| H(top-holders.py)
-    H -->|Output| I[top-holders.png]
-    C -->|Input| J(histogram.py)
-    J -->|Output| K[histogram.png]
+<table align="center">
+	<tr>
+		<td>
+			<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/flow-chart.png">
+		</td>
+	</tr>
+</table>
+
+</div>
+
+
 
 </details>
 
@@ -1810,7 +1819,10 @@ This script reformats and enhances the data by performing the following tasks:
 4. Rewrites data into a new format.
 5. Orders NFTs alphabetically by base name and numerically by number within the name (if present).
 
-**Input:**
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Input Description</summary>
 
 * JSON file containing Arctic Frenz NFT metadata with the following key-value pairs:
     * `onChainMetadata`: Dictionary containing on-chain metadata.
@@ -1822,6 +1834,8 @@ This script reformats and enhances the data by performing the following tasks:
         * `holder`: String representing the holder address.
         * `when acquired`: Unix timestamp indicating acquisition time.
         * `time checked`: Unix timestamp indicating the last check for holder information.
+
+</details>
 
 <br>
 
@@ -1882,13 +1896,16 @@ with open("enhanced-nft-metadata_by-NFT.json", "w") as f:
 
 <br>
 
-**Output:**
+<details>
+  <summary>CLICK TO EXPAND Output Description</summary>
 
 * New JSON file containing enhanced NFT data with the following key-value pairs:
     * `nftName`: String representing the base name of the NFT.
     * `nftAddress`: String representing the NFT address.
     * `rarityScore`: Integer representing the NFT rarity score.
     * `holderData`: Dictionary containing holder information if available.
+
+</details>
 
 <br>
 
@@ -2054,7 +2071,10 @@ This Python script calculates a score for each NFT holder based on three key fac
 2. Rarity score of NFTs held.
 3. Time each NFT has been held.
 
-### Variable Descriptions
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Variable Descriptions</summary>
 
 | Input | Description |
 |---|---|
@@ -2069,7 +2089,12 @@ This Python script calculates a score for each NFT holder based on three key fac
 | `rarityScore_weight` | Weight given to rarity scores |
 | `daysHeld_decay_factor` | Factor controlling the decay of score based on days held |
 
-### Analysis of Holder Score with Example Data
+</details>
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Example Data</summary>
 
 | Input | Value |
 |---|---|
@@ -2086,9 +2111,18 @@ This Python script calculates a score for each NFT holder based on three key fac
 | `rarityScore_weight` | 0.1 |
 | `daysHeld_decay_factor` | 0.1 |
 
+</details>
+
+<br>
+
 ### Example Averages 
 
 Review each factor's average to consider adjustments to the weights assigned to the number of NFTs (`quantityNfts_weight`), rarity score (`rarityScore_weight`), and holding duration (`daysHeld_weight`). This evaluation will help in fine-tuning the scoring system for more accurate rankings.
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Example Averages</summary>
 
 | Factor Averages | Scores |
 |---|---|
@@ -2096,19 +2130,30 @@ Review each factor's average to consider adjustments to the weights assigned to 
 | `average_rarity_score_weighted` | 0.0640 |
 | `average_days_held_weighted` | 0.0753 |
 
-### Example Factor Scores
+</details>
+
+<br>
+
+### Example Final Score
+
+The final score (`scoreHold`) is calculated as the sum of the scores for each factor:  
+`scoreHold = nfts_weighted + rarity_score_weighted + days_held_with_decay`  
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Example Scores</summary>
 
 | Factor | Scores |
 |---|---|
 | `nfts_weighted` | 0.04 |
 | `rarity_score_weighted` | 0.0708 |
 | `days_held_with_decay` | 0.0183 |
+| `scoreHold` | 0.1291 |
 
-### Example Final Score
+</details>
 
-The final score (`scoreHold`) is calculated as the sum of the scores for each factor:  
-`scoreHold = nfts_weighted + rarity_score_weighted + days_held_with_decay`  
-Score for the example's holder = 0.1291
+<br>
 
 ### Analysis of Each Factor's Influence
 
@@ -2402,6 +2447,9 @@ plt.savefig('collection/top-holders.png', format='png', bbox_inches='tight')
 
 <br>
 
+<details>
+  <summary>CLICK TO EXPAND Bar Chart</summary>
+
 <div align="center">
 
 <table align="center">
@@ -2413,6 +2461,8 @@ plt.savefig('collection/top-holders.png', format='png', bbox_inches='tight')
 </table>
 
 </div>
+
+</details>
 
 <br>
 
