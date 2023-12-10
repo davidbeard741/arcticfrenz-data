@@ -6,7 +6,7 @@ on:
       - .github/workflows/claynosaurz.yml
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *' # every 2 hrs at the top on the hr
+    - cron: '0 */2 * * *' # every 2 hrs at the top of the hr
 
 jobs:
   build-linux:
