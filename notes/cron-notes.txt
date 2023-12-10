@@ -22,13 +22,25 @@
 - cron: '15 */2 * * *' # every 2 hrs at the 15th min of the hr
 ```
 
-abc
+```.github/workflows/okay-bears.yml
+- cron: '30 */2 * * *' # every 2 hrs at the 30th min of the hr
+```
 
-abc
+```.github/workflows/fff.yml
+- cron: '45 */2 * * *' # every 2 hrs at the 45th min of the hr
+```
 
-abc
+```.github/workflows/smb.yml
+- cron: '0 */2 * * *' # every 2 hrs at the top of the hr
+```
 
-abc
+```.github/workflows/solc.yml
+- cron: '15 */2 * * *' # every 2 hrs at the 15th min of the hr
+```
+
+```.github/workflows/chads.yml
+- cron: '30 */2 * * *' # every 2 hrs at the 30th min of the hr
+```
 
 ```
 - cron: '30 1 * * 1,3,5,0' # At 0130 on every Mon, Wed, Fri, and Sun
