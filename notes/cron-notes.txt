@@ -22,9 +22,13 @@
 - cron: '15 */2 * * *' # every 2 hrs at the 15th min of the hr
 ```
 
-abc
+```.github/workflows/okay-bears.yml
+- cron: '30 */2 * * *' # every 2 hrs at the 30th min of the hr
+```
 
-abc
+```.github/workflows/fff.yml
+- cron: '45 */2 * * *' # every 2 hrs at the 45th min of the hr
+```
 
 abc
 
