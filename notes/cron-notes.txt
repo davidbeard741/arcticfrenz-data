@@ -18,8 +18,17 @@
 - cron: '0 */2 * * *' # every 2 hrs at the top of the hr
 ```
 
+```.github/workflows/quekz.yml
+- cron: '15 */2 * * *' # every 2 hrs at the 15th min of the hr
+```
+
 abc
 
+abc
+
+abc
+
+abc
 
 ```
 - cron: '30 1 * * 1,3,5,0' # At 0130 on every Mon, Wed, Fri, and Sun
