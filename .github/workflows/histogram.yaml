@@ -6,7 +6,7 @@ on:
       - .github/workflows/histogram.yml
   workflow_dispatch:
   schedule:
-    - cron: '30 16 * * 0,2,4' # 16:30 on Sunday, Tuesday, and Thursday
+    - cron: '30 5 * * 1,3,5,0' # At 0530 on every Mon, Wed, Fri, and Sun
 
 jobs:
   build-linux:
