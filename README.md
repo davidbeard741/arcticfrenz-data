@@ -24,7 +24,11 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 1. [Part 1: Retrieve NFT Metadata](https://github.com/davidbeard741/arcticfrenz-data#part-1-retrieve-nft-metadata)
 2. [Part 2: Calculating Rarity Scores](https://github.com/davidbeard741/arcticfrenz-data#part-2-calculating-rarity-scores)
 3. [Part 3: Enhancing the Metadata](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#part-3-enhancing-the-metadata)
-4. [Part 4: ](https://)
+4. [Part 4: Data Processing Pipeline](https://github.com/davidbeard741/arcticfrenz-data/tree/main#part-4-data-processing-pipeline)
+5. [Part 5: Pretty-Printing](https://github.com/davidbeard741/arcticfrenz-data/tree/main#part-5-pretty-printing)
+6. [Part 6: Ranking Holders](https://github.com/davidbeard741/arcticfrenz-data/tree/main#part-6-ranking-holders)
+7. [Part 7: Data Visualization](https://github.com/davidbeard741/arcticfrenz-data/tree/main#part-7-data-visualization)
+
 
 ---
 
