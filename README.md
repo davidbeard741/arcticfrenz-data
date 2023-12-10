@@ -50,7 +50,6 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
   				<summary>CLICK TO EXPAND Screenshot</summary>
 				<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/3B369D54-BACD-4747-9AC7-9A5026257145.jpeg">
 			</details>
-			<br>
 		</td>
 	</tr>
 	<tr>
@@ -60,8 +59,7 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 			<details>
   				<summary>CLICK TO EXPAND Screenshot</summary>
 				<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/0D636107-2D85-4DBD-849D-E19A2B647338.jpeg">
-			</details>
-			<br>   
+			</details>   
 		</td>
 	</tr>
 	<tr>
@@ -71,8 +69,7 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource designed to
 			<details>
   				<summary>CLICK TO EXPAND Screenshot</summary>
 				<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/CC753005-3372-463E-97A9-D8E0710BC5A3.jpeg">
-			</details>
-			<br>   
+			</details>   
 		</td>
 	</tr> 
 </table>
@@ -127,7 +124,6 @@ nft_addresses = [
   				<summary>CLICK TO EXPAND Screenshot</summary>
 				<img src="https://raw.githubusercontent.com/davidbeard741/arcticfrenz-data/main/images/1C21909B-7CF4-41A9-B6A7-8655DF609006.jpeg">
 			</details>
-			<br>
 		</td>
 	</tr>
 </table>
