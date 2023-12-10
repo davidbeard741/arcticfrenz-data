@@ -1756,7 +1756,47 @@ if __name__ == '__main__':
 
 ---
 
-## Part 4: Pretty-Printing
+## Part 4: Data Processing Pipeline
+
+Below is a flowchart that outlines the primary components of from Part 5 to Part 7.
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Flowchart</summary>
+
+``mermaid
+graph TD
+    style A fill:#004400,stroke:#b3c2bf,stroke-width:2px
+    style B fill:#000088,stroke:#b3c2bf,stroke-width:2px
+    style C fill:#004400,stroke:#b3c2bf,stroke-width:2px
+    style D fill:#000088,stroke:#b3c2bf,stroke-width:2px
+    style E fill:#004400,stroke:#b3c2bf,stroke-width:2px
+    style F fill:#000088,stroke:#b3c2bf,stroke-width:2px
+    style G fill:#004400,stroke:#b3c2bf,stroke-width:2px
+    style H fill:#000088,stroke:#b3c2bf,stroke-width:2px
+    style I fill:#880000,stroke:#b3c2bf,stroke-width:2px
+    style J fill:#000088,stroke:#b3c2bf,stroke-width:2px
+    style K fill:#880000,stroke:#b3c2bf,stroke-width:2px
+
+    A[nft_metadata_with_rarity_and_holder_data.json] -->|Input| B(by-NFT.py)
+    B -->|Output| C[by-NFT.json]
+    C -->|Input| D(by-holder.py)
+    D -->|Output| E[by-holder.json]
+    E -->|Input| F(rank-holders.py)
+    F -->|Output| G[ranked-holders.json]
+    G -->|Input| H(top-holders.py)
+    H -->|Output| I[top-holders.png]
+    C -->|Input| J(histogram.py)
+    J -->|Output| K[histogram.png]
+
+</details>
+
+<br>
+
+---
+
+## Part 5: Pretty-Printing
 
 Pretty-printing involves rearranging fields in a JSON file to enhance readability. This process includes structuring the data by organizing fields in a logical order and improving the overall presentation of the content.
 
@@ -2004,7 +2044,7 @@ with open('collection/enhanced-nft-metadata_by-holder.json', 'w') as f:
 
 ---
 
-## Part 5: Ranking Holders
+## Part 6: Ranking Holders
 
 ### Holder Score Calculator
 
@@ -2233,7 +2273,7 @@ except Exception as e:
 
 ---
 
-## Part 6: Data Visualization
+## Part 7: Data Visualization
 
 ### Visualizing Top Ranked Holders
 
