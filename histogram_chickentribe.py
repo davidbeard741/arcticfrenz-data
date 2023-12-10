@@ -3,7 +3,7 @@ from datetime import datetime
 import json
 import numpy as np
 
-file_path = 'chickentribe/enhanced-nft-metadata_chickentribe.json'
+file_path = 'chickentribe/by-NFT.json'
 with open(file_path, 'r') as file:
     nft_data = json.load(file)
 
@@ -59,7 +59,7 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
 
     ax.grid(axis='y', alpha=0.65, color='#E0E0E0')
 
-    save_path = 'chickentribe/histogram-ownership-duration_chickentribe.png'
+    save_path = 'chickentribe/histogram.png'
 
     try:
         plt.savefig(save_path, format='png', bbox_inches='tight')
