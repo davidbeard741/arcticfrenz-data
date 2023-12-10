@@ -2047,7 +2047,10 @@ This Python script calculates a score for each NFT holder based on three key fac
 2. Rarity score of NFTs held.
 3. Time each NFT has been held.
 
-### Variable Descriptions
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Variable Descriptions</summary>
 
 | Input | Description |
 |---|---|
@@ -2062,7 +2065,12 @@ This Python script calculates a score for each NFT holder based on three key fac
 | `rarityScore_weight` | Weight given to rarity scores |
 | `daysHeld_decay_factor` | Factor controlling the decay of score based on days held |
 
-### Analysis of Holder Score with Example Data
+</details>
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Example Data</summary>
 
 | Input | Value |
 |---|---|
@@ -2079,9 +2087,18 @@ This Python script calculates a score for each NFT holder based on three key fac
 | `rarityScore_weight` | 0.1 |
 | `daysHeld_decay_factor` | 0.1 |
 
+</details>
+
+<br>
+
 ### Example Averages 
 
 Review each factor's average to consider adjustments to the weights assigned to the number of NFTs (`quantityNfts_weight`), rarity score (`rarityScore_weight`), and holding duration (`daysHeld_weight`). This evaluation will help in fine-tuning the scoring system for more accurate rankings.
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Example Averages</summary>
 
 | Factor Averages | Scores |
 |---|---|
@@ -2089,19 +2106,30 @@ Review each factor's average to consider adjustments to the weights assigned to 
 | `average_rarity_score_weighted` | 0.0640 |
 | `average_days_held_weighted` | 0.0753 |
 
-### Example Factor Scores
+</details>
+
+<br>
+
+### Example Final Score
+
+The final score (`scoreHold`) is calculated as the sum of the scores for each factor:  
+`scoreHold = nfts_weighted + rarity_score_weighted + days_held_with_decay`  
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Example Averages</summary>
 
 | Factor | Scores |
 |---|---|
 | `nfts_weighted` | 0.04 |
 | `rarity_score_weighted` | 0.0708 |
 | `days_held_with_decay` | 0.0183 |
+| `scoreHold` | 0.1291 |
 
-### Example Final Score
+</details>
 
-The final score (`scoreHold`) is calculated as the sum of the scores for each factor:  
-`scoreHold = nfts_weighted + rarity_score_weighted + days_held_with_decay`  
-Score for the example's holder = 0.1291
+<br>
 
 ### Analysis of Each Factor's Influence
 
