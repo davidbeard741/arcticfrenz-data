@@ -6,7 +6,7 @@ on:
       - .github/workflows/chickentribe.yml
   workflow_dispatch:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '15 */2 * * *' # every 2 hrs at the 15th min of the hr
 
 jobs:
   build-linux:
