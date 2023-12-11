@@ -36,8 +36,14 @@ jobs:
         git config --global user.email 'david.beard741@gmail.com'
     - name: Commit changes
       run: |
-        git add chickentribe/by-NFT.json arcticfrenz/by-NFT.json
-        git commit -m "Pretty-Printing by NFT"
+        for file in chickentribe/by-NFT.json arcticfrenz/by-NFT.json; do
+          if git diff --exit-code --quiet "$file"; then
+            echo "$file no changes to commit, skipping."
+          else
+            git add "$file"
+            git commit -m "Update $file"
+          fi
+        done
     - name: Sync with Remote
       run: |
         git fetch
