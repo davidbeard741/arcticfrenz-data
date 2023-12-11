@@ -1,5 +1,5 @@
 name: quekz
-'on':
+on:
   workflow_dispatch: 
   schedule:
     - cron: 15 */2 * * * # every 2 hrs at the 15th min of the hr
