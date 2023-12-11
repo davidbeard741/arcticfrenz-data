@@ -41,7 +41,7 @@ jobs:
     - name: Sync with Remote
       run: |
         git fetch
-        git merge origin/main
+        git rebase origin/main
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
