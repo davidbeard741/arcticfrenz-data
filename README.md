@@ -352,15 +352,18 @@ The concept of rarity in the context of NFTs pertains to the uniqueness and scar
 
 3. **Calculate Rarity Scores**: Assign a rarity score to each NFT by summing the inverse frequencies of its trait values. This score quantifies the rarity, with higher scores indicating rarer traits.
 
-### Implementation
-
-The following Python script performs the above steps. It processes the off-chain metadata to compute a rarity score for each NFT, then appends this score to the original dataset, and finally outputs the enriched dataset as a JSON file.
-
 ### Rarity Score Implications
 
 A lower frequency of a trait value indicates rarity, and hence, it contributes more significantly to the rarity score. The scoring system is designed such that the sum of the inverses of the trait frequencies for an NFT's traits yields its total rarity score. The end result is a comprehensive dataset where each NFT entry is supplemented with a rarity_score field, reflecting its uniqueness within the collection.
 
 ### Mathematical Formulation
+
+The rarity score is calculated by summing the inverse frequencies of all the trait values for the NFT. This means that rarer traits will contribute more significantly to the rarity score than more common traits.
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Math</summary>
 
 The rarity score for an NFT can be mathematically expressed as:
 
@@ -382,11 +385,13 @@ where:
 * `N` is the total number of traits for the NFT
 * `fᵢ` is the frequency of the `i`th trait value for the NFT
 
-In other words, the rarity score is calculated by summing the inverse frequencies of all the trait values for the NFT. This means that rarer traits will contribute more significantly to the rarity score than more common traits.
+</details>
 
 ### Handling Missing or Undefined Attributes
 
 In the rarity score calculation, it is possible for an NFT to have missing or undefined attributes. When such cases arise, the script is designed to handle these gracefully by assigning a default rarity score of 0. This ensures that every NFT has a defined rarity score when saved to the JSON file. By doing so, the dataset maintains consistency and allows for a meaningful comparison between NFTs, even if some have incomplete metadata. This approach also prevents potential errors during data processing and analysis that could occur due to undefined or missing values.
+
+### Rarity Script 
 
 <br>
 
