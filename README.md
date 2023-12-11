@@ -1,6 +1,6 @@
 # Arctic Frenz Discord Bot Data Repository
 
-Welcome to the Arctic Frenz Data Repository - a specialized resource designed to enhance the Arctic Frenz Bot with extensive NFT analytics. Our repository features in-depth data on aspects like asset ownership duration, listing status, quantity, and rarity of NFTs. It is engineered to offer seamless integration with Discord, allowing community members to conduct ranking checks and access metadata with ease. Additionally, this repository empowers collections to leverage these insights to encourage and strengthen community engagement on Discord platforms.
+Welcome to the Arctic Frenz Data Repository - a specialized resource designed to enhance Frenz with extensive NFT analytics. Our repository provides comprehensive data on factors such as the duration of asset ownership, the quantity of ownership, and the rarity of NFTs. It is open-sourced to ensure complete transparency, enabling community owners, managers, and members to easily access enhanced metadata at no cost. Furthermore, this repository enables collections to use these insights to foster and strengthen community engagement.
 
 <table align="center">
 	<tr>
