@@ -2162,6 +2162,13 @@ scoreHold = nfts_weighted + rarity_score_weighted + days_held_weighted
 
 ### Analysis of Each Factor's Influence
 
+The comprehensive scoring system is shaped by three key metrics: the Quantity of NFTs, Rarity Score, and Holding Time.
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Analysis</summary>
+
 **1. Quantity of NFTs:**
 The number of NFTs held by an individual serves as a key indicator of their engagement within the collection's community. This quantity contributes to the holder's score by reflecting the size of their NFT collection. Holding a larger number of NFTs suggests a more extensive portfolio and potentially a greater influence or presence within the NFT community. However, this factor is normalized against the maximum number of NFTs held by any single holder to ensure fairness and relativity in the scoring system. It is important to note that while quantity is a significant factor, it does not directly indicate the quality or value of the collection, which is where the other factors come into play.
 
@@ -2170,6 +2177,12 @@ The Rarity Score of the NFTs a person holds is a vital element that enhances the
 
 **3. Holding Time:**
 The Holding Time factor measures how long each NFT has been kept by its holder, reflecting their commitment and belief in the long-term value of their NFTs. The longer an NFT is retained, the more it demonstrates the holder's sustained interest and engagement in that asset. However, to prevent this factor from disproportionately favoring long-term holders and to mirror the dynamic nature of the NFT market, a decay factor is applied. This decay gradually reduces the score over time, encouraging new acquisitions. This approach balances the value of long-term holding against the potential benefits of active trading or diversification.
+
+</details>
+
+<br>
+
+### The Ranking Script
 
 <br>
 
