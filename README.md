@@ -2486,7 +2486,14 @@ plt.savefig('collection/top-holders.png', format='png', bbox_inches='tight')
 
 ### Visualizing Distribution of NFT Ownership Durations
 
-The provided Python script is tailored to examine and depict the distribution of ownership duration. It adeptly processes a dataset, constructs a histogram, and stores the resulting image. This functionality is crucial for gaining a deeper understanding of the holding patterns.  Below is a breakdown of the script's primary features and capabilities:
+The provided Python script is tailored to examine and depict the distribution of ownership duration. It adeptly processes a dataset, constructs a histogram, and stores the resulting image. This functionality is crucial for gaining a deeper understanding of the holding patterns.  
+
+The histogram serves as a visual representation, making complex data more accessible and interpretable. The following provides a detailed breakdown of the script's main features and capabilities:
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Breakdown</summary>
 
 1. **Data Loading and Preprocessing**: 
    - The script begins by loading NFT data from a JSON file (`collection/by-NFT.json`).
@@ -2515,7 +2522,7 @@ The provided Python script is tailored to examine and depict the distribution of
    - The chart includes a footnote with the generation date and time.
    - The final histogram is saved as a PNG file (`collection/histogram.png`).
 
-The histogram serves as a visual representation, making complex data more accessible and interpretable.
+</details>
 
 <br>
 
