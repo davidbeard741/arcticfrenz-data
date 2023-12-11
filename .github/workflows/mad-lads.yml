@@ -1,53 +1,54 @@
 name: mad-lads
-
-on:
-  push:
-    paths:
-      - .github/workflows/mad-lads.yml
+'on':
   workflow_dispatch:
   schedule:
-    - cron: '45 */2 * * *' # every 2 hrs at the 45th min of the hr
-
+    - cron: 45 */2 * * * # every 2 hrs at the 45th min of the hr
 jobs:
   build-linux:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 5
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v3
-      with:
-        python-version: '3.10'
-    - name: Add conda to system path
-      run: |
-        echo $CONDA/bin >> $GITHUB_PATH
-    - name: Install dependencies
-      run: |
-        conda env update --file environment_extraction.yml --name base
-    - name: Install Chrome
-      env:
-        DEBIAN_FRONTEND: noninteractive
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y google-chrome-stable
-    - name: Run script
-      run: python mad-lads.py
-    - name: Set up Git
-      run: |
-        git config --global user.name 'davidbeard741'
-        git config --global user.email 'david.beard741@gmail.com'
-    - name: Commit changes
-      run: |
-        git add madlads/with-rarity-and-holder-data.json madlads/logfile.log
-        git commit -m "Update Mad Labs Holder Data and Log"
-    - name: Sync with Remote
-      run: |
-        git fetch
-        git rebase origin/main
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+      - name: Add conda to system path
+        run: |
+          echo $CONDA/bin >> $GITHUB_PATH
+      - name: Install dependencies
+        run: |
+          conda env update --file environment_extraction.yml --name base
+      - name: Install Chrome
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+      - name: Run script
+        run: python mad-lads.py
+      - name: Stash changes
+        run: >-
+          git stash push madlads/with-rarity-and-holder-data.json
+          madlads/logfile.log
+      - name: Set up Git
+        run: |
+          git config --global user.name 'davidbeard741'
+          git config --global user.email 'david.beard741@gmail.com'
+      - name: Sync with Remote
+        run: |
+          git fetch
+          git rebase origin/main
+      - name: Apply stash
+        run: >
+          git stash apply madlads/with-rarity-and-holder-data.json
+          madlads/logfile.log
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: '${{ secrets.GITHUB_TOKEN }}'
+          branch: main
+      - name: Remove Stash
+        run: |
+          git stash drop
