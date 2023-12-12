@@ -32,10 +32,14 @@ jobs:
           git add arcticfrenz/ranked-holders.json
       - name: Commit changes
         run: git commit -m "Updated ranked holders data"
+      - name: Stash any local changes
+        run: git stash push -m "Local changes"
       - name: Sync with Remote
         run: |
           git fetch
           git rebase origin/main
+      - name: Apply stashed changes
+        run: git stash pop || true
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
