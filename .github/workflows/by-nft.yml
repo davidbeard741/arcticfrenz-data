@@ -21,9 +21,13 @@ jobs:
         run: |
           conda env update --file environment_json.yml --name base
       - name: Run script
-        run: python by-nft_chickentribe.py
+        run: |
+          python by-nft_chickentribe.py
+          git add chickentribe/by-NFT.json
       - name: Run script
-        run: python by-nft_arctic-frenz.py
+        run: |
+          python by-nft_arctic-frenz.py
+          git add arcticfrenz/by-NFT.json
       - name: Run script
         run: |
           python by-nft_claynosaurz.py
