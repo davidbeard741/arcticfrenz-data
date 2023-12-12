@@ -15,40 +15,35 @@ jobs:
         with:
           python-version: '3.10'
       - name: Add conda to system path
-        run: |
-          echo $CONDA/bin >> $GITHUB_PATH
+        run: echo $CONDA/bin >> $GITHUB_PATH
       - name: Install dependencies
-        run: |
-          conda env update --file environment_charts.yml --name base
-      - name: Run script
-        run: python histogram_chickentribe.py
-      - name: Run script
-        run: python histogram_arctic-frenz.py
-      - name: Stash changes
-        run: |
-          git add chickentribe/histogram.png arcticfrenz/histogram.png
-          git diff --staged --quiet || git stash push -m "Stashed changes"
-      - name: Set up Git
+        run: conda env update --file environment_charts.yml --name base
+      - name: Set up Git identity
         run: |
           git config --global user.name 'davidbeard741'
           git config --global user.email 'david.beard741@gmail.com'
+      - name: Run script and stage changes for chickentribe
+        run: |
+          python histogram_chickentribe.py
+          git add chickentribe/histogram.png
+      - name: Run script and stage changes for arctic-frenz
+        run: |
+          python histogram_arctic-frenz.py
+          git add arcticfrenz/histogram.png
+      - name: Run script and stage changes for arctic-frenz
+        run: |
+          python histogram_claynosaurz.py
+          git add claynosaurz/histogram.png
+      - name: Commit changes
+        run: git commit -m "Updated histogram charts"
       - name: Sync with Remote
         run: |
           git fetch
           git rebase origin/main
-      - name: Check and apply stash
-        run: |
-          if git stash list | grep "Stashed changes"; then
-            git stash pop
-            echo "Applied stash"
-          else
-            echo "No relevant stash to apply, skipping."
-          fi
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: '${{ secrets.GITHUB_TOKEN }}'
           branch: main
       - name: Cleanup
-        run: |
-          echo "Workflow completed."
+        run: echo "Workflow completed."
