@@ -22,14 +22,10 @@ jobs:
         run: |
           git config --global user.name 'davidbeard741'
           git config --global user.email 'david.beard741@gmail.com'
-      - name: Run script for fff
-        run: python by-nft_fff.py
       - name: Run script for chickentribe
         run: python by-nft_chickentribe.py
       - name: Run script for arctic-frenz
         run: python by-nft_arctic-frenz.py
-      - name: Run script for claynosaurz
-        run: python by-nft_claynosaurz.py
       - name: Stash any local changes
         run: git stash push -m "Local changes"
       - name: Sync with Remote
@@ -40,7 +36,7 @@ jobs:
         run: git stash pop || true
       - name: Add and commit work brought back from stash
         run: |
-          git add fff/by-NFT.json claynosaurz/by-NFT.json arcticfrenz/by-NFT.json chickentribe/by-NFT.json  
+          git add arcticfrenz/by-NFT.json chickentribe/by-NFT.json  
           git commit -m "Updated data"
       - name: Push changes
         uses: ad-m/github-push-action@master
