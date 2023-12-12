@@ -28,20 +28,18 @@ jobs:
         run: |
           git config --global user.name 'davidbeard741'
           git config --global user.email 'david.beard741@gmail.com'
-      - name: Run script and stage changes
-        run: |
-          python sentries.py
-          git add sentries/nft_metadata_with_rarity_and_holder_data.json sentries/logfile.log
-      - name: Commit changes
-        run: git commit -m "Updated Sentries data"
-      - name: Stash any local changes
-        run: git stash push -m "Local changes"
-      - name: Sync with Remote
-        run: |
-          git fetch
-          git rebase origin/main
+      - name: Run script
+        run: python sentries.py
+      - name: Stash specific local changes
+        run: git stash push -m "Local changes" -- sentries/nft_metadata_with_rarity_and_holder_data.json sentries/logfile.log
+      - name: Pull changes from Remote
+        run: git pull origin main
       - name: Apply stashed changes
         run: git stash pop || true
+      - name: Add and commit work brought back from stash
+        run: |
+          git add sentries/nft_metadata_with_rarity_and_holder_data.json sentries/logfile.log
+          git commit -m "Updated data"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
