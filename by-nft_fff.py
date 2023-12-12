@@ -18,7 +18,7 @@ def rewrite_data(data):
   for item in data:
     nft_name = item["onChainMetadata"]["metadata"]["data"]["name"]
     nft_address = item["account"]
-    rarity_score = item["rarity_score"]  # Corrected access to rarity_score
+    rarity_score = item["rarity_score"]
     holder_data = {}
     if "holder data" in item:
         holder_data = {
