@@ -2633,7 +2633,7 @@ plot_nft_ownership_histogram(nft_data)
 ---
 
 <div align="center">
-  **Let's Talk. But You First!**
+  Let's Talk. But You First!
 </div>
 
 <br>
