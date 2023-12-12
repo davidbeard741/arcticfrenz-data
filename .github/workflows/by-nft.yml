@@ -26,12 +26,8 @@ jobs:
         run: python by-nft_arctic-frenz.py
       - name: Stash changes
         run: |
-          for file in chickentribe/by-NFT.json arcticfrenz/by-NFT.json; do
-            if ! git diff --exit-code --quiet "$file"; then
-              git stash push -u "$file"
-              echo "Changes stashed for $file"
-            fi
-          done
+          git add chickentribe/by-NFT.json arcticfrenz/by-NFT.json
+          git diff --staged --quiet || git stash push -m "Stashed changes"
       - name: Set up Git
         run: |
           git config --global user.name 'davidbeard741'
@@ -42,25 +38,17 @@ jobs:
           git rebase origin/main
       - name: Check and apply stash
         run: |
-          if git stash list; then
-            for file in chickentribe/by-NFT.json arcticfrenz/by-NFT.json; do
-              git stash apply -- "$file"
-              echo "Applied stash for $file"
-            done
+          if git stash list | grep "Stashed changes"; then
+            git stash pop
+            echo "Applied stash"
           else
-            echo "No stash to apply, skipping."
+            echo "No relevant stash to apply, skipping."
           fi
       - name: Push changes
-        if: always() && steps.stash.outputs.changes == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: '${{ secrets.GITHUB_TOKEN }}'
           branch: main
-      - name: Remove Stash
-        if: always()
+      - name: Cleanup
         run: |
-          if git stash list; then
-            git stash drop
-          else
-            echo "No stash to drop, skipping."
-          fi
+          echo "Workflow completed."
