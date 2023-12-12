@@ -1,5 +1,5 @@
 name: arctic frenz
-'on':
+on:
   workflow_dispatch:
   schedule:
     - cron: '0 0 * * 2,6' # At 00:00 every Tuesday and Saturday
@@ -30,7 +30,7 @@ jobs:
         run: python arctic-frenz.py
       - name: Stash changes
         run: >-
-          git stash push
+          git stash push -u
           arcticfrenz/nft_metadata_with_rarity_and_holder_data.json
           arcticfrenz/logfile.log
       - name: Set up Git
