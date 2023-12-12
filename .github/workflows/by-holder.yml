@@ -6,6 +6,8 @@ on:
 jobs:
   build-linux:
     runs-on: ubuntu-latest
+    outputs:
+      normal_push_failed: ${{ steps.normal_push.outcome == 'failure' }}
     strategy:
       matrix:
         script: [by-holder_chickentribe.py, by-holder_arctic-frenz.py]
@@ -38,9 +40,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
       - name: Force Push Changes
+        if: ${{ needs.build-linux.outputs.normal_push_failed }}
         run: git push --force origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        if: failure()
       - name: Cleanup
         run: echo "Workflow completed."
