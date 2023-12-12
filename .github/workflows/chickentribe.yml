@@ -28,12 +28,8 @@ jobs:
         run: |
           git config --global user.name 'davidbeard741'
           git config --global user.email 'david.beard741@gmail.com'
-      - name: Run script and stage changes
-        run: |
-          python chickentribe.py
-          git add chickentribe/nft_metadata_with_rarity_and_holder_data.json chickentribe/logfile.log
-      - name: Commit changes
-        run: git commit -m "Updated Chickentribe data"
+      - name: Run script
+        run: python chickentribe.py
       - name: Stash any local changes
         run: git stash push -m "Local changes"
       - name: Sync with Remote
@@ -42,6 +38,10 @@ jobs:
           git rebase origin/main
       - name: Apply stashed changes
         run: git stash pop || true
+      - name: Add and commit work brought back from stash
+        run: |
+          git add chickentribe/nft_metadata_with_rarity_and_holder_data.json chickentribe/logfile.log
+          git commit -m "Updated data"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
