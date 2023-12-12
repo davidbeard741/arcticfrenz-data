@@ -2,7 +2,7 @@ name: claynosaurz
 on:
   workflow_dispatch:
   schedule:
-    - cron: 0 */2 * * * # every 2 hrs at the top of the hr
+    - cron: '0 */2 * * *' # every 2 hrs at the top of the hr
 jobs:
   build-linux:
     runs-on: ubuntu-latest
@@ -29,9 +29,9 @@ jobs:
       - name: Run script
         run: python claynosaurz.py
       - name: Stash changes
-        run: >-
-          git stash push -u claynosaurz/with-rarity-and-holder-data.json
-          claynosaurz/logfile.log
+        run: |
+          git add claynosaurz/with-rarity-and-holder-data.json claynosaurz/logfile.log
+          git diff --staged --quiet || git stash push -m "Stashed changes"
       - name: Set up Git
         run: |
           git config --global user.name 'davidbeard741'
@@ -41,9 +41,13 @@ jobs:
           git fetch
           git rebase origin/main
       - name: Apply stash
-        run: >
-          git stash apply claynosaurz/with-rarity-and-holder-data.json
-          claynosaurz/logfile.log
+        run: |
+          if git stash list | grep "Stashed changes"; then
+            git stash pop
+            echo "Applied stash"
+          else
+            echo "No relevant stash to apply, skipping."
+          fi
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
@@ -51,4 +55,8 @@ jobs:
           branch: main
       - name: Remove Stash
         run: |
-          git stash drop
+          if git stash list; then
+            git stash drop
+          else
+            echo "No stash to drop, skipping."
+          fi
