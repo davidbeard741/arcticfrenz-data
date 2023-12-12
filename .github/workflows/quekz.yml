@@ -1,8 +1,8 @@
 name: quekz
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
   schedule:
-    - cron: 15 */2 * * * # every 2 hrs at the 15th min of the hr
+    - cron: '15 */2 * * *' # every 2 hrs at the 15th min of the hr
 jobs:
   build-linux:
     runs-on: ubuntu-latest
@@ -29,9 +29,9 @@ jobs:
       - name: Run script
         run: python quekz.py
       - name: Stash changes
-        run: >-
-          git stash push -u quekz/with-rarity-and-holder-data.json
-          quekz/logfile.log
+        run: |
+          git add quekz/with-rarity-and-holder-data.json quekz/logfile.log
+          git diff --staged --quiet || git stash push -m "Stashed changes"
       - name: Set up Git
         run: |
           git config --global user.name 'davidbeard741'
@@ -41,9 +41,13 @@ jobs:
           git fetch
           git rebase origin/main
       - name: Apply stash
-        run: >
-          git stash apply quekz/with-rarity-and-holder-data.json
-          quekz/logfile.log
+        run: |
+          if git stash list | grep "Stashed changes"; then
+            git stash pop
+            echo "Applied stash"
+          else
+            echo "No relevant stash to apply, skipping."
+          fi
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
@@ -51,4 +55,8 @@ jobs:
           branch: main
       - name: Remove Stash
         run: |
-          git stash drop
+          if git stash list; then
+            git stash drop
+          else
+            echo "No stash to drop, skipping."
+          fi
