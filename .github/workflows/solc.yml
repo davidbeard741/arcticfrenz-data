@@ -1,5 +1,5 @@
 name: solc
-'on':
+on:
   workflow_dispatch: 
   schedule:
     - cron: 15 */2 * * * # every 2 hrs at the 15th min of the hr
@@ -29,7 +29,7 @@ jobs:
       - name: Run script
         run: python solc.py
       - name: Stash changes
-        run: git stash push solc/with-rarity-and-holder-data.json solc/logfile.log
+        run: git stash push -u solc/with-rarity-and-holder-data.json solc/logfile.log
       - name: Set up Git
         run: |
           git config --global user.name 'davidbeard741'
