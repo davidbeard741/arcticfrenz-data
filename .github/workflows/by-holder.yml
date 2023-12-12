@@ -29,11 +29,19 @@ jobs:
         run: git pull origin main
       - name: Run script
         run: python ${{ matrix.script }}
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet
+          echo "changes=$?" > $GITHUB_ENV
       - name: Add
+        if: env.changes == '1'
         run: git add arcticfrenz/by-holder.json chickentribe/by-holder.json
       - name: Commit
+        if: env.changes == '1'
         run: git commit -m "Updated by-holder JSONs"
       - name: Attempt Normal Push
+        if: env.changes == '1'
         id: normal_push
         run: git push origin main
         env:
