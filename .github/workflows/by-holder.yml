@@ -6,8 +6,6 @@ on:
 jobs:
   build-linux:
     runs-on: ubuntu-latest
-    outputs:
-      normal_push_failed: ${{ steps.normal_push.outcome == 'failure' }}
     strategy:
       matrix:
         script: [by-holder_chickentribe.py, by-holder_arctic-frenz.py]
@@ -35,12 +33,13 @@ jobs:
       - name: Commit
         run: git commit -m "Updated by-holder JSONs"
       - name: Attempt Normal Push
+        id: normal_push
         run: git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
       - name: Force Push Changes
-        if: ${{ needs.build-linux.outputs.normal_push_failed }}
+        if: steps.normal_push.outcome == 'failure'
         run: git push --force origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
