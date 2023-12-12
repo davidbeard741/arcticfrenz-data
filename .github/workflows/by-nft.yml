@@ -22,26 +22,23 @@ jobs:
         run: |
           git config --global user.name 'davidbeard741'
           git config --global user.email 'david.beard741@gmail.com'
+      - name: Pull changes from Remote
+        run: git pull origin main
       - name: Run script for chickentribe
         run: python by-nft_chickentribe.py
       - name: Run script for arctic-frenz
         run: python by-nft_arctic-frenz.py
-      - name: Add to staging area
-        run: git add arcticfrenz/by-NFT.json chickentribe/by-NFT.json
-      - name: Stash specific local changes
-        run: git stash push -m "Local changes" -- arcticfrenz/by-NFT.json chickentribe/by-NFT.json
-      - name: Pull changes from Remote
-        run: git pull origin main
-      - name: Apply stashed changes
-        run: git stash pop --rebase || true
-      - name: Add and commit work brought back from stash
+      - name: Add and commit
         run: |
           git add arcticfrenz/by-NFT.json chickentribe/by-NFT.json  
-          git commit -m "Updated data"
+          git commit -m "Updated by-NFT JSONs"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: '${{ secrets.GITHUB_TOKEN }}'
           branch: main
+        if: ${{ failure() }}
+        run: |
+          git push --force origin main
       - name: Cleanup
         run: echo "Workflow completed."
