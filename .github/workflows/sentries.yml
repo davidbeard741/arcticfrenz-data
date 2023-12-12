@@ -1,5 +1,5 @@
 name: sentries
-'on':
+on:
   workflow_dispatch:
   schedule:
     - cron: 30 */2 * * * # every 2 hrs at the 30th min of the hr
@@ -30,7 +30,7 @@ jobs:
         run: python sentries.py
       - name: Stash changes
         run: >-
-          git stash push sentries/nft_metadata_with_rarity_and_holder_data.json
+          git stash push -u sentries/nft_metadata_with_rarity_and_holder_data.json
           sentries/logfile.log
       - name: Set up Git
         run: |
