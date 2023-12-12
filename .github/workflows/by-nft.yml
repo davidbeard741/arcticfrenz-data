@@ -25,7 +25,9 @@ jobs:
       - name: Run script
         run: python by-nft_arctic-frenz.py
       - name: Run script
-        run: python by-nft_claynosaurz.py
+        run: |
+          python by-nft_claynosaurz.py
+          git add claynosaurz/by-NFT.json
       - name: Stash changes
         run: |
           git add chickentribe/by-NFT.json arcticfrenz/by-NFT.json claynosaurz/by-NFT.json
