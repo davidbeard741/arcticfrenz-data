@@ -22,6 +22,8 @@ jobs:
         run: |
           git config --global user.name 'davidbeard741'
           git config --global user.email 'david.beard741@gmail.com'
+      - name: Run script for fff
+        run: python by-nft_fff.py
       - name: Run script for chickentribe
         run: python by-nft_chickentribe.py
       - name: Run script for arctic-frenz
@@ -38,7 +40,7 @@ jobs:
         run: git stash pop || true
       - name: Add and commit work brought back from stash
         run: |
-          git add claynosaurz/by-NFT.json arcticfrenz/by-NFT.json chickentribe/by-NFT.json  
+          git add fff/by-NFT.json claynosaurz/by-NFT.json arcticfrenz/by-NFT.json chickentribe/by-NFT.json  
           git commit -m "Updated data"
       - name: Push changes
         uses: ad-m/github-push-action@master
