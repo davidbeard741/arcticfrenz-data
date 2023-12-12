@@ -30,6 +30,8 @@ jobs:
           git config --global user.email 'david.beard741@gmail.com'
       - name: Run script
         run: python arctic-frenz.py
+      - name: Add to staging area
+        run: git add arcticfrenz/nft_metadata_with_rarity_and_holder_data.json arcticfrenz/logfile.log
       - name: Stash specific local changes
         run: git stash push -m "Local changes" -- arcticfrenz/nft_metadata_with_rarity_and_holder_data.json arcticfrenz/logfile.log
       - name: Pull changes from Remote
