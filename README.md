@@ -1252,63 +1252,59 @@ if __name__ == '__main__':
 <details>
   <summary>CLICK TO EXPAND YAML</summary>
 
-```yaml
-# .github/workflows/.yml
-
-name: run
-
+```YAML
+# .github/workflows/runner.yml
+name: arctic frenz
 on:
-  push:
-    paths:
-      - .github/workflows/runner.yml
   workflow_dispatch:
   schedule:
-    - cron: '0 */4 * * *'
-
+    - cron: '0 0 * * 2,6' # At 00:00 every Tuesday and Saturday
 jobs:
   build-linux:
     runs-on: ubuntu-latest
     strategy:
       max-parallel: 5
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Python 3.10
-      uses: actions/setup-python@v3
-      with:
-        python-version: '3.10'
-    - name: Add conda to system path
-      run: |
-        echo $CONDA/bin >> $GITHUB_PATH
-    - name: Install dependencies
-      run: |
-        conda env update --file environment.yml --name base
-    - name: Install Chrome
-      env:
-        DEBIAN_FRONTEND: noninteractive
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y google-chrome-stable
-    - name: Run script
-      run: python script.py
-    - name: Set up Git
-      run: |
-        git config --global user.name 'USERNAME'
-        git config --global user.email 'EMAIL ADDRESS'
-    - name: Commit changes
-      run: |
-        git add collection/nft_metadata_with_rarity_and_holder_data.json collection/logfile.log
-        git commit -m "Update NFT metadata and log"
-    - name: Sync with Remote
-      run: |
-        git fetch
-        git merge origin/main
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main
-
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: '3.10'
+      - name: Add conda to system path
+        run: echo $CONDA/bin >> $GITHUB_PATH
+      - name: Install dependencies
+        run: conda env update --file environment_extraction.yml --name base
+      - name: Install Chrome
+        env:
+          DEBIAN_FRONTEND: noninteractive
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+      - name: Set up Git identity
+        run: |
+          git config --global user.name 'USERNAME'
+          git config --global user.email 'EMAIL@email.com'
+      - name: Run script
+        run: python script.py
+      - name: Add to staging area
+        run: git add collection/with_rarity_and_holder_data.json collection/logfile.log
+      - name: Stash specific local changes
+        run: git stash push -m "Local changes" -- collection/with_rarity_and_holder_data.json collection/logfile.log
+      - name: Pull changes from Remote
+        run: git pull origin main
+      - name: Apply stashed changes
+        run: git stash pop || true
+      - name: Add and commit work brought back from stash
+        run: |
+          git add collection/with_rarity_and_holder_data.json collection/logfile.log
+          git commit -m "Updated data"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: '${{ secrets.GITHUB_TOKEN }}'
+          branch: main
+      - name: Cleanup
+        run: echo "Workflow completed."
 ```
 
 </details>
@@ -1724,7 +1720,7 @@ def main():
 
     kill_chrome_and_chromedriver(logger)
 
-    processed_data_file = 'collection/nft_metadata_with_rarity_and_holder_data.json'
+    processed_data_file = 'collection/with_rarity_and_holder_data.json'
     if os.path.exists(processed_data_file):
         try:
             with open(processed_data_file, 'r') as file:
@@ -1735,7 +1731,7 @@ def main():
             return
     else:
         try:
-            with open('collection/nft_metadata_with_rarity.json', 'r') as file:
+            with open('collection/with_rarity.json', 'r') as file:
                 nft_metadata = json.load(file)
                 logger.info("Starting from the beginning as no progress file found.")
         except Exception as e:
