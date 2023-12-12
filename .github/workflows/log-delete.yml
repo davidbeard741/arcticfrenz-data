@@ -17,6 +17,8 @@ jobs:
       run: |
         git config --global user.name 'davidbeard741'
         git config --global user.email 'david.beard741@gmail.com'
+    - name: Pull changes from Remote
+      run: git pull origin main
     - name: Reduce Log File Size
       run: |
         max_size=5000  # maximum size in lines
