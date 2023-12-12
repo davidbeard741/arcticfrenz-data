@@ -29,11 +29,7 @@ jobs:
           git config --global user.name 'davidbeard741'
           git config --global user.email 'david.beard741@gmail.com'
       - name: Run script and stage changes
-        run: |
-          python arctic-frenz.py
-          git add arcticfrenz/nft_metadata_with_rarity_and_holder_data.json arcticfrenz/logfile.log
-      - name: Commit changes
-        run: git commit -m "Updated Arctic Frenz data"
+        run: python arctic-frenz.py
       - name: Stash any local changes
         run: git stash push -m "Local changes"
       - name: Sync with Remote
@@ -42,6 +38,10 @@ jobs:
           git rebase origin/main
       - name: Apply stashed changes
         run: git stash pop || true
+      - name: Add and commit work brought back from stash
+        run: |
+          git add arcticfrenz/nft_metadata_with_rarity_and_holder_data.json arcticfrenz/logfile.log
+          git commit -m "Updated Arctic Frenz data"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
