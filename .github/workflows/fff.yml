@@ -28,24 +28,26 @@ jobs:
         run: |
           git config --global user.name 'davidbeard741'
           git config --global user.email 'david.beard741@gmail.com'
-      - name: Run script
-        run: python fff.py
-      - name: Add to staging area
-        run: git add fff/with-rarity-and-holder-data.json fff/logfile.log
-      - name: Stash specific local changes
-        run: git stash push -m "Local changes" -- fff/with-rarity-and-holder-data.json fff/logfile.log
       - name: Pull changes from Remote
         run: git pull origin main
-      - name: Apply stashed changes
-        run: git stash pop || true
-      - name: Add and commit work brought back from stash
-        run: |
-          git add fff/with-rarity-and-holder-data.json fff/logfile.log
-          git commit -m "Updated data"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: '${{ secrets.GITHUB_TOKEN }}'
-          branch: main
+      - name: Run script
+        run: python fff.py
+      - name: Add
+        run: >
+          git add
+          fff/with-rarity-and-holder-data.json
+          fff/logfile.log
+      - name: Commit
+        run: git commit -m "Updated FFF holders data"
+      - name: Attempt Normal Push
+        run: git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+      - name: Force Push Changes
+        run: git push --force origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: failure()
       - name: Cleanup
         run: echo "Workflow completed."
