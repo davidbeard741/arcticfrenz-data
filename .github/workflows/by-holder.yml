@@ -26,8 +26,6 @@ jobs:
         run: by-holder_chickentribe.py
       - name: Run script for arctic-frenz
         run: by-holder_arctic-frenz.py
-      - name: Run script for claynosaurz
-        run: python by-holder_claynosaurz.py
       - name: Stash any local changes
         run: git stash push -m "Local changes"
       - name: Sync with Remote
@@ -38,7 +36,7 @@ jobs:
         run: git stash pop || true
       - name: Add and commit work brought back from stash
         run: |
-          git add claynosaurz/by-holder.json arcticfrenz/by-holder.json chickentribe/by-holder.json 
+          git add arcticfrenz/by-holder.json chickentribe/by-holder.json 
           git commit -m "Updated data"
       - name: Push changes
         uses: ad-m/github-push-action@master
