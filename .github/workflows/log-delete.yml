@@ -31,8 +31,15 @@ jobs:
           fi
         done
         git commit -m "Reduce Log Files Size" || echo "No changes to commit"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: main
+    - name: Attempt Normal Push
+      run: git push origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      continue-on-error: true
+    - name: Force Push Changes
+      run: git push --force origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      if: failure()
+    - name: Cleanup
+      run: echo "Workflow completed."
