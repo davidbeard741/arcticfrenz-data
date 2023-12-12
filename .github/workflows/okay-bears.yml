@@ -1,5 +1,5 @@
 name: okay-bears
-'on':
+on:
   workflow_dispatch:
   schedule:
     - cron: 30 */2 * * * # every 2 hrs at the 30th min of the hr
