@@ -1,5 +1,5 @@
 name: fff
-'on':
+on:
   workflow_dispatch:
   schedule:
     - cron: 45 */2 * * * # every 2 hrs at the 45th min of the hr
@@ -29,7 +29,7 @@ jobs:
       - name: Run script
         run: python fff.py
       - name: Stash changes
-        run: git stash push fff/with-rarity-and-holder-data.json fff/logfile.log
+        run: git stash push -u fff/with-rarity-and-holder-data.json fff/logfile.log
       - name: Set up Git
         run: |
           git config --global user.name 'davidbeard741'
