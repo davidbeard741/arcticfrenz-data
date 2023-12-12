@@ -33,7 +33,7 @@ jobs:
       - name: Pull changes from Remote
         run: git pull origin main
       - name: Apply stashed changes
-        run: git stash pop || true
+        run: git stash pop --rebase || true
       - name: Add and commit work brought back from stash
         run: |
           git add arcticfrenz/by-NFT.json chickentribe/by-NFT.json  
