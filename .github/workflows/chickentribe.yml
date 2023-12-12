@@ -1,5 +1,5 @@
 name: chickentribe
-'on':
+on:
   workflow_dispatch:
   schedule:
     - cron: 15 */2 * * * # every 2 hrs at the 15th min of the hr
@@ -30,7 +30,7 @@ jobs:
         run: python chickentribe.py
       - name: Stash changes
         run: >-
-          git stash push
+          git stash push -u
           chickentribe/nft_metadata_with_rarity_and_holder_data.json
           chickentribe/logfile.log
       - name: Set up Git
