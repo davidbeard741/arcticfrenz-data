@@ -1,5 +1,5 @@
 name: claynosaurz
-'on':
+on:
   workflow_dispatch:
   schedule:
     - cron: 0 */2 * * * # every 2 hrs at the top of the hr
@@ -30,7 +30,7 @@ jobs:
         run: python claynosaurz.py
       - name: Stash changes
         run: >-
-          git stash push claynosaurz/with-rarity-and-holder-data.json
+          git stash push -u claynosaurz/with-rarity-and-holder-data.json
           claynosaurz/logfile.log
       - name: Set up Git
         run: |
