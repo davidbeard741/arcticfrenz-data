@@ -1,7 +1,8 @@
 name: rank-holders
-'on':
+on:
   workflow_dispatch: 
-  schedule: '30 3 * * 1,2,3,4,5,6,0' # At 0330 Everyday
+  schedule: 
+    - cron: '30 3 * * *' # At 0330 Everyday
 jobs:
   build-linux:
     runs-on: ubuntu-latest
@@ -30,7 +31,7 @@ jobs:
             if git diff --exit-code --quiet "$file"; then
               echo "$file no changes to commit, skipping."
             else
-              git stash push "$file"
+              git stash push -u "$file"
             fi
           done
       - name: Set up Git
