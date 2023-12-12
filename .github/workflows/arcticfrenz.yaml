@@ -34,10 +34,14 @@ jobs:
           git add arcticfrenz/nft_metadata_with_rarity_and_holder_data.json arcticfrenz/logfile.log
       - name: Commit changes
         run: git commit -m "Updated Arctic Frenz data"
+      - name: Stash any local changes
+        run: git stash push -m "Local changes"
       - name: Sync with Remote
         run: |
           git fetch
           git rebase origin/main
+      - name: Apply stashed changes
+        run: git stash pop || true
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
