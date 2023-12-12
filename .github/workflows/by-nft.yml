@@ -20,22 +20,20 @@ jobs:
       - name: Install dependencies
         run: |
           conda env update --file environment_json.yml --name base
-      - name: Run script
+      - name: Run script and stage changes for chickentribe
         run: |
           python by-nft_chickentribe.py
           git add chickentribe/by-NFT.json
-      - name: Run script
+      - name: Run script and stage changes for arctic-frenz
         run: |
           python by-nft_arctic-frenz.py
           git add arcticfrenz/by-NFT.json
-      - name: Run script
+      - name: Run script and stage changes for claynosaurz
         run: |
           python by-nft_claynosaurz.py
           git add claynosaurz/by-NFT.json
-      - name: Stash changes
-        run: |
-          git add chickentribe/by-NFT.json arcticfrenz/by-NFT.json claynosaurz/by-NFT.json
-          git diff --staged --quiet || git stash push -m "Stashed changes"
+      - name: Commit changes
+        run: git commit -m "Updated NFT data"
       - name: Set up Git
         run: |
           git config --global user.name 'davidbeard741'
@@ -44,14 +42,6 @@ jobs:
         run: |
           git fetch
           git rebase origin/main
-      - name: Check and apply stash
-        run: |
-          if git stash list | grep "Stashed changes"; then
-            git stash pop
-            echo "Applied stash"
-          else
-            echo "No relevant stash to apply, skipping."
-          fi
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
