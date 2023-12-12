@@ -2,7 +2,7 @@ name: by-nft
 on:
   workflow_dispatch:
   schedule: 
-    - cron: '30 1 * * 1,2,3,4,5,6,0' # At 0130 on everyday
+    - cron: '30 1 * * *' # At 0130 Everyday
 jobs:
   build-linux:
     runs-on: ubuntu-latest
@@ -27,10 +27,9 @@ jobs:
       - name: Stash changes
         run: |
           for file in chickentribe/by-NFT.json arcticfrenz/by-NFT.json; do
-            if git diff --exit-code --quiet "$file"; then
-              echo "$file no changes to commit, skipping."
-            else
+            if ! git diff --exit-code --quiet "$file"; then
               git stash push -u "$file"
+              echo "Changes stashed for $file"
             fi
           done
       - name: Set up Git
@@ -42,21 +41,26 @@ jobs:
           git fetch
           git rebase origin/main
       - name: Check and apply stash
-        run: >
-          for file in chickentribe/by-NFT.json
-          arcticfrenz/by-NFT.json; do
-            if git stash list | grep -q "$file"; then
-              git stash apply "$file"
+        run: |
+          if git stash list; then
+            for file in chickentribe/by-NFT.json arcticfrenz/by-NFT.json; do
+              git stash apply -- "$file"
               echo "Applied stash for $file"
-            else
-              echo "No stash found for $file, skipping"
-            fi
-          done
+            done
+          else
+            echo "No stash to apply, skipping."
+          fi
       - name: Push changes
+        if: always() && steps.stash.outputs.changes == 'true'
         uses: ad-m/github-push-action@master
         with:
           github_token: '${{ secrets.GITHUB_TOKEN }}'
           branch: main
       - name: Remove Stash
+        if: always()
         run: |
-          git stash drop
+          if git stash list; then
+            git stash drop
+          else
+            echo "No stash to drop, skipping."
+          fi
