@@ -22,11 +22,11 @@ jobs:
         run: |
           git config --global user.name 'davidbeard741'
           git config --global user.email 'david.beard741@gmail.com'
-      - name: Run script and stage changes for chickentribe
+      - name: Run script for chickentribe
         run: by-holder_chickentribe.py
-      - name: Run script and stage changes for arctic-frenz
+      - name: Run script for arctic-frenz
         run: by-holder_arctic-frenz.py
-      - name: Run script and stage changes for claynosaurz
+      - name: Run script for claynosaurz
         run: python by-holder_claynosaurz.py
       - name: Stash any local changes
         run: git stash push -m "Local changes"
