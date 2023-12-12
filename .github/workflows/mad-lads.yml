@@ -1,5 +1,5 @@
 name: mad-lads
-'on':
+on:
   workflow_dispatch:
   schedule:
     - cron: 45 */2 * * * # every 2 hrs at the 45th min of the hr
@@ -30,7 +30,7 @@ jobs:
         run: python mad-lads.py
       - name: Stash changes
         run: >-
-          git stash push madlads/with-rarity-and-holder-data.json
+          git stash push -u madlads/with-rarity-and-holder-data.json
           madlads/logfile.log
       - name: Set up Git
         run: |
