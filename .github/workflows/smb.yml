@@ -1,5 +1,5 @@
 name: smb
-'on':
+on:
   workflow_dispatch:
   schedule:
     - cron: 0 */2 * * * # every 2 hrs at the top of the hr
@@ -29,7 +29,7 @@ jobs:
       - name: Run script
         run: python smb.py
       - name: Stash changes
-        run: git stash push smb/with-rarity-and-holder-data.json smb/logfile.log
+        run: git stash push -u smb/with-rarity-and-holder-data.json smb/logfile.log
       - name: Set up Git
         run: |
           git config --global user.name 'davidbeard741'
