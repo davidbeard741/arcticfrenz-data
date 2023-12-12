@@ -1,4 +1,4 @@
-name: log-delete
+name: log-reduce
 
 on:
   workflow_dispatch:
@@ -17,16 +17,20 @@ jobs:
       run: |
         git config --global user.name 'davidbeard741'
         git config --global user.email 'david.beard741@gmail.com'
-    - name: Commit changes
+    - name: Reduce Log File Size
       run: |
+        max_size=5000  # maximum size in lines
         for file in fff/logfile.log smb/logfile.log solc/logfile.log okay-bears/logfile.log quekz/logfile.log chickentribe/logfile.log arcticfrenz/logfile.log sentries/logfile.log madlads/logfile.log claynosaurz/logfile.log; do
           if [ -f "$file" ]; then
-            git rm "$file"
+            # Keep only the last max_size lines of the file
+            tail -n $max_size "$file" > temp.log
+            mv temp.log "$file"
+            git add "$file"
           else
             echo "$file does not exist, skipping."
           fi
         done
-        git commit -m "Remove Log Files" || echo "No changes to commit"
+        git commit -m "Reduce Log Files Size" || echo "No changes to commit"
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
