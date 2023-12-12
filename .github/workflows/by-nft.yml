@@ -29,18 +29,19 @@ jobs:
       - name: Run script for arctic-frenz
         run: python by-nft_arctic-frenz.py
       - name: Add and commit
-        run: |
-          git add arcticfrenz/by-NFT.json chickentribe/by-NFT.json  
-          git commit -m "Updated by-NFT JSONs"
+        run: >
+          git add
+          arcticfrenz/by-NFT.json
+          chickentribe/by-NFT.json
+      - name: Commit
+        run: git commit -m "Updated by-NFT JSONs"
       - name: Attempt Normal Push
-        run: |
-          git push origin main
+        run: git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
       - name: Force Push Changes
-        run: |
-          git push --force origin main
+        run: git push --force origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: failure()
