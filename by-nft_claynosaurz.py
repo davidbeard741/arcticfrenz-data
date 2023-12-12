@@ -34,7 +34,7 @@ def rewrite_data(data):
     })
   return rewritten_data
 
-with open("claynosaurz/with_rarity_and_holder_data.json") as f:
+with open("claynosaurz/with-rarity-and-holder-data.json") as f:
   data = json.load(f)
 
 naming = set([get_name(x["onChainMetadata"]["metadata"]["data"]["name"]) for x in data])
