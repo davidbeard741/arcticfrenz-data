@@ -23,19 +23,11 @@ jobs:
           git config --global user.name 'davidbeard741'
           git config --global user.email 'david.beard741@gmail.com'
       - name: Run script and stage changes for chickentribe
-        run: |
-          python by-holder_chickentribe.py
-          git add chickentribe/by-holder.json
+        run: by-holder_chickentribe.py
       - name: Run script and stage changes for arctic-frenz
-        run: |
-          python by-holder_arctic-frenz.py
-          git add arcticfrenz/by-holder.json
+        run: by-holder_arctic-frenz.py
       - name: Run script and stage changes for claynosaurz
-        run: |
-          python by-holder_claynosaurz.py
-          git add claynosaurz/by-holder.json
-      - name: Commit changes
-        run: git commit -m "Updated holder data"
+        run: python by-holder_claynosaurz.py
       - name: Stash any local changes
         run: git stash push -m "Local changes"
       - name: Sync with Remote
@@ -44,6 +36,10 @@ jobs:
           git rebase origin/main
       - name: Apply stashed changes
         run: git stash pop || true
+      - name: Add and commit work brought back from stash
+        run: |
+          git add claynosaurz/by-holder.json arcticfrenz/by-holder.json chickentribe/by-holder.json 
+          git commit -m "Updated data"
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
