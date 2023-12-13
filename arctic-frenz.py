@@ -377,7 +377,7 @@ def main():
 
     kill_chrome_and_chromedriver(logger)
 
-    processed_data_file = 'arcticfrenz/nft_metadata_with_rarity_and_holder_data.json'
+    processed_data_file = 'arcticfrenz/with_rarity_and_holder_data.json'
     if os.path.exists(processed_data_file):
         try:
             with open(processed_data_file, 'r') as file:
@@ -388,7 +388,7 @@ def main():
             return
     else:
         try:
-            with open('arcticfrenz/nft_metadata_with_rarity.json', 'r') as file:
+            with open('arcticfrenz/with_rarity.json', 'r') as file:
                 nft_metadata = json.load(file)
                 logger.info("Starting from the beginning as no progress file found.")
         except Exception as e:
