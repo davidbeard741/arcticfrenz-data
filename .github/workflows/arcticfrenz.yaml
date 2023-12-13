@@ -35,7 +35,7 @@ jobs:
       - name: Add
         run: >
           git add
-          arcticfrenz/nft_metadata_with_rarity_and_holder_data.json
+          arcticfrenz/with_rarity_and_holder_data.json
           arcticfrenz/logfile.log
       - name: Commit
         run: git commit -m "Updated Arctic Frenz holders data"
