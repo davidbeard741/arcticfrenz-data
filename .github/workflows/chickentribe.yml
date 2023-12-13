@@ -35,7 +35,7 @@ jobs:
       - name: Add
         run: >
           git add
-          chickentribe/nft_metadata_with_rarity_and_holder_data.json
+          chickentribe/with_rarity_and_holder_data.json
           chickentribe/logfile.log
       - name: Commit
         run: git commit -m "Updated ChickenTribe holders data"
