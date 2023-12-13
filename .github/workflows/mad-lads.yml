@@ -40,6 +40,7 @@ jobs:
       - name: Commit
         run: git commit -m "Updated Mad Lads holders data"
       - name: Attempt Normal Push
+        id: normal_push
         run: git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
