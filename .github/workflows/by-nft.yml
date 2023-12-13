@@ -7,6 +7,9 @@ jobs:
   build-linux:
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
+      matrix:
+        script: [by-nft_chickentribe.py, by-nft_arctic-frenz.py]
       max-parallel: 5
     steps:
       - uses: actions/checkout@v3
@@ -24,26 +27,31 @@ jobs:
           git config --global user.email 'david.beard741@gmail.com'
       - name: Pull changes from Remote
         run: git pull origin main
-      - name: Run script for chickentribe
-        run: python by-nft_chickentribe.py
-      - name: Run script for arctic-frenz
-        run: python by-nft_arctic-frenz.py
-      - name: Add and commit
-        run: >
-          git add
-          arcticfrenz/by-NFT.json
-          chickentribe/by-NFT.json
+      - name: Run script
+        run: python ${{ matrix.script }}
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet || echo "changes found"
+          echo "changes=$?" > $GITHUB_ENV
+        continue-on-error: true
+      - name: Add
+        if: env.changes == '1'
+        run: git add arcticfrenz/by-NFT.json chickentribe/by-NFT.json
       - name: Commit
+        if: env.changes == '1'
         run: git commit -m "Updated by-NFT JSONs"
       - name: Attempt Normal Push
+        if: env.changes == '1'
+        id: normal_push
         run: git push origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
       - name: Force Push Changes
+        if: steps.normal_push.outcome == 'failure'
         run: git push --force origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        if: failure()
       - name: Cleanup
         run: echo "Workflow completed."
