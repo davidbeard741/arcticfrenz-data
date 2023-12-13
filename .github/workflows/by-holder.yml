@@ -32,8 +32,9 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          git diff --quiet
+          git diff --quiet || echo "changes found"
           echo "changes=$?" > $GITHUB_ENV
+        continue-on-error: true
       - name: Add
         if: env.changes == '1'
         run: git add arcticfrenz/by-holder.json chickentribe/by-holder.json
