@@ -45,9 +45,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         continue-on-error: true
       - name: Force Push Changes
+        if: steps.normal_push.outcome == 'failure'
         run: git push --force origin main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        if: failure()
       - name: Cleanup
         run: echo "Workflow completed."
