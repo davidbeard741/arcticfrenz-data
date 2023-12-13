@@ -34,6 +34,7 @@ jobs:
         done
         git commit -m "Reduce Log Files Size" || echo "No changes to commit"
     - name: Attempt Normal Push
+      id: normal_push
       run: git push origin main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
