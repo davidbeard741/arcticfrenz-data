@@ -2,7 +2,7 @@ name: arctic frenz
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 2,6' # At 00:00 every Tuesday and Saturday
+    - cron: '0 0-22/2 * * *' # At the top of the hr, every even hr, every two hours
 jobs:
   build-linux:
     runs-on: ubuntu-latest
