@@ -2,7 +2,7 @@ name: claynosaurz
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *' # every 2 hrs at the top of the hr
+    - cron: '0 0-22/2 * * *' # every 2 hrs at the top of the hr
 jobs:
   build-linux:
     runs-on: ubuntu-latest
