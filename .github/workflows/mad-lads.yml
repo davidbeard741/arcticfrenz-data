@@ -43,15 +43,20 @@ jobs:
         run: |
           git config --global user.name 'davidbeard741'
           git config --global user.email 'david.beard741@gmail.com'
-      - name: Pull changes from Remote
-        run: git pull origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_PAT }}
       - name: Run script
         run: python mad-lads.py
+      - name: Stash Changes
+        run: git stash --include-untracked
+      - name: Pull changes from Remote
+        run: git pull --rebase origin main
+      - name: Reapply Stashed Changes
+        run: git stash pop
       - name: Add
-        run: >
-          git add
-          madlads/with-rarity-and-holder-data.json
-          madlads/logfile.log
+        run: |
+          git add madlads/with-rarity-and-holder-data.json
+          git add madlads/logfile.log
       - name: Commit
         run: git commit -m "Updated Mad Lads holders data"
       - name: Attempt Normal Push
