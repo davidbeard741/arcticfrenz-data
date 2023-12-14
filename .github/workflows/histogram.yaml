@@ -2,7 +2,7 @@ name: histogram
 on:
   workflow_dispatch:
   schedule: 
-    - cron: '52 0-22/2 * * *'
+    - cron: '52 8 * * *'
 permissions:
   actions: write
   checks: write
