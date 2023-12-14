@@ -50,7 +50,7 @@ jobs:
       - name: Add
         run: >
           git add
-          chickentribe/with_rarity_and_holder_data.json
+          chickentribe/with-rarity-and-holder-data.json
           chickentribe/logfile.log
       - name: Commit
         run: git commit -m "Updated ChickenTribe holders data"
