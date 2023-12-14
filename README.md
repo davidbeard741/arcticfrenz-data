@@ -1216,7 +1216,7 @@ if __name__ == '__main__':
 **Prerequisites:**
 - To ensure successful processing, please upload the output JSON file from [Part 3, Step 2](https://github.com/davidbeard741/arcticfrenz-data#step-2-automated-data-extraction-with-selenium-webdriver) and/or the output JSON file from [Part 2](https://github.com/davidbeard741/arcticfrenz-data#part-2-calculating-rarity-scores-for-nfts-based-on-off-chain-metadata) to the designated directory.
 - To manage action permissions, navigate to the “Settings” tab within your GitHub repository and select “Actions” from the sidebar menu. Decide whether to allow all actions or restrict them to local actions only.
-- To uphold code integrity, thoroughly review and establish branch protection rules within the repository settings.
+- To uphold code integrity, thoroughly review and establish branch protection rules within the repository settings. Given that the GitHub Action workflow takes approximately an hour to complete, there’s a possibility that a commit might be made to the repository before the workflow finishes. To address this, it could be prudent to incorporate a force push into the workflow. However, do this cautiously and make sure your branch protection rules are set up to either permit or restrict this action.
 
 <br>
 
@@ -1226,15 +1226,15 @@ if __name__ == '__main__':
 ```
 ├── .github
 │     └── workflows
-│           └── run.yaml -> Github Action configuration
+│           └── runner.yaml -> Github Action configuration
 ├── collection
-│     ├── time.html      -> Store webpage content for parsing and extracting
-│     ├── address.html   -> Store webpage content for parsing and extracting 
-│     ├── logfile.log    -> Store log messages
-│     ├── part2.json     -> Output from Part-2
-│     └── output.json    -> Output from Part-3 Step-2 and from 'script.py'
+│     ├── time.html         -> Store webpage content for parsing and extracting
+│     ├── address.html      -> Store webpage content for parsing and extracting 
+│     ├── logfile.log       -> Store log messages
+│     ├── part2.json        -> Output from Part-2
+│     └── output.json       -> Output from Part-3 Step-2 and from 'script.py'
 ├── environment.yml
-├── script.py            -> The Python script
+├── script.py               -> The Python script
 ├── README.md
 └── .gitignore
 ```
@@ -1258,7 +1258,7 @@ name: arctic frenz
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * 2,6' # At 00:00 every Tuesday and Saturday
+    - cron: '0 0-22/2 * * *' # At the top of the hr, every even hr, every two hours
 jobs:
   build-linux:
     runs-on: ubuntu-latest
@@ -1283,26 +1283,29 @@ jobs:
       - name: Set up Git identity
         run: |
           git config --global user.name 'USERNAME'
-          git config --global user.email 'EMAIL@email.com'
-      - name: Run script
-        run: python script.py
-      - name: Add to staging area
-        run: git add collection/with_rarity_and_holder_data.json collection/logfile.log
-      - name: Stash specific local changes
-        run: git stash push -m "Local changes" -- collection/with_rarity_and_holder_data.json collection/logfile.log
+          git config --global user.email 'EMAIL@EMAIL.com'
       - name: Pull changes from Remote
         run: git pull origin main
-      - name: Apply stashed changes
-        run: git stash pop || true
-      - name: Add and commit work brought back from stash
-        run: |
-          git add collection/with_rarity_and_holder_data.json collection/logfile.log
-          git commit -m "Updated data"
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: '${{ secrets.GITHUB_TOKEN }}'
-          branch: main
+      - name: Run script
+        run: python script.py
+      - name: Add
+        run: >
+          git add
+          collection/with_rarity_and_holder_data.json
+          collection/logfile.log
+      - name: Commit
+        run: git commit -m "Updated collection holders data"
+      - name: Attempt Normal Push
+        id: normal_push
+        run: git push origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+      - name: Force Push Changes
+        if: steps.normal_push.outcome == 'failure'
+        run: git push --force origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Cleanup
         run: echo "Workflow completed."
 ```
