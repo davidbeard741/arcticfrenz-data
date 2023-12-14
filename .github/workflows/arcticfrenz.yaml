@@ -45,15 +45,18 @@ jobs:
           git config --global user.email 'david.beard741@gmail.com'
         env:
           GITHUB_TOKEN: ${{ secrets.MY_PAT }}
-      - name: Pull changes from Remote
-        run: git pull --rebase origin main
       - name: Run script
         run: python arctic-frenz.py
+      - name: Stash Changes
+        run: git stash --include-untracked
+      - name: Pull changes from Remote
+        run: git pull --rebase origin main
+      - name: Reapply Stashed Changes
+        run: git stash pop
       - name: Add
-        run: >
-          git add
-          arcticfrenz/with_rarity_and_holder_data.json
-          arcticfrenz/logfile.log
+        run: |
+          git add arcticfrenz/with_rarity_and_holder_data.json
+          git add arcticfrenz/logfile.log
       - name: Commit
         run: git commit -m "Updated Arctic Frenz holders data"
       - name: Attempt Normal Push
