@@ -2,7 +2,7 @@ name: fff
 on:
   workflow_dispatch:
   schedule:
-    - cron: '45 */2 * * *' # every 2 hrs at the 45th min of the hr
+    - cron: '45 1-23/2 * * *' # every 2 hrs at the 45th min of the hr
 jobs:
   build-linux:
     runs-on: ubuntu-latest
