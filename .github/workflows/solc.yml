@@ -44,7 +44,7 @@ jobs:
           git config --global user.name 'davidbeard741'
           git config --global user.email 'david.beard741@gmail.com'
       - name: Pull changes from Remote
-        run: git pull origin main
+        run: git pull --rebase origin main
       - name: Run script
         run: python solc.py
       - name: Add
