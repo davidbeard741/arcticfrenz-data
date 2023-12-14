@@ -2,7 +2,7 @@ name: top-holders
 on:
   workflow_dispatch:
   schedule: 
-    - cron: '30 4 * * *'
+    - cron: '49 0-22/2 * * *'
 permissions:
   actions: write
   checks: write
