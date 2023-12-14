@@ -2,7 +2,22 @@ name: solc
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 1-23/2 * * *' # every 2 hrs at the 15th min of the hr
+    - cron: '15 1-23/2 * * *'
+permissions:
+  actions: write
+  checks: write
+  contents: write
+  deployments: write
+  id-token: write
+  issues: write
+  discussions: write
+  packages: write
+  pages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
+
 jobs:
   build-linux:
     runs-on: ubuntu-latest
