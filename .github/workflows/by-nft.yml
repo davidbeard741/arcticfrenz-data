@@ -55,12 +55,12 @@ jobs:
         id: normal_push
         run: git push origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_PAT }}
         continue-on-error: true
       - name: Force Push Changes
         if: steps.normal_push.outcome == 'failure'
         run: git push --force origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_PAT }}
       - name: Cleanup
         run: echo "Workflow completed."
