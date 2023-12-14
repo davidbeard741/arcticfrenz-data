@@ -2,7 +2,7 @@ name: quekz
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 0-22/2 * * *'
+    - cron: '0 0-22/2 * * *'
 permissions:
   actions: write
   checks: write
