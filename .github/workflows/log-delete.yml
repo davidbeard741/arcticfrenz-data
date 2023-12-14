@@ -31,8 +31,8 @@ jobs:
       run: |
         git config --global user.name 'davidbeard741'
         git config --global user.email 'david.beard741@gmail.com'
-    - name: Pull changes from Remote
-      run: git pull --rebase origin main
+      env:
+        GITHUB_TOKEN: ${{ secrets.MY_PAT }}
     - name: Reduce Log File Size
       run: |
         max_size=5000  # maximum size in lines
@@ -46,7 +46,14 @@ jobs:
             echo "$file does not exist, skipping."
           fi
         done
-        git commit -m "Reduce Log Files Size" || echo "No changes to commit"
+    - name: Stash Changes
+      run: git stash --include-untracked
+    - name: Pull changes from Remote
+      run: git pull --rebase origin main
+    - name: Reapply Stashed Changes
+      run: git stash pop
+    - name: Commit
+      run: git commit -m "Reduce Log Files Size" || echo "No changes to commit"
     - name: Attempt Normal Push
       id: normal_push
       run: git push origin main
