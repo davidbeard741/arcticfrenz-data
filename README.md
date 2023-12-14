@@ -1216,7 +1216,12 @@ if __name__ == '__main__':
 **Prerequisites:**
 - To ensure successful processing, please upload the output JSON file from [Part 3, Step 2](https://github.com/davidbeard741/arcticfrenz-data#step-2-automated-data-extraction-with-selenium-webdriver) and/or the output JSON file from [Part 2](https://github.com/davidbeard741/arcticfrenz-data#part-2-calculating-rarity-scores-for-nfts-based-on-off-chain-metadata) to the designated directory.
 - To manage action permissions, navigate to the “Settings” tab within your GitHub repository and select “Actions” from the sidebar menu. Decide whether to allow all actions or restrict them to local actions only.
-- To uphold code integrity, thoroughly review and establish branch protection rules within the repository settings. Given that the GitHub Action workflow takes approximately an hour to complete, there’s a possibility that a commit might be made to the repository before the workflow finishes. To address this, it could be prudent to incorporate a force push into the workflow. However, do this cautiously and make sure your branch protection rules are set up to either permit or restrict this action.
+- To uphold code integrity, thoroughly review and establish branch protection rules within the repository settings.
+- Given that the GitHub Action workflow takes approximately an hour to complete, there’s a possibility that a commit might be made to the repository before the workflow finishes. To address this, it could be prudent to incorporate a force push into the workflow. However, do this cautiously and make sure your branch protection rules are set up to either permit or restrict this action.
+- Create a Personal Access Token (PAT):
+  * Go to your GitHub account. Click on your profile picture in the top right corner and select “Settings.” In the left sidebar, click on “Developer settings.” Select “Personal access tokens” and then “Generate new token.” Give your token a name, select an expiration period, and grant it the necessary scopes. Click “Generate token” at the bottom. Copy the generated token and save it somewhere secure, as you won’t be able to see it again.
+- Add the PAT to Your Repository Secrets:
+  * Go to your GitHub repository where you want to use the action. Click on “Settings” in the top menu. In the left sidebar, click on “Secrets.” Click on “New repository secret.” Name your secret (e.g., MY_PAT) and paste the token you generated in the value field. Click “Add secret.”
 
 <br>
 
@@ -1254,11 +1259,26 @@ if __name__ == '__main__':
 
 ```YAML
 # .github/workflows/runner.yml
-name: arctic frenz
+name: runner
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0-22/2 * * *' # At the top of the hr, every even hr, every two hours
+    - cron: '0 1-23/2 * * *'
+permissions:
+  actions: write
+  checks: write
+  contents: write
+  deployments: write
+  id-token: write
+  issues: write
+  discussions: write
+  packages: write
+  pages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
+
 jobs:
   build-linux:
     runs-on: ubuntu-latest
@@ -1284,28 +1304,33 @@ jobs:
         run: |
           git config --global user.name 'USERNAME'
           git config --global user.email 'EMAIL@EMAIL.com'
-      - name: Pull changes from Remote
-        run: git pull origin main
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_PAT }}
       - name: Run script
         run: python script.py
+      - name: Stash Changes
+        run: git stash --include-untracked
+      - name: Pull changes from Remote
+        run: git pull --rebase origin main
+      - name: Reapply Stashed Changes
+        run: git stash pop
       - name: Add
-        run: >
-          git add
-          collection/with_rarity_and_holder_data.json
-          collection/logfile.log
+        run: |
+          git add collection/with_rarity_and_holder_data.json
+          git add collection/logfile.log
       - name: Commit
-        run: git commit -m "Updated collection holders data"
+        run: git commit -m "Updated holders data"
       - name: Attempt Normal Push
         id: normal_push
         run: git push origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_PAT }}
         continue-on-error: true
       - name: Force Push Changes
         if: steps.normal_push.outcome == 'failure'
         run: git push --force origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MY_PAT }}
       - name: Cleanup
         run: echo "Workflow completed."
 ```
