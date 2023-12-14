@@ -1,0 +1,95 @@
+name: arctic frenz
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 1-23/2 * * *'
+
+name: chickentribe
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10 1-23/2 * * *'
+
+name: claynosaurz
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 1-23/2 * * *'
+
+name: fff
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 1-23/2 * * *'
+
+name: mad-lads
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '40 1-23/2 * * *'
+
+name: okay-bears
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '50 1-23/2 * * *'
+
+name: quekz
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0-22/2 * * *'
+
+name: sentries
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '10 0-22/2 * * *'
+
+name: smb
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '20 0-22/2 * * *'
+
+name: solc
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 0-22/2 * * *'
+
+name: by-nft
+on:
+  workflow_dispatch:
+  schedule: 
+    - cron: '40 8 * * *'
+
+name: by-holder
+on:
+  workflow_dispatch:
+  schedule: 
+    - cron: '43 8 * * *'
+
+name: rank-holders
+on:
+  workflow_dispatch:
+  schedule: 
+    - cron: '46 8 * * *'
+
+name: top-holders
+on:
+  workflow_dispatch:
+  schedule: 
+    - cron: '49 8 * * *'
+
+name: histogram
+on:
+  workflow_dispatch:
+  schedule: 
+    - cron: '52 8 * * *'
+
+name: log-reduce
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '55 8 * * *'
