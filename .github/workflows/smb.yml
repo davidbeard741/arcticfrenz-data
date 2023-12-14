@@ -2,7 +2,7 @@ name: smb
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0-22/2 * * *'
+    - cron: '20 0-22/2 * * *'
 permissions:
   actions: write
   checks: write
