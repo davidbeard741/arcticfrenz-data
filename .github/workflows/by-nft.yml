@@ -44,15 +44,11 @@ jobs:
         run: git pull origin main
       - name: Run script
         run: python ${{ matrix.script }}
-      - name: Check for changes
-        id: check_changes
-        run: |
-          git diff --quiet || echo "changes found"
-          echo "changes=$?" > $GITHUB_ENV
-        continue-on-error: true
       - name: Add
-        if: env.changes == '1'
-        run: git add arcticfrenz/by-NFT.json chickentribe/by-NFT.json
+        run: >
+          git add
+          arcticfrenz/by-NFT.json
+          chickentribe/by-NFT.json
       - name: Commit
         if: env.changes == '1'
         run: git commit -m "Updated by-NFT JSONs"
