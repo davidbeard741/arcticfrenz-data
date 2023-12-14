@@ -43,6 +43,8 @@ jobs:
         run: |
           git config --global user.name 'davidbeard741'
           git config --global user.email 'david.beard741@gmail.com'
+        env:
+          GITHUB_TOKEN: ${{ secrets.MY_PAT }}
       - name: Pull changes from Remote
         run: git pull --rebase origin main
       - name: Run script
