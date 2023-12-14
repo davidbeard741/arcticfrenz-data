@@ -1815,7 +1815,6 @@ Below is a flowchart outlining the primary components of the processing pipeline
   <summary>CLICK TO EXPAND Flowchart</summary>
 
 <div align="center">
-
 <table align="center">
 	<tr>
 		<td>
@@ -1823,10 +1822,7 @@ Below is a flowchart outlining the primary components of the processing pipeline
 		</td>
 	</tr>
 </table>
-
 </div>
-
-
 
 </details>
 
