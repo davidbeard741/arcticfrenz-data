@@ -3,7 +3,7 @@ name: log-reduce
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 8 * * *' # 08:00 UTC daily
+    - cron: '55 8 * * *'
 permissions:
   actions: write
   checks: write
