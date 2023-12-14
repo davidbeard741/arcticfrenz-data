@@ -2,7 +2,7 @@ name: mad-lads
 on:
   workflow_dispatch:
   schedule:
-    - cron: '45 0-22/2 * * *'
+    - cron: '40 1-23/2 * * *'
 permissions:
   actions: write
   checks: write
