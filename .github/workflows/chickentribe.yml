@@ -2,7 +2,7 @@ name: chickentribe
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 1-23/2 * * *'
+    - cron: '10 1-23/2 * * *'
 permissions:
   actions: write
   checks: write
