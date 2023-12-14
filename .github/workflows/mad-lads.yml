@@ -3,6 +3,21 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '45 0-22/2 * * *' # every 2 hrs at the 45th min of the hr
+permissions:
+  actions: write
+  checks: write
+  contents: write
+  deployments: write
+  id-token: write
+  issues: write
+  discussions: write
+  packages: write
+  pages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
+
 jobs:
   build-linux:
     runs-on: ubuntu-latest
