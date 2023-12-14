@@ -2,7 +2,7 @@ name: quekz
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 */2 * * *' # every 2 hrs at the 15th min of the hr
+    - cron: '15 0-22/2 * * *' # every 2 hrs at the 15th min of the hr
 jobs:
   build-linux:
     runs-on: ubuntu-latest
