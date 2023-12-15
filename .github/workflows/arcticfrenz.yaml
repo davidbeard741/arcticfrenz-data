@@ -55,7 +55,7 @@ jobs:
         run: git stash pop
       - name: Add
         run: |
-          git add arcticfrenz/with_rarity_and_holder_data.json
+          git add arcticfrenz/with-rarity-and-holder-data.json
           git add arcticfrenz/logfile.log
       - name: Commit
         run: git commit -m "Updated Arctic Frenz holders data"
