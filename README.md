@@ -1226,7 +1226,7 @@ if __name__ == '__main__':
 <br>
 
 <details>
-  <summary>CLICK TO EXPAND Example of Repository Structure</summary>
+  <summary>CLICK TO EXPAND Repo Structure</summary>
 
 ```
 ├── .github
