@@ -1904,7 +1904,7 @@ def rewrite_data(data):
     })
   return rewritten_data
 
-with open("nft_metadata_with_rarity_and_holder_data.json") as f:
+with open("collection/with-rarity-and-holder-data.json") as f:
   data = json.load(f)
 
 naming = set([get_name(x["onChainMetadata"]["metadata"]["data"]["name"]) for x in data])
@@ -1913,7 +1913,7 @@ naming_order = sorted(list(naming))
 rewritten_data = rewrite_data(data)
 rewritten_data = sorted(rewritten_data, key=lambda x: (naming_order.index(get_name(x["nftName"])), get_nft_number(x["nftName"])))
 
-with open("enhanced-nft-metadata_by-NFT.json", "w") as f:
+with open("collection/by-NFT.json", "w") as f:
   json.dump(rewritten_data, f, indent=4)
 ```
 
