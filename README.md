@@ -1748,7 +1748,7 @@ def main():
 
     kill_chrome_and_chromedriver(logger)
 
-    processed_data_file = 'collection/with_rarity_and_holder_data.json'
+    processed_data_file = 'collection/with-rarity-and-holder-data.json'
     if os.path.exists(processed_data_file):
         try:
             with open(processed_data_file, 'r') as file:
@@ -1759,7 +1759,7 @@ def main():
             return
     else:
         try:
-            with open('collection/with_rarity.json', 'r') as file:
+            with open('collection/with-rarity.json', 'r') as file:
                 nft_metadata = json.load(file)
                 logger.info("Starting from the beginning as no progress file found.")
         except Exception as e:
@@ -1989,7 +1989,7 @@ import json
 import re
 from datetime import datetime
 
-with open('enhanced-nft-metadata_by-NFT.json') as f:
+with open('collection/by-NFT.json') as f:
     data = json.load(f)
 
 holders = {}
@@ -2026,7 +2026,7 @@ for nft in data:
 
 result = sorted(holders.values(), key=lambda x: x["quantityNfts"], reverse=True)
 
-with open('collection/enhanced-nft-metadata_by-holder.json', 'w') as f:
+with open('collection/by-holder.json', 'w') as f:
     json.dump(result, f, indent=4)
 ```
 
@@ -2222,7 +2222,7 @@ from math import exp
 import numpy as np
 
 try:
-    with open('collection/enhanced-nft-metadata_by-holder.json') as f:
+    with open('collection/by-holder.json') as f:
         data = json.load(f)
 
     quantityNfts_weight = 1
