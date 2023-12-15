@@ -1316,7 +1316,7 @@ jobs:
         run: git stash pop
       - name: Add
         run: |
-          git add collection/with_rarity_and_holder_data.json
+          git add collection/with-rarity-and-holder-data.json
           git add collection/logfile.log
       - name: Commit
         run: git commit -m "Updated holders data"
