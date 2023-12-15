@@ -1214,14 +1214,14 @@ if __name__ == '__main__':
 ### Step 3: Automated Monitoring of NFT Holders on a Recurring Schedule
 
 **Prerequisites:**
-- To ensure successful processing, please upload the output JSON file from [Part 3, Step 2](https://github.com/davidbeard741/arcticfrenz-data#step-2-automated-data-extraction-with-selenium-webdriver) and/or the output JSON file from [Part 2](https://github.com/davidbeard741/arcticfrenz-data#part-2-calculating-rarity-scores-for-nfts-based-on-off-chain-metadata) to the designated directory.
-- To manage action permissions, navigate to the “Settings” tab within your GitHub repository and select “Actions” from the sidebar menu. Decide whether to allow all actions or restrict them to local actions only.
-- To uphold code integrity, thoroughly review and establish branch protection rules within the repository settings.
-- Given that the GitHub Action workflow takes approximately an hour to complete, there’s a possibility that a commit might be made to the repository before the workflow finishes. To address this, it could be prudent to incorporate a force push into the workflow. However, do this cautiously and make sure your branch protection rules are set up to either permit or restrict this action.
+- Before starting, upload the JSON file from [Part 3, Step 2](https://github.com/davidbeard741/arcticfrenz-data#step-2-automated-data-extraction-with-selenium-webdriver) and/or the JSON file from [Part 2](https://github.com/davidbeard741/arcticfrenz-data#part-2-calculating-rarity-scores-for-nfts-based-on-off-chain-metadata) to the specified directory.
+- Manage action permissions in your GitHub repository by going to the “Settings” tab, selecting “Actions” from the sidebar, and choosing to allow either all actions or only local actions.
+- Ensure code integrity by setting up branch protection rules in your repository settings.
+- Anticipate that the GitHub Action workflow might take around an hour to complete. During this time, a new commit to the repository could occur. To handle this, consider including a force push in the workflow. Do this with caution, ensuring your branch protection rules allow or prevent this as needed.
 - Create a Personal Access Token (PAT):
-  * Go to your GitHub account. Click on your profile picture in the top right corner and select “Settings.” In the left sidebar, click on “Developer settings.” Select “Personal access tokens” and then “Generate new token.” Give your token a name, select an expiration period, and grant it the necessary scopes. Click “Generate token” at the bottom. Copy the generated token and save it somewhere secure, as you won’t be able to see it again.
+  * Access your GitHub account, click on your profile picture, and select “Settings.” Then, navigate to “Developer settings” > “Personal access tokens” > “Generate new token.” Name your token, set an expiration, assign necessary scopes, and click “Generate token.” Copy and securely save the token, as it will not be visible again.
 - Add the PAT to Your Repository Secrets:
-  * Go to your GitHub repository where you want to use the action. Click on “Settings” in the top menu. In the left sidebar, click on “Secrets.” Click on “New repository secret.” Name your secret (e.g., MY_PAT) and paste the token you generated in the value field. Click “Add secret.”
+  * In your GitHub repository, click “Settings” > “Secrets” > “New repository secret.” Name your secret (e.g., MY_PAT) and paste your token in the value field. Finally, click “Add secret.”
 
 <br>
 
