@@ -1,5 +1,5 @@
 import json
-from datetime import date
+from datetime import date, datetime
 import traceback
 from math import exp
 import numpy as np
@@ -11,8 +11,14 @@ try:
     quantityNfts_weight = 1
     rarityScore_weight = 0.05
     daysHeld_weight = 1
-
     daysHeld_decay_factor = 0.1
+
+    """
+    print(f"Weight given to the number of NFTs held: {quantityNfts_weight}")
+    print(f"Weight given to rarity scores: {rarityScore_weight}")
+    print(f"Weight given to days held scores: {daysHeld_weight}")
+    print(f"Factor controlling the decay of score based on days held: {daysHeld_decay_factor}")
+    """
 
     max_nfts = max([holder["quantityNfts"] for holder in data])
     # print(f"The total number of NFTs owned by the individual with the largest NFT collection: {max_nfts}")
@@ -76,6 +82,8 @@ try:
     print(f"Average Score of Holder's NFTs Owned: {average_nfts_weighted}")
     print(f"Average Score of Holder's Rarity: {average_rarity_score_weighted}")
     print(f"Average Score of Holder's Days Held: {average_days_held_weighted}")
+    now_utc = datetime.utcnow()
+    print(f"Date Tuned (UTC): {now_utc.strftime('%Y-%m-%d %H:%M:%S')}")
     """
 
     scored = []
@@ -92,18 +100,3 @@ try:
 except Exception as e:
     print(f"Error: {e}")
     traceback.print_exc()
-
-
-"""
-2023-12-06T17:03:19Z
-
-The total number of NFTs owned by the individual with the largest NFT collection: 386
-The average rarity score of the owner who possesses the highest average rarity score: 1.050742373943369
-Th total duration held by the owner possessing the maximum cumulative duration of all NFTs they own : 295654
-
-rarityScore_weight = 0.05
-
-Average Score of Holder's NFTs Owned: 0.005001607289142688
-Average Score of Holder's Rarity: 0.004322801085300562
-Average Score of Holder's Days Held: 0.004007129814701526
-"""
