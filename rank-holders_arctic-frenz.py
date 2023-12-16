@@ -1,5 +1,5 @@
 import json
-from datetime import date
+from datetime import date, datetime
 import traceback
 from math import exp
 import numpy as np
@@ -14,6 +14,13 @@ try:
 
     daysHeld_decay_factor = 0.1
 
+    """
+    print(f"Weight given to the number of NFTs held: {quantityNfts_weight}")
+    print(f"Weight given to rarity scores: {rarityScore_weight}")
+    print(f"Weight given to days held scores: {daysHeld_weight}")
+    print(f"Factor controlling the decay of score based on days held: {daysHeld_decay_factor}")
+    """
+
     max_nfts = max([holder["quantityNfts"] for holder in data])
     # print(f"The total number of NFTs owned by the individual with the largest NFT collection: {max_nfts}")
 
@@ -25,7 +32,7 @@ try:
     days_held_per_holder = [(holder["holderAddress"], sum(subnft["daysHeld"] for subnft in holder["holdingNfts"])) for holder in data]
     diamond_hands = max(days_held_per_holder, key=lambda x: x[1])
     hold_door = diamond_hands[1]
-    # print(f"Th total duration held by the owner possessing the maximum cumulative duration of all NFTs they own : {hold_door}")
+    # print(f"The total duration held by the owner possessing the maximum cumulative duration of all NFTs they own : {hold_door}")
 
     today = date.today()
 
@@ -76,6 +83,11 @@ try:
     print(f"Average Score of Holder's NFTs Owned: {average_nfts_weighted}")
     print(f"Average Score of Holder's Rarity: {average_rarity_score_weighted}")
     print(f"Average Score of Holder's Days Held: {average_days_held_weighted}")
+    """
+
+    """
+    now_utc = datetime.utcnow()
+    print(f"Date Tuned (UTC): {now_utc.strftime('%Y-%m-%d %H:%M:%S')}")
     """
 
     scored = []
