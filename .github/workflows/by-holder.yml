@@ -24,8 +24,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        script: [by-holder_chickentribe.py, by-holder_arctic-frenz.py]
-      max-parallel: 5
+        script: [by-holder_arctic-frenz.py, by-holder_chickentribe.py, by-holder_claynosaurz.py, by-holder_fff.py, by-holder_mad-lads.py, by-holder_okay-bears.py, by-holder_quekz.py, by-holder_sentries.py, by-holder_smb.py, by-holder_solc.py]
+      max-parallel: 11
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.10
@@ -55,6 +55,14 @@ jobs:
           git add
           arcticfrenz/by-holder.json
           chickentribe/by-holder.json
+          claynosaurz/by-holder.json
+          fff/by-holder.json
+          madlads/by-holder.json
+          okay-bears/by-holder.json
+          quekz/by-holder.json
+          sentries/by-holder.json
+          smb/by-holder.json
+          solc/by-holder.json
       - name: Commit
         run: git commit -m "Updated by-holder JSONs"
       - name: Attempt Normal Push
