@@ -2,7 +2,7 @@
 
 ### Date and Time Tuned (UTC):
 
-%Y-%m-%d %H:%M:%S
+2023-12-16 19:46:00
 
 ### Input:
 
@@ -16,16 +16,16 @@
 
 | Description | Value |
 |---|---|
-| **Weight given to the number of NFTs held** | - |
-| **Weight given to rarity scores** | - |
-| **Weight given to days held scores** | - |
+| **Weight given to the number of NFTs held** | 1 |
+| **Weight given to rarity scores** | 0.05 |
+| **Weight given to days held scores** | 1 |
 | **Factor controlling the decay of score based on days held** | - |
-| **The total number of NFTs owned by the individual with the largest NFT collection** | - |
-| **The average rarity score of the owner who possesses the highest average rarity score** | - |
-| **The total duration held by the owner possessing the maximum cumulative duration of all NFTs they own** | - |
-| **Average Score of Holder's NFTs Owned** | - |
-| **Average Score of Holder's Rarity** | - |
-| **Average Score of Holder's Days Held** | - |
+| **The total number of NFTs owned by the individual with the largest NFT collection** | 392 |
+| **The average rarity score of the owner who possesses the highest average rarity score** | 1.050742373943369 |
+| **The total duration held by the owner possessing the maximum cumulative duration of all NFTs they own** | 303003 |
+| **Average Score of Holder's NFTs Owned** | 0.004955546575065914 |
+| **Average Score of Holder's Rarity** | 0.004337926425038117 |
+| **Average Score of Holder's Days Held** | 0.0039405170322044415 |
 
 
 ### Script
@@ -38,7 +38,7 @@ from math import exp
 import numpy as np
 
 try:
-    with open('/content/drive/MyDrive/CT/by-holder.json') as f:
+    with open('chickentribe/by-holder.json') as f:
         data = json.load(f)
 
     quantityNfts_weight = 1
@@ -116,9 +116,6 @@ try:
     print(f"Average Score of Holder's NFTs Owned: {average_nfts_weighted}")
     print(f"Average Score of Holder's Rarity: {average_rarity_score_weighted}")
     print(f"Average Score of Holder's Days Held: {average_days_held_weighted}")
-    """
-
-    """
     now_utc = datetime.utcnow()
     print(f"Date Tuned (UTC): {now_utc.strftime('%Y-%m-%d %H:%M:%S')}")
     """
@@ -131,7 +128,7 @@ try:
 
     ranked = sorted(scored, key=lambda x: x["holderScore"], reverse=True)
 
-    with open('/content/drive/MyDrive/CT/ranked-holders.json', 'w') as f:
+    with open('chickentribe/ranked-holders.json', 'w') as f:
       json.dump(ranked, f, indent=4)
 
 except Exception as e:
