@@ -24,8 +24,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        script: [by-nft_chickentribe.py, by-nft_arctic-frenz.py]
-      max-parallel: 5
+        script: [by-nft_chickentribe.py, by-nft_arctic-frenz.py, by-nft_claynosaurz.py]
+      max-parallel: 11
     steps:
       - uses: actions/checkout@v3
       - name: Set up Python 3.10
@@ -55,6 +55,7 @@ jobs:
           git add
           arcticfrenz/by-NFT.json
           chickentribe/by-NFT.json
+          claynosaurz/by-NFT.json
       - name: Commit
         run: git commit -m "Updated by-NFT JSONs"
       - name: Attempt Normal Push
