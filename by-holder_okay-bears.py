@@ -8,10 +8,8 @@ with open('okay-bears/by-NFT.json') as f:
 holders = {}
 for nft in data:
     holder_data = nft['holderData']
-    if holder_data == "Magic Eden V2 Authority":
-      continue
-    if holder_data == "4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue": # Tensor
-      continue
+    if holder_data in ["Magic Eden V2 Authority", "4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue", "1BWutmTvYPwDtmw9abTkS4Ssr8no61spGAvW1X6NDix"]: # ME, Tensor, ME Escrow
+        continue
     if holder_data is None:
       continue
     if holder_data:
