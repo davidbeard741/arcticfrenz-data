@@ -22,7 +22,7 @@ Welcome to the Arctic Frenz Data Repository - a specialized resource aimed at en
 
 # Table of Contents
 1. [Part 1: Retrieve NFT Metadata](https://github.com/davidbeard741/arcticfrenz-data#part-1-retrieve-nft-metadata)
-2. [Part 2: Calculating Rarity Scores](https://github.com/davidbeard741/arcticfrenz-data#part-2-calculating-rarity-scores)
+2. [Part 2: Calculating Rarity Scores](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#part-2-rarity-scores)
 3. [Part 3: Enhancing the Metadata](https://github.com/davidbeard741/arcticfrenz-data/blob/main/README.md#part-3-enhancing-the-metadata)
 4. [Part 4: Data Processing Pipeline](https://github.com/davidbeard741/arcticfrenz-data/tree/main#part-4-data-processing-pipeline)
 5. [Part 5: Pretty-Printing](https://github.com/davidbeard741/arcticfrenz-data/tree/main#part-5-pretty-printing)
@@ -612,8 +612,8 @@ HowRare.is does not offer rarity rankings for all NFT collections. The following
 ```Python
 import json
 
-file_path_nft_metadata = '/content/drive/MyDrive/ML/nft_metadata.json'
-file_path_howrare = '/content/drive/MyDrive/ML/howrare.json'
+file_path_nft_metadata = 'nft_metadata.json'
+file_path_howrare = 'howrare.json'
 
 with open(file_path_nft_metadata, 'r') as file:
     nft_metadata = json.load(file)
@@ -635,7 +635,7 @@ for item in nft_metadata:
     else:
         accounts_without_rarity.append(account)
 
-new_file = '/content/drive/MyDrive/ML/with-HowRare.json'
+new_file = 'with-HowRare.json'
 with open(new_file, 'w') as file:
     json.dump(nft_metadata, file, indent=4)
 
