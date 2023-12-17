@@ -27,7 +27,7 @@ def plot_nft_ownership_histogram(nft_data, bins=30):
         holder = holder_data.get('holderAddress', "")
         when_acquired = holder_data.get('whenAcquired', None)
 
-        if holder not in ["Magic Eden V2 Authority", "4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue"] and when_acquired and is_valid_unix_timestamp(when_acquired):
+        if holder not in ["Magic Eden V2 Authority", "4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue", "1BWutmTvYPwDtmw9abTkS4Ssr8no61spGAvW1X6NDix"] and when_acquired and is_valid_unix_timestamp(when_acquired):
             duration = calculate_ownership_duration(when_acquired)
             if duration >= 0:
                 ownership_durations.append(duration)
