@@ -55,7 +55,7 @@ jobs:
         run: git stash pop
       - name: Add
         run: |
-          git add sentries/nft_metadata_with_rarity_and_holder_data.json
+          git add sentries/with-rarity-and-holder-data.json
           git add sentries/logfile.log
       - name: Commit
         run: git commit -m "Updated Sentries holders data"
