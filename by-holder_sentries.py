@@ -8,10 +8,11 @@ with open('sentries/by-NFT.json') as f:
 holders = {}
 for nft in data:
     holder_data = nft['holderData']
-    if holder_data in ["Magic Eden V2 Authority", "4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue", "1BWutmTvYPwDtmw9abTkS4Ssr8no61spGAvW1X6NDix"]: # ME, Tensor, ME Escrow
-        continue
     if holder_data is None:
       continue
+    holder_address = holder_data.get('holderAddress')  # Get the holderAddress
+    if holder_address in ["Magic Eden V2 Authority", "4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue", "1BWutmTvYPwDtmw9abTkS4Ssr8no61spGAvW1X6NDix"]:
+        continue
     if holder_data:
         holder_address = holder_data['holderAddress']
         if isinstance(holder_address, str):
