@@ -1,8 +1,8 @@
-name: by-nft
+name: by-nft_1
 on:
   workflow_dispatch:
   schedule: 
-    - cron: '40 8 * * *'
+    - cron: '0 9 * * *'
 permissions:
   actions: write
   checks: write
@@ -24,7 +24,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        script: [by-nft_arctic-frenz.py, by-nft_chickentribe.py, by-nft_claynosaurz.py, by-nft_fff.py, by-nft_mad-lads.py, by-nft_okay-bears.py, by-nft_quekz.py, by-nft_sentries.py, by-nft_smb.py, by-nft_solc.py]
+        script: [by-nft_arctic-frenz.py, by-nft_chickentribe.py]
       max-parallel: 11
     steps:
       - uses: actions/checkout@v3
@@ -55,14 +55,6 @@ jobs:
           git add
           arcticfrenz/by-NFT.json
           chickentribe/by-NFT.json
-          claynosaurz/by-NFT.json
-          fff/by-NFT.json
-          madlads/by-NFT.json
-          okay-bears/by-NFT.json
-          quekz/by-NFT.json
-          sentries/by-NFT.json
-          smb/by-NFT.json
-          solc/by-NFT.json
       - name: Commit
         run: git commit -m "Updated by-NFT JSONs"
       - name: Attempt Normal Push
