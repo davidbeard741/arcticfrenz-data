@@ -2,7 +2,7 @@ name: by-nft_4
 on:
   workflow_dispatch:
   schedule: 
-    - cron: '6 9 * * *'
+    - cron: '9 9 * * *'
 permissions:
   actions: write
   checks: write
