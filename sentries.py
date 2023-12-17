@@ -377,7 +377,7 @@ def main():
 
     kill_chrome_and_chromedriver(logger)
 
-    processed_data_file = 'sentries/nft_metadata_with_rarity_and_holder_data.json'
+    processed_data_file = 'sentries/with-rarity-and-holder-data.json'
     if os.path.exists(processed_data_file):
         try:
             with open(processed_data_file, 'r') as file:
