@@ -2,7 +2,7 @@ name: by-holder_1
 on:
   workflow_dispatch:
   schedule: 
-    - cron: '10 9 * * *'
+    - cron: '15 9 * * *'
 permissions:
   actions: write
   checks: write
