@@ -340,23 +340,28 @@ The example JSON below is truncated for illustrative purposes; the 'nft_metadata
 
 ---
 
-## Part 2: Calculating Rarity Scores
+## Part 2: Rarity Scores
 
-The concept of rarity in the context of NFTs pertains to the uniqueness and scarcity of certain traits within a collection. Rarity scores can significantly impact the perceived value and desirability of individual NFTs. This section outlines the process for calculating rarity scores using the off-chain metadata associated with each NFT.
+The concept of rarity, in the context of NFTs, relates to the uniqueness and scarcity of specific traits within a collection. Rarity scores play a crucial role in shaping the perceived value and desirability of individual NFTs. This section details two distinct methods for calculating these scores:
 
-### Steps to Calculate Rarity Scores
+1. **Process A**: Calculation of rarity scores using off-chain metadata associated with each NFT.
+2. **Process B**: Utilization of rarity rankings provided by HowRare.is for the collection.
 
-1. **List Traits**: Enumerate all distinct traits and their possible values from the `offChainMetadata` within the NFT dataset.
+### **Process A**
+
+**Steps to Calculate Rarity Scores**
+
+1. List Traits: Enumerate all distinct traits and their possible values from the `offChainMetadata` within the NFT dataset.
    
-2. **Count Traits**: Tally the frequency of each trait value across the collection to determine how common or rare each trait is.
+2. Count Traits: Tally the frequency of each trait value across the collection to determine how common or rare each trait is.
 
-3. **Calculate Rarity Scores**: Assign a rarity score to each NFT by summing the inverse frequencies of its trait values. This score quantifies the rarity, with higher scores indicating rarer traits.
+3. Calculate Rarity Scores: Assign a rarity score to each NFT by summing the inverse frequencies of its trait values. This score quantifies the rarity, with higher scores indicating rarer traits.
 
-### Rarity Score Implications
+**Rarity Score Implications**
 
 A lower frequency of a trait value indicates rarity, and hence, it contributes more significantly to the rarity score. The scoring system is designed such that the sum of the inverses of the trait frequencies for an NFT's traits yields its total rarity score. The end result is a comprehensive dataset where each NFT entry is supplemented with a rarity_score field, reflecting its uniqueness within the collection.
 
-### Mathematical Formulation
+**Mathematical Formulation**
 
 The rarity score is calculated by summing the inverse frequencies of all the trait values for the NFT. This means that rarer traits will contribute more significantly to the rarity score than more common traits.
 
@@ -387,11 +392,13 @@ where:
 
 </details>
 
-### Handling Missing or Undefined Attributes
+<br>
 
-In the rarity score calculation, it is possible for an NFT to have missing or undefined attributes. When such cases arise, the script is designed to handle these gracefully by assigning a default rarity score of 0. This ensures that every NFT has a defined rarity score when saved to the JSON file. By doing so, the dataset maintains consistency and allows for a meaningful comparison between NFTs, even if some have incomplete metadata. This approach also prevents potential errors during data processing and analysis that could occur due to undefined or missing values.
+**Handling Missing or Undefined Attributes**
 
-### Rarity Script 
+In rarity score calculations, NFTs with missing or undefined attributes are assigned a default score of 0. This ensures each NFT has a defined rarity score for the JSON file, maintaining dataset consistency and enabling meaningful NFT comparisons. This method also avoids potential data processing and analysis errors caused by undefined or missing values.
+
+**Rarity Script** 
 
 <br>
 
@@ -439,7 +446,7 @@ print(f"Awesome! The updated JSON file with rarity scores is saved to {updated_f
 
 <br>
 
-### Example Output
+**Example Output**
 
 The output is an updated JSON file, nft_metadata_with_rarity.json, where each NFT entry now includes a rarity_score. Below is a truncated example of what an NFT entry might look like with an appended rarity score:
 
@@ -584,6 +591,62 @@ The output is an updated JSON file, nft_metadata_with_rarity.json, where each NF
 ]
 
 ```
+</details>
+
+<br>
+
+### **Process B**
+
+HowRare.is does not offer rarity rankings for all NFT collections. The following steps are intended for collections listed on HowRare.is. For those not listed, please use Process A.
+
+1. Navigate to the desired collection on [HowRare.is](https://howrare.is/).
+2. Select "Download ranking".
+3. Save the file as 'howrare.json'.
+4. Execute the script provided below.
+
+<br>
+
+<details>
+  <summary>CLICK TO EXPAND Python Script</summary>
+
+```Python
+import json
+
+file_path_nft_metadata = '/content/drive/MyDrive/ML/nft_metadata.json'
+file_path_howrare = '/content/drive/MyDrive/ML/howrare.json'
+
+with open(file_path_nft_metadata, 'r') as file:
+    nft_metadata = json.load(file)
+
+with open(file_path_howrare, 'r') as file:
+    howrare_data = json.load(file)['result']['data']['items']
+
+howrare_dict = {item['mint']: item for item in howrare_data}
+
+accounts_without_rarity = []
+
+max_rank = max(item.get('rank', 0) for item in howrare_data)
+
+for item in nft_metadata:
+    account = item.get('account')
+    if account in howrare_dict:
+        normalized_rank = 1 - (howrare_dict[account].get('rank') / max_rank)
+        item['rarity_score'] = max(normalized_rank, 0.001) 
+    else:
+        accounts_without_rarity.append(account)
+
+new_file = '/content/drive/MyDrive/ML/with-HowRare.json'
+with open(new_file, 'w') as file:
+    json.dump(nft_metadata, file, indent=4)
+
+if not accounts_without_rarity:
+    print("Success, all items received a HowRare value")
+else:
+    print("The following accounts did not receive a HowRare value:")
+    for account in accounts_without_rarity:
+        print(account)
+```
+
 </details>
 
 <br>
