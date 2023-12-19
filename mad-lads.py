@@ -214,34 +214,12 @@ def get_hold_time(url_time, driver, logger):
         simulate_human_interaction(driver, logger)
 
         javascript = """
-        var elements = document.querySelectorAll('span.sc-kDvujY.dxDyul');
-        var targetElement = null;
-        var count = 0;
-
-        for (var i = 0; i < elements.length; i++) {
-            if (elements[i].textContent.includes('Time')) {
-                count++;
-                if (count === 2) {
-                    targetElement = elements[i];
-                    break;
-                }
-            }
-        }
-
-        if (!targetElement) {
-            // Second element not found, so select the first
-            for (var i = 0; i < elements.length; i++) {
-                if (elements[i].textContent.includes('Time')) {
-                    targetElement = elements[i];
-                    break;
-                }
-            }
-        }
-
+        var targetElement = document.querySelector("#rc-tabs-0-panel-txs > div.ant-space.ant-space-vertical.sc-cwSeag.jTZqgO > div > div > div > div > div > div > div > table > thead > tr > th:nth-child(4) > span.icon.icon-icon-clock");
+        
         if (targetElement) {
             targetElement.click();
         } else {
-            console.log('Element with "Time" not found');
+            console.log('Target element not found');
         }
         """
 
