@@ -228,7 +228,7 @@ def get_hold_time(url_time, driver, logger):
         except Exception as e:
             logger.error(f"An error occurred: {e}")
 
-        time.sleep(4)
+        time.sleep(2)
 
         body_html = driver.find_element(By.TAG_NAME, 'body').get_attribute('outerHTML')
 
