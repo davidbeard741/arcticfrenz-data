@@ -35,7 +35,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.MY_PAT }}
     - name: Reduce Log File Size
       run: |
-        max_size=500  # maximum size in lines
+        max_size=100  # maximum size in lines
         for file in fff/logfile.log smb/logfile.log solc/logfile.log okay-bears/logfile.log quekz/logfile.log chickentribe/logfile.log arcticfrenz/logfile.log sentries/logfile.log madlads/logfile.log claynosaurz/logfile.log; do
           if [ -f "$file" ]; then
             # Keep only the last max_size lines of the file
