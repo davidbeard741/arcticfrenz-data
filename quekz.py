@@ -176,9 +176,7 @@ def getholderaddress(url_holder, driver, logger):
         wait.until(lambda d: root.is_displayed())
         wait.until(lambda d: body.is_displayed())
 
-        random_sleep(7, 8)
-
-        simulate_human_interaction(driver, logger)
+        time.sleep(8)
 
         root_html = driver.find_element(By.ID, 'root').get_attribute('outerHTML')
         with open(FILE_ADDRESS, 'w') as file:
