@@ -33,6 +33,8 @@ jobs:
         git config --global user.email 'david.beard741@gmail.com'
       env:
         GITHUB_TOKEN: ${{ secrets.MY_PAT }}
+    - name: Pull changes from Remote
+      run: git pull --rebase origin main
     - name: Reduce Log File Size
       run: |
         for file in fff/logfile.log smb/logfile.log solc/logfile.log okay-bears/logfile.log quekz/logfile.log chickentribe/logfile.log arcticfrenz/logfile.log sentries/logfile.log madlads/logfile.log claynosaurz/logfile.log; do
@@ -43,12 +45,6 @@ jobs:
             echo "$file does not exist, skipping."
           fi
         done
-    - name: Stash Changes
-      run: git stash --include-untracked
-    - name: Pull changes from Remote
-      run: git pull --rebase origin main
-    - name: Reapply Stashed Changes
-      run: git stash pop
     - name: Commit
       run: git commit -m "Reduce Log Files Size" || echo "No changes to commit"
     - name: Attempt Normal Push
