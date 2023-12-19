@@ -214,13 +214,26 @@ def get_hold_time(url_time, driver, logger):
         simulate_human_interaction(driver, logger)
 
         javascript = """
-        var targetElement = document.querySelector("#rc-tabs-0-panel-txs > div.ant-space.ant-space-vertical.sc-cwSeag.jTZqgO > div > div > div > div > div > div > div > table > thead > tr > th:nth-child(4) > span.icon.icon-icon-clock");
-        
-        if (targetElement) {
-            targetElement.click();
-        } else {
-            console.log('Target element not found');
-        }
+        const clickAndCheck = async () => {
+          const clockIconElement = document.querySelector("#rc-tabs-2-panel-txs > div.ant-space.ant-space-vertical.sc-cwSeag.jTZqgO > div > div > div > div > div > div > div > table > thead > tr > th:nth-child(4) > span");
+          if (!clockIconElement) {
+            console.warn('Unable to find clock icon element');
+            return;
+          }
+          let retries = 5;
+          while (clockIconElement.querySelector('svg') && retries > 0) {
+            await clockIconElement.click();
+            console.log('Clicking clock icon, remaining retries:', retries);
+            retries--;
+            await new Promise(resolve => setTimeout(resolve, 1000));
+          }
+          if (retries === 0) {
+            console.warn('Max retries reached for clock icon click');
+          } else {
+            console.log('Clicking successful - clock icon disappeared');
+          }
+        };
+        clickAndCheck();
         """
 
         try:
