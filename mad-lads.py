@@ -209,9 +209,7 @@ def get_hold_time(url_time, driver, logger):
         wait.until(lambda d: root.is_displayed())
         wait.until(lambda d: body.is_displayed())
 
-        random_sleep(8, 9)
-
-        simulate_human_interaction(driver, logger)
+        time.sleep(8)
 
         javascript = """
         const clickAndCheck = async () => {
