@@ -213,7 +213,7 @@ def get_hold_time(url_time, driver, logger):
 
         javascript = """
         const clickAndCheck = async () => {
-          const clockIconElement = document.querySelector("#rc-tabs-2-panel-txs > div.ant-space.ant-space-vertical.sc-cwSeag.jTZqgO > div > div > div > div > div > div > div > table > thead > tr > th:nth-child(4) > span");
+          const clockIconElement = document.querySelector(".ant-space.ant-space-vertical.sc-cwSeag.jTZqgO > div > div > div > div > div > div > div > table > thead > tr > th:nth-child(4) > span");
           if (!clockIconElement) {
             console.warn('Unable to find clock icon element');
             return;
