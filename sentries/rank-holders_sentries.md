@@ -2,7 +2,7 @@
 
 ### Date and Time Tuned (UTC):
 
-2023-12-23 09:33:18
+2023-12-23 09:45:37
 
 ### Input:
 
@@ -23,9 +23,9 @@
 | **The total number of NFTs owned by the individual with the largest NFT collection** | 2557 |
 | **The average rarity score of the owner who possesses the highest average rarity score** | 0.997375 |
 | **The total duration held by the owner possessing the maximum cumulative duration of all NFTs they own** | 24611 |
-| **Average Score of Holder's NFTs Owned** |  0.002932344150182314 |
-| **Average Score of Holder's Rarity** | 0.027106195911031736 |
-| **Average Score of Holder's Days Held** | 0.02855700409774507 |
+| **Average Score of Holder's NFTs Owned** |  0.027849650349649487 |
+| **Average Score of Holder's Rarity** | 0.02710919047909607 |
+| **Average Score of Holder's Days Held** | 0.02778871431133774 |
 
 
 ### Script
@@ -41,7 +41,7 @@ try:
     with open('sentries/by-holder.json') as f:
         data = json.load(f)
 
-    quantityNfts_weight = 1
+    quantityNfts_weight = 1.8
     rarityScore_weight = 0.045
     daysHeld_weight = 1
 
