@@ -83,6 +83,7 @@ ax3.grid(axis='x', linestyle='--', alpha=0.5, color='#fdff00')
 ax3.yaxis.label.set_color('#fdff00')
 ax3.set_autoscalex_on(False)
 ax3.xaxis.set_major_formatter(custom_formatter)
+ax3.xaxis.set_minor_formatter(NullFormatter())
 hold_durations = [m[2] for m in metrics]
 min_hold_duration = min(hold_durations)
 max_hold_duration = max(hold_durations)
