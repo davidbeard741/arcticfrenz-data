@@ -5,6 +5,7 @@ import matplotlib.font_manager as fm
 import numpy as np
 import math
 from datetime import datetime
+from matplotlib.ticker import NullFormatter
 
 def custom_formatter(x, pos):
     if x >= 100:
