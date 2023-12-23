@@ -16,7 +16,7 @@
 
 | Description | Value |
 |---|---|
-| **Weight given to the number of NFTs held** | 1 |
+| **Weight given to the number of NFTs held** | 1.8 |
 | **Weight given to rarity scores** | 0.045 |
 | **Weight given to days held scores** | 1 |
 | **Factor controlling the decay of score based on days held** | 0.1 |
@@ -44,7 +44,6 @@ try:
     quantityNfts_weight = 1.8
     rarityScore_weight = 0.045
     daysHeld_weight = 1
-
     daysHeld_decay_factor = 0.1
 
     """
