@@ -85,6 +85,7 @@ ax3.grid(axis='x', linestyle='--', alpha=0.5, color='#fdff00')
 ax3.yaxis.label.set_color('#fdff00')
 
 ax.set_xticklabels([])
+ax.tick_params(axis='x', which='both', bottom=False, top=False, labelbottom=False)
 
 legend_handles = []
 legend_labels = []
