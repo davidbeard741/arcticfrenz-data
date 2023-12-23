@@ -77,12 +77,18 @@ ax3 = ax.twiny()
 ax3.set_xscale('log')
 ax3.barh(x + 2*width, [m[2] for m in metrics], width, color='#fdff00', label='Cumulative Hold Duration\nin Days Across NFTs Owned', edgecolor='#E0E0E0', alpha=0.8)
 ax3.set_ylabel('Cumulative Hold Duration\nin Days Across NFTs Owned', color='#fdff00')
-ax3.set_autoscalex_on(True)
-ax3.xaxis.set_major_formatter(custom_formatter)
 ax3.tick_params(axis='y', labelcolor='#fdff00')
 ax3.tick_params(axis='x', labelcolor='#fdff00', tickdir='out', direction='out', length=35, width=1, colors='#fdff00', grid_color='#fdff00', grid_alpha=0.5)
 ax3.grid(axis='x', linestyle='--', alpha=0.5, color='#fdff00')
 ax3.yaxis.label.set_color('#fdff00')
+ax3.set_autoscalex_on(False)
+ax3.xaxis.set_major_formatter(custom_formatter)
+hold_durations = [m[2] for m in metrics]
+min_hold_duration = min(hold_durations)
+max_hold_duration = max(hold_durations)
+buffer = max_hold_duration * 0.1
+max_limit = max_hold_duration + buffer
+ax3.set_xlim([min_hold_duration, max_limit])
 
 legend_handles = []
 legend_labels = []
