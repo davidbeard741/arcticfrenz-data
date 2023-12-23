@@ -20,9 +20,9 @@
 | **Weight given to rarity scores** | 0.04 |
 | **Weight given to days held scores** | 1.8 |
 | **Factor controlling the decay of score based on days held** | 0.1 |
-| **The total number of NFTs owned by the individual with the largest NFT collection** | 2557 |
-| **The average rarity score of the owner who possesses the highest average rarity score** | 0.997375 |
-| **The total duration held by the owner possessing the maximum cumulative duration of all NFTs they own** | 24611 |
+| **The total number of NFTs owned by the individual with the largest NFT collection** | 228 |
+| **The average rarity score of the owner who possesses the highest average rarity score** | 0.9999 |
+| **The total duration held by the owner possessing the maximum cumulative duration of all NFTs they own** | 1675 |
 | **Average Score of Holder's NFTs Owned** |  0.022510927066647757 |
 | **Average Score of Holder's Rarity** | 0.02217599059409806 |
 | **Average Score of Holder's Days Held** | 0.022058350453505918 |
