@@ -11,7 +11,7 @@ for nft in data:
     if holder_data is None:
       continue
     holder_address = holder_data.get('holderAddress')  # Get the holderAddress
-    if holder_address in ["Magic Eden V2 Authority", "4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue", "1BWutmTvYPwDtmw9abTkS4Ssr8no61spGAvW1X6NDix"]:
+    if holder_address in ["Magic Eden V2 Authority", "4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue", "1BWutmTvYPwDtmw9abTkS4Ssr8no61spGAvW1X6NDix", "GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28"]:
         continue
     if holder_data:
         holder_address = holder_data['holderAddress']
