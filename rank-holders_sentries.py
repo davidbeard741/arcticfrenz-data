@@ -11,7 +11,6 @@ try:
     quantityNfts_weight = 1.8
     rarityScore_weight = 0.045
     daysHeld_weight = 1
-
     daysHeld_decay_factor = 0.1
 
     """
