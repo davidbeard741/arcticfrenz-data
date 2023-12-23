@@ -8,7 +8,7 @@ try:
     with open('sentries/by-holder.json') as f:
         data = json.load(f)
 
-    quantityNfts_weight = 1
+    quantityNfts_weight = 1.8
     rarityScore_weight = 0.045
     daysHeld_weight = 1
 
