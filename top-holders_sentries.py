@@ -44,7 +44,6 @@ locator = ticker.FixedLocator(ticks)
 ax.yaxis.set_major_locator(locator)
 ax.set_yticklabels(holders, color='#ffffff', fontsize=10)
 ax.set_ylabel('Holders', color='#E0E0E0', fontsize=16, fontweight=5)
-ax.set_xticklabels([])
 ax.set_title('Sentries\nTop Holders', fontsize=20, fontweight=5, color='#E0E0E0')
 ax.tick_params(axis='y', color='#E0E0E0')
 ax.tick_params(axis='x', which='both', bottom=False, top=False, labelbottom=False)
@@ -84,6 +83,8 @@ ax3.tick_params(axis='y', labelcolor='#fdff00')
 ax3.tick_params(axis='x', labelcolor='#fdff00', tickdir='out', direction='out', length=35, width=1, colors='#fdff00', grid_color='#fdff00', grid_alpha=0.5)
 ax3.grid(axis='x', linestyle='--', alpha=0.5, color='#fdff00')
 ax3.yaxis.label.set_color('#fdff00')
+
+ax.set_xticklabels([])
 
 legend_handles = []
 legend_labels = []
