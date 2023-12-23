@@ -1,8 +1,8 @@
-name: top-holders
+name: top-holders_1
 on:
   workflow_dispatch:
   schedule: 
-    - cron: '49 8 * * *'
+    - cron: '45 9 * * *'
 permissions:
   actions: write
   checks: write
