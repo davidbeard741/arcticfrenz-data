@@ -83,7 +83,6 @@ ax3.tick_params(axis='y', labelcolor='#fdff00')
 ax3.tick_params(axis='x', labelcolor='#fdff00', tickdir='out', direction='out', length=35, width=1, colors='#fdff00', grid_color='#fdff00', grid_alpha=0.5)
 ax3.grid(axis='x', linestyle='--', alpha=0.5, color='#fdff00')
 ax3.yaxis.label.set_color('#fdff00')
-ax3.set_xticklabels([])
 
 legend_handles = []
 legend_labels = []
