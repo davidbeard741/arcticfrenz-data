@@ -2,7 +2,7 @@ name: rank-holders_1
 on:
   workflow_dispatch:
   schedule: 
-    - cron: '46 8 * * *'
+    - cron: '30 9 * * *'
 permissions:
   actions: write
   checks: write
