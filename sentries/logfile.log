@@ -6283,3 +6283,1560 @@
 2023-12-25 17:04:14,816 - INFO - Successfully processed account 4hrTf2eBGAbNQp7SXRuNpmYqsxxLqsTJ74joFZ7b1zWb.
 2023-12-25 17:04:14,819 - INFO - WebDriver closed for item 3142
 2023-12-25 17:04:16,198 - INFO - Progress saved after processing 100 items.
+2023-12-25 18:16:16,972 - INFO - Starting new run. Appending to the existing logfile.
+2023-12-25 18:16:17,305 - INFO - Continuing from previously saved progress.
+2023-12-25 18:16:17,307 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:16:17,309 - INFO - Starting from index 2899: Found invalid 'holder' value.
+2023-12-25 18:16:17,309 - INFO - Processing item 1/100 with account: F7X6wrPaLQKwstyAY5Xi6GZ9vCfWsbnoQmMb71yZ8jog (Global index: 2900/7999)
+2023-12-25 18:16:31,486 - INFO - https://solscan.io/token/F7X6wrPaLQKwstyAY5Xi6GZ9vCfWsbnoQmMb71yZ8jog#holders
+2023-12-25 18:16:32,487 - INFO - https://solscan.io/token/F7X6wrPaLQKwstyAY5Xi6GZ9vCfWsbnoQmMb71yZ8jog#txs
+2023-12-25 18:16:48,757 - INFO - Owner address not found in the table.
+2023-12-25 18:16:48,757 - INFO - Holder Address: Address not found
+2023-12-25 18:16:58,917 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:16:58,945 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:16:58,946 - INFO - Hold time extracted: Table not found
+2023-12-25 18:16:58,946 - INFO - Closing the web driver...
+2023-12-25 18:16:59,121 - INFO - Web driver closed for time.
+2023-12-25 18:16:59,123 - ERROR - Error processing F7X6wrPaLQKwstyAY5Xi6GZ9vCfWsbnoQmMb71yZ8jog: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:16:59,126 - INFO - WebDriver closed for item 2900
+2023-12-25 18:16:59,128 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:16:59,130 - INFO - Starting from index 2964: Found invalid 'holder' value.
+2023-12-25 18:16:59,130 - INFO - Processing item 2/100 with account: 7ggGh8xZuBCTyCz2EKovk2fsGn8riPfkxWYXx2jHdLcg (Global index: 2965/7999)
+2023-12-25 18:17:00,889 - INFO - https://solscan.io/token/7ggGh8xZuBCTyCz2EKovk2fsGn8riPfkxWYXx2jHdLcg#holders
+2023-12-25 18:17:01,890 - INFO - https://solscan.io/token/7ggGh8xZuBCTyCz2EKovk2fsGn8riPfkxWYXx2jHdLcg#txs
+2023-12-25 18:17:19,559 - INFO - Owner address found: BbHzAW4fXHkfkYxnmshtLmgPkcSCoaAsGnpzydEDiBEi
+2023-12-25 18:17:19,559 - INFO - Holder Address: BbHzAW4fXHkfkYxnmshtLmgPkcSCoaAsGnpzydEDiBEi
+2023-12-25 18:17:29,724 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:17:29,750 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:17:29,750 - INFO - Hold time extracted: Table not found
+2023-12-25 18:17:29,750 - INFO - Closing the web driver...
+2023-12-25 18:17:29,797 - INFO - Web driver closed for time.
+2023-12-25 18:17:29,798 - ERROR - Error processing 7ggGh8xZuBCTyCz2EKovk2fsGn8riPfkxWYXx2jHdLcg: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:17:29,802 - INFO - WebDriver closed for item 2965
+2023-12-25 18:17:29,804 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:17:29,806 - INFO - Starting from index 2989: Found invalid 'holder' value.
+2023-12-25 18:17:29,806 - INFO - Processing item 3/100 with account: CC8xjFeQxCDtTtxzU9StNBJWAENtcPvaY1f8X8Tf1Mmu (Global index: 2990/7999)
+2023-12-25 18:17:31,570 - INFO - https://solscan.io/token/CC8xjFeQxCDtTtxzU9StNBJWAENtcPvaY1f8X8Tf1Mmu#holders
+2023-12-25 18:17:32,571 - INFO - https://solscan.io/token/CC8xjFeQxCDtTtxzU9StNBJWAENtcPvaY1f8X8Tf1Mmu#txs
+2023-12-25 18:17:48,888 - INFO - Owner address found: 2wpBRyFvv7MHhMZxWK8ge7mpsqkWv89QTRMrhTBKA9SV
+2023-12-25 18:17:48,888 - INFO - Holder Address: 2wpBRyFvv7MHhMZxWK8ge7mpsqkWv89QTRMrhTBKA9SV
+2023-12-25 18:17:59,064 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:17:59,098 - INFO - Time successfully extracted: 11-08-2023 08:14:39
+2023-12-25 18:17:59,098 - INFO - Hold time extracted: 11-08-2023 08:14:39
+2023-12-25 18:17:59,098 - INFO - Closing the web driver...
+2023-12-25 18:17:59,136 - INFO - Web driver closed for time.
+2023-12-25 18:17:59,136 - INFO - Successfully processed account CC8xjFeQxCDtTtxzU9StNBJWAENtcPvaY1f8X8Tf1Mmu.
+2023-12-25 18:17:59,139 - INFO - WebDriver closed for item 2990
+2023-12-25 18:17:59,141 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:17:59,143 - INFO - Starting from index 2993: Found invalid 'holder' value.
+2023-12-25 18:17:59,143 - INFO - Processing item 4/100 with account: Dh4a2DSmyk3BucJxfJ6chQDHbN4TZwbVr7apHPaTemfy (Global index: 2994/7999)
+2023-12-25 18:18:00,898 - INFO - https://solscan.io/token/Dh4a2DSmyk3BucJxfJ6chQDHbN4TZwbVr7apHPaTemfy#holders
+2023-12-25 18:18:01,899 - INFO - https://solscan.io/token/Dh4a2DSmyk3BucJxfJ6chQDHbN4TZwbVr7apHPaTemfy#txs
+2023-12-25 18:18:15,776 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:18:15,776 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:18:25,947 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:18:25,982 - INFO - Time successfully extracted: 12-13-2023 17:14:29
+2023-12-25 18:18:25,982 - INFO - Hold time extracted: 12-13-2023 17:14:29
+2023-12-25 18:18:25,982 - INFO - Closing the web driver...
+2023-12-25 18:18:26,021 - INFO - Web driver closed for time.
+2023-12-25 18:18:26,021 - INFO - Successfully processed account Dh4a2DSmyk3BucJxfJ6chQDHbN4TZwbVr7apHPaTemfy.
+2023-12-25 18:18:26,024 - INFO - WebDriver closed for item 2994
+2023-12-25 18:18:26,026 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:18:26,028 - INFO - Starting from index 3012: Found invalid 'holder' value.
+2023-12-25 18:18:26,028 - INFO - Processing item 5/100 with account: VyLkvUW25XSmpU8Js2KrWcXGJ8XdijxUaMfur7RQHVT (Global index: 3013/7999)
+2023-12-25 18:18:27,789 - INFO - https://solscan.io/token/VyLkvUW25XSmpU8Js2KrWcXGJ8XdijxUaMfur7RQHVT#holders
+2023-12-25 18:18:28,790 - INFO - https://solscan.io/token/VyLkvUW25XSmpU8Js2KrWcXGJ8XdijxUaMfur7RQHVT#txs
+2023-12-25 18:18:42,521 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:18:42,522 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:18:52,683 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:18:52,717 - INFO - Time successfully extracted: 12-13-2023 00:11:07
+2023-12-25 18:18:52,717 - INFO - Hold time extracted: 12-13-2023 00:11:07
+2023-12-25 18:18:52,717 - INFO - Closing the web driver...
+2023-12-25 18:18:52,764 - INFO - Web driver closed for time.
+2023-12-25 18:18:52,764 - INFO - Successfully processed account VyLkvUW25XSmpU8Js2KrWcXGJ8XdijxUaMfur7RQHVT.
+2023-12-25 18:18:52,767 - INFO - WebDriver closed for item 3013
+2023-12-25 18:18:52,768 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:18:52,770 - INFO - Starting from index 3072: Found invalid 'holder' value.
+2023-12-25 18:18:52,770 - INFO - Processing item 6/100 with account: 2opUjAS77UpaBuGrFiApRohsgLdZL4JyYf2nfxAgyRx8 (Global index: 3073/7999)
+2023-12-25 18:18:54,524 - INFO - https://solscan.io/token/2opUjAS77UpaBuGrFiApRohsgLdZL4JyYf2nfxAgyRx8#holders
+2023-12-25 18:18:55,526 - INFO - https://solscan.io/token/2opUjAS77UpaBuGrFiApRohsgLdZL4JyYf2nfxAgyRx8#txs
+2023-12-25 18:19:11,481 - INFO - Owner address not found in the table.
+2023-12-25 18:19:11,481 - INFO - Holder Address: Address not found
+2023-12-25 18:19:21,656 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:19:21,690 - INFO - Time successfully extracted: 08-27-2023 21:53:39
+2023-12-25 18:19:21,690 - INFO - Hold time extracted: 08-27-2023 21:53:39
+2023-12-25 18:19:21,690 - INFO - Closing the web driver...
+2023-12-25 18:19:21,728 - INFO - Web driver closed for time.
+2023-12-25 18:19:21,728 - INFO - Successfully processed account 2opUjAS77UpaBuGrFiApRohsgLdZL4JyYf2nfxAgyRx8.
+2023-12-25 18:19:21,731 - INFO - WebDriver closed for item 3073
+2023-12-25 18:19:21,733 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:19:21,735 - INFO - Starting from index 3077: Found invalid 'holder' value.
+2023-12-25 18:19:21,735 - INFO - Processing item 7/100 with account: Cgm82GzSdqexn1Z6GfkgTd3bjXvdwtEcrsUQZctBrRC9 (Global index: 3078/7999)
+2023-12-25 18:19:23,495 - INFO - https://solscan.io/token/Cgm82GzSdqexn1Z6GfkgTd3bjXvdwtEcrsUQZctBrRC9#holders
+2023-12-25 18:19:24,496 - INFO - https://solscan.io/token/Cgm82GzSdqexn1Z6GfkgTd3bjXvdwtEcrsUQZctBrRC9#txs
+2023-12-25 18:19:41,934 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:19:41,934 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:19:52,099 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:19:52,134 - INFO - Time successfully extracted: 12-14-2023 17:05:19
+2023-12-25 18:19:52,134 - INFO - Hold time extracted: 12-14-2023 17:05:19
+2023-12-25 18:19:52,134 - INFO - Closing the web driver...
+2023-12-25 18:19:52,172 - INFO - Web driver closed for time.
+2023-12-25 18:19:52,173 - INFO - Successfully processed account Cgm82GzSdqexn1Z6GfkgTd3bjXvdwtEcrsUQZctBrRC9.
+2023-12-25 18:19:52,175 - INFO - WebDriver closed for item 3078
+2023-12-25 18:19:52,177 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:19:52,179 - INFO - Starting from index 3083: Found invalid 'holder' value.
+2023-12-25 18:19:52,179 - INFO - Processing item 8/100 with account: 8Bjq8FQDNzCxbn8aoqntr7F3GEVs4zWunciPuDimMR5R (Global index: 3084/7999)
+2023-12-25 18:19:53,935 - INFO - https://solscan.io/token/8Bjq8FQDNzCxbn8aoqntr7F3GEVs4zWunciPuDimMR5R#holders
+2023-12-25 18:19:54,936 - INFO - https://solscan.io/token/8Bjq8FQDNzCxbn8aoqntr7F3GEVs4zWunciPuDimMR5R#txs
+2023-12-25 18:20:08,260 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:20:08,260 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:20:18,440 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:20:18,473 - INFO - Time successfully extracted: 12-22-2023 11:19:19
+2023-12-25 18:20:18,473 - INFO - Hold time extracted: 12-22-2023 11:19:19
+2023-12-25 18:20:18,473 - INFO - Closing the web driver...
+2023-12-25 18:20:18,520 - INFO - Web driver closed for time.
+2023-12-25 18:20:18,520 - INFO - Successfully processed account 8Bjq8FQDNzCxbn8aoqntr7F3GEVs4zWunciPuDimMR5R.
+2023-12-25 18:20:18,523 - INFO - WebDriver closed for item 3084
+2023-12-25 18:20:18,524 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:20:18,527 - INFO - Starting from index 3084: Found invalid 'holder' value.
+2023-12-25 18:20:18,527 - INFO - Processing item 9/100 with account: 8LuQayC5pTPr9e3Dr5AUV5EPha7K9t5MDu6Sn4KNwNQ9 (Global index: 3085/7999)
+2023-12-25 18:20:20,303 - INFO - https://solscan.io/token/8LuQayC5pTPr9e3Dr5AUV5EPha7K9t5MDu6Sn4KNwNQ9#holders
+2023-12-25 18:20:21,305 - INFO - https://solscan.io/token/8LuQayC5pTPr9e3Dr5AUV5EPha7K9t5MDu6Sn4KNwNQ9#txs
+2023-12-25 18:20:38,153 - INFO - Holder Address: None
+2023-12-25 18:20:48,241 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:20:48,248 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:20:48,248 - INFO - Hold time extracted: Table not found
+2023-12-25 18:20:48,248 - INFO - Closing the web driver...
+2023-12-25 18:20:48,286 - INFO - Web driver closed for time.
+2023-12-25 18:20:48,287 - ERROR - Error processing 8LuQayC5pTPr9e3Dr5AUV5EPha7K9t5MDu6Sn4KNwNQ9: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:20:48,289 - INFO - WebDriver closed for item 3085
+2023-12-25 18:20:48,291 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:20:48,293 - INFO - Starting from index 3085: Found invalid 'holder' value.
+2023-12-25 18:20:48,293 - INFO - Processing item 10/100 with account: 2grBphCc5SMdeqQXbNjEMYqcTDsMCGjhvq2AFmg1Ry6o (Global index: 3086/7999)
+2023-12-25 18:20:50,053 - INFO - https://solscan.io/token/2grBphCc5SMdeqQXbNjEMYqcTDsMCGjhvq2AFmg1Ry6o#holders
+2023-12-25 18:20:51,054 - INFO - https://solscan.io/token/2grBphCc5SMdeqQXbNjEMYqcTDsMCGjhvq2AFmg1Ry6o#txs
+2023-12-25 18:21:04,805 - INFO - Owner address found: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2023-12-25 18:21:04,806 - INFO - Holder Address: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2023-12-25 18:21:14,967 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:21:15,001 - INFO - Time successfully extracted: 12-21-2023 00:07:37
+2023-12-25 18:21:15,001 - INFO - Hold time extracted: 12-21-2023 00:07:37
+2023-12-25 18:21:15,001 - INFO - Closing the web driver...
+2023-12-25 18:21:15,040 - INFO - Web driver closed for time.
+2023-12-25 18:21:15,040 - INFO - Successfully processed account 2grBphCc5SMdeqQXbNjEMYqcTDsMCGjhvq2AFmg1Ry6o.
+2023-12-25 18:21:15,043 - INFO - WebDriver closed for item 3086
+2023-12-25 18:21:15,044 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:21:15,047 - INFO - Starting from index 3096: Found invalid 'holder' value.
+2023-12-25 18:21:15,047 - INFO - Processing item 11/100 with account: DAAnfXTAkjHfrh9LcRSUMN9dK6CGmEMTrc6Ho6iDKLKa (Global index: 3097/7999)
+2023-12-25 18:21:16,807 - INFO - https://solscan.io/token/DAAnfXTAkjHfrh9LcRSUMN9dK6CGmEMTrc6Ho6iDKLKa#holders
+2023-12-25 18:21:17,808 - INFO - https://solscan.io/token/DAAnfXTAkjHfrh9LcRSUMN9dK6CGmEMTrc6Ho6iDKLKa#txs
+2023-12-25 18:21:35,067 - INFO - Owner address found: 3H9stfUFjh2f3iNLUERJQvSS919UEZgcrsHr1tRm4JEV
+2023-12-25 18:21:35,068 - INFO - Holder Address: 3H9stfUFjh2f3iNLUERJQvSS919UEZgcrsHr1tRm4JEV
+2023-12-25 18:21:45,236 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:21:45,269 - INFO - Time successfully extracted: 12-10-2023 22:00:58
+2023-12-25 18:21:45,269 - INFO - Hold time extracted: 12-10-2023 22:00:58
+2023-12-25 18:21:45,269 - INFO - Closing the web driver...
+2023-12-25 18:21:45,307 - INFO - Web driver closed for time.
+2023-12-25 18:21:45,308 - INFO - Successfully processed account DAAnfXTAkjHfrh9LcRSUMN9dK6CGmEMTrc6Ho6iDKLKa.
+2023-12-25 18:21:45,310 - INFO - WebDriver closed for item 3097
+2023-12-25 18:21:45,312 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:21:45,314 - INFO - Starting from index 3098: Found invalid 'holder' value.
+2023-12-25 18:21:45,314 - INFO - Processing item 12/100 with account: 9nmkxhqkTG6DotmGvU4oDF68L37uwhtcr1LQcW95xGyP (Global index: 3099/7999)
+2023-12-25 18:21:47,064 - INFO - https://solscan.io/token/9nmkxhqkTG6DotmGvU4oDF68L37uwhtcr1LQcW95xGyP#holders
+2023-12-25 18:21:48,065 - INFO - https://solscan.io/token/9nmkxhqkTG6DotmGvU4oDF68L37uwhtcr1LQcW95xGyP#txs
+2023-12-25 18:22:05,856 - INFO - Owner address not found in the table.
+2023-12-25 18:22:05,856 - INFO - Holder Address: Address not found
+2023-12-25 18:22:16,012 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:22:16,045 - INFO - Time successfully extracted: 08-27-2023 21:51:17
+2023-12-25 18:22:16,045 - INFO - Hold time extracted: 08-27-2023 21:51:17
+2023-12-25 18:22:16,045 - INFO - Closing the web driver...
+2023-12-25 18:22:16,084 - INFO - Web driver closed for time.
+2023-12-25 18:22:16,084 - INFO - Successfully processed account 9nmkxhqkTG6DotmGvU4oDF68L37uwhtcr1LQcW95xGyP.
+2023-12-25 18:22:16,086 - INFO - WebDriver closed for item 3099
+2023-12-25 18:22:16,088 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:22:16,090 - INFO - Starting from index 3100: Found invalid 'holder' value.
+2023-12-25 18:22:16,090 - INFO - Processing item 13/100 with account: 7ULK9uYxZjznv5QudaajsVKfc9kYwR268QxZUt7u6RDs (Global index: 3101/7999)
+2023-12-25 18:22:17,843 - INFO - https://solscan.io/token/7ULK9uYxZjznv5QudaajsVKfc9kYwR268QxZUt7u6RDs#holders
+2023-12-25 18:22:18,844 - INFO - https://solscan.io/token/7ULK9uYxZjznv5QudaajsVKfc9kYwR268QxZUt7u6RDs#txs
+2023-12-25 18:22:31,712 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:22:31,712 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:22:41,862 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:22:41,889 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:22:41,889 - INFO - Hold time extracted: Table not found
+2023-12-25 18:22:41,889 - INFO - Closing the web driver...
+2023-12-25 18:22:41,928 - INFO - Web driver closed for time.
+2023-12-25 18:22:41,928 - ERROR - Error processing 7ULK9uYxZjznv5QudaajsVKfc9kYwR268QxZUt7u6RDs: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:22:41,931 - INFO - WebDriver closed for item 3101
+2023-12-25 18:22:41,932 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:22:41,934 - INFO - Starting from index 3111: Found invalid 'holder' value.
+2023-12-25 18:22:41,934 - INFO - Processing item 14/100 with account: J6Le4EzF1h26c9463SSG73c7wqMLbHFaCNEvu8cwYMwF (Global index: 3112/7999)
+2023-12-25 18:22:43,684 - INFO - https://solscan.io/token/J6Le4EzF1h26c9463SSG73c7wqMLbHFaCNEvu8cwYMwF#holders
+2023-12-25 18:22:44,685 - INFO - https://solscan.io/token/J6Le4EzF1h26c9463SSG73c7wqMLbHFaCNEvu8cwYMwF#txs
+2023-12-25 18:22:58,861 - INFO - Owner address found: HTPSKUwXWnMXvaxmstewcZspquPNw2FsxWC1yhvkhmTC
+2023-12-25 18:22:58,862 - INFO - Holder Address: HTPSKUwXWnMXvaxmstewcZspquPNw2FsxWC1yhvkhmTC
+2023-12-25 18:23:09,011 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:23:09,038 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:23:09,038 - INFO - Hold time extracted: Table not found
+2023-12-25 18:23:09,038 - INFO - Closing the web driver...
+2023-12-25 18:23:09,076 - INFO - Web driver closed for time.
+2023-12-25 18:23:09,076 - ERROR - Error processing J6Le4EzF1h26c9463SSG73c7wqMLbHFaCNEvu8cwYMwF: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:23:09,079 - INFO - WebDriver closed for item 3112
+2023-12-25 18:23:09,081 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:23:09,083 - INFO - Starting from index 3128: Found invalid 'holder' value.
+2023-12-25 18:23:09,083 - INFO - Processing item 15/100 with account: H5dFNvp51Rv3jGGq7KLWYn8CtS37WzDFptSs1LyX2N7n (Global index: 3129/7999)
+2023-12-25 18:23:10,837 - INFO - https://solscan.io/token/H5dFNvp51Rv3jGGq7KLWYn8CtS37WzDFptSs1LyX2N7n#holders
+2023-12-25 18:23:11,838 - INFO - https://solscan.io/token/H5dFNvp51Rv3jGGq7KLWYn8CtS37WzDFptSs1LyX2N7n#txs
+2023-12-25 18:23:27,309 - INFO - Owner address found: GEJ3zU94dgUcrac9QQF7qfF1w62toYhXYDKKCES8pXuH
+2023-12-25 18:23:27,309 - INFO - Holder Address: GEJ3zU94dgUcrac9QQF7qfF1w62toYhXYDKKCES8pXuH
+2023-12-25 18:23:37,483 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:23:37,514 - INFO - Time successfully extracted: 08-27-2023 21:48:59
+2023-12-25 18:23:37,514 - INFO - Hold time extracted: 08-27-2023 21:48:59
+2023-12-25 18:23:37,514 - INFO - Closing the web driver...
+2023-12-25 18:23:37,553 - INFO - Web driver closed for time.
+2023-12-25 18:23:37,554 - INFO - Successfully processed account H5dFNvp51Rv3jGGq7KLWYn8CtS37WzDFptSs1LyX2N7n.
+2023-12-25 18:23:37,556 - INFO - WebDriver closed for item 3129
+2023-12-25 18:23:37,558 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:23:37,560 - INFO - Starting from index 3131: Found invalid 'holder' value.
+2023-12-25 18:23:37,560 - INFO - Processing item 16/100 with account: H7nUiev45BRbZsAzDvLMrEynNQaMvQUCeGAWv1FmcbCu (Global index: 3132/7999)
+2023-12-25 18:23:39,321 - INFO - https://solscan.io/token/H7nUiev45BRbZsAzDvLMrEynNQaMvQUCeGAWv1FmcbCu#holders
+2023-12-25 18:23:40,322 - INFO - https://solscan.io/token/H7nUiev45BRbZsAzDvLMrEynNQaMvQUCeGAWv1FmcbCu#txs
+2023-12-25 18:23:53,941 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:23:53,941 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:24:04,107 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:24:04,142 - INFO - Time successfully extracted: 12-12-2023 19:50:51
+2023-12-25 18:24:04,142 - INFO - Hold time extracted: 12-12-2023 19:50:51
+2023-12-25 18:24:04,142 - INFO - Closing the web driver...
+2023-12-25 18:24:04,189 - INFO - Web driver closed for time.
+2023-12-25 18:24:04,189 - INFO - Successfully processed account H7nUiev45BRbZsAzDvLMrEynNQaMvQUCeGAWv1FmcbCu.
+2023-12-25 18:24:04,192 - INFO - WebDriver closed for item 3132
+2023-12-25 18:24:04,193 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:24:04,195 - INFO - Starting from index 3134: Found invalid 'holder' value.
+2023-12-25 18:24:04,195 - INFO - Processing item 17/100 with account: A9zUjDkFVCQhVYwUjVhppJcAsusNNGHX4oWLgW7BdRE1 (Global index: 3135/7999)
+2023-12-25 18:24:05,943 - INFO - https://solscan.io/token/A9zUjDkFVCQhVYwUjVhppJcAsusNNGHX4oWLgW7BdRE1#holders
+2023-12-25 18:24:06,944 - INFO - https://solscan.io/token/A9zUjDkFVCQhVYwUjVhppJcAsusNNGHX4oWLgW7BdRE1#txs
+2023-12-25 18:24:24,489 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:24:24,489 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:24:34,666 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:24:34,699 - INFO - Time successfully extracted: 12-12-2023 17:55:02
+2023-12-25 18:24:34,699 - INFO - Hold time extracted: 12-12-2023 17:55:02
+2023-12-25 18:24:34,699 - INFO - Closing the web driver...
+2023-12-25 18:24:34,722 - INFO - Web driver closed for time.
+2023-12-25 18:24:34,723 - INFO - Successfully processed account A9zUjDkFVCQhVYwUjVhppJcAsusNNGHX4oWLgW7BdRE1.
+2023-12-25 18:24:34,728 - INFO - WebDriver closed for item 3135
+2023-12-25 18:24:34,730 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:24:34,732 - INFO - Starting from index 3135: Found invalid 'holder' value.
+2023-12-25 18:24:34,732 - INFO - Processing item 18/100 with account: BHhDMSckw2UpwLpAgd7sHpC6Y2ehq8T98nh6XtJRrwZB (Global index: 3136/7999)
+2023-12-25 18:24:36,487 - INFO - https://solscan.io/token/BHhDMSckw2UpwLpAgd7sHpC6Y2ehq8T98nh6XtJRrwZB#holders
+2023-12-25 18:24:37,488 - INFO - https://solscan.io/token/BHhDMSckw2UpwLpAgd7sHpC6Y2ehq8T98nh6XtJRrwZB#txs
+2023-12-25 18:24:53,821 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:24:53,821 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:25:03,985 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:25:04,017 - INFO - Time successfully extracted: 12-12-2023 22:37:09
+2023-12-25 18:25:04,018 - INFO - Hold time extracted: 12-12-2023 22:37:09
+2023-12-25 18:25:04,018 - INFO - Closing the web driver...
+2023-12-25 18:25:04,056 - INFO - Web driver closed for time.
+2023-12-25 18:25:04,057 - INFO - Successfully processed account BHhDMSckw2UpwLpAgd7sHpC6Y2ehq8T98nh6XtJRrwZB.
+2023-12-25 18:25:04,059 - INFO - WebDriver closed for item 3136
+2023-12-25 18:25:04,061 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:25:04,063 - INFO - Starting from index 3137: Found invalid 'holder' value.
+2023-12-25 18:25:04,063 - INFO - Processing item 19/100 with account: B1BBbK45nxcLeH5Xnh2fdQEvKA71sPWHWVzoSXLrAySg (Global index: 3138/7999)
+2023-12-25 18:25:05,814 - INFO - https://solscan.io/token/B1BBbK45nxcLeH5Xnh2fdQEvKA71sPWHWVzoSXLrAySg#holders
+2023-12-25 18:25:06,815 - INFO - https://solscan.io/token/B1BBbK45nxcLeH5Xnh2fdQEvKA71sPWHWVzoSXLrAySg#txs
+2023-12-25 18:25:24,628 - INFO - Owner address found: 6ZzmAFNyqk5SaeBMfLWd9TeEDEsHEBNkZJPocxiav3eF
+2023-12-25 18:25:24,628 - INFO - Holder Address: 6ZzmAFNyqk5SaeBMfLWd9TeEDEsHEBNkZJPocxiav3eF
+2023-12-25 18:25:34,797 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:25:34,830 - INFO - Time successfully extracted: 08-27-2023 21:47:41
+2023-12-25 18:25:34,831 - INFO - Hold time extracted: 08-27-2023 21:47:41
+2023-12-25 18:25:34,831 - INFO - Closing the web driver...
+2023-12-25 18:25:34,870 - INFO - Web driver closed for time.
+2023-12-25 18:25:34,870 - INFO - Successfully processed account B1BBbK45nxcLeH5Xnh2fdQEvKA71sPWHWVzoSXLrAySg.
+2023-12-25 18:25:34,872 - INFO - WebDriver closed for item 3138
+2023-12-25 18:25:34,874 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:25:34,876 - INFO - Starting from index 3141: Found invalid 'holder' value.
+2023-12-25 18:25:34,876 - INFO - Processing item 20/100 with account: 4hrTf2eBGAbNQp7SXRuNpmYqsxxLqsTJ74joFZ7b1zWb (Global index: 3142/7999)
+2023-12-25 18:25:36,642 - INFO - https://solscan.io/token/4hrTf2eBGAbNQp7SXRuNpmYqsxxLqsTJ74joFZ7b1zWb#holders
+2023-12-25 18:25:37,643 - INFO - https://solscan.io/token/4hrTf2eBGAbNQp7SXRuNpmYqsxxLqsTJ74joFZ7b1zWb#txs
+2023-12-25 18:25:51,117 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:25:51,117 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:26:01,291 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:26:01,323 - INFO - Time successfully extracted: 12-22-2023 04:58:38
+2023-12-25 18:26:01,323 - INFO - Hold time extracted: 12-22-2023 04:58:38
+2023-12-25 18:26:01,323 - INFO - Closing the web driver...
+2023-12-25 18:26:01,370 - INFO - Web driver closed for time.
+2023-12-25 18:26:01,370 - INFO - Successfully processed account 4hrTf2eBGAbNQp7SXRuNpmYqsxxLqsTJ74joFZ7b1zWb.
+2023-12-25 18:26:01,373 - INFO - WebDriver closed for item 3142
+2023-12-25 18:26:01,374 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:26:01,379 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:26:01,383 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:26:01,386 - INFO - Starting from index 2888: It has the oldest 'time checked'.
+2023-12-25 18:26:01,386 - INFO - Processing item 21/100 with account: 7PRAQ3NWUTmnL9BscQfHVZJdSivWT1wVBYLtmp793ZEH (Global index: 2889/7999)
+2023-12-25 18:26:03,164 - INFO - https://solscan.io/token/7PRAQ3NWUTmnL9BscQfHVZJdSivWT1wVBYLtmp793ZEH#holders
+2023-12-25 18:26:04,165 - INFO - https://solscan.io/token/7PRAQ3NWUTmnL9BscQfHVZJdSivWT1wVBYLtmp793ZEH#txs
+2023-12-25 18:26:21,915 - INFO - Owner address found: GJf71Vv4U2ucuLqtuijx494DuJroX2Kw2U7r81p8oyZb
+2023-12-25 18:26:21,915 - INFO - Holder Address: GJf71Vv4U2ucuLqtuijx494DuJroX2Kw2U7r81p8oyZb
+2023-12-25 18:26:32,090 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:26:32,121 - INFO - Time successfully extracted: 01-09-2023 19:29:38
+2023-12-25 18:26:32,121 - INFO - Hold time extracted: 01-09-2023 19:29:38
+2023-12-25 18:26:32,121 - INFO - Closing the web driver...
+2023-12-25 18:26:32,169 - INFO - Web driver closed for time.
+2023-12-25 18:26:32,169 - INFO - Successfully processed account 7PRAQ3NWUTmnL9BscQfHVZJdSivWT1wVBYLtmp793ZEH.
+2023-12-25 18:26:32,172 - INFO - WebDriver closed for item 2889
+2023-12-25 18:26:32,174 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:26:32,179 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:26:32,182 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:26:32,184 - INFO - Starting from index 3005: It has the oldest 'time checked'.
+2023-12-25 18:26:32,184 - INFO - Processing item 22/100 with account: 6Qp8sK2bqkGrBQF5MFudBH1SsPySioJoXAWQcX9zDtHx (Global index: 3006/7999)
+2023-12-25 18:26:33,936 - INFO - https://solscan.io/token/6Qp8sK2bqkGrBQF5MFudBH1SsPySioJoXAWQcX9zDtHx#holders
+2023-12-25 18:26:34,938 - INFO - https://solscan.io/token/6Qp8sK2bqkGrBQF5MFudBH1SsPySioJoXAWQcX9zDtHx#txs
+2023-12-25 18:26:53,237 - INFO - Owner address found: 87ddGWytMS97JE48ZGJm4HoCueUcr9jBF7nkuRMsrZ69
+2023-12-25 18:26:53,237 - INFO - Holder Address: 87ddGWytMS97JE48ZGJm4HoCueUcr9jBF7nkuRMsrZ69
+2023-12-25 18:27:03,407 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:27:03,439 - INFO - Time successfully extracted: 11-10-2022 10:36:59
+2023-12-25 18:27:03,439 - INFO - Hold time extracted: 11-10-2022 10:36:59
+2023-12-25 18:27:03,439 - INFO - Closing the web driver...
+2023-12-25 18:27:03,486 - INFO - Web driver closed for time.
+2023-12-25 18:27:03,486 - INFO - Successfully processed account 6Qp8sK2bqkGrBQF5MFudBH1SsPySioJoXAWQcX9zDtHx.
+2023-12-25 18:27:03,489 - INFO - WebDriver closed for item 3006
+2023-12-25 18:27:03,490 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:27:03,495 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:27:03,498 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:27:03,501 - INFO - Starting from index 3080: It has the oldest 'time checked'.
+2023-12-25 18:27:03,501 - INFO - Processing item 23/100 with account: 23wBVmXZwuSHtKsGRCGN22hbEyGcqvua2aP3gB7BjdxU (Global index: 3081/7999)
+2023-12-25 18:27:05,255 - INFO - https://solscan.io/token/23wBVmXZwuSHtKsGRCGN22hbEyGcqvua2aP3gB7BjdxU#holders
+2023-12-25 18:27:06,257 - INFO - https://solscan.io/token/23wBVmXZwuSHtKsGRCGN22hbEyGcqvua2aP3gB7BjdxU#txs
+2023-12-25 18:27:19,785 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:27:19,785 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:27:29,956 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:27:29,988 - INFO - Time successfully extracted: 12-14-2023 21:14:56
+2023-12-25 18:27:29,988 - INFO - Hold time extracted: 12-14-2023 21:14:56
+2023-12-25 18:27:29,988 - INFO - Closing the web driver...
+2023-12-25 18:27:30,027 - INFO - Web driver closed for time.
+2023-12-25 18:27:30,027 - INFO - Successfully processed account 23wBVmXZwuSHtKsGRCGN22hbEyGcqvua2aP3gB7BjdxU.
+2023-12-25 18:27:30,030 - INFO - WebDriver closed for item 3081
+2023-12-25 18:27:30,032 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:27:30,036 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:27:30,040 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:27:30,042 - INFO - Starting from index 3086: It has the oldest 'time checked'.
+2023-12-25 18:27:30,042 - INFO - Processing item 24/100 with account: 44XMxuXFo2Bga8oEwExS3dPMoSpjihzPHifUaTjQnmgn (Global index: 3087/7999)
+2023-12-25 18:27:31,796 - INFO - https://solscan.io/token/44XMxuXFo2Bga8oEwExS3dPMoSpjihzPHifUaTjQnmgn#holders
+2023-12-25 18:27:32,797 - INFO - https://solscan.io/token/44XMxuXFo2Bga8oEwExS3dPMoSpjihzPHifUaTjQnmgn#txs
+2023-12-25 18:27:46,248 - INFO - Holder Address: None
+2023-12-25 18:27:56,336 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:27:56,343 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:27:56,343 - INFO - Hold time extracted: Table not found
+2023-12-25 18:27:56,343 - INFO - Closing the web driver...
+2023-12-25 18:27:56,382 - INFO - Web driver closed for time.
+2023-12-25 18:27:56,382 - ERROR - Error processing 44XMxuXFo2Bga8oEwExS3dPMoSpjihzPHifUaTjQnmgn: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:27:56,385 - INFO - WebDriver closed for item 3087
+2023-12-25 18:27:56,387 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:27:56,392 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:27:56,396 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:27:56,400 - INFO - Starting from index 3090: It has the oldest 'time checked'.
+2023-12-25 18:27:56,400 - INFO - Processing item 25/100 with account: BSeeo915ompAF67YGFYy4U8sRMDGEsixWZbQ7SXkMVkm (Global index: 3091/7999)
+2023-12-25 18:27:58,149 - INFO - https://solscan.io/token/BSeeo915ompAF67YGFYy4U8sRMDGEsixWZbQ7SXkMVkm#holders
+2023-12-25 18:27:59,150 - INFO - https://solscan.io/token/BSeeo915ompAF67YGFYy4U8sRMDGEsixWZbQ7SXkMVkm#txs
+2023-12-25 18:28:12,268 - INFO - Owner address not found in the table.
+2023-12-25 18:28:12,268 - INFO - Holder Address: Address not found
+2023-12-25 18:28:22,431 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:28:22,457 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:28:22,457 - INFO - Hold time extracted: Table not found
+2023-12-25 18:28:22,457 - INFO - Closing the web driver...
+2023-12-25 18:28:22,496 - INFO - Web driver closed for time.
+2023-12-25 18:28:22,496 - ERROR - Error processing BSeeo915ompAF67YGFYy4U8sRMDGEsixWZbQ7SXkMVkm: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:28:22,499 - INFO - WebDriver closed for item 3091
+2023-12-25 18:28:22,500 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:28:22,505 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:28:22,508 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:28:22,511 - INFO - Starting from index 3091: It has the oldest 'time checked'.
+2023-12-25 18:28:22,511 - INFO - Processing item 26/100 with account: CJ34TjqdW8XBpXkoAQ7aneURAZEwcrAtUSZXfGXZa7L3 (Global index: 3092/7999)
+2023-12-25 18:28:24,263 - INFO - https://solscan.io/token/CJ34TjqdW8XBpXkoAQ7aneURAZEwcrAtUSZXfGXZa7L3#holders
+2023-12-25 18:28:25,265 - INFO - https://solscan.io/token/CJ34TjqdW8XBpXkoAQ7aneURAZEwcrAtUSZXfGXZa7L3#txs
+2023-12-25 18:28:40,613 - INFO - Holder Address: None
+2023-12-25 18:28:50,698 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:28:50,704 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:28:50,704 - INFO - Hold time extracted: Table not found
+2023-12-25 18:28:50,704 - INFO - Closing the web driver...
+2023-12-25 18:28:50,751 - INFO - Web driver closed for time.
+2023-12-25 18:28:50,752 - ERROR - Error processing CJ34TjqdW8XBpXkoAQ7aneURAZEwcrAtUSZXfGXZa7L3: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:28:50,754 - INFO - WebDriver closed for item 3092
+2023-12-25 18:28:50,756 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:28:50,761 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:28:50,764 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:28:50,766 - INFO - Starting from index 3094: It has the oldest 'time checked'.
+2023-12-25 18:28:50,766 - INFO - Processing item 27/100 with account: EiCSMw3MCbx6zkA826YH7ShgqzWvVUpG65XuevpYvC8c (Global index: 3095/7999)
+2023-12-25 18:28:52,517 - INFO - https://solscan.io/token/EiCSMw3MCbx6zkA826YH7ShgqzWvVUpG65XuevpYvC8c#holders
+2023-12-25 18:28:53,519 - INFO - https://solscan.io/token/EiCSMw3MCbx6zkA826YH7ShgqzWvVUpG65XuevpYvC8c#txs
+2023-12-25 18:29:07,013 - INFO - Owner address found: Gm3KfULKPzTG4az9ugLQa7rJYmUH9HbzQSS1aCEeidH9
+2023-12-25 18:29:07,013 - INFO - Holder Address: Gm3KfULKPzTG4az9ugLQa7rJYmUH9HbzQSS1aCEeidH9
+2023-12-25 18:29:17,178 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:29:17,211 - INFO - Time successfully extracted: 08-27-2023 21:50:19
+2023-12-25 18:29:17,211 - INFO - Hold time extracted: 08-27-2023 21:50:19
+2023-12-25 18:29:17,211 - INFO - Closing the web driver...
+2023-12-25 18:29:17,250 - INFO - Web driver closed for time.
+2023-12-25 18:29:17,250 - INFO - Successfully processed account EiCSMw3MCbx6zkA826YH7ShgqzWvVUpG65XuevpYvC8c.
+2023-12-25 18:29:17,253 - INFO - WebDriver closed for item 3095
+2023-12-25 18:29:17,254 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:29:17,259 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:29:17,262 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:29:17,265 - INFO - Starting from index 3097: It has the oldest 'time checked'.
+2023-12-25 18:29:17,265 - INFO - Processing item 28/100 with account: HH9dwMc37k9e8oK2Gi9Mk6nqELy9oX1shd6XaVHXvTAq (Global index: 3098/7999)
+2023-12-25 18:29:19,018 - INFO - https://solscan.io/token/HH9dwMc37k9e8oK2Gi9Mk6nqELy9oX1shd6XaVHXvTAq#holders
+2023-12-25 18:29:20,019 - INFO - https://solscan.io/token/HH9dwMc37k9e8oK2Gi9Mk6nqELy9oX1shd6XaVHXvTAq#txs
+2023-12-25 18:29:35,624 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:29:35,624 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:29:45,793 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:29:45,826 - INFO - Time successfully extracted: 12-13-2023 18:54:28
+2023-12-25 18:29:45,826 - INFO - Hold time extracted: 12-13-2023 18:54:28
+2023-12-25 18:29:45,826 - INFO - Closing the web driver...
+2023-12-25 18:29:45,873 - INFO - Web driver closed for time.
+2023-12-25 18:29:45,874 - INFO - Successfully processed account HH9dwMc37k9e8oK2Gi9Mk6nqELy9oX1shd6XaVHXvTAq.
+2023-12-25 18:29:45,876 - INFO - WebDriver closed for item 3098
+2023-12-25 18:29:45,878 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:29:45,883 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:29:45,886 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:29:45,888 - INFO - Starting from index 3101: It has the oldest 'time checked'.
+2023-12-25 18:29:45,888 - INFO - Processing item 29/100 with account: B5igaZbQuMxNXWt9d4YfFhwuAHXw4iB24xEr6wkLbyj (Global index: 3102/7999)
+2023-12-25 18:29:47,638 - INFO - https://solscan.io/token/B5igaZbQuMxNXWt9d4YfFhwuAHXw4iB24xEr6wkLbyj#holders
+2023-12-25 18:29:48,639 - INFO - https://solscan.io/token/B5igaZbQuMxNXWt9d4YfFhwuAHXw4iB24xEr6wkLbyj#txs
+2023-12-25 18:30:04,540 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:30:04,540 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:30:14,715 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:30:14,746 - INFO - Time successfully extracted: 12-12-2023 19:37:49
+2023-12-25 18:30:14,746 - INFO - Hold time extracted: 12-12-2023 19:37:49
+2023-12-25 18:30:14,746 - INFO - Closing the web driver...
+2023-12-25 18:30:14,778 - INFO - Web driver closed for time.
+2023-12-25 18:30:14,778 - INFO - Successfully processed account B5igaZbQuMxNXWt9d4YfFhwuAHXw4iB24xEr6wkLbyj.
+2023-12-25 18:30:14,780 - INFO - WebDriver closed for item 3102
+2023-12-25 18:30:14,782 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:30:14,787 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:30:14,790 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:30:14,793 - INFO - Starting from index 3110: It has the oldest 'time checked'.
+2023-12-25 18:30:14,793 - INFO - Processing item 30/100 with account: 3kv4WnTReUkoFMUeMykhkWS9JBoTDbb2R4pCvPrFMExk (Global index: 3111/7999)
+2023-12-25 18:30:16,548 - INFO - https://solscan.io/token/3kv4WnTReUkoFMUeMykhkWS9JBoTDbb2R4pCvPrFMExk#holders
+2023-12-25 18:30:17,549 - INFO - https://solscan.io/token/3kv4WnTReUkoFMUeMykhkWS9JBoTDbb2R4pCvPrFMExk#txs
+2023-12-25 18:30:35,225 - INFO - Owner address found: 6DbpZtH4sAKjBQT8tp6rXjrC7GYe6pMEyqnVcsfR1Q7T
+2023-12-25 18:30:35,225 - INFO - Holder Address: 6DbpZtH4sAKjBQT8tp6rXjrC7GYe6pMEyqnVcsfR1Q7T
+2023-12-25 18:30:45,385 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:30:45,412 - INFO - Time successfully extracted: 08-27-2023 21:49:20
+2023-12-25 18:30:45,412 - INFO - Hold time extracted: 08-27-2023 21:49:20
+2023-12-25 18:30:45,412 - INFO - Closing the web driver...
+2023-12-25 18:30:45,451 - INFO - Web driver closed for time.
+2023-12-25 18:30:45,451 - INFO - Successfully processed account 3kv4WnTReUkoFMUeMykhkWS9JBoTDbb2R4pCvPrFMExk.
+2023-12-25 18:30:45,453 - INFO - WebDriver closed for item 3111
+2023-12-25 18:30:45,455 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:30:45,460 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:30:45,463 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:30:45,465 - INFO - Starting from index 3113: It has the oldest 'time checked'.
+2023-12-25 18:30:45,465 - INFO - Processing item 31/100 with account: FhAZHZoPzEyxTAGKuZ4cuH2JT6nGvgauqQWg3awvVW5M (Global index: 3114/7999)
+2023-12-25 18:30:47,215 - INFO - https://solscan.io/token/FhAZHZoPzEyxTAGKuZ4cuH2JT6nGvgauqQWg3awvVW5M#holders
+2023-12-25 18:30:48,216 - INFO - https://solscan.io/token/FhAZHZoPzEyxTAGKuZ4cuH2JT6nGvgauqQWg3awvVW5M#txs
+2023-12-25 18:31:04,998 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:31:04,998 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:31:15,172 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:31:15,280 - INFO - Time successfully extracted: 12-20-2023 17:55:08
+2023-12-25 18:31:15,280 - INFO - Hold time extracted: 12-20-2023 17:55:08
+2023-12-25 18:31:15,280 - INFO - Closing the web driver...
+2023-12-25 18:31:15,328 - INFO - Web driver closed for time.
+2023-12-25 18:31:15,328 - INFO - Successfully processed account FhAZHZoPzEyxTAGKuZ4cuH2JT6nGvgauqQWg3awvVW5M.
+2023-12-25 18:31:15,331 - INFO - WebDriver closed for item 3114
+2023-12-25 18:31:15,332 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:31:15,337 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:31:15,340 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:31:15,342 - INFO - Starting from index 3117: It has the oldest 'time checked'.
+2023-12-25 18:31:15,343 - INFO - Processing item 32/100 with account: B2jfvmt2VtLqAFJ38R6jeQoG8NDbYxVbhjWngwXV3Jy9 (Global index: 3118/7999)
+2023-12-25 18:31:17,119 - INFO - https://solscan.io/token/B2jfvmt2VtLqAFJ38R6jeQoG8NDbYxVbhjWngwXV3Jy9#holders
+2023-12-25 18:31:18,120 - INFO - https://solscan.io/token/B2jfvmt2VtLqAFJ38R6jeQoG8NDbYxVbhjWngwXV3Jy9#txs
+2023-12-25 18:31:31,631 - INFO - Holder Address: None
+2023-12-25 18:31:41,711 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:31:41,719 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:31:41,719 - INFO - Hold time extracted: Table not found
+2023-12-25 18:31:41,719 - INFO - Closing the web driver...
+2023-12-25 18:31:41,749 - INFO - Web driver closed for time.
+2023-12-25 18:31:41,750 - ERROR - Error processing B2jfvmt2VtLqAFJ38R6jeQoG8NDbYxVbhjWngwXV3Jy9: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:31:41,752 - INFO - WebDriver closed for item 3118
+2023-12-25 18:31:41,754 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:31:41,759 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:31:41,762 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:31:41,765 - INFO - Starting from index 3123: It has the oldest 'time checked'.
+2023-12-25 18:31:41,765 - INFO - Processing item 33/100 with account: 7LhVNmUrrGj6USAfBmBygDVqRPJH2jhso55SR6tHE5sY (Global index: 3124/7999)
+2023-12-25 18:31:43,536 - INFO - https://solscan.io/token/7LhVNmUrrGj6USAfBmBygDVqRPJH2jhso55SR6tHE5sY#holders
+2023-12-25 18:31:44,537 - INFO - https://solscan.io/token/7LhVNmUrrGj6USAfBmBygDVqRPJH2jhso55SR6tHE5sY#txs
+2023-12-25 18:32:00,263 - INFO - Owner address found: F6be9b5VwtiMgnT9wCAGB7AXyg4BNGJJr3vvL5MpjcyJ
+2023-12-25 18:32:00,263 - INFO - Holder Address: F6be9b5VwtiMgnT9wCAGB7AXyg4BNGJJr3vvL5MpjcyJ
+2023-12-25 18:32:10,433 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:32:10,464 - INFO - Time successfully extracted: 09-27-2022 16:23:41
+2023-12-25 18:32:10,464 - INFO - Hold time extracted: 09-27-2022 16:23:41
+2023-12-25 18:32:10,464 - INFO - Closing the web driver...
+2023-12-25 18:32:10,486 - INFO - Web driver closed for time.
+2023-12-25 18:32:10,486 - INFO - Successfully processed account 7LhVNmUrrGj6USAfBmBygDVqRPJH2jhso55SR6tHE5sY.
+2023-12-25 18:32:10,492 - INFO - WebDriver closed for item 3124
+2023-12-25 18:32:10,494 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:32:10,499 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:32:10,503 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:32:10,506 - INFO - Starting from index 3124: It has the oldest 'time checked'.
+2023-12-25 18:32:10,506 - INFO - Processing item 34/100 with account: 3uHiHuvAKmGzioknDpq1rNLyMp1XmLEkFUGCf34GoduC (Global index: 3125/7999)
+2023-12-25 18:32:12,266 - INFO - https://solscan.io/token/3uHiHuvAKmGzioknDpq1rNLyMp1XmLEkFUGCf34GoduC#holders
+2023-12-25 18:32:13,267 - INFO - https://solscan.io/token/3uHiHuvAKmGzioknDpq1rNLyMp1XmLEkFUGCf34GoduC#txs
+2023-12-25 18:32:28,582 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:32:28,582 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:32:38,749 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:32:38,781 - INFO - Time successfully extracted: 12-13-2023 17:14:47
+2023-12-25 18:32:38,781 - INFO - Hold time extracted: 12-13-2023 17:14:47
+2023-12-25 18:32:38,781 - INFO - Closing the web driver...
+2023-12-25 18:32:38,820 - INFO - Web driver closed for time.
+2023-12-25 18:32:38,820 - INFO - Successfully processed account 3uHiHuvAKmGzioknDpq1rNLyMp1XmLEkFUGCf34GoduC.
+2023-12-25 18:32:38,823 - INFO - WebDriver closed for item 3125
+2023-12-25 18:32:38,825 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:32:38,830 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:32:38,833 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:32:38,836 - INFO - Starting from index 3125: It has the oldest 'time checked'.
+2023-12-25 18:32:38,836 - INFO - Processing item 35/100 with account: 9XnV6rdekc8yRHGnBJkewfyPMh4DXC3YFin8i4nxzqB5 (Global index: 3126/7999)
+2023-12-25 18:32:40,586 - INFO - https://solscan.io/token/9XnV6rdekc8yRHGnBJkewfyPMh4DXC3YFin8i4nxzqB5#holders
+2023-12-25 18:32:41,587 - INFO - https://solscan.io/token/9XnV6rdekc8yRHGnBJkewfyPMh4DXC3YFin8i4nxzqB5#txs
+2023-12-25 18:32:59,992 - INFO - Owner address found: Magic Eden V2 Authority
+2023-12-25 18:32:59,992 - INFO - Holder Address: Magic Eden V2 Authority
+2023-12-25 18:33:10,155 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:33:10,184 - INFO - Time successfully extracted: 12-16-2023 21:36:00
+2023-12-25 18:33:10,184 - INFO - Hold time extracted: 12-16-2023 21:36:00
+2023-12-25 18:33:10,184 - INFO - Closing the web driver...
+2023-12-25 18:33:10,223 - INFO - Web driver closed for time.
+2023-12-25 18:33:10,223 - INFO - Successfully processed account 9XnV6rdekc8yRHGnBJkewfyPMh4DXC3YFin8i4nxzqB5.
+2023-12-25 18:33:10,227 - INFO - WebDriver closed for item 3126
+2023-12-25 18:33:10,228 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:33:10,233 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:33:10,237 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:33:10,240 - INFO - Starting from index 3132: It has the oldest 'time checked'.
+2023-12-25 18:33:10,240 - INFO - Processing item 36/100 with account: 4mA7U9xzWMXrGzSfWmdq3wEZk9kK5RdNhzB1zAKEUXpU (Global index: 3133/7999)
+2023-12-25 18:33:11,993 - INFO - https://solscan.io/token/4mA7U9xzWMXrGzSfWmdq3wEZk9kK5RdNhzB1zAKEUXpU#holders
+2023-12-25 18:33:12,994 - INFO - https://solscan.io/token/4mA7U9xzWMXrGzSfWmdq3wEZk9kK5RdNhzB1zAKEUXpU#txs
+2023-12-25 18:33:26,373 - INFO - Owner address found: 765gVjVz5jhSC5xSkDnj4GmLT9Cxo9q4KwvEQwFCUjWL
+2023-12-25 18:33:26,373 - INFO - Holder Address: 765gVjVz5jhSC5xSkDnj4GmLT9Cxo9q4KwvEQwFCUjWL
+2023-12-25 18:33:36,535 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:33:36,561 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:33:36,561 - INFO - Hold time extracted: Table not found
+2023-12-25 18:33:36,561 - INFO - Closing the web driver...
+2023-12-25 18:33:36,599 - INFO - Web driver closed for time.
+2023-12-25 18:33:36,600 - ERROR - Error processing 4mA7U9xzWMXrGzSfWmdq3wEZk9kK5RdNhzB1zAKEUXpU: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:33:36,603 - INFO - WebDriver closed for item 3133
+2023-12-25 18:33:36,604 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:33:36,609 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:33:36,613 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:33:36,616 - INFO - Starting from index 3138: It has the oldest 'time checked'.
+2023-12-25 18:33:36,616 - INFO - Processing item 37/100 with account: B3N3jhRHFwhTW3ByxZ8xptf7cS3zUopb9ZDctBdAaXkN (Global index: 3139/7999)
+2023-12-25 18:33:38,396 - INFO - https://solscan.io/token/B3N3jhRHFwhTW3ByxZ8xptf7cS3zUopb9ZDctBdAaXkN#holders
+2023-12-25 18:33:39,397 - INFO - https://solscan.io/token/B3N3jhRHFwhTW3ByxZ8xptf7cS3zUopb9ZDctBdAaXkN#txs
+2023-12-25 18:33:55,057 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:33:55,057 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:34:05,223 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:34:05,254 - INFO - Time successfully extracted: 12-20-2023 17:47:56
+2023-12-25 18:34:05,255 - INFO - Hold time extracted: 12-20-2023 17:47:56
+2023-12-25 18:34:05,255 - INFO - Closing the web driver...
+2023-12-25 18:34:05,302 - INFO - Web driver closed for time.
+2023-12-25 18:34:05,302 - INFO - Successfully processed account B3N3jhRHFwhTW3ByxZ8xptf7cS3zUopb9ZDctBdAaXkN.
+2023-12-25 18:34:05,305 - INFO - WebDriver closed for item 3139
+2023-12-25 18:34:05,306 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:34:05,311 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:34:05,314 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:34:05,317 - INFO - Starting from index 3142: It has the oldest 'time checked'.
+2023-12-25 18:34:05,317 - INFO - Processing item 38/100 with account: 6fp5MrBtmTuL1ED3M3VdBC9HFEAfnC339xi4gHkE16G3 (Global index: 3143/7999)
+2023-12-25 18:34:07,074 - INFO - https://solscan.io/token/6fp5MrBtmTuL1ED3M3VdBC9HFEAfnC339xi4gHkE16G3#holders
+2023-12-25 18:34:08,075 - INFO - https://solscan.io/token/6fp5MrBtmTuL1ED3M3VdBC9HFEAfnC339xi4gHkE16G3#txs
+2023-12-25 18:34:22,362 - INFO - Owner address found: DBHxMUpguYRLGcszeo6D8xXAFnZBWrhDqzG4EjjbJe3j
+2023-12-25 18:34:22,362 - INFO - Holder Address: DBHxMUpguYRLGcszeo6D8xXAFnZBWrhDqzG4EjjbJe3j
+2023-12-25 18:34:32,525 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:34:32,559 - INFO - Time successfully extracted: 08-27-2023 21:50:09
+2023-12-25 18:34:32,559 - INFO - Hold time extracted: 08-27-2023 21:50:09
+2023-12-25 18:34:32,559 - INFO - Closing the web driver...
+2023-12-25 18:34:32,597 - INFO - Web driver closed for time.
+2023-12-25 18:34:32,598 - INFO - Successfully processed account 6fp5MrBtmTuL1ED3M3VdBC9HFEAfnC339xi4gHkE16G3.
+2023-12-25 18:34:32,600 - INFO - WebDriver closed for item 3143
+2023-12-25 18:34:32,602 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:34:32,607 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:34:32,610 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:34:32,613 - INFO - Starting from index 3143: It has the oldest 'time checked'.
+2023-12-25 18:34:32,613 - INFO - Processing item 39/100 with account: BP9rRHAuoUZ4GczKqsrTLDdKcxTrqgJJv2RW7wGR8CxR (Global index: 3144/7999)
+2023-12-25 18:34:34,379 - INFO - https://solscan.io/token/BP9rRHAuoUZ4GczKqsrTLDdKcxTrqgJJv2RW7wGR8CxR#holders
+2023-12-25 18:34:35,380 - INFO - https://solscan.io/token/BP9rRHAuoUZ4GczKqsrTLDdKcxTrqgJJv2RW7wGR8CxR#txs
+2023-12-25 18:34:53,751 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:34:53,751 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:35:03,925 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:35:04,031 - INFO - Time successfully extracted: 12-15-2023 08:45:38
+2023-12-25 18:35:04,032 - INFO - Hold time extracted: 12-15-2023 08:45:38
+2023-12-25 18:35:04,032 - INFO - Closing the web driver...
+2023-12-25 18:35:04,079 - INFO - Web driver closed for time.
+2023-12-25 18:35:04,079 - INFO - Successfully processed account BP9rRHAuoUZ4GczKqsrTLDdKcxTrqgJJv2RW7wGR8CxR.
+2023-12-25 18:35:04,082 - INFO - WebDriver closed for item 3144
+2023-12-25 18:35:04,083 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:35:04,088 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:35:04,091 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:35:04,094 - INFO - Starting from index 3144: It has the oldest 'time checked'.
+2023-12-25 18:35:04,094 - INFO - Processing item 40/100 with account: 4dRWXMdxPwxD66iVGeXh9fpt4QyGDYhHnxeMxrurafCH (Global index: 3145/7999)
+2023-12-25 18:35:05,850 - INFO - https://solscan.io/token/4dRWXMdxPwxD66iVGeXh9fpt4QyGDYhHnxeMxrurafCH#holders
+2023-12-25 18:35:06,851 - INFO - https://solscan.io/token/4dRWXMdxPwxD66iVGeXh9fpt4QyGDYhHnxeMxrurafCH#txs
+2023-12-25 18:35:25,376 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:35:25,376 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:35:35,538 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:35:35,571 - INFO - Time successfully extracted: 12-18-2023 00:16:09
+2023-12-25 18:35:35,571 - INFO - Hold time extracted: 12-18-2023 00:16:09
+2023-12-25 18:35:35,571 - INFO - Closing the web driver...
+2023-12-25 18:35:35,617 - INFO - Web driver closed for time.
+2023-12-25 18:35:35,617 - INFO - Successfully processed account 4dRWXMdxPwxD66iVGeXh9fpt4QyGDYhHnxeMxrurafCH.
+2023-12-25 18:35:35,620 - INFO - WebDriver closed for item 3145
+2023-12-25 18:35:35,621 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:35:35,626 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:35:35,629 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:35:35,632 - INFO - Starting from index 3145: It has the oldest 'time checked'.
+2023-12-25 18:35:35,632 - INFO - Processing item 41/100 with account: 7eosDtEeDQaNk6VXZwqjvEfPGu3MzZL7uk3QnYyntkZg (Global index: 3146/7999)
+2023-12-25 18:35:37,399 - INFO - https://solscan.io/token/7eosDtEeDQaNk6VXZwqjvEfPGu3MzZL7uk3QnYyntkZg#holders
+2023-12-25 18:35:38,400 - INFO - https://solscan.io/token/7eosDtEeDQaNk6VXZwqjvEfPGu3MzZL7uk3QnYyntkZg#txs
+2023-12-25 18:35:56,317 - INFO - Owner address found: C2PLs98RWK6CBQDfTTVtcrXsnkfLpiCLY1her83nxaTD
+2023-12-25 18:35:56,317 - INFO - Holder Address: C2PLs98RWK6CBQDfTTVtcrXsnkfLpiCLY1her83nxaTD
+2023-12-25 18:36:06,483 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:36:06,515 - INFO - Time successfully extracted: 08-27-2023 21:49:04
+2023-12-25 18:36:06,515 - INFO - Hold time extracted: 08-27-2023 21:49:04
+2023-12-25 18:36:06,515 - INFO - Closing the web driver...
+2023-12-25 18:36:06,554 - INFO - Web driver closed for time.
+2023-12-25 18:36:06,554 - INFO - Successfully processed account 7eosDtEeDQaNk6VXZwqjvEfPGu3MzZL7uk3QnYyntkZg.
+2023-12-25 18:36:06,559 - INFO - WebDriver closed for item 3146
+2023-12-25 18:36:06,561 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:36:06,566 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:36:06,570 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:36:06,573 - INFO - Starting from index 3146: It has the oldest 'time checked'.
+2023-12-25 18:36:06,573 - INFO - Processing item 42/100 with account: GaKY4Emy2NdujmvSNmbvhWhfEMrbYaTUbgZnuJiyzBvT (Global index: 3147/7999)
+2023-12-25 18:36:08,328 - INFO - https://solscan.io/token/GaKY4Emy2NdujmvSNmbvhWhfEMrbYaTUbgZnuJiyzBvT#holders
+2023-12-25 18:36:09,329 - INFO - https://solscan.io/token/GaKY4Emy2NdujmvSNmbvhWhfEMrbYaTUbgZnuJiyzBvT#txs
+2023-12-25 18:36:23,962 - INFO - Owner address found: 2M2DJSw7uWFBQ1BZzHbh7c7izK4ksXzr8dJRwebrbHf3
+2023-12-25 18:36:23,962 - INFO - Holder Address: 2M2DJSw7uWFBQ1BZzHbh7c7izK4ksXzr8dJRwebrbHf3
+2023-12-25 18:36:34,122 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:36:34,149 - INFO - Time successfully extracted: 08-27-2023 21:49:29
+2023-12-25 18:36:34,150 - INFO - Hold time extracted: 08-27-2023 21:49:29
+2023-12-25 18:36:34,150 - INFO - Closing the web driver...
+2023-12-25 18:36:34,189 - INFO - Web driver closed for time.
+2023-12-25 18:36:34,189 - INFO - Successfully processed account GaKY4Emy2NdujmvSNmbvhWhfEMrbYaTUbgZnuJiyzBvT.
+2023-12-25 18:36:34,191 - INFO - WebDriver closed for item 3147
+2023-12-25 18:36:34,193 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:36:34,198 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:36:34,201 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:36:34,203 - INFO - Starting from index 3147: It has the oldest 'time checked'.
+2023-12-25 18:36:34,203 - INFO - Processing item 43/100 with account: GJSc7BLtHJTfg38FMzVh7SqSWcNqmgTm4kAQhvp2ts8Y (Global index: 3148/7999)
+2023-12-25 18:36:35,956 - INFO - https://solscan.io/token/GJSc7BLtHJTfg38FMzVh7SqSWcNqmgTm4kAQhvp2ts8Y#holders
+2023-12-25 18:36:36,957 - INFO - https://solscan.io/token/GJSc7BLtHJTfg38FMzVh7SqSWcNqmgTm4kAQhvp2ts8Y#txs
+2023-12-25 18:36:50,897 - INFO - Owner address found: GMuRksDouCdziT3wXWnTMF3s64Vx94QmUPp1oK5HA7VY
+2023-12-25 18:36:50,897 - INFO - Holder Address: GMuRksDouCdziT3wXWnTMF3s64Vx94QmUPp1oK5HA7VY
+2023-12-25 18:37:01,065 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:37:01,095 - INFO - Time successfully extracted: 08-27-2023 21:50:33
+2023-12-25 18:37:01,095 - INFO - Hold time extracted: 08-27-2023 21:50:33
+2023-12-25 18:37:01,095 - INFO - Closing the web driver...
+2023-12-25 18:37:01,134 - INFO - Web driver closed for time.
+2023-12-25 18:37:01,134 - INFO - Successfully processed account GJSc7BLtHJTfg38FMzVh7SqSWcNqmgTm4kAQhvp2ts8Y.
+2023-12-25 18:37:01,137 - INFO - WebDriver closed for item 3148
+2023-12-25 18:37:01,138 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:37:01,144 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:37:01,147 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:37:01,150 - INFO - Starting from index 3148: It has the oldest 'time checked'.
+2023-12-25 18:37:01,150 - INFO - Processing item 44/100 with account: EbP4xsiuuy1sEHq94g2u2BaTEs9uXhXeoPLWgTL39TMo (Global index: 3149/7999)
+2023-12-25 18:37:02,901 - INFO - https://solscan.io/token/EbP4xsiuuy1sEHq94g2u2BaTEs9uXhXeoPLWgTL39TMo#holders
+2023-12-25 18:37:03,902 - INFO - https://solscan.io/token/EbP4xsiuuy1sEHq94g2u2BaTEs9uXhXeoPLWgTL39TMo#txs
+2023-12-25 18:37:21,999 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:37:21,999 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:37:32,162 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:37:32,193 - INFO - Time successfully extracted: 12-23-2023 19:50:50
+2023-12-25 18:37:32,193 - INFO - Hold time extracted: 12-23-2023 19:50:50
+2023-12-25 18:37:32,194 - INFO - Closing the web driver...
+2023-12-25 18:37:32,240 - INFO - Web driver closed for time.
+2023-12-25 18:37:32,240 - INFO - Successfully processed account EbP4xsiuuy1sEHq94g2u2BaTEs9uXhXeoPLWgTL39TMo.
+2023-12-25 18:37:32,243 - INFO - WebDriver closed for item 3149
+2023-12-25 18:37:32,245 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:37:32,250 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:37:32,254 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:37:32,257 - INFO - Starting from index 3149: It has the oldest 'time checked'.
+2023-12-25 18:37:32,257 - INFO - Processing item 45/100 with account: 4TxsV5V5cRQEWE3iT7zftnwy7vLHxp8pSPtHx1SdfdhP (Global index: 3150/7999)
+2023-12-25 18:37:34,015 - INFO - https://solscan.io/token/4TxsV5V5cRQEWE3iT7zftnwy7vLHxp8pSPtHx1SdfdhP#holders
+2023-12-25 18:37:35,016 - INFO - https://solscan.io/token/4TxsV5V5cRQEWE3iT7zftnwy7vLHxp8pSPtHx1SdfdhP#txs
+2023-12-25 18:37:50,427 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:37:50,427 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:38:00,599 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:38:00,634 - INFO - Time successfully extracted: 12-14-2023 04:19:26
+2023-12-25 18:38:00,634 - INFO - Hold time extracted: 12-14-2023 04:19:26
+2023-12-25 18:38:00,634 - INFO - Closing the web driver...
+2023-12-25 18:38:00,680 - INFO - Web driver closed for time.
+2023-12-25 18:38:00,681 - INFO - Successfully processed account 4TxsV5V5cRQEWE3iT7zftnwy7vLHxp8pSPtHx1SdfdhP.
+2023-12-25 18:38:00,683 - INFO - WebDriver closed for item 3150
+2023-12-25 18:38:00,685 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:38:00,689 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:38:00,693 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:38:00,695 - INFO - Starting from index 3150: It has the oldest 'time checked'.
+2023-12-25 18:38:00,695 - INFO - Processing item 46/100 with account: DZ8fUkQUzGyCyR4C5wY2cbnAizQxpPCSDwHeyjt6CLrt (Global index: 3151/7999)
+2023-12-25 18:38:02,446 - INFO - https://solscan.io/token/DZ8fUkQUzGyCyR4C5wY2cbnAizQxpPCSDwHeyjt6CLrt#holders
+2023-12-25 18:38:03,447 - INFO - https://solscan.io/token/DZ8fUkQUzGyCyR4C5wY2cbnAizQxpPCSDwHeyjt6CLrt#txs
+2023-12-25 18:38:19,387 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:38:19,387 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:38:29,560 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:38:29,666 - INFO - Time successfully extracted: 12-14-2023 05:54:28
+2023-12-25 18:38:29,666 - INFO - Hold time extracted: 12-14-2023 05:54:28
+2023-12-25 18:38:29,666 - INFO - Closing the web driver...
+2023-12-25 18:38:29,706 - INFO - Web driver closed for time.
+2023-12-25 18:38:29,706 - INFO - Successfully processed account DZ8fUkQUzGyCyR4C5wY2cbnAizQxpPCSDwHeyjt6CLrt.
+2023-12-25 18:38:29,708 - INFO - WebDriver closed for item 3151
+2023-12-25 18:38:29,710 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:38:29,715 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:38:29,718 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:38:29,721 - INFO - Starting from index 3151: It has the oldest 'time checked'.
+2023-12-25 18:38:29,721 - INFO - Processing item 47/100 with account: D4M3KXh1LvZQ1zZwpcknEr4XQNyucvVezxWt21nRkm7L (Global index: 3152/7999)
+2023-12-25 18:38:31,476 - INFO - https://solscan.io/token/D4M3KXh1LvZQ1zZwpcknEr4XQNyucvVezxWt21nRkm7L#holders
+2023-12-25 18:38:32,477 - INFO - https://solscan.io/token/D4M3KXh1LvZQ1zZwpcknEr4XQNyucvVezxWt21nRkm7L#txs
+2023-12-25 18:38:49,234 - INFO - Owner address found: cZ2pwwpdnnRcspHzgqy5WLksEsXnW81YkHm2twW2qyx
+2023-12-25 18:38:49,234 - INFO - Holder Address: cZ2pwwpdnnRcspHzgqy5WLksEsXnW81YkHm2twW2qyx
+2023-12-25 18:38:59,400 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:38:59,433 - INFO - Time successfully extracted: 12-12-2023 14:32:42
+2023-12-25 18:38:59,434 - INFO - Hold time extracted: 12-12-2023 14:32:42
+2023-12-25 18:38:59,434 - INFO - Closing the web driver...
+2023-12-25 18:38:59,472 - INFO - Web driver closed for time.
+2023-12-25 18:38:59,472 - INFO - Successfully processed account D4M3KXh1LvZQ1zZwpcknEr4XQNyucvVezxWt21nRkm7L.
+2023-12-25 18:38:59,475 - INFO - WebDriver closed for item 3152
+2023-12-25 18:38:59,476 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:38:59,481 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:38:59,484 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:38:59,486 - INFO - Starting from index 3152: It has the oldest 'time checked'.
+2023-12-25 18:38:59,486 - INFO - Processing item 48/100 with account: 3Qccrt99LpUgxFvvU88ALNdXbY6qFpNjVi326XGikPZA (Global index: 3153/7999)
+2023-12-25 18:39:01,237 - INFO - https://solscan.io/token/3Qccrt99LpUgxFvvU88ALNdXbY6qFpNjVi326XGikPZA#holders
+2023-12-25 18:39:02,238 - INFO - https://solscan.io/token/3Qccrt99LpUgxFvvU88ALNdXbY6qFpNjVi326XGikPZA#txs
+2023-12-25 18:39:19,317 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:39:19,317 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:39:29,497 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:39:29,529 - INFO - Time successfully extracted: 12-13-2023 17:11:43
+2023-12-25 18:39:29,529 - INFO - Hold time extracted: 12-13-2023 17:11:43
+2023-12-25 18:39:29,529 - INFO - Closing the web driver...
+2023-12-25 18:39:29,569 - INFO - Web driver closed for time.
+2023-12-25 18:39:29,569 - INFO - Successfully processed account 3Qccrt99LpUgxFvvU88ALNdXbY6qFpNjVi326XGikPZA.
+2023-12-25 18:39:29,572 - INFO - WebDriver closed for item 3153
+2023-12-25 18:39:29,573 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:39:29,578 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:39:29,581 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:39:29,584 - INFO - Starting from index 3153: It has the oldest 'time checked'.
+2023-12-25 18:39:29,584 - INFO - Processing item 49/100 with account: 2zxzCymyvxEDbZBXZdoVQWhM12fRrUStpZrinhextJ87 (Global index: 3154/7999)
+2023-12-25 18:39:31,356 - INFO - https://solscan.io/token/2zxzCymyvxEDbZBXZdoVQWhM12fRrUStpZrinhextJ87#holders
+2023-12-25 18:39:32,357 - INFO - https://solscan.io/token/2zxzCymyvxEDbZBXZdoVQWhM12fRrUStpZrinhextJ87#txs
+2023-12-25 18:39:48,548 - INFO - Owner address not found in the table.
+2023-12-25 18:39:48,548 - INFO - Holder Address: Address not found
+2023-12-25 18:39:58,716 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:39:58,749 - INFO - Time successfully extracted: 12-15-2023 01:27:19
+2023-12-25 18:39:58,749 - INFO - Hold time extracted: 12-15-2023 01:27:19
+2023-12-25 18:39:58,749 - INFO - Closing the web driver...
+2023-12-25 18:39:58,796 - INFO - Web driver closed for time.
+2023-12-25 18:39:58,796 - INFO - Successfully processed account 2zxzCymyvxEDbZBXZdoVQWhM12fRrUStpZrinhextJ87.
+2023-12-25 18:39:58,799 - INFO - WebDriver closed for item 3154
+2023-12-25 18:39:58,800 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:39:58,805 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:39:58,808 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:39:58,811 - INFO - Starting from index 3154: It has the oldest 'time checked'.
+2023-12-25 18:39:58,811 - INFO - Processing item 50/100 with account: GbY1ndJsPsQtmRfrsjX2JxAnDmcMqZoZbgqdRNiCkdVm (Global index: 3155/7999)
+2023-12-25 18:40:00,562 - INFO - https://solscan.io/token/GbY1ndJsPsQtmRfrsjX2JxAnDmcMqZoZbgqdRNiCkdVm#holders
+2023-12-25 18:40:01,563 - INFO - https://solscan.io/token/GbY1ndJsPsQtmRfrsjX2JxAnDmcMqZoZbgqdRNiCkdVm#txs
+2023-12-25 18:40:18,945 - INFO - Owner address not found in the table.
+2023-12-25 18:40:18,945 - INFO - Holder Address: Address not found
+2023-12-25 18:40:29,138 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:40:29,171 - INFO - Time successfully extracted: 12-22-2023 21:24:49
+2023-12-25 18:40:29,171 - INFO - Hold time extracted: 12-22-2023 21:24:49
+2023-12-25 18:40:29,171 - INFO - Closing the web driver...
+2023-12-25 18:40:29,210 - INFO - Web driver closed for time.
+2023-12-25 18:40:29,210 - INFO - Successfully processed account GbY1ndJsPsQtmRfrsjX2JxAnDmcMqZoZbgqdRNiCkdVm.
+2023-12-25 18:40:29,213 - INFO - WebDriver closed for item 3155
+2023-12-25 18:40:29,214 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:40:29,220 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:40:29,224 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:40:29,227 - INFO - Starting from index 3155: It has the oldest 'time checked'.
+2023-12-25 18:40:29,227 - INFO - Processing item 51/100 with account: DohFYH6vPAWX1SjJZQbGV7JEQjo1dK4b9Xm8kKPzk39X (Global index: 3156/7999)
+2023-12-25 18:40:30,978 - INFO - https://solscan.io/token/DohFYH6vPAWX1SjJZQbGV7JEQjo1dK4b9Xm8kKPzk39X#holders
+2023-12-25 18:40:31,979 - INFO - https://solscan.io/token/DohFYH6vPAWX1SjJZQbGV7JEQjo1dK4b9Xm8kKPzk39X#txs
+2023-12-25 18:40:45,757 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:40:45,758 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:40:55,929 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:40:55,961 - INFO - Time successfully extracted: 12-15-2023 07:39:16
+2023-12-25 18:40:55,961 - INFO - Hold time extracted: 12-15-2023 07:39:16
+2023-12-25 18:40:55,961 - INFO - Closing the web driver...
+2023-12-25 18:40:56,000 - INFO - Web driver closed for time.
+2023-12-25 18:40:56,001 - INFO - Successfully processed account DohFYH6vPAWX1SjJZQbGV7JEQjo1dK4b9Xm8kKPzk39X.
+2023-12-25 18:40:56,003 - INFO - WebDriver closed for item 3156
+2023-12-25 18:40:56,005 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:40:56,010 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:40:56,013 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:40:56,015 - INFO - Starting from index 3156: It has the oldest 'time checked'.
+2023-12-25 18:40:56,015 - INFO - Processing item 52/100 with account: 8rtVzwMNxEpM3y5LVwCGU2pryiXo6fBNCZfYEF6Hy7R4 (Global index: 3157/7999)
+2023-12-25 18:40:57,772 - INFO - https://solscan.io/token/8rtVzwMNxEpM3y5LVwCGU2pryiXo6fBNCZfYEF6Hy7R4#holders
+2023-12-25 18:40:58,773 - INFO - https://solscan.io/token/8rtVzwMNxEpM3y5LVwCGU2pryiXo6fBNCZfYEF6Hy7R4#txs
+2023-12-25 18:41:16,572 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:41:16,572 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:41:26,759 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:41:26,790 - INFO - Time successfully extracted: 12-14-2023 05:57:05
+2023-12-25 18:41:26,790 - INFO - Hold time extracted: 12-14-2023 05:57:05
+2023-12-25 18:41:26,790 - INFO - Closing the web driver...
+2023-12-25 18:41:26,829 - INFO - Web driver closed for time.
+2023-12-25 18:41:26,829 - INFO - Successfully processed account 8rtVzwMNxEpM3y5LVwCGU2pryiXo6fBNCZfYEF6Hy7R4.
+2023-12-25 18:41:26,832 - INFO - WebDriver closed for item 3157
+2023-12-25 18:41:26,834 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:41:26,839 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:41:26,842 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:41:26,845 - INFO - Starting from index 3157: It has the oldest 'time checked'.
+2023-12-25 18:41:26,845 - INFO - Processing item 53/100 with account: GbGK49q4AiazAkWCjL5vfmiSu3FR4x9a7XbDWCEoecvt (Global index: 3158/7999)
+2023-12-25 18:41:28,600 - INFO - https://solscan.io/token/GbGK49q4AiazAkWCjL5vfmiSu3FR4x9a7XbDWCEoecvt#holders
+2023-12-25 18:41:29,601 - INFO - https://solscan.io/token/GbGK49q4AiazAkWCjL5vfmiSu3FR4x9a7XbDWCEoecvt#txs
+2023-12-25 18:41:44,162 - INFO - Holder Address: None
+2023-12-25 18:41:54,245 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:41:54,251 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:41:54,251 - INFO - Hold time extracted: Table not found
+2023-12-25 18:41:54,251 - INFO - Closing the web driver...
+2023-12-25 18:41:54,276 - INFO - Web driver closed for time.
+2023-12-25 18:41:54,277 - ERROR - Error processing GbGK49q4AiazAkWCjL5vfmiSu3FR4x9a7XbDWCEoecvt: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:41:54,282 - INFO - WebDriver closed for item 3158
+2023-12-25 18:41:54,283 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:41:54,288 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:41:54,292 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:41:54,295 - INFO - Starting from index 3158: It has the oldest 'time checked'.
+2023-12-25 18:41:54,295 - INFO - Processing item 54/100 with account: 2ouqbJZfCL1P4yGy8rZuWAiGvtuSmsfUaAfLfxNBtQUG (Global index: 3159/7999)
+2023-12-25 18:41:56,073 - INFO - https://solscan.io/token/2ouqbJZfCL1P4yGy8rZuWAiGvtuSmsfUaAfLfxNBtQUG#holders
+2023-12-25 18:41:57,075 - INFO - https://solscan.io/token/2ouqbJZfCL1P4yGy8rZuWAiGvtuSmsfUaAfLfxNBtQUG#txs
+2023-12-25 18:42:10,661 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:42:10,661 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:42:20,832 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:42:20,933 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:42:20,933 - INFO - Hold time extracted: Table not found
+2023-12-25 18:42:20,934 - INFO - Closing the web driver...
+2023-12-25 18:42:20,980 - INFO - Web driver closed for time.
+2023-12-25 18:42:20,980 - ERROR - Error processing 2ouqbJZfCL1P4yGy8rZuWAiGvtuSmsfUaAfLfxNBtQUG: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:42:20,983 - INFO - WebDriver closed for item 3159
+2023-12-25 18:42:20,985 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:42:20,990 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:42:20,994 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:42:20,997 - INFO - Starting from index 3159: It has the oldest 'time checked'.
+2023-12-25 18:42:20,997 - INFO - Processing item 55/100 with account: 9mABpPrWAsEH2ev3FsG5DuNtvW7d3XfXrAvNoRjtF7Fp (Global index: 3160/7999)
+2023-12-25 18:42:22,748 - INFO - https://solscan.io/token/9mABpPrWAsEH2ev3FsG5DuNtvW7d3XfXrAvNoRjtF7Fp#holders
+2023-12-25 18:42:23,749 - INFO - https://solscan.io/token/9mABpPrWAsEH2ev3FsG5DuNtvW7d3XfXrAvNoRjtF7Fp#txs
+2023-12-25 18:42:37,118 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:42:37,118 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:42:47,281 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:42:47,313 - INFO - Time successfully extracted: 12-12-2023 19:46:24
+2023-12-25 18:42:47,313 - INFO - Hold time extracted: 12-12-2023 19:46:24
+2023-12-25 18:42:47,313 - INFO - Closing the web driver...
+2023-12-25 18:42:47,361 - INFO - Web driver closed for time.
+2023-12-25 18:42:47,361 - INFO - Successfully processed account 9mABpPrWAsEH2ev3FsG5DuNtvW7d3XfXrAvNoRjtF7Fp.
+2023-12-25 18:42:47,364 - INFO - WebDriver closed for item 3160
+2023-12-25 18:42:47,365 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:42:47,371 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:42:47,375 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:42:47,377 - INFO - Starting from index 3160: It has the oldest 'time checked'.
+2023-12-25 18:42:47,377 - INFO - Processing item 56/100 with account: GnRqqPaJB2NULwiP573Tz9hPGgKxmrF1LGhH55y7HXZk (Global index: 3161/7999)
+2023-12-25 18:42:49,128 - INFO - https://solscan.io/token/GnRqqPaJB2NULwiP573Tz9hPGgKxmrF1LGhH55y7HXZk#holders
+2023-12-25 18:42:50,129 - INFO - https://solscan.io/token/GnRqqPaJB2NULwiP573Tz9hPGgKxmrF1LGhH55y7HXZk#txs
+2023-12-25 18:43:08,213 - INFO - Owner address found: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2023-12-25 18:43:08,213 - INFO - Holder Address: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2023-12-25 18:43:18,377 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:43:18,408 - INFO - Time successfully extracted: 12-13-2023 14:52:45
+2023-12-25 18:43:18,408 - INFO - Hold time extracted: 12-13-2023 14:52:45
+2023-12-25 18:43:18,409 - INFO - Closing the web driver...
+2023-12-25 18:43:18,434 - INFO - Web driver closed for time.
+2023-12-25 18:43:18,434 - INFO - Successfully processed account GnRqqPaJB2NULwiP573Tz9hPGgKxmrF1LGhH55y7HXZk.
+2023-12-25 18:43:18,439 - INFO - WebDriver closed for item 3161
+2023-12-25 18:43:18,441 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:43:18,446 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:43:18,450 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:43:18,453 - INFO - Starting from index 3161: It has the oldest 'time checked'.
+2023-12-25 18:43:18,453 - INFO - Processing item 57/100 with account: 2WTQd7zfhn2rDLvG6N81fx3D7Ry6ctBJ46t7rPMvt4v1 (Global index: 3162/7999)
+2023-12-25 18:43:20,208 - INFO - https://solscan.io/token/2WTQd7zfhn2rDLvG6N81fx3D7Ry6ctBJ46t7rPMvt4v1#holders
+2023-12-25 18:43:21,210 - INFO - https://solscan.io/token/2WTQd7zfhn2rDLvG6N81fx3D7Ry6ctBJ46t7rPMvt4v1#txs
+2023-12-25 18:43:35,618 - INFO - Owner address found: 6B42YKuQB5BWgRWAq4G1xTdr2UkXFUp7KCxsjcAC6Xsr
+2023-12-25 18:43:35,618 - INFO - Holder Address: 6B42YKuQB5BWgRWAq4G1xTdr2UkXFUp7KCxsjcAC6Xsr
+2023-12-25 18:43:45,784 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:43:45,815 - INFO - Time successfully extracted: 08-27-2023 21:49:49
+2023-12-25 18:43:45,815 - INFO - Hold time extracted: 08-27-2023 21:49:49
+2023-12-25 18:43:45,815 - INFO - Closing the web driver...
+2023-12-25 18:43:45,862 - INFO - Web driver closed for time.
+2023-12-25 18:43:45,862 - INFO - Successfully processed account 2WTQd7zfhn2rDLvG6N81fx3D7Ry6ctBJ46t7rPMvt4v1.
+2023-12-25 18:43:45,865 - INFO - WebDriver closed for item 3162
+2023-12-25 18:43:45,867 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:43:45,872 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:43:45,876 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:43:45,879 - INFO - Starting from index 3162: It has the oldest 'time checked'.
+2023-12-25 18:43:45,879 - INFO - Processing item 58/100 with account: 2ebehYcaBgXNfVdNUcRVTPKqxQpyF7hwMdqGZi3zyKqa (Global index: 3163/7999)
+2023-12-25 18:43:47,634 - INFO - https://solscan.io/token/2ebehYcaBgXNfVdNUcRVTPKqxQpyF7hwMdqGZi3zyKqa#holders
+2023-12-25 18:43:48,636 - INFO - https://solscan.io/token/2ebehYcaBgXNfVdNUcRVTPKqxQpyF7hwMdqGZi3zyKqa#txs
+2023-12-25 18:44:02,830 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:44:02,831 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:44:12,991 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:44:13,022 - INFO - Time successfully extracted: 12-12-2023 20:21:34
+2023-12-25 18:44:13,022 - INFO - Hold time extracted: 12-12-2023 20:21:34
+2023-12-25 18:44:13,022 - INFO - Closing the web driver...
+2023-12-25 18:44:13,068 - INFO - Web driver closed for time.
+2023-12-25 18:44:13,069 - INFO - Successfully processed account 2ebehYcaBgXNfVdNUcRVTPKqxQpyF7hwMdqGZi3zyKqa.
+2023-12-25 18:44:13,071 - INFO - WebDriver closed for item 3163
+2023-12-25 18:44:13,073 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:44:13,078 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:44:13,081 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:44:13,083 - INFO - Starting from index 3163: It has the oldest 'time checked'.
+2023-12-25 18:44:13,083 - INFO - Processing item 59/100 with account: sswdurVbqK7n3UBfuT36AEPYEY76iurKk5V9Wgg8LFc (Global index: 3164/7999)
+2023-12-25 18:44:14,836 - INFO - https://solscan.io/token/sswdurVbqK7n3UBfuT36AEPYEY76iurKk5V9Wgg8LFc#holders
+2023-12-25 18:44:15,837 - INFO - https://solscan.io/token/sswdurVbqK7n3UBfuT36AEPYEY76iurKk5V9Wgg8LFc#txs
+2023-12-25 18:44:28,632 - INFO - Owner address not found in the table.
+2023-12-25 18:44:28,632 - INFO - Holder Address: Address not found
+2023-12-25 18:44:38,804 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:44:38,837 - INFO - Time successfully extracted: 12-19-2023 19:00:28
+2023-12-25 18:44:38,837 - INFO - Hold time extracted: 12-19-2023 19:00:28
+2023-12-25 18:44:38,837 - INFO - Closing the web driver...
+2023-12-25 18:44:38,876 - INFO - Web driver closed for time.
+2023-12-25 18:44:38,876 - INFO - Successfully processed account sswdurVbqK7n3UBfuT36AEPYEY76iurKk5V9Wgg8LFc.
+2023-12-25 18:44:38,879 - INFO - WebDriver closed for item 3164
+2023-12-25 18:44:38,880 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:44:38,885 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:44:38,888 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:44:38,891 - INFO - Starting from index 3164: It has the oldest 'time checked'.
+2023-12-25 18:44:38,891 - INFO - Processing item 60/100 with account: EmmNodwvXe1TD4H87yFQK4X5oJaTbgYfrwBZwfZRigZe (Global index: 3165/7999)
+2023-12-25 18:44:40,645 - INFO - https://solscan.io/token/EmmNodwvXe1TD4H87yFQK4X5oJaTbgYfrwBZwfZRigZe#holders
+2023-12-25 18:44:41,646 - INFO - https://solscan.io/token/EmmNodwvXe1TD4H87yFQK4X5oJaTbgYfrwBZwfZRigZe#txs
+2023-12-25 18:44:59,361 - INFO - Owner address found: Eho9VzUdU9vLsAbzJP8zroVC3TLAZ5wY3KcarDRey7Gi
+2023-12-25 18:44:59,361 - INFO - Holder Address: Eho9VzUdU9vLsAbzJP8zroVC3TLAZ5wY3KcarDRey7Gi
+2023-12-25 18:45:09,519 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:45:09,552 - INFO - Time successfully extracted: 08-27-2023 21:47:24
+2023-12-25 18:45:09,552 - INFO - Hold time extracted: 08-27-2023 21:47:24
+2023-12-25 18:45:09,552 - INFO - Closing the web driver...
+2023-12-25 18:45:09,599 - INFO - Web driver closed for time.
+2023-12-25 18:45:09,599 - INFO - Successfully processed account EmmNodwvXe1TD4H87yFQK4X5oJaTbgYfrwBZwfZRigZe.
+2023-12-25 18:45:09,601 - INFO - WebDriver closed for item 3165
+2023-12-25 18:45:09,603 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:45:09,608 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:45:09,611 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:45:09,613 - INFO - Starting from index 3165: It has the oldest 'time checked'.
+2023-12-25 18:45:09,613 - INFO - Processing item 61/100 with account: 8itKEY2Zghvs95H9RZ4iLZGmv4taSkpXcPF89AMhZniK (Global index: 3166/7999)
+2023-12-25 18:45:11,369 - INFO - https://solscan.io/token/8itKEY2Zghvs95H9RZ4iLZGmv4taSkpXcPF89AMhZniK#holders
+2023-12-25 18:45:12,370 - INFO - https://solscan.io/token/8itKEY2Zghvs95H9RZ4iLZGmv4taSkpXcPF89AMhZniK#txs
+2023-12-25 18:45:28,102 - INFO - Owner address not found in the table.
+2023-12-25 18:45:28,102 - INFO - Holder Address: Address not found
+2023-12-25 18:45:38,271 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:45:38,375 - INFO - Time successfully extracted: 08-27-2023 21:49:34
+2023-12-25 18:45:38,376 - INFO - Hold time extracted: 08-27-2023 21:49:34
+2023-12-25 18:45:38,376 - INFO - Closing the web driver...
+2023-12-25 18:45:38,406 - INFO - Web driver closed for time.
+2023-12-25 18:45:38,406 - INFO - Successfully processed account 8itKEY2Zghvs95H9RZ4iLZGmv4taSkpXcPF89AMhZniK.
+2023-12-25 18:45:38,409 - INFO - WebDriver closed for item 3166
+2023-12-25 18:45:38,410 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:45:38,415 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:45:38,419 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:45:38,422 - INFO - Starting from index 3166: It has the oldest 'time checked'.
+2023-12-25 18:45:38,422 - INFO - Processing item 62/100 with account: CqNwXufnin5CNyzBtT6jyJfbX8CqCuzjsvHRoqp37nqz (Global index: 3167/7999)
+2023-12-25 18:45:40,185 - INFO - https://solscan.io/token/CqNwXufnin5CNyzBtT6jyJfbX8CqCuzjsvHRoqp37nqz#holders
+2023-12-25 18:45:41,186 - INFO - https://solscan.io/token/CqNwXufnin5CNyzBtT6jyJfbX8CqCuzjsvHRoqp37nqz#txs
+2023-12-25 18:45:54,012 - INFO - Owner address found: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2023-12-25 18:45:54,012 - INFO - Holder Address: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2023-12-25 18:46:04,176 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:46:04,208 - INFO - Time successfully extracted: 08-28-2023 22:46:03
+2023-12-25 18:46:04,208 - INFO - Hold time extracted: 08-28-2023 22:46:03
+2023-12-25 18:46:04,209 - INFO - Closing the web driver...
+2023-12-25 18:46:04,256 - INFO - Web driver closed for time.
+2023-12-25 18:46:04,256 - INFO - Successfully processed account CqNwXufnin5CNyzBtT6jyJfbX8CqCuzjsvHRoqp37nqz.
+2023-12-25 18:46:04,259 - INFO - WebDriver closed for item 3167
+2023-12-25 18:46:04,260 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:46:04,265 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:46:04,268 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:46:04,271 - INFO - Starting from index 3167: It has the oldest 'time checked'.
+2023-12-25 18:46:04,271 - INFO - Processing item 63/100 with account: GwWTdazudKE8zd9vkF92uMEi6tNBarukxdrg7yTEDNnQ (Global index: 3168/7999)
+2023-12-25 18:46:06,025 - INFO - https://solscan.io/token/GwWTdazudKE8zd9vkF92uMEi6tNBarukxdrg7yTEDNnQ#holders
+2023-12-25 18:46:07,026 - INFO - https://solscan.io/token/GwWTdazudKE8zd9vkF92uMEi6tNBarukxdrg7yTEDNnQ#txs
+2023-12-25 18:46:21,221 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:46:21,221 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:46:31,402 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:46:31,433 - INFO - Time successfully extracted: 12-12-2023 22:05:35
+2023-12-25 18:46:31,433 - INFO - Hold time extracted: 12-12-2023 22:05:35
+2023-12-25 18:46:31,434 - INFO - Closing the web driver...
+2023-12-25 18:46:31,472 - INFO - Web driver closed for time.
+2023-12-25 18:46:31,473 - INFO - Successfully processed account GwWTdazudKE8zd9vkF92uMEi6tNBarukxdrg7yTEDNnQ.
+2023-12-25 18:46:31,476 - INFO - WebDriver closed for item 3168
+2023-12-25 18:46:31,477 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:46:31,483 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:46:31,487 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:46:31,491 - INFO - Starting from index 3168: It has the oldest 'time checked'.
+2023-12-25 18:46:31,491 - INFO - Processing item 64/100 with account: EWMtWqxydqe7MWWJxE4HrW2CaiBUveBE7JvCaR8o6DeY (Global index: 3169/7999)
+2023-12-25 18:46:33,247 - INFO - https://solscan.io/token/EWMtWqxydqe7MWWJxE4HrW2CaiBUveBE7JvCaR8o6DeY#holders
+2023-12-25 18:46:34,248 - INFO - https://solscan.io/token/EWMtWqxydqe7MWWJxE4HrW2CaiBUveBE7JvCaR8o6DeY#txs
+2023-12-25 18:46:51,319 - INFO - Owner address found: 3dH8uePWGwFPbUK18M51tkpxApWBphRYoxsQUARjivn4
+2023-12-25 18:46:51,319 - INFO - Holder Address: 3dH8uePWGwFPbUK18M51tkpxApWBphRYoxsQUARjivn4
+2023-12-25 18:47:01,474 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:47:01,506 - INFO - Time successfully extracted: 11-04-2023 12:51:03
+2023-12-25 18:47:01,506 - INFO - Hold time extracted: 11-04-2023 12:51:03
+2023-12-25 18:47:01,507 - INFO - Closing the web driver...
+2023-12-25 18:47:01,545 - INFO - Web driver closed for time.
+2023-12-25 18:47:01,545 - INFO - Successfully processed account EWMtWqxydqe7MWWJxE4HrW2CaiBUveBE7JvCaR8o6DeY.
+2023-12-25 18:47:01,548 - INFO - WebDriver closed for item 3169
+2023-12-25 18:47:01,550 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:47:01,555 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:47:01,559 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:47:01,562 - INFO - Starting from index 3169: It has the oldest 'time checked'.
+2023-12-25 18:47:01,562 - INFO - Processing item 65/100 with account: 6Kx6zUp7c4JLWhDvny5Dzv4Vs7Ab9oEev6oAaZdZrQzk (Global index: 3170/7999)
+2023-12-25 18:47:03,317 - INFO - https://solscan.io/token/6Kx6zUp7c4JLWhDvny5Dzv4Vs7Ab9oEev6oAaZdZrQzk#holders
+2023-12-25 18:47:04,318 - INFO - https://solscan.io/token/6Kx6zUp7c4JLWhDvny5Dzv4Vs7Ab9oEev6oAaZdZrQzk#txs
+2023-12-25 18:47:22,224 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:47:22,224 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:47:32,368 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:47:32,395 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:47:32,395 - INFO - Hold time extracted: Table not found
+2023-12-25 18:47:32,395 - INFO - Closing the web driver...
+2023-12-25 18:47:32,434 - INFO - Web driver closed for time.
+2023-12-25 18:47:32,435 - ERROR - Error processing 6Kx6zUp7c4JLWhDvny5Dzv4Vs7Ab9oEev6oAaZdZrQzk: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:47:32,439 - INFO - WebDriver closed for item 3170
+2023-12-25 18:47:32,441 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:47:32,446 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:47:32,449 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:47:32,451 - INFO - Starting from index 3170: It has the oldest 'time checked'.
+2023-12-25 18:47:32,451 - INFO - Processing item 66/100 with account: 75PTGjV1Prrffn9voiC5ojEcJ7hCFhQuphhNiMix9dn3 (Global index: 3171/7999)
+2023-12-25 18:47:34,206 - INFO - https://solscan.io/token/75PTGjV1Prrffn9voiC5ojEcJ7hCFhQuphhNiMix9dn3#holders
+2023-12-25 18:47:35,207 - INFO - https://solscan.io/token/75PTGjV1Prrffn9voiC5ojEcJ7hCFhQuphhNiMix9dn3#txs
+2023-12-25 18:47:52,824 - INFO - Owner address found: Chw42YY5RBmW59iPgkJLi7kWF9jcCF8tRWFrzNkY28jz
+2023-12-25 18:47:52,824 - INFO - Holder Address: Chw42YY5RBmW59iPgkJLi7kWF9jcCF8tRWFrzNkY28jz
+2023-12-25 18:48:02,990 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:48:03,020 - INFO - Time successfully extracted: 01-19-2023 14:25:13
+2023-12-25 18:48:03,020 - INFO - Hold time extracted: 01-19-2023 14:25:13
+2023-12-25 18:48:03,020 - INFO - Closing the web driver...
+2023-12-25 18:48:03,059 - INFO - Web driver closed for time.
+2023-12-25 18:48:03,060 - INFO - Successfully processed account 75PTGjV1Prrffn9voiC5ojEcJ7hCFhQuphhNiMix9dn3.
+2023-12-25 18:48:03,062 - INFO - WebDriver closed for item 3171
+2023-12-25 18:48:03,064 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:48:03,069 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:48:03,073 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:48:03,077 - INFO - Starting from index 3171: It has the oldest 'time checked'.
+2023-12-25 18:48:03,077 - INFO - Processing item 67/100 with account: 7kohnV61w9MHzc6AzF3uGhUqtSyuhs65tZdJA4bRR4Eo (Global index: 3172/7999)
+2023-12-25 18:48:04,825 - INFO - https://solscan.io/token/7kohnV61w9MHzc6AzF3uGhUqtSyuhs65tZdJA4bRR4Eo#holders
+2023-12-25 18:48:05,826 - INFO - https://solscan.io/token/7kohnV61w9MHzc6AzF3uGhUqtSyuhs65tZdJA4bRR4Eo#txs
+2023-12-25 18:48:22,943 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:48:22,943 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:48:33,114 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:48:33,145 - INFO - Time successfully extracted: 12-12-2023 23:30:15
+2023-12-25 18:48:33,145 - INFO - Hold time extracted: 12-12-2023 23:30:15
+2023-12-25 18:48:33,146 - INFO - Closing the web driver...
+2023-12-25 18:48:33,184 - INFO - Web driver closed for time.
+2023-12-25 18:48:33,184 - INFO - Successfully processed account 7kohnV61w9MHzc6AzF3uGhUqtSyuhs65tZdJA4bRR4Eo.
+2023-12-25 18:48:33,187 - INFO - WebDriver closed for item 3172
+2023-12-25 18:48:33,188 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:48:33,193 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:48:33,196 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:48:33,199 - INFO - Starting from index 3172: It has the oldest 'time checked'.
+2023-12-25 18:48:33,199 - INFO - Processing item 68/100 with account: FpM4hVwex9JFN6fcZqTaShNyzzanPEMamv9pXEuwj8xp (Global index: 3173/7999)
+2023-12-25 18:48:34,954 - INFO - https://solscan.io/token/FpM4hVwex9JFN6fcZqTaShNyzzanPEMamv9pXEuwj8xp#holders
+2023-12-25 18:48:35,956 - INFO - https://solscan.io/token/FpM4hVwex9JFN6fcZqTaShNyzzanPEMamv9pXEuwj8xp#txs
+2023-12-25 18:48:49,353 - INFO - Owner address not found in the table.
+2023-12-25 18:48:49,353 - INFO - Holder Address: Address not found
+2023-12-25 18:48:59,518 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:48:59,620 - INFO - Time successfully extracted: 07-18-2023 12:47:36
+2023-12-25 18:48:59,620 - INFO - Hold time extracted: 07-18-2023 12:47:36
+2023-12-25 18:48:59,620 - INFO - Closing the web driver...
+2023-12-25 18:48:59,668 - INFO - Web driver closed for time.
+2023-12-25 18:48:59,668 - INFO - Successfully processed account FpM4hVwex9JFN6fcZqTaShNyzzanPEMamv9pXEuwj8xp.
+2023-12-25 18:48:59,671 - INFO - WebDriver closed for item 3173
+2023-12-25 18:48:59,672 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:48:59,677 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:48:59,680 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:48:59,682 - INFO - Starting from index 3174: It has the oldest 'time checked'.
+2023-12-25 18:48:59,682 - INFO - Processing item 69/100 with account: 81Ea9DvSmdiexYkrDhDSKnie7AammAS5WaQsGq4opno2 (Global index: 3175/7999)
+2023-12-25 18:49:01,434 - INFO - https://solscan.io/token/81Ea9DvSmdiexYkrDhDSKnie7AammAS5WaQsGq4opno2#holders
+2023-12-25 18:49:02,435 - INFO - https://solscan.io/token/81Ea9DvSmdiexYkrDhDSKnie7AammAS5WaQsGq4opno2#txs
+2023-12-25 18:49:20,692 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:49:20,692 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:49:30,856 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:49:30,890 - INFO - Time successfully extracted: 12-12-2023 19:45:26
+2023-12-25 18:49:30,890 - INFO - Hold time extracted: 12-12-2023 19:45:26
+2023-12-25 18:49:30,890 - INFO - Closing the web driver...
+2023-12-25 18:49:30,936 - INFO - Web driver closed for time.
+2023-12-25 18:49:30,936 - INFO - Successfully processed account 81Ea9DvSmdiexYkrDhDSKnie7AammAS5WaQsGq4opno2.
+2023-12-25 18:49:30,939 - INFO - WebDriver closed for item 3175
+2023-12-25 18:49:30,940 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:49:30,945 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:49:30,949 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:49:30,952 - INFO - Starting from index 3175: It has the oldest 'time checked'.
+2023-12-25 18:49:30,952 - INFO - Processing item 70/100 with account: CSHK2Hu75wAiUVuA2mr1BeuGWrHZk3YEgSsHSuu456iw (Global index: 3176/7999)
+2023-12-25 18:49:32,704 - INFO - https://solscan.io/token/CSHK2Hu75wAiUVuA2mr1BeuGWrHZk3YEgSsHSuu456iw#holders
+2023-12-25 18:49:33,705 - INFO - https://solscan.io/token/CSHK2Hu75wAiUVuA2mr1BeuGWrHZk3YEgSsHSuu456iw#txs
+2023-12-25 18:49:50,946 - INFO - Owner address found: 6qasrabZgKbbtjkK4aH5adKTdcxoBxUfWLV2jeQuFUKE
+2023-12-25 18:49:50,946 - INFO - Holder Address: 6qasrabZgKbbtjkK4aH5adKTdcxoBxUfWLV2jeQuFUKE
+2023-12-25 18:50:01,117 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:50:01,148 - INFO - Time successfully extracted: 12-25-2023 16:00:31
+2023-12-25 18:50:01,148 - INFO - Hold time extracted: 12-25-2023 16:00:31
+2023-12-25 18:50:01,149 - INFO - Closing the web driver...
+2023-12-25 18:50:01,196 - INFO - Web driver closed for time.
+2023-12-25 18:50:01,196 - INFO - Successfully processed account CSHK2Hu75wAiUVuA2mr1BeuGWrHZk3YEgSsHSuu456iw.
+2023-12-25 18:50:01,199 - INFO - WebDriver closed for item 3176
+2023-12-25 18:50:01,200 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:50:01,205 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:50:01,208 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:50:01,211 - INFO - Starting from index 3176: It has the oldest 'time checked'.
+2023-12-25 18:50:01,211 - INFO - Processing item 71/100 with account: AMDXNYRPdjtoHDqrRFnnQDiYnusbGbbipJbSMtsmD3V3 (Global index: 3177/7999)
+2023-12-25 18:50:02,967 - INFO - https://solscan.io/token/AMDXNYRPdjtoHDqrRFnnQDiYnusbGbbipJbSMtsmD3V3#holders
+2023-12-25 18:50:03,968 - INFO - https://solscan.io/token/AMDXNYRPdjtoHDqrRFnnQDiYnusbGbbipJbSMtsmD3V3#txs
+2023-12-25 18:50:17,130 - INFO - Owner address found: 25EbwVAMtdBCJ2io1yADioVHqiJgzB7PPtJo2cCYApVb
+2023-12-25 18:50:17,130 - INFO - Holder Address: 25EbwVAMtdBCJ2io1yADioVHqiJgzB7PPtJo2cCYApVb
+2023-12-25 18:50:27,287 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:50:27,311 - INFO - Time successfully extracted: 09-07-2022 16:04:57
+2023-12-25 18:50:27,311 - INFO - Hold time extracted: 09-07-2022 16:04:57
+2023-12-25 18:50:27,312 - INFO - Closing the web driver...
+2023-12-25 18:50:27,350 - INFO - Web driver closed for time.
+2023-12-25 18:50:27,351 - INFO - Successfully processed account AMDXNYRPdjtoHDqrRFnnQDiYnusbGbbipJbSMtsmD3V3.
+2023-12-25 18:50:27,356 - INFO - WebDriver closed for item 3177
+2023-12-25 18:50:27,357 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:50:27,362 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:50:27,365 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:50:27,368 - INFO - Starting from index 3177: It has the oldest 'time checked'.
+2023-12-25 18:50:27,368 - INFO - Processing item 72/100 with account: Ak8b7Dk5sun235gZWGtJyRry7roxkLLp5a3r937cfmhk (Global index: 3178/7999)
+2023-12-25 18:50:29,121 - INFO - https://solscan.io/token/Ak8b7Dk5sun235gZWGtJyRry7roxkLLp5a3r937cfmhk#holders
+2023-12-25 18:50:30,122 - INFO - https://solscan.io/token/Ak8b7Dk5sun235gZWGtJyRry7roxkLLp5a3r937cfmhk#txs
+2023-12-25 18:50:47,891 - INFO - Owner address found: 3H9stfUFjh2f3iNLUERJQvSS919UEZgcrsHr1tRm4JEV
+2023-12-25 18:50:47,891 - INFO - Holder Address: 3H9stfUFjh2f3iNLUERJQvSS919UEZgcrsHr1tRm4JEV
+2023-12-25 18:50:58,056 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:50:58,088 - INFO - Time successfully extracted: 12-15-2023 07:12:31
+2023-12-25 18:50:58,088 - INFO - Hold time extracted: 12-15-2023 07:12:31
+2023-12-25 18:50:58,088 - INFO - Closing the web driver...
+2023-12-25 18:50:58,135 - INFO - Web driver closed for time.
+2023-12-25 18:50:58,135 - INFO - Successfully processed account Ak8b7Dk5sun235gZWGtJyRry7roxkLLp5a3r937cfmhk.
+2023-12-25 18:50:58,138 - INFO - WebDriver closed for item 3178
+2023-12-25 18:50:58,139 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:50:58,144 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:50:58,147 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:50:58,150 - INFO - Starting from index 3178: It has the oldest 'time checked'.
+2023-12-25 18:50:58,150 - INFO - Processing item 73/100 with account: DGMZZZC9dQBxQMaEbVheg133N3w549JS5Zkjdp4RvHrs (Global index: 3179/7999)
+2023-12-25 18:50:59,903 - INFO - https://solscan.io/token/DGMZZZC9dQBxQMaEbVheg133N3w549JS5Zkjdp4RvHrs#holders
+2023-12-25 18:51:00,904 - INFO - https://solscan.io/token/DGMZZZC9dQBxQMaEbVheg133N3w549JS5Zkjdp4RvHrs#txs
+2023-12-25 18:51:16,786 - INFO - Owner address found: 89onbrKkwf6CYVdNxFj4Wv4jASZtyJcY7NihKdeuXbMG
+2023-12-25 18:51:16,786 - INFO - Holder Address: 89onbrKkwf6CYVdNxFj4Wv4jASZtyJcY7NihKdeuXbMG
+2023-12-25 18:51:26,956 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:51:26,987 - INFO - Time successfully extracted: 08-27-2023 21:53:38
+2023-12-25 18:51:26,987 - INFO - Hold time extracted: 08-27-2023 21:53:38
+2023-12-25 18:51:26,987 - INFO - Closing the web driver...
+2023-12-25 18:51:27,026 - INFO - Web driver closed for time.
+2023-12-25 18:51:27,026 - INFO - Successfully processed account DGMZZZC9dQBxQMaEbVheg133N3w549JS5Zkjdp4RvHrs.
+2023-12-25 18:51:27,029 - INFO - WebDriver closed for item 3179
+2023-12-25 18:51:27,030 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:51:27,036 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:51:27,039 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:51:27,042 - INFO - Starting from index 3179: It has the oldest 'time checked'.
+2023-12-25 18:51:27,042 - INFO - Processing item 74/100 with account: J7bkS4Xt24ixxDBY6ak11ni7Z3b2iT2x7Yq3mJ1Tr8hu (Global index: 3180/7999)
+2023-12-25 18:51:28,798 - INFO - https://solscan.io/token/J7bkS4Xt24ixxDBY6ak11ni7Z3b2iT2x7Yq3mJ1Tr8hu#holders
+2023-12-25 18:51:29,800 - INFO - https://solscan.io/token/J7bkS4Xt24ixxDBY6ak11ni7Z3b2iT2x7Yq3mJ1Tr8hu#txs
+2023-12-25 18:51:45,259 - INFO - Owner address found: DBHxMUpguYRLGcszeo6D8xXAFnZBWrhDqzG4EjjbJe3j
+2023-12-25 18:51:45,259 - INFO - Holder Address: DBHxMUpguYRLGcszeo6D8xXAFnZBWrhDqzG4EjjbJe3j
+2023-12-25 18:51:55,419 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:51:55,451 - INFO - Time successfully extracted: 12-06-2023 07:20:11
+2023-12-25 18:51:55,451 - INFO - Hold time extracted: 12-06-2023 07:20:11
+2023-12-25 18:51:55,451 - INFO - Closing the web driver...
+2023-12-25 18:51:55,481 - INFO - Web driver closed for time.
+2023-12-25 18:51:55,481 - INFO - Successfully processed account J7bkS4Xt24ixxDBY6ak11ni7Z3b2iT2x7Yq3mJ1Tr8hu.
+2023-12-25 18:51:55,484 - INFO - WebDriver closed for item 3180
+2023-12-25 18:51:55,486 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:51:55,491 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:51:55,495 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:51:55,499 - INFO - Starting from index 3180: It has the oldest 'time checked'.
+2023-12-25 18:51:55,499 - INFO - Processing item 75/100 with account: E51wqFF9ZQYHyGvxkkeryAb1V6iMUuJ6RT7o2P8g5uaU (Global index: 3181/7999)
+2023-12-25 18:51:57,251 - INFO - https://solscan.io/token/E51wqFF9ZQYHyGvxkkeryAb1V6iMUuJ6RT7o2P8g5uaU#holders
+2023-12-25 18:51:58,253 - INFO - https://solscan.io/token/E51wqFF9ZQYHyGvxkkeryAb1V6iMUuJ6RT7o2P8g5uaU#txs
+2023-12-25 18:52:15,767 - INFO - Owner address found: FP12hQW2QUdrh3jPN1ZaT2wTQScqa8Guox6g6N3aNtXN
+2023-12-25 18:52:15,767 - INFO - Holder Address: FP12hQW2QUdrh3jPN1ZaT2wTQScqa8Guox6g6N3aNtXN
+2023-12-25 18:52:25,925 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:52:25,948 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:52:25,948 - INFO - Hold time extracted: Table not found
+2023-12-25 18:52:25,948 - INFO - Closing the web driver...
+2023-12-25 18:52:25,986 - INFO - Web driver closed for time.
+2023-12-25 18:52:25,987 - ERROR - Error processing E51wqFF9ZQYHyGvxkkeryAb1V6iMUuJ6RT7o2P8g5uaU: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:52:25,992 - INFO - WebDriver closed for item 3181
+2023-12-25 18:52:25,993 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:52:25,998 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:52:26,002 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:52:26,005 - INFO - Starting from index 3181: It has the oldest 'time checked'.
+2023-12-25 18:52:26,005 - INFO - Processing item 76/100 with account: HHJQQMaWrmDuiSubQc4N7GNJ8J3eKfekk6HpvR7Gb6uo (Global index: 3182/7999)
+2023-12-25 18:52:27,755 - INFO - https://solscan.io/token/HHJQQMaWrmDuiSubQc4N7GNJ8J3eKfekk6HpvR7Gb6uo#holders
+2023-12-25 18:52:28,757 - INFO - https://solscan.io/token/HHJQQMaWrmDuiSubQc4N7GNJ8J3eKfekk6HpvR7Gb6uo#txs
+2023-12-25 18:52:42,948 - INFO - Holder Address: None
+2023-12-25 18:52:53,039 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:52:53,045 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:52:53,045 - INFO - Hold time extracted: Table not found
+2023-12-25 18:52:53,045 - INFO - Closing the web driver...
+2023-12-25 18:52:53,084 - INFO - Web driver closed for time.
+2023-12-25 18:52:53,084 - ERROR - Error processing HHJQQMaWrmDuiSubQc4N7GNJ8J3eKfekk6HpvR7Gb6uo: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:52:53,087 - INFO - WebDriver closed for item 3182
+2023-12-25 18:52:53,088 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:52:53,093 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:52:53,097 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:52:53,100 - INFO - Starting from index 3182: It has the oldest 'time checked'.
+2023-12-25 18:52:53,101 - INFO - Processing item 77/100 with account: 7CvJtZW2k4rDix7JuwEhA8qKMSzRXWQWbfHMPbnpiuQk (Global index: 3183/7999)
+2023-12-25 18:52:54,853 - INFO - https://solscan.io/token/7CvJtZW2k4rDix7JuwEhA8qKMSzRXWQWbfHMPbnpiuQk#holders
+2023-12-25 18:52:55,855 - INFO - https://solscan.io/token/7CvJtZW2k4rDix7JuwEhA8qKMSzRXWQWbfHMPbnpiuQk#txs
+2023-12-25 18:53:11,932 - INFO - Owner address found: AYxzWEKHFrcDm9kQbgbFJRguxi5SzhJraGV2BbMaEPG
+2023-12-25 18:53:11,932 - INFO - Holder Address: AYxzWEKHFrcDm9kQbgbFJRguxi5SzhJraGV2BbMaEPG
+2023-12-25 18:53:22,088 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:53:22,116 - INFO - Time successfully extracted: 08-27-2023 21:47:59
+2023-12-25 18:53:22,117 - INFO - Hold time extracted: 08-27-2023 21:47:59
+2023-12-25 18:53:22,117 - INFO - Closing the web driver...
+2023-12-25 18:53:22,155 - INFO - Web driver closed for time.
+2023-12-25 18:53:22,155 - INFO - Successfully processed account 7CvJtZW2k4rDix7JuwEhA8qKMSzRXWQWbfHMPbnpiuQk.
+2023-12-25 18:53:22,158 - INFO - WebDriver closed for item 3183
+2023-12-25 18:53:22,160 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:53:22,165 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:53:22,169 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:53:22,172 - INFO - Starting from index 3183: It has the oldest 'time checked'.
+2023-12-25 18:53:22,172 - INFO - Processing item 78/100 with account: EAcoeQktbWY48eADYuaMbNgmyji79v2Fa5D8fe8AdBh2 (Global index: 3184/7999)
+2023-12-25 18:53:23,929 - INFO - https://solscan.io/token/EAcoeQktbWY48eADYuaMbNgmyji79v2Fa5D8fe8AdBh2#holders
+2023-12-25 18:53:24,930 - INFO - https://solscan.io/token/EAcoeQktbWY48eADYuaMbNgmyji79v2Fa5D8fe8AdBh2#txs
+2023-12-25 18:53:38,519 - INFO - Owner address not found in the table.
+2023-12-25 18:53:38,519 - INFO - Holder Address: Address not found
+2023-12-25 18:53:48,689 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:53:48,721 - INFO - Time successfully extracted: 4 months ago
+2023-12-25 18:53:48,721 - INFO - Hold time extracted: 4 months ago
+2023-12-25 18:53:48,721 - INFO - Closing the web driver...
+2023-12-25 18:53:48,760 - INFO - Web driver closed for time.
+2023-12-25 18:53:48,760 - ERROR - Error processing EAcoeQktbWY48eADYuaMbNgmyji79v2Fa5D8fe8AdBh2: time data '4 months ago' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:53:48,763 - INFO - WebDriver closed for item 3184
+2023-12-25 18:53:48,765 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:53:48,770 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:53:48,774 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:53:48,777 - INFO - Starting from index 3184: It has the oldest 'time checked'.
+2023-12-25 18:53:48,777 - INFO - Processing item 79/100 with account: 4KVUw7qkLCc2kRe6T1yFUteRohFxdtjMjornkTtgGkJk (Global index: 3185/7999)
+2023-12-25 18:53:50,530 - INFO - https://solscan.io/token/4KVUw7qkLCc2kRe6T1yFUteRohFxdtjMjornkTtgGkJk#holders
+2023-12-25 18:53:51,531 - INFO - https://solscan.io/token/4KVUw7qkLCc2kRe6T1yFUteRohFxdtjMjornkTtgGkJk#txs
+2023-12-25 18:54:05,195 - INFO - Owner address found: DBHxMUpguYRLGcszeo6D8xXAFnZBWrhDqzG4EjjbJe3j
+2023-12-25 18:54:05,196 - INFO - Holder Address: DBHxMUpguYRLGcszeo6D8xXAFnZBWrhDqzG4EjjbJe3j
+2023-12-25 18:54:15,361 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:54:15,393 - INFO - Time successfully extracted: 11-12-2023 13:41:09
+2023-12-25 18:54:15,393 - INFO - Hold time extracted: 11-12-2023 13:41:09
+2023-12-25 18:54:15,393 - INFO - Closing the web driver...
+2023-12-25 18:54:15,440 - INFO - Web driver closed for time.
+2023-12-25 18:54:15,441 - INFO - Successfully processed account 4KVUw7qkLCc2kRe6T1yFUteRohFxdtjMjornkTtgGkJk.
+2023-12-25 18:54:15,443 - INFO - WebDriver closed for item 3185
+2023-12-25 18:54:15,445 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:54:15,450 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:54:15,454 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:54:15,457 - INFO - Starting from index 3185: It has the oldest 'time checked'.
+2023-12-25 18:54:15,457 - INFO - Processing item 80/100 with account: 5TCNg2Bv4vTuzMapPDWNUgBgKdhWU4xue92aVaRDFESW (Global index: 3186/7999)
+2023-12-25 18:54:17,212 - INFO - https://solscan.io/token/5TCNg2Bv4vTuzMapPDWNUgBgKdhWU4xue92aVaRDFESW#holders
+2023-12-25 18:54:18,213 - INFO - https://solscan.io/token/5TCNg2Bv4vTuzMapPDWNUgBgKdhWU4xue92aVaRDFESW#txs
+2023-12-25 18:54:33,750 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:54:33,751 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:54:43,916 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:54:43,948 - INFO - Time successfully extracted: 12-12-2023 20:49:24
+2023-12-25 18:54:43,948 - INFO - Hold time extracted: 12-12-2023 20:49:24
+2023-12-25 18:54:43,948 - INFO - Closing the web driver...
+2023-12-25 18:54:43,986 - INFO - Web driver closed for time.
+2023-12-25 18:54:43,986 - INFO - Successfully processed account 5TCNg2Bv4vTuzMapPDWNUgBgKdhWU4xue92aVaRDFESW.
+2023-12-25 18:54:43,989 - INFO - WebDriver closed for item 3186
+2023-12-25 18:54:43,990 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:54:43,996 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:54:43,999 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:54:44,002 - INFO - Starting from index 3186: It has the oldest 'time checked'.
+2023-12-25 18:54:44,002 - INFO - Processing item 81/100 with account: BC5F4rtX6vdTfWgeFqzJwRjbXkhG1jnccNtFn74Egid1 (Global index: 3187/7999)
+2023-12-25 18:54:45,759 - INFO - https://solscan.io/token/BC5F4rtX6vdTfWgeFqzJwRjbXkhG1jnccNtFn74Egid1#holders
+2023-12-25 18:54:46,761 - INFO - https://solscan.io/token/BC5F4rtX6vdTfWgeFqzJwRjbXkhG1jnccNtFn74Egid1#txs
+2023-12-25 18:55:00,559 - INFO - Owner address found: 3H9stfUFjh2f3iNLUERJQvSS919UEZgcrsHr1tRm4JEV
+2023-12-25 18:55:00,559 - INFO - Holder Address: 3H9stfUFjh2f3iNLUERJQvSS919UEZgcrsHr1tRm4JEV
+2023-12-25 18:55:10,728 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:55:10,759 - INFO - Time successfully extracted: 12-15-2023 07:19:57
+2023-12-25 18:55:10,759 - INFO - Hold time extracted: 12-15-2023 07:19:57
+2023-12-25 18:55:10,759 - INFO - Closing the web driver...
+2023-12-25 18:55:10,806 - INFO - Web driver closed for time.
+2023-12-25 18:55:10,806 - INFO - Successfully processed account BC5F4rtX6vdTfWgeFqzJwRjbXkhG1jnccNtFn74Egid1.
+2023-12-25 18:55:10,809 - INFO - WebDriver closed for item 3187
+2023-12-25 18:55:10,810 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:55:10,814 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:55:10,818 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:55:10,820 - INFO - Starting from index 3187: It has the oldest 'time checked'.
+2023-12-25 18:55:10,820 - INFO - Processing item 82/100 with account: QKpXraty4oLiyTMX2iTi4qhbMMD7wfvzKZseBr1a87j (Global index: 3188/7999)
+2023-12-25 18:55:12,606 - INFO - https://solscan.io/token/QKpXraty4oLiyTMX2iTi4qhbMMD7wfvzKZseBr1a87j#holders
+2023-12-25 18:55:13,606 - INFO - https://solscan.io/token/QKpXraty4oLiyTMX2iTi4qhbMMD7wfvzKZseBr1a87j#txs
+2023-12-25 18:55:26,446 - INFO - Owner address found: 3wjmUidyU1S6KDCd9S1acLZ2PVJ3wKfa8gbV92Qd2Dkp
+2023-12-25 18:55:26,446 - INFO - Holder Address: 3wjmUidyU1S6KDCd9S1acLZ2PVJ3wKfa8gbV92Qd2Dkp
+2023-12-25 18:55:36,604 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:55:36,633 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:55:36,633 - INFO - Hold time extracted: Table not found
+2023-12-25 18:55:36,633 - INFO - Closing the web driver...
+2023-12-25 18:55:36,679 - INFO - Web driver closed for time.
+2023-12-25 18:55:36,679 - ERROR - Error processing QKpXraty4oLiyTMX2iTi4qhbMMD7wfvzKZseBr1a87j: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:55:36,682 - INFO - WebDriver closed for item 3188
+2023-12-25 18:55:36,683 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:55:36,688 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:55:36,691 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:55:36,693 - INFO - Starting from index 3188: It has the oldest 'time checked'.
+2023-12-25 18:55:36,693 - INFO - Processing item 83/100 with account: 6HBrJc6A8FebZNVx8PxEpD5oZaF2U7gc4mHXDpzPTjcM (Global index: 3189/7999)
+2023-12-25 18:55:38,457 - INFO - https://solscan.io/token/6HBrJc6A8FebZNVx8PxEpD5oZaF2U7gc4mHXDpzPTjcM#holders
+2023-12-25 18:55:39,458 - INFO - https://solscan.io/token/6HBrJc6A8FebZNVx8PxEpD5oZaF2U7gc4mHXDpzPTjcM#txs
+2023-12-25 18:55:55,212 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:55:55,212 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:56:05,383 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:56:05,407 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2023-12-25 18:56:05,407 - INFO - Hold time extracted: Table not found
+2023-12-25 18:56:05,407 - INFO - Closing the web driver...
+2023-12-25 18:56:05,454 - INFO - Web driver closed for time.
+2023-12-25 18:56:05,454 - ERROR - Error processing 6HBrJc6A8FebZNVx8PxEpD5oZaF2U7gc4mHXDpzPTjcM: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2023-12-25 18:56:05,457 - INFO - WebDriver closed for item 3189
+2023-12-25 18:56:05,459 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:56:05,464 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:56:05,468 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:56:05,471 - INFO - Starting from index 3189: It has the oldest 'time checked'.
+2023-12-25 18:56:05,471 - INFO - Processing item 84/100 with account: 3DgB1om6rhSPaebq4BMeReC7q5nF8KSpNT1Yfuu2LdkA (Global index: 3190/7999)
+2023-12-25 18:56:07,223 - INFO - https://solscan.io/token/3DgB1om6rhSPaebq4BMeReC7q5nF8KSpNT1Yfuu2LdkA#holders
+2023-12-25 18:56:08,224 - INFO - https://solscan.io/token/3DgB1om6rhSPaebq4BMeReC7q5nF8KSpNT1Yfuu2LdkA#txs
+2023-12-25 18:56:21,552 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:56:21,552 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:56:31,728 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:56:31,760 - INFO - Time successfully extracted: 12-22-2023 05:06:24
+2023-12-25 18:56:31,760 - INFO - Hold time extracted: 12-22-2023 05:06:24
+2023-12-25 18:56:31,760 - INFO - Closing the web driver...
+2023-12-25 18:56:31,807 - INFO - Web driver closed for time.
+2023-12-25 18:56:31,807 - INFO - Successfully processed account 3DgB1om6rhSPaebq4BMeReC7q5nF8KSpNT1Yfuu2LdkA.
+2023-12-25 18:56:31,810 - INFO - WebDriver closed for item 3190
+2023-12-25 18:56:31,812 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:56:31,816 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:56:31,819 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:56:31,822 - INFO - Starting from index 3190: It has the oldest 'time checked'.
+2023-12-25 18:56:31,822 - INFO - Processing item 85/100 with account: CR4wr24itgnmHQCYPNkHJPpSK5wQbys69iBAeJdVvCqM (Global index: 3191/7999)
+2023-12-25 18:56:33,574 - INFO - https://solscan.io/token/CR4wr24itgnmHQCYPNkHJPpSK5wQbys69iBAeJdVvCqM#holders
+2023-12-25 18:56:34,575 - INFO - https://solscan.io/token/CR4wr24itgnmHQCYPNkHJPpSK5wQbys69iBAeJdVvCqM#txs
+2023-12-25 18:56:52,375 - INFO - Owner address found: Magic Eden V2 Authority
+2023-12-25 18:56:52,375 - INFO - Holder Address: Magic Eden V2 Authority
+2023-12-25 18:57:02,544 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:57:02,573 - INFO - Time successfully extracted: 10-23-2023 13:28:32
+2023-12-25 18:57:02,573 - INFO - Hold time extracted: 10-23-2023 13:28:32
+2023-12-25 18:57:02,573 - INFO - Closing the web driver...
+2023-12-25 18:57:02,620 - INFO - Web driver closed for time.
+2023-12-25 18:57:02,621 - INFO - Successfully processed account CR4wr24itgnmHQCYPNkHJPpSK5wQbys69iBAeJdVvCqM.
+2023-12-25 18:57:02,623 - INFO - WebDriver closed for item 3191
+2023-12-25 18:57:02,625 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:57:02,630 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:57:02,634 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:57:02,636 - INFO - Starting from index 3191: It has the oldest 'time checked'.
+2023-12-25 18:57:02,636 - INFO - Processing item 86/100 with account: J2Xh3RZNP5nA8KYDmsQ9Ssh8MeLD6tNjEaSBh1EbP8At (Global index: 3192/7999)
+2023-12-25 18:57:04,399 - INFO - https://solscan.io/token/J2Xh3RZNP5nA8KYDmsQ9Ssh8MeLD6tNjEaSBh1EbP8At#holders
+2023-12-25 18:57:05,400 - INFO - https://solscan.io/token/J2Xh3RZNP5nA8KYDmsQ9Ssh8MeLD6tNjEaSBh1EbP8At#txs
+2023-12-25 18:57:20,915 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:57:20,915 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:57:31,084 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:57:31,115 - INFO - Time successfully extracted: 12-12-2023 19:51:14
+2023-12-25 18:57:31,116 - INFO - Hold time extracted: 12-12-2023 19:51:14
+2023-12-25 18:57:31,116 - INFO - Closing the web driver...
+2023-12-25 18:57:31,163 - INFO - Web driver closed for time.
+2023-12-25 18:57:31,163 - INFO - Successfully processed account J2Xh3RZNP5nA8KYDmsQ9Ssh8MeLD6tNjEaSBh1EbP8At.
+2023-12-25 18:57:31,166 - INFO - WebDriver closed for item 3192
+2023-12-25 18:57:31,168 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:57:31,172 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:57:31,175 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:57:31,178 - INFO - Starting from index 3192: It has the oldest 'time checked'.
+2023-12-25 18:57:31,178 - INFO - Processing item 87/100 with account: 8fNjYYGqqRa37fKFTu6cJsY3qAJb4G7AauwuUiZVuNiH (Global index: 3193/7999)
+2023-12-25 18:57:32,929 - INFO - https://solscan.io/token/8fNjYYGqqRa37fKFTu6cJsY3qAJb4G7AauwuUiZVuNiH#holders
+2023-12-25 18:57:33,930 - INFO - https://solscan.io/token/8fNjYYGqqRa37fKFTu6cJsY3qAJb4G7AauwuUiZVuNiH#txs
+2023-12-25 18:57:47,779 - INFO - Owner address found: 47NhgGf87iYHZtobkeNzQ4JZcrra3JEProM9boftrQEw
+2023-12-25 18:57:47,779 - INFO - Holder Address: 47NhgGf87iYHZtobkeNzQ4JZcrra3JEProM9boftrQEw
+2023-12-25 18:57:57,950 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:57:57,982 - INFO - Time successfully extracted: 08-27-2023 21:47:27
+2023-12-25 18:57:57,982 - INFO - Hold time extracted: 08-27-2023 21:47:27
+2023-12-25 18:57:57,982 - INFO - Closing the web driver...
+2023-12-25 18:57:58,029 - INFO - Web driver closed for time.
+2023-12-25 18:57:58,030 - INFO - Successfully processed account 8fNjYYGqqRa37fKFTu6cJsY3qAJb4G7AauwuUiZVuNiH.
+2023-12-25 18:57:58,032 - INFO - WebDriver closed for item 3193
+2023-12-25 18:57:58,034 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:57:58,039 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:57:58,042 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:57:58,044 - INFO - Starting from index 3193: It has the oldest 'time checked'.
+2023-12-25 18:57:58,044 - INFO - Processing item 88/100 with account: 3rBCmJUUKbQj3p6PVdocpQgHdznnKk32MzSwBSLSPoyG (Global index: 3194/7999)
+2023-12-25 18:57:59,819 - INFO - https://solscan.io/token/3rBCmJUUKbQj3p6PVdocpQgHdznnKk32MzSwBSLSPoyG#holders
+2023-12-25 18:58:00,820 - INFO - https://solscan.io/token/3rBCmJUUKbQj3p6PVdocpQgHdznnKk32MzSwBSLSPoyG#txs
+2023-12-25 18:58:17,447 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:58:17,447 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 18:58:27,616 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:58:27,649 - INFO - Time successfully extracted: 12-12-2023 22:34:52
+2023-12-25 18:58:27,649 - INFO - Hold time extracted: 12-12-2023 22:34:52
+2023-12-25 18:58:27,649 - INFO - Closing the web driver...
+2023-12-25 18:58:27,688 - INFO - Web driver closed for time.
+2023-12-25 18:58:27,688 - INFO - Successfully processed account 3rBCmJUUKbQj3p6PVdocpQgHdznnKk32MzSwBSLSPoyG.
+2023-12-25 18:58:27,691 - INFO - WebDriver closed for item 3194
+2023-12-25 18:58:27,692 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:58:27,697 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:58:27,700 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:58:27,702 - INFO - Starting from index 3194: It has the oldest 'time checked'.
+2023-12-25 18:58:27,702 - INFO - Processing item 89/100 with account: Ge4QNEhthYnPSoZoX2j8gn4pArpSgBxvpNmHPYjh8ieH (Global index: 3195/7999)
+2023-12-25 18:58:29,454 - INFO - https://solscan.io/token/Ge4QNEhthYnPSoZoX2j8gn4pArpSgBxvpNmHPYjh8ieH#holders
+2023-12-25 18:58:30,455 - INFO - https://solscan.io/token/Ge4QNEhthYnPSoZoX2j8gn4pArpSgBxvpNmHPYjh8ieH#txs
+2023-12-25 18:58:44,063 - INFO - Owner address found: FPNMQhpGtXRdh4LcMBQs35KZsGpwQYJDRicPgD63gUj
+2023-12-25 18:58:44,063 - INFO - Holder Address: FPNMQhpGtXRdh4LcMBQs35KZsGpwQYJDRicPgD63gUj
+2023-12-25 18:58:54,242 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:58:54,273 - INFO - Time successfully extracted: 12-15-2023 07:20:10
+2023-12-25 18:58:54,273 - INFO - Hold time extracted: 12-15-2023 07:20:10
+2023-12-25 18:58:54,273 - INFO - Closing the web driver...
+2023-12-25 18:58:54,311 - INFO - Web driver closed for time.
+2023-12-25 18:58:54,312 - INFO - Successfully processed account Ge4QNEhthYnPSoZoX2j8gn4pArpSgBxvpNmHPYjh8ieH.
+2023-12-25 18:58:54,314 - INFO - WebDriver closed for item 3195
+2023-12-25 18:58:54,316 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:58:54,321 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:58:54,324 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:58:54,327 - INFO - Starting from index 3195: It has the oldest 'time checked'.
+2023-12-25 18:58:54,327 - INFO - Processing item 90/100 with account: HjdffYX3cLXPAj8cPsPZ7FQcj6CVNh1sER426Pcoi8mX (Global index: 3196/7999)
+2023-12-25 18:58:56,080 - INFO - https://solscan.io/token/HjdffYX3cLXPAj8cPsPZ7FQcj6CVNh1sER426Pcoi8mX#holders
+2023-12-25 18:58:57,082 - INFO - https://solscan.io/token/HjdffYX3cLXPAj8cPsPZ7FQcj6CVNh1sER426Pcoi8mX#txs
+2023-12-25 18:59:12,681 - INFO - Owner address found: 3H9stfUFjh2f3iNLUERJQvSS919UEZgcrsHr1tRm4JEV
+2023-12-25 18:59:12,681 - INFO - Holder Address: 3H9stfUFjh2f3iNLUERJQvSS919UEZgcrsHr1tRm4JEV
+2023-12-25 18:59:22,852 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:59:22,885 - INFO - Time successfully extracted: 12-12-2023 10:05:38
+2023-12-25 18:59:22,885 - INFO - Hold time extracted: 12-12-2023 10:05:38
+2023-12-25 18:59:22,885 - INFO - Closing the web driver...
+2023-12-25 18:59:22,924 - INFO - Web driver closed for time.
+2023-12-25 18:59:22,924 - INFO - Successfully processed account HjdffYX3cLXPAj8cPsPZ7FQcj6CVNh1sER426Pcoi8mX.
+2023-12-25 18:59:22,927 - INFO - WebDriver closed for item 3196
+2023-12-25 18:59:22,928 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:59:22,934 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:59:22,937 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:59:22,941 - INFO - Starting from index 3196: It has the oldest 'time checked'.
+2023-12-25 18:59:22,941 - INFO - Processing item 91/100 with account: 2p9rqowajRMBs5VtGG2Jxws1X84Fx8BZNoVHgMmPNWow (Global index: 3197/7999)
+2023-12-25 18:59:24,690 - INFO - https://solscan.io/token/2p9rqowajRMBs5VtGG2Jxws1X84Fx8BZNoVHgMmPNWow#holders
+2023-12-25 18:59:25,691 - INFO - https://solscan.io/token/2p9rqowajRMBs5VtGG2Jxws1X84Fx8BZNoVHgMmPNWow#txs
+2023-12-25 18:59:41,688 - INFO - Owner address found: Bo4nGugF3usS4N797H4LEm2r2d794kvht6HruwNCVe7Z
+2023-12-25 18:59:41,688 - INFO - Holder Address: Bo4nGugF3usS4N797H4LEm2r2d794kvht6HruwNCVe7Z
+2023-12-25 18:59:51,859 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 18:59:51,890 - INFO - Time successfully extracted: 08-27-2023 21:52:51
+2023-12-25 18:59:51,890 - INFO - Hold time extracted: 08-27-2023 21:52:51
+2023-12-25 18:59:51,890 - INFO - Closing the web driver...
+2023-12-25 18:59:51,929 - INFO - Web driver closed for time.
+2023-12-25 18:59:51,929 - INFO - Successfully processed account 2p9rqowajRMBs5VtGG2Jxws1X84Fx8BZNoVHgMmPNWow.
+2023-12-25 18:59:51,932 - INFO - WebDriver closed for item 3197
+2023-12-25 18:59:51,933 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 18:59:51,938 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 18:59:51,941 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 18:59:51,944 - INFO - Starting from index 3197: It has the oldest 'time checked'.
+2023-12-25 18:59:51,944 - INFO - Processing item 92/100 with account: GTLRsnwfP5kCT9SFJXwvQirHDqnL1dRz4JkRazoJLJGW (Global index: 3198/7999)
+2023-12-25 18:59:53,695 - INFO - https://solscan.io/token/GTLRsnwfP5kCT9SFJXwvQirHDqnL1dRz4JkRazoJLJGW#holders
+2023-12-25 18:59:54,696 - INFO - https://solscan.io/token/GTLRsnwfP5kCT9SFJXwvQirHDqnL1dRz4JkRazoJLJGW#txs
+2023-12-25 19:00:08,174 - INFO - Owner address found: DZZRTfjnyQ6934WYYaGBEZbrUzVEbniADXc5GzLsXD2n
+2023-12-25 19:00:08,174 - INFO - Holder Address: DZZRTfjnyQ6934WYYaGBEZbrUzVEbniADXc5GzLsXD2n
+2023-12-25 19:00:18,344 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 19:00:18,377 - INFO - Time successfully extracted: 08-27-2023 21:47:23
+2023-12-25 19:00:18,377 - INFO - Hold time extracted: 08-27-2023 21:47:23
+2023-12-25 19:00:18,377 - INFO - Closing the web driver...
+2023-12-25 19:00:18,424 - INFO - Web driver closed for time.
+2023-12-25 19:00:18,424 - INFO - Successfully processed account GTLRsnwfP5kCT9SFJXwvQirHDqnL1dRz4JkRazoJLJGW.
+2023-12-25 19:00:18,427 - INFO - WebDriver closed for item 3198
+2023-12-25 19:00:18,428 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 19:00:18,434 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 19:00:18,438 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 19:00:18,441 - INFO - Starting from index 3198: It has the oldest 'time checked'.
+2023-12-25 19:00:18,441 - INFO - Processing item 93/100 with account: CoRf3R8WLGS8x9yeLchCDk7Nxnj9vEpj2AKfpHS64eC6 (Global index: 3199/7999)
+2023-12-25 19:00:20,195 - INFO - https://solscan.io/token/CoRf3R8WLGS8x9yeLchCDk7Nxnj9vEpj2AKfpHS64eC6#holders
+2023-12-25 19:00:21,196 - INFO - https://solscan.io/token/CoRf3R8WLGS8x9yeLchCDk7Nxnj9vEpj2AKfpHS64eC6#txs
+2023-12-25 19:00:37,520 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 19:00:37,520 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 19:00:47,687 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 19:00:47,719 - INFO - Time successfully extracted: 12-14-2023 04:17:59
+2023-12-25 19:00:47,719 - INFO - Hold time extracted: 12-14-2023 04:17:59
+2023-12-25 19:00:47,719 - INFO - Closing the web driver...
+2023-12-25 19:00:47,758 - INFO - Web driver closed for time.
+2023-12-25 19:00:47,758 - INFO - Successfully processed account CoRf3R8WLGS8x9yeLchCDk7Nxnj9vEpj2AKfpHS64eC6.
+2023-12-25 19:00:47,762 - INFO - WebDriver closed for item 3199
+2023-12-25 19:00:47,764 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 19:00:47,769 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 19:00:47,773 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 19:00:47,776 - INFO - Starting from index 3199: It has the oldest 'time checked'.
+2023-12-25 19:00:47,776 - INFO - Processing item 94/100 with account: Cfd3qQVs7S8YQivaD5odPoQHwxGBNw6ohsZsyLFYDV5M (Global index: 3200/7999)
+2023-12-25 19:00:49,525 - INFO - https://solscan.io/token/Cfd3qQVs7S8YQivaD5odPoQHwxGBNw6ohsZsyLFYDV5M#holders
+2023-12-25 19:00:50,526 - INFO - https://solscan.io/token/Cfd3qQVs7S8YQivaD5odPoQHwxGBNw6ohsZsyLFYDV5M#txs
+2023-12-25 19:01:07,950 - INFO - Owner address found: 9kY74nM5Qky69We6yPnW9sLHqU5ZStrMj7bTuzyUJzNj
+2023-12-25 19:01:07,950 - INFO - Holder Address: 9kY74nM5Qky69We6yPnW9sLHqU5ZStrMj7bTuzyUJzNj
+2023-12-25 19:01:18,117 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 19:01:18,147 - INFO - Time successfully extracted: 08-27-2023 21:52:37
+2023-12-25 19:01:18,147 - INFO - Hold time extracted: 08-27-2023 21:52:37
+2023-12-25 19:01:18,147 - INFO - Closing the web driver...
+2023-12-25 19:01:18,194 - INFO - Web driver closed for time.
+2023-12-25 19:01:18,194 - INFO - Successfully processed account Cfd3qQVs7S8YQivaD5odPoQHwxGBNw6ohsZsyLFYDV5M.
+2023-12-25 19:01:18,197 - INFO - WebDriver closed for item 3200
+2023-12-25 19:01:18,198 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 19:01:18,204 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 19:01:18,208 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 19:01:18,210 - INFO - Starting from index 3200: It has the oldest 'time checked'.
+2023-12-25 19:01:18,211 - INFO - Processing item 95/100 with account: FNRLqVm3Q1ipZeuyHGmtNQP6pQZSvyswfynqfpgLMqiH (Global index: 3201/7999)
+2023-12-25 19:01:19,962 - INFO - https://solscan.io/token/FNRLqVm3Q1ipZeuyHGmtNQP6pQZSvyswfynqfpgLMqiH#holders
+2023-12-25 19:01:20,963 - INFO - https://solscan.io/token/FNRLqVm3Q1ipZeuyHGmtNQP6pQZSvyswfynqfpgLMqiH#txs
+2023-12-25 19:01:34,107 - INFO - Owner address found: 2vqrHDwdDxEQ6SwWErdxw2mkxPy4j4tHTy2uyxspY8uj
+2023-12-25 19:01:34,107 - INFO - Holder Address: 2vqrHDwdDxEQ6SwWErdxw2mkxPy4j4tHTy2uyxspY8uj
+2023-12-25 19:01:44,279 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 19:01:44,311 - INFO - Time successfully extracted: 08-27-2023 21:49:11
+2023-12-25 19:01:44,311 - INFO - Hold time extracted: 08-27-2023 21:49:11
+2023-12-25 19:01:44,311 - INFO - Closing the web driver...
+2023-12-25 19:01:44,358 - INFO - Web driver closed for time.
+2023-12-25 19:01:44,358 - INFO - Successfully processed account FNRLqVm3Q1ipZeuyHGmtNQP6pQZSvyswfynqfpgLMqiH.
+2023-12-25 19:01:44,361 - INFO - WebDriver closed for item 3201
+2023-12-25 19:01:44,362 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 19:01:44,368 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 19:01:44,372 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 19:01:44,375 - INFO - Starting from index 3201: It has the oldest 'time checked'.
+2023-12-25 19:01:44,375 - INFO - Processing item 96/100 with account: 4zHdKa3s5MERB488ZfUukDowbi4EXVvDDR29Vyd9oGNR (Global index: 3202/7999)
+2023-12-25 19:01:46,128 - INFO - https://solscan.io/token/4zHdKa3s5MERB488ZfUukDowbi4EXVvDDR29Vyd9oGNR#holders
+2023-12-25 19:01:47,129 - INFO - https://solscan.io/token/4zHdKa3s5MERB488ZfUukDowbi4EXVvDDR29Vyd9oGNR#txs
+2023-12-25 19:02:02,532 - INFO - Owner address found: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 19:02:02,532 - INFO - Holder Address: GxHbdbN36AG4XKqkpf4AsBF3WFa193wWHYGkfXHGZM28
+2023-12-25 19:02:12,703 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 19:02:12,734 - INFO - Time successfully extracted: 12-14-2023 05:07:09
+2023-12-25 19:02:12,734 - INFO - Hold time extracted: 12-14-2023 05:07:09
+2023-12-25 19:02:12,734 - INFO - Closing the web driver...
+2023-12-25 19:02:12,781 - INFO - Web driver closed for time.
+2023-12-25 19:02:12,781 - INFO - Successfully processed account 4zHdKa3s5MERB488ZfUukDowbi4EXVvDDR29Vyd9oGNR.
+2023-12-25 19:02:12,784 - INFO - WebDriver closed for item 3202
+2023-12-25 19:02:12,785 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 19:02:12,790 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 19:02:12,793 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 19:02:12,795 - INFO - Starting from index 3202: It has the oldest 'time checked'.
+2023-12-25 19:02:12,795 - INFO - Processing item 97/100 with account: DPFPBbhJVTmUdUY23hPKueQUfsCE9gXT6Zmn3xogKXEa (Global index: 3203/7999)
+2023-12-25 19:02:14,560 - INFO - https://solscan.io/token/DPFPBbhJVTmUdUY23hPKueQUfsCE9gXT6Zmn3xogKXEa#holders
+2023-12-25 19:02:15,561 - INFO - https://solscan.io/token/DPFPBbhJVTmUdUY23hPKueQUfsCE9gXT6Zmn3xogKXEa#txs
+2023-12-25 19:02:29,801 - INFO - Owner address found: HB5qVvrwX3VFzJFWt4eYFQ5S2YQ8mr9MtyN9QgXLz2Gz
+2023-12-25 19:02:29,801 - INFO - Holder Address: HB5qVvrwX3VFzJFWt4eYFQ5S2YQ8mr9MtyN9QgXLz2Gz
+2023-12-25 19:02:39,963 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 19:02:39,995 - INFO - Time successfully extracted: 08-27-2023 21:48:15
+2023-12-25 19:02:39,995 - INFO - Hold time extracted: 08-27-2023 21:48:15
+2023-12-25 19:02:39,995 - INFO - Closing the web driver...
+2023-12-25 19:02:40,034 - INFO - Web driver closed for time.
+2023-12-25 19:02:40,034 - INFO - Successfully processed account DPFPBbhJVTmUdUY23hPKueQUfsCE9gXT6Zmn3xogKXEa.
+2023-12-25 19:02:40,039 - INFO - WebDriver closed for item 3203
+2023-12-25 19:02:40,041 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 19:02:40,046 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 19:02:40,049 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 19:02:40,052 - INFO - Starting from index 3203: It has the oldest 'time checked'.
+2023-12-25 19:02:40,052 - INFO - Processing item 98/100 with account: FJ2xLd6EgJqGLjjRjPom2fbWgWgzHjFEb65dvi7ZsVLM (Global index: 3204/7999)
+2023-12-25 19:02:41,821 - INFO - https://solscan.io/token/FJ2xLd6EgJqGLjjRjPom2fbWgWgzHjFEb65dvi7ZsVLM#holders
+2023-12-25 19:02:42,823 - INFO - https://solscan.io/token/FJ2xLd6EgJqGLjjRjPom2fbWgWgzHjFEb65dvi7ZsVLM#txs
+2023-12-25 19:02:56,422 - INFO - Owner address found: HyKsjeGK6WyS71uvxaF7BJrwYXjoLXcpsT18Ae9EVejs
+2023-12-25 19:02:56,422 - INFO - Holder Address: HyKsjeGK6WyS71uvxaF7BJrwYXjoLXcpsT18Ae9EVejs
+2023-12-25 19:03:06,590 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 19:03:06,621 - INFO - Time successfully extracted: 08-27-2023 21:48:00
+2023-12-25 19:03:06,621 - INFO - Hold time extracted: 08-27-2023 21:48:00
+2023-12-25 19:03:06,621 - INFO - Closing the web driver...
+2023-12-25 19:03:06,660 - INFO - Web driver closed for time.
+2023-12-25 19:03:06,660 - INFO - Successfully processed account FJ2xLd6EgJqGLjjRjPom2fbWgWgzHjFEb65dvi7ZsVLM.
+2023-12-25 19:03:06,663 - INFO - WebDriver closed for item 3204
+2023-12-25 19:03:06,665 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 19:03:06,669 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 19:03:06,672 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 19:03:06,675 - INFO - Starting from index 3205: It has the oldest 'time checked'.
+2023-12-25 19:03:06,675 - INFO - Processing item 99/100 with account: 4jzN9SsEQ7ZfR7z4xaHgwAMYKskvKETVxCF2qU9Fdri4 (Global index: 3206/7999)
+2023-12-25 19:03:08,424 - INFO - https://solscan.io/token/4jzN9SsEQ7ZfR7z4xaHgwAMYKskvKETVxCF2qU9Fdri4#holders
+2023-12-25 19:03:09,426 - INFO - https://solscan.io/token/4jzN9SsEQ7ZfR7z4xaHgwAMYKskvKETVxCF2qU9Fdri4#txs
+2023-12-25 19:03:26,935 - INFO - Owner address found: 3sbbWrnhMedEtPgusSPLUdpJEGHYzNXeTJXTyknP6a2V
+2023-12-25 19:03:26,935 - INFO - Holder Address: 3sbbWrnhMedEtPgusSPLUdpJEGHYzNXeTJXTyknP6a2V
+2023-12-25 19:03:37,103 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 19:03:37,135 - INFO - Time successfully extracted: 09-21-2023 17:41:38
+2023-12-25 19:03:37,135 - INFO - Hold time extracted: 09-21-2023 17:41:38
+2023-12-25 19:03:37,136 - INFO - Closing the web driver...
+2023-12-25 19:03:37,174 - INFO - Web driver closed for time.
+2023-12-25 19:03:37,174 - INFO - Successfully processed account 4jzN9SsEQ7ZfR7z4xaHgwAMYKskvKETVxCF2qU9Fdri4.
+2023-12-25 19:03:37,177 - INFO - WebDriver closed for item 3206
+2023-12-25 19:03:37,178 - INFO - All items have 'holder data'. Moving to the next priority.
+2023-12-25 19:03:37,183 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2023-12-25 19:03:37,187 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2023-12-25 19:03:37,190 - INFO - Starting from index 3206: It has the oldest 'time checked'.
+2023-12-25 19:03:37,190 - INFO - Processing item 100/100 with account: 2ytfEaDiapjB63fikWXzSVvJhNvGv3o65ggY7pWk9yXS (Global index: 3207/7999)
+2023-12-25 19:03:38,961 - INFO - https://solscan.io/token/2ytfEaDiapjB63fikWXzSVvJhNvGv3o65ggY7pWk9yXS#holders
+2023-12-25 19:03:39,962 - INFO - https://solscan.io/token/2ytfEaDiapjB63fikWXzSVvJhNvGv3o65ggY7pWk9yXS#txs
+2023-12-25 19:03:53,765 - INFO - Owner address found: 8vTYduHMDqLDy95rfgnT15t1ATu6GQtWmQV1KYdpnYTG
+2023-12-25 19:03:53,765 - INFO - Holder Address: 8vTYduHMDqLDy95rfgnT15t1ATu6GQtWmQV1KYdpnYTG
+2023-12-25 19:04:03,930 - INFO - Successfully read HTML content from 'sentries/time.html'.
+2023-12-25 19:04:03,959 - INFO - Time successfully extracted: 08-27-2023 21:48:08
+2023-12-25 19:04:03,959 - INFO - Hold time extracted: 08-27-2023 21:48:08
+2023-12-25 19:04:03,959 - INFO - Closing the web driver...
+2023-12-25 19:04:03,998 - INFO - Web driver closed for time.
+2023-12-25 19:04:03,998 - INFO - Successfully processed account 2ytfEaDiapjB63fikWXzSVvJhNvGv3o65ggY7pWk9yXS.
+2023-12-25 19:04:04,001 - INFO - WebDriver closed for item 3207
+2023-12-25 19:04:05,390 - INFO - Progress saved after processing 100 items.
