@@ -1,0 +1,187 @@
+openapi: 3.1.0
+info:
+  title: ArcticFrenzAPI
+  description: Interact with the ArcticFrenz and ChickenTribe datasets hosted as static JSON files on GitHub, with pagination support.
+  version: 1.0.0
+servers:
+  - url: https://raw.githubusercontent.com
+paths:
+  /davidbeard741/arcticfrenz-data/main/arcticfrenz/by-NFT.json:
+    get:
+      description: Retrieve ArcticFrenz data by NFT from GitHub in batches.
+      operationId: getByNFTArcticFrenz
+      parameters:
+        - in: query
+          name: page
+          required: false
+          schema:
+            type: integer
+            default: 1
+          description: Page number of the batch.
+        - in: query
+          name: limit
+          required: false
+          schema:
+            type: integer
+            default: 25
+          description: Number of records per page.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    nftName:
+                      type: string
+                    nftAddress:
+                      type: string
+                    rarityScore:
+                      type: number
+                    holderData:
+                      type: object
+                      properties:
+                        holderAddress:
+                          type: string
+                        whenAcquired:
+                          type: integer
+                        timeChecked:
+                          type: integer
+
+  /davidbeard741/arcticfrenz-data/main/arcticfrenz/by-holder.json:
+    get:
+      description: Retrieve ArcticFrenz data by holder from GitHub in batches.
+      operationId: getByHolderArcticFrenz
+      parameters:
+        - in: query
+          name: page
+          required: false
+          schema:
+            type: integer
+            default: 1
+          description: Page number of the batch.
+        - in: query
+          name: limit
+          required: false
+          schema:
+            type: integer
+            default: 25
+          description: Number of records per page.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    holderAddress:
+                      type: string
+                    quantityNfts:
+                      type: integer
+                    holdingNfts:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          nftAddress:
+                            type: string
+                          rarityScore:
+                            type: number
+                          daysHeld:
+                            type: integer
+
+  /davidbeard741/arcticfrenz-data/main/chickentribe/by-holder.json:
+    get:
+      description: Retrieve ChickenTribe data by holder from GitHub in batches.
+      operationId: getByHolderChickenTribe
+      parameters:
+        - in: query
+          name: page
+          required: false
+          schema:
+            type: integer
+            default: 1
+          description: Page number of the batch.
+        - in: query
+          name: limit
+          required: false
+          schema:
+            type: integer
+            default: 25
+          description: Number of records per page.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    nftName:
+                      type: string
+                    nftAddress:
+                      type: string
+                    rarityScore:
+                      type: number
+                    holderData:
+                      type: object
+                      properties:
+                        holderAddress:
+                          type: string
+                        whenAcquired:
+                          type: integer
+                        timeChecked:
+                          type: integer
+
+  /davidbeard741/arcticfrenz-data/main/chickentribe/by-NFT.json:
+    get:
+      description: Retrieve ChickenTribe data by NFT from GitHub in batches.
+      operationId: getByNFTChickenTribe
+      parameters:
+        - in: query
+          name: page
+          required: false
+          schema:
+            type: integer
+            default: 1
+          description: Page number of the batch.
+        - in: query
+          name: limit
+          required: false
+          schema:
+            type: integer
+            default: 25
+          description: Number of records per page.
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    nftName:
+                      type: string
+                    nftAddress:
+                      type: string
+                    rarityScore:
+                      type: number
+                    holderData:
+                      type: object
+                      properties:
+                        holderAddress:
+                          type: string
+                        whenAcquired:
+                          type: integer
+                        timeChecked:
+                          type: integer
