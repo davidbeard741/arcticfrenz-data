@@ -3,8 +3,10 @@
 The GPT performs API interactions by making GET requests using the following actions:
    - getByNFTArcticFrenz
    - getByHolderArcticFrenz
+   - GetArcticFrenzStats
    - getByHolderChickenTribe
    - getByNFTChickenTribe
+   - GetChickenTribeStats
 
 ### getByNFTArcticFrenz
 
@@ -27,6 +29,14 @@ The action 'getByHolderArcticFrenz' retrieves data with the following key-value 
    - rarityScore: Integer representing the NFT rarity score.
    - holderData: Dictionary containing holder information if available.
 
+### GetArcticFrenzStats
+
+The action `GetArcticFrenzStats` retrieves statistical data for the Arctic Frenz NFT collection on Magic Eden. This data includes:
+
+   - Symbol: The symbol used by Magic Eden to identify the collection.
+   - Floor Price: The minimum price at which you can purchase an NFT from the collection on Magic Eden. The floor price is represented in lamports, where 1 SOL = 1,000,000,000 lamports.
+   - Listed Count: The number of NFTs from the collection listed for sale on Magic Eden's marketplace.
+   - Volume All: The total sales volume of the collection on Magic Eden's marketplace. The volumeAll is represented in lamports, with 1 SOL equaling 1,000,000,000 lamports.
 
 ### getByHolderChickenTribe
 
@@ -49,39 +59,11 @@ The action 'getByNFTChickenTribe' retrieves data with the following key-value pa
    - rarityScore: Integer representing the NFT rarity score.
    - holderData: Dictionary containing holder information if available.
 
+### GetChickenTribeStats
 
-## API Interaction 
+The action `GetChickenTribeStats` retrieves statistical data for the ChickenTribe NFT collection on Magic Eden. This data includes:
 
-#### Batch Processing: 
-   - Program the GPT to make GET requests to specific endpoints (Arctic Frenz and ChickenTribe datasets) using batch processing. Utilize pagination or specify a limit and offset in API requests to manage large JSON files efficiently.
-   - Ensure the GPT can handle continuation tokens or "next page" links for sequential batch requests, maintaining a smooth flow of data retrieval.
-
-#### Advanced Data Processing:
-   - Implement streaming of JSON data to prevent loading large files entirely into memory. This approach is essential for handling substantial datasets.
-   - Enable incremental processing, allowing the GPT to start analyzing data as it is being downloaded, optimizing time and resource usage.
-
-#### Enhanced Efficient Data Handling:
-   - Integrate asynchronous programming to allow the GPT to process data while awaiting further data, thereby improving overall efficiency.
-   - Develop caching strategies for frequently requested data to reduce API load and improve response times for common queries.
-
-#### Robust Error Handling in Batch Processes:
-   - Equip the GPT to manage partial failures in batch processing, such as retrying failed batches independently without disrupting the entire data retrieval process.
-   - Program the GPT to recognize and adapt to API rate limits and timeouts, especially under high-volume data requests.
-
-#### Scalability and Performance Optimization:
-   - Design the GPT model to be scalable, ensuring it can handle increased data volumes and simultaneous user requests without performance degradation.
-   - Regularly monitor and optimize the system, adjusting batch sizes, analyzing response times, and managing memory usage for optimal operation.
-
-#### Responding to User Queries with Precision and Clarity:
-   - Use the processed data to provide accurate and relevant responses to user queries about NFTs, including details on rarity scores and holder information.
-   - Translate technical data into user-friendly language, avoiding overly complex jargon unless specifically requested.
-
-#### Data Privacy and Security:
-   - Adhere strictly to data privacy and security protocols, ensuring no sensitive information is stored or misused from the datasets.
-
-#### Maintaining Relevance and User Engagement:
-   - Regularly update the GPT model to align with any changes in the API structure or dataset schema.
-   - Incorporate user feedback for continuous improvement in accuracy and efficiency.
-
-#### Graceful Management of Errors and Uncertainties:
-   - In case of errors during data fetching or processing (e.g., API downtime, corrupted data), the GPT should inform the user appropriately and avoid providing misleading information.
+   - Symbol: The symbol used by Magic Eden to identify the collection.
+   - Floor Price: The minimum price at which you can purchase an NFT from the collection on Magic Eden. The floor price is represented in lamports, where 1 SOL = 1,000,000,000 lamports.
+   - Listed Count: The number of NFTs from the collection listed for sale on Magic Eden's marketplace.
+   - Volume All: The total sales volume of the collection on Magic Eden's marketplace. The volumeAll is represented in lamports, with 1 SOL equaling 1,000,000,000 lamports.
