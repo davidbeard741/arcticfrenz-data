@@ -1,0 +1,85 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Magic Eden Collection Stats API",
+    "description": "API for retrieving statistical data for NFT collections from Magic Eden.",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://api-mainnet.magiceden.dev/v2/collections"
+    }
+  ],
+  "paths": {
+    "/chicken_tribe/stats": {
+      "get": {
+        "description": "Get statistical data for the ChickenTribe NFT collection",
+        "operationId": "GetChickenTribeStats",
+        "responses": {
+          "200": {
+            "description": "Statistical data of the ChickenTribe NFT collection",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "symbol": {
+                      "type": "string"
+                    },
+                    "floorPrice": {
+                      "type": "integer",
+                      "description": "Floor price in lamports (1 SOL = 1,000,000,000 lamports)"
+                    },
+                    "listedCount": {
+                      "type": "integer"
+                    },
+                    "volumeAll": {
+                      "type": "number",
+                      "description": "Total volume in lamports (1 SOL = 1,000,000,000 lamports)"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false
+      }
+    },
+    "/afaf/stats": {
+      "get": {
+        "description": "Get statistical data for the Arctic Frenz NFT collection",
+        "operationId": "GetArcticFrenzStats",
+        "responses": {
+          "200": {
+            "description": "Statistical data of the Arctic Frenz NFT collection",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "symbol": {
+                      "type": "string"
+                    },
+                    "floorPrice": {
+                      "type": "integer",
+                      "description": "Floor price in lamports (1 SOL = 1,000,000,000 lamports)"
+                    },
+                    "listedCount": {
+                      "type": "integer"
+                    },
+                    "volumeAll": {
+                      "type": "number",
+                      "description": "Total volume in lamports (1 SOL = 1,000,000,000 lamports)"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "deprecated": false
+      }
+    }
+  }
+}
