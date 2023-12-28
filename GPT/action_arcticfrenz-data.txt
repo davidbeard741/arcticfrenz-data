@@ -1,7 +1,8 @@
 openapi: 3.1.0
 info:
   title: ArcticFrenzAPI
-  description: Interact with the ArcticFrenz and ChickenTribe datasets hosted as static JSON files on GitHub, with pagination support.
+  description: Interact with the ArcticFrenz and ChickenTribe datasets hosted as static JSON files on GitHub, with
+    pagination support.
   version: 1.0.0
 servers:
   - url: https://raw.githubusercontent.com
@@ -26,7 +27,7 @@ paths:
             default: 25
           description: Number of records per page.
       responses:
-        '200':
+        "200":
           description: Success
           content:
             application/json:
@@ -50,7 +51,6 @@ paths:
                           type: integer
                         timeChecked:
                           type: integer
-
   /davidbeard741/arcticfrenz-data/main/arcticfrenz/by-holder.json:
     get:
       description: Retrieve ArcticFrenz data by holder from GitHub in batches.
@@ -71,7 +71,7 @@ paths:
             default: 25
           description: Number of records per page.
       responses:
-        '200':
+        "200":
           description: Success
           content:
             application/json:
@@ -95,7 +95,6 @@ paths:
                             type: number
                           daysHeld:
                             type: integer
-
   /davidbeard741/arcticfrenz-data/main/chickentribe/by-holder.json:
     get:
       description: Retrieve ChickenTribe data by holder from GitHub in batches.
@@ -116,7 +115,7 @@ paths:
             default: 25
           description: Number of records per page.
       responses:
-        '200':
+        "200":
           description: Success
           content:
             application/json:
@@ -140,7 +139,6 @@ paths:
                           type: integer
                         timeChecked:
                           type: integer
-
   /davidbeard741/arcticfrenz-data/main/chickentribe/by-NFT.json:
     get:
       description: Retrieve ChickenTribe data by NFT from GitHub in batches.
@@ -161,7 +159,7 @@ paths:
             default: 25
           description: Number of records per page.
       responses:
-        '200':
+        "200":
           description: Success
           content:
             application/json:
