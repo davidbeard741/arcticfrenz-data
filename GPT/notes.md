@@ -1,6 +1,4 @@
-# General Guideline
-
-stay under 500 KB (kilobytes)
+# General Guideline: stay under 500 KB (kilobytes)
 
 ### `arcticfrenz/ranked-holders.json`
 
