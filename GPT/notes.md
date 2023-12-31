@@ -6,3 +6,7 @@
 ## `chickentribe/ranked-holders.json`
 
 ❌ 28113 lines (28113 loc) · 859 KB
+
+## General Guideline
+
+stay under 500 KB (kilobytes)
