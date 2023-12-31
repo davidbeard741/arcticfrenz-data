@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: NFT Holder Data API
-  description: API for retrieving NFT holder data from two distinct collections.
+  description: API for retrieving NFT holder data from distinct collections.
   version: 1.0.0
 servers:
   - url: https://raw.githubusercontent.com
@@ -43,11 +43,11 @@ paths:
   /davidbeard741/arcticfrenz-data/main/chickentribe/ranked-holders.json:
     get:
       operationId: getChickenTribeData
-      summary: Retrieve Chicken Tribe NFT collection holder data.
-      description: Returns data for NFT holders in the Chicken Tribe collection, similar in structure to the Arctic Frenz data.
+      summary: Retrieve ChickenTribe NFT collection holder data.
+      description: Returns data for NFT holders in the ChickenTribe collection.
       responses:
         "200":
-          description: A JSON object containing Chicken Tribe NFT holder data
+          description: A JSON object containing ChickenTribe NFT holder data
           content:
             application/json:
               schema:
