@@ -1,69 +1,18 @@
-## What the GPT Does:
+The GPT performs API actions by executing GET requests, which are divided into two primary types:
 
-The GPT performs API interactions by making GET requests using the following actions:
-   - getByNFTArcticFrenz
-   - getByHolderArcticFrenz
-   - GetArcticFrenzStats
-   - getByHolderChickenTribe
-   - getByNFTChickenTribe
-   - GetChickenTribeStats
+1. **Owner Data in an NFT Collection**: The JSON file in this action contains data about owners within an NFT collection. Each record represents a distinct owner and includes:
 
-### getByNFTArcticFrenz
+   - **Holder Address**: The Solana public or wallet address of the NFT owner.
+   - **Quantity of NFTs**: The total number of NFTs owned.
+   - **Holding NFTs**: An inventory of the owned NFTs, where each NFT is described by:
+     - **NFT Address**: The Solana address for the specific NFT.
+     - **Rarity Score**: A numerical value indicating the rarity of the NFT, with higher scores denoting greater rarity.
+     - **Days Held**: The length of time, in days, the NFT has been owned.
+   - **Holder Score**: A numerical value indicating the owner's rank within the collection, where a higher score suggests a more prestigious ranking.
 
-The action 'getByNFTArcticFrenz' retrieves data with the following key-value pairs: 
-    - onChainMetadata: Dictionary containing on-chain metadata.
-        - metadata: Dictionary containing NFT metadata.
-            - data: Dictionary with various NFT details, including name.
-    - account: String representing the NFT address.
-    - rarity_score: Integer representing the NFT rarity score.
-    - holder data: List containing holder information if available.
-        - holder: String representing the holder address.
-        - when acquired: Unix timestamp indicating acquisition time.
-        - time checked: Unix timestamp indicating the last check for holder information.
+2. **Data on a Specific Collection Featured on Magic Eden**: The second type of action involves a JSON file with detailed data about a specific collection on the Magic Eden NFT marketplace, including:
 
-### getByHolderArcticFrenz
-
-The action 'getByHolderArcticFrenz' retrieves data with the following key-value pairs: 
-   - nftName: String representing the base name of the NFT.
-   - nftAddress: String representing the NFT address.
-   - rarityScore: Integer representing the NFT rarity score.
-   - holderData: Dictionary containing holder information if available.
-
-### GetArcticFrenzStats
-
-The action `GetArcticFrenzStats` retrieves statistical data for the Arctic Frenz NFT collection on Magic Eden. This data includes:
-
-   - Symbol: The symbol used by Magic Eden to identify the collection.
-   - Floor Price: The minimum price at which you can purchase an NFT from the collection on Magic Eden. The floor price is represented in lamports, where 1 SOL = 1,000,000,000 lamports.
-   - Listed Count: The number of NFTs from the collection listed for sale on Magic Eden's marketplace.
-   - Volume All: The total sales volume of the collection on Magic Eden's marketplace. The volumeAll is represented in lamports, with 1 SOL equaling 1,000,000,000 lamports.
-
-### getByHolderChickenTribe
-
-The action 'getByHolderChickenTribe' retrieves data with the following key-value pairs: 
-    - onChainMetadata: Dictionary containing on-chain metadata.
-        - metadata: Dictionary containing NFT metadata.
-            - data: Dictionary with various NFT details, including name.
-    - account: String representing the NFT address.
-    - rarity_score: Integer representing the NFT rarity score.
-    - holder data: List containing holder information if available.
-        - holder: String representing the holder address.
-        - when acquired: Unix timestamp indicating acquisition time.
-        - time checked: Unix timestamp indicating the last check for holder information.
-
-### getByNFTChickenTribe
-
-The action 'getByNFTChickenTribe' retrieves data with the following key-value pairs: 
-   - nftName: String representing the base name of the NFT.
-   - nftAddress: String representing the NFT address.
-   - rarityScore: Integer representing the NFT rarity score.
-   - holderData: Dictionary containing holder information if available.
-
-### GetChickenTribeStats
-
-The action `GetChickenTribeStats` retrieves statistical data for the ChickenTribe NFT collection on Magic Eden. This data includes:
-
-   - Symbol: The symbol used by Magic Eden to identify the collection.
-   - Floor Price: The minimum price at which you can purchase an NFT from the collection on Magic Eden. The floor price is represented in lamports, where 1 SOL = 1,000,000,000 lamports.
-   - Listed Count: The number of NFTs from the collection listed for sale on Magic Eden's marketplace.
-   - Volume All: The total sales volume of the collection on Magic Eden's marketplace. The volumeAll is represented in lamports, with 1 SOL equaling 1,000,000,000 lamports.
+   - **Symbol**: The symbol Magic Eden uses to identify the collection.
+   - **Floor Price**: The minimum price for purchasing an NFT from the collection on Magic Eden, expressed in lamports (1 SOL = 1,000,000,000 lamports).
+   - **Listed Count**: The number of NFTs from the collection that are listed for sale on Magic Eden.
+   - **Volume All**: The total sales volume of the collection on Magic Eden, represented in lamports (1 SOL = 1,000,000,000 lamports).
