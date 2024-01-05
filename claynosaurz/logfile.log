@@ -11169,3 +11169,1603 @@
 2024-01-05 00:13:10,507 - INFO - Successfully processed account GYVwKeR7DQswxnNh2VPaKRpKKaF3FsPSdvDNLDvXo6eJ.
 2024-01-05 00:13:10,510 - INFO - WebDriver closed for item 2831
 2024-01-05 00:13:11,612 - INFO - Progress saved after processing 100 items.
+2024-01-05 01:42:38,363 - INFO - Starting new run. Appending to the existing logfile.
+2024-01-05 01:42:38,614 - INFO - Continuing from previously saved progress.
+2024-01-05 01:42:38,615 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:42:38,617 - INFO - Starting from index 2830: Found invalid 'holder' value.
+2024-01-05 01:42:38,617 - INFO - Processing item 1/100 with account: GYVwKeR7DQswxnNh2VPaKRpKKaF3FsPSdvDNLDvXo6eJ (Global index: 2831/10000)
+2024-01-05 01:42:41,301 - INFO - https://solscan.io/token/GYVwKeR7DQswxnNh2VPaKRpKKaF3FsPSdvDNLDvXo6eJ#holders
+2024-01-05 01:42:42,302 - INFO - https://solscan.io/token/GYVwKeR7DQswxnNh2VPaKRpKKaF3FsPSdvDNLDvXo6eJ#txs
+2024-01-05 01:42:58,023 - INFO - Owner address not found in the table.
+2024-01-05 01:42:58,023 - INFO - Holder Address: Address not found
+2024-01-05 01:43:08,176 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:43:08,204 - INFO - Time cell not found in the specified row and column.
+2024-01-05 01:43:08,204 - INFO - Hold time extracted: Time cell not found
+2024-01-05 01:43:08,204 - INFO - Closing the web driver...
+2024-01-05 01:43:08,231 - INFO - Web driver closed for time.
+2024-01-05 01:43:08,232 - ERROR - Error processing GYVwKeR7DQswxnNh2VPaKRpKKaF3FsPSdvDNLDvXo6eJ: time data 'Time cell not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 01:43:08,236 - INFO - WebDriver closed for item 2831
+2024-01-05 01:43:08,237 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:43:08,243 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:43:08,247 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:43:08,250 - INFO - Starting from index 2951: It has the oldest 'time checked'.
+2024-01-05 01:43:08,250 - INFO - Processing item 2/100 with account: 6eHWp5jjCWNPkkDjQ4DeL6m7bNKiXZkw8ZoRie4ajXkk (Global index: 2952/10000)
+2024-01-05 01:43:10,025 - INFO - https://solscan.io/token/6eHWp5jjCWNPkkDjQ4DeL6m7bNKiXZkw8ZoRie4ajXkk#holders
+2024-01-05 01:43:11,027 - INFO - https://solscan.io/token/6eHWp5jjCWNPkkDjQ4DeL6m7bNKiXZkw8ZoRie4ajXkk#txs
+2024-01-05 01:43:27,686 - INFO - Owner address found: 78dzSjrh7vm5pgLD4EpuwRR3We5RaACQFVkuTjuSibMD
+2024-01-05 01:43:27,686 - INFO - Holder Address: 78dzSjrh7vm5pgLD4EpuwRR3We5RaACQFVkuTjuSibMD
+2024-01-05 01:43:37,865 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:43:37,895 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-01-05 01:43:37,895 - INFO - Hold time extracted: Table not found
+2024-01-05 01:43:37,895 - INFO - Closing the web driver...
+2024-01-05 01:43:37,941 - INFO - Web driver closed for time.
+2024-01-05 01:43:37,941 - ERROR - Error processing 6eHWp5jjCWNPkkDjQ4DeL6m7bNKiXZkw8ZoRie4ajXkk: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 01:43:37,946 - INFO - WebDriver closed for item 2952
+2024-01-05 01:43:37,948 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:43:37,955 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:43:37,958 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:43:37,961 - INFO - Starting from index 2986: It has the oldest 'time checked'.
+2024-01-05 01:43:37,961 - INFO - Processing item 3/100 with account: CmhsKWXquSCG57rDX1gGCbX921tFWuuUXW8q8ycGJq3R (Global index: 2987/10000)
+2024-01-05 01:43:39,744 - INFO - https://solscan.io/token/CmhsKWXquSCG57rDX1gGCbX921tFWuuUXW8q8ycGJq3R#holders
+2024-01-05 01:43:40,745 - INFO - https://solscan.io/token/CmhsKWXquSCG57rDX1gGCbX921tFWuuUXW8q8ycGJq3R#txs
+2024-01-05 01:43:57,500 - INFO - Owner address found: EV3uKB4BsdTjrFAhPcFYUyKZrCSBjYBABxas1QCFC299
+2024-01-05 01:43:57,500 - INFO - Holder Address: EV3uKB4BsdTjrFAhPcFYUyKZrCSBjYBABxas1QCFC299
+2024-01-05 01:44:07,662 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:44:07,699 - INFO - Time successfully extracted: 01-01-2024 21:04:28
+2024-01-05 01:44:07,699 - INFO - Hold time extracted: 01-01-2024 21:04:28
+2024-01-05 01:44:07,699 - INFO - Closing the web driver...
+2024-01-05 01:44:07,746 - INFO - Web driver closed for time.
+2024-01-05 01:44:07,746 - INFO - Successfully processed account CmhsKWXquSCG57rDX1gGCbX921tFWuuUXW8q8ycGJq3R.
+2024-01-05 01:44:07,749 - INFO - WebDriver closed for item 2987
+2024-01-05 01:44:07,751 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:44:07,757 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:44:07,760 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:44:07,763 - INFO - Starting from index 2987: It has the oldest 'time checked'.
+2024-01-05 01:44:07,763 - INFO - Processing item 4/100 with account: 7E6uFyCXDYjwEzuETsVd5y9LiBTPh19rQFwjE4wQcG3i (Global index: 2988/10000)
+2024-01-05 01:44:09,550 - INFO - https://solscan.io/token/7E6uFyCXDYjwEzuETsVd5y9LiBTPh19rQFwjE4wQcG3i#holders
+2024-01-05 01:44:10,551 - INFO - https://solscan.io/token/7E6uFyCXDYjwEzuETsVd5y9LiBTPh19rQFwjE4wQcG3i#txs
+2024-01-05 01:44:24,079 - INFO - Owner address not found in the table.
+2024-01-05 01:44:24,079 - INFO - Holder Address: Address not found
+2024-01-05 01:44:34,257 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:44:34,293 - INFO - Time successfully extracted: 01-05-2024 01:33:26
+2024-01-05 01:44:34,293 - INFO - Hold time extracted: 01-05-2024 01:33:26
+2024-01-05 01:44:34,293 - INFO - Closing the web driver...
+2024-01-05 01:44:34,333 - INFO - Web driver closed for time.
+2024-01-05 01:44:34,333 - INFO - Successfully processed account 7E6uFyCXDYjwEzuETsVd5y9LiBTPh19rQFwjE4wQcG3i.
+2024-01-05 01:44:34,336 - INFO - WebDriver closed for item 2988
+2024-01-05 01:44:34,337 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:44:34,344 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:44:34,348 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:44:34,350 - INFO - Starting from index 2988: It has the oldest 'time checked'.
+2024-01-05 01:44:34,350 - INFO - Processing item 5/100 with account: BBy95AiB7PAjfF4MbiQeW2XwMPWMbXNkS2Qs2bwj5hnm (Global index: 2989/10000)
+2024-01-05 01:44:36,121 - INFO - https://solscan.io/token/BBy95AiB7PAjfF4MbiQeW2XwMPWMbXNkS2Qs2bwj5hnm#holders
+2024-01-05 01:44:37,123 - INFO - https://solscan.io/token/BBy95AiB7PAjfF4MbiQeW2XwMPWMbXNkS2Qs2bwj5hnm#txs
+2024-01-05 01:44:55,147 - INFO - Owner address found: 3S5zioyJ9s3RFSvKtio2UvsvLaSbyySqPP8rQ1iBHim1
+2024-01-05 01:44:55,147 - INFO - Holder Address: 3S5zioyJ9s3RFSvKtio2UvsvLaSbyySqPP8rQ1iBHim1
+2024-01-05 01:45:05,292 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:45:05,313 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-01-05 01:45:05,313 - INFO - Hold time extracted: Table not found
+2024-01-05 01:45:05,313 - INFO - Closing the web driver...
+2024-01-05 01:45:05,359 - INFO - Web driver closed for time.
+2024-01-05 01:45:05,360 - ERROR - Error processing BBy95AiB7PAjfF4MbiQeW2XwMPWMbXNkS2Qs2bwj5hnm: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 01:45:05,362 - INFO - WebDriver closed for item 2989
+2024-01-05 01:45:05,364 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:45:05,370 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:45:05,374 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:45:05,376 - INFO - Starting from index 2989: It has the oldest 'time checked'.
+2024-01-05 01:45:05,377 - INFO - Processing item 6/100 with account: CFDnUCNh27Ww1TLnLqaWU4Wria8Dba2649rskkftEpJX (Global index: 2990/10000)
+2024-01-05 01:45:07,150 - INFO - https://solscan.io/token/CFDnUCNh27Ww1TLnLqaWU4Wria8Dba2649rskkftEpJX#holders
+2024-01-05 01:45:08,151 - INFO - https://solscan.io/token/CFDnUCNh27Ww1TLnLqaWU4Wria8Dba2649rskkftEpJX#txs
+2024-01-05 01:45:23,271 - INFO - Holder Address: None
+2024-01-05 01:45:33,355 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:45:33,362 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-01-05 01:45:33,362 - INFO - Hold time extracted: Table not found
+2024-01-05 01:45:33,362 - INFO - Closing the web driver...
+2024-01-05 01:45:33,408 - INFO - Web driver closed for time.
+2024-01-05 01:45:33,408 - ERROR - Error processing CFDnUCNh27Ww1TLnLqaWU4Wria8Dba2649rskkftEpJX: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 01:45:33,411 - INFO - WebDriver closed for item 2990
+2024-01-05 01:45:33,413 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:45:33,419 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:45:33,422 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:45:33,425 - INFO - Starting from index 2990: It has the oldest 'time checked'.
+2024-01-05 01:45:33,425 - INFO - Processing item 7/100 with account: 5REJMCgYWkRBaUSbYpqQczsFwVib3cGyCGXWhqKFXVxF (Global index: 2991/10000)
+2024-01-05 01:45:35,195 - INFO - https://solscan.io/token/5REJMCgYWkRBaUSbYpqQczsFwVib3cGyCGXWhqKFXVxF#holders
+2024-01-05 01:45:36,196 - INFO - https://solscan.io/token/5REJMCgYWkRBaUSbYpqQczsFwVib3cGyCGXWhqKFXVxF#txs
+2024-01-05 01:45:49,040 - INFO - Owner address found: BvXbmaT51d4JkwxN9C34RrZiJAEuRJKtcj3YMJpxf57P
+2024-01-05 01:45:49,040 - INFO - Holder Address: BvXbmaT51d4JkwxN9C34RrZiJAEuRJKtcj3YMJpxf57P
+2024-01-05 01:45:59,220 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:45:59,311 - INFO - Time successfully extracted: 01-05-2024 01:26:52
+2024-01-05 01:45:59,311 - INFO - Hold time extracted: 01-05-2024 01:26:52
+2024-01-05 01:45:59,311 - INFO - Closing the web driver...
+2024-01-05 01:45:59,358 - INFO - Web driver closed for time.
+2024-01-05 01:45:59,358 - INFO - Successfully processed account 5REJMCgYWkRBaUSbYpqQczsFwVib3cGyCGXWhqKFXVxF.
+2024-01-05 01:45:59,361 - INFO - WebDriver closed for item 2991
+2024-01-05 01:45:59,362 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:45:59,369 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:45:59,372 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:45:59,375 - INFO - Starting from index 2991: It has the oldest 'time checked'.
+2024-01-05 01:45:59,376 - INFO - Processing item 8/100 with account: JB32THjwbNwMv7n2Tph5NPEyaybrMRQEg3K6ZzPaeewg (Global index: 2992/10000)
+2024-01-05 01:46:01,153 - INFO - https://solscan.io/token/JB32THjwbNwMv7n2Tph5NPEyaybrMRQEg3K6ZzPaeewg#holders
+2024-01-05 01:46:02,154 - INFO - https://solscan.io/token/JB32THjwbNwMv7n2Tph5NPEyaybrMRQEg3K6ZzPaeewg#txs
+2024-01-05 01:46:17,821 - INFO - Owner address not found in the table.
+2024-01-05 01:46:17,821 - INFO - Holder Address: Address not found
+2024-01-05 01:46:27,978 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:46:28,004 - INFO - Time cell not found in the specified row and column.
+2024-01-05 01:46:28,004 - INFO - Hold time extracted: Time cell not found
+2024-01-05 01:46:28,004 - INFO - Closing the web driver...
+2024-01-05 01:46:28,051 - INFO - Web driver closed for time.
+2024-01-05 01:46:28,051 - ERROR - Error processing JB32THjwbNwMv7n2Tph5NPEyaybrMRQEg3K6ZzPaeewg: time data 'Time cell not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 01:46:28,054 - INFO - WebDriver closed for item 2992
+2024-01-05 01:46:28,055 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:46:28,061 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:46:28,065 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:46:28,068 - INFO - Starting from index 2992: It has the oldest 'time checked'.
+2024-01-05 01:46:28,068 - INFO - Processing item 9/100 with account: E5kQVkq3F9hw8h7ywqC43tc3u67pmXa1G6mZytAhBMxq (Global index: 2993/10000)
+2024-01-05 01:46:29,840 - INFO - https://solscan.io/token/E5kQVkq3F9hw8h7ywqC43tc3u67pmXa1G6mZytAhBMxq#holders
+2024-01-05 01:46:30,841 - INFO - https://solscan.io/token/E5kQVkq3F9hw8h7ywqC43tc3u67pmXa1G6mZytAhBMxq#txs
+2024-01-05 01:46:48,424 - INFO - Owner address found: FwvCDvtPQzkJwmmQyAKGG4qLifWWJZyHEn5zNzth4gED
+2024-01-05 01:46:48,424 - INFO - Holder Address: FwvCDvtPQzkJwmmQyAKGG4qLifWWJZyHEn5zNzth4gED
+2024-01-05 01:46:58,607 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:46:58,642 - INFO - Time successfully extracted: 01-05-2024 00:56:37
+2024-01-05 01:46:58,642 - INFO - Hold time extracted: 01-05-2024 00:56:37
+2024-01-05 01:46:58,642 - INFO - Closing the web driver...
+2024-01-05 01:46:58,689 - INFO - Web driver closed for time.
+2024-01-05 01:46:58,689 - INFO - Successfully processed account E5kQVkq3F9hw8h7ywqC43tc3u67pmXa1G6mZytAhBMxq.
+2024-01-05 01:46:58,692 - INFO - WebDriver closed for item 2993
+2024-01-05 01:46:58,693 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:46:58,699 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:46:58,703 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:46:58,706 - INFO - Starting from index 2993: It has the oldest 'time checked'.
+2024-01-05 01:46:58,706 - INFO - Processing item 10/100 with account: 7hbNBXKC7KeNniffLDRb3hc1PNdxufQBfYb3uEtoFMhR (Global index: 2994/10000)
+2024-01-05 01:47:00,490 - INFO - https://solscan.io/token/7hbNBXKC7KeNniffLDRb3hc1PNdxufQBfYb3uEtoFMhR#holders
+2024-01-05 01:47:01,491 - INFO - https://solscan.io/token/7hbNBXKC7KeNniffLDRb3hc1PNdxufQBfYb3uEtoFMhR#txs
+2024-01-05 01:47:18,946 - INFO - Owner address found: DMoRTxwBCNCDX2XYByLKA8kQUszWcaj7fEcmVxZq8wiY
+2024-01-05 01:47:18,946 - INFO - Holder Address: DMoRTxwBCNCDX2XYByLKA8kQUszWcaj7fEcmVxZq8wiY
+2024-01-05 01:47:29,093 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:47:29,124 - INFO - Time successfully extracted: 01-05-2024 00:50:13
+2024-01-05 01:47:29,124 - INFO - Hold time extracted: 01-05-2024 00:50:13
+2024-01-05 01:47:29,124 - INFO - Closing the web driver...
+2024-01-05 01:47:29,171 - INFO - Web driver closed for time.
+2024-01-05 01:47:29,171 - INFO - Successfully processed account 7hbNBXKC7KeNniffLDRb3hc1PNdxufQBfYb3uEtoFMhR.
+2024-01-05 01:47:29,174 - INFO - WebDriver closed for item 2994
+2024-01-05 01:47:29,175 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:47:29,182 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:47:29,185 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:47:29,188 - INFO - Starting from index 2994: It has the oldest 'time checked'.
+2024-01-05 01:47:29,188 - INFO - Processing item 11/100 with account: JdM6Kihxdm779zjiKTKPSqrf9Gh5X7HYzLRWJiwp2sA (Global index: 2995/10000)
+2024-01-05 01:47:30,963 - INFO - https://solscan.io/token/JdM6Kihxdm779zjiKTKPSqrf9Gh5X7HYzLRWJiwp2sA#holders
+2024-01-05 01:47:31,964 - INFO - https://solscan.io/token/JdM6Kihxdm779zjiKTKPSqrf9Gh5X7HYzLRWJiwp2sA#txs
+2024-01-05 01:47:45,168 - INFO - Owner address found: 7ASYLd7PX2WCMZWWJ688t68sHjdjtzPcG2cdzSHryL42
+2024-01-05 01:47:45,168 - INFO - Holder Address: 7ASYLd7PX2WCMZWWJ688t68sHjdjtzPcG2cdzSHryL42
+2024-01-05 01:47:55,324 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:47:55,345 - INFO - Time cell not found in the specified row and column.
+2024-01-05 01:47:55,345 - INFO - Hold time extracted: Time cell not found
+2024-01-05 01:47:55,345 - INFO - Closing the web driver...
+2024-01-05 01:47:55,392 - INFO - Web driver closed for time.
+2024-01-05 01:47:55,392 - ERROR - Error processing JdM6Kihxdm779zjiKTKPSqrf9Gh5X7HYzLRWJiwp2sA: time data 'Time cell not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 01:47:55,395 - INFO - WebDriver closed for item 2995
+2024-01-05 01:47:55,396 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:47:55,403 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:47:55,406 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:47:55,409 - INFO - Starting from index 2995: It has the oldest 'time checked'.
+2024-01-05 01:47:55,409 - INFO - Processing item 12/100 with account: 84N1aZv581QBQzxw6u7eYemx2v8ViJGdaJapjeKiU2cL (Global index: 2996/10000)
+2024-01-05 01:47:57,181 - INFO - https://solscan.io/token/84N1aZv581QBQzxw6u7eYemx2v8ViJGdaJapjeKiU2cL#holders
+2024-01-05 01:47:58,182 - INFO - https://solscan.io/token/84N1aZv581QBQzxw6u7eYemx2v8ViJGdaJapjeKiU2cL#txs
+2024-01-05 01:48:13,891 - INFO - Owner address found: BmFUGjWXwM1qbXfm8RDaqYDVkb6aDJmHbpXAvhRQav9Z
+2024-01-05 01:48:13,891 - INFO - Holder Address: BmFUGjWXwM1qbXfm8RDaqYDVkb6aDJmHbpXAvhRQav9Z
+2024-01-05 01:48:24,070 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:48:24,098 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-01-05 01:48:24,098 - INFO - Hold time extracted: Table not found
+2024-01-05 01:48:24,098 - INFO - Closing the web driver...
+2024-01-05 01:48:24,123 - INFO - Web driver closed for time.
+2024-01-05 01:48:24,123 - ERROR - Error processing 84N1aZv581QBQzxw6u7eYemx2v8ViJGdaJapjeKiU2cL: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 01:48:24,127 - INFO - WebDriver closed for item 2996
+2024-01-05 01:48:24,129 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:48:24,135 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:48:24,139 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:48:24,141 - INFO - Starting from index 2996: It has the oldest 'time checked'.
+2024-01-05 01:48:24,141 - INFO - Processing item 13/100 with account: GXSsR1F7TM7whnz8sY7xtqPzbbxqPjr2WK2dfnPDCGw7 (Global index: 2997/10000)
+2024-01-05 01:48:25,914 - INFO - https://solscan.io/token/GXSsR1F7TM7whnz8sY7xtqPzbbxqPjr2WK2dfnPDCGw7#holders
+2024-01-05 01:48:26,915 - INFO - https://solscan.io/token/GXSsR1F7TM7whnz8sY7xtqPzbbxqPjr2WK2dfnPDCGw7#txs
+2024-01-05 01:48:40,279 - INFO - Owner address found: FozjcJpukvqPgDVPZXHpjdPqevSPZFFiYnFUY9Tcnvaf
+2024-01-05 01:48:40,280 - INFO - Holder Address: FozjcJpukvqPgDVPZXHpjdPqevSPZFFiYnFUY9Tcnvaf
+2024-01-05 01:48:50,472 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:48:50,509 - INFO - Time successfully extracted: 01-05-2024 01:14:34
+2024-01-05 01:48:50,509 - INFO - Hold time extracted: 01-05-2024 01:14:34
+2024-01-05 01:48:50,509 - INFO - Closing the web driver...
+2024-01-05 01:48:50,547 - INFO - Web driver closed for time.
+2024-01-05 01:48:50,548 - INFO - Successfully processed account GXSsR1F7TM7whnz8sY7xtqPzbbxqPjr2WK2dfnPDCGw7.
+2024-01-05 01:48:50,550 - INFO - WebDriver closed for item 2997
+2024-01-05 01:48:50,552 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:48:50,558 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:48:50,561 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:48:50,564 - INFO - Starting from index 2997: It has the oldest 'time checked'.
+2024-01-05 01:48:50,564 - INFO - Processing item 14/100 with account: 2thbRspTbU1X7pzrL9UYtEDMFCZUKekPhoVGZ8kS7Gvp (Global index: 2998/10000)
+2024-01-05 01:48:52,335 - INFO - https://solscan.io/token/2thbRspTbU1X7pzrL9UYtEDMFCZUKekPhoVGZ8kS7Gvp#holders
+2024-01-05 01:48:53,336 - INFO - https://solscan.io/token/2thbRspTbU1X7pzrL9UYtEDMFCZUKekPhoVGZ8kS7Gvp#txs
+2024-01-05 01:49:10,592 - INFO - Owner address found: 52f1zVKZomQd1NAY4VraaigUbfHawum22Ct2LUhkdJSm
+2024-01-05 01:49:10,592 - INFO - Holder Address: 52f1zVKZomQd1NAY4VraaigUbfHawum22Ct2LUhkdJSm
+2024-01-05 01:49:20,769 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:49:20,796 - INFO - Time cell not found in the specified row and column.
+2024-01-05 01:49:20,796 - INFO - Hold time extracted: Time cell not found
+2024-01-05 01:49:20,796 - INFO - Closing the web driver...
+2024-01-05 01:49:20,835 - INFO - Web driver closed for time.
+2024-01-05 01:49:20,836 - ERROR - Error processing 2thbRspTbU1X7pzrL9UYtEDMFCZUKekPhoVGZ8kS7Gvp: time data 'Time cell not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 01:49:20,838 - INFO - WebDriver closed for item 2998
+2024-01-05 01:49:20,840 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:49:20,846 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:49:20,850 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:49:20,853 - INFO - Starting from index 2998: It has the oldest 'time checked'.
+2024-01-05 01:49:20,853 - INFO - Processing item 15/100 with account: Fu4ThzmyM3CgC9KGkuAdi5KcrYoHkgZ8QoCC3Hqtnar3 (Global index: 2999/10000)
+2024-01-05 01:49:22,625 - INFO - https://solscan.io/token/Fu4ThzmyM3CgC9KGkuAdi5KcrYoHkgZ8QoCC3Hqtnar3#holders
+2024-01-05 01:49:23,627 - INFO - https://solscan.io/token/Fu4ThzmyM3CgC9KGkuAdi5KcrYoHkgZ8QoCC3Hqtnar3#txs
+2024-01-05 01:49:36,704 - INFO - Owner address found: HDmm1H3nGz5EkyB8R1BB7k9VAMFeJDkhgR7mBc1ZV41W
+2024-01-05 01:49:36,704 - INFO - Holder Address: HDmm1H3nGz5EkyB8R1BB7k9VAMFeJDkhgR7mBc1ZV41W
+2024-01-05 01:49:46,891 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:49:46,987 - INFO - Time successfully extracted: 01-05-2024 01:02:13
+2024-01-05 01:49:46,987 - INFO - Hold time extracted: 01-05-2024 01:02:13
+2024-01-05 01:49:46,987 - INFO - Closing the web driver...
+2024-01-05 01:49:47,026 - INFO - Web driver closed for time.
+2024-01-05 01:49:47,026 - INFO - Successfully processed account Fu4ThzmyM3CgC9KGkuAdi5KcrYoHkgZ8QoCC3Hqtnar3.
+2024-01-05 01:49:47,028 - INFO - WebDriver closed for item 2999
+2024-01-05 01:49:47,030 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:49:47,036 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:49:47,040 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:49:47,043 - INFO - Starting from index 2999: It has the oldest 'time checked'.
+2024-01-05 01:49:47,043 - INFO - Processing item 16/100 with account: DapuRjnVbWwxtpztqNnotoxSRpSqNGpTnXnsH2QFoe1K (Global index: 3000/10000)
+2024-01-05 01:49:48,815 - INFO - https://solscan.io/token/DapuRjnVbWwxtpztqNnotoxSRpSqNGpTnXnsH2QFoe1K#holders
+2024-01-05 01:49:49,816 - INFO - https://solscan.io/token/DapuRjnVbWwxtpztqNnotoxSRpSqNGpTnXnsH2QFoe1K#txs
+2024-01-05 01:50:03,886 - INFO - Owner address found: 7fU1z3adpyD6537nwfwHu9zRYWoLy7ackDMJ4kDVEjQ8
+2024-01-05 01:50:03,886 - INFO - Holder Address: 7fU1z3adpyD6537nwfwHu9zRYWoLy7ackDMJ4kDVEjQ8
+2024-01-05 01:50:14,081 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:50:14,116 - INFO - Time successfully extracted: 01-05-2024 01:39:08
+2024-01-05 01:50:14,116 - INFO - Hold time extracted: 01-05-2024 01:39:08
+2024-01-05 01:50:14,116 - INFO - Closing the web driver...
+2024-01-05 01:50:14,163 - INFO - Web driver closed for time.
+2024-01-05 01:50:14,163 - INFO - Successfully processed account DapuRjnVbWwxtpztqNnotoxSRpSqNGpTnXnsH2QFoe1K.
+2024-01-05 01:50:14,166 - INFO - WebDriver closed for item 3000
+2024-01-05 01:50:14,167 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:50:14,173 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:50:14,177 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:50:14,180 - INFO - Starting from index 3000: It has the oldest 'time checked'.
+2024-01-05 01:50:14,180 - INFO - Processing item 17/100 with account: 5M3BfWNF8U9vWTD6FrHkXfcwuv6ipyRsZZupjku8eb9d (Global index: 3001/10000)
+2024-01-05 01:50:15,956 - INFO - https://solscan.io/token/5M3BfWNF8U9vWTD6FrHkXfcwuv6ipyRsZZupjku8eb9d#holders
+2024-01-05 01:50:16,957 - INFO - https://solscan.io/token/5M3BfWNF8U9vWTD6FrHkXfcwuv6ipyRsZZupjku8eb9d#txs
+2024-01-05 01:50:30,977 - INFO - Owner address found: AqoNUa7HLKK32mHRY3UxeGJZaKUZNGQNnPHKBPrwnyFV
+2024-01-05 01:50:30,977 - INFO - Holder Address: AqoNUa7HLKK32mHRY3UxeGJZaKUZNGQNnPHKBPrwnyFV
+2024-01-05 01:50:41,147 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:50:41,185 - INFO - Time successfully extracted: 01-05-2024 00:44:15
+2024-01-05 01:50:41,185 - INFO - Hold time extracted: 01-05-2024 00:44:15
+2024-01-05 01:50:41,186 - INFO - Closing the web driver...
+2024-01-05 01:50:41,224 - INFO - Web driver closed for time.
+2024-01-05 01:50:41,224 - INFO - Successfully processed account 5M3BfWNF8U9vWTD6FrHkXfcwuv6ipyRsZZupjku8eb9d.
+2024-01-05 01:50:41,229 - INFO - WebDriver closed for item 3001
+2024-01-05 01:50:41,231 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:50:41,240 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:50:41,245 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:50:41,249 - INFO - Starting from index 3001: It has the oldest 'time checked'.
+2024-01-05 01:50:41,249 - INFO - Processing item 18/100 with account: EzGmh19zFVX9zDcLPjmSFhLAmQBMNirTo93MUQnTrFS1 (Global index: 3002/10000)
+2024-01-05 01:50:43,020 - INFO - https://solscan.io/token/EzGmh19zFVX9zDcLPjmSFhLAmQBMNirTo93MUQnTrFS1#holders
+2024-01-05 01:50:44,022 - INFO - https://solscan.io/token/EzGmh19zFVX9zDcLPjmSFhLAmQBMNirTo93MUQnTrFS1#txs
+2024-01-05 01:51:00,380 - INFO - Owner address found: 3Q9Vtm8a6bJdoTvQiaY4pUyF4v9DFYWujQz6MoxyW9p5
+2024-01-05 01:51:00,381 - INFO - Holder Address: 3Q9Vtm8a6bJdoTvQiaY4pUyF4v9DFYWujQz6MoxyW9p5
+2024-01-05 01:51:10,538 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:51:10,564 - INFO - Time successfully extracted: 01-05-2024 00:44:10
+2024-01-05 01:51:10,564 - INFO - Hold time extracted: 01-05-2024 00:44:10
+2024-01-05 01:51:10,564 - INFO - Closing the web driver...
+2024-01-05 01:51:10,602 - INFO - Web driver closed for time.
+2024-01-05 01:51:10,603 - INFO - Successfully processed account EzGmh19zFVX9zDcLPjmSFhLAmQBMNirTo93MUQnTrFS1.
+2024-01-05 01:51:10,605 - INFO - WebDriver closed for item 3002
+2024-01-05 01:51:10,607 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:51:10,613 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:51:10,617 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:51:10,620 - INFO - Starting from index 3002: It has the oldest 'time checked'.
+2024-01-05 01:51:10,620 - INFO - Processing item 19/100 with account: CPpcJh8qioq5UrpRBqBSTkDNEzTiJYdwnACYXgDshaup (Global index: 3003/10000)
+2024-01-05 01:51:12,390 - INFO - https://solscan.io/token/CPpcJh8qioq5UrpRBqBSTkDNEzTiJYdwnACYXgDshaup#holders
+2024-01-05 01:51:13,392 - INFO - https://solscan.io/token/CPpcJh8qioq5UrpRBqBSTkDNEzTiJYdwnACYXgDshaup#txs
+2024-01-05 01:51:28,954 - INFO - Owner address found: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 01:51:28,954 - INFO - Holder Address: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 01:51:39,152 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:51:39,188 - INFO - Time successfully extracted: 01-05-2024 01:02:18
+2024-01-05 01:51:39,188 - INFO - Hold time extracted: 01-05-2024 01:02:18
+2024-01-05 01:51:39,188 - INFO - Closing the web driver...
+2024-01-05 01:51:39,227 - INFO - Web driver closed for time.
+2024-01-05 01:51:39,227 - INFO - Successfully processed account CPpcJh8qioq5UrpRBqBSTkDNEzTiJYdwnACYXgDshaup.
+2024-01-05 01:51:39,230 - INFO - WebDriver closed for item 3003
+2024-01-05 01:51:39,231 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:51:39,237 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:51:39,241 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:51:39,244 - INFO - Starting from index 3003: It has the oldest 'time checked'.
+2024-01-05 01:51:39,244 - INFO - Processing item 20/100 with account: 5J3M4XYt429svKVm95jfx5qGVDWNVLxKcCSjVfw6ogew (Global index: 3004/10000)
+2024-01-05 01:51:41,021 - INFO - https://solscan.io/token/5J3M4XYt429svKVm95jfx5qGVDWNVLxKcCSjVfw6ogew#holders
+2024-01-05 01:51:42,022 - INFO - https://solscan.io/token/5J3M4XYt429svKVm95jfx5qGVDWNVLxKcCSjVfw6ogew#txs
+2024-01-05 01:51:59,420 - INFO - Owner address found: H6qTdzcb98PDgp2ix6ockZ9CLuFP88iJH14EbsD1C7cb
+2024-01-05 01:51:59,420 - INFO - Holder Address: H6qTdzcb98PDgp2ix6ockZ9CLuFP88iJH14EbsD1C7cb
+2024-01-05 01:52:09,576 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:52:09,603 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-01-05 01:52:09,603 - INFO - Hold time extracted: Table not found
+2024-01-05 01:52:09,603 - INFO - Closing the web driver...
+2024-01-05 01:52:09,642 - INFO - Web driver closed for time.
+2024-01-05 01:52:09,642 - ERROR - Error processing 5J3M4XYt429svKVm95jfx5qGVDWNVLxKcCSjVfw6ogew: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 01:52:09,645 - INFO - WebDriver closed for item 3004
+2024-01-05 01:52:09,647 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:52:09,653 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:52:09,657 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:52:09,659 - INFO - Starting from index 3004: It has the oldest 'time checked'.
+2024-01-05 01:52:09,659 - INFO - Processing item 21/100 with account: 9UMykLPdJTREsJqcdDb3vgZvUn4QZnrZTPa1EyxVVS8o (Global index: 3005/10000)
+2024-01-05 01:52:11,429 - INFO - https://solscan.io/token/9UMykLPdJTREsJqcdDb3vgZvUn4QZnrZTPa1EyxVVS8o#holders
+2024-01-05 01:52:12,430 - INFO - https://solscan.io/token/9UMykLPdJTREsJqcdDb3vgZvUn4QZnrZTPa1EyxVVS8o#txs
+2024-01-05 01:52:26,474 - INFO - Owner address found: CxrTwzWEUE6uSuUBE8hGnH88VjMN1aJKQL3YqyEaSCmD
+2024-01-05 01:52:26,475 - INFO - Holder Address: CxrTwzWEUE6uSuUBE8hGnH88VjMN1aJKQL3YqyEaSCmD
+2024-01-05 01:52:36,635 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:52:36,671 - INFO - Time successfully extracted: 01-04-2024 14:17:08
+2024-01-05 01:52:36,671 - INFO - Hold time extracted: 01-04-2024 14:17:08
+2024-01-05 01:52:36,671 - INFO - Closing the web driver...
+2024-01-05 01:52:36,709 - INFO - Web driver closed for time.
+2024-01-05 01:52:36,710 - INFO - Successfully processed account 9UMykLPdJTREsJqcdDb3vgZvUn4QZnrZTPa1EyxVVS8o.
+2024-01-05 01:52:36,713 - INFO - WebDriver closed for item 3005
+2024-01-05 01:52:36,715 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:52:36,724 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:52:36,728 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:52:36,732 - INFO - Starting from index 3005: It has the oldest 'time checked'.
+2024-01-05 01:52:36,732 - INFO - Processing item 22/100 with account: 99juDSwh6ivcsVsHJdLdNdmhXpTJ9pewDUdb8NSXphj2 (Global index: 3006/10000)
+2024-01-05 01:52:38,510 - INFO - https://solscan.io/token/99juDSwh6ivcsVsHJdLdNdmhXpTJ9pewDUdb8NSXphj2#holders
+2024-01-05 01:52:39,511 - INFO - https://solscan.io/token/99juDSwh6ivcsVsHJdLdNdmhXpTJ9pewDUdb8NSXphj2#txs
+2024-01-05 01:52:54,968 - INFO - Owner address found: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 01:52:54,968 - INFO - Holder Address: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 01:53:05,132 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:53:05,229 - INFO - Time successfully extracted: 01-05-2024 01:26:52
+2024-01-05 01:53:05,229 - INFO - Hold time extracted: 01-05-2024 01:26:52
+2024-01-05 01:53:05,229 - INFO - Closing the web driver...
+2024-01-05 01:53:05,277 - INFO - Web driver closed for time.
+2024-01-05 01:53:05,277 - INFO - Successfully processed account 99juDSwh6ivcsVsHJdLdNdmhXpTJ9pewDUdb8NSXphj2.
+2024-01-05 01:53:05,280 - INFO - WebDriver closed for item 3006
+2024-01-05 01:53:05,281 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:53:05,288 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:53:05,291 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:53:05,294 - INFO - Starting from index 3006: It has the oldest 'time checked'.
+2024-01-05 01:53:05,294 - INFO - Processing item 23/100 with account: 86rEQRj5TydJ45QvwjJbLhXepWw9UrzgAx8TF1HdtJjo (Global index: 3007/10000)
+2024-01-05 01:53:07,064 - INFO - https://solscan.io/token/86rEQRj5TydJ45QvwjJbLhXepWw9UrzgAx8TF1HdtJjo#holders
+2024-01-05 01:53:08,065 - INFO - https://solscan.io/token/86rEQRj5TydJ45QvwjJbLhXepWw9UrzgAx8TF1HdtJjo#txs
+2024-01-05 01:53:22,120 - INFO - Owner address found: CqA42zXaf5zXk7EW7jtCLfL2uH1efuB9GtTfjfJ2hzoq
+2024-01-05 01:53:22,121 - INFO - Holder Address: CqA42zXaf5zXk7EW7jtCLfL2uH1efuB9GtTfjfJ2hzoq
+2024-01-05 01:53:32,295 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:53:32,322 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-01-05 01:53:32,322 - INFO - Hold time extracted: Table not found
+2024-01-05 01:53:32,322 - INFO - Closing the web driver...
+2024-01-05 01:53:32,360 - INFO - Web driver closed for time.
+2024-01-05 01:53:32,361 - ERROR - Error processing 86rEQRj5TydJ45QvwjJbLhXepWw9UrzgAx8TF1HdtJjo: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 01:53:32,364 - INFO - WebDriver closed for item 3007
+2024-01-05 01:53:32,366 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:53:32,375 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:53:32,379 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:53:32,383 - INFO - Starting from index 3007: It has the oldest 'time checked'.
+2024-01-05 01:53:32,383 - INFO - Processing item 24/100 with account: MFW9yEYVHk6tx1RmSG1uw7UVAiufp6SYbeQgtcfBVCH (Global index: 3008/10000)
+2024-01-05 01:53:34,156 - INFO - https://solscan.io/token/MFW9yEYVHk6tx1RmSG1uw7UVAiufp6SYbeQgtcfBVCH#holders
+2024-01-05 01:53:35,157 - INFO - https://solscan.io/token/MFW9yEYVHk6tx1RmSG1uw7UVAiufp6SYbeQgtcfBVCH#txs
+2024-01-05 01:53:49,123 - INFO - Owner address found: 8PoLUPVHNNKkLsWsii8GqeLW9ikJhm3aEMqY1sCnj6sv
+2024-01-05 01:53:49,123 - INFO - Holder Address: 8PoLUPVHNNKkLsWsii8GqeLW9ikJhm3aEMqY1sCnj6sv
+2024-01-05 01:53:59,327 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:53:59,363 - INFO - Time successfully extracted: 01-01-2024 21:04:50
+2024-01-05 01:53:59,363 - INFO - Hold time extracted: 01-01-2024 21:04:50
+2024-01-05 01:53:59,363 - INFO - Closing the web driver...
+2024-01-05 01:53:59,419 - INFO - Web driver closed for time.
+2024-01-05 01:53:59,419 - INFO - Successfully processed account MFW9yEYVHk6tx1RmSG1uw7UVAiufp6SYbeQgtcfBVCH.
+2024-01-05 01:53:59,422 - INFO - WebDriver closed for item 3008
+2024-01-05 01:53:59,423 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:53:59,430 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:53:59,434 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:53:59,437 - INFO - Starting from index 3008: It has the oldest 'time checked'.
+2024-01-05 01:53:59,437 - INFO - Processing item 25/100 with account: 7v8pyWSj465ufZY33kLBeqGJZfqf9xDFbvpUhXMxgv1S (Global index: 3009/10000)
+2024-01-05 01:54:01,216 - INFO - https://solscan.io/token/7v8pyWSj465ufZY33kLBeqGJZfqf9xDFbvpUhXMxgv1S#holders
+2024-01-05 01:54:02,217 - INFO - https://solscan.io/token/7v8pyWSj465ufZY33kLBeqGJZfqf9xDFbvpUhXMxgv1S#txs
+2024-01-05 01:54:15,675 - INFO - Owner address found: 2UpzojSHycrTunbz3xn93Ci8k7QpPTjdprcLK1homCxS
+2024-01-05 01:54:15,675 - INFO - Holder Address: 2UpzojSHycrTunbz3xn93Ci8k7QpPTjdprcLK1homCxS
+2024-01-05 01:54:25,856 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:54:25,889 - INFO - Time successfully extracted: 01-05-2024 01:14:36
+2024-01-05 01:54:25,889 - INFO - Hold time extracted: 01-05-2024 01:14:36
+2024-01-05 01:54:25,889 - INFO - Closing the web driver...
+2024-01-05 01:54:25,935 - INFO - Web driver closed for time.
+2024-01-05 01:54:25,935 - INFO - Successfully processed account 7v8pyWSj465ufZY33kLBeqGJZfqf9xDFbvpUhXMxgv1S.
+2024-01-05 01:54:25,938 - INFO - WebDriver closed for item 3009
+2024-01-05 01:54:25,940 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:54:25,946 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:54:25,950 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:54:25,953 - INFO - Starting from index 3009: It has the oldest 'time checked'.
+2024-01-05 01:54:25,953 - INFO - Processing item 26/100 with account: 4mKz8SuWrtFSV7ti47ubGM6syFrahi27a2VoMUYuHv24 (Global index: 3010/10000)
+2024-01-05 01:54:27,730 - INFO - https://solscan.io/token/4mKz8SuWrtFSV7ti47ubGM6syFrahi27a2VoMUYuHv24#holders
+2024-01-05 01:54:28,731 - INFO - https://solscan.io/token/4mKz8SuWrtFSV7ti47ubGM6syFrahi27a2VoMUYuHv24#txs
+2024-01-05 01:54:42,377 - INFO - Owner address found: 8STDX7bNUDQXSe1Uj6RNZFCvq4kFefwKW7Gf3UXo495
+2024-01-05 01:54:42,377 - INFO - Holder Address: 8STDX7bNUDQXSe1Uj6RNZFCvq4kFefwKW7Gf3UXo495
+2024-01-05 01:54:52,560 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:54:52,595 - INFO - Time successfully extracted: 01-04-2024 22:16:02
+2024-01-05 01:54:52,596 - INFO - Hold time extracted: 01-04-2024 22:16:02
+2024-01-05 01:54:52,596 - INFO - Closing the web driver...
+2024-01-05 01:54:52,635 - INFO - Web driver closed for time.
+2024-01-05 01:54:52,635 - INFO - Successfully processed account 4mKz8SuWrtFSV7ti47ubGM6syFrahi27a2VoMUYuHv24.
+2024-01-05 01:54:52,640 - INFO - WebDriver closed for item 3010
+2024-01-05 01:54:52,641 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:54:52,648 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:54:52,651 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:54:52,654 - INFO - Starting from index 3010: It has the oldest 'time checked'.
+2024-01-05 01:54:52,654 - INFO - Processing item 27/100 with account: 1488kbwnKot7idFe8d99zeqPDCYXB6bixbuv74NkunZp (Global index: 3011/10000)
+2024-01-05 01:54:54,427 - INFO - https://solscan.io/token/1488kbwnKot7idFe8d99zeqPDCYXB6bixbuv74NkunZp#holders
+2024-01-05 01:54:55,428 - INFO - https://solscan.io/token/1488kbwnKot7idFe8d99zeqPDCYXB6bixbuv74NkunZp#txs
+2024-01-05 01:55:13,180 - INFO - Owner address found: AzUkyha29HUTxEjRaEKY7UGVrwvUP789NFhq2hpRiV5Y
+2024-01-05 01:55:13,180 - INFO - Holder Address: AzUkyha29HUTxEjRaEKY7UGVrwvUP789NFhq2hpRiV5Y
+2024-01-05 01:55:23,359 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:55:23,387 - INFO - Time successfully extracted: 01-05-2024 01:33:26
+2024-01-05 01:55:23,387 - INFO - Hold time extracted: 01-05-2024 01:33:26
+2024-01-05 01:55:23,387 - INFO - Closing the web driver...
+2024-01-05 01:55:23,425 - INFO - Web driver closed for time.
+2024-01-05 01:55:23,426 - INFO - Successfully processed account 1488kbwnKot7idFe8d99zeqPDCYXB6bixbuv74NkunZp.
+2024-01-05 01:55:23,428 - INFO - WebDriver closed for item 3011
+2024-01-05 01:55:23,430 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:55:23,436 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:55:23,440 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:55:23,443 - INFO - Starting from index 3011: It has the oldest 'time checked'.
+2024-01-05 01:55:23,443 - INFO - Processing item 28/100 with account: DtMetUp6axLy3d9fWhwkn8ZFUPhLBXg399CwGgi83y43 (Global index: 3012/10000)
+2024-01-05 01:55:25,213 - INFO - https://solscan.io/token/DtMetUp6axLy3d9fWhwkn8ZFUPhLBXg399CwGgi83y43#holders
+2024-01-05 01:55:26,214 - INFO - https://solscan.io/token/DtMetUp6axLy3d9fWhwkn8ZFUPhLBXg399CwGgi83y43#txs
+2024-01-05 01:55:41,844 - INFO - Owner address found: EV3uKB4BsdTjrFAhPcFYUyKZrCSBjYBABxas1QCFC299
+2024-01-05 01:55:41,844 - INFO - Holder Address: EV3uKB4BsdTjrFAhPcFYUyKZrCSBjYBABxas1QCFC299
+2024-01-05 01:55:51,991 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:55:52,021 - INFO - Time successfully extracted: 01-05-2024 00:44:14
+2024-01-05 01:55:52,021 - INFO - Hold time extracted: 01-05-2024 00:44:14
+2024-01-05 01:55:52,022 - INFO - Closing the web driver...
+2024-01-05 01:55:52,068 - INFO - Web driver closed for time.
+2024-01-05 01:55:52,068 - INFO - Successfully processed account DtMetUp6axLy3d9fWhwkn8ZFUPhLBXg399CwGgi83y43.
+2024-01-05 01:55:52,071 - INFO - WebDriver closed for item 3012
+2024-01-05 01:55:52,073 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:55:52,079 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:55:52,082 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:55:52,085 - INFO - Starting from index 3012: It has the oldest 'time checked'.
+2024-01-05 01:55:52,085 - INFO - Processing item 29/100 with account: 9Bvk3FNsSE8SkKDboiRw4t5H5g5o8o4FrJpFTXAq5PP6 (Global index: 3013/10000)
+2024-01-05 01:55:53,860 - INFO - https://solscan.io/token/9Bvk3FNsSE8SkKDboiRw4t5H5g5o8o4FrJpFTXAq5PP6#holders
+2024-01-05 01:55:54,862 - INFO - https://solscan.io/token/9Bvk3FNsSE8SkKDboiRw4t5H5g5o8o4FrJpFTXAq5PP6#txs
+2024-01-05 01:56:07,936 - INFO - Owner address found: HLTpHPyNWbC4xsQskcNhS7es4f9DC1KKfNHBm3KresuC
+2024-01-05 01:56:07,936 - INFO - Holder Address: HLTpHPyNWbC4xsQskcNhS7es4f9DC1KKfNHBm3KresuC
+2024-01-05 01:56:18,115 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:56:18,146 - INFO - Time successfully extracted: 01-05-2024 01:02:24
+2024-01-05 01:56:18,146 - INFO - Hold time extracted: 01-05-2024 01:02:24
+2024-01-05 01:56:18,146 - INFO - Closing the web driver...
+2024-01-05 01:56:18,193 - INFO - Web driver closed for time.
+2024-01-05 01:56:18,193 - INFO - Successfully processed account 9Bvk3FNsSE8SkKDboiRw4t5H5g5o8o4FrJpFTXAq5PP6.
+2024-01-05 01:56:18,198 - INFO - WebDriver closed for item 3013
+2024-01-05 01:56:18,199 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:56:18,206 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:56:18,209 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:56:18,212 - INFO - Starting from index 3013: It has the oldest 'time checked'.
+2024-01-05 01:56:18,212 - INFO - Processing item 30/100 with account: BA2zDnJqq4JBV26Q2ksGgpAPHc3WSonUQK3dhEFLFra1 (Global index: 3014/10000)
+2024-01-05 01:56:19,987 - INFO - https://solscan.io/token/BA2zDnJqq4JBV26Q2ksGgpAPHc3WSonUQK3dhEFLFra1#holders
+2024-01-05 01:56:20,988 - INFO - https://solscan.io/token/BA2zDnJqq4JBV26Q2ksGgpAPHc3WSonUQK3dhEFLFra1#txs
+2024-01-05 01:56:34,413 - INFO - Owner address found: Fcu2dCkV8vktFFpvJJBW8YrzA5SZG5C6acvKjqhHgRcZ
+2024-01-05 01:56:34,414 - INFO - Holder Address: Fcu2dCkV8vktFFpvJJBW8YrzA5SZG5C6acvKjqhHgRcZ
+2024-01-05 01:56:44,584 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:56:44,620 - INFO - Time successfully extracted: 01-04-2024 14:33:08
+2024-01-05 01:56:44,620 - INFO - Hold time extracted: 01-04-2024 14:33:08
+2024-01-05 01:56:44,620 - INFO - Closing the web driver...
+2024-01-05 01:56:44,667 - INFO - Web driver closed for time.
+2024-01-05 01:56:44,667 - INFO - Successfully processed account BA2zDnJqq4JBV26Q2ksGgpAPHc3WSonUQK3dhEFLFra1.
+2024-01-05 01:56:44,672 - INFO - WebDriver closed for item 3014
+2024-01-05 01:56:44,674 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:56:44,680 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:56:44,683 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:56:44,686 - INFO - Starting from index 3014: It has the oldest 'time checked'.
+2024-01-05 01:56:44,686 - INFO - Processing item 31/100 with account: 3DgBKhyhHcui3RbitS1iN77eKBwAAubH9tkpSj2pPKG2 (Global index: 3015/10000)
+2024-01-05 01:56:46,459 - INFO - https://solscan.io/token/3DgBKhyhHcui3RbitS1iN77eKBwAAubH9tkpSj2pPKG2#holders
+2024-01-05 01:56:47,461 - INFO - https://solscan.io/token/3DgBKhyhHcui3RbitS1iN77eKBwAAubH9tkpSj2pPKG2#txs
+2024-01-05 01:57:01,046 - INFO - Owner address found: DaZuc2S4uzYjvTPpFSCSTy3NSzgU6jvpY6875MHCNrYW
+2024-01-05 01:57:01,046 - INFO - Holder Address: DaZuc2S4uzYjvTPpFSCSTy3NSzgU6jvpY6875MHCNrYW
+2024-01-05 01:57:11,220 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:57:11,250 - INFO - Time successfully extracted: 01-04-2024 04:40:45
+2024-01-05 01:57:11,250 - INFO - Hold time extracted: 01-04-2024 04:40:45
+2024-01-05 01:57:11,250 - INFO - Closing the web driver...
+2024-01-05 01:57:11,289 - INFO - Web driver closed for time.
+2024-01-05 01:57:11,289 - INFO - Successfully processed account 3DgBKhyhHcui3RbitS1iN77eKBwAAubH9tkpSj2pPKG2.
+2024-01-05 01:57:11,292 - INFO - WebDriver closed for item 3015
+2024-01-05 01:57:11,293 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:57:11,300 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:57:11,303 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:57:11,306 - INFO - Starting from index 3015: It has the oldest 'time checked'.
+2024-01-05 01:57:11,306 - INFO - Processing item 32/100 with account: pFZpVNUHNXbpxiVet44QbogJmonwRNpywe9VLMUsRpZ (Global index: 3016/10000)
+2024-01-05 01:57:13,076 - INFO - https://solscan.io/token/pFZpVNUHNXbpxiVet44QbogJmonwRNpywe9VLMUsRpZ#holders
+2024-01-05 01:57:14,077 - INFO - https://solscan.io/token/pFZpVNUHNXbpxiVet44QbogJmonwRNpywe9VLMUsRpZ#txs
+2024-01-05 01:57:28,002 - INFO - Owner address found: 6HFxHT4tFVB19weeMGYQrepa51rzxjydkhWAaomsf6g4
+2024-01-05 01:57:28,002 - INFO - Holder Address: 6HFxHT4tFVB19weeMGYQrepa51rzxjydkhWAaomsf6g4
+2024-01-05 01:57:38,152 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:57:38,179 - INFO - Time successfully extracted: 01-05-2024 00:50:23
+2024-01-05 01:57:38,179 - INFO - Hold time extracted: 01-05-2024 00:50:23
+2024-01-05 01:57:38,179 - INFO - Closing the web driver...
+2024-01-05 01:57:38,217 - INFO - Web driver closed for time.
+2024-01-05 01:57:38,218 - INFO - Successfully processed account pFZpVNUHNXbpxiVet44QbogJmonwRNpywe9VLMUsRpZ.
+2024-01-05 01:57:38,223 - INFO - WebDriver closed for item 3016
+2024-01-05 01:57:38,224 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:57:38,230 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:57:38,234 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:57:38,237 - INFO - Starting from index 3016: It has the oldest 'time checked'.
+2024-01-05 01:57:38,237 - INFO - Processing item 33/100 with account: 6zcjkXmdk9f2mtGXNAJamtkZTP79fFWKXKomab7KpbDk (Global index: 3017/10000)
+2024-01-05 01:57:40,007 - INFO - https://solscan.io/token/6zcjkXmdk9f2mtGXNAJamtkZTP79fFWKXKomab7KpbDk#holders
+2024-01-05 01:57:41,009 - INFO - https://solscan.io/token/6zcjkXmdk9f2mtGXNAJamtkZTP79fFWKXKomab7KpbDk#txs
+2024-01-05 01:57:58,438 - INFO - Owner address found: EwxZCxya6waLcqZQLvzcPXUep1SMqV7d3wnnexoPBAok
+2024-01-05 01:57:58,438 - INFO - Holder Address: EwxZCxya6waLcqZQLvzcPXUep1SMqV7d3wnnexoPBAok
+2024-01-05 01:58:08,612 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:58:08,643 - INFO - Time successfully extracted: 01-05-2024 01:45:43
+2024-01-05 01:58:08,643 - INFO - Hold time extracted: 01-05-2024 01:45:43
+2024-01-05 01:58:08,643 - INFO - Closing the web driver...
+2024-01-05 01:58:08,690 - INFO - Web driver closed for time.
+2024-01-05 01:58:08,690 - INFO - Successfully processed account 6zcjkXmdk9f2mtGXNAJamtkZTP79fFWKXKomab7KpbDk.
+2024-01-05 01:58:08,693 - INFO - WebDriver closed for item 3017
+2024-01-05 01:58:08,695 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:58:08,703 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:58:08,707 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:58:08,711 - INFO - Starting from index 3017: It has the oldest 'time checked'.
+2024-01-05 01:58:08,711 - INFO - Processing item 34/100 with account: 8oEXx1kwLZ7iQSR3LhBXDwDHyouwCEHYRZxsu4qGEsfb (Global index: 3018/10000)
+2024-01-05 01:58:10,480 - INFO - https://solscan.io/token/8oEXx1kwLZ7iQSR3LhBXDwDHyouwCEHYRZxsu4qGEsfb#holders
+2024-01-05 01:58:11,481 - INFO - https://solscan.io/token/8oEXx1kwLZ7iQSR3LhBXDwDHyouwCEHYRZxsu4qGEsfb#txs
+2024-01-05 01:58:27,123 - INFO - Owner address found: yc2MrS9Z2geXmvEMtLihRirZubNoNK1jD71nX1fQK8n
+2024-01-05 01:58:27,123 - INFO - Holder Address: yc2MrS9Z2geXmvEMtLihRirZubNoNK1jD71nX1fQK8n
+2024-01-05 01:58:37,303 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:58:37,338 - INFO - Time successfully extracted: 01-04-2024 04:10:30
+2024-01-05 01:58:37,338 - INFO - Hold time extracted: 01-04-2024 04:10:30
+2024-01-05 01:58:37,338 - INFO - Closing the web driver...
+2024-01-05 01:58:37,377 - INFO - Web driver closed for time.
+2024-01-05 01:58:37,377 - INFO - Successfully processed account 8oEXx1kwLZ7iQSR3LhBXDwDHyouwCEHYRZxsu4qGEsfb.
+2024-01-05 01:58:37,381 - INFO - WebDriver closed for item 3018
+2024-01-05 01:58:37,382 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:58:37,388 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:58:37,392 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:58:37,395 - INFO - Starting from index 3018: It has the oldest 'time checked'.
+2024-01-05 01:58:37,395 - INFO - Processing item 35/100 with account: 52RiRqJwC9ATdTLoX3Mztm3UV2a9KQV46vLCEf9rH6vw (Global index: 3019/10000)
+2024-01-05 01:58:39,166 - INFO - https://solscan.io/token/52RiRqJwC9ATdTLoX3Mztm3UV2a9KQV46vLCEf9rH6vw#holders
+2024-01-05 01:58:40,167 - INFO - https://solscan.io/token/52RiRqJwC9ATdTLoX3Mztm3UV2a9KQV46vLCEf9rH6vw#txs
+2024-01-05 01:58:55,676 - INFO - Owner address found: 5ZVsYqurG8NnwBQQytWPcY8eDF8Rry2bxzQvJTQUtwqG
+2024-01-05 01:58:55,676 - INFO - Holder Address: 5ZVsYqurG8NnwBQQytWPcY8eDF8Rry2bxzQvJTQUtwqG
+2024-01-05 01:59:05,843 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:59:05,870 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-01-05 01:59:05,870 - INFO - Hold time extracted: Table not found
+2024-01-05 01:59:05,870 - INFO - Closing the web driver...
+2024-01-05 01:59:05,918 - INFO - Web driver closed for time.
+2024-01-05 01:59:05,918 - ERROR - Error processing 52RiRqJwC9ATdTLoX3Mztm3UV2a9KQV46vLCEf9rH6vw: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 01:59:05,921 - INFO - WebDriver closed for item 3019
+2024-01-05 01:59:05,922 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:59:05,931 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:59:05,935 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:59:05,938 - INFO - Starting from index 3019: It has the oldest 'time checked'.
+2024-01-05 01:59:05,938 - INFO - Processing item 36/100 with account: DCcdkBjAbDANroBQubDVBrbfNDmx3FG6VijSPP6SkYdX (Global index: 3020/10000)
+2024-01-05 01:59:07,722 - INFO - https://solscan.io/token/DCcdkBjAbDANroBQubDVBrbfNDmx3FG6VijSPP6SkYdX#holders
+2024-01-05 01:59:08,723 - INFO - https://solscan.io/token/DCcdkBjAbDANroBQubDVBrbfNDmx3FG6VijSPP6SkYdX#txs
+2024-01-05 01:59:21,817 - INFO - Owner address found: FmRHGw5Rtem6X2pWW4hb3xoaQeutaeS7GgpZuZ8xaM28
+2024-01-05 01:59:21,817 - INFO - Holder Address: FmRHGw5Rtem6X2pWW4hb3xoaQeutaeS7GgpZuZ8xaM28
+2024-01-05 01:59:31,981 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 01:59:32,008 - INFO - Time successfully extracted: 01-05-2024 00:56:33
+2024-01-05 01:59:32,008 - INFO - Hold time extracted: 01-05-2024 00:56:33
+2024-01-05 01:59:32,008 - INFO - Closing the web driver...
+2024-01-05 01:59:32,055 - INFO - Web driver closed for time.
+2024-01-05 01:59:32,055 - INFO - Successfully processed account DCcdkBjAbDANroBQubDVBrbfNDmx3FG6VijSPP6SkYdX.
+2024-01-05 01:59:32,058 - INFO - WebDriver closed for item 3020
+2024-01-05 01:59:32,059 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 01:59:32,068 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 01:59:32,072 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 01:59:32,075 - INFO - Starting from index 3020: It has the oldest 'time checked'.
+2024-01-05 01:59:32,075 - INFO - Processing item 37/100 with account: 7obUoc3TFzUj3UPbngtbqeQ5WU1QQ73mwsawJFNWDJww (Global index: 3021/10000)
+2024-01-05 01:59:33,849 - INFO - https://solscan.io/token/7obUoc3TFzUj3UPbngtbqeQ5WU1QQ73mwsawJFNWDJww#holders
+2024-01-05 01:59:34,851 - INFO - https://solscan.io/token/7obUoc3TFzUj3UPbngtbqeQ5WU1QQ73mwsawJFNWDJww#txs
+2024-01-05 01:59:52,492 - INFO - Owner address found: LaC7SJ6LZfEhWVyt9aiZ8TvY7hPWiuNuTog6tNra3rt
+2024-01-05 01:59:52,492 - INFO - Holder Address: LaC7SJ6LZfEhWVyt9aiZ8TvY7hPWiuNuTog6tNra3rt
+2024-01-05 02:00:02,651 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:00:02,744 - INFO - Time successfully extracted: 01-04-2024 13:56:30
+2024-01-05 02:00:02,744 - INFO - Hold time extracted: 01-04-2024 13:56:30
+2024-01-05 02:00:02,744 - INFO - Closing the web driver...
+2024-01-05 02:00:02,791 - INFO - Web driver closed for time.
+2024-01-05 02:00:02,791 - INFO - Successfully processed account 7obUoc3TFzUj3UPbngtbqeQ5WU1QQ73mwsawJFNWDJww.
+2024-01-05 02:00:02,794 - INFO - WebDriver closed for item 3021
+2024-01-05 02:00:02,795 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:00:02,801 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:00:02,805 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:00:02,808 - INFO - Starting from index 3021: It has the oldest 'time checked'.
+2024-01-05 02:00:02,808 - INFO - Processing item 38/100 with account: 37LfB8W7xUrYSaL7uZYBZtmSx5pNuRb6KWzwXK5cTA9m (Global index: 3022/10000)
+2024-01-05 02:00:04,579 - INFO - https://solscan.io/token/37LfB8W7xUrYSaL7uZYBZtmSx5pNuRb6KWzwXK5cTA9m#holders
+2024-01-05 02:00:05,580 - INFO - https://solscan.io/token/37LfB8W7xUrYSaL7uZYBZtmSx5pNuRb6KWzwXK5cTA9m#txs
+2024-01-05 02:00:19,635 - INFO - Owner address found: CqC5JFzbyw685RWBLyB9N8TrfJCwuKJsgrKEMjPLGyPc
+2024-01-05 02:00:19,635 - INFO - Holder Address: CqC5JFzbyw685RWBLyB9N8TrfJCwuKJsgrKEMjPLGyPc
+2024-01-05 02:00:29,818 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:00:29,849 - INFO - Time successfully extracted: 01-05-2024 01:26:51
+2024-01-05 02:00:29,849 - INFO - Hold time extracted: 01-05-2024 01:26:51
+2024-01-05 02:00:29,849 - INFO - Closing the web driver...
+2024-01-05 02:00:29,895 - INFO - Web driver closed for time.
+2024-01-05 02:00:29,895 - INFO - Successfully processed account 37LfB8W7xUrYSaL7uZYBZtmSx5pNuRb6KWzwXK5cTA9m.
+2024-01-05 02:00:29,898 - INFO - WebDriver closed for item 3022
+2024-01-05 02:00:29,899 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:00:29,905 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:00:29,909 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:00:29,912 - INFO - Starting from index 3022: It has the oldest 'time checked'.
+2024-01-05 02:00:29,912 - INFO - Processing item 39/100 with account: 6iNN7nk7fewEo1qazB1kJwe7r11fnjxfcE38zMvLvBPf (Global index: 3023/10000)
+2024-01-05 02:00:31,685 - INFO - https://solscan.io/token/6iNN7nk7fewEo1qazB1kJwe7r11fnjxfcE38zMvLvBPf#holders
+2024-01-05 02:00:32,686 - INFO - https://solscan.io/token/6iNN7nk7fewEo1qazB1kJwe7r11fnjxfcE38zMvLvBPf#txs
+2024-01-05 02:00:47,913 - INFO - Owner address found: B2VdH9Xqfu2EPjmYfYMuNU4i4e5Q7PBFBUn8htSGqgd
+2024-01-05 02:00:47,913 - INFO - Holder Address: B2VdH9Xqfu2EPjmYfYMuNU4i4e5Q7PBFBUn8htSGqgd
+2024-01-05 02:00:58,093 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:00:58,127 - INFO - Time successfully extracted: 01-05-2024 01:33:26
+2024-01-05 02:00:58,127 - INFO - Hold time extracted: 01-05-2024 01:33:26
+2024-01-05 02:00:58,127 - INFO - Closing the web driver...
+2024-01-05 02:00:58,174 - INFO - Web driver closed for time.
+2024-01-05 02:00:58,174 - INFO - Successfully processed account 6iNN7nk7fewEo1qazB1kJwe7r11fnjxfcE38zMvLvBPf.
+2024-01-05 02:00:58,177 - INFO - WebDriver closed for item 3023
+2024-01-05 02:00:58,178 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:00:58,184 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:00:58,188 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:00:58,190 - INFO - Starting from index 3023: It has the oldest 'time checked'.
+2024-01-05 02:00:58,190 - INFO - Processing item 40/100 with account: CD2hzcMPenLgGtKGBnNX2Bekzd5uLfkq7zFb49RUywQg (Global index: 3024/10000)
+2024-01-05 02:00:59,963 - INFO - https://solscan.io/token/CD2hzcMPenLgGtKGBnNX2Bekzd5uLfkq7zFb49RUywQg#holders
+2024-01-05 02:01:00,965 - INFO - https://solscan.io/token/CD2hzcMPenLgGtKGBnNX2Bekzd5uLfkq7zFb49RUywQg#txs
+2024-01-05 02:01:18,498 - INFO - Owner address found: 3PwRe73HYBFpTtcTwSyp2oLDYVf1JzzgCuTVQyT5qGB7
+2024-01-05 02:01:18,498 - INFO - Holder Address: 3PwRe73HYBFpTtcTwSyp2oLDYVf1JzzgCuTVQyT5qGB7
+2024-01-05 02:01:28,680 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:01:28,715 - INFO - Time successfully extracted: 01-05-2024 00:50:14
+2024-01-05 02:01:28,715 - INFO - Hold time extracted: 01-05-2024 00:50:14
+2024-01-05 02:01:28,715 - INFO - Closing the web driver...
+2024-01-05 02:01:28,754 - INFO - Web driver closed for time.
+2024-01-05 02:01:28,754 - INFO - Successfully processed account CD2hzcMPenLgGtKGBnNX2Bekzd5uLfkq7zFb49RUywQg.
+2024-01-05 02:01:28,757 - INFO - WebDriver closed for item 3024
+2024-01-05 02:01:28,759 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:01:28,767 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:01:28,772 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:01:28,775 - INFO - Starting from index 3024: It has the oldest 'time checked'.
+2024-01-05 02:01:28,775 - INFO - Processing item 41/100 with account: 6TzCq7okV5qFvwqBcCBEj4bbgMYm87QETndSXtNBWWGt (Global index: 3025/10000)
+2024-01-05 02:01:30,558 - INFO - https://solscan.io/token/6TzCq7okV5qFvwqBcCBEj4bbgMYm87QETndSXtNBWWGt#holders
+2024-01-05 02:01:31,559 - INFO - https://solscan.io/token/6TzCq7okV5qFvwqBcCBEj4bbgMYm87QETndSXtNBWWGt#txs
+2024-01-05 02:01:44,166 - INFO - Owner address found: 9JTMsWGs1AoNmDZ6188yD1f1syfuPu7pmVLxXrfZRJCe
+2024-01-05 02:01:44,166 - INFO - Holder Address: 9JTMsWGs1AoNmDZ6188yD1f1syfuPu7pmVLxXrfZRJCe
+2024-01-05 02:01:54,322 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:01:54,351 - INFO - Time successfully extracted: 01-05-2024 01:33:21
+2024-01-05 02:01:54,351 - INFO - Hold time extracted: 01-05-2024 01:33:21
+2024-01-05 02:01:54,351 - INFO - Closing the web driver...
+2024-01-05 02:01:54,373 - INFO - Web driver closed for time.
+2024-01-05 02:01:54,373 - INFO - Successfully processed account 6TzCq7okV5qFvwqBcCBEj4bbgMYm87QETndSXtNBWWGt.
+2024-01-05 02:01:54,377 - INFO - WebDriver closed for item 3025
+2024-01-05 02:01:54,378 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:01:54,385 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:01:54,388 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:01:54,391 - INFO - Starting from index 3025: It has the oldest 'time checked'.
+2024-01-05 02:01:54,391 - INFO - Processing item 42/100 with account: BTx2TLBGTHducoJHQ95uTaKtdThDxUBs5stmjvXM4ViD (Global index: 3026/10000)
+2024-01-05 02:01:56,162 - INFO - https://solscan.io/token/BTx2TLBGTHducoJHQ95uTaKtdThDxUBs5stmjvXM4ViD#holders
+2024-01-05 02:01:57,164 - INFO - https://solscan.io/token/BTx2TLBGTHducoJHQ95uTaKtdThDxUBs5stmjvXM4ViD#txs
+2024-01-05 02:02:10,087 - INFO - Owner address found: 48zihPEtZxCypb3qNmUQrbmkCpJNwsVS2NTMaUEWqmnL
+2024-01-05 02:02:10,087 - INFO - Holder Address: 48zihPEtZxCypb3qNmUQrbmkCpJNwsVS2NTMaUEWqmnL
+2024-01-05 02:02:20,273 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:02:20,306 - INFO - Time successfully extracted: 01-05-2024 00:44:17
+2024-01-05 02:02:20,306 - INFO - Hold time extracted: 01-05-2024 00:44:17
+2024-01-05 02:02:20,306 - INFO - Closing the web driver...
+2024-01-05 02:02:20,352 - INFO - Web driver closed for time.
+2024-01-05 02:02:20,352 - INFO - Successfully processed account BTx2TLBGTHducoJHQ95uTaKtdThDxUBs5stmjvXM4ViD.
+2024-01-05 02:02:20,357 - INFO - WebDriver closed for item 3026
+2024-01-05 02:02:20,359 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:02:20,365 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:02:20,368 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:02:20,371 - INFO - Starting from index 3026: It has the oldest 'time checked'.
+2024-01-05 02:02:20,371 - INFO - Processing item 43/100 with account: 4A4faJXJcRPVLyGrDmccvGjF22SL4EM3Bz5rnsktDfPf (Global index: 3027/10000)
+2024-01-05 02:02:22,142 - INFO - https://solscan.io/token/4A4faJXJcRPVLyGrDmccvGjF22SL4EM3Bz5rnsktDfPf#holders
+2024-01-05 02:02:23,143 - INFO - https://solscan.io/token/4A4faJXJcRPVLyGrDmccvGjF22SL4EM3Bz5rnsktDfPf#txs
+2024-01-05 02:02:36,256 - INFO - Owner address found: E7UTTcgpgf75mnw2vSsV7BxKXD3vFaegBmPDYxm63bJf
+2024-01-05 02:02:36,257 - INFO - Holder Address: E7UTTcgpgf75mnw2vSsV7BxKXD3vFaegBmPDYxm63bJf
+2024-01-05 02:02:46,423 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:02:46,450 - INFO - Time successfully extracted: 01-03-2024 20:09:20
+2024-01-05 02:02:46,450 - INFO - Hold time extracted: 01-03-2024 20:09:20
+2024-01-05 02:02:46,450 - INFO - Closing the web driver...
+2024-01-05 02:02:46,497 - INFO - Web driver closed for time.
+2024-01-05 02:02:46,497 - INFO - Successfully processed account 4A4faJXJcRPVLyGrDmccvGjF22SL4EM3Bz5rnsktDfPf.
+2024-01-05 02:02:46,501 - INFO - WebDriver closed for item 3027
+2024-01-05 02:02:46,502 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:02:46,508 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:02:46,512 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:02:46,514 - INFO - Starting from index 3027: It has the oldest 'time checked'.
+2024-01-05 02:02:46,514 - INFO - Processing item 44/100 with account: 5siU9wwsw833RRJ3xVqZPXeMN1EGG89CVMs4jQmzkzh6 (Global index: 3028/10000)
+2024-01-05 02:02:48,287 - INFO - https://solscan.io/token/5siU9wwsw833RRJ3xVqZPXeMN1EGG89CVMs4jQmzkzh6#holders
+2024-01-05 02:02:49,288 - INFO - https://solscan.io/token/5siU9wwsw833RRJ3xVqZPXeMN1EGG89CVMs4jQmzkzh6#txs
+2024-01-05 02:03:02,286 - INFO - Owner address found: Magic Eden V2 Authority
+2024-01-05 02:03:02,287 - INFO - Holder Address: Magic Eden V2 Authority
+2024-01-05 02:03:12,442 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:03:12,467 - INFO - Time successfully extracted: 01-05-2024 01:48:13
+2024-01-05 02:03:12,468 - INFO - Hold time extracted: 01-05-2024 01:48:13
+2024-01-05 02:03:12,468 - INFO - Closing the web driver...
+2024-01-05 02:03:12,494 - INFO - Web driver closed for time.
+2024-01-05 02:03:12,494 - INFO - Successfully processed account 5siU9wwsw833RRJ3xVqZPXeMN1EGG89CVMs4jQmzkzh6.
+2024-01-05 02:03:12,497 - INFO - WebDriver closed for item 3028
+2024-01-05 02:03:12,499 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:03:12,506 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:03:12,509 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:03:12,512 - INFO - Starting from index 3028: It has the oldest 'time checked'.
+2024-01-05 02:03:12,512 - INFO - Processing item 45/100 with account: CJKZUhYcqg17xoejv3nXKfWN6WNsnfjYqDsjzzStS9yq (Global index: 3029/10000)
+2024-01-05 02:03:14,282 - INFO - https://solscan.io/token/CJKZUhYcqg17xoejv3nXKfWN6WNsnfjYqDsjzzStS9yq#holders
+2024-01-05 02:03:15,283 - INFO - https://solscan.io/token/CJKZUhYcqg17xoejv3nXKfWN6WNsnfjYqDsjzzStS9yq#txs
+2024-01-05 02:03:28,830 - INFO - Owner address found: 7UQCo8ceWUDfvg9ME33zjkDP6bfL3JtxAHnFQmv4ypsz
+2024-01-05 02:03:28,830 - INFO - Holder Address: 7UQCo8ceWUDfvg9ME33zjkDP6bfL3JtxAHnFQmv4ypsz
+2024-01-05 02:03:39,020 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:03:39,115 - INFO - Time successfully extracted: 01-05-2024 01:08:50
+2024-01-05 02:03:39,115 - INFO - Hold time extracted: 01-05-2024 01:08:50
+2024-01-05 02:03:39,115 - INFO - Closing the web driver...
+2024-01-05 02:03:39,163 - INFO - Web driver closed for time.
+2024-01-05 02:03:39,163 - INFO - Successfully processed account CJKZUhYcqg17xoejv3nXKfWN6WNsnfjYqDsjzzStS9yq.
+2024-01-05 02:03:39,165 - INFO - WebDriver closed for item 3029
+2024-01-05 02:03:39,167 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:03:39,174 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:03:39,178 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:03:39,182 - INFO - Starting from index 3029: It has the oldest 'time checked'.
+2024-01-05 02:03:39,182 - INFO - Processing item 46/100 with account: 43mTFqYZV7CLSvSBwhtzA8qVj4D3wVqdEz9isXG3yVbU (Global index: 3030/10000)
+2024-01-05 02:03:40,982 - INFO - https://solscan.io/token/43mTFqYZV7CLSvSBwhtzA8qVj4D3wVqdEz9isXG3yVbU#holders
+2024-01-05 02:03:41,983 - INFO - https://solscan.io/token/43mTFqYZV7CLSvSBwhtzA8qVj4D3wVqdEz9isXG3yVbU#txs
+2024-01-05 02:03:55,169 - INFO - Owner address found: 8brZgFsbfgbvgQXc4Yrr7QA1XPBfnYVcG3huwCXrX7UP
+2024-01-05 02:03:55,169 - INFO - Holder Address: 8brZgFsbfgbvgQXc4Yrr7QA1XPBfnYVcG3huwCXrX7UP
+2024-01-05 02:04:05,363 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:04:05,397 - INFO - Time successfully extracted: 01-05-2024 01:33:26
+2024-01-05 02:04:05,397 - INFO - Hold time extracted: 01-05-2024 01:33:26
+2024-01-05 02:04:05,397 - INFO - Closing the web driver...
+2024-01-05 02:04:05,436 - INFO - Web driver closed for time.
+2024-01-05 02:04:05,436 - INFO - Successfully processed account 43mTFqYZV7CLSvSBwhtzA8qVj4D3wVqdEz9isXG3yVbU.
+2024-01-05 02:04:05,440 - INFO - WebDriver closed for item 3030
+2024-01-05 02:04:05,442 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:04:05,451 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:04:05,455 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:04:05,459 - INFO - Starting from index 3030: It has the oldest 'time checked'.
+2024-01-05 02:04:05,459 - INFO - Processing item 47/100 with account: CNMfzaFM9XqDSCFY1noEAzMDbKcBwbrda4fNeV1uJwJ3 (Global index: 3031/10000)
+2024-01-05 02:04:07,230 - INFO - https://solscan.io/token/CNMfzaFM9XqDSCFY1noEAzMDbKcBwbrda4fNeV1uJwJ3#holders
+2024-01-05 02:04:08,231 - INFO - https://solscan.io/token/CNMfzaFM9XqDSCFY1noEAzMDbKcBwbrda4fNeV1uJwJ3#txs
+2024-01-05 02:04:22,040 - INFO - Owner address found: 6R4boEiF6ZZiKH8Y3S3kisbBi3QAvBbBJTdExJVnsTqr
+2024-01-05 02:04:22,040 - INFO - Holder Address: 6R4boEiF6ZZiKH8Y3S3kisbBi3QAvBbBJTdExJVnsTqr
+2024-01-05 02:04:32,219 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:04:32,253 - INFO - Time successfully extracted: 01-05-2024 00:44:28
+2024-01-05 02:04:32,253 - INFO - Hold time extracted: 01-05-2024 00:44:28
+2024-01-05 02:04:32,253 - INFO - Closing the web driver...
+2024-01-05 02:04:32,292 - INFO - Web driver closed for time.
+2024-01-05 02:04:32,292 - INFO - Successfully processed account CNMfzaFM9XqDSCFY1noEAzMDbKcBwbrda4fNeV1uJwJ3.
+2024-01-05 02:04:32,296 - INFO - WebDriver closed for item 3031
+2024-01-05 02:04:32,297 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:04:32,304 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:04:32,307 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:04:32,310 - INFO - Starting from index 3031: It has the oldest 'time checked'.
+2024-01-05 02:04:32,310 - INFO - Processing item 48/100 with account: CZEuzg9sQ5irQSmhE9PghcwWLCryCauEJBaG3WtuFCb3 (Global index: 3032/10000)
+2024-01-05 02:04:34,083 - INFO - https://solscan.io/token/CZEuzg9sQ5irQSmhE9PghcwWLCryCauEJBaG3WtuFCb3#holders
+2024-01-05 02:04:35,084 - INFO - https://solscan.io/token/CZEuzg9sQ5irQSmhE9PghcwWLCryCauEJBaG3WtuFCb3#txs
+2024-01-05 02:04:49,192 - INFO - Owner address found: FtEm3GZfCG5Yec9xwZMuoWPRyQX9AuGSqmMExNXjb6Fa
+2024-01-05 02:04:49,192 - INFO - Holder Address: FtEm3GZfCG5Yec9xwZMuoWPRyQX9AuGSqmMExNXjb6Fa
+2024-01-05 02:04:59,344 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:04:59,370 - INFO - Time successfully extracted: 01-05-2024 00:56:26
+2024-01-05 02:04:59,370 - INFO - Hold time extracted: 01-05-2024 00:56:26
+2024-01-05 02:04:59,370 - INFO - Closing the web driver...
+2024-01-05 02:04:59,408 - INFO - Web driver closed for time.
+2024-01-05 02:04:59,409 - INFO - Successfully processed account CZEuzg9sQ5irQSmhE9PghcwWLCryCauEJBaG3WtuFCb3.
+2024-01-05 02:04:59,412 - INFO - WebDriver closed for item 3032
+2024-01-05 02:04:59,413 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:04:59,420 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:04:59,423 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:04:59,426 - INFO - Starting from index 3032: It has the oldest 'time checked'.
+2024-01-05 02:04:59,426 - INFO - Processing item 49/100 with account: GznMWgb9rjmPowPDnajDAVKq9ZcCBAmPAoqCTq4N4kXR (Global index: 3033/10000)
+2024-01-05 02:05:01,196 - INFO - https://solscan.io/token/GznMWgb9rjmPowPDnajDAVKq9ZcCBAmPAoqCTq4N4kXR#holders
+2024-01-05 02:05:02,197 - INFO - https://solscan.io/token/GznMWgb9rjmPowPDnajDAVKq9ZcCBAmPAoqCTq4N4kXR#txs
+2024-01-05 02:05:15,551 - INFO - Owner address found: HGD7V6cdeofH8ifEZLcqzuBDGXaTEHZMB9zab9xnEX1J
+2024-01-05 02:05:15,552 - INFO - Holder Address: HGD7V6cdeofH8ifEZLcqzuBDGXaTEHZMB9zab9xnEX1J
+2024-01-05 02:05:25,738 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:05:25,772 - INFO - Time successfully extracted: 01-05-2024 01:33:24
+2024-01-05 02:05:25,772 - INFO - Hold time extracted: 01-05-2024 01:33:24
+2024-01-05 02:05:25,772 - INFO - Closing the web driver...
+2024-01-05 02:05:25,810 - INFO - Web driver closed for time.
+2024-01-05 02:05:25,811 - INFO - Successfully processed account GznMWgb9rjmPowPDnajDAVKq9ZcCBAmPAoqCTq4N4kXR.
+2024-01-05 02:05:25,813 - INFO - WebDriver closed for item 3033
+2024-01-05 02:05:25,815 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:05:25,821 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:05:25,825 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:05:25,828 - INFO - Starting from index 3033: It has the oldest 'time checked'.
+2024-01-05 02:05:25,828 - INFO - Processing item 50/100 with account: DxtQw7NTRK8d3RE5p6NewK1tqbKDLY4YL6WjHtZkqgZh (Global index: 3034/10000)
+2024-01-05 02:05:27,606 - INFO - https://solscan.io/token/DxtQw7NTRK8d3RE5p6NewK1tqbKDLY4YL6WjHtZkqgZh#holders
+2024-01-05 02:05:28,607 - INFO - https://solscan.io/token/DxtQw7NTRK8d3RE5p6NewK1tqbKDLY4YL6WjHtZkqgZh#txs
+2024-01-05 02:05:41,096 - INFO - Owner address found: ENGRuY2KHHV47GpsUqg8TBLPSxMuysFE2rWsVyy4XmrA
+2024-01-05 02:05:41,096 - INFO - Holder Address: ENGRuY2KHHV47GpsUqg8TBLPSxMuysFE2rWsVyy4XmrA
+2024-01-05 02:05:51,315 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:05:51,351 - INFO - Time successfully extracted: 01-04-2024 13:43:32
+2024-01-05 02:05:51,351 - INFO - Hold time extracted: 01-04-2024 13:43:32
+2024-01-05 02:05:51,351 - INFO - Closing the web driver...
+2024-01-05 02:05:51,398 - INFO - Web driver closed for time.
+2024-01-05 02:05:51,398 - INFO - Successfully processed account DxtQw7NTRK8d3RE5p6NewK1tqbKDLY4YL6WjHtZkqgZh.
+2024-01-05 02:05:51,400 - INFO - WebDriver closed for item 3034
+2024-01-05 02:05:51,402 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:05:51,408 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:05:51,412 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:05:51,415 - INFO - Starting from index 3034: It has the oldest 'time checked'.
+2024-01-05 02:05:51,415 - INFO - Processing item 51/100 with account: 126afpTpiVF8vkZ1gC3rUd5m47PBWcNTZDN8P2TtviwQ (Global index: 3035/10000)
+2024-01-05 02:05:53,215 - INFO - https://solscan.io/token/126afpTpiVF8vkZ1gC3rUd5m47PBWcNTZDN8P2TtviwQ#holders
+2024-01-05 02:05:54,217 - INFO - https://solscan.io/token/126afpTpiVF8vkZ1gC3rUd5m47PBWcNTZDN8P2TtviwQ#txs
+2024-01-05 02:06:11,863 - INFO - Owner address found: 5AsKgxeYRaHRcZivZDXoCK6PmVCbc7Nnc4LURpBV7tPv
+2024-01-05 02:06:11,863 - INFO - Holder Address: 5AsKgxeYRaHRcZivZDXoCK6PmVCbc7Nnc4LURpBV7tPv
+2024-01-05 02:06:22,030 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:06:22,064 - INFO - Time successfully extracted: 01-05-2024 01:02:19
+2024-01-05 02:06:22,064 - INFO - Hold time extracted: 01-05-2024 01:02:19
+2024-01-05 02:06:22,065 - INFO - Closing the web driver...
+2024-01-05 02:06:22,111 - INFO - Web driver closed for time.
+2024-01-05 02:06:22,111 - INFO - Successfully processed account 126afpTpiVF8vkZ1gC3rUd5m47PBWcNTZDN8P2TtviwQ.
+2024-01-05 02:06:22,114 - INFO - WebDriver closed for item 3035
+2024-01-05 02:06:22,115 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:06:22,121 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:06:22,124 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:06:22,127 - INFO - Starting from index 3036: It has the oldest 'time checked'.
+2024-01-05 02:06:22,127 - INFO - Processing item 52/100 with account: 5762p9iiUkhpaBHLwYvhxBWzacQfqnCgDzqsyTuy1dN3 (Global index: 3037/10000)
+2024-01-05 02:06:23,899 - INFO - https://solscan.io/token/5762p9iiUkhpaBHLwYvhxBWzacQfqnCgDzqsyTuy1dN3#holders
+2024-01-05 02:06:24,900 - INFO - https://solscan.io/token/5762p9iiUkhpaBHLwYvhxBWzacQfqnCgDzqsyTuy1dN3#txs
+2024-01-05 02:06:41,180 - INFO - Owner address found: DaoDnkKNcZK6ZNBgjMKuntkjRJFwEYxQUriouEDD5cQq
+2024-01-05 02:06:41,180 - INFO - Holder Address: DaoDnkKNcZK6ZNBgjMKuntkjRJFwEYxQUriouEDD5cQq
+2024-01-05 02:06:51,389 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:06:51,482 - INFO - Time successfully extracted: 01-04-2024 13:56:31
+2024-01-05 02:06:51,482 - INFO - Hold time extracted: 01-04-2024 13:56:31
+2024-01-05 02:06:51,482 - INFO - Closing the web driver...
+2024-01-05 02:06:51,529 - INFO - Web driver closed for time.
+2024-01-05 02:06:51,529 - INFO - Successfully processed account 5762p9iiUkhpaBHLwYvhxBWzacQfqnCgDzqsyTuy1dN3.
+2024-01-05 02:06:51,532 - INFO - WebDriver closed for item 3037
+2024-01-05 02:06:51,534 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:06:51,540 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:06:51,543 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:06:51,546 - INFO - Starting from index 3037: It has the oldest 'time checked'.
+2024-01-05 02:06:51,546 - INFO - Processing item 53/100 with account: 6Xb8E46386myFqt8wmPBNffgjKNC5VrBtWLPALuvA83t (Global index: 3038/10000)
+2024-01-05 02:06:53,316 - INFO - https://solscan.io/token/6Xb8E46386myFqt8wmPBNffgjKNC5VrBtWLPALuvA83t#holders
+2024-01-05 02:06:54,317 - INFO - https://solscan.io/token/6Xb8E46386myFqt8wmPBNffgjKNC5VrBtWLPALuvA83t#txs
+2024-01-05 02:07:12,255 - INFO - Owner address found: F2fpQy5uWMyt6rkWUSFHQWZoiCTou2vrFjnsqjc2bZAr
+2024-01-05 02:07:12,255 - INFO - Holder Address: F2fpQy5uWMyt6rkWUSFHQWZoiCTou2vrFjnsqjc2bZAr
+2024-01-05 02:07:22,422 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:07:22,450 - INFO - Time successfully extracted: 01-05-2024 00:44:06
+2024-01-05 02:07:22,451 - INFO - Hold time extracted: 01-05-2024 00:44:06
+2024-01-05 02:07:22,451 - INFO - Closing the web driver...
+2024-01-05 02:07:22,489 - INFO - Web driver closed for time.
+2024-01-05 02:07:22,489 - INFO - Successfully processed account 6Xb8E46386myFqt8wmPBNffgjKNC5VrBtWLPALuvA83t.
+2024-01-05 02:07:22,492 - INFO - WebDriver closed for item 3038
+2024-01-05 02:07:22,493 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:07:22,499 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:07:22,503 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:07:22,505 - INFO - Starting from index 3038: It has the oldest 'time checked'.
+2024-01-05 02:07:22,505 - INFO - Processing item 54/100 with account: 6dhVRxkanRVBwg7TvaNfwvmjHhZ7R5EZpNXXG1oanTba (Global index: 3039/10000)
+2024-01-05 02:07:24,274 - INFO - https://solscan.io/token/6dhVRxkanRVBwg7TvaNfwvmjHhZ7R5EZpNXXG1oanTba#holders
+2024-01-05 02:07:25,275 - INFO - https://solscan.io/token/6dhVRxkanRVBwg7TvaNfwvmjHhZ7R5EZpNXXG1oanTba#txs
+2024-01-05 02:07:40,501 - INFO - Owner address found: 87SWLNKgQMQUd5dtuABx8BwMYmuuVt7fMWi89CAf4C8E
+2024-01-05 02:07:40,501 - INFO - Holder Address: 87SWLNKgQMQUd5dtuABx8BwMYmuuVt7fMWi89CAf4C8E
+2024-01-05 02:07:50,646 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:07:50,671 - INFO - Time successfully extracted: 01-05-2024 01:33:22
+2024-01-05 02:07:50,671 - INFO - Hold time extracted: 01-05-2024 01:33:22
+2024-01-05 02:07:50,671 - INFO - Closing the web driver...
+2024-01-05 02:07:50,709 - INFO - Web driver closed for time.
+2024-01-05 02:07:50,710 - INFO - Successfully processed account 6dhVRxkanRVBwg7TvaNfwvmjHhZ7R5EZpNXXG1oanTba.
+2024-01-05 02:07:50,713 - INFO - WebDriver closed for item 3039
+2024-01-05 02:07:50,714 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:07:50,721 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:07:50,726 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:07:50,729 - INFO - Starting from index 3039: It has the oldest 'time checked'.
+2024-01-05 02:07:50,729 - INFO - Processing item 55/100 with account: 4QQ59orN3pkhYh44wqLFCCihXVuckRpaYokKA2tvqam1 (Global index: 3040/10000)
+2024-01-05 02:07:52,513 - INFO - https://solscan.io/token/4QQ59orN3pkhYh44wqLFCCihXVuckRpaYokKA2tvqam1#holders
+2024-01-05 02:07:53,514 - INFO - https://solscan.io/token/4QQ59orN3pkhYh44wqLFCCihXVuckRpaYokKA2tvqam1#txs
+2024-01-05 02:08:09,519 - INFO - Owner address found: GqQd9RcTG8GGTn5sFiiB2VuHVqHLVruyLQK5Z24DoTA7
+2024-01-05 02:08:09,519 - INFO - Holder Address: GqQd9RcTG8GGTn5sFiiB2VuHVqHLVruyLQK5Z24DoTA7
+2024-01-05 02:08:19,690 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:08:19,725 - INFO - Time successfully extracted: 01-05-2024 00:50:13
+2024-01-05 02:08:19,725 - INFO - Hold time extracted: 01-05-2024 00:50:13
+2024-01-05 02:08:19,725 - INFO - Closing the web driver...
+2024-01-05 02:08:19,772 - INFO - Web driver closed for time.
+2024-01-05 02:08:19,772 - INFO - Successfully processed account 4QQ59orN3pkhYh44wqLFCCihXVuckRpaYokKA2tvqam1.
+2024-01-05 02:08:19,775 - INFO - WebDriver closed for item 3040
+2024-01-05 02:08:19,776 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:08:19,782 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:08:19,786 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:08:19,789 - INFO - Starting from index 3040: It has the oldest 'time checked'.
+2024-01-05 02:08:19,789 - INFO - Processing item 56/100 with account: AdvzHPYrPzYs9HXyuqpHcfNBgiVFpAtNKbRPKPzoEBEL (Global index: 3041/10000)
+2024-01-05 02:08:21,562 - INFO - https://solscan.io/token/AdvzHPYrPzYs9HXyuqpHcfNBgiVFpAtNKbRPKPzoEBEL#holders
+2024-01-05 02:08:22,563 - INFO - https://solscan.io/token/AdvzHPYrPzYs9HXyuqpHcfNBgiVFpAtNKbRPKPzoEBEL#txs
+2024-01-05 02:08:38,558 - INFO - Owner address found: FwvCDvtPQzkJwmmQyAKGG4qLifWWJZyHEn5zNzth4gED
+2024-01-05 02:08:38,558 - INFO - Holder Address: FwvCDvtPQzkJwmmQyAKGG4qLifWWJZyHEn5zNzth4gED
+2024-01-05 02:08:48,744 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:08:48,779 - INFO - Time successfully extracted: 01-05-2024 01:02:24
+2024-01-05 02:08:48,779 - INFO - Hold time extracted: 01-05-2024 01:02:24
+2024-01-05 02:08:48,779 - INFO - Closing the web driver...
+2024-01-05 02:08:48,826 - INFO - Web driver closed for time.
+2024-01-05 02:08:48,826 - INFO - Successfully processed account AdvzHPYrPzYs9HXyuqpHcfNBgiVFpAtNKbRPKPzoEBEL.
+2024-01-05 02:08:48,829 - INFO - WebDriver closed for item 3041
+2024-01-05 02:08:48,830 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:08:48,836 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:08:48,840 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:08:48,842 - INFO - Starting from index 3041: It has the oldest 'time checked'.
+2024-01-05 02:08:48,842 - INFO - Processing item 57/100 with account: EDbfi5SwUuAgrFV6cyiXQ3ZrbjV83DeTgfkiJgx6SQGZ (Global index: 3042/10000)
+2024-01-05 02:08:50,626 - INFO - https://solscan.io/token/EDbfi5SwUuAgrFV6cyiXQ3ZrbjV83DeTgfkiJgx6SQGZ#holders
+2024-01-05 02:08:51,627 - INFO - https://solscan.io/token/EDbfi5SwUuAgrFV6cyiXQ3ZrbjV83DeTgfkiJgx6SQGZ#txs
+2024-01-05 02:09:05,426 - INFO - Owner address found: FcjoNZgcQ68P7cgK7mj9CUcsbtnWKuu7DSrkBMpmtqjB
+2024-01-05 02:09:05,426 - INFO - Holder Address: FcjoNZgcQ68P7cgK7mj9CUcsbtnWKuu7DSrkBMpmtqjB
+2024-01-05 02:09:15,587 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:09:15,622 - INFO - Time successfully extracted: 01-05-2024 01:26:48
+2024-01-05 02:09:15,622 - INFO - Hold time extracted: 01-05-2024 01:26:48
+2024-01-05 02:09:15,622 - INFO - Closing the web driver...
+2024-01-05 02:09:15,669 - INFO - Web driver closed for time.
+2024-01-05 02:09:15,669 - INFO - Successfully processed account EDbfi5SwUuAgrFV6cyiXQ3ZrbjV83DeTgfkiJgx6SQGZ.
+2024-01-05 02:09:15,672 - INFO - WebDriver closed for item 3042
+2024-01-05 02:09:15,673 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:09:15,679 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:09:15,682 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:09:15,685 - INFO - Starting from index 3042: It has the oldest 'time checked'.
+2024-01-05 02:09:15,685 - INFO - Processing item 58/100 with account: 97m7zzVKfK13w1uY52wMK5zhkNGVNBr8rhP3YA1usgqU (Global index: 3043/10000)
+2024-01-05 02:09:17,458 - INFO - https://solscan.io/token/97m7zzVKfK13w1uY52wMK5zhkNGVNBr8rhP3YA1usgqU#holders
+2024-01-05 02:09:18,459 - INFO - https://solscan.io/token/97m7zzVKfK13w1uY52wMK5zhkNGVNBr8rhP3YA1usgqU#txs
+2024-01-05 02:09:34,416 - INFO - Owner address found: 3PhSn9pvnHn5bFQWFoT9DZ2En6qW7hjW9mhta5e7sasY
+2024-01-05 02:09:34,417 - INFO - Holder Address: 3PhSn9pvnHn5bFQWFoT9DZ2En6qW7hjW9mhta5e7sasY
+2024-01-05 02:09:44,570 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:09:44,599 - INFO - Time successfully extracted: 01-05-2024 00:44:04
+2024-01-05 02:09:44,599 - INFO - Hold time extracted: 01-05-2024 00:44:04
+2024-01-05 02:09:44,599 - INFO - Closing the web driver...
+2024-01-05 02:09:44,646 - INFO - Web driver closed for time.
+2024-01-05 02:09:44,646 - INFO - Successfully processed account 97m7zzVKfK13w1uY52wMK5zhkNGVNBr8rhP3YA1usgqU.
+2024-01-05 02:09:44,649 - INFO - WebDriver closed for item 3043
+2024-01-05 02:09:44,650 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:09:44,657 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:09:44,660 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:09:44,663 - INFO - Starting from index 3043: It has the oldest 'time checked'.
+2024-01-05 02:09:44,663 - INFO - Processing item 59/100 with account: 3LBMUdSMEQJqHwkkmoMXWnE1VNSFZx63pwqMCS2ZedLw (Global index: 3044/10000)
+2024-01-05 02:09:46,433 - INFO - https://solscan.io/token/3LBMUdSMEQJqHwkkmoMXWnE1VNSFZx63pwqMCS2ZedLw#holders
+2024-01-05 02:09:47,434 - INFO - https://solscan.io/token/3LBMUdSMEQJqHwkkmoMXWnE1VNSFZx63pwqMCS2ZedLw#txs
+2024-01-05 02:10:01,702 - INFO - Owner address found: 78dzSjrh7vm5pgLD4EpuwRR3We5RaACQFVkuTjuSibMD
+2024-01-05 02:10:01,703 - INFO - Holder Address: 78dzSjrh7vm5pgLD4EpuwRR3We5RaACQFVkuTjuSibMD
+2024-01-05 02:10:11,872 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:10:11,899 - INFO - Time successfully extracted: 01-05-2024 01:08:43
+2024-01-05 02:10:11,899 - INFO - Hold time extracted: 01-05-2024 01:08:43
+2024-01-05 02:10:11,899 - INFO - Closing the web driver...
+2024-01-05 02:10:11,937 - INFO - Web driver closed for time.
+2024-01-05 02:10:11,937 - INFO - Successfully processed account 3LBMUdSMEQJqHwkkmoMXWnE1VNSFZx63pwqMCS2ZedLw.
+2024-01-05 02:10:11,942 - INFO - WebDriver closed for item 3044
+2024-01-05 02:10:11,944 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:10:11,950 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:10:11,953 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:10:11,956 - INFO - Starting from index 3044: It has the oldest 'time checked'.
+2024-01-05 02:10:11,956 - INFO - Processing item 60/100 with account: F7THGsCmcSKxgnmvSNmbgWHK7pSPMn5SvuR9GzwyfkQf (Global index: 3045/10000)
+2024-01-05 02:10:13,734 - INFO - https://solscan.io/token/F7THGsCmcSKxgnmvSNmbgWHK7pSPMn5SvuR9GzwyfkQf#holders
+2024-01-05 02:10:14,735 - INFO - https://solscan.io/token/F7THGsCmcSKxgnmvSNmbgWHK7pSPMn5SvuR9GzwyfkQf#txs
+2024-01-05 02:10:29,820 - INFO - Owner address found: 4wznTEwyLQuLrTZvuqSwJsB4qLe3oS3kHquCkwSZ6Jez
+2024-01-05 02:10:29,820 - INFO - Holder Address: 4wznTEwyLQuLrTZvuqSwJsB4qLe3oS3kHquCkwSZ6Jez
+2024-01-05 02:10:39,976 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:10:40,008 - INFO - Time successfully extracted: 01-05-2024 00:50:09
+2024-01-05 02:10:40,008 - INFO - Hold time extracted: 01-05-2024 00:50:09
+2024-01-05 02:10:40,008 - INFO - Closing the web driver...
+2024-01-05 02:10:40,063 - INFO - Web driver closed for time.
+2024-01-05 02:10:40,063 - INFO - Successfully processed account F7THGsCmcSKxgnmvSNmbgWHK7pSPMn5SvuR9GzwyfkQf.
+2024-01-05 02:10:40,066 - INFO - WebDriver closed for item 3045
+2024-01-05 02:10:40,067 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:10:40,073 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:10:40,077 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:10:40,080 - INFO - Starting from index 3045: It has the oldest 'time checked'.
+2024-01-05 02:10:40,080 - INFO - Processing item 61/100 with account: A8gZ9VJMtaMqCqoy9KGJoNEHSHkEH6AHkTx2ErWGaiLm (Global index: 3046/10000)
+2024-01-05 02:10:41,852 - INFO - https://solscan.io/token/A8gZ9VJMtaMqCqoy9KGJoNEHSHkEH6AHkTx2ErWGaiLm#holders
+2024-01-05 02:10:42,854 - INFO - https://solscan.io/token/A8gZ9VJMtaMqCqoy9KGJoNEHSHkEH6AHkTx2ErWGaiLm#txs
+2024-01-05 02:10:56,406 - INFO - Owner address found: DqyZ8j16wLpAW986PJcRumbCkZ7VSjkgj53YdrPouoCx
+2024-01-05 02:10:56,406 - INFO - Holder Address: DqyZ8j16wLpAW986PJcRumbCkZ7VSjkgj53YdrPouoCx
+2024-01-05 02:11:06,554 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:11:06,582 - INFO - Time successfully extracted: 01-04-2024 22:16:02
+2024-01-05 02:11:06,582 - INFO - Hold time extracted: 01-04-2024 22:16:02
+2024-01-05 02:11:06,582 - INFO - Closing the web driver...
+2024-01-05 02:11:06,621 - INFO - Web driver closed for time.
+2024-01-05 02:11:06,621 - INFO - Successfully processed account A8gZ9VJMtaMqCqoy9KGJoNEHSHkEH6AHkTx2ErWGaiLm.
+2024-01-05 02:11:06,626 - INFO - WebDriver closed for item 3046
+2024-01-05 02:11:06,628 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:11:06,634 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:11:06,637 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:11:06,640 - INFO - Starting from index 3047: It has the oldest 'time checked'.
+2024-01-05 02:11:06,640 - INFO - Processing item 62/100 with account: 5ZV5kwY7hBvAwinocv5NhuDrbtptrR3YJgVS883rVJb6 (Global index: 3048/10000)
+2024-01-05 02:11:08,409 - INFO - https://solscan.io/token/5ZV5kwY7hBvAwinocv5NhuDrbtptrR3YJgVS883rVJb6#holders
+2024-01-05 02:11:09,410 - INFO - https://solscan.io/token/5ZV5kwY7hBvAwinocv5NhuDrbtptrR3YJgVS883rVJb6#txs
+2024-01-05 02:11:23,211 - INFO - Owner address found: 4apQhudp5wY4BBg9fdmuvsuuStJ1BfTifCGDx5XYTBt1
+2024-01-05 02:11:23,211 - INFO - Holder Address: 4apQhudp5wY4BBg9fdmuvsuuStJ1BfTifCGDx5XYTBt1
+2024-01-05 02:11:33,387 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:11:33,422 - INFO - Time successfully extracted: 01-05-2024 01:26:50
+2024-01-05 02:11:33,422 - INFO - Hold time extracted: 01-05-2024 01:26:50
+2024-01-05 02:11:33,422 - INFO - Closing the web driver...
+2024-01-05 02:11:33,460 - INFO - Web driver closed for time.
+2024-01-05 02:11:33,460 - INFO - Successfully processed account 5ZV5kwY7hBvAwinocv5NhuDrbtptrR3YJgVS883rVJb6.
+2024-01-05 02:11:33,465 - INFO - WebDriver closed for item 3048
+2024-01-05 02:11:33,467 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:11:33,473 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:11:33,476 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:11:33,479 - INFO - Starting from index 3048: It has the oldest 'time checked'.
+2024-01-05 02:11:33,479 - INFO - Processing item 63/100 with account: 2oBgABy7KrcEen1g1YN1LJejtVLMoF8E2BZPf7qN4D9y (Global index: 3049/10000)
+2024-01-05 02:11:35,250 - INFO - https://solscan.io/token/2oBgABy7KrcEen1g1YN1LJejtVLMoF8E2BZPf7qN4D9y#holders
+2024-01-05 02:11:36,251 - INFO - https://solscan.io/token/2oBgABy7KrcEen1g1YN1LJejtVLMoF8E2BZPf7qN4D9y#txs
+2024-01-05 02:11:53,967 - INFO - Owner address found: 5jeHtN2UhtbacKDWQhKP9hPVAyZuekdZPMGrMCZHY4Gg
+2024-01-05 02:11:53,968 - INFO - Holder Address: 5jeHtN2UhtbacKDWQhKP9hPVAyZuekdZPMGrMCZHY4Gg
+2024-01-05 02:12:04,129 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:12:04,163 - INFO - Time successfully extracted: 01-05-2024 01:26:56
+2024-01-05 02:12:04,163 - INFO - Hold time extracted: 01-05-2024 01:26:56
+2024-01-05 02:12:04,163 - INFO - Closing the web driver...
+2024-01-05 02:12:04,202 - INFO - Web driver closed for time.
+2024-01-05 02:12:04,202 - INFO - Successfully processed account 2oBgABy7KrcEen1g1YN1LJejtVLMoF8E2BZPf7qN4D9y.
+2024-01-05 02:12:04,205 - INFO - WebDriver closed for item 3049
+2024-01-05 02:12:04,206 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:12:04,213 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:12:04,216 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:12:04,219 - INFO - Starting from index 3049: It has the oldest 'time checked'.
+2024-01-05 02:12:04,219 - INFO - Processing item 64/100 with account: pAjJZyL7a16MupTjnpDks81yM3cm7x52i8GPn6b155s (Global index: 3050/10000)
+2024-01-05 02:12:05,987 - INFO - https://solscan.io/token/pAjJZyL7a16MupTjnpDks81yM3cm7x52i8GPn6b155s#holders
+2024-01-05 02:12:06,988 - INFO - https://solscan.io/token/pAjJZyL7a16MupTjnpDks81yM3cm7x52i8GPn6b155s#txs
+2024-01-05 02:12:20,871 - INFO - Owner address found: 5UBiv17A3vDiU5LuyvZznC6votZSCU5wL3vdneAKc4RY
+2024-01-05 02:12:20,871 - INFO - Holder Address: 5UBiv17A3vDiU5LuyvZznC6votZSCU5wL3vdneAKc4RY
+2024-01-05 02:12:31,018 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:12:31,046 - INFO - Time successfully extracted: 01-05-2024 01:21:01
+2024-01-05 02:12:31,046 - INFO - Hold time extracted: 01-05-2024 01:21:01
+2024-01-05 02:12:31,046 - INFO - Closing the web driver...
+2024-01-05 02:12:31,085 - INFO - Web driver closed for time.
+2024-01-05 02:12:31,085 - INFO - Successfully processed account pAjJZyL7a16MupTjnpDks81yM3cm7x52i8GPn6b155s.
+2024-01-05 02:12:31,088 - INFO - WebDriver closed for item 3050
+2024-01-05 02:12:31,089 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:12:31,095 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:12:31,099 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:12:31,102 - INFO - Starting from index 3050: It has the oldest 'time checked'.
+2024-01-05 02:12:31,102 - INFO - Processing item 65/100 with account: 3XUZNHr1z3TL74EmoMXnmQiUmAdoDp9gSuB474kMamrF (Global index: 3051/10000)
+2024-01-05 02:12:32,874 - INFO - https://solscan.io/token/3XUZNHr1z3TL74EmoMXnmQiUmAdoDp9gSuB474kMamrF#holders
+2024-01-05 02:12:33,875 - INFO - https://solscan.io/token/3XUZNHr1z3TL74EmoMXnmQiUmAdoDp9gSuB474kMamrF#txs
+2024-01-05 02:12:46,825 - INFO - Owner address found: JLHAg2FnDdTuwjfE4kAbQtu61R69m6NVjicuZFtP4xq
+2024-01-05 02:12:46,826 - INFO - Holder Address: JLHAg2FnDdTuwjfE4kAbQtu61R69m6NVjicuZFtP4xq
+2024-01-05 02:12:56,997 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:12:57,028 - INFO - Time successfully extracted: 01-04-2024 04:16:04
+2024-01-05 02:12:57,028 - INFO - Hold time extracted: 01-04-2024 04:16:04
+2024-01-05 02:12:57,028 - INFO - Closing the web driver...
+2024-01-05 02:12:57,067 - INFO - Web driver closed for time.
+2024-01-05 02:12:57,067 - INFO - Successfully processed account 3XUZNHr1z3TL74EmoMXnmQiUmAdoDp9gSuB474kMamrF.
+2024-01-05 02:12:57,070 - INFO - WebDriver closed for item 3051
+2024-01-05 02:12:57,071 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:12:57,078 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:12:57,081 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:12:57,084 - INFO - Starting from index 3051: It has the oldest 'time checked'.
+2024-01-05 02:12:57,084 - INFO - Processing item 66/100 with account: 42ZpqApAw5GH9QByKWYd2ELCz3dfNVYPd7mYb9U2GXGy (Global index: 3052/10000)
+2024-01-05 02:12:58,861 - INFO - https://solscan.io/token/42ZpqApAw5GH9QByKWYd2ELCz3dfNVYPd7mYb9U2GXGy#holders
+2024-01-05 02:12:59,863 - INFO - https://solscan.io/token/42ZpqApAw5GH9QByKWYd2ELCz3dfNVYPd7mYb9U2GXGy#txs
+2024-01-05 02:13:13,793 - INFO - Owner address found: GMPsU6KRftioJCd3qJJ4EdfNXjxFcTQdWBEMFyYSDtSZ
+2024-01-05 02:13:13,793 - INFO - Holder Address: GMPsU6KRftioJCd3qJJ4EdfNXjxFcTQdWBEMFyYSDtSZ
+2024-01-05 02:13:23,969 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:13:23,997 - INFO - Time successfully extracted: 01-05-2024 01:26:50
+2024-01-05 02:13:23,997 - INFO - Hold time extracted: 01-05-2024 01:26:50
+2024-01-05 02:13:23,997 - INFO - Closing the web driver...
+2024-01-05 02:13:24,024 - INFO - Web driver closed for time.
+2024-01-05 02:13:24,024 - INFO - Successfully processed account 42ZpqApAw5GH9QByKWYd2ELCz3dfNVYPd7mYb9U2GXGy.
+2024-01-05 02:13:24,029 - INFO - WebDriver closed for item 3052
+2024-01-05 02:13:24,030 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:13:24,037 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:13:24,041 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:13:24,045 - INFO - Starting from index 3052: It has the oldest 'time checked'.
+2024-01-05 02:13:24,045 - INFO - Processing item 67/100 with account: DcKXwyuz5fNe65XCYR2Pa3Uk84cKMbpZKvXC3wm8QCW6 (Global index: 3053/10000)
+2024-01-05 02:13:25,818 - INFO - https://solscan.io/token/DcKXwyuz5fNe65XCYR2Pa3Uk84cKMbpZKvXC3wm8QCW6#holders
+2024-01-05 02:13:26,819 - INFO - https://solscan.io/token/DcKXwyuz5fNe65XCYR2Pa3Uk84cKMbpZKvXC3wm8QCW6#txs
+2024-01-05 02:13:40,158 - INFO - Owner address found: 2f94wVgj5JHuA2y2G3UGvz7PWGAXMg1oL6LFxU3dhQYc
+2024-01-05 02:13:40,158 - INFO - Holder Address: 2f94wVgj5JHuA2y2G3UGvz7PWGAXMg1oL6LFxU3dhQYc
+2024-01-05 02:13:50,322 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:13:50,418 - INFO - Time successfully extracted: 01-05-2024 00:44:22
+2024-01-05 02:13:50,418 - INFO - Hold time extracted: 01-05-2024 00:44:22
+2024-01-05 02:13:50,418 - INFO - Closing the web driver...
+2024-01-05 02:13:50,456 - INFO - Web driver closed for time.
+2024-01-05 02:13:50,456 - INFO - Successfully processed account DcKXwyuz5fNe65XCYR2Pa3Uk84cKMbpZKvXC3wm8QCW6.
+2024-01-05 02:13:50,462 - INFO - WebDriver closed for item 3053
+2024-01-05 02:13:50,463 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:13:50,469 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:13:50,473 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:13:50,476 - INFO - Starting from index 3053: It has the oldest 'time checked'.
+2024-01-05 02:13:50,476 - INFO - Processing item 68/100 with account: 4MRHahYxXgxVSmDWKrQPnkgUMoUocTkRaBM3mVeuqidV (Global index: 3054/10000)
+2024-01-05 02:13:52,246 - INFO - https://solscan.io/token/4MRHahYxXgxVSmDWKrQPnkgUMoUocTkRaBM3mVeuqidV#holders
+2024-01-05 02:13:53,247 - INFO - https://solscan.io/token/4MRHahYxXgxVSmDWKrQPnkgUMoUocTkRaBM3mVeuqidV#txs
+2024-01-05 02:14:06,645 - INFO - Owner address found: Be21kYrStQNuHaVcVRoyXK4LCcdRVHRBuXbC2AbAi4tB
+2024-01-05 02:14:06,645 - INFO - Holder Address: Be21kYrStQNuHaVcVRoyXK4LCcdRVHRBuXbC2AbAi4tB
+2024-01-05 02:14:16,802 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:14:16,837 - INFO - Time successfully extracted: 01-05-2024 00:50:20
+2024-01-05 02:14:16,837 - INFO - Hold time extracted: 01-05-2024 00:50:20
+2024-01-05 02:14:16,837 - INFO - Closing the web driver...
+2024-01-05 02:14:16,875 - INFO - Web driver closed for time.
+2024-01-05 02:14:16,875 - INFO - Successfully processed account 4MRHahYxXgxVSmDWKrQPnkgUMoUocTkRaBM3mVeuqidV.
+2024-01-05 02:14:16,878 - INFO - WebDriver closed for item 3054
+2024-01-05 02:14:16,879 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:14:16,886 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:14:16,889 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:14:16,892 - INFO - Starting from index 3054: It has the oldest 'time checked'.
+2024-01-05 02:14:16,892 - INFO - Processing item 69/100 with account: Ggs8tQy8j5an86bCeYRqynWKgVHrR2TAbmDNcw4uBLYv (Global index: 3055/10000)
+2024-01-05 02:14:18,670 - INFO - https://solscan.io/token/Ggs8tQy8j5an86bCeYRqynWKgVHrR2TAbmDNcw4uBLYv#holders
+2024-01-05 02:14:19,672 - INFO - https://solscan.io/token/Ggs8tQy8j5an86bCeYRqynWKgVHrR2TAbmDNcw4uBLYv#txs
+2024-01-05 02:14:37,871 - INFO - Owner address found: 2f94wVgj5JHuA2y2G3UGvz7PWGAXMg1oL6LFxU3dhQYc
+2024-01-05 02:14:37,871 - INFO - Holder Address: 2f94wVgj5JHuA2y2G3UGvz7PWGAXMg1oL6LFxU3dhQYc
+2024-01-05 02:14:48,029 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:14:48,054 - INFO - Time successfully extracted: 01-04-2024 13:50:12
+2024-01-05 02:14:48,054 - INFO - Hold time extracted: 01-04-2024 13:50:12
+2024-01-05 02:14:48,054 - INFO - Closing the web driver...
+2024-01-05 02:14:48,092 - INFO - Web driver closed for time.
+2024-01-05 02:14:48,093 - INFO - Successfully processed account Ggs8tQy8j5an86bCeYRqynWKgVHrR2TAbmDNcw4uBLYv.
+2024-01-05 02:14:48,096 - INFO - WebDriver closed for item 3055
+2024-01-05 02:14:48,097 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:14:48,104 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:14:48,107 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:14:48,110 - INFO - Starting from index 3055: It has the oldest 'time checked'.
+2024-01-05 02:14:48,110 - INFO - Processing item 70/100 with account: JANjed2NzviVL13U6AZ63r7KL3TxaJz8NoNzq3siwKAG (Global index: 3056/10000)
+2024-01-05 02:14:49,880 - INFO - https://solscan.io/token/JANjed2NzviVL13U6AZ63r7KL3TxaJz8NoNzq3siwKAG#holders
+2024-01-05 02:14:50,881 - INFO - https://solscan.io/token/JANjed2NzviVL13U6AZ63r7KL3TxaJz8NoNzq3siwKAG#txs
+2024-01-05 02:15:06,212 - INFO - Owner address found: 78dzSjrh7vm5pgLD4EpuwRR3We5RaACQFVkuTjuSibMD
+2024-01-05 02:15:06,212 - INFO - Holder Address: 78dzSjrh7vm5pgLD4EpuwRR3We5RaACQFVkuTjuSibMD
+2024-01-05 02:15:16,398 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:15:16,435 - INFO - Time successfully extracted: 01-05-2024 00:50:15
+2024-01-05 02:15:16,435 - INFO - Hold time extracted: 01-05-2024 00:50:15
+2024-01-05 02:15:16,435 - INFO - Closing the web driver...
+2024-01-05 02:15:16,482 - INFO - Web driver closed for time.
+2024-01-05 02:15:16,482 - INFO - Successfully processed account JANjed2NzviVL13U6AZ63r7KL3TxaJz8NoNzq3siwKAG.
+2024-01-05 02:15:16,485 - INFO - WebDriver closed for item 3056
+2024-01-05 02:15:16,486 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:15:16,493 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:15:16,497 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:15:16,500 - INFO - Starting from index 3056: It has the oldest 'time checked'.
+2024-01-05 02:15:16,500 - INFO - Processing item 71/100 with account: HAcCpApRUK98ABwk5c43vpdkQt896UCLDx4xSyWwmqaE (Global index: 3057/10000)
+2024-01-05 02:15:18,272 - INFO - https://solscan.io/token/HAcCpApRUK98ABwk5c43vpdkQt896UCLDx4xSyWwmqaE#holders
+2024-01-05 02:15:19,273 - INFO - https://solscan.io/token/HAcCpApRUK98ABwk5c43vpdkQt896UCLDx4xSyWwmqaE#txs
+2024-01-05 02:15:35,603 - INFO - Owner address found: 7HtrejMU26KpWjghVxFUjLtZDZEuiP9y4cSmk2gjoaEk
+2024-01-05 02:15:35,603 - INFO - Holder Address: 7HtrejMU26KpWjghVxFUjLtZDZEuiP9y4cSmk2gjoaEk
+2024-01-05 02:15:45,766 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:15:45,793 - INFO - Time successfully extracted: 01-04-2024 13:56:29
+2024-01-05 02:15:45,793 - INFO - Hold time extracted: 01-04-2024 13:56:29
+2024-01-05 02:15:45,793 - INFO - Closing the web driver...
+2024-01-05 02:15:45,840 - INFO - Web driver closed for time.
+2024-01-05 02:15:45,840 - INFO - Successfully processed account HAcCpApRUK98ABwk5c43vpdkQt896UCLDx4xSyWwmqaE.
+2024-01-05 02:15:45,843 - INFO - WebDriver closed for item 3057
+2024-01-05 02:15:45,845 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:15:45,851 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:15:45,855 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:15:45,858 - INFO - Starting from index 3057: It has the oldest 'time checked'.
+2024-01-05 02:15:45,858 - INFO - Processing item 72/100 with account: HuFnHHfLLitSBiSLSsBC4KxNR9qjJwdVzSzQST5b7hok (Global index: 3058/10000)
+2024-01-05 02:15:47,630 - INFO - https://solscan.io/token/HuFnHHfLLitSBiSLSsBC4KxNR9qjJwdVzSzQST5b7hok#holders
+2024-01-05 02:15:48,631 - INFO - https://solscan.io/token/HuFnHHfLLitSBiSLSsBC4KxNR9qjJwdVzSzQST5b7hok#txs
+2024-01-05 02:16:04,030 - INFO - Owner address found: Brynpwtfb3XkZXFf2TgpGxPVFiwQvt97i86pxERA3zsM
+2024-01-05 02:16:04,030 - INFO - Holder Address: Brynpwtfb3XkZXFf2TgpGxPVFiwQvt97i86pxERA3zsM
+2024-01-05 02:16:14,189 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:16:14,216 - INFO - Time successfully extracted: 01-05-2024 01:02:19
+2024-01-05 02:16:14,216 - INFO - Hold time extracted: 01-05-2024 01:02:19
+2024-01-05 02:16:14,216 - INFO - Closing the web driver...
+2024-01-05 02:16:14,263 - INFO - Web driver closed for time.
+2024-01-05 02:16:14,263 - INFO - Successfully processed account HuFnHHfLLitSBiSLSsBC4KxNR9qjJwdVzSzQST5b7hok.
+2024-01-05 02:16:14,266 - INFO - WebDriver closed for item 3058
+2024-01-05 02:16:14,267 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:16:14,273 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:16:14,277 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:16:14,280 - INFO - Starting from index 3058: It has the oldest 'time checked'.
+2024-01-05 02:16:14,280 - INFO - Processing item 73/100 with account: 66uPxUmu51tdTmhwhZgXY9pkoqKEhmw8VCQtnVG2szM5 (Global index: 3059/10000)
+2024-01-05 02:16:16,055 - INFO - https://solscan.io/token/66uPxUmu51tdTmhwhZgXY9pkoqKEhmw8VCQtnVG2szM5#holders
+2024-01-05 02:16:17,056 - INFO - https://solscan.io/token/66uPxUmu51tdTmhwhZgXY9pkoqKEhmw8VCQtnVG2szM5#txs
+2024-01-05 02:16:33,702 - INFO - Owner address found: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 02:16:33,702 - INFO - Holder Address: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 02:16:43,882 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:16:43,925 - INFO - Time successfully extracted: 01-05-2024 00:56:36
+2024-01-05 02:16:43,925 - INFO - Hold time extracted: 01-05-2024 00:56:36
+2024-01-05 02:16:43,925 - INFO - Closing the web driver...
+2024-01-05 02:16:43,972 - INFO - Web driver closed for time.
+2024-01-05 02:16:43,973 - INFO - Successfully processed account 66uPxUmu51tdTmhwhZgXY9pkoqKEhmw8VCQtnVG2szM5.
+2024-01-05 02:16:43,975 - INFO - WebDriver closed for item 3059
+2024-01-05 02:16:43,976 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:16:43,983 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:16:43,987 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:16:43,990 - INFO - Starting from index 3059: It has the oldest 'time checked'.
+2024-01-05 02:16:43,990 - INFO - Processing item 74/100 with account: AzRuAupHeCE8rwMrVwCYUzT4vKbesc65KqWsV91gAK5n (Global index: 3060/10000)
+2024-01-05 02:16:45,769 - INFO - https://solscan.io/token/AzRuAupHeCE8rwMrVwCYUzT4vKbesc65KqWsV91gAK5n#holders
+2024-01-05 02:16:46,771 - INFO - https://solscan.io/token/AzRuAupHeCE8rwMrVwCYUzT4vKbesc65KqWsV91gAK5n#txs
+2024-01-05 02:17:00,058 - INFO - Owner address found: 5kRkJGdPE1PeszF96JyQtGxdnuKN6RZq3PgbzWBGW524
+2024-01-05 02:17:00,058 - INFO - Holder Address: 5kRkJGdPE1PeszF96JyQtGxdnuKN6RZq3PgbzWBGW524
+2024-01-05 02:17:10,216 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:17:10,251 - INFO - Time successfully extracted: 01-05-2024 01:21:01
+2024-01-05 02:17:10,251 - INFO - Hold time extracted: 01-05-2024 01:21:01
+2024-01-05 02:17:10,251 - INFO - Closing the web driver...
+2024-01-05 02:17:10,298 - INFO - Web driver closed for time.
+2024-01-05 02:17:10,298 - INFO - Successfully processed account AzRuAupHeCE8rwMrVwCYUzT4vKbesc65KqWsV91gAK5n.
+2024-01-05 02:17:10,300 - INFO - WebDriver closed for item 3060
+2024-01-05 02:17:10,302 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:17:10,308 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:17:10,311 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:17:10,314 - INFO - Starting from index 3061: It has the oldest 'time checked'.
+2024-01-05 02:17:10,314 - INFO - Processing item 75/100 with account: cwQtmTydLrdWpS1UAkmg7J3wCZ4ixrLT1mKV5qhJmnT (Global index: 3062/10000)
+2024-01-05 02:17:12,091 - INFO - https://solscan.io/token/cwQtmTydLrdWpS1UAkmg7J3wCZ4ixrLT1mKV5qhJmnT#holders
+2024-01-05 02:17:13,092 - INFO - https://solscan.io/token/cwQtmTydLrdWpS1UAkmg7J3wCZ4ixrLT1mKV5qhJmnT#txs
+2024-01-05 02:17:26,057 - INFO - Owner address found: BDw9cp6JDBjeih6HsFwFjj2hyHb2dtkAuu6kmUGzt8v2
+2024-01-05 02:17:26,057 - INFO - Holder Address: BDw9cp6JDBjeih6HsFwFjj2hyHb2dtkAuu6kmUGzt8v2
+2024-01-05 02:17:36,229 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:17:36,264 - INFO - Time successfully extracted: 01-05-2024 00:38:06
+2024-01-05 02:17:36,264 - INFO - Hold time extracted: 01-05-2024 00:38:06
+2024-01-05 02:17:36,264 - INFO - Closing the web driver...
+2024-01-05 02:17:36,312 - INFO - Web driver closed for time.
+2024-01-05 02:17:36,312 - INFO - Successfully processed account cwQtmTydLrdWpS1UAkmg7J3wCZ4ixrLT1mKV5qhJmnT.
+2024-01-05 02:17:36,315 - INFO - WebDriver closed for item 3062
+2024-01-05 02:17:36,316 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:17:36,323 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:17:36,326 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:17:36,329 - INFO - Starting from index 3062: It has the oldest 'time checked'.
+2024-01-05 02:17:36,329 - INFO - Processing item 76/100 with account: 4gpXqcWkKygo6YHif5bBcLjbANjUMFt3RMiCvjZMW9Bq (Global index: 3063/10000)
+2024-01-05 02:17:38,101 - INFO - https://solscan.io/token/4gpXqcWkKygo6YHif5bBcLjbANjUMFt3RMiCvjZMW9Bq#holders
+2024-01-05 02:17:39,103 - INFO - https://solscan.io/token/4gpXqcWkKygo6YHif5bBcLjbANjUMFt3RMiCvjZMW9Bq#txs
+2024-01-05 02:17:56,482 - INFO - Owner address found: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 02:17:56,482 - INFO - Holder Address: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 02:18:06,646 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:18:06,678 - INFO - Time successfully extracted: 01-04-2024 04:16:04
+2024-01-05 02:18:06,678 - INFO - Hold time extracted: 01-04-2024 04:16:04
+2024-01-05 02:18:06,678 - INFO - Closing the web driver...
+2024-01-05 02:18:06,717 - INFO - Web driver closed for time.
+2024-01-05 02:18:06,717 - INFO - Successfully processed account 4gpXqcWkKygo6YHif5bBcLjbANjUMFt3RMiCvjZMW9Bq.
+2024-01-05 02:18:06,720 - INFO - WebDriver closed for item 3063
+2024-01-05 02:18:06,722 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:18:06,728 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:18:06,732 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:18:06,735 - INFO - Starting from index 3063: It has the oldest 'time checked'.
+2024-01-05 02:18:06,735 - INFO - Processing item 77/100 with account: GYKpwmeubRQ1r2cCWdW9CzNKVBqTNPdNHrMeDPjW5CLB (Global index: 3064/10000)
+2024-01-05 02:18:08,536 - INFO - https://solscan.io/token/GYKpwmeubRQ1r2cCWdW9CzNKVBqTNPdNHrMeDPjW5CLB#holders
+2024-01-05 02:18:09,537 - INFO - https://solscan.io/token/GYKpwmeubRQ1r2cCWdW9CzNKVBqTNPdNHrMeDPjW5CLB#txs
+2024-01-05 02:18:26,486 - INFO - Owner address found: BcmbGCLqk9ifH4jY9abDbqfHCzMAaanyQJ4zQ1ft6G1
+2024-01-05 02:18:26,486 - INFO - Holder Address: BcmbGCLqk9ifH4jY9abDbqfHCzMAaanyQJ4zQ1ft6G1
+2024-01-05 02:18:36,648 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:18:36,676 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-01-05 02:18:36,676 - INFO - Hold time extracted: Table not found
+2024-01-05 02:18:36,676 - INFO - Closing the web driver...
+2024-01-05 02:18:36,723 - INFO - Web driver closed for time.
+2024-01-05 02:18:36,724 - ERROR - Error processing GYKpwmeubRQ1r2cCWdW9CzNKVBqTNPdNHrMeDPjW5CLB: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 02:18:36,726 - INFO - WebDriver closed for item 3064
+2024-01-05 02:18:36,728 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:18:36,734 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:18:36,737 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:18:36,740 - INFO - Starting from index 3064: It has the oldest 'time checked'.
+2024-01-05 02:18:36,740 - INFO - Processing item 78/100 with account: AvFxxXYccd4Gn4H396fBhqQvqSHDKzwo5AU3k5WsoGaJ (Global index: 3065/10000)
+2024-01-05 02:18:38,522 - INFO - https://solscan.io/token/AvFxxXYccd4Gn4H396fBhqQvqSHDKzwo5AU3k5WsoGaJ#holders
+2024-01-05 02:18:39,523 - INFO - https://solscan.io/token/AvFxxXYccd4Gn4H396fBhqQvqSHDKzwo5AU3k5WsoGaJ#txs
+2024-01-05 02:18:56,637 - INFO - Owner address found: FT19Xj82Wz5f9YWWD4A9iwkqm37W6k6o7yfk3BWjAZBY
+2024-01-05 02:18:56,637 - INFO - Holder Address: FT19Xj82Wz5f9YWWD4A9iwkqm37W6k6o7yfk3BWjAZBY
+2024-01-05 02:19:06,823 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:19:06,857 - INFO - Time successfully extracted: 01-05-2024 00:56:33
+2024-01-05 02:19:06,857 - INFO - Hold time extracted: 01-05-2024 00:56:33
+2024-01-05 02:19:06,857 - INFO - Closing the web driver...
+2024-01-05 02:19:06,896 - INFO - Web driver closed for time.
+2024-01-05 02:19:06,896 - INFO - Successfully processed account AvFxxXYccd4Gn4H396fBhqQvqSHDKzwo5AU3k5WsoGaJ.
+2024-01-05 02:19:06,901 - INFO - WebDriver closed for item 3065
+2024-01-05 02:19:06,903 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:19:06,911 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:19:06,916 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:19:06,920 - INFO - Starting from index 3065: It has the oldest 'time checked'.
+2024-01-05 02:19:06,920 - INFO - Processing item 79/100 with account: FmiT3jjD9X1JVNaz8cNE9xamzXZXJqyS1FAoNVJ9yJxx (Global index: 3066/10000)
+2024-01-05 02:19:08,692 - INFO - https://solscan.io/token/FmiT3jjD9X1JVNaz8cNE9xamzXZXJqyS1FAoNVJ9yJxx#holders
+2024-01-05 02:19:09,693 - INFO - https://solscan.io/token/FmiT3jjD9X1JVNaz8cNE9xamzXZXJqyS1FAoNVJ9yJxx#txs
+2024-01-05 02:19:25,608 - INFO - Owner address found: nitJvLa3th19c8U1inw4weUnpsXYMQktPTnNJpG8PEC
+2024-01-05 02:19:25,608 - INFO - Holder Address: nitJvLa3th19c8U1inw4weUnpsXYMQktPTnNJpG8PEC
+2024-01-05 02:19:35,772 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:19:35,802 - INFO - Time successfully extracted: 01-05-2024 01:26:48
+2024-01-05 02:19:35,802 - INFO - Hold time extracted: 01-05-2024 01:26:48
+2024-01-05 02:19:35,802 - INFO - Closing the web driver...
+2024-01-05 02:19:35,841 - INFO - Web driver closed for time.
+2024-01-05 02:19:35,841 - INFO - Successfully processed account FmiT3jjD9X1JVNaz8cNE9xamzXZXJqyS1FAoNVJ9yJxx.
+2024-01-05 02:19:35,846 - INFO - WebDriver closed for item 3066
+2024-01-05 02:19:35,847 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:19:35,854 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:19:35,858 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:19:35,861 - INFO - Starting from index 3066: It has the oldest 'time checked'.
+2024-01-05 02:19:35,861 - INFO - Processing item 80/100 with account: FMPXKqn2KkTDK76upqfPbPPwAceu1AnDVFDSmGqdFS7T (Global index: 3067/10000)
+2024-01-05 02:19:37,647 - INFO - https://solscan.io/token/FMPXKqn2KkTDK76upqfPbPPwAceu1AnDVFDSmGqdFS7T#holders
+2024-01-05 02:19:38,648 - INFO - https://solscan.io/token/FMPXKqn2KkTDK76upqfPbPPwAceu1AnDVFDSmGqdFS7T#txs
+2024-01-05 02:19:52,356 - INFO - Owner address found: AuRdpcBwzemn7oKgVh55et311CTHTQF7bJPtYmcVvW4d
+2024-01-05 02:19:52,356 - INFO - Holder Address: AuRdpcBwzemn7oKgVh55et311CTHTQF7bJPtYmcVvW4d
+2024-01-05 02:20:02,523 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:20:02,557 - INFO - Time successfully extracted: 01-05-2024 00:37:58
+2024-01-05 02:20:02,557 - INFO - Hold time extracted: 01-05-2024 00:37:58
+2024-01-05 02:20:02,557 - INFO - Closing the web driver...
+2024-01-05 02:20:02,596 - INFO - Web driver closed for time.
+2024-01-05 02:20:02,597 - INFO - Successfully processed account FMPXKqn2KkTDK76upqfPbPPwAceu1AnDVFDSmGqdFS7T.
+2024-01-05 02:20:02,600 - INFO - WebDriver closed for item 3067
+2024-01-05 02:20:02,601 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:20:02,607 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:20:02,611 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:20:02,613 - INFO - Starting from index 3067: It has the oldest 'time checked'.
+2024-01-05 02:20:02,614 - INFO - Processing item 81/100 with account: BkzHFTop9bPxXzsUq8xYTsMX9TyxHZCtnu3n9qK8AQDB (Global index: 3068/10000)
+2024-01-05 02:20:04,390 - INFO - https://solscan.io/token/BkzHFTop9bPxXzsUq8xYTsMX9TyxHZCtnu3n9qK8AQDB#holders
+2024-01-05 02:20:05,391 - INFO - https://solscan.io/token/BkzHFTop9bPxXzsUq8xYTsMX9TyxHZCtnu3n9qK8AQDB#txs
+2024-01-05 02:20:20,905 - INFO - Owner address found: 6e9Vi1JHUxDXMYNgwetqPabaNbhDybwSrRde5ZjV5h6x
+2024-01-05 02:20:20,905 - INFO - Holder Address: 6e9Vi1JHUxDXMYNgwetqPabaNbhDybwSrRde5ZjV5h6x
+2024-01-05 02:20:31,066 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:20:31,094 - INFO - Time successfully extracted: 01-05-2024 00:50:16
+2024-01-05 02:20:31,094 - INFO - Hold time extracted: 01-05-2024 00:50:16
+2024-01-05 02:20:31,094 - INFO - Closing the web driver...
+2024-01-05 02:20:31,142 - INFO - Web driver closed for time.
+2024-01-05 02:20:31,142 - INFO - Successfully processed account BkzHFTop9bPxXzsUq8xYTsMX9TyxHZCtnu3n9qK8AQDB.
+2024-01-05 02:20:31,144 - INFO - WebDriver closed for item 3068
+2024-01-05 02:20:31,146 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:20:31,152 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:20:31,156 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:20:31,159 - INFO - Starting from index 3068: It has the oldest 'time checked'.
+2024-01-05 02:20:31,159 - INFO - Processing item 82/100 with account: DsLBRqyX9G4Le4GSw9ehu6fcDSMEBAWYndjLZEW2eNHb (Global index: 3069/10000)
+2024-01-05 02:20:32,934 - INFO - https://solscan.io/token/DsLBRqyX9G4Le4GSw9ehu6fcDSMEBAWYndjLZEW2eNHb#holders
+2024-01-05 02:20:33,935 - INFO - https://solscan.io/token/DsLBRqyX9G4Le4GSw9ehu6fcDSMEBAWYndjLZEW2eNHb#txs
+2024-01-05 02:20:46,855 - INFO - Owner address found: 2MyKdXFXP8DxkM49MaXkxwrCU4knPehz9YUCKv63jTtZ
+2024-01-05 02:20:46,855 - INFO - Holder Address: 2MyKdXFXP8DxkM49MaXkxwrCU4knPehz9YUCKv63jTtZ
+2024-01-05 02:20:57,031 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:20:57,128 - INFO - Time successfully extracted: 01-04-2024 14:17:08
+2024-01-05 02:20:57,129 - INFO - Hold time extracted: 01-04-2024 14:17:08
+2024-01-05 02:20:57,129 - INFO - Closing the web driver...
+2024-01-05 02:20:57,168 - INFO - Web driver closed for time.
+2024-01-05 02:20:57,168 - INFO - Successfully processed account DsLBRqyX9G4Le4GSw9ehu6fcDSMEBAWYndjLZEW2eNHb.
+2024-01-05 02:20:57,171 - INFO - WebDriver closed for item 3069
+2024-01-05 02:20:57,173 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:20:57,179 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:20:57,183 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:20:57,186 - INFO - Starting from index 3069: It has the oldest 'time checked'.
+2024-01-05 02:20:57,186 - INFO - Processing item 83/100 with account: GKUAdsSiufMJUWCNwNRqo6UkpbaYTG9Ynb6RKgTFfAWT (Global index: 3070/10000)
+2024-01-05 02:20:58,959 - INFO - https://solscan.io/token/GKUAdsSiufMJUWCNwNRqo6UkpbaYTG9Ynb6RKgTFfAWT#holders
+2024-01-05 02:20:59,961 - INFO - https://solscan.io/token/GKUAdsSiufMJUWCNwNRqo6UkpbaYTG9Ynb6RKgTFfAWT#txs
+2024-01-05 02:21:13,434 - INFO - Owner address found: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 02:21:13,434 - INFO - Holder Address: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 02:21:23,619 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:21:23,653 - INFO - Time successfully extracted: 01-05-2024 00:22:41
+2024-01-05 02:21:23,654 - INFO - Hold time extracted: 01-05-2024 00:22:41
+2024-01-05 02:21:23,654 - INFO - Closing the web driver...
+2024-01-05 02:21:23,692 - INFO - Web driver closed for time.
+2024-01-05 02:21:23,693 - INFO - Successfully processed account GKUAdsSiufMJUWCNwNRqo6UkpbaYTG9Ynb6RKgTFfAWT.
+2024-01-05 02:21:23,697 - INFO - WebDriver closed for item 3070
+2024-01-05 02:21:23,699 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:21:23,705 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:21:23,709 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:21:23,712 - INFO - Starting from index 3070: It has the oldest 'time checked'.
+2024-01-05 02:21:23,712 - INFO - Processing item 84/100 with account: F1dSgS2oriCmFoy38Tp1B5Kbf9pV72Ti6Eo5G1qXHWvA (Global index: 3071/10000)
+2024-01-05 02:21:25,494 - INFO - https://solscan.io/token/F1dSgS2oriCmFoy38Tp1B5Kbf9pV72Ti6Eo5G1qXHWvA#holders
+2024-01-05 02:21:26,496 - INFO - https://solscan.io/token/F1dSgS2oriCmFoy38Tp1B5Kbf9pV72Ti6Eo5G1qXHWvA#txs
+2024-01-05 02:21:44,136 - INFO - Owner address found: GVwXELaULfTXFTYqGXRNwd3wZpgqbRXgsuxqx3oc8Ra4
+2024-01-05 02:21:44,136 - INFO - Holder Address: GVwXELaULfTXFTYqGXRNwd3wZpgqbRXgsuxqx3oc8Ra4
+2024-01-05 02:21:54,312 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:21:54,347 - INFO - Time successfully extracted: 01-05-2024 00:50:21
+2024-01-05 02:21:54,347 - INFO - Hold time extracted: 01-05-2024 00:50:21
+2024-01-05 02:21:54,347 - INFO - Closing the web driver...
+2024-01-05 02:21:54,387 - INFO - Web driver closed for time.
+2024-01-05 02:21:54,387 - INFO - Successfully processed account F1dSgS2oriCmFoy38Tp1B5Kbf9pV72Ti6Eo5G1qXHWvA.
+2024-01-05 02:21:54,390 - INFO - WebDriver closed for item 3071
+2024-01-05 02:21:54,391 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:21:54,398 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:21:54,402 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:21:54,405 - INFO - Starting from index 3071: It has the oldest 'time checked'.
+2024-01-05 02:21:54,405 - INFO - Processing item 85/100 with account: B6tAZr7RfGgnVAHjv6v3Ei6b5R24CjbohcehTp5sSEE8 (Global index: 3072/10000)
+2024-01-05 02:21:56,179 - INFO - https://solscan.io/token/B6tAZr7RfGgnVAHjv6v3Ei6b5R24CjbohcehTp5sSEE8#holders
+2024-01-05 02:21:57,180 - INFO - https://solscan.io/token/B6tAZr7RfGgnVAHjv6v3Ei6b5R24CjbohcehTp5sSEE8#txs
+2024-01-05 02:22:10,390 - INFO - Owner address found: Magic Eden V2 Authority
+2024-01-05 02:22:10,390 - INFO - Holder Address: Magic Eden V2 Authority
+2024-01-05 02:22:20,562 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:22:20,593 - INFO - Time successfully extracted: about 1 hour ago
+2024-01-05 02:22:20,593 - INFO - Hold time extracted: about 1 hour ago
+2024-01-05 02:22:20,593 - INFO - Closing the web driver...
+2024-01-05 02:22:20,641 - INFO - Web driver closed for time.
+2024-01-05 02:22:20,641 - ERROR - Error processing B6tAZr7RfGgnVAHjv6v3Ei6b5R24CjbohcehTp5sSEE8: time data 'about 1 hour ago' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 02:22:20,645 - INFO - WebDriver closed for item 3072
+2024-01-05 02:22:20,646 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:22:20,653 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:22:20,657 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:22:20,660 - INFO - Starting from index 3072: It has the oldest 'time checked'.
+2024-01-05 02:22:20,660 - INFO - Processing item 86/100 with account: 7tra8YbKhL3pcn5XTVj4Gs9NaieaXtxNZ8aMy9Gmm1rE (Global index: 3073/10000)
+2024-01-05 02:22:22,436 - INFO - https://solscan.io/token/7tra8YbKhL3pcn5XTVj4Gs9NaieaXtxNZ8aMy9Gmm1rE#holders
+2024-01-05 02:22:23,437 - INFO - https://solscan.io/token/7tra8YbKhL3pcn5XTVj4Gs9NaieaXtxNZ8aMy9Gmm1rE#txs
+2024-01-05 02:22:38,703 - INFO - Owner address found: 4nSdepHmmY5a5FsMDb8ABPsqm57V4uaY877RJYH5zTUx
+2024-01-05 02:22:38,703 - INFO - Holder Address: 4nSdepHmmY5a5FsMDb8ABPsqm57V4uaY877RJYH5zTUx
+2024-01-05 02:22:48,886 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:22:48,922 - INFO - Time successfully extracted: about 9 hours ago
+2024-01-05 02:22:48,922 - INFO - Hold time extracted: about 9 hours ago
+2024-01-05 02:22:48,923 - INFO - Closing the web driver...
+2024-01-05 02:22:48,970 - INFO - Web driver closed for time.
+2024-01-05 02:22:48,970 - ERROR - Error processing 7tra8YbKhL3pcn5XTVj4Gs9NaieaXtxNZ8aMy9Gmm1rE: time data 'about 9 hours ago' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 02:22:48,973 - INFO - WebDriver closed for item 3073
+2024-01-05 02:22:48,975 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:22:48,981 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:22:48,985 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:22:48,988 - INFO - Starting from index 3073: It has the oldest 'time checked'.
+2024-01-05 02:22:48,988 - INFO - Processing item 87/100 with account: FX1aKpb4cGfAQ3XVyzCU9YFCuVeJfkoNgyEbjajg4a3f (Global index: 3074/10000)
+2024-01-05 02:22:50,773 - INFO - https://solscan.io/token/FX1aKpb4cGfAQ3XVyzCU9YFCuVeJfkoNgyEbjajg4a3f#holders
+2024-01-05 02:22:51,774 - INFO - https://solscan.io/token/FX1aKpb4cGfAQ3XVyzCU9YFCuVeJfkoNgyEbjajg4a3f#txs
+2024-01-05 02:23:07,458 - INFO - Owner address found: 2PSsfB8PntzYa94LW6v5mCKoNs4vRdspH9BC2EhD3P7U
+2024-01-05 02:23:07,459 - INFO - Holder Address: 2PSsfB8PntzYa94LW6v5mCKoNs4vRdspH9BC2EhD3P7U
+2024-01-05 02:23:17,620 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:23:17,652 - INFO - Time successfully extracted: about 12 hours ago
+2024-01-05 02:23:17,652 - INFO - Hold time extracted: about 12 hours ago
+2024-01-05 02:23:17,652 - INFO - Closing the web driver...
+2024-01-05 02:23:17,678 - INFO - Web driver closed for time.
+2024-01-05 02:23:17,678 - ERROR - Error processing FX1aKpb4cGfAQ3XVyzCU9YFCuVeJfkoNgyEbjajg4a3f: time data 'about 12 hours ago' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 02:23:17,681 - INFO - WebDriver closed for item 3074
+2024-01-05 02:23:17,682 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:23:17,689 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:23:17,693 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:23:17,695 - INFO - Starting from index 3074: It has the oldest 'time checked'.
+2024-01-05 02:23:17,695 - INFO - Processing item 88/100 with account: GiPsUyrbzNgvYHUHLBUubBByuy9SfodspQPrCQArcj3F (Global index: 3075/10000)
+2024-01-05 02:23:19,565 - INFO - https://solscan.io/token/GiPsUyrbzNgvYHUHLBUubBByuy9SfodspQPrCQArcj3F#holders
+2024-01-05 02:23:20,566 - INFO - https://solscan.io/token/GiPsUyrbzNgvYHUHLBUubBByuy9SfodspQPrCQArcj3F#txs
+2024-01-05 02:23:35,589 - INFO - Owner address found: Ccv7pUrwbUX9qYi3CUeJBXuFQsSMweGrVY624mS42Y2p
+2024-01-05 02:23:35,589 - INFO - Holder Address: Ccv7pUrwbUX9qYi3CUeJBXuFQsSMweGrVY624mS42Y2p
+2024-01-05 02:23:45,755 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:23:45,781 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-01-05 02:23:45,781 - INFO - Hold time extracted: Table not found
+2024-01-05 02:23:45,781 - INFO - Closing the web driver...
+2024-01-05 02:23:45,828 - INFO - Web driver closed for time.
+2024-01-05 02:23:45,829 - ERROR - Error processing GiPsUyrbzNgvYHUHLBUubBByuy9SfodspQPrCQArcj3F: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 02:23:45,831 - INFO - WebDriver closed for item 3075
+2024-01-05 02:23:45,832 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:23:45,839 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:23:45,843 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:23:45,846 - INFO - Starting from index 3075: It has the oldest 'time checked'.
+2024-01-05 02:23:45,846 - INFO - Processing item 89/100 with account: HqMbwwmjwa88p9MgusjcPU7aaCmnaj3WWiBdDxPTAM2i (Global index: 3076/10000)
+2024-01-05 02:23:47,619 - INFO - https://solscan.io/token/HqMbwwmjwa88p9MgusjcPU7aaCmnaj3WWiBdDxPTAM2i#holders
+2024-01-05 02:23:48,620 - INFO - https://solscan.io/token/HqMbwwmjwa88p9MgusjcPU7aaCmnaj3WWiBdDxPTAM2i#txs
+2024-01-05 02:24:03,594 - INFO - Owner address found: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 02:24:03,594 - INFO - Holder Address: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 02:24:13,766 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:24:13,874 - INFO - Time successfully extracted: 01-03-2024 16:15:47
+2024-01-05 02:24:13,874 - INFO - Hold time extracted: 01-03-2024 16:15:47
+2024-01-05 02:24:13,874 - INFO - Closing the web driver...
+2024-01-05 02:24:13,921 - INFO - Web driver closed for time.
+2024-01-05 02:24:13,921 - INFO - Successfully processed account HqMbwwmjwa88p9MgusjcPU7aaCmnaj3WWiBdDxPTAM2i.
+2024-01-05 02:24:13,924 - INFO - WebDriver closed for item 3076
+2024-01-05 02:24:13,925 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:24:13,932 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:24:13,936 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:24:13,939 - INFO - Starting from index 3076: It has the oldest 'time checked'.
+2024-01-05 02:24:13,939 - INFO - Processing item 90/100 with account: Aw2kQjeKX4Z6CXumxJ1mC3Lu7Q7wxa7fDQ3erzxuEWuS (Global index: 3077/10000)
+2024-01-05 02:24:15,715 - INFO - https://solscan.io/token/Aw2kQjeKX4Z6CXumxJ1mC3Lu7Q7wxa7fDQ3erzxuEWuS#holders
+2024-01-05 02:24:16,716 - INFO - https://solscan.io/token/Aw2kQjeKX4Z6CXumxJ1mC3Lu7Q7wxa7fDQ3erzxuEWuS#txs
+2024-01-05 02:24:35,029 - INFO - Owner address found: 9grrSLfZ5S1cosQh9uGxAvrf6ZDPnJqA7R4CKMXfAB8A
+2024-01-05 02:24:35,029 - INFO - Holder Address: 9grrSLfZ5S1cosQh9uGxAvrf6ZDPnJqA7R4CKMXfAB8A
+2024-01-05 02:24:45,189 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:24:45,215 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-01-05 02:24:45,215 - INFO - Hold time extracted: Table not found
+2024-01-05 02:24:45,215 - INFO - Closing the web driver...
+2024-01-05 02:24:45,262 - INFO - Web driver closed for time.
+2024-01-05 02:24:45,262 - ERROR - Error processing Aw2kQjeKX4Z6CXumxJ1mC3Lu7Q7wxa7fDQ3erzxuEWuS: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 02:24:45,265 - INFO - WebDriver closed for item 3077
+2024-01-05 02:24:45,266 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:24:45,272 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:24:45,275 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:24:45,278 - INFO - Starting from index 3077: It has the oldest 'time checked'.
+2024-01-05 02:24:45,278 - INFO - Processing item 91/100 with account: Dpj4oUNsa1SvV5teFtoDTLNnXMcxvvv1A5FQDtamp6Dq (Global index: 3078/10000)
+2024-01-05 02:24:47,053 - INFO - https://solscan.io/token/Dpj4oUNsa1SvV5teFtoDTLNnXMcxvvv1A5FQDtamp6Dq#holders
+2024-01-05 02:24:48,055 - INFO - https://solscan.io/token/Dpj4oUNsa1SvV5teFtoDTLNnXMcxvvv1A5FQDtamp6Dq#txs
+2024-01-05 02:25:01,882 - INFO - Owner address found: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 02:25:01,882 - INFO - Holder Address: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 02:25:12,048 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:25:12,089 - INFO - Time successfully extracted: 01-05-2024 00:44:12
+2024-01-05 02:25:12,089 - INFO - Hold time extracted: 01-05-2024 00:44:12
+2024-01-05 02:25:12,089 - INFO - Closing the web driver...
+2024-01-05 02:25:12,128 - INFO - Web driver closed for time.
+2024-01-05 02:25:12,128 - INFO - Successfully processed account Dpj4oUNsa1SvV5teFtoDTLNnXMcxvvv1A5FQDtamp6Dq.
+2024-01-05 02:25:12,134 - INFO - WebDriver closed for item 3078
+2024-01-05 02:25:12,136 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:25:12,145 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:25:12,150 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:25:12,153 - INFO - Starting from index 3078: It has the oldest 'time checked'.
+2024-01-05 02:25:12,153 - INFO - Processing item 92/100 with account: EytbWPLjdnaceNE4Np4sCQ7ewVrBVBR658P6HWrzqcdB (Global index: 3079/10000)
+2024-01-05 02:25:13,936 - INFO - https://solscan.io/token/EytbWPLjdnaceNE4Np4sCQ7ewVrBVBR658P6HWrzqcdB#holders
+2024-01-05 02:25:14,937 - INFO - https://solscan.io/token/EytbWPLjdnaceNE4Np4sCQ7ewVrBVBR658P6HWrzqcdB#txs
+2024-01-05 02:25:29,020 - INFO - Owner address found: 38oGoTq2TqsVJ9UHMaPLaxMhLGkkta2M623MpANfQZg6
+2024-01-05 02:25:29,020 - INFO - Holder Address: 38oGoTq2TqsVJ9UHMaPLaxMhLGkkta2M623MpANfQZg6
+2024-01-05 02:25:39,201 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:25:39,235 - INFO - Time successfully extracted: 01-05-2024 00:38:01
+2024-01-05 02:25:39,235 - INFO - Hold time extracted: 01-05-2024 00:38:01
+2024-01-05 02:25:39,235 - INFO - Closing the web driver...
+2024-01-05 02:25:39,283 - INFO - Web driver closed for time.
+2024-01-05 02:25:39,283 - INFO - Successfully processed account EytbWPLjdnaceNE4Np4sCQ7ewVrBVBR658P6HWrzqcdB.
+2024-01-05 02:25:39,286 - INFO - WebDriver closed for item 3079
+2024-01-05 02:25:39,287 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:25:39,293 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:25:39,297 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:25:39,300 - INFO - Starting from index 3079: It has the oldest 'time checked'.
+2024-01-05 02:25:39,300 - INFO - Processing item 93/100 with account: JBWF8BEjHVbnVoVh1GMNT1P5YsM9wgGApsQW4Jck488x (Global index: 3080/10000)
+2024-01-05 02:25:41,075 - INFO - https://solscan.io/token/JBWF8BEjHVbnVoVh1GMNT1P5YsM9wgGApsQW4Jck488x#holders
+2024-01-05 02:25:42,076 - INFO - https://solscan.io/token/JBWF8BEjHVbnVoVh1GMNT1P5YsM9wgGApsQW4Jck488x#txs
+2024-01-05 02:25:57,313 - INFO - Owner address found: 5W2HNvxAFMzm7WN1afh2rb8MGNtWzqfw5YX19UV7pK11
+2024-01-05 02:25:57,314 - INFO - Holder Address: 5W2HNvxAFMzm7WN1afh2rb8MGNtWzqfw5YX19UV7pK11
+2024-01-05 02:26:07,489 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:26:07,524 - INFO - Time successfully extracted: 01-04-2024 21:02:05
+2024-01-05 02:26:07,525 - INFO - Hold time extracted: 01-04-2024 21:02:05
+2024-01-05 02:26:07,525 - INFO - Closing the web driver...
+2024-01-05 02:26:07,563 - INFO - Web driver closed for time.
+2024-01-05 02:26:07,563 - INFO - Successfully processed account JBWF8BEjHVbnVoVh1GMNT1P5YsM9wgGApsQW4Jck488x.
+2024-01-05 02:26:07,568 - INFO - WebDriver closed for item 3080
+2024-01-05 02:26:07,570 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:26:07,577 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:26:07,580 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:26:07,583 - INFO - Starting from index 3080: It has the oldest 'time checked'.
+2024-01-05 02:26:07,583 - INFO - Processing item 94/100 with account: 3avJhshDCQvrc4E5EQwrSQ7Fb3pUTUCWYNNFF2Udj8ku (Global index: 3081/10000)
+2024-01-05 02:26:09,357 - INFO - https://solscan.io/token/3avJhshDCQvrc4E5EQwrSQ7Fb3pUTUCWYNNFF2Udj8ku#holders
+2024-01-05 02:26:10,358 - INFO - https://solscan.io/token/3avJhshDCQvrc4E5EQwrSQ7Fb3pUTUCWYNNFF2Udj8ku#txs
+2024-01-05 02:26:25,954 - INFO - Owner address found: B9r7mwvCMV5shCo4AAqn4u4VfG5jSpo9MeChZcmzV3hk
+2024-01-05 02:26:25,954 - INFO - Holder Address: B9r7mwvCMV5shCo4AAqn4u4VfG5jSpo9MeChZcmzV3hk
+2024-01-05 02:26:36,135 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:26:36,162 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-01-05 02:26:36,162 - INFO - Hold time extracted: Table not found
+2024-01-05 02:26:36,162 - INFO - Closing the web driver...
+2024-01-05 02:26:36,210 - INFO - Web driver closed for time.
+2024-01-05 02:26:36,210 - ERROR - Error processing 3avJhshDCQvrc4E5EQwrSQ7Fb3pUTUCWYNNFF2Udj8ku: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 02:26:36,214 - INFO - WebDriver closed for item 3081
+2024-01-05 02:26:36,215 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:26:36,222 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:26:36,225 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:26:36,229 - INFO - Starting from index 3081: It has the oldest 'time checked'.
+2024-01-05 02:26:36,229 - INFO - Processing item 95/100 with account: AgCK3gkek7zWJ6SzemheUwHJtu4AhL3NDWyj8Y5EXma4 (Global index: 3082/10000)
+2024-01-05 02:26:38,003 - INFO - https://solscan.io/token/AgCK3gkek7zWJ6SzemheUwHJtu4AhL3NDWyj8Y5EXma4#holders
+2024-01-05 02:26:39,004 - INFO - https://solscan.io/token/AgCK3gkek7zWJ6SzemheUwHJtu4AhL3NDWyj8Y5EXma4#txs
+2024-01-05 02:26:51,831 - INFO - Owner address found: DaZuc2S4uzYjvTPpFSCSTy3NSzgU6jvpY6875MHCNrYW
+2024-01-05 02:26:51,832 - INFO - Holder Address: DaZuc2S4uzYjvTPpFSCSTy3NSzgU6jvpY6875MHCNrYW
+2024-01-05 02:27:02,006 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:27:02,041 - INFO - Time successfully extracted: 01-05-2024 01:26:51
+2024-01-05 02:27:02,041 - INFO - Hold time extracted: 01-05-2024 01:26:51
+2024-01-05 02:27:02,041 - INFO - Closing the web driver...
+2024-01-05 02:27:02,081 - INFO - Web driver closed for time.
+2024-01-05 02:27:02,081 - INFO - Successfully processed account AgCK3gkek7zWJ6SzemheUwHJtu4AhL3NDWyj8Y5EXma4.
+2024-01-05 02:27:02,084 - INFO - WebDriver closed for item 3082
+2024-01-05 02:27:02,085 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:27:02,092 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:27:02,096 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:27:02,099 - INFO - Starting from index 3082: It has the oldest 'time checked'.
+2024-01-05 02:27:02,099 - INFO - Processing item 96/100 with account: 9SKW7G6t37JwvwNczLiYGy1buwS4hn2JccaM3wN2h3N7 (Global index: 3083/10000)
+2024-01-05 02:27:03,874 - INFO - https://solscan.io/token/9SKW7G6t37JwvwNczLiYGy1buwS4hn2JccaM3wN2h3N7#holders
+2024-01-05 02:27:04,876 - INFO - https://solscan.io/token/9SKW7G6t37JwvwNczLiYGy1buwS4hn2JccaM3wN2h3N7#txs
+2024-01-05 02:27:17,525 - INFO - Owner address found: 6dncwbWrMLjo1hJ5xRmqYHFqPaSWtW6SkrXbJgdZww4R
+2024-01-05 02:27:17,525 - INFO - Holder Address: 6dncwbWrMLjo1hJ5xRmqYHFqPaSWtW6SkrXbJgdZww4R
+2024-01-05 02:27:27,699 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:27:27,803 - INFO - Time successfully extracted: 01-05-2024 01:33:21
+2024-01-05 02:27:27,803 - INFO - Hold time extracted: 01-05-2024 01:33:21
+2024-01-05 02:27:27,803 - INFO - Closing the web driver...
+2024-01-05 02:27:27,842 - INFO - Web driver closed for time.
+2024-01-05 02:27:27,842 - INFO - Successfully processed account 9SKW7G6t37JwvwNczLiYGy1buwS4hn2JccaM3wN2h3N7.
+2024-01-05 02:27:27,845 - INFO - WebDriver closed for item 3083
+2024-01-05 02:27:27,846 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:27:27,852 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:27:27,856 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:27:27,859 - INFO - Starting from index 3083: It has the oldest 'time checked'.
+2024-01-05 02:27:27,859 - INFO - Processing item 97/100 with account: ADjxp98AicNkQpoyjwBywPR8mQVNw6m8bY5VdfCAQNa8 (Global index: 3084/10000)
+2024-01-05 02:27:29,670 - INFO - https://solscan.io/token/ADjxp98AicNkQpoyjwBywPR8mQVNw6m8bY5VdfCAQNa8#holders
+2024-01-05 02:27:30,671 - INFO - https://solscan.io/token/ADjxp98AicNkQpoyjwBywPR8mQVNw6m8bY5VdfCAQNa8#txs
+2024-01-05 02:27:49,153 - INFO - Owner address found: 4AmtBCt4wyrnw5K8tJCbVBUNdvsii2scyQ3Ff6gFyTEE
+2024-01-05 02:27:49,153 - INFO - Holder Address: 4AmtBCt4wyrnw5K8tJCbVBUNdvsii2scyQ3Ff6gFyTEE
+2024-01-05 02:27:59,330 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:27:59,366 - INFO - Time successfully extracted: 01-03-2024 16:15:47
+2024-01-05 02:27:59,366 - INFO - Hold time extracted: 01-03-2024 16:15:47
+2024-01-05 02:27:59,366 - INFO - Closing the web driver...
+2024-01-05 02:27:59,406 - INFO - Web driver closed for time.
+2024-01-05 02:27:59,407 - INFO - Successfully processed account ADjxp98AicNkQpoyjwBywPR8mQVNw6m8bY5VdfCAQNa8.
+2024-01-05 02:27:59,409 - INFO - WebDriver closed for item 3084
+2024-01-05 02:27:59,411 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:27:59,417 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:27:59,420 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:27:59,422 - INFO - Starting from index 3035: It has the oldest 'time checked'.
+2024-01-05 02:27:59,422 - INFO - Processing item 98/100 with account: FZNjsP6dRo32ddZTZbHN4wnse19QoMYy6xvy8kFKVtpj (Global index: 3036/10000)
+2024-01-05 02:28:01,197 - INFO - https://solscan.io/token/FZNjsP6dRo32ddZTZbHN4wnse19QoMYy6xvy8kFKVtpj#holders
+2024-01-05 02:28:02,198 - INFO - https://solscan.io/token/FZNjsP6dRo32ddZTZbHN4wnse19QoMYy6xvy8kFKVtpj#txs
+2024-01-05 02:28:18,624 - INFO - Owner address found: J2cZ8Rb3kfrUBj2vQitjFZeqTjUX2Wcr5mWAuXy39KBF
+2024-01-05 02:28:18,625 - INFO - Holder Address: J2cZ8Rb3kfrUBj2vQitjFZeqTjUX2Wcr5mWAuXy39KBF
+2024-01-05 02:28:28,799 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:28:28,825 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-01-05 02:28:28,825 - INFO - Hold time extracted: Table not found
+2024-01-05 02:28:28,825 - INFO - Closing the web driver...
+2024-01-05 02:28:28,872 - INFO - Web driver closed for time.
+2024-01-05 02:28:28,873 - ERROR - Error processing FZNjsP6dRo32ddZTZbHN4wnse19QoMYy6xvy8kFKVtpj: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-01-05 02:28:28,875 - INFO - WebDriver closed for item 3036
+2024-01-05 02:28:28,877 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:28:28,883 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:28:28,887 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:28:28,890 - INFO - Starting from index 2848: It has the oldest 'time checked'.
+2024-01-05 02:28:28,890 - INFO - Processing item 99/100 with account: A5JqdQfdkG21CVDnD6mj6cETbVGxA6tTkNb1wN7Cef8h (Global index: 2849/10000)
+2024-01-05 02:28:30,663 - INFO - https://solscan.io/token/A5JqdQfdkG21CVDnD6mj6cETbVGxA6tTkNb1wN7Cef8h#holders
+2024-01-05 02:28:31,664 - INFO - https://solscan.io/token/A5JqdQfdkG21CVDnD6mj6cETbVGxA6tTkNb1wN7Cef8h#txs
+2024-01-05 02:28:45,551 - INFO - Owner address found: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 02:28:45,551 - INFO - Holder Address: 4zdNGgAtFsW1cQgHqkiWyRsxaAgxrSRRynnuunxzjxue
+2024-01-05 02:28:55,713 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:28:55,748 - INFO - Time successfully extracted: 01-05-2024 01:26:51
+2024-01-05 02:28:55,748 - INFO - Hold time extracted: 01-05-2024 01:26:51
+2024-01-05 02:28:55,748 - INFO - Closing the web driver...
+2024-01-05 02:28:55,796 - INFO - Web driver closed for time.
+2024-01-05 02:28:55,796 - INFO - Successfully processed account A5JqdQfdkG21CVDnD6mj6cETbVGxA6tTkNb1wN7Cef8h.
+2024-01-05 02:28:55,799 - INFO - WebDriver closed for item 2849
+2024-01-05 02:28:55,800 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-01-05 02:28:55,807 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-01-05 02:28:55,810 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-01-05 02:28:55,813 - INFO - Starting from index 3046: It has the oldest 'time checked'.
+2024-01-05 02:28:55,813 - INFO - Processing item 100/100 with account: 6YLRvmd7XxEmG8zFi8AhfBxPadF1re34e1bqhFnSXzGg (Global index: 3047/10000)
+2024-01-05 02:28:57,592 - INFO - https://solscan.io/token/6YLRvmd7XxEmG8zFi8AhfBxPadF1re34e1bqhFnSXzGg#holders
+2024-01-05 02:28:58,593 - INFO - https://solscan.io/token/6YLRvmd7XxEmG8zFi8AhfBxPadF1re34e1bqhFnSXzGg#txs
+2024-01-05 02:29:11,914 - INFO - Owner address found: 4RwsTUivkX1br5grTt5e1QnSxn4RyzdYj2ZYNy5CnRoX
+2024-01-05 02:29:11,914 - INFO - Holder Address: 4RwsTUivkX1br5grTt5e1QnSxn4RyzdYj2ZYNy5CnRoX
+2024-01-05 02:29:22,117 - INFO - Successfully read HTML content from 'claynosaurz/time.html'.
+2024-01-05 02:29:22,151 - INFO - Time successfully extracted: 01-04-2024 15:10:20
+2024-01-05 02:29:22,151 - INFO - Hold time extracted: 01-04-2024 15:10:20
+2024-01-05 02:29:22,151 - INFO - Closing the web driver...
+2024-01-05 02:29:22,199 - INFO - Web driver closed for time.
+2024-01-05 02:29:22,199 - INFO - Successfully processed account 6YLRvmd7XxEmG8zFi8AhfBxPadF1re34e1bqhFnSXzGg.
+2024-01-05 02:29:22,202 - INFO - WebDriver closed for item 3047
+2024-01-05 02:29:23,357 - INFO - Progress saved after processing 100 items.
