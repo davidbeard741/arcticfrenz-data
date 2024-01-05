@@ -54,7 +54,7 @@ Created Time: 2024-01-02 23:42
 Locked Amount: 50  
 % Locked: 68.49 %  
 
-🔀 Transaction Details:  
+Transaction Details:  
 https://solscan.io/tx/58J4W5MvL5MGqp4cHDtJ7U6Bft6WMPPPWDS3qBAu1yC6LZQDNkLJXKDp2dEZ1e61jgH9i7tDRiWDjFegHiWwfjLb
 
 
@@ -64,7 +64,7 @@ https://solscan.io/tx/58J4W5MvL5MGqp4cHDtJ7U6Bft6WMPPPWDS3qBAu1yC6LZQDNkLJXKDp2d
 
 ✅ YES | Ownership Renounced: If token ownership is renounced, no one can execute functions such as mint more tokens.
 
-📎 https://birdeye.so/token/EBQ6gWBQNxA2zB4twR5GWP6CkeAhqZZZeDgeP7BTtdM3?chain=solana
+https://birdeye.so/token/EBQ6gWBQNxA2zB4twR5GWP6CkeAhqZZZeDgeP7BTtdM3?chain=solana
 
 ### Disclaimer 
 
