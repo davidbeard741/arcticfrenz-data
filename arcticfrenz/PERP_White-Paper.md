@@ -6,7 +6,7 @@ PerpeTraders ( $PERP ) is a unique token on the Solana blockchain. It is multifa
 
 ### Solana Token List: 
 
-📎 https://raw.githubusercontent.com/solana-labs/token-list/c8a4af080574e8400df7e481cf1eb68e74713164/src/tokens/solana.tokenlist.json
+https://raw.githubusercontent.com/solana-labs/token-list/c8a4af080574e8400df7e481cf1eb68e74713164/src/tokens/solana.tokenlist.json
 
 ```
 {
@@ -24,7 +24,6 @@ PerpeTraders ( $PERP ) is a unique token on the Solana blockchain. It is multifa
       ]
     },
 ```
-
 
 ### Benefits and Considerations
 
@@ -48,14 +47,14 @@ The Solana token, PerpeTraders ( denoted as $PERP ), has a fixed supply of 100 a
 
 ### PERP LP Token Lock Detail
 
-📎 https://dapp.sollama.com/
-Seed: perpetraders
-Locked Asset: 5WB46Z...ZvBXRb
-Created Time: 2024-01-02 23:42
-Locked Amount: 50
-% Locked: 68.49 %
+https://dapp.sollama.com/  
+Seed: perpetraders  
+Locked Asset: 5WB46Z...ZvBXRb  
+Created Time: 2024-01-02 23:42  
+Locked Amount: 50  
+% Locked: 68.49 %  
 
-🔀 Transaction Details  
+🔀 Transaction Details:  
 https://solscan.io/tx/58J4W5MvL5MGqp4cHDtJ7U6Bft6WMPPPWDS3qBAu1yC6LZQDNkLJXKDp2dEZ1e61jgH9i7tDRiWDjFegHiWwfjLb
 
 
