@@ -55,8 +55,9 @@ jobs:
           git add
           chickentribe/GPT/output_0.json
           chickentribe/GPT/output_1.json
-          chickentribe/GPT/output_2.json
-          chickentribe/GPT/output_3.json
+          claynosaurz/GPT/output_0.json
+          claynosaurz/GPT/output_1.json
+          claynosaurz/GPT/output_2.json
       - name: Commit
         run: git commit -m "Updated by-holder JSONs"
       - name: Attempt Normal Push
