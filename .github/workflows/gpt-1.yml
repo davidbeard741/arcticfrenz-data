@@ -53,8 +53,10 @@ jobs:
       - name: Add
         run: > 
           git add
-          arcticfrenz/by-holder.json
-          chickentribe/by-holder.json
+          chickentribe/GPT/output_0.json
+          chickentribe/GPT/output_1.json
+          chickentribe/GPT/output_2.json
+          chickentribe/GPT/output_3.json
       - name: Commit
         run: git commit -m "Updated by-holder JSONs"
       - name: Attempt Normal Push
