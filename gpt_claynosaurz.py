@@ -13,7 +13,9 @@ chunks = []
 current_chunk = []
 
 for item in data:
-    if len(json.dumps(current_chunk + [item]).encode('utf-8')) / 1024 > MAX_FILE_SIZE:
+    simulated_chunk = json.dumps(current_chunk + [item]).encode('utf-8')
+    
+    if len(simulated_chunk) / 1024 > MAX_FILE_SIZE:
         chunks.append(current_chunk)
         current_chunk = [item]
     else:
