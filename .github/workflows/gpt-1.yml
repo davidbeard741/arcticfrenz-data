@@ -58,8 +58,6 @@ jobs:
           claynosaurz/GPT/output_0.json
           claynosaurz/GPT/output_1.json
           claynosaurz/GPT/output_2.json
-          claynosaurz/GPT/output_3.json
-          claynosaurz/GPT/output_4.json
       - name: Commit
         run: git commit -m "Updated GPT JSONs"
       - name: Attempt Normal Push
