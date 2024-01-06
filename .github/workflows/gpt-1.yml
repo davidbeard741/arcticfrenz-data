@@ -58,6 +58,8 @@ jobs:
           claynosaurz/GPT/output_0.json
           claynosaurz/GPT/output_1.json
           claynosaurz/GPT/output_2.json
+          claynosaurz/GPT/output_3.json
+          claynosaurz/GPT/output_5.json
       - name: Commit
         run: git commit -m "Updated by-holder JSONs"
       - name: Attempt Normal Push
