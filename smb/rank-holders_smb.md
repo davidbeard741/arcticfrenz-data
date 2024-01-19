@@ -2,30 +2,30 @@
 
 ### Date and Time Tuned (UTC):
 
-2024-01-19 18:37:39
+2024-01-19 19:22:34
 
 ### Input:
 
-`okay-bears/by-holder.json`: JSON file containing data on holders.
+`smb/by-holder.json`: JSON file containing data on holders.
 
 ### Output:
 
-`okay-bears/ranked-holders.json`: JSON file containing the ranked list of holders based on their calculated score.
+`smb/ranked-holders.json`: JSON file containing the ranked list of holders based on their calculated score.
 
 ### Collection Specific Values 
 
 | Description | Value |
 |---|---|
-| **Weight given to the number of NFTs held** | 1.1 |
-| **Weight given to rarity scores** | 0.1 |
-| **Weight given to days held scores** | 1.34 |
+| **Weight given to the number of NFTs held** | 1.36 |
+| **Weight given to rarity scores** | 0.054 |
+| **Weight given to days held scores** | 1.9 |
 | **Factor controlling the decay of score based on days held** | 0.1 |
-| **The total number of NFTs owned by the individual with the largest NFT collection** | 80 |
-| **The average rarity score of the owner who possesses the highest average rarity score** | 0.9993333333333333 |
-| **The total duration held by the owner possessing the maximum cumulative duration of all NFTs they own** | 3218 |
-| **Average Score of Holder's NFTs Owned** |  0.058995726495727846 |
-| **Average Score of Holder's Rarity** | 0.05680110453747539 |
-| **Average Score of Holder's Days Held** | 0.059016264261051644 |
+| **The total number of NFTs owned by the individual with the largest NFT collection** | 84 |
+| **The average rarity score of the owner who possesses the highest average rarity score** | 0.9998 |
+| **The total duration held by the owner possessing the maximum cumulative duration of all NFTs they own** | 6106 |
+| **Average Score of Holder's NFTs Owned** |  0.029402878239901804 |
+| **Average Score of Holder's Rarity** | 0.02920059256569067 |
+| **Average Score of Holder's Days Held** | 0.029974369118800144 |
 
 
 ### Script
@@ -38,7 +38,7 @@ from math import exp
 import numpy as np
 
 try:
-    with open('quekz/by-holder.json') as f:
+    with open('smb/by-holder.json') as f:
         data = json.load(f)
 
     quantityNfts_weight = 1.1
@@ -127,7 +127,7 @@ try:
 
     ranked = sorted(scored, key=lambda x: x["holderScore"], reverse=True)
 
-    with open('quekz/ranked-holders.json', 'w') as f:
+    with open('smb/ranked-holders.json', 'w') as f:
       json.dump(ranked, f, indent=4)
 
 except Exception as e:
