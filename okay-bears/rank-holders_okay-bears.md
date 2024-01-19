@@ -2,30 +2,30 @@
 
 ### Date and Time Tuned (UTC):
 
-2023-12-28 22:07:12
+2024-01-19 18:23:19
 
 ### Input:
 
-`madlads/by-holder.json`: JSON file containing data on holders.
+`okay-bears/by-holder.json`: JSON file containing data on holders.
 
 ### Output:
 
-`madlads/ranked-holders.json`: JSON file containing the ranked list of holders based on their calculated score.
+`okay-bears/ranked-holders.json`: JSON file containing the ranked list of holders based on their calculated score.
 
 ### Collection Specific Values 
 
 | Description | Value |
 |---|---|
 | **Weight given to the number of NFTs held** | 1.75 |
-| **Weight given to rarity scores** | 0.022 |
+| **Weight given to rarity scores** | 0.045 |
 | **Weight given to days held scores** | 1.8 |
 | **Factor controlling the decay of score based on days held** | 0.1 |
-| **The total number of NFTs owned by the individual with the largest NFT collection** | 300 |
-| **The average rarity score of the owner who possesses the highest average rarity score** | 0.9993979530403372 |
-| **The total duration held by the owner possessing the maximum cumulative duration of all NFTs they own** | 2466 |
-| **Average Score of Holder's NFTs Owned** |  0.012431204569056055 |
-| **Average Score of Holder's Rarity** | 0.012094612877070678 |
-| **Average Score of Holder's Days Held** | 0.012412006386162612 |
+| **The total number of NFTs owned by the individual with the largest NFT collection** | 148 |
+| **The average rarity score of the owner who possesses the highest average rarity score** | 0.9998 |
+| **The total duration held by the owner possessing the maximum cumulative duration of all NFTs they own** | 1171 |
+| **Average Score of Holder's NFTs Owned** |  0.025958556595810135 |
+| **Average Score of Holder's Rarity** | 0.025451811139761322 |
+| **Average Score of Holder's Days Held** | 0.025959718851906736 |
 
 
 ### Script
@@ -38,11 +38,11 @@ from math import exp
 import numpy as np
 
 try:
-    with open('madlads/by-holder.json') as f:
+    with open('okay-bears/by-holder.json') as f:
         data = json.load(f)
 
     quantityNfts_weight = 1.75
-    rarityScore_weight = 0.0022
+    rarityScore_weight = 0.045
     daysHeld_weight = 1.8
     daysHeld_decay_factor = 0.1
 
@@ -127,7 +127,7 @@ try:
 
     ranked = sorted(scored, key=lambda x: x["holderScore"], reverse=True)
 
-    with open('madlads/ranked-holders.json', 'w') as f:
+    with open('okay-bears/ranked-holders.json', 'w') as f:
       json.dump(ranked, f, indent=4)
 
 except Exception as e:
