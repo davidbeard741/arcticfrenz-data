@@ -24,7 +24,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        script: [by-nft_smb.py, by-nft_solc.py]
+        script: [by-nft_smb.py]
       max-parallel: 11
     steps:
       - uses: actions/checkout@v3
