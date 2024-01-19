@@ -24,7 +24,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        script: [by-holder_smb.py, by-holder_solc.py]
+        script: [by-holder_smb.py]
       max-parallel: 11
     steps:
       - uses: actions/checkout@v3
@@ -54,7 +54,6 @@ jobs:
         run: > 
           git add
           smb/by-holder.json
-          solc/by-holder.json
       - name: Commit
         run: git commit -m "Updated by-holder JSONs"
       - name: Attempt Normal Push
