@@ -54,7 +54,6 @@ jobs:
         run: >
           git add
           smb/by-NFT.json
-          solc/by-NFT.json
       - name: Commit
         run: git commit -m "Updated by-NFT JSONs"
       - name: Attempt Normal Push
