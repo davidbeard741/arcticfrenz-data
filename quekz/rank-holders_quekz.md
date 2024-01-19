@@ -6,11 +6,11 @@
 
 ### Input:
 
-`okay-bears/by-holder.json`: JSON file containing data on holders.
+`quekz/by-holder.json`: JSON file containing data on holders.
 
 ### Output:
 
-`okay-bears/ranked-holders.json`: JSON file containing the ranked list of holders based on their calculated score.
+`quekz/ranked-holders.json`: JSON file containing the ranked list of holders based on their calculated score.
 
 ### Collection Specific Values 
 
