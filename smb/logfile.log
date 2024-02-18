@@ -15320,3 +15320,1606 @@ Stacktrace:
 2024-02-17 23:25:58,002 - ERROR - Error processing 5TchEqASnqwnoXxbVXzpnPrj63RXtzTF4EMMXUGegc8c: time data 'Error: Unexpected issue occurred' does not match format '%m-%d-%Y %H:%M:%S'
 2024-02-17 23:25:58,005 - INFO - WebDriver closed for item 4358
 2024-02-17 23:25:58,819 - INFO - Progress saved after processing 100 items.
+2024-02-18 00:33:57,898 - INFO - Starting new run. Appending to the existing logfile.
+2024-02-18 00:33:58,062 - INFO - Continuing from previously saved progress.
+2024-02-18 00:33:58,063 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:33:58,065 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:33:58,067 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:33:58,069 - INFO - Starting from index 4346: It has the oldest 'time checked'.
+2024-02-18 00:33:58,069 - INFO - Processing item 1/100 with account: HrCfiCyTdQuGpSk545kTWFtsGhJtpkP8DDewzPan1MGD (Global index: 4347/4993)
+2024-02-18 00:34:31,889 - INFO - https://solscan.io/token/HrCfiCyTdQuGpSk545kTWFtsGhJtpkP8DDewzPan1MGD#holders
+2024-02-18 00:34:32,890 - INFO - https://solscan.io/token/HrCfiCyTdQuGpSk545kTWFtsGhJtpkP8DDewzPan1MGD#txs
+2024-02-18 00:34:56,560 - INFO - Owner address found: 
+2024-02-18 00:34:56,560 - INFO - Holder Address: 
+2024-02-18 00:35:06,740 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:35:06,767 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:35:06,767 - INFO - Hold time extracted: Table not found
+2024-02-18 00:35:06,767 - INFO - Closing the web driver...
+2024-02-18 00:35:07,256 - INFO - Web driver closed for time.
+2024-02-18 00:35:07,257 - ERROR - Error processing HrCfiCyTdQuGpSk545kTWFtsGhJtpkP8DDewzPan1MGD: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:35:07,260 - INFO - WebDriver closed for item 4347
+2024-02-18 00:35:07,261 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:35:07,264 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:35:07,266 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:35:07,268 - INFO - Starting from index 4305: It has the oldest 'time checked'.
+2024-02-18 00:35:07,268 - INFO - Processing item 2/100 with account: AsxJ47u732SsJGDGaG5R12uCB67tHuKkBpMzaB2scQ38 (Global index: 4306/4993)
+2024-02-18 00:35:08,540 - INFO - https://solscan.io/token/AsxJ47u732SsJGDGaG5R12uCB67tHuKkBpMzaB2scQ38#holders
+2024-02-18 00:35:09,542 - INFO - https://solscan.io/token/AsxJ47u732SsJGDGaG5R12uCB67tHuKkBpMzaB2scQ38#txs
+2024-02-18 00:35:23,716 - INFO - Owner address found: 
+2024-02-18 00:35:23,716 - INFO - Holder Address: 
+2024-02-18 00:35:33,854 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:35:33,882 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:35:33,882 - INFO - Hold time extracted: Table not found
+2024-02-18 00:35:33,882 - INFO - Closing the web driver...
+2024-02-18 00:35:33,921 - INFO - Web driver closed for time.
+2024-02-18 00:35:33,921 - ERROR - Error processing AsxJ47u732SsJGDGaG5R12uCB67tHuKkBpMzaB2scQ38: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:35:33,926 - INFO - WebDriver closed for item 4306
+2024-02-18 00:35:33,927 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:35:33,930 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:35:33,933 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:35:33,934 - INFO - Starting from index 4307: It has the oldest 'time checked'.
+2024-02-18 00:35:33,934 - INFO - Processing item 3/100 with account: G792ARyhfF9eYGnFQPShSJWE8od8PXN22QzJAmeabPka (Global index: 4308/4993)
+2024-02-18 00:35:35,208 - INFO - https://solscan.io/token/G792ARyhfF9eYGnFQPShSJWE8od8PXN22QzJAmeabPka#holders
+2024-02-18 00:35:36,210 - INFO - https://solscan.io/token/G792ARyhfF9eYGnFQPShSJWE8od8PXN22QzJAmeabPka#txs
+2024-02-18 00:35:52,136 - INFO - Owner address found: 
+2024-02-18 00:35:52,136 - INFO - Holder Address: 
+2024-02-18 00:36:02,288 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:36:02,356 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:36:02,356 - INFO - Hold time extracted: Table not found
+2024-02-18 00:36:02,356 - INFO - Closing the web driver...
+2024-02-18 00:36:02,394 - INFO - Web driver closed for time.
+2024-02-18 00:36:02,394 - ERROR - Error processing G792ARyhfF9eYGnFQPShSJWE8od8PXN22QzJAmeabPka: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:36:02,397 - INFO - WebDriver closed for item 4308
+2024-02-18 00:36:02,398 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:36:02,401 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:36:02,403 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:36:02,405 - INFO - Starting from index 4340: It has the oldest 'time checked'.
+2024-02-18 00:36:02,405 - INFO - Processing item 4/100 with account: 2tk5Nmqr3SXorBjMm1cotkun7Gn14ocZWTvS7Dy5iRsT (Global index: 4341/4993)
+2024-02-18 00:36:03,675 - INFO - https://solscan.io/token/2tk5Nmqr3SXorBjMm1cotkun7Gn14ocZWTvS7Dy5iRsT#holders
+2024-02-18 00:36:04,677 - INFO - https://solscan.io/token/2tk5Nmqr3SXorBjMm1cotkun7Gn14ocZWTvS7Dy5iRsT#txs
+2024-02-18 00:36:17,927 - INFO - Owner address found: 
+2024-02-18 00:36:17,927 - INFO - Holder Address: 
+2024-02-18 00:36:28,083 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:36:28,121 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:36:28,121 - INFO - Hold time extracted: Table not found
+2024-02-18 00:36:28,121 - INFO - Closing the web driver...
+2024-02-18 00:36:28,160 - INFO - Web driver closed for time.
+2024-02-18 00:36:28,160 - ERROR - Error processing 2tk5Nmqr3SXorBjMm1cotkun7Gn14ocZWTvS7Dy5iRsT: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:36:28,163 - INFO - WebDriver closed for item 4341
+2024-02-18 00:36:28,164 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:36:28,167 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:36:28,169 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:36:28,170 - INFO - Starting from index 4347: It has the oldest 'time checked'.
+2024-02-18 00:36:28,170 - INFO - Processing item 5/100 with account: 6CDVt7nDRKobWPPnqJ5pmN5HqUyYo5CRp6nsPcRZPynX (Global index: 4348/4993)
+2024-02-18 00:36:29,445 - INFO - https://solscan.io/token/6CDVt7nDRKobWPPnqJ5pmN5HqUyYo5CRp6nsPcRZPynX#holders
+2024-02-18 00:36:30,446 - INFO - https://solscan.io/token/6CDVt7nDRKobWPPnqJ5pmN5HqUyYo5CRp6nsPcRZPynX#txs
+2024-02-18 00:36:45,598 - INFO - Owner address found: 
+2024-02-18 00:36:45,598 - INFO - Holder Address: 
+2024-02-18 00:36:55,745 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:36:55,778 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:36:55,779 - INFO - Hold time extracted: Table not found
+2024-02-18 00:36:55,779 - INFO - Closing the web driver...
+2024-02-18 00:36:55,817 - INFO - Web driver closed for time.
+2024-02-18 00:36:55,817 - ERROR - Error processing 6CDVt7nDRKobWPPnqJ5pmN5HqUyYo5CRp6nsPcRZPynX: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:36:55,821 - INFO - WebDriver closed for item 4348
+2024-02-18 00:36:55,822 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:36:55,825 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:36:55,827 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:36:55,829 - INFO - Starting from index 4348: It has the oldest 'time checked'.
+2024-02-18 00:36:55,829 - INFO - Processing item 6/100 with account: UC46DG5jnQc5VfRx3PLniUsZsG5P51uLeKKjm6VTm35 (Global index: 4349/4993)
+2024-02-18 00:36:57,099 - INFO - https://solscan.io/token/UC46DG5jnQc5VfRx3PLniUsZsG5P51uLeKKjm6VTm35#holders
+2024-02-18 00:36:58,100 - INFO - https://solscan.io/token/UC46DG5jnQc5VfRx3PLniUsZsG5P51uLeKKjm6VTm35#txs
+2024-02-18 00:37:16,720 - INFO - Owner address found: 
+2024-02-18 00:37:16,720 - INFO - Holder Address: 
+2024-02-18 00:37:26,872 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:37:26,900 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:37:26,900 - INFO - Hold time extracted: Table not found
+2024-02-18 00:37:26,900 - INFO - Closing the web driver...
+2024-02-18 00:37:26,940 - INFO - Web driver closed for time.
+2024-02-18 00:37:26,940 - ERROR - Error processing UC46DG5jnQc5VfRx3PLniUsZsG5P51uLeKKjm6VTm35: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:37:26,943 - INFO - WebDriver closed for item 4349
+2024-02-18 00:37:26,944 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:37:26,947 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:37:26,949 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:37:26,951 - INFO - Starting from index 3337: It has the oldest 'time checked'.
+2024-02-18 00:37:26,951 - INFO - Processing item 7/100 with account: 3wFE6EDtq6AeeEkmj1F8Fpw551rcybyJJ4T4v5WfJqm3 (Global index: 3338/4993)
+2024-02-18 00:37:28,214 - INFO - https://solscan.io/token/3wFE6EDtq6AeeEkmj1F8Fpw551rcybyJJ4T4v5WfJqm3#holders
+2024-02-18 00:37:29,216 - INFO - https://solscan.io/token/3wFE6EDtq6AeeEkmj1F8Fpw551rcybyJJ4T4v5WfJqm3#txs
+2024-02-18 00:37:44,970 - INFO - Owner address found: 
+2024-02-18 00:37:44,970 - INFO - Holder Address: 
+2024-02-18 00:37:55,134 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:37:55,171 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:37:55,171 - INFO - Hold time extracted: Table not found
+2024-02-18 00:37:55,171 - INFO - Closing the web driver...
+2024-02-18 00:37:55,210 - INFO - Web driver closed for time.
+2024-02-18 00:37:55,210 - ERROR - Error processing 3wFE6EDtq6AeeEkmj1F8Fpw551rcybyJJ4T4v5WfJqm3: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:37:55,213 - INFO - WebDriver closed for item 3338
+2024-02-18 00:37:55,214 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:37:55,217 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:37:55,219 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:37:55,220 - INFO - Starting from index 4206: It has the oldest 'time checked'.
+2024-02-18 00:37:55,221 - INFO - Processing item 8/100 with account: 8pXnuD3Pdft4wgHQSJBib4EWCJYZNoaERt8hhsMGJLMv (Global index: 4207/4993)
+2024-02-18 00:37:56,480 - INFO - https://solscan.io/token/8pXnuD3Pdft4wgHQSJBib4EWCJYZNoaERt8hhsMGJLMv#holders
+2024-02-18 00:37:57,481 - INFO - https://solscan.io/token/8pXnuD3Pdft4wgHQSJBib4EWCJYZNoaERt8hhsMGJLMv#txs
+2024-02-18 00:38:15,098 - INFO - Owner address found: 
+2024-02-18 00:38:15,098 - INFO - Holder Address: 
+2024-02-18 00:38:25,270 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:38:25,307 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:38:25,308 - INFO - Hold time extracted: Table not found
+2024-02-18 00:38:25,308 - INFO - Closing the web driver...
+2024-02-18 00:38:25,355 - INFO - Web driver closed for time.
+2024-02-18 00:38:25,355 - ERROR - Error processing 8pXnuD3Pdft4wgHQSJBib4EWCJYZNoaERt8hhsMGJLMv: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:38:25,358 - INFO - WebDriver closed for item 4207
+2024-02-18 00:38:25,359 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:38:25,362 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:38:25,364 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:38:25,366 - INFO - Starting from index 4227: It has the oldest 'time checked'.
+2024-02-18 00:38:25,366 - INFO - Processing item 9/100 with account: GBRwGK2q6ymL4cnubLU3jK1ZQoUZuWbcSL7G2rQunvsz (Global index: 4228/4993)
+2024-02-18 00:38:26,624 - INFO - https://solscan.io/token/GBRwGK2q6ymL4cnubLU3jK1ZQoUZuWbcSL7G2rQunvsz#holders
+2024-02-18 00:38:27,626 - INFO - https://solscan.io/token/GBRwGK2q6ymL4cnubLU3jK1ZQoUZuWbcSL7G2rQunvsz#txs
+2024-02-18 00:38:41,585 - INFO - Owner address found: 
+2024-02-18 00:38:41,585 - INFO - Holder Address: 
+2024-02-18 00:38:51,750 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:38:51,786 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:38:51,786 - INFO - Hold time extracted: Table not found
+2024-02-18 00:38:51,787 - INFO - Closing the web driver...
+2024-02-18 00:38:51,826 - INFO - Web driver closed for time.
+2024-02-18 00:38:51,826 - ERROR - Error processing GBRwGK2q6ymL4cnubLU3jK1ZQoUZuWbcSL7G2rQunvsz: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:38:51,829 - INFO - WebDriver closed for item 4228
+2024-02-18 00:38:51,830 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:38:51,833 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:38:51,835 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:38:51,837 - INFO - Starting from index 4262: It has the oldest 'time checked'.
+2024-02-18 00:38:51,837 - INFO - Processing item 10/100 with account: 5fuTW5BvS27LGoaAvwX9Sy9DtDv26iDh2wTwQHnk4YWE (Global index: 4263/4993)
+2024-02-18 00:38:53,096 - INFO - https://solscan.io/token/5fuTW5BvS27LGoaAvwX9Sy9DtDv26iDh2wTwQHnk4YWE#holders
+2024-02-18 00:38:54,098 - INFO - https://solscan.io/token/5fuTW5BvS27LGoaAvwX9Sy9DtDv26iDh2wTwQHnk4YWE#txs
+2024-02-18 00:39:12,053 - INFO - Owner address found: 
+2024-02-18 00:39:12,053 - INFO - Holder Address: 
+2024-02-18 00:39:22,202 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:39:22,229 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:39:22,229 - INFO - Hold time extracted: Table not found
+2024-02-18 00:39:22,229 - INFO - Closing the web driver...
+2024-02-18 00:39:22,253 - INFO - Web driver closed for time.
+2024-02-18 00:39:22,253 - ERROR - Error processing 5fuTW5BvS27LGoaAvwX9Sy9DtDv26iDh2wTwQHnk4YWE: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:39:22,258 - INFO - WebDriver closed for item 4263
+2024-02-18 00:39:22,259 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:39:22,262 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:39:22,264 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:39:22,266 - INFO - Starting from index 4276: It has the oldest 'time checked'.
+2024-02-18 00:39:22,266 - INFO - Processing item 11/100 with account: 96sk9phPozz3aVEVvV4Vhp7XfKagnQPM2EjKMNbzhbnb (Global index: 4277/4993)
+2024-02-18 00:39:23,526 - INFO - https://solscan.io/token/96sk9phPozz3aVEVvV4Vhp7XfKagnQPM2EjKMNbzhbnb#holders
+2024-02-18 00:39:24,527 - INFO - https://solscan.io/token/96sk9phPozz3aVEVvV4Vhp7XfKagnQPM2EjKMNbzhbnb#txs
+2024-02-18 00:39:38,709 - INFO - Owner address found: 
+2024-02-18 00:39:38,709 - INFO - Holder Address: 
+2024-02-18 00:39:48,863 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:39:48,895 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:39:48,895 - INFO - Hold time extracted: Table not found
+2024-02-18 00:39:48,895 - INFO - Closing the web driver...
+2024-02-18 00:39:48,933 - INFO - Web driver closed for time.
+2024-02-18 00:39:48,933 - ERROR - Error processing 96sk9phPozz3aVEVvV4Vhp7XfKagnQPM2EjKMNbzhbnb: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:39:48,936 - INFO - WebDriver closed for item 4277
+2024-02-18 00:39:48,937 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:39:48,940 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:39:48,942 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:39:48,944 - INFO - Starting from index 4277: It has the oldest 'time checked'.
+2024-02-18 00:39:48,944 - INFO - Processing item 12/100 with account: 9tdKP2Y4kvsyBadEYi7vfeLL5mzsiNH8ASL3DTiqi9Pv (Global index: 4278/4993)
+2024-02-18 00:39:50,206 - INFO - https://solscan.io/token/9tdKP2Y4kvsyBadEYi7vfeLL5mzsiNH8ASL3DTiqi9Pv#holders
+2024-02-18 00:39:51,207 - INFO - https://solscan.io/token/9tdKP2Y4kvsyBadEYi7vfeLL5mzsiNH8ASL3DTiqi9Pv#txs
+2024-02-18 00:40:05,462 - INFO - Owner address found: 
+2024-02-18 00:40:05,462 - INFO - Holder Address: 
+2024-02-18 00:40:15,620 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:40:15,649 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:40:15,649 - INFO - Hold time extracted: Table not found
+2024-02-18 00:40:15,649 - INFO - Closing the web driver...
+2024-02-18 00:40:15,688 - INFO - Web driver closed for time.
+2024-02-18 00:40:15,688 - ERROR - Error processing 9tdKP2Y4kvsyBadEYi7vfeLL5mzsiNH8ASL3DTiqi9Pv: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:40:15,691 - INFO - WebDriver closed for item 4278
+2024-02-18 00:40:15,692 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:40:15,695 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:40:15,697 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:40:15,698 - INFO - Starting from index 4278: It has the oldest 'time checked'.
+2024-02-18 00:40:15,698 - INFO - Processing item 13/100 with account: FoykKGxoF3oXr2v6zk4ikmhUHDeQYZDFwTzpSZ427dWd (Global index: 4279/4993)
+2024-02-18 00:40:16,965 - INFO - https://solscan.io/token/FoykKGxoF3oXr2v6zk4ikmhUHDeQYZDFwTzpSZ427dWd#holders
+2024-02-18 00:40:17,966 - INFO - https://solscan.io/token/FoykKGxoF3oXr2v6zk4ikmhUHDeQYZDFwTzpSZ427dWd#txs
+2024-02-18 00:40:35,869 - INFO - Owner address found: 
+2024-02-18 00:40:35,870 - INFO - Holder Address: 
+2024-02-18 00:40:46,031 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:40:46,068 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:40:46,068 - INFO - Hold time extracted: Table not found
+2024-02-18 00:40:46,068 - INFO - Closing the web driver...
+2024-02-18 00:40:46,107 - INFO - Web driver closed for time.
+2024-02-18 00:40:46,107 - ERROR - Error processing FoykKGxoF3oXr2v6zk4ikmhUHDeQYZDFwTzpSZ427dWd: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:40:46,110 - INFO - WebDriver closed for item 4279
+2024-02-18 00:40:46,111 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:40:46,114 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:40:46,117 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:40:46,119 - INFO - Starting from index 4294: It has the oldest 'time checked'.
+2024-02-18 00:40:46,119 - INFO - Processing item 14/100 with account: BebyWPyBgFNrpGjEGd788rgVLyBn7q2UaeHHUzmKsYgP (Global index: 4295/4993)
+2024-02-18 00:40:47,379 - INFO - https://solscan.io/token/BebyWPyBgFNrpGjEGd788rgVLyBn7q2UaeHHUzmKsYgP#holders
+2024-02-18 00:40:48,380 - INFO - https://solscan.io/token/BebyWPyBgFNrpGjEGd788rgVLyBn7q2UaeHHUzmKsYgP#txs
+2024-02-18 00:41:05,564 - INFO - Owner address found: 
+2024-02-18 00:41:05,564 - INFO - Holder Address: 
+2024-02-18 00:41:15,722 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:41:15,758 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:41:15,759 - INFO - Hold time extracted: Table not found
+2024-02-18 00:41:15,759 - INFO - Closing the web driver...
+2024-02-18 00:41:15,797 - INFO - Web driver closed for time.
+2024-02-18 00:41:15,797 - ERROR - Error processing BebyWPyBgFNrpGjEGd788rgVLyBn7q2UaeHHUzmKsYgP: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:41:15,801 - INFO - WebDriver closed for item 4295
+2024-02-18 00:41:15,801 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:41:15,805 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:41:15,807 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:41:15,810 - INFO - Starting from index 4331: It has the oldest 'time checked'.
+2024-02-18 00:41:15,810 - INFO - Processing item 15/100 with account: B8EnsAwaRmugCTsTnznUsSX39539C46MzyoezPoHCNhf (Global index: 4332/4993)
+2024-02-18 00:41:17,068 - INFO - https://solscan.io/token/B8EnsAwaRmugCTsTnznUsSX39539C46MzyoezPoHCNhf#holders
+2024-02-18 00:41:18,070 - INFO - https://solscan.io/token/B8EnsAwaRmugCTsTnznUsSX39539C46MzyoezPoHCNhf#txs
+2024-02-18 00:41:35,962 - INFO - Owner address found: 
+2024-02-18 00:41:35,962 - INFO - Holder Address: 
+2024-02-18 00:41:46,118 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:41:46,150 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:41:46,150 - INFO - Hold time extracted: Table not found
+2024-02-18 00:41:46,150 - INFO - Closing the web driver...
+2024-02-18 00:41:46,189 - INFO - Web driver closed for time.
+2024-02-18 00:41:46,189 - ERROR - Error processing B8EnsAwaRmugCTsTnznUsSX39539C46MzyoezPoHCNhf: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:41:46,192 - INFO - WebDriver closed for item 4332
+2024-02-18 00:41:46,193 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:41:46,196 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:41:46,198 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:41:46,200 - INFO - Starting from index 4337: It has the oldest 'time checked'.
+2024-02-18 00:41:46,200 - INFO - Processing item 16/100 with account: B9H3mF5aaDa2PDLu8Cb3rgow71QTp1M2b9fKGFdAJDCb (Global index: 4338/4993)
+2024-02-18 00:41:47,460 - INFO - https://solscan.io/token/B9H3mF5aaDa2PDLu8Cb3rgow71QTp1M2b9fKGFdAJDCb#holders
+2024-02-18 00:41:48,462 - INFO - https://solscan.io/token/B9H3mF5aaDa2PDLu8Cb3rgow71QTp1M2b9fKGFdAJDCb#txs
+2024-02-18 00:42:06,113 - INFO - Owner address found: 
+2024-02-18 00:42:06,113 - INFO - Holder Address: 
+2024-02-18 00:42:16,266 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:42:16,298 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:42:16,298 - INFO - Hold time extracted: Table not found
+2024-02-18 00:42:16,298 - INFO - Closing the web driver...
+2024-02-18 00:42:16,337 - INFO - Web driver closed for time.
+2024-02-18 00:42:16,337 - ERROR - Error processing B9H3mF5aaDa2PDLu8Cb3rgow71QTp1M2b9fKGFdAJDCb: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:42:16,340 - INFO - WebDriver closed for item 4338
+2024-02-18 00:42:16,341 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:42:16,344 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:42:16,347 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:42:16,349 - INFO - Starting from index 4341: It has the oldest 'time checked'.
+2024-02-18 00:42:16,349 - INFO - Processing item 17/100 with account: 8gYDsTuvxBNDYyDHvE12XByBcSBigiVk2GXravxC7Qef (Global index: 4342/4993)
+2024-02-18 00:42:17,613 - INFO - https://solscan.io/token/8gYDsTuvxBNDYyDHvE12XByBcSBigiVk2GXravxC7Qef#holders
+2024-02-18 00:42:18,614 - INFO - https://solscan.io/token/8gYDsTuvxBNDYyDHvE12XByBcSBigiVk2GXravxC7Qef#txs
+2024-02-18 00:42:35,336 - INFO - Owner address found: 
+2024-02-18 00:42:35,336 - INFO - Holder Address: 
+2024-02-18 00:42:45,483 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:42:45,510 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:42:45,510 - INFO - Hold time extracted: Table not found
+2024-02-18 00:42:45,510 - INFO - Closing the web driver...
+2024-02-18 00:42:45,557 - INFO - Web driver closed for time.
+2024-02-18 00:42:45,557 - ERROR - Error processing 8gYDsTuvxBNDYyDHvE12XByBcSBigiVk2GXravxC7Qef: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:42:45,560 - INFO - WebDriver closed for item 4342
+2024-02-18 00:42:45,561 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:42:45,564 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:42:45,566 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:42:45,568 - INFO - Starting from index 4345: It has the oldest 'time checked'.
+2024-02-18 00:42:45,568 - INFO - Processing item 18/100 with account: BYwVZaVTnYaSvH9MDydL6xt2vhD4SY9HnFfarpwL3eG2 (Global index: 4346/4993)
+2024-02-18 00:42:46,831 - INFO - https://solscan.io/token/BYwVZaVTnYaSvH9MDydL6xt2vhD4SY9HnFfarpwL3eG2#holders
+2024-02-18 00:42:47,832 - INFO - https://solscan.io/token/BYwVZaVTnYaSvH9MDydL6xt2vhD4SY9HnFfarpwL3eG2#txs
+2024-02-18 00:43:01,313 - INFO - Owner address found: 
+2024-02-18 00:43:01,314 - INFO - Holder Address: 
+2024-02-18 00:43:11,463 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:43:11,543 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:43:11,544 - INFO - Hold time extracted: Table not found
+2024-02-18 00:43:11,544 - INFO - Closing the web driver...
+2024-02-18 00:43:11,584 - INFO - Web driver closed for time.
+2024-02-18 00:43:11,584 - ERROR - Error processing BYwVZaVTnYaSvH9MDydL6xt2vhD4SY9HnFfarpwL3eG2: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:43:11,587 - INFO - WebDriver closed for item 4346
+2024-02-18 00:43:11,587 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:43:11,591 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:43:11,593 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:43:11,594 - INFO - Starting from index 4250: It has the oldest 'time checked'.
+2024-02-18 00:43:11,594 - INFO - Processing item 19/100 with account: 8T3UZe4V5PKzQs6usATBtMYHQ3FXErCLd1Ty1i5nY5Bh (Global index: 4251/4993)
+2024-02-18 00:43:12,873 - INFO - https://solscan.io/token/8T3UZe4V5PKzQs6usATBtMYHQ3FXErCLd1Ty1i5nY5Bh#holders
+2024-02-18 00:43:13,874 - INFO - https://solscan.io/token/8T3UZe4V5PKzQs6usATBtMYHQ3FXErCLd1Ty1i5nY5Bh#txs
+2024-02-18 00:43:27,553 - INFO - Owner address found: 
+2024-02-18 00:43:27,553 - INFO - Holder Address: 
+2024-02-18 00:43:37,713 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:43:37,750 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:43:37,750 - INFO - Hold time extracted: Table not found
+2024-02-18 00:43:37,750 - INFO - Closing the web driver...
+2024-02-18 00:43:37,776 - INFO - Web driver closed for time.
+2024-02-18 00:43:37,776 - ERROR - Error processing 8T3UZe4V5PKzQs6usATBtMYHQ3FXErCLd1Ty1i5nY5Bh: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:43:37,779 - INFO - WebDriver closed for item 4251
+2024-02-18 00:43:37,780 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:43:37,783 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:43:37,785 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:43:37,787 - INFO - Starting from index 4252: It has the oldest 'time checked'.
+2024-02-18 00:43:37,787 - INFO - Processing item 20/100 with account: 8EcVDvzw9xNQUhhti1P7Kic6F6FQ65tNdMxWVxQCzna3 (Global index: 4253/4993)
+2024-02-18 00:43:39,045 - INFO - https://solscan.io/token/8EcVDvzw9xNQUhhti1P7Kic6F6FQ65tNdMxWVxQCzna3#holders
+2024-02-18 00:43:40,046 - INFO - https://solscan.io/token/8EcVDvzw9xNQUhhti1P7Kic6F6FQ65tNdMxWVxQCzna3#txs
+2024-02-18 00:43:53,975 - INFO - Owner address found: 
+2024-02-18 00:43:53,975 - INFO - Holder Address: 
+2024-02-18 00:44:04,131 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:44:04,167 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:44:04,167 - INFO - Hold time extracted: Table not found
+2024-02-18 00:44:04,167 - INFO - Closing the web driver...
+2024-02-18 00:44:04,214 - INFO - Web driver closed for time.
+2024-02-18 00:44:04,214 - ERROR - Error processing 8EcVDvzw9xNQUhhti1P7Kic6F6FQ65tNdMxWVxQCzna3: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:44:04,217 - INFO - WebDriver closed for item 4253
+2024-02-18 00:44:04,218 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:44:04,221 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:44:04,223 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:44:04,225 - INFO - Starting from index 4258: It has the oldest 'time checked'.
+2024-02-18 00:44:04,225 - INFO - Processing item 21/100 with account: EXKvyNyPELxZeP57v2Tk2uc7uBkkBXGpsvM1H96M6RJ8 (Global index: 4259/4993)
+2024-02-18 00:44:05,485 - INFO - https://solscan.io/token/EXKvyNyPELxZeP57v2Tk2uc7uBkkBXGpsvM1H96M6RJ8#holders
+2024-02-18 00:44:06,487 - INFO - https://solscan.io/token/EXKvyNyPELxZeP57v2Tk2uc7uBkkBXGpsvM1H96M6RJ8#txs
+2024-02-18 00:44:23,113 - INFO - Owner address found: 
+2024-02-18 00:44:23,113 - INFO - Holder Address: 
+2024-02-18 00:44:33,270 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:44:33,298 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:44:33,298 - INFO - Hold time extracted: Table not found
+2024-02-18 00:44:33,298 - INFO - Closing the web driver...
+2024-02-18 00:44:33,337 - INFO - Web driver closed for time.
+2024-02-18 00:44:33,337 - ERROR - Error processing EXKvyNyPELxZeP57v2Tk2uc7uBkkBXGpsvM1H96M6RJ8: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:44:33,341 - INFO - WebDriver closed for item 4259
+2024-02-18 00:44:33,341 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:44:33,345 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:44:33,347 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:44:33,348 - INFO - Starting from index 4270: It has the oldest 'time checked'.
+2024-02-18 00:44:33,348 - INFO - Processing item 22/100 with account: 2DUfy5y9pPJgeqV4kkvnEwe3hrrgs2aW4YxgNbX2CxLR (Global index: 4271/4993)
+2024-02-18 00:44:34,607 - INFO - https://solscan.io/token/2DUfy5y9pPJgeqV4kkvnEwe3hrrgs2aW4YxgNbX2CxLR#holders
+2024-02-18 00:44:35,609 - INFO - https://solscan.io/token/2DUfy5y9pPJgeqV4kkvnEwe3hrrgs2aW4YxgNbX2CxLR#txs
+2024-02-18 00:44:51,047 - INFO - Owner address found: 
+2024-02-18 00:44:51,047 - INFO - Holder Address: 
+2024-02-18 00:45:01,206 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:45:01,243 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:45:01,243 - INFO - Hold time extracted: Table not found
+2024-02-18 00:45:01,243 - INFO - Closing the web driver...
+2024-02-18 00:45:01,282 - INFO - Web driver closed for time.
+2024-02-18 00:45:01,282 - ERROR - Error processing 2DUfy5y9pPJgeqV4kkvnEwe3hrrgs2aW4YxgNbX2CxLR: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:45:01,285 - INFO - WebDriver closed for item 4271
+2024-02-18 00:45:01,286 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:45:01,290 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:45:01,292 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:45:01,294 - INFO - Starting from index 4274: It has the oldest 'time checked'.
+2024-02-18 00:45:01,294 - INFO - Processing item 23/100 with account: yoZMS2VCuZrunJc4fudrBJdC5fAxax6LoGpXqb7a5Lg (Global index: 4275/4993)
+2024-02-18 00:45:02,553 - INFO - https://solscan.io/token/yoZMS2VCuZrunJc4fudrBJdC5fAxax6LoGpXqb7a5Lg#holders
+2024-02-18 00:45:03,555 - INFO - https://solscan.io/token/yoZMS2VCuZrunJc4fudrBJdC5fAxax6LoGpXqb7a5Lg#txs
+2024-02-18 00:45:21,368 - INFO - Owner address found: 
+2024-02-18 00:45:21,368 - INFO - Holder Address: 
+2024-02-18 00:45:31,517 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:45:31,545 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:45:31,545 - INFO - Hold time extracted: Table not found
+2024-02-18 00:45:31,545 - INFO - Closing the web driver...
+2024-02-18 00:45:31,592 - INFO - Web driver closed for time.
+2024-02-18 00:45:31,593 - ERROR - Error processing yoZMS2VCuZrunJc4fudrBJdC5fAxax6LoGpXqb7a5Lg: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:45:31,596 - INFO - WebDriver closed for item 4275
+2024-02-18 00:45:31,596 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:45:31,600 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:45:31,603 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:45:31,605 - INFO - Starting from index 4050: It has the oldest 'time checked'.
+2024-02-18 00:45:31,605 - INFO - Processing item 24/100 with account: 8i32fkDY5EnAeQue6KY3NWS71SXKKEjc5NeRwcEymjXh (Global index: 4051/4993)
+2024-02-18 00:45:32,864 - INFO - https://solscan.io/token/8i32fkDY5EnAeQue6KY3NWS71SXKKEjc5NeRwcEymjXh#holders
+2024-02-18 00:45:33,865 - INFO - https://solscan.io/token/8i32fkDY5EnAeQue6KY3NWS71SXKKEjc5NeRwcEymjXh#txs
+2024-02-18 00:45:50,802 - INFO - Owner address found: 
+2024-02-18 00:45:50,802 - INFO - Holder Address: 
+2024-02-18 00:46:00,953 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:46:00,979 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:46:00,979 - INFO - Hold time extracted: Table not found
+2024-02-18 00:46:00,979 - INFO - Closing the web driver...
+2024-02-18 00:46:01,001 - INFO - Web driver closed for time.
+2024-02-18 00:46:01,001 - ERROR - Error processing 8i32fkDY5EnAeQue6KY3NWS71SXKKEjc5NeRwcEymjXh: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:46:01,004 - INFO - WebDriver closed for item 4051
+2024-02-18 00:46:01,005 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:46:01,008 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:46:01,010 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:46:01,012 - INFO - Starting from index 4210: It has the oldest 'time checked'.
+2024-02-18 00:46:01,012 - INFO - Processing item 25/100 with account: GVJ2PbWd4qdH56F4KKHMmpj4tefuCymzgek21qnfxyzU (Global index: 4211/4993)
+2024-02-18 00:46:02,272 - INFO - https://solscan.io/token/GVJ2PbWd4qdH56F4KKHMmpj4tefuCymzgek21qnfxyzU#holders
+2024-02-18 00:46:03,274 - INFO - https://solscan.io/token/GVJ2PbWd4qdH56F4KKHMmpj4tefuCymzgek21qnfxyzU#txs
+2024-02-18 00:46:19,379 - INFO - Owner address found: 
+2024-02-18 00:46:19,380 - INFO - Holder Address: 
+2024-02-18 00:46:29,534 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:46:29,563 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:46:29,563 - INFO - Hold time extracted: Table not found
+2024-02-18 00:46:29,563 - INFO - Closing the web driver...
+2024-02-18 00:46:29,601 - INFO - Web driver closed for time.
+2024-02-18 00:46:29,602 - ERROR - Error processing GVJ2PbWd4qdH56F4KKHMmpj4tefuCymzgek21qnfxyzU: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:46:29,605 - INFO - WebDriver closed for item 4211
+2024-02-18 00:46:29,605 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:46:29,608 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:46:29,610 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:46:29,612 - INFO - Starting from index 4313: It has the oldest 'time checked'.
+2024-02-18 00:46:29,612 - INFO - Processing item 26/100 with account: 3Uzxy1SV9ZidGchSAnRcB5KCuW1tbFY3qwjhxzJaCXbg (Global index: 4314/4993)
+2024-02-18 00:46:30,869 - INFO - https://solscan.io/token/3Uzxy1SV9ZidGchSAnRcB5KCuW1tbFY3qwjhxzJaCXbg#holders
+2024-02-18 00:46:31,871 - INFO - https://solscan.io/token/3Uzxy1SV9ZidGchSAnRcB5KCuW1tbFY3qwjhxzJaCXbg#txs
+2024-02-18 00:46:48,368 - INFO - Owner address found: 
+2024-02-18 00:46:48,368 - INFO - Holder Address: 
+2024-02-18 00:46:58,529 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:46:58,621 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:46:58,621 - INFO - Hold time extracted: Table not found
+2024-02-18 00:46:58,621 - INFO - Closing the web driver...
+2024-02-18 00:46:58,668 - INFO - Web driver closed for time.
+2024-02-18 00:46:58,668 - ERROR - Error processing 3Uzxy1SV9ZidGchSAnRcB5KCuW1tbFY3qwjhxzJaCXbg: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:46:58,671 - INFO - WebDriver closed for item 4314
+2024-02-18 00:46:58,672 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:46:58,675 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:46:58,677 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:46:58,678 - INFO - Starting from index 4324: It has the oldest 'time checked'.
+2024-02-18 00:46:58,678 - INFO - Processing item 27/100 with account: DyH2AuvWzLYE7LxFNJigPpK2H5FY4WVJh4wm36Z5ET2a (Global index: 4325/4993)
+2024-02-18 00:46:59,937 - INFO - https://solscan.io/token/DyH2AuvWzLYE7LxFNJigPpK2H5FY4WVJh4wm36Z5ET2a#holders
+2024-02-18 00:47:00,938 - INFO - https://solscan.io/token/DyH2AuvWzLYE7LxFNJigPpK2H5FY4WVJh4wm36Z5ET2a#txs
+2024-02-18 00:47:18,429 - INFO - Owner address found: 
+2024-02-18 00:47:18,429 - INFO - Holder Address: 
+2024-02-18 00:47:28,585 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:47:28,614 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:47:28,615 - INFO - Hold time extracted: Table not found
+2024-02-18 00:47:28,615 - INFO - Closing the web driver...
+2024-02-18 00:47:28,653 - INFO - Web driver closed for time.
+2024-02-18 00:47:28,653 - ERROR - Error processing DyH2AuvWzLYE7LxFNJigPpK2H5FY4WVJh4wm36Z5ET2a: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:47:28,658 - INFO - WebDriver closed for item 4325
+2024-02-18 00:47:28,659 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:47:28,662 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:47:28,664 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:47:28,666 - INFO - Starting from index 4334: It has the oldest 'time checked'.
+2024-02-18 00:47:28,666 - INFO - Processing item 28/100 with account: DGHe1MT6CKXV7jU1UJg1aB4nhjqxHgGg4ukNRDD5PfEk (Global index: 4335/4993)
+2024-02-18 00:47:29,924 - INFO - https://solscan.io/token/DGHe1MT6CKXV7jU1UJg1aB4nhjqxHgGg4ukNRDD5PfEk#holders
+2024-02-18 00:47:30,926 - INFO - https://solscan.io/token/DGHe1MT6CKXV7jU1UJg1aB4nhjqxHgGg4ukNRDD5PfEk#txs
+2024-02-18 00:47:49,417 - INFO - Owner address found: 
+2024-02-18 00:47:49,417 - INFO - Holder Address: 
+2024-02-18 00:47:59,567 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:47:59,594 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:47:59,594 - INFO - Hold time extracted: Table not found
+2024-02-18 00:47:59,594 - INFO - Closing the web driver...
+2024-02-18 00:47:59,633 - INFO - Web driver closed for time.
+2024-02-18 00:47:59,634 - ERROR - Error processing DGHe1MT6CKXV7jU1UJg1aB4nhjqxHgGg4ukNRDD5PfEk: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:47:59,636 - INFO - WebDriver closed for item 4335
+2024-02-18 00:47:59,637 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:47:59,640 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:47:59,642 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:47:59,644 - INFO - Starting from index 4201: It has the oldest 'time checked'.
+2024-02-18 00:47:59,644 - INFO - Processing item 29/100 with account: 3q2LwbosVoi1eWWPmx7WtCieE7bFyvWMrfPmQLMWrijc (Global index: 4202/4993)
+2024-02-18 00:48:00,903 - INFO - https://solscan.io/token/3q2LwbosVoi1eWWPmx7WtCieE7bFyvWMrfPmQLMWrijc#holders
+2024-02-18 00:48:01,904 - INFO - https://solscan.io/token/3q2LwbosVoi1eWWPmx7WtCieE7bFyvWMrfPmQLMWrijc#txs
+2024-02-18 00:48:18,146 - INFO - Owner address found: 
+2024-02-18 00:48:18,146 - INFO - Holder Address: 
+2024-02-18 00:48:28,294 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:48:28,320 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:48:28,321 - INFO - Hold time extracted: Table not found
+2024-02-18 00:48:28,321 - INFO - Closing the web driver...
+2024-02-18 00:48:28,360 - INFO - Web driver closed for time.
+2024-02-18 00:48:28,360 - ERROR - Error processing 3q2LwbosVoi1eWWPmx7WtCieE7bFyvWMrfPmQLMWrijc: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:48:28,362 - INFO - WebDriver closed for item 4202
+2024-02-18 00:48:28,363 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:48:28,366 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:48:28,368 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:48:28,370 - INFO - Starting from index 4279: It has the oldest 'time checked'.
+2024-02-18 00:48:28,370 - INFO - Processing item 30/100 with account: 83ErV3v2x5VtNunrSeLJsoXhRV7HtDNoCjQWWGZxQYp3 (Global index: 4280/4993)
+2024-02-18 00:48:29,628 - INFO - https://solscan.io/token/83ErV3v2x5VtNunrSeLJsoXhRV7HtDNoCjQWWGZxQYp3#holders
+2024-02-18 00:48:30,629 - INFO - https://solscan.io/token/83ErV3v2x5VtNunrSeLJsoXhRV7HtDNoCjQWWGZxQYp3#txs
+2024-02-18 00:48:47,935 - INFO - Owner address found: 
+2024-02-18 00:48:47,936 - INFO - Holder Address: 
+2024-02-18 00:48:58,102 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:48:58,137 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:48:58,137 - INFO - Hold time extracted: Table not found
+2024-02-18 00:48:58,138 - INFO - Closing the web driver...
+2024-02-18 00:48:58,184 - INFO - Web driver closed for time.
+2024-02-18 00:48:58,184 - ERROR - Error processing 83ErV3v2x5VtNunrSeLJsoXhRV7HtDNoCjQWWGZxQYp3: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:48:58,187 - INFO - WebDriver closed for item 4280
+2024-02-18 00:48:58,188 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:48:58,191 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:48:58,192 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:48:58,194 - INFO - Starting from index 4282: It has the oldest 'time checked'.
+2024-02-18 00:48:58,194 - INFO - Processing item 31/100 with account: G86UafNANQVtPNSj5VkZ4VCMmQcjgj9PWX5MR6Yh1oqZ (Global index: 4283/4993)
+2024-02-18 00:48:59,451 - INFO - https://solscan.io/token/G86UafNANQVtPNSj5VkZ4VCMmQcjgj9PWX5MR6Yh1oqZ#holders
+2024-02-18 00:49:00,452 - INFO - https://solscan.io/token/G86UafNANQVtPNSj5VkZ4VCMmQcjgj9PWX5MR6Yh1oqZ#txs
+2024-02-18 00:49:18,169 - INFO - Owner address found: 
+2024-02-18 00:49:18,169 - INFO - Holder Address: 
+2024-02-18 00:49:28,329 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:49:28,365 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:49:28,365 - INFO - Hold time extracted: Table not found
+2024-02-18 00:49:28,365 - INFO - Closing the web driver...
+2024-02-18 00:49:28,412 - INFO - Web driver closed for time.
+2024-02-18 00:49:28,412 - ERROR - Error processing G86UafNANQVtPNSj5VkZ4VCMmQcjgj9PWX5MR6Yh1oqZ: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:49:28,415 - INFO - WebDriver closed for item 4283
+2024-02-18 00:49:28,415 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:49:28,418 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:49:28,420 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:49:28,422 - INFO - Starting from index 4284: It has the oldest 'time checked'.
+2024-02-18 00:49:28,422 - INFO - Processing item 32/100 with account: 8m4qwSVEXCEiGigmuYLeWTzM56kjaeK6EToH4KkhSzCM (Global index: 4285/4993)
+2024-02-18 00:49:29,682 - INFO - https://solscan.io/token/8m4qwSVEXCEiGigmuYLeWTzM56kjaeK6EToH4KkhSzCM#holders
+2024-02-18 00:49:30,683 - INFO - https://solscan.io/token/8m4qwSVEXCEiGigmuYLeWTzM56kjaeK6EToH4KkhSzCM#txs
+2024-02-18 00:49:48,460 - INFO - Owner address found: 
+2024-02-18 00:49:48,460 - INFO - Holder Address: 
+2024-02-18 00:49:58,603 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:49:58,634 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:49:58,634 - INFO - Hold time extracted: Table not found
+2024-02-18 00:49:58,634 - INFO - Closing the web driver...
+2024-02-18 00:49:58,673 - INFO - Web driver closed for time.
+2024-02-18 00:49:58,673 - ERROR - Error processing 8m4qwSVEXCEiGigmuYLeWTzM56kjaeK6EToH4KkhSzCM: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:49:58,676 - INFO - WebDriver closed for item 4285
+2024-02-18 00:49:58,677 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:49:58,680 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:49:58,681 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:49:58,683 - INFO - Starting from index 4228: It has the oldest 'time checked'.
+2024-02-18 00:49:58,683 - INFO - Processing item 33/100 with account: Efz6ZiwdqxCMgF2gur1feqxQPWJZnS2a9dsWsC6tk35s (Global index: 4229/4993)
+2024-02-18 00:49:59,942 - INFO - https://solscan.io/token/Efz6ZiwdqxCMgF2gur1feqxQPWJZnS2a9dsWsC6tk35s#holders
+2024-02-18 00:50:00,943 - INFO - https://solscan.io/token/Efz6ZiwdqxCMgF2gur1feqxQPWJZnS2a9dsWsC6tk35s#txs
+2024-02-18 00:50:16,646 - INFO - Owner address found: 
+2024-02-18 00:50:16,646 - INFO - Holder Address: 
+2024-02-18 00:50:26,816 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:50:26,851 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:50:26,851 - INFO - Hold time extracted: Table not found
+2024-02-18 00:50:26,851 - INFO - Closing the web driver...
+2024-02-18 00:50:26,890 - INFO - Web driver closed for time.
+2024-02-18 00:50:26,891 - ERROR - Error processing Efz6ZiwdqxCMgF2gur1feqxQPWJZnS2a9dsWsC6tk35s: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:50:26,895 - INFO - WebDriver closed for item 4229
+2024-02-18 00:50:26,896 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:50:26,899 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:50:26,901 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:50:26,903 - INFO - Starting from index 4291: It has the oldest 'time checked'.
+2024-02-18 00:50:26,903 - INFO - Processing item 34/100 with account: 2BSHTEuxtoiZdk1kdMX3biKJJqHmiwwJzL3XrCfTUVez (Global index: 4292/4993)
+2024-02-18 00:50:28,162 - INFO - https://solscan.io/token/2BSHTEuxtoiZdk1kdMX3biKJJqHmiwwJzL3XrCfTUVez#holders
+2024-02-18 00:50:29,163 - INFO - https://solscan.io/token/2BSHTEuxtoiZdk1kdMX3biKJJqHmiwwJzL3XrCfTUVez#txs
+2024-02-18 00:50:45,469 - INFO - Owner address found: 
+2024-02-18 00:50:45,469 - INFO - Holder Address: 
+2024-02-18 00:50:55,622 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:50:55,647 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:50:55,647 - INFO - Hold time extracted: Table not found
+2024-02-18 00:50:55,647 - INFO - Closing the web driver...
+2024-02-18 00:50:55,685 - INFO - Web driver closed for time.
+2024-02-18 00:50:55,685 - ERROR - Error processing 2BSHTEuxtoiZdk1kdMX3biKJJqHmiwwJzL3XrCfTUVez: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:50:55,688 - INFO - WebDriver closed for item 4292
+2024-02-18 00:50:55,688 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:50:55,691 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:50:55,693 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:50:55,695 - INFO - Starting from index 4300: It has the oldest 'time checked'.
+2024-02-18 00:50:55,695 - INFO - Processing item 35/100 with account: DVzKBiXesJnEYaNDN2GBxwF3mA7vZsqb6TCcu9RTiikb (Global index: 4301/4993)
+2024-02-18 00:50:56,956 - INFO - https://solscan.io/token/DVzKBiXesJnEYaNDN2GBxwF3mA7vZsqb6TCcu9RTiikb#holders
+2024-02-18 00:50:57,957 - INFO - https://solscan.io/token/DVzKBiXesJnEYaNDN2GBxwF3mA7vZsqb6TCcu9RTiikb#txs
+2024-02-18 00:51:11,808 - INFO - Owner address found: 
+2024-02-18 00:51:11,808 - INFO - Holder Address: 
+2024-02-18 00:51:21,977 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:51:22,013 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:51:22,013 - INFO - Hold time extracted: Table not found
+2024-02-18 00:51:22,013 - INFO - Closing the web driver...
+2024-02-18 00:51:22,052 - INFO - Web driver closed for time.
+2024-02-18 00:51:22,052 - ERROR - Error processing DVzKBiXesJnEYaNDN2GBxwF3mA7vZsqb6TCcu9RTiikb: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:51:22,054 - INFO - WebDriver closed for item 4301
+2024-02-18 00:51:22,055 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:51:22,058 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:51:22,060 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:51:22,062 - INFO - Starting from index 4303: It has the oldest 'time checked'.
+2024-02-18 00:51:22,062 - INFO - Processing item 36/100 with account: HCwn9GUfa6h8wAZPJTYydq3p2oAymk7zjujqpneAe1Vc (Global index: 4304/4993)
+2024-02-18 00:51:23,323 - INFO - https://solscan.io/token/HCwn9GUfa6h8wAZPJTYydq3p2oAymk7zjujqpneAe1Vc#holders
+2024-02-18 00:51:24,325 - INFO - https://solscan.io/token/HCwn9GUfa6h8wAZPJTYydq3p2oAymk7zjujqpneAe1Vc#txs
+2024-02-18 00:51:39,423 - INFO - Owner address found: 
+2024-02-18 00:51:39,423 - INFO - Holder Address: 
+2024-02-18 00:51:49,573 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:51:49,603 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:51:49,603 - INFO - Hold time extracted: Table not found
+2024-02-18 00:51:49,603 - INFO - Closing the web driver...
+2024-02-18 00:51:49,641 - INFO - Web driver closed for time.
+2024-02-18 00:51:49,641 - ERROR - Error processing HCwn9GUfa6h8wAZPJTYydq3p2oAymk7zjujqpneAe1Vc: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:51:49,644 - INFO - WebDriver closed for item 4304
+2024-02-18 00:51:49,645 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:51:49,648 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:51:49,650 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:51:49,652 - INFO - Starting from index 4311: It has the oldest 'time checked'.
+2024-02-18 00:51:49,652 - INFO - Processing item 37/100 with account: 8jphhMufzb39HT9HEVoj9WzdphAHg2wQLSiMS52QPHZs (Global index: 4312/4993)
+2024-02-18 00:51:50,916 - INFO - https://solscan.io/token/8jphhMufzb39HT9HEVoj9WzdphAHg2wQLSiMS52QPHZs#holders
+2024-02-18 00:51:51,918 - INFO - https://solscan.io/token/8jphhMufzb39HT9HEVoj9WzdphAHg2wQLSiMS52QPHZs#txs
+2024-02-18 00:52:08,096 - INFO - Owner address found: 
+2024-02-18 00:52:08,096 - INFO - Holder Address: 
+2024-02-18 00:52:18,258 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:52:18,289 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:52:18,289 - INFO - Hold time extracted: Table not found
+2024-02-18 00:52:18,289 - INFO - Closing the web driver...
+2024-02-18 00:52:18,327 - INFO - Web driver closed for time.
+2024-02-18 00:52:18,327 - ERROR - Error processing 8jphhMufzb39HT9HEVoj9WzdphAHg2wQLSiMS52QPHZs: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:52:18,330 - INFO - WebDriver closed for item 4312
+2024-02-18 00:52:18,330 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:52:18,333 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:52:18,335 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:52:18,337 - INFO - Starting from index 4319: It has the oldest 'time checked'.
+2024-02-18 00:52:18,337 - INFO - Processing item 38/100 with account: D4M5uLrHWz8uBJo2gYVXYvxcKDhCkbgV4jyBWPNmTLS8 (Global index: 4320/4993)
+2024-02-18 00:52:19,600 - INFO - https://solscan.io/token/D4M5uLrHWz8uBJo2gYVXYvxcKDhCkbgV4jyBWPNmTLS8#holders
+2024-02-18 00:52:20,601 - INFO - https://solscan.io/token/D4M5uLrHWz8uBJo2gYVXYvxcKDhCkbgV4jyBWPNmTLS8#txs
+2024-02-18 00:52:38,019 - INFO - Owner address found: 
+2024-02-18 00:52:38,019 - INFO - Holder Address: 
+2024-02-18 00:52:48,174 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:52:48,202 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:52:48,202 - INFO - Hold time extracted: Table not found
+2024-02-18 00:52:48,203 - INFO - Closing the web driver...
+2024-02-18 00:52:48,242 - INFO - Web driver closed for time.
+2024-02-18 00:52:48,242 - ERROR - Error processing D4M5uLrHWz8uBJo2gYVXYvxcKDhCkbgV4jyBWPNmTLS8: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:52:48,245 - INFO - WebDriver closed for item 4320
+2024-02-18 00:52:48,246 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:52:48,249 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:52:48,251 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:52:48,252 - INFO - Starting from index 4349: It has the oldest 'time checked'.
+2024-02-18 00:52:48,252 - INFO - Processing item 39/100 with account: giA6G7U22ymVNCRPcdJHT2q1kQQgRo864xVaXQ7ueW2 (Global index: 4350/4993)
+2024-02-18 00:52:49,508 - INFO - https://solscan.io/token/giA6G7U22ymVNCRPcdJHT2q1kQQgRo864xVaXQ7ueW2#holders
+2024-02-18 00:52:50,510 - INFO - https://solscan.io/token/giA6G7U22ymVNCRPcdJHT2q1kQQgRo864xVaXQ7ueW2#txs
+2024-02-18 00:53:03,487 - INFO - Owner address found: 
+2024-02-18 00:53:03,487 - INFO - Holder Address: 
+2024-02-18 00:53:13,636 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:53:13,663 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:53:13,663 - INFO - Hold time extracted: Table not found
+2024-02-18 00:53:13,663 - INFO - Closing the web driver...
+2024-02-18 00:53:13,703 - INFO - Web driver closed for time.
+2024-02-18 00:53:13,703 - ERROR - Error processing giA6G7U22ymVNCRPcdJHT2q1kQQgRo864xVaXQ7ueW2: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:53:13,706 - INFO - WebDriver closed for item 4350
+2024-02-18 00:53:13,706 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:53:13,710 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:53:13,712 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:53:13,713 - INFO - Starting from index 4354: It has the oldest 'time checked'.
+2024-02-18 00:53:13,713 - INFO - Processing item 40/100 with account: EeJ4atG23r6PRgrLXy5Anvk52kKmg4E1MVXYbg9TwXwb (Global index: 4355/4993)
+2024-02-18 00:53:14,980 - INFO - https://solscan.io/token/EeJ4atG23r6PRgrLXy5Anvk52kKmg4E1MVXYbg9TwXwb#holders
+2024-02-18 00:53:15,982 - INFO - https://solscan.io/token/EeJ4atG23r6PRgrLXy5Anvk52kKmg4E1MVXYbg9TwXwb#txs
+2024-02-18 00:53:31,523 - INFO - Owner address found: 
+2024-02-18 00:53:31,523 - INFO - Holder Address: 
+2024-02-18 00:53:41,674 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:53:41,704 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:53:41,705 - INFO - Hold time extracted: Table not found
+2024-02-18 00:53:41,705 - INFO - Closing the web driver...
+2024-02-18 00:53:41,742 - INFO - Web driver closed for time.
+2024-02-18 00:53:41,743 - ERROR - Error processing EeJ4atG23r6PRgrLXy5Anvk52kKmg4E1MVXYbg9TwXwb: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:53:41,745 - INFO - WebDriver closed for item 4355
+2024-02-18 00:53:41,746 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:53:41,749 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:53:41,751 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:53:41,753 - INFO - Starting from index 4360: It has the oldest 'time checked'.
+2024-02-18 00:53:41,753 - INFO - Processing item 41/100 with account: 9T9rn9J2cEVq3tz2fCacLww25EN2tskrG1xX7KQe8mst (Global index: 4361/4993)
+2024-02-18 00:53:43,009 - INFO - https://solscan.io/token/9T9rn9J2cEVq3tz2fCacLww25EN2tskrG1xX7KQe8mst#holders
+2024-02-18 00:53:44,010 - INFO - https://solscan.io/token/9T9rn9J2cEVq3tz2fCacLww25EN2tskrG1xX7KQe8mst#txs
+2024-02-18 00:54:00,603 - INFO - Owner address found: 
+2024-02-18 00:54:00,603 - INFO - Holder Address: 
+2024-02-18 00:54:10,751 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:54:10,782 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:54:10,782 - INFO - Hold time extracted: Table not found
+2024-02-18 00:54:10,783 - INFO - Closing the web driver...
+2024-02-18 00:54:10,821 - INFO - Web driver closed for time.
+2024-02-18 00:54:10,821 - ERROR - Error processing 9T9rn9J2cEVq3tz2fCacLww25EN2tskrG1xX7KQe8mst: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:54:10,824 - INFO - WebDriver closed for item 4361
+2024-02-18 00:54:10,825 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:54:10,828 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:54:10,830 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:54:10,832 - INFO - Starting from index 4363: It has the oldest 'time checked'.
+2024-02-18 00:54:10,832 - INFO - Processing item 42/100 with account: Gn87b8rTnp5zKFzww737UkD2mgBnBaF7ouFC1G5hwzg8 (Global index: 4364/4993)
+2024-02-18 00:54:12,090 - INFO - https://solscan.io/token/Gn87b8rTnp5zKFzww737UkD2mgBnBaF7ouFC1G5hwzg8#holders
+2024-02-18 00:54:13,091 - INFO - https://solscan.io/token/Gn87b8rTnp5zKFzww737UkD2mgBnBaF7ouFC1G5hwzg8#txs
+2024-02-18 00:54:29,284 - INFO - Owner address found: 
+2024-02-18 00:54:29,284 - INFO - Holder Address: 
+2024-02-18 00:54:39,435 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:54:39,461 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:54:39,461 - INFO - Hold time extracted: Table not found
+2024-02-18 00:54:39,461 - INFO - Closing the web driver...
+2024-02-18 00:54:39,507 - INFO - Web driver closed for time.
+2024-02-18 00:54:39,507 - ERROR - Error processing Gn87b8rTnp5zKFzww737UkD2mgBnBaF7ouFC1G5hwzg8: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:54:39,510 - INFO - WebDriver closed for item 4364
+2024-02-18 00:54:39,511 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:54:39,514 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:54:39,516 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:54:39,518 - INFO - Starting from index 4364: It has the oldest 'time checked'.
+2024-02-18 00:54:39,518 - INFO - Processing item 43/100 with account: 63kGtnNY9b2tMWbQLTmjWjwatq4gTm3n6Dhw39om1y3e (Global index: 4365/4993)
+2024-02-18 00:54:40,780 - INFO - https://solscan.io/token/63kGtnNY9b2tMWbQLTmjWjwatq4gTm3n6Dhw39om1y3e#holders
+2024-02-18 00:54:41,781 - INFO - https://solscan.io/token/63kGtnNY9b2tMWbQLTmjWjwatq4gTm3n6Dhw39om1y3e#txs
+2024-02-18 00:54:55,114 - INFO - Owner address found: 
+2024-02-18 00:54:55,114 - INFO - Holder Address: 
+2024-02-18 00:55:05,261 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:55:05,288 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:55:05,288 - INFO - Hold time extracted: Table not found
+2024-02-18 00:55:05,288 - INFO - Closing the web driver...
+2024-02-18 00:55:05,311 - INFO - Web driver closed for time.
+2024-02-18 00:55:05,311 - ERROR - Error processing 63kGtnNY9b2tMWbQLTmjWjwatq4gTm3n6Dhw39om1y3e: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:55:05,314 - INFO - WebDriver closed for item 4365
+2024-02-18 00:55:05,315 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:55:05,318 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:55:05,320 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:55:05,322 - INFO - Starting from index 4367: It has the oldest 'time checked'.
+2024-02-18 00:55:05,322 - INFO - Processing item 44/100 with account: BRKMk352ssXjhWpvbiwZEnBX7xAjY6FYU5kUUETz2DNZ (Global index: 4368/4993)
+2024-02-18 00:55:06,580 - INFO - https://solscan.io/token/BRKMk352ssXjhWpvbiwZEnBX7xAjY6FYU5kUUETz2DNZ#holders
+2024-02-18 00:55:07,582 - INFO - https://solscan.io/token/BRKMk352ssXjhWpvbiwZEnBX7xAjY6FYU5kUUETz2DNZ#txs
+2024-02-18 00:55:22,039 - INFO - Owner address found: 
+2024-02-18 00:55:22,039 - INFO - Holder Address: 
+2024-02-18 00:55:32,203 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:55:32,240 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:55:32,240 - INFO - Hold time extracted: Table not found
+2024-02-18 00:55:32,240 - INFO - Closing the web driver...
+2024-02-18 00:55:32,262 - INFO - Web driver closed for time.
+2024-02-18 00:55:32,262 - ERROR - Error processing BRKMk352ssXjhWpvbiwZEnBX7xAjY6FYU5kUUETz2DNZ: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:55:32,267 - INFO - WebDriver closed for item 4368
+2024-02-18 00:55:32,268 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:55:32,271 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:55:32,273 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:55:32,275 - INFO - Starting from index 4368: It has the oldest 'time checked'.
+2024-02-18 00:55:32,275 - INFO - Processing item 45/100 with account: 5VewGRRwzJ9Uy1koDWVEkSHb4daTBufzmD3VVvmspcXr (Global index: 4369/4993)
+2024-02-18 00:55:33,536 - INFO - https://solscan.io/token/5VewGRRwzJ9Uy1koDWVEkSHb4daTBufzmD3VVvmspcXr#holders
+2024-02-18 00:55:34,537 - INFO - https://solscan.io/token/5VewGRRwzJ9Uy1koDWVEkSHb4daTBufzmD3VVvmspcXr#txs
+2024-02-18 00:55:51,993 - INFO - Owner address found: 
+2024-02-18 00:55:51,993 - INFO - Holder Address: 
+2024-02-18 00:56:02,134 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:56:02,162 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:56:02,162 - INFO - Hold time extracted: Table not found
+2024-02-18 00:56:02,162 - INFO - Closing the web driver...
+2024-02-18 00:56:02,209 - INFO - Web driver closed for time.
+2024-02-18 00:56:02,209 - ERROR - Error processing 5VewGRRwzJ9Uy1koDWVEkSHb4daTBufzmD3VVvmspcXr: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:56:02,212 - INFO - WebDriver closed for item 4369
+2024-02-18 00:56:02,213 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:56:02,216 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:56:02,218 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:56:02,220 - INFO - Starting from index 4372: It has the oldest 'time checked'.
+2024-02-18 00:56:02,220 - INFO - Processing item 46/100 with account: 75t4vsXDBbLRKBBKLTQ3RpnrwB4pQKj1sTesKo3Mn6Bb (Global index: 4373/4993)
+2024-02-18 00:56:03,481 - INFO - https://solscan.io/token/75t4vsXDBbLRKBBKLTQ3RpnrwB4pQKj1sTesKo3Mn6Bb#holders
+2024-02-18 00:56:04,482 - INFO - https://solscan.io/token/75t4vsXDBbLRKBBKLTQ3RpnrwB4pQKj1sTesKo3Mn6Bb#txs
+2024-02-18 00:56:20,230 - INFO - Owner address found: 
+2024-02-18 00:56:20,230 - INFO - Holder Address: 
+2024-02-18 00:56:30,387 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:56:30,421 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:56:30,421 - INFO - Hold time extracted: Table not found
+2024-02-18 00:56:30,421 - INFO - Closing the web driver...
+2024-02-18 00:56:30,469 - INFO - Web driver closed for time.
+2024-02-18 00:56:30,469 - ERROR - Error processing 75t4vsXDBbLRKBBKLTQ3RpnrwB4pQKj1sTesKo3Mn6Bb: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:56:30,471 - INFO - WebDriver closed for item 4373
+2024-02-18 00:56:30,472 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:56:30,475 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:56:30,477 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:56:30,479 - INFO - Starting from index 4373: It has the oldest 'time checked'.
+2024-02-18 00:56:30,479 - INFO - Processing item 47/100 with account: H2jNQef6Q2gud6TAQaGqRmXGyiPuy7vQNjB3rKYpfHR2 (Global index: 4374/4993)
+2024-02-18 00:56:31,741 - INFO - https://solscan.io/token/H2jNQef6Q2gud6TAQaGqRmXGyiPuy7vQNjB3rKYpfHR2#holders
+2024-02-18 00:56:32,743 - INFO - https://solscan.io/token/H2jNQef6Q2gud6TAQaGqRmXGyiPuy7vQNjB3rKYpfHR2#txs
+2024-02-18 00:56:46,375 - INFO - Owner address found: 
+2024-02-18 00:56:46,375 - INFO - Holder Address: 
+2024-02-18 00:56:56,554 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:56:56,594 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:56:56,594 - INFO - Hold time extracted: Table not found
+2024-02-18 00:56:56,594 - INFO - Closing the web driver...
+2024-02-18 00:56:56,618 - INFO - Web driver closed for time.
+2024-02-18 00:56:56,619 - ERROR - Error processing H2jNQef6Q2gud6TAQaGqRmXGyiPuy7vQNjB3rKYpfHR2: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:56:56,622 - INFO - WebDriver closed for item 4374
+2024-02-18 00:56:56,623 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:56:56,626 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:56:56,628 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:56:56,629 - INFO - Starting from index 4375: It has the oldest 'time checked'.
+2024-02-18 00:56:56,629 - INFO - Processing item 48/100 with account: FtxwjmRjPo6PkNLggwD6dH37e6qFTkKYopd71jCnvGUk (Global index: 4376/4993)
+2024-02-18 00:56:57,887 - INFO - https://solscan.io/token/FtxwjmRjPo6PkNLggwD6dH37e6qFTkKYopd71jCnvGUk#holders
+2024-02-18 00:56:58,888 - INFO - https://solscan.io/token/FtxwjmRjPo6PkNLggwD6dH37e6qFTkKYopd71jCnvGUk#txs
+2024-02-18 00:57:12,311 - INFO - Owner address found: 
+2024-02-18 00:57:12,311 - INFO - Holder Address: 
+2024-02-18 00:57:22,466 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:57:22,502 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:57:22,502 - INFO - Hold time extracted: Table not found
+2024-02-18 00:57:22,502 - INFO - Closing the web driver...
+2024-02-18 00:57:22,541 - INFO - Web driver closed for time.
+2024-02-18 00:57:22,541 - ERROR - Error processing FtxwjmRjPo6PkNLggwD6dH37e6qFTkKYopd71jCnvGUk: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:57:22,547 - INFO - WebDriver closed for item 4376
+2024-02-18 00:57:22,547 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:57:22,551 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:57:22,552 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:57:22,554 - INFO - Starting from index 4376: It has the oldest 'time checked'.
+2024-02-18 00:57:22,554 - INFO - Processing item 49/100 with account: GSTadAfY5WmENaskrf5Vc7HACxE6H6VSjasGstSZu1vy (Global index: 4377/4993)
+2024-02-18 00:57:23,813 - INFO - https://solscan.io/token/GSTadAfY5WmENaskrf5Vc7HACxE6H6VSjasGstSZu1vy#holders
+2024-02-18 00:57:24,814 - INFO - https://solscan.io/token/GSTadAfY5WmENaskrf5Vc7HACxE6H6VSjasGstSZu1vy#txs
+2024-02-18 00:57:37,935 - INFO - Owner address found: 
+2024-02-18 00:57:37,935 - INFO - Holder Address: 
+2024-02-18 00:57:48,087 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:57:48,169 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:57:48,169 - INFO - Hold time extracted: Table not found
+2024-02-18 00:57:48,169 - INFO - Closing the web driver...
+2024-02-18 00:57:48,208 - INFO - Web driver closed for time.
+2024-02-18 00:57:48,208 - ERROR - Error processing GSTadAfY5WmENaskrf5Vc7HACxE6H6VSjasGstSZu1vy: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:57:48,211 - INFO - WebDriver closed for item 4377
+2024-02-18 00:57:48,212 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:57:48,215 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:57:48,217 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:57:48,218 - INFO - Starting from index 4377: It has the oldest 'time checked'.
+2024-02-18 00:57:48,218 - INFO - Processing item 50/100 with account: FsyNE8RQyAdeBAWN6oswYaPJERPbMTdh8D9mJh6xkLTi (Global index: 4378/4993)
+2024-02-18 00:57:49,476 - INFO - https://solscan.io/token/FsyNE8RQyAdeBAWN6oswYaPJERPbMTdh8D9mJh6xkLTi#holders
+2024-02-18 00:57:50,477 - INFO - https://solscan.io/token/FsyNE8RQyAdeBAWN6oswYaPJERPbMTdh8D9mJh6xkLTi#txs
+2024-02-18 00:58:04,136 - INFO - Owner address found: 
+2024-02-18 00:58:04,136 - INFO - Holder Address: 
+2024-02-18 00:58:14,304 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:58:14,340 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:58:14,340 - INFO - Hold time extracted: Table not found
+2024-02-18 00:58:14,340 - INFO - Closing the web driver...
+2024-02-18 00:58:14,387 - INFO - Web driver closed for time.
+2024-02-18 00:58:14,388 - ERROR - Error processing FsyNE8RQyAdeBAWN6oswYaPJERPbMTdh8D9mJh6xkLTi: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:58:14,390 - INFO - WebDriver closed for item 4378
+2024-02-18 00:58:14,391 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:58:14,394 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:58:14,396 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:58:14,398 - INFO - Starting from index 4315: It has the oldest 'time checked'.
+2024-02-18 00:58:14,398 - INFO - Processing item 51/100 with account: 3Pd1yHTfNGPTpyxAyJgCHuD7XLrP9K9AL76XLoMRCLfY (Global index: 4316/4993)
+2024-02-18 00:58:15,666 - INFO - https://solscan.io/token/3Pd1yHTfNGPTpyxAyJgCHuD7XLrP9K9AL76XLoMRCLfY#holders
+2024-02-18 00:58:16,668 - INFO - https://solscan.io/token/3Pd1yHTfNGPTpyxAyJgCHuD7XLrP9K9AL76XLoMRCLfY#txs
+2024-02-18 00:58:35,000 - INFO - Owner address found: 
+2024-02-18 00:58:35,000 - INFO - Holder Address: 
+2024-02-18 00:58:45,153 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:58:45,180 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:58:45,180 - INFO - Hold time extracted: Table not found
+2024-02-18 00:58:45,180 - INFO - Closing the web driver...
+2024-02-18 00:58:45,219 - INFO - Web driver closed for time.
+2024-02-18 00:58:45,220 - ERROR - Error processing 3Pd1yHTfNGPTpyxAyJgCHuD7XLrP9K9AL76XLoMRCLfY: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:58:45,222 - INFO - WebDriver closed for item 4316
+2024-02-18 00:58:45,223 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:58:45,226 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:58:45,228 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:58:45,230 - INFO - Starting from index 4325: It has the oldest 'time checked'.
+2024-02-18 00:58:45,230 - INFO - Processing item 52/100 with account: 5yGXGnrGTYDCHDF4CgFuwVPC6djquox3LjxNy1RWcqJG (Global index: 4326/4993)
+2024-02-18 00:58:46,487 - INFO - https://solscan.io/token/5yGXGnrGTYDCHDF4CgFuwVPC6djquox3LjxNy1RWcqJG#holders
+2024-02-18 00:58:47,488 - INFO - https://solscan.io/token/5yGXGnrGTYDCHDF4CgFuwVPC6djquox3LjxNy1RWcqJG#txs
+2024-02-18 00:59:04,765 - INFO - Owner address found: 
+2024-02-18 00:59:04,765 - INFO - Holder Address: 
+2024-02-18 00:59:14,915 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:59:14,941 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:59:14,941 - INFO - Hold time extracted: Table not found
+2024-02-18 00:59:14,941 - INFO - Closing the web driver...
+2024-02-18 00:59:14,988 - INFO - Web driver closed for time.
+2024-02-18 00:59:14,988 - ERROR - Error processing 5yGXGnrGTYDCHDF4CgFuwVPC6djquox3LjxNy1RWcqJG: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:59:14,991 - INFO - WebDriver closed for item 4326
+2024-02-18 00:59:14,991 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:59:14,994 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:59:14,996 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:59:14,998 - INFO - Starting from index 4380: It has the oldest 'time checked'.
+2024-02-18 00:59:14,998 - INFO - Processing item 53/100 with account: Dvv34jpnfpUfH9cd9Kr3wAuRxfPZUTFGUs2gBwse841C (Global index: 4381/4993)
+2024-02-18 00:59:16,257 - INFO - https://solscan.io/token/Dvv34jpnfpUfH9cd9Kr3wAuRxfPZUTFGUs2gBwse841C#holders
+2024-02-18 00:59:17,259 - INFO - https://solscan.io/token/Dvv34jpnfpUfH9cd9Kr3wAuRxfPZUTFGUs2gBwse841C#txs
+2024-02-18 00:59:31,431 - INFO - Owner address found: 
+2024-02-18 00:59:31,431 - INFO - Holder Address: 
+2024-02-18 00:59:41,594 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 00:59:41,626 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 00:59:41,627 - INFO - Hold time extracted: Table not found
+2024-02-18 00:59:41,627 - INFO - Closing the web driver...
+2024-02-18 00:59:41,666 - INFO - Web driver closed for time.
+2024-02-18 00:59:41,666 - ERROR - Error processing Dvv34jpnfpUfH9cd9Kr3wAuRxfPZUTFGUs2gBwse841C: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 00:59:41,669 - INFO - WebDriver closed for item 4381
+2024-02-18 00:59:41,670 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 00:59:41,673 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 00:59:41,675 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 00:59:41,676 - INFO - Starting from index 4384: It has the oldest 'time checked'.
+2024-02-18 00:59:41,676 - INFO - Processing item 54/100 with account: 42BvWveptC4LpQXTz2QM9pJLGYoc6wuTMFpT27xvYL8D (Global index: 4385/4993)
+2024-02-18 00:59:42,935 - INFO - https://solscan.io/token/42BvWveptC4LpQXTz2QM9pJLGYoc6wuTMFpT27xvYL8D#holders
+2024-02-18 00:59:43,936 - INFO - https://solscan.io/token/42BvWveptC4LpQXTz2QM9pJLGYoc6wuTMFpT27xvYL8D#txs
+2024-02-18 00:59:57,260 - INFO - Owner address found: 
+2024-02-18 00:59:57,260 - INFO - Holder Address: 
+2024-02-18 01:00:07,406 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:00:07,433 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:00:07,433 - INFO - Hold time extracted: Table not found
+2024-02-18 01:00:07,433 - INFO - Closing the web driver...
+2024-02-18 01:00:07,471 - INFO - Web driver closed for time.
+2024-02-18 01:00:07,471 - ERROR - Error processing 42BvWveptC4LpQXTz2QM9pJLGYoc6wuTMFpT27xvYL8D: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:00:07,474 - INFO - WebDriver closed for item 4385
+2024-02-18 01:00:07,475 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:00:07,478 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:00:07,480 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:00:07,482 - INFO - Starting from index 4387: It has the oldest 'time checked'.
+2024-02-18 01:00:07,482 - INFO - Processing item 55/100 with account: AD9DnAH4QmzdnYt7wK4qTLYrX1L8PonmmW8FonHxhmKp (Global index: 4388/4993)
+2024-02-18 01:00:08,747 - INFO - https://solscan.io/token/AD9DnAH4QmzdnYt7wK4qTLYrX1L8PonmmW8FonHxhmKp#holders
+2024-02-18 01:00:09,748 - INFO - https://solscan.io/token/AD9DnAH4QmzdnYt7wK4qTLYrX1L8PonmmW8FonHxhmKp#txs
+2024-02-18 01:00:27,968 - INFO - Owner address found: 
+2024-02-18 01:00:27,968 - INFO - Holder Address: 
+2024-02-18 01:00:38,131 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:00:38,167 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:00:38,167 - INFO - Hold time extracted: Table not found
+2024-02-18 01:00:38,167 - INFO - Closing the web driver...
+2024-02-18 01:00:38,193 - INFO - Web driver closed for time.
+2024-02-18 01:00:38,194 - ERROR - Error processing AD9DnAH4QmzdnYt7wK4qTLYrX1L8PonmmW8FonHxhmKp: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:00:38,197 - INFO - WebDriver closed for item 4388
+2024-02-18 01:00:38,198 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:00:38,201 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:00:38,203 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:00:38,205 - INFO - Starting from index 4388: It has the oldest 'time checked'.
+2024-02-18 01:00:38,205 - INFO - Processing item 56/100 with account: 6CpxTB6PHtJP5BXUt42oFHMWD5Rj1e62h18PbPPork9i (Global index: 4389/4993)
+2024-02-18 01:00:39,464 - INFO - https://solscan.io/token/6CpxTB6PHtJP5BXUt42oFHMWD5Rj1e62h18PbPPork9i#holders
+2024-02-18 01:00:40,465 - INFO - https://solscan.io/token/6CpxTB6PHtJP5BXUt42oFHMWD5Rj1e62h18PbPPork9i#txs
+2024-02-18 01:00:58,515 - INFO - Owner address found: 
+2024-02-18 01:00:58,515 - INFO - Holder Address: 
+2024-02-18 01:01:08,679 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:01:08,715 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:01:08,715 - INFO - Hold time extracted: Table not found
+2024-02-18 01:01:08,715 - INFO - Closing the web driver...
+2024-02-18 01:01:08,762 - INFO - Web driver closed for time.
+2024-02-18 01:01:08,762 - ERROR - Error processing 6CpxTB6PHtJP5BXUt42oFHMWD5Rj1e62h18PbPPork9i: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:01:08,765 - INFO - WebDriver closed for item 4389
+2024-02-18 01:01:08,766 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:01:08,769 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:01:08,770 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:01:08,772 - INFO - Starting from index 4393: It has the oldest 'time checked'.
+2024-02-18 01:01:08,772 - INFO - Processing item 57/100 with account: B7LSXLTPs2V8EHHD6agocp2QFSALAdk939R9ikw6B5aK (Global index: 4394/4993)
+2024-02-18 01:01:10,033 - INFO - https://solscan.io/token/B7LSXLTPs2V8EHHD6agocp2QFSALAdk939R9ikw6B5aK#holders
+2024-02-18 01:01:11,034 - INFO - https://solscan.io/token/B7LSXLTPs2V8EHHD6agocp2QFSALAdk939R9ikw6B5aK#txs
+2024-02-18 01:01:29,205 - INFO - Owner address found: 
+2024-02-18 01:01:29,206 - INFO - Holder Address: 
+2024-02-18 01:01:39,361 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:01:39,443 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:01:39,443 - INFO - Hold time extracted: Table not found
+2024-02-18 01:01:39,443 - INFO - Closing the web driver...
+2024-02-18 01:01:39,492 - INFO - Web driver closed for time.
+2024-02-18 01:01:39,492 - ERROR - Error processing B7LSXLTPs2V8EHHD6agocp2QFSALAdk939R9ikw6B5aK: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:01:39,494 - INFO - WebDriver closed for item 4394
+2024-02-18 01:01:39,495 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:01:39,498 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:01:39,500 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:01:39,502 - INFO - Starting from index 4399: It has the oldest 'time checked'.
+2024-02-18 01:01:39,502 - INFO - Processing item 58/100 with account: CXLFFk9XoowKye46whVVPTbqQRKSn9KoWDPBGgqCsG5t (Global index: 4400/4993)
+2024-02-18 01:01:40,760 - INFO - https://solscan.io/token/CXLFFk9XoowKye46whVVPTbqQRKSn9KoWDPBGgqCsG5t#holders
+2024-02-18 01:01:41,762 - INFO - https://solscan.io/token/CXLFFk9XoowKye46whVVPTbqQRKSn9KoWDPBGgqCsG5t#txs
+2024-02-18 01:01:55,086 - INFO - Owner address found: 
+2024-02-18 01:01:55,086 - INFO - Holder Address: 
+2024-02-18 01:02:05,234 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:02:05,263 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:02:05,263 - INFO - Hold time extracted: Table not found
+2024-02-18 01:02:05,263 - INFO - Closing the web driver...
+2024-02-18 01:02:05,302 - INFO - Web driver closed for time.
+2024-02-18 01:02:05,302 - ERROR - Error processing CXLFFk9XoowKye46whVVPTbqQRKSn9KoWDPBGgqCsG5t: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:02:05,305 - INFO - WebDriver closed for item 4400
+2024-02-18 01:02:05,306 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:02:05,309 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:02:05,310 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:02:05,312 - INFO - Starting from index 4401: It has the oldest 'time checked'.
+2024-02-18 01:02:05,312 - INFO - Processing item 59/100 with account: 3bbw27brCSaAUebVbdEZbekm1RNHJKG6fxq9ctinKpBV (Global index: 4402/4993)
+2024-02-18 01:02:06,570 - INFO - https://solscan.io/token/3bbw27brCSaAUebVbdEZbekm1RNHJKG6fxq9ctinKpBV#holders
+2024-02-18 01:02:07,571 - INFO - https://solscan.io/token/3bbw27brCSaAUebVbdEZbekm1RNHJKG6fxq9ctinKpBV#txs
+2024-02-18 01:02:25,840 - INFO - Owner address found: 
+2024-02-18 01:02:25,840 - INFO - Holder Address: 
+2024-02-18 01:02:35,983 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:02:36,011 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:02:36,011 - INFO - Hold time extracted: Table not found
+2024-02-18 01:02:36,011 - INFO - Closing the web driver...
+2024-02-18 01:02:36,049 - INFO - Web driver closed for time.
+2024-02-18 01:02:36,049 - ERROR - Error processing 3bbw27brCSaAUebVbdEZbekm1RNHJKG6fxq9ctinKpBV: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:02:36,052 - INFO - WebDriver closed for item 4402
+2024-02-18 01:02:36,053 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:02:36,056 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:02:36,058 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:02:36,060 - INFO - Starting from index 4402: It has the oldest 'time checked'.
+2024-02-18 01:02:36,060 - INFO - Processing item 60/100 with account: HeCVwnNDhj5U1mwzyRHY3KW7JBiKH7z5oWHbVg9qWeJV (Global index: 4403/4993)
+2024-02-18 01:02:37,319 - INFO - https://solscan.io/token/HeCVwnNDhj5U1mwzyRHY3KW7JBiKH7z5oWHbVg9qWeJV#holders
+2024-02-18 01:02:38,320 - INFO - https://solscan.io/token/HeCVwnNDhj5U1mwzyRHY3KW7JBiKH7z5oWHbVg9qWeJV#txs
+2024-02-18 01:02:56,109 - INFO - Owner address found: 
+2024-02-18 01:02:56,109 - INFO - Holder Address: 
+2024-02-18 01:03:06,261 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:03:06,288 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:03:06,288 - INFO - Hold time extracted: Table not found
+2024-02-18 01:03:06,288 - INFO - Closing the web driver...
+2024-02-18 01:03:06,312 - INFO - Web driver closed for time.
+2024-02-18 01:03:06,312 - ERROR - Error processing HeCVwnNDhj5U1mwzyRHY3KW7JBiKH7z5oWHbVg9qWeJV: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:03:06,315 - INFO - WebDriver closed for item 4403
+2024-02-18 01:03:06,316 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:03:06,319 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:03:06,320 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:03:06,322 - INFO - Starting from index 4403: It has the oldest 'time checked'.
+2024-02-18 01:03:06,322 - INFO - Processing item 61/100 with account: 5cqeipRcXtieFXLbcPdqWHs8zXhd5NYMStXbmG9FwhGc (Global index: 4404/4993)
+2024-02-18 01:03:07,580 - INFO - https://solscan.io/token/5cqeipRcXtieFXLbcPdqWHs8zXhd5NYMStXbmG9FwhGc#holders
+2024-02-18 01:03:08,581 - INFO - https://solscan.io/token/5cqeipRcXtieFXLbcPdqWHs8zXhd5NYMStXbmG9FwhGc#txs
+2024-02-18 01:03:25,116 - INFO - Owner address found: 
+2024-02-18 01:03:25,117 - INFO - Holder Address: 
+2024-02-18 01:03:35,264 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:03:35,291 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:03:35,291 - INFO - Hold time extracted: Table not found
+2024-02-18 01:03:35,291 - INFO - Closing the web driver...
+2024-02-18 01:03:35,330 - INFO - Web driver closed for time.
+2024-02-18 01:03:35,330 - ERROR - Error processing 5cqeipRcXtieFXLbcPdqWHs8zXhd5NYMStXbmG9FwhGc: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:03:35,333 - INFO - WebDriver closed for item 4404
+2024-02-18 01:03:35,334 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:03:35,337 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:03:35,339 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:03:35,340 - INFO - Starting from index 4407: It has the oldest 'time checked'.
+2024-02-18 01:03:35,340 - INFO - Processing item 62/100 with account: 7gp4v91jDPueZXvmDSfsSdMyN42im5BTHKdPsNz5MVMU (Global index: 4408/4993)
+2024-02-18 01:03:36,599 - INFO - https://solscan.io/token/7gp4v91jDPueZXvmDSfsSdMyN42im5BTHKdPsNz5MVMU#holders
+2024-02-18 01:03:37,600 - INFO - https://solscan.io/token/7gp4v91jDPueZXvmDSfsSdMyN42im5BTHKdPsNz5MVMU#txs
+2024-02-18 01:03:54,237 - INFO - Owner address found: 
+2024-02-18 01:03:54,237 - INFO - Holder Address: 
+2024-02-18 01:04:04,403 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:04:04,440 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:04:04,440 - INFO - Hold time extracted: Table not found
+2024-02-18 01:04:04,440 - INFO - Closing the web driver...
+2024-02-18 01:04:04,478 - INFO - Web driver closed for time.
+2024-02-18 01:04:04,479 - ERROR - Error processing 7gp4v91jDPueZXvmDSfsSdMyN42im5BTHKdPsNz5MVMU: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:04:04,482 - INFO - WebDriver closed for item 4408
+2024-02-18 01:04:04,482 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:04:04,486 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:04:04,487 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:04:04,489 - INFO - Starting from index 4408: It has the oldest 'time checked'.
+2024-02-18 01:04:04,489 - INFO - Processing item 63/100 with account: 3APJzXy4PPJqnk6CvE4uBDUFwaVvuneJbBM69hTj2DJF (Global index: 4409/4993)
+2024-02-18 01:04:05,748 - INFO - https://solscan.io/token/3APJzXy4PPJqnk6CvE4uBDUFwaVvuneJbBM69hTj2DJF#holders
+2024-02-18 01:04:06,749 - INFO - https://solscan.io/token/3APJzXy4PPJqnk6CvE4uBDUFwaVvuneJbBM69hTj2DJF#txs
+2024-02-18 01:04:24,050 - INFO - Owner address found: 
+2024-02-18 01:04:24,050 - INFO - Holder Address: 
+2024-02-18 01:04:34,195 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:04:34,223 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:04:34,223 - INFO - Hold time extracted: Table not found
+2024-02-18 01:04:34,223 - INFO - Closing the web driver...
+2024-02-18 01:04:34,269 - INFO - Web driver closed for time.
+2024-02-18 01:04:34,270 - ERROR - Error processing 3APJzXy4PPJqnk6CvE4uBDUFwaVvuneJbBM69hTj2DJF: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:04:34,272 - INFO - WebDriver closed for item 4409
+2024-02-18 01:04:34,273 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:04:34,276 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:04:34,278 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:04:34,279 - INFO - Starting from index 4411: It has the oldest 'time checked'.
+2024-02-18 01:04:34,280 - INFO - Processing item 64/100 with account: AY86PwCcj22P2F4BPVJ69GjH3VCj5NbYb9XTZYNHGQdq (Global index: 4412/4993)
+2024-02-18 01:04:35,539 - INFO - https://solscan.io/token/AY86PwCcj22P2F4BPVJ69GjH3VCj5NbYb9XTZYNHGQdq#holders
+2024-02-18 01:04:36,541 - INFO - https://solscan.io/token/AY86PwCcj22P2F4BPVJ69GjH3VCj5NbYb9XTZYNHGQdq#txs
+2024-02-18 01:04:53,482 - INFO - Owner address found: 
+2024-02-18 01:04:53,483 - INFO - Holder Address: 
+2024-02-18 01:05:03,646 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:05:03,683 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:05:03,683 - INFO - Hold time extracted: Table not found
+2024-02-18 01:05:03,683 - INFO - Closing the web driver...
+2024-02-18 01:05:03,722 - INFO - Web driver closed for time.
+2024-02-18 01:05:03,722 - ERROR - Error processing AY86PwCcj22P2F4BPVJ69GjH3VCj5NbYb9XTZYNHGQdq: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:05:03,727 - INFO - WebDriver closed for item 4412
+2024-02-18 01:05:03,728 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:05:03,731 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:05:03,733 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:05:03,735 - INFO - Starting from index 4414: It has the oldest 'time checked'.
+2024-02-18 01:05:03,735 - INFO - Processing item 65/100 with account: CWH3aq4ZeFkfPmQ6eqck7mquAUAYo4Fk4h1cqVpef2m1 (Global index: 4415/4993)
+2024-02-18 01:05:04,995 - INFO - https://solscan.io/token/CWH3aq4ZeFkfPmQ6eqck7mquAUAYo4Fk4h1cqVpef2m1#holders
+2024-02-18 01:05:05,996 - INFO - https://solscan.io/token/CWH3aq4ZeFkfPmQ6eqck7mquAUAYo4Fk4h1cqVpef2m1#txs
+2024-02-18 01:05:19,606 - INFO - Owner address found: 
+2024-02-18 01:05:19,606 - INFO - Holder Address: 
+2024-02-18 01:05:29,753 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:05:29,834 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:05:29,834 - INFO - Hold time extracted: Table not found
+2024-02-18 01:05:29,834 - INFO - Closing the web driver...
+2024-02-18 01:05:29,882 - INFO - Web driver closed for time.
+2024-02-18 01:05:29,882 - ERROR - Error processing CWH3aq4ZeFkfPmQ6eqck7mquAUAYo4Fk4h1cqVpef2m1: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:05:29,885 - INFO - WebDriver closed for item 4415
+2024-02-18 01:05:29,885 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:05:29,888 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:05:29,890 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:05:29,892 - INFO - Starting from index 4417: It has the oldest 'time checked'.
+2024-02-18 01:05:29,892 - INFO - Processing item 66/100 with account: E49AUCfNHmWRTSJe9cXfQD1WzoJGymqkEbMu9N8JbkEU (Global index: 4418/4993)
+2024-02-18 01:05:31,149 - INFO - https://solscan.io/token/E49AUCfNHmWRTSJe9cXfQD1WzoJGymqkEbMu9N8JbkEU#holders
+2024-02-18 01:05:32,150 - INFO - https://solscan.io/token/E49AUCfNHmWRTSJe9cXfQD1WzoJGymqkEbMu9N8JbkEU#txs
+2024-02-18 01:05:48,224 - INFO - Owner address found: 
+2024-02-18 01:05:48,224 - INFO - Holder Address: 
+2024-02-18 01:05:58,369 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:05:58,398 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:05:58,398 - INFO - Hold time extracted: Table not found
+2024-02-18 01:05:58,398 - INFO - Closing the web driver...
+2024-02-18 01:05:58,445 - INFO - Web driver closed for time.
+2024-02-18 01:05:58,445 - ERROR - Error processing E49AUCfNHmWRTSJe9cXfQD1WzoJGymqkEbMu9N8JbkEU: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:05:58,448 - INFO - WebDriver closed for item 4418
+2024-02-18 01:05:58,449 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:05:58,452 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:05:58,453 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:05:58,455 - INFO - Starting from index 4419: It has the oldest 'time checked'.
+2024-02-18 01:05:58,455 - INFO - Processing item 67/100 with account: 89GDaT1LUVKP7L6jreWo3fcBGLkQqAMuBg8BvigeVQyb (Global index: 4420/4993)
+2024-02-18 01:05:59,716 - INFO - https://solscan.io/token/89GDaT1LUVKP7L6jreWo3fcBGLkQqAMuBg8BvigeVQyb#holders
+2024-02-18 01:06:00,718 - INFO - https://solscan.io/token/89GDaT1LUVKP7L6jreWo3fcBGLkQqAMuBg8BvigeVQyb#txs
+2024-02-18 01:06:18,320 - INFO - Owner address found: 
+2024-02-18 01:06:18,320 - INFO - Holder Address: 
+2024-02-18 01:06:28,467 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:06:28,495 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:06:28,495 - INFO - Hold time extracted: Table not found
+2024-02-18 01:06:28,495 - INFO - Closing the web driver...
+2024-02-18 01:06:28,533 - INFO - Web driver closed for time.
+2024-02-18 01:06:28,533 - ERROR - Error processing 89GDaT1LUVKP7L6jreWo3fcBGLkQqAMuBg8BvigeVQyb: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:06:28,536 - INFO - WebDriver closed for item 4420
+2024-02-18 01:06:28,537 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:06:28,540 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:06:28,542 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:06:28,544 - INFO - Starting from index 4385: It has the oldest 'time checked'.
+2024-02-18 01:06:28,544 - INFO - Processing item 68/100 with account: HZ6qgeUJ431u8CJzfGmFgKqExtexvH6nU6zDhkcv9aK4 (Global index: 4386/4993)
+2024-02-18 01:06:29,801 - INFO - https://solscan.io/token/HZ6qgeUJ431u8CJzfGmFgKqExtexvH6nU6zDhkcv9aK4#holders
+2024-02-18 01:06:30,802 - INFO - https://solscan.io/token/HZ6qgeUJ431u8CJzfGmFgKqExtexvH6nU6zDhkcv9aK4#txs
+2024-02-18 01:06:48,674 - INFO - Owner address found: 
+2024-02-18 01:06:48,674 - INFO - Holder Address: 
+2024-02-18 01:06:58,832 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:06:58,857 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:06:58,858 - INFO - Hold time extracted: Table not found
+2024-02-18 01:06:58,858 - INFO - Closing the web driver...
+2024-02-18 01:06:58,904 - INFO - Web driver closed for time.
+2024-02-18 01:06:58,905 - ERROR - Error processing HZ6qgeUJ431u8CJzfGmFgKqExtexvH6nU6zDhkcv9aK4: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:06:58,907 - INFO - WebDriver closed for item 4386
+2024-02-18 01:06:58,908 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:06:58,911 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:06:58,913 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:06:58,915 - INFO - Starting from index 4400: It has the oldest 'time checked'.
+2024-02-18 01:06:58,915 - INFO - Processing item 69/100 with account: 39R7y9UUTnV4i5fQeh6mdkRWft7ed3HrF73CWxzgQQ3J (Global index: 4401/4993)
+2024-02-18 01:07:00,174 - INFO - https://solscan.io/token/39R7y9UUTnV4i5fQeh6mdkRWft7ed3HrF73CWxzgQQ3J#holders
+2024-02-18 01:07:01,174 - INFO - https://solscan.io/token/39R7y9UUTnV4i5fQeh6mdkRWft7ed3HrF73CWxzgQQ3J#txs
+2024-02-18 01:07:19,662 - INFO - Owner address found: 
+2024-02-18 01:07:19,662 - INFO - Holder Address: 
+2024-02-18 01:07:29,805 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:07:29,832 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:07:29,832 - INFO - Hold time extracted: Table not found
+2024-02-18 01:07:29,832 - INFO - Closing the web driver...
+2024-02-18 01:07:29,878 - INFO - Web driver closed for time.
+2024-02-18 01:07:29,879 - ERROR - Error processing 39R7y9UUTnV4i5fQeh6mdkRWft7ed3HrF73CWxzgQQ3J: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:07:29,881 - INFO - WebDriver closed for item 4401
+2024-02-18 01:07:29,882 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:07:29,885 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:07:29,887 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:07:29,889 - INFO - Starting from index 4361: It has the oldest 'time checked'.
+2024-02-18 01:07:29,889 - INFO - Processing item 70/100 with account: 8m4vKUctytdCoDrpLNzZXDGRk92LZrrWZa65ZCzVVunM (Global index: 4362/4993)
+2024-02-18 01:07:31,148 - INFO - https://solscan.io/token/8m4vKUctytdCoDrpLNzZXDGRk92LZrrWZa65ZCzVVunM#holders
+2024-02-18 01:07:32,149 - INFO - https://solscan.io/token/8m4vKUctytdCoDrpLNzZXDGRk92LZrrWZa65ZCzVVunM#txs
+2024-02-18 01:07:46,166 - INFO - Owner address found: 
+2024-02-18 01:07:46,166 - INFO - Holder Address: 
+2024-02-18 01:07:56,320 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:07:56,349 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:07:56,349 - INFO - Hold time extracted: Table not found
+2024-02-18 01:07:56,349 - INFO - Closing the web driver...
+2024-02-18 01:07:56,396 - INFO - Web driver closed for time.
+2024-02-18 01:07:56,396 - ERROR - Error processing 8m4vKUctytdCoDrpLNzZXDGRk92LZrrWZa65ZCzVVunM: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:07:56,399 - INFO - WebDriver closed for item 4362
+2024-02-18 01:07:56,400 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:07:56,403 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:07:56,405 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:07:56,406 - INFO - Starting from index 4394: It has the oldest 'time checked'.
+2024-02-18 01:07:56,406 - INFO - Processing item 71/100 with account: E4i2EMjYNEarDr68MXg6v81utebudciwosKPCnZPoMVj (Global index: 4395/4993)
+2024-02-18 01:07:57,664 - INFO - https://solscan.io/token/E4i2EMjYNEarDr68MXg6v81utebudciwosKPCnZPoMVj#holders
+2024-02-18 01:07:58,666 - INFO - https://solscan.io/token/E4i2EMjYNEarDr68MXg6v81utebudciwosKPCnZPoMVj#txs
+2024-02-18 01:08:14,737 - INFO - Owner address found: 
+2024-02-18 01:08:14,737 - INFO - Holder Address: 
+2024-02-18 01:08:24,895 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:08:24,932 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:08:24,933 - INFO - Hold time extracted: Table not found
+2024-02-18 01:08:24,933 - INFO - Closing the web driver...
+2024-02-18 01:08:24,980 - INFO - Web driver closed for time.
+2024-02-18 01:08:24,980 - ERROR - Error processing E4i2EMjYNEarDr68MXg6v81utebudciwosKPCnZPoMVj: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:08:24,983 - INFO - WebDriver closed for item 4395
+2024-02-18 01:08:24,984 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:08:24,987 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:08:24,989 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:08:24,990 - INFO - Starting from index 4159: It has the oldest 'time checked'.
+2024-02-18 01:08:24,990 - INFO - Processing item 72/100 with account: 6nAHiBAFLsa3NrjQrsdsy6JvcQYUgs3Cj31V4dEoR2vM (Global index: 4160/4993)
+2024-02-18 01:08:26,251 - INFO - https://solscan.io/token/6nAHiBAFLsa3NrjQrsdsy6JvcQYUgs3Cj31V4dEoR2vM#holders
+2024-02-18 01:08:27,253 - INFO - https://solscan.io/token/6nAHiBAFLsa3NrjQrsdsy6JvcQYUgs3Cj31V4dEoR2vM#txs
+2024-02-18 01:08:42,682 - INFO - Owner address found: 
+2024-02-18 01:08:42,682 - INFO - Holder Address: 
+2024-02-18 01:08:52,843 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:08:52,874 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:08:52,874 - INFO - Hold time extracted: Table not found
+2024-02-18 01:08:52,874 - INFO - Closing the web driver...
+2024-02-18 01:08:52,920 - INFO - Web driver closed for time.
+2024-02-18 01:08:52,920 - ERROR - Error processing 6nAHiBAFLsa3NrjQrsdsy6JvcQYUgs3Cj31V4dEoR2vM: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:08:52,923 - INFO - WebDriver closed for item 4160
+2024-02-18 01:08:52,923 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:08:52,926 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:08:52,928 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:08:52,930 - INFO - Starting from index 4288: It has the oldest 'time checked'.
+2024-02-18 01:08:52,930 - INFO - Processing item 73/100 with account: 2M3BMhwZPndJNmUHf7oBFuN7SDkRKRWjQ3BH5wSuvRna (Global index: 4289/4993)
+2024-02-18 01:08:54,189 - INFO - https://solscan.io/token/2M3BMhwZPndJNmUHf7oBFuN7SDkRKRWjQ3BH5wSuvRna#holders
+2024-02-18 01:08:55,191 - INFO - https://solscan.io/token/2M3BMhwZPndJNmUHf7oBFuN7SDkRKRWjQ3BH5wSuvRna#txs
+2024-02-18 01:09:12,917 - INFO - Owner address found: 
+2024-02-18 01:09:12,917 - INFO - Holder Address: 
+2024-02-18 01:09:23,079 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:09:23,108 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:09:23,108 - INFO - Hold time extracted: Table not found
+2024-02-18 01:09:23,108 - INFO - Closing the web driver...
+2024-02-18 01:09:23,147 - INFO - Web driver closed for time.
+2024-02-18 01:09:23,147 - ERROR - Error processing 2M3BMhwZPndJNmUHf7oBFuN7SDkRKRWjQ3BH5wSuvRna: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:09:23,150 - INFO - WebDriver closed for item 4289
+2024-02-18 01:09:23,151 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:09:23,154 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:09:23,156 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:09:23,157 - INFO - Starting from index 4316: It has the oldest 'time checked'.
+2024-02-18 01:09:23,158 - INFO - Processing item 74/100 with account: BoD3NNSn4xhRb3ZpqSN5JDLMN6SKKt1qKAeTDLSeiGHh (Global index: 4317/4993)
+2024-02-18 01:09:24,416 - INFO - https://solscan.io/token/BoD3NNSn4xhRb3ZpqSN5JDLMN6SKKt1qKAeTDLSeiGHh#holders
+2024-02-18 01:09:25,418 - INFO - https://solscan.io/token/BoD3NNSn4xhRb3ZpqSN5JDLMN6SKKt1qKAeTDLSeiGHh#txs
+2024-02-18 01:09:43,142 - INFO - Owner address found: 
+2024-02-18 01:09:43,142 - INFO - Holder Address: 
+2024-02-18 01:09:53,301 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:09:53,337 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:09:53,337 - INFO - Hold time extracted: Table not found
+2024-02-18 01:09:53,337 - INFO - Closing the web driver...
+2024-02-18 01:09:53,376 - INFO - Web driver closed for time.
+2024-02-18 01:09:53,376 - ERROR - Error processing BoD3NNSn4xhRb3ZpqSN5JDLMN6SKKt1qKAeTDLSeiGHh: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:09:53,379 - INFO - WebDriver closed for item 4317
+2024-02-18 01:09:53,380 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:09:53,383 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:09:53,385 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:09:53,387 - INFO - Starting from index 4336: It has the oldest 'time checked'.
+2024-02-18 01:09:53,387 - INFO - Processing item 75/100 with account: GJX1qGpivpTBvNZYk1sJXLBP1YU8om7oW1AW86tjjnY9 (Global index: 4337/4993)
+2024-02-18 01:09:54,650 - INFO - https://solscan.io/token/GJX1qGpivpTBvNZYk1sJXLBP1YU8om7oW1AW86tjjnY9#holders
+2024-02-18 01:09:55,651 - INFO - https://solscan.io/token/GJX1qGpivpTBvNZYk1sJXLBP1YU8om7oW1AW86tjjnY9#txs
+2024-02-18 01:10:10,857 - INFO - Owner address found: 
+2024-02-18 01:10:10,857 - INFO - Holder Address: 
+2024-02-18 01:10:21,000 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:10:21,028 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:10:21,028 - INFO - Hold time extracted: Table not found
+2024-02-18 01:10:21,028 - INFO - Closing the web driver...
+2024-02-18 01:10:21,074 - INFO - Web driver closed for time.
+2024-02-18 01:10:21,074 - ERROR - Error processing GJX1qGpivpTBvNZYk1sJXLBP1YU8om7oW1AW86tjjnY9: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:10:21,077 - INFO - WebDriver closed for item 4337
+2024-02-18 01:10:21,078 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:10:21,082 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:10:21,084 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:10:21,085 - INFO - Starting from index 4241: It has the oldest 'time checked'.
+2024-02-18 01:10:21,085 - INFO - Processing item 76/100 with account: B43jcmFeBz6bgYCbwEhLr4GwgUSZKXcNWZ8eSQDPo6mY (Global index: 4242/4993)
+2024-02-18 01:10:22,351 - INFO - https://solscan.io/token/B43jcmFeBz6bgYCbwEhLr4GwgUSZKXcNWZ8eSQDPo6mY#holders
+2024-02-18 01:10:23,352 - INFO - https://solscan.io/token/B43jcmFeBz6bgYCbwEhLr4GwgUSZKXcNWZ8eSQDPo6mY#txs
+2024-02-18 01:10:41,091 - INFO - Owner address found: 
+2024-02-18 01:10:41,091 - INFO - Holder Address: 
+2024-02-18 01:10:51,239 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:10:51,272 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:10:51,273 - INFO - Hold time extracted: Table not found
+2024-02-18 01:10:51,273 - INFO - Closing the web driver...
+2024-02-18 01:10:51,319 - INFO - Web driver closed for time.
+2024-02-18 01:10:51,319 - ERROR - Error processing B43jcmFeBz6bgYCbwEhLr4GwgUSZKXcNWZ8eSQDPo6mY: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:10:51,322 - INFO - WebDriver closed for item 4242
+2024-02-18 01:10:51,323 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:10:51,326 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:10:51,327 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:10:51,329 - INFO - Starting from index 4290: It has the oldest 'time checked'.
+2024-02-18 01:10:51,329 - INFO - Processing item 77/100 with account: A3Yb8rxHrnU2u9z5cUd5DCEEq99VNSUdtRKFMPSRwvsi (Global index: 4291/4993)
+2024-02-18 01:10:52,588 - INFO - https://solscan.io/token/A3Yb8rxHrnU2u9z5cUd5DCEEq99VNSUdtRKFMPSRwvsi#holders
+2024-02-18 01:10:53,590 - INFO - https://solscan.io/token/A3Yb8rxHrnU2u9z5cUd5DCEEq99VNSUdtRKFMPSRwvsi#txs
+2024-02-18 01:11:07,316 - INFO - Owner address found: 
+2024-02-18 01:11:07,316 - INFO - Holder Address: 
+2024-02-18 01:11:17,476 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:11:17,513 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:11:17,513 - INFO - Hold time extracted: Table not found
+2024-02-18 01:11:17,513 - INFO - Closing the web driver...
+2024-02-18 01:11:17,560 - INFO - Web driver closed for time.
+2024-02-18 01:11:17,560 - ERROR - Error processing A3Yb8rxHrnU2u9z5cUd5DCEEq99VNSUdtRKFMPSRwvsi: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:11:17,563 - INFO - WebDriver closed for item 4291
+2024-02-18 01:11:17,564 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:11:17,567 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:11:17,568 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:11:17,570 - INFO - Starting from index 4285: It has the oldest 'time checked'.
+2024-02-18 01:11:17,570 - INFO - Processing item 78/100 with account: 5oenRnjNJZN1Jz1ceM3dw79dZ1D5EAkt848iu2yY4YTF (Global index: 4286/4993)
+2024-02-18 01:11:18,829 - INFO - https://solscan.io/token/5oenRnjNJZN1Jz1ceM3dw79dZ1D5EAkt848iu2yY4YTF#holders
+2024-02-18 01:11:19,830 - INFO - https://solscan.io/token/5oenRnjNJZN1Jz1ceM3dw79dZ1D5EAkt848iu2yY4YTF#txs
+2024-02-18 01:11:36,043 - INFO - Owner address found: 
+2024-02-18 01:11:36,043 - INFO - Holder Address: 
+2024-02-18 01:11:46,193 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:11:46,220 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:11:46,220 - INFO - Hold time extracted: Table not found
+2024-02-18 01:11:46,220 - INFO - Closing the web driver...
+2024-02-18 01:11:46,267 - INFO - Web driver closed for time.
+2024-02-18 01:11:46,268 - ERROR - Error processing 5oenRnjNJZN1Jz1ceM3dw79dZ1D5EAkt848iu2yY4YTF: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:11:46,270 - INFO - WebDriver closed for item 4286
+2024-02-18 01:11:46,271 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:11:46,274 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:11:46,276 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:11:46,278 - INFO - Starting from index 4338: It has the oldest 'time checked'.
+2024-02-18 01:11:46,278 - INFO - Processing item 79/100 with account: AnhHuW1R5UhGTvmytHYR79eTieCcDnDACuTRvrPU6hZw (Global index: 4339/4993)
+2024-02-18 01:11:47,537 - INFO - https://solscan.io/token/AnhHuW1R5UhGTvmytHYR79eTieCcDnDACuTRvrPU6hZw#holders
+2024-02-18 01:11:48,538 - INFO - https://solscan.io/token/AnhHuW1R5UhGTvmytHYR79eTieCcDnDACuTRvrPU6hZw#txs
+2024-02-18 01:12:06,585 - INFO - Owner address found: 
+2024-02-18 01:12:06,585 - INFO - Holder Address: 
+2024-02-18 01:12:16,734 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:12:16,760 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:12:16,760 - INFO - Hold time extracted: Table not found
+2024-02-18 01:12:16,760 - INFO - Closing the web driver...
+2024-02-18 01:12:16,782 - INFO - Web driver closed for time.
+2024-02-18 01:12:16,782 - ERROR - Error processing AnhHuW1R5UhGTvmytHYR79eTieCcDnDACuTRvrPU6hZw: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:12:16,785 - INFO - WebDriver closed for item 4339
+2024-02-18 01:12:16,786 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:12:16,789 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:12:16,791 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:12:16,792 - INFO - Starting from index 4343: It has the oldest 'time checked'.
+2024-02-18 01:12:16,792 - INFO - Processing item 80/100 with account: EHVnv6qX2gF2t5dpkRDf9tb9hgQoMGJRcTXrj13ByrLV (Global index: 4344/4993)
+2024-02-18 01:12:18,050 - INFO - https://solscan.io/token/EHVnv6qX2gF2t5dpkRDf9tb9hgQoMGJRcTXrj13ByrLV#holders
+2024-02-18 01:12:19,051 - INFO - https://solscan.io/token/EHVnv6qX2gF2t5dpkRDf9tb9hgQoMGJRcTXrj13ByrLV#txs
+2024-02-18 01:12:35,807 - INFO - Owner address found: 
+2024-02-18 01:12:35,807 - INFO - Holder Address: 
+2024-02-18 01:12:45,964 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:12:46,001 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:12:46,001 - INFO - Hold time extracted: Table not found
+2024-02-18 01:12:46,001 - INFO - Closing the web driver...
+2024-02-18 01:12:46,040 - INFO - Web driver closed for time.
+2024-02-18 01:12:46,040 - ERROR - Error processing EHVnv6qX2gF2t5dpkRDf9tb9hgQoMGJRcTXrj13ByrLV: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:12:46,043 - INFO - WebDriver closed for item 4344
+2024-02-18 01:12:46,044 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:12:46,047 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:12:46,049 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:12:46,050 - INFO - Starting from index 4366: It has the oldest 'time checked'.
+2024-02-18 01:12:46,051 - INFO - Processing item 81/100 with account: 9FHHyMNrE9joY7i4G56UQvccEQEhLoaCwhRsDYnE3z9B (Global index: 4367/4993)
+2024-02-18 01:12:47,322 - INFO - https://solscan.io/token/9FHHyMNrE9joY7i4G56UQvccEQEhLoaCwhRsDYnE3z9B#holders
+2024-02-18 01:12:48,323 - INFO - https://solscan.io/token/9FHHyMNrE9joY7i4G56UQvccEQEhLoaCwhRsDYnE3z9B#txs
+2024-02-18 01:13:02,056 - INFO - Owner address found: 
+2024-02-18 01:13:02,056 - INFO - Holder Address: 
+2024-02-18 01:13:12,222 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:13:12,313 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:13:12,313 - INFO - Hold time extracted: Table not found
+2024-02-18 01:13:12,313 - INFO - Closing the web driver...
+2024-02-18 01:13:12,351 - INFO - Web driver closed for time.
+2024-02-18 01:13:12,352 - ERROR - Error processing 9FHHyMNrE9joY7i4G56UQvccEQEhLoaCwhRsDYnE3z9B: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:13:12,354 - INFO - WebDriver closed for item 4367
+2024-02-18 01:13:12,355 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:13:12,358 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:13:12,360 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:13:12,361 - INFO - Starting from index 4371: It has the oldest 'time checked'.
+2024-02-18 01:13:12,361 - INFO - Processing item 82/100 with account: BtQWKx5jHJp6G9NAM52MZYs7s2wQrpr3osDEaUgipZEj (Global index: 4372/4993)
+2024-02-18 01:13:13,619 - INFO - https://solscan.io/token/BtQWKx5jHJp6G9NAM52MZYs7s2wQrpr3osDEaUgipZEj#holders
+2024-02-18 01:13:14,621 - INFO - https://solscan.io/token/BtQWKx5jHJp6G9NAM52MZYs7s2wQrpr3osDEaUgipZEj#txs
+2024-02-18 01:13:32,507 - INFO - Owner address found: 
+2024-02-18 01:13:32,507 - INFO - Holder Address: 
+2024-02-18 01:13:42,649 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:13:42,679 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:13:42,679 - INFO - Hold time extracted: Table not found
+2024-02-18 01:13:42,679 - INFO - Closing the web driver...
+2024-02-18 01:13:42,725 - INFO - Web driver closed for time.
+2024-02-18 01:13:42,725 - ERROR - Error processing BtQWKx5jHJp6G9NAM52MZYs7s2wQrpr3osDEaUgipZEj: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:13:42,728 - INFO - WebDriver closed for item 4372
+2024-02-18 01:13:42,728 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:13:42,731 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:13:42,733 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:13:42,735 - INFO - Starting from index 4379: It has the oldest 'time checked'.
+2024-02-18 01:13:42,735 - INFO - Processing item 83/100 with account: FVTrrpE2TK1me5vkSBfAfV6GVAGYrGbrfShLs4NWepMB (Global index: 4380/4993)
+2024-02-18 01:13:43,993 - INFO - https://solscan.io/token/FVTrrpE2TK1me5vkSBfAfV6GVAGYrGbrfShLs4NWepMB#holders
+2024-02-18 01:13:44,994 - INFO - https://solscan.io/token/FVTrrpE2TK1me5vkSBfAfV6GVAGYrGbrfShLs4NWepMB#txs
+2024-02-18 01:14:02,615 - INFO - Owner address found: 
+2024-02-18 01:14:02,615 - INFO - Holder Address: 
+2024-02-18 01:14:12,762 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:14:12,789 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:14:12,789 - INFO - Hold time extracted: Table not found
+2024-02-18 01:14:12,789 - INFO - Closing the web driver...
+2024-02-18 01:14:12,828 - INFO - Web driver closed for time.
+2024-02-18 01:14:12,828 - ERROR - Error processing FVTrrpE2TK1me5vkSBfAfV6GVAGYrGbrfShLs4NWepMB: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:14:12,831 - INFO - WebDriver closed for item 4380
+2024-02-18 01:14:12,832 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:14:12,835 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:14:12,837 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:14:12,838 - INFO - Starting from index 4383: It has the oldest 'time checked'.
+2024-02-18 01:14:12,838 - INFO - Processing item 84/100 with account: E4QiEKN3P2ZqJKpgaSQT7pzotuJxtfVzknyniWtZEFKb (Global index: 4384/4993)
+2024-02-18 01:14:14,097 - INFO - https://solscan.io/token/E4QiEKN3P2ZqJKpgaSQT7pzotuJxtfVzknyniWtZEFKb#holders
+2024-02-18 01:14:15,098 - INFO - https://solscan.io/token/E4QiEKN3P2ZqJKpgaSQT7pzotuJxtfVzknyniWtZEFKb#txs
+2024-02-18 01:14:30,544 - INFO - Owner address found: 
+2024-02-18 01:14:30,544 - INFO - Holder Address: 
+2024-02-18 01:14:40,708 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:14:40,740 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:14:40,740 - INFO - Hold time extracted: Table not found
+2024-02-18 01:14:40,740 - INFO - Closing the web driver...
+2024-02-18 01:14:40,779 - INFO - Web driver closed for time.
+2024-02-18 01:14:40,779 - ERROR - Error processing E4QiEKN3P2ZqJKpgaSQT7pzotuJxtfVzknyniWtZEFKb: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:14:40,782 - INFO - WebDriver closed for item 4384
+2024-02-18 01:14:40,783 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:14:40,786 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:14:40,787 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:14:40,789 - INFO - Starting from index 4389: It has the oldest 'time checked'.
+2024-02-18 01:14:40,789 - INFO - Processing item 85/100 with account: DUbDnApdXfCUFMBdZKiskDmWhzNnJBTwY2o5C55kKvDi (Global index: 4390/4993)
+2024-02-18 01:14:42,050 - INFO - https://solscan.io/token/DUbDnApdXfCUFMBdZKiskDmWhzNnJBTwY2o5C55kKvDi#holders
+2024-02-18 01:14:43,051 - INFO - https://solscan.io/token/DUbDnApdXfCUFMBdZKiskDmWhzNnJBTwY2o5C55kKvDi#txs
+2024-02-18 01:15:00,949 - INFO - Owner address found: 
+2024-02-18 01:15:00,949 - INFO - Holder Address: 
+2024-02-18 01:15:11,097 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:15:11,117 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:15:11,117 - INFO - Hold time extracted: Table not found
+2024-02-18 01:15:11,117 - INFO - Closing the web driver...
+2024-02-18 01:15:11,164 - INFO - Web driver closed for time.
+2024-02-18 01:15:11,164 - ERROR - Error processing DUbDnApdXfCUFMBdZKiskDmWhzNnJBTwY2o5C55kKvDi: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:15:11,167 - INFO - WebDriver closed for item 4390
+2024-02-18 01:15:11,167 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:15:11,170 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:15:11,172 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:15:11,174 - INFO - Starting from index 4410: It has the oldest 'time checked'.
+2024-02-18 01:15:11,174 - INFO - Processing item 86/100 with account: 5PuCoXXZHsk7eoAqcEfWdscdeV682vz3hL7pnEMVMfwD (Global index: 4411/4993)
+2024-02-18 01:15:12,434 - INFO - https://solscan.io/token/5PuCoXXZHsk7eoAqcEfWdscdeV682vz3hL7pnEMVMfwD#holders
+2024-02-18 01:15:13,435 - INFO - https://solscan.io/token/5PuCoXXZHsk7eoAqcEfWdscdeV682vz3hL7pnEMVMfwD#txs
+2024-02-18 01:15:29,698 - INFO - Owner address found: 
+2024-02-18 01:15:29,698 - INFO - Holder Address: 
+2024-02-18 01:15:39,846 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:15:39,872 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:15:39,872 - INFO - Hold time extracted: Table not found
+2024-02-18 01:15:39,872 - INFO - Closing the web driver...
+2024-02-18 01:15:39,912 - INFO - Web driver closed for time.
+2024-02-18 01:15:39,912 - ERROR - Error processing 5PuCoXXZHsk7eoAqcEfWdscdeV682vz3hL7pnEMVMfwD: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:15:39,915 - INFO - WebDriver closed for item 4411
+2024-02-18 01:15:39,915 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:15:39,918 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:15:39,920 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:15:39,922 - INFO - Starting from index 4283: It has the oldest 'time checked'.
+2024-02-18 01:15:39,922 - INFO - Processing item 87/100 with account: 5AFVMBTbS2kEexhRmvhyuvJjZDCD9UoKGm3oBQ1sFmXJ (Global index: 4284/4993)
+2024-02-18 01:15:41,181 - INFO - https://solscan.io/token/5AFVMBTbS2kEexhRmvhyuvJjZDCD9UoKGm3oBQ1sFmXJ#holders
+2024-02-18 01:15:42,182 - INFO - https://solscan.io/token/5AFVMBTbS2kEexhRmvhyuvJjZDCD9UoKGm3oBQ1sFmXJ#txs
+2024-02-18 01:15:59,739 - INFO - Owner address found: 
+2024-02-18 01:15:59,739 - INFO - Holder Address: 
+2024-02-18 01:16:09,886 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:16:09,915 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:16:09,915 - INFO - Hold time extracted: Table not found
+2024-02-18 01:16:09,915 - INFO - Closing the web driver...
+2024-02-18 01:16:09,962 - INFO - Web driver closed for time.
+2024-02-18 01:16:09,962 - ERROR - Error processing 5AFVMBTbS2kEexhRmvhyuvJjZDCD9UoKGm3oBQ1sFmXJ: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:16:09,965 - INFO - WebDriver closed for item 4284
+2024-02-18 01:16:09,966 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:16:09,969 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:16:09,971 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:16:09,972 - INFO - Starting from index 4133: It has the oldest 'time checked'.
+2024-02-18 01:16:09,973 - INFO - Processing item 88/100 with account: B4RUmPgCkGx385LNozunUZWnjkpGTdwUCtG2KN3pxvT6 (Global index: 4134/4993)
+2024-02-18 01:16:11,232 - INFO - https://solscan.io/token/B4RUmPgCkGx385LNozunUZWnjkpGTdwUCtG2KN3pxvT6#holders
+2024-02-18 01:16:12,234 - INFO - https://solscan.io/token/B4RUmPgCkGx385LNozunUZWnjkpGTdwUCtG2KN3pxvT6#txs
+2024-02-18 01:16:26,285 - INFO - Owner address found: 
+2024-02-18 01:16:26,285 - INFO - Holder Address: 
+2024-02-18 01:16:36,447 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:16:36,472 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:16:36,473 - INFO - Hold time extracted: Table not found
+2024-02-18 01:16:36,473 - INFO - Closing the web driver...
+2024-02-18 01:16:36,499 - INFO - Web driver closed for time.
+2024-02-18 01:16:36,499 - ERROR - Error processing B4RUmPgCkGx385LNozunUZWnjkpGTdwUCtG2KN3pxvT6: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:16:36,502 - INFO - WebDriver closed for item 4134
+2024-02-18 01:16:36,503 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:16:36,505 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:16:36,507 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:16:36,509 - INFO - Starting from index 4253: It has the oldest 'time checked'.
+2024-02-18 01:16:36,509 - INFO - Processing item 89/100 with account: 9tu5A4xhhnophBNhB32A15zkk8h7oBnX3UEWqfffz2dQ (Global index: 4254/4993)
+2024-02-18 01:16:37,773 - INFO - https://solscan.io/token/9tu5A4xhhnophBNhB32A15zkk8h7oBnX3UEWqfffz2dQ#holders
+2024-02-18 01:16:38,774 - INFO - https://solscan.io/token/9tu5A4xhhnophBNhB32A15zkk8h7oBnX3UEWqfffz2dQ#txs
+2024-02-18 01:16:54,412 - INFO - Owner address found: 
+2024-02-18 01:16:54,413 - INFO - Holder Address: 
+2024-02-18 01:17:04,564 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:17:04,591 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:17:04,591 - INFO - Hold time extracted: Table not found
+2024-02-18 01:17:04,592 - INFO - Closing the web driver...
+2024-02-18 01:17:04,631 - INFO - Web driver closed for time.
+2024-02-18 01:17:04,631 - ERROR - Error processing 9tu5A4xhhnophBNhB32A15zkk8h7oBnX3UEWqfffz2dQ: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:17:04,634 - INFO - WebDriver closed for item 4254
+2024-02-18 01:17:04,634 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:17:04,637 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:17:04,639 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:17:04,641 - INFO - Starting from index 4273: It has the oldest 'time checked'.
+2024-02-18 01:17:04,641 - INFO - Processing item 90/100 with account: Bnros9nXWJkJhdGDXQCBwHDVPXTeJfBbgT3vsoHqK6ih (Global index: 4274/4993)
+2024-02-18 01:17:05,900 - INFO - https://solscan.io/token/Bnros9nXWJkJhdGDXQCBwHDVPXTeJfBbgT3vsoHqK6ih#holders
+2024-02-18 01:17:06,902 - INFO - https://solscan.io/token/Bnros9nXWJkJhdGDXQCBwHDVPXTeJfBbgT3vsoHqK6ih#txs
+2024-02-18 01:17:20,648 - INFO - Owner address found: 
+2024-02-18 01:17:20,648 - INFO - Holder Address: 
+2024-02-18 01:17:30,807 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:17:30,894 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:17:30,894 - INFO - Hold time extracted: Table not found
+2024-02-18 01:17:30,894 - INFO - Closing the web driver...
+2024-02-18 01:17:30,933 - INFO - Web driver closed for time.
+2024-02-18 01:17:30,933 - ERROR - Error processing Bnros9nXWJkJhdGDXQCBwHDVPXTeJfBbgT3vsoHqK6ih: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:17:30,936 - INFO - WebDriver closed for item 4274
+2024-02-18 01:17:30,937 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:17:30,940 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:17:30,941 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:17:30,943 - INFO - Starting from index 4352: It has the oldest 'time checked'.
+2024-02-18 01:17:30,943 - INFO - Processing item 91/100 with account: C3GkEHQZjtCRoK22iozaAVTGcmxU1wudyUmkW2krCeA2 (Global index: 4353/4993)
+2024-02-18 01:17:32,201 - INFO - https://solscan.io/token/C3GkEHQZjtCRoK22iozaAVTGcmxU1wudyUmkW2krCeA2#holders
+2024-02-18 01:17:33,203 - INFO - https://solscan.io/token/C3GkEHQZjtCRoK22iozaAVTGcmxU1wudyUmkW2krCeA2#txs
+2024-02-18 01:17:48,612 - INFO - Owner address found: 
+2024-02-18 01:17:48,612 - INFO - Holder Address: 
+2024-02-18 01:17:58,759 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:17:58,787 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:17:58,787 - INFO - Hold time extracted: Table not found
+2024-02-18 01:17:58,787 - INFO - Closing the web driver...
+2024-02-18 01:17:58,825 - INFO - Web driver closed for time.
+2024-02-18 01:17:58,825 - ERROR - Error processing C3GkEHQZjtCRoK22iozaAVTGcmxU1wudyUmkW2krCeA2: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:17:58,828 - INFO - WebDriver closed for item 4353
+2024-02-18 01:17:58,829 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:17:58,832 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:17:58,834 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:17:58,835 - INFO - Starting from index 4370: It has the oldest 'time checked'.
+2024-02-18 01:17:58,835 - INFO - Processing item 92/100 with account: 9UwUHX2BCGmr9utMgD3JqUsjCr5MyyjCuT12aaoF9zwv (Global index: 4371/4993)
+2024-02-18 01:18:00,094 - INFO - https://solscan.io/token/9UwUHX2BCGmr9utMgD3JqUsjCr5MyyjCuT12aaoF9zwv#holders
+2024-02-18 01:18:01,096 - INFO - https://solscan.io/token/9UwUHX2BCGmr9utMgD3JqUsjCr5MyyjCuT12aaoF9zwv#txs
+2024-02-18 01:18:15,720 - INFO - Owner address found: 
+2024-02-18 01:18:15,721 - INFO - Holder Address: 
+2024-02-18 01:18:25,880 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:18:25,917 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:18:25,917 - INFO - Hold time extracted: Table not found
+2024-02-18 01:18:25,917 - INFO - Closing the web driver...
+2024-02-18 01:18:25,963 - INFO - Web driver closed for time.
+2024-02-18 01:18:25,963 - ERROR - Error processing 9UwUHX2BCGmr9utMgD3JqUsjCr5MyyjCuT12aaoF9zwv: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:18:25,966 - INFO - WebDriver closed for item 4371
+2024-02-18 01:18:25,967 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:18:25,970 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:18:25,972 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:18:25,974 - INFO - Starting from index 4378: It has the oldest 'time checked'.
+2024-02-18 01:18:25,974 - INFO - Processing item 93/100 with account: Adbmp4AYvtsyyKti95MpYrZ9XbsKKuFLAZJP9Mcj8oZj (Global index: 4379/4993)
+2024-02-18 01:18:27,238 - INFO - https://solscan.io/token/Adbmp4AYvtsyyKti95MpYrZ9XbsKKuFLAZJP9Mcj8oZj#holders
+2024-02-18 01:18:28,240 - INFO - https://solscan.io/token/Adbmp4AYvtsyyKti95MpYrZ9XbsKKuFLAZJP9Mcj8oZj#txs
+2024-02-18 01:18:41,606 - INFO - Owner address found: 
+2024-02-18 01:18:41,606 - INFO - Holder Address: 
+2024-02-18 01:18:51,773 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:18:51,810 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:18:51,810 - INFO - Hold time extracted: Table not found
+2024-02-18 01:18:51,810 - INFO - Closing the web driver...
+2024-02-18 01:18:51,832 - INFO - Web driver closed for time.
+2024-02-18 01:18:51,833 - ERROR - Error processing Adbmp4AYvtsyyKti95MpYrZ9XbsKKuFLAZJP9Mcj8oZj: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:18:51,838 - INFO - WebDriver closed for item 4379
+2024-02-18 01:18:51,838 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:18:51,841 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:18:51,843 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:18:51,845 - INFO - Starting from index 4381: It has the oldest 'time checked'.
+2024-02-18 01:18:51,845 - INFO - Processing item 94/100 with account: 2cYBYNx69XapMmisj3UTRQSYiJgEuGSqMV5yVU38eaTm (Global index: 4382/4993)
+2024-02-18 01:18:53,104 - INFO - https://solscan.io/token/2cYBYNx69XapMmisj3UTRQSYiJgEuGSqMV5yVU38eaTm#holders
+2024-02-18 01:18:54,105 - INFO - https://solscan.io/token/2cYBYNx69XapMmisj3UTRQSYiJgEuGSqMV5yVU38eaTm#txs
+2024-02-18 01:19:12,538 - INFO - Owner address found: 
+2024-02-18 01:19:12,538 - INFO - Holder Address: 
+2024-02-18 01:19:22,689 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:19:22,716 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:19:22,717 - INFO - Hold time extracted: Table not found
+2024-02-18 01:19:22,717 - INFO - Closing the web driver...
+2024-02-18 01:19:22,756 - INFO - Web driver closed for time.
+2024-02-18 01:19:22,756 - ERROR - Error processing 2cYBYNx69XapMmisj3UTRQSYiJgEuGSqMV5yVU38eaTm: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:19:22,759 - INFO - WebDriver closed for item 4382
+2024-02-18 01:19:22,759 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:19:22,763 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:19:22,764 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:19:22,766 - INFO - Starting from index 4397: It has the oldest 'time checked'.
+2024-02-18 01:19:22,766 - INFO - Processing item 95/100 with account: HW8ZVPqSw25SE9jTGpCUc6LTar1ZsBBvhhTz4mUVJcuV (Global index: 4398/4993)
+2024-02-18 01:19:24,035 - INFO - https://solscan.io/token/HW8ZVPqSw25SE9jTGpCUc6LTar1ZsBBvhhTz4mUVJcuV#holders
+2024-02-18 01:19:25,036 - INFO - https://solscan.io/token/HW8ZVPqSw25SE9jTGpCUc6LTar1ZsBBvhhTz4mUVJcuV#txs
+2024-02-18 01:19:42,352 - INFO - Owner address found: mkr7azob5ee3RC64BVoHQPu7FnyaXzJnLMN8jm942pQ
+2024-02-18 01:19:42,352 - INFO - Holder Address: mkr7azob5ee3RC64BVoHQPu7FnyaXzJnLMN8jm942pQ
+2024-02-18 01:19:52,511 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:19:52,547 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:19:52,547 - INFO - Hold time extracted: Table not found
+2024-02-18 01:19:52,547 - INFO - Closing the web driver...
+2024-02-18 01:19:52,570 - INFO - Web driver closed for time.
+2024-02-18 01:19:52,570 - ERROR - Error processing HW8ZVPqSw25SE9jTGpCUc6LTar1ZsBBvhhTz4mUVJcuV: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:19:52,575 - INFO - WebDriver closed for item 4398
+2024-02-18 01:19:52,576 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:19:52,579 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:19:52,581 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:19:52,583 - INFO - Starting from index 4404: It has the oldest 'time checked'.
+2024-02-18 01:19:52,583 - INFO - Processing item 96/100 with account: 4EbN5QbBD4WvFCdFdxnajeJXmwELbD3uDzFH25wkyxmu (Global index: 4405/4993)
+2024-02-18 01:19:53,861 - INFO - https://solscan.io/token/4EbN5QbBD4WvFCdFdxnajeJXmwELbD3uDzFH25wkyxmu#holders
+2024-02-18 01:19:54,863 - INFO - https://solscan.io/token/4EbN5QbBD4WvFCdFdxnajeJXmwELbD3uDzFH25wkyxmu#txs
+2024-02-18 01:20:08,324 - INFO - Owner address found: 
+2024-02-18 01:20:08,324 - INFO - Holder Address: 
+2024-02-18 01:20:18,473 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:20:18,499 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:20:18,499 - INFO - Hold time extracted: Table not found
+2024-02-18 01:20:18,499 - INFO - Closing the web driver...
+2024-02-18 01:20:18,537 - INFO - Web driver closed for time.
+2024-02-18 01:20:18,537 - ERROR - Error processing 4EbN5QbBD4WvFCdFdxnajeJXmwELbD3uDzFH25wkyxmu: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:20:18,540 - INFO - WebDriver closed for item 4405
+2024-02-18 01:20:18,541 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:20:18,545 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:20:18,547 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:20:18,549 - INFO - Starting from index 4406: It has the oldest 'time checked'.
+2024-02-18 01:20:18,549 - INFO - Processing item 97/100 with account: 8WGqHaqXjhvksMYQ2tpggT3vQhL9rwfvB4f4ZZsGJqdN (Global index: 4407/4993)
+2024-02-18 01:20:19,806 - INFO - https://solscan.io/token/8WGqHaqXjhvksMYQ2tpggT3vQhL9rwfvB4f4ZZsGJqdN#holders
+2024-02-18 01:20:20,807 - INFO - https://solscan.io/token/8WGqHaqXjhvksMYQ2tpggT3vQhL9rwfvB4f4ZZsGJqdN#txs
+2024-02-18 01:20:37,824 - INFO - Owner address found: 
+2024-02-18 01:20:37,824 - INFO - Holder Address: 
+2024-02-18 01:20:47,971 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:20:47,997 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:20:47,997 - INFO - Hold time extracted: Table not found
+2024-02-18 01:20:47,997 - INFO - Closing the web driver...
+2024-02-18 01:20:48,037 - INFO - Web driver closed for time.
+2024-02-18 01:20:48,037 - ERROR - Error processing 8WGqHaqXjhvksMYQ2tpggT3vQhL9rwfvB4f4ZZsGJqdN: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:20:48,040 - INFO - WebDriver closed for item 4407
+2024-02-18 01:20:48,041 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:20:48,044 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:20:48,046 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:20:48,047 - INFO - Starting from index 4295: It has the oldest 'time checked'.
+2024-02-18 01:20:48,047 - INFO - Processing item 98/100 with account: 8s2mbvtW99eawDDLXcPeXGx5fu6VZdbYKVoH5fCUFMPa (Global index: 4296/4993)
+2024-02-18 01:20:49,306 - INFO - https://solscan.io/token/8s2mbvtW99eawDDLXcPeXGx5fu6VZdbYKVoH5fCUFMPa#holders
+2024-02-18 01:20:50,307 - INFO - https://solscan.io/token/8s2mbvtW99eawDDLXcPeXGx5fu6VZdbYKVoH5fCUFMPa#txs
+2024-02-18 01:21:03,795 - INFO - Owner address found: 
+2024-02-18 01:21:03,795 - INFO - Holder Address: 
+2024-02-18 01:21:13,947 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:21:13,973 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:21:13,973 - INFO - Hold time extracted: Table not found
+2024-02-18 01:21:13,973 - INFO - Closing the web driver...
+2024-02-18 01:21:14,000 - INFO - Web driver closed for time.
+2024-02-18 01:21:14,000 - ERROR - Error processing 8s2mbvtW99eawDDLXcPeXGx5fu6VZdbYKVoH5fCUFMPa: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:21:14,003 - INFO - WebDriver closed for item 4296
+2024-02-18 01:21:14,004 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:21:14,007 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:21:14,009 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:21:14,011 - INFO - Starting from index 4353: It has the oldest 'time checked'.
+2024-02-18 01:21:14,011 - INFO - Processing item 99/100 with account: 3o28LDVqBZCUdY5JVL7TawLcfJ2WcjxZScWVaE5C3vzX (Global index: 4354/4993)
+2024-02-18 01:21:15,273 - INFO - https://solscan.io/token/3o28LDVqBZCUdY5JVL7TawLcfJ2WcjxZScWVaE5C3vzX#holders
+2024-02-18 01:21:16,274 - INFO - https://solscan.io/token/3o28LDVqBZCUdY5JVL7TawLcfJ2WcjxZScWVaE5C3vzX#txs
+2024-02-18 01:21:29,646 - INFO - Owner address found: 
+2024-02-18 01:21:29,646 - INFO - Holder Address: 
+2024-02-18 01:21:39,806 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:21:39,835 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:21:39,835 - INFO - Hold time extracted: Table not found
+2024-02-18 01:21:39,835 - INFO - Closing the web driver...
+2024-02-18 01:21:39,874 - INFO - Web driver closed for time.
+2024-02-18 01:21:39,874 - ERROR - Error processing 3o28LDVqBZCUdY5JVL7TawLcfJ2WcjxZScWVaE5C3vzX: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:21:39,877 - INFO - WebDriver closed for item 4354
+2024-02-18 01:21:39,878 - INFO - All items have 'holder data'. Moving to the next priority.
+2024-02-18 01:21:39,881 - INFO - All items have valid 'holder' values. Moving to the next priority.
+2024-02-18 01:21:39,882 - INFO - All items have valid 'when acquired' timestamps. Moving to the next priority.
+2024-02-18 01:21:39,884 - INFO - Starting from index 4357: It has the oldest 'time checked'.
+2024-02-18 01:21:39,884 - INFO - Processing item 100/100 with account: 5TchEqASnqwnoXxbVXzpnPrj63RXtzTF4EMMXUGegc8c (Global index: 4358/4993)
+2024-02-18 01:21:41,142 - INFO - https://solscan.io/token/5TchEqASnqwnoXxbVXzpnPrj63RXtzTF4EMMXUGegc8c#holders
+2024-02-18 01:21:42,143 - INFO - https://solscan.io/token/5TchEqASnqwnoXxbVXzpnPrj63RXtzTF4EMMXUGegc8c#txs
+2024-02-18 01:22:01,054 - INFO - Owner address found: 
+2024-02-18 01:22:01,054 - INFO - Holder Address: 
+2024-02-18 01:22:11,212 - INFO - Successfully read HTML content from 'smb/time.html'.
+2024-02-18 01:22:11,241 - INFO - The specific table with ID 'rc-tabs-0-panel-txs' was not found.
+2024-02-18 01:22:11,241 - INFO - Hold time extracted: Table not found
+2024-02-18 01:22:11,241 - INFO - Closing the web driver...
+2024-02-18 01:22:11,289 - INFO - Web driver closed for time.
+2024-02-18 01:22:11,289 - ERROR - Error processing 5TchEqASnqwnoXxbVXzpnPrj63RXtzTF4EMMXUGegc8c: time data 'Table not found' does not match format '%m-%d-%Y %H:%M:%S'
+2024-02-18 01:22:11,292 - INFO - WebDriver closed for item 4358
+2024-02-18 01:22:12,109 - INFO - Progress saved after processing 100 items.
